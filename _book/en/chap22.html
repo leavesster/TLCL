@@ -1,0 +1,1536 @@
+
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>22. 格式化输出 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="chap23.html" />
+    
+    
+    <link rel="prev" href="chap21.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.1" data-path="chap01.html">
+            
+                <a href="chap01.html">
+            
+                    
+                    01. 引言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2" data-path="chap02.html">
+            
+                <a href="chap02.html">
+            
+                    
+                    02. 什么是 shell
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3" data-path="chap03.html">
+            
+                <a href="chap03.html">
+            
+                    
+                    03. 文件系统中跳转
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4" data-path="chap04.html">
+            
+                <a href="chap04.html">
+            
+                    
+                    04. 探究操作系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.5" data-path="chap05.html">
+            
+                <a href="chap05.html">
+            
+                    
+                    05. 操作文件和目录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.6" data-path="chap06.html">
+            
+                <a href="chap06.html">
+            
+                    
+                    06. 使用命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.7" data-path="chap07.html">
+            
+                <a href="chap07.html">
+            
+                    
+                    07. 重定向
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.8" data-path="chap08.html">
+            
+                <a href="chap08.html">
+            
+                    
+                    08. 从 shell 眼中看世界
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.9" data-path="chap09.html">
+            
+                <a href="chap09.html">
+            
+                    
+                    09. 键盘高级操作技巧
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.10" data-path="chap10.html">
+            
+                <a href="chap10.html">
+            
+                    
+                    10. 权限
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.11" data-path="chap11.html">
+            
+                <a href="chap11.html">
+            
+                    
+                    11. 进程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.12" data-path="chap12.html">
+            
+                <a href="chap12.html">
+            
+                    
+                    12. shell 环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.13" data-path="chap13.html">
+            
+                <a href="chap13.html">
+            
+                    
+                    13. vi 简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.14" data-path="chap14.html">
+            
+                <a href="chap14.html">
+            
+                    
+                    14. 自定制 shell 提示符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.15" data-path="chap15.html">
+            
+                <a href="chap15.html">
+            
+                    
+                    15. 软件包管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.16" data-path="chap16.html">
+            
+                <a href="chap16.html">
+            
+                    
+                    16. 存储媒介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.17" data-path="chap17.html">
+            
+                <a href="chap17.html">
+            
+                    
+                    17. 网络系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.18" data-path="chap18.html">
+            
+                <a href="chap18.html">
+            
+                    
+                    18. 查找文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.19" data-path="chap19.html">
+            
+                <a href="chap19.html">
+            
+                    
+                    19. 归档和备份
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.20" data-path="chap20.html">
+            
+                <a href="chap20.html">
+            
+                    
+                    20. 正则表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.21" data-path="chap21.html">
+            
+                <a href="chap21.html">
+            
+                    
+                    21. 文本处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.1.22" data-path="chap22.html">
+            
+                <a href="chap22.html">
+            
+                    
+                    22. 格式化输出
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.23" data-path="chap23.html">
+            
+                <a href="chap23.html">
+            
+                    
+                    23. 打印
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.24" data-path="chap24.html">
+            
+                <a href="chap24.html">
+            
+                    
+                    24. 编译程序
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.25" data-path="chap25.html">
+            
+                <a href="chap25.html">
+            
+                    
+                    25. 编写第一个 Shell 脚本
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.26" data-path="chap26.html">
+            
+                <a href="chap26.html">
+            
+                    
+                    26. 启动一个项目
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.27" data-path="chap27.html">
+            
+                <a href="chap27.html">
+            
+                    
+                    27. 自顶向下设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.28" data-path="chap28.html">
+            
+                <a href="chap28.html">
+            
+                    
+                    28. 流程控制：if 分支结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.29" data-path="chap29.html">
+            
+                <a href="chap29.html">
+            
+                    
+                    29. 读取键盘输入
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.30" data-path="chap30.html">
+            
+                <a href="chap30.html">
+            
+                    
+                    30. 流程控制：while/until 循环
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.31" data-path="chap31.html">
+            
+                <a href="chap31.html">
+            
+                    
+                    31. 疑难排解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.32" data-path="chap32.html">
+            
+                <a href="chap32.html">
+            
+                    
+                    32. 流程控制：case 分支
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.33" data-path="chap33.html">
+            
+                <a href="chap33.html">
+            
+                    
+                    33. 位置参数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.34" data-path="chap34.html">
+            
+                <a href="chap34.html">
+            
+                    
+                    34. 流程控制：for 循环
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.35" data-path="chap35.html">
+            
+                <a href="chap35.html">
+            
+                    
+                    35. 字符串和数字
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.36" data-path="chap36.html">
+            
+                <a href="chap36.html">
+            
+                    
+                    36. 数组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.37" data-path="chap37.html">
+            
+                <a href="chap37.html">
+            
+                    
+                    37. 奇珍异宝
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >22. 格式化输出</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <p>In this chapter, we continue our look at text related tools, focusing on programs that are
+used to format text output, rather than changing the text itself. These tools are often used
+to prepare text for eventual printing, a subject that we will cover in the next chapter. The
+programs that we will cover in this chapter include:</p>
+<p>&#x5728;&#x8FD9;&#x7AE0;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x7EE7;&#x7EED;&#x7740;&#x624B;&#x4E8E;&#x6587;&#x672C;&#x76F8;&#x5173;&#x7684;&#x5DE5;&#x5177;&#xFF0C;&#x5173;&#x6CE8;&#x90A3;&#x4E9B;&#x7528;&#x6765;&#x683C;&#x5F0F;&#x5316;&#x8F93;&#x51FA;&#x7684;&#x7A0B;&#x5E8F;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x6539;&#x53D8;&#x6587;&#x672C;&#x81EA;&#x8EAB;&#x3002;
+&#x8FD9;&#x4E9B;&#x5DE5;&#x5177;&#x901A;&#x5E38;&#x8BA9;&#x6587;&#x672C;&#x51C6;&#x5907;&#x5C31;&#x7EEA;&#x6253;&#x5370;&#xFF0C;&#x8FD9;&#x662F;&#x6211;&#x4EEC;&#x5728;&#x4E0B;&#x4E00;&#x7AE0;&#x4F1A;&#x63D0;&#x5230;&#x7684;&#x3002;&#x6211;&#x4EEC;&#x5728;&#x8FD9;&#x7AE0;&#x4E2D;&#x4F1A;&#x63D0;&#x5230;&#x7684;&#x5DE5;&#x5177;&#x6709;&#xFF1A;</p>
+<ul>
+<li><p>nl &#x2013; Number lines</p>
+</li>
+<li><p>nl &#x2013; &#x6DFB;&#x52A0;&#x884C;&#x53F7;</p>
+</li>
+<li><p>fold &#x2013; Wrap each line to a specified length</p>
+</li>
+<li><p>fold &#x2013; &#x9650;&#x5236;&#x6587;&#x4EF6;&#x5217;&#x5BBD;</p>
+</li>
+<li><p>fmt &#x2013; A simple text formatter</p>
+</li>
+<li><p>fmt &#x2013; &#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x6587;&#x672C;&#x683C;&#x5F0F;&#x8F6C;&#x6362;&#x5668;</p>
+</li>
+<li><p>pr &#x2013; Prepare text for printing</p>
+</li>
+<li><p>pr &#x2013; &#x8BA9;&#x6587;&#x672C;&#x4E3A;&#x6253;&#x5370;&#x505A;&#x597D;&#x51C6;&#x5907;</p>
+</li>
+<li><p>printf &#x2013; Format and print data</p>
+</li>
+<li><p>printf &#x2013; &#x683C;&#x5F0F;&#x5316;&#x6570;&#x636E;&#x5E76;&#x6253;&#x5370;&#x51FA;&#x6765;</p>
+</li>
+<li><p>groff &#x2013; A document formatting system</p>
+</li>
+<li><p>groff &#x2013; &#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x683C;&#x5F0F;&#x7CFB;&#x7EDF;</p>
+</li>
+</ul>
+<h3 id="&#x7B80;&#x5355;&#x7684;&#x683C;&#x5F0F;&#x5316;&#x5DE5;&#x5177;">&#x7B80;&#x5355;&#x7684;&#x683C;&#x5F0F;&#x5316;&#x5DE5;&#x5177;</h3>
+<p>We&#x2019;ll look at some of the simple formatting tools first. These are mostly single purpose
+programs, and a bit unsophisticated in what they do, but they can be used for small tasks
+and as parts of pipelines and scripts.</p>
+<p>&#x6211;&#x4EEC;&#x5C06;&#x5148;&#x7740;&#x773C;&#x4E8E;&#x4E00;&#x4E9B;&#x7B80;&#x5355;&#x7684;&#x683C;&#x5F0F;&#x5DE5;&#x5177;&#x3002;&#x4ED6;&#x4EEC;&#x90FD;&#x662F;&#x529F;&#x80FD;&#x5355;&#x4E00;&#x7684;&#x7A0B;&#x5E8F;&#xFF0C;&#x5E76;&#x4E14;&#x505A;&#x6CD5;&#x6709;&#x4E00;&#x70B9;&#x5355;&#x7EAF;&#xFF0C;
+&#x4F46;&#x662F;&#x4ED6;&#x4EEC;&#x80FD;&#x88AB;&#x7528;&#x4E8E;&#x5C0F;&#x4EFB;&#x52A1;&#x5E76;&#x4E14;&#x4F5C;&#x4E3A;&#x811A;&#x672C;&#x548C;&#x7BA1;&#x9053;&#x7684;&#x4E00;&#x90E8;&#x5206; &#x3002;</p>
+<h4 id="nl---&#x6DFB;&#x52A0;&#x884C;&#x53F7;">nl - &#x6DFB;&#x52A0;&#x884C;&#x53F7;</h4>
+<p>The nl program is a rather arcane tool used to perform a simple task. It numbers lines.
+In its simplest use, it resembles cat -n:</p>
+<p>nl &#x7A0B;&#x5E8F;&#x662F;&#x4E00;&#x4E2A;&#x76F8;&#x5F53;&#x795E;&#x79D8;&#x7684;&#x5DE5;&#x5177;&#xFF0C;&#x7528;&#x4F5C;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x4EFB;&#x52A1;&#x3002;&#x5B83;&#x6DFB;&#x52A0;&#x6587;&#x4EF6;&#x7684;&#x884C;&#x6570;&#x3002;&#x5728;&#x5B83;&#x6700;&#x7B80;&#x5355;&#x7684;&#x7528;&#x9014;&#x4E2D;&#xFF0C;&#x5B83;&#x76F8;&#x5F53;&#x4E8E; cat -n:</p>
+<pre><code>[me@linuxbox ~]$ nl distros.txt | head
+</code></pre><p>Like cat, nl can accept either multiple files as command line arguments, or standard
+input. However, nl has a number of options and supports a primitive form of markup to
+allow more complex kinds of numbering.</p>
+<p>&#x50CF; cat&#xFF0C;nl &#x65E2;&#x80FD;&#x63A5;&#x53D7;&#x591A;&#x4E2A;&#x6587;&#x4EF6;&#x4F5C;&#x4E3A;&#x547D;&#x4EE4;&#x884C;&#x53C2;&#x6570;&#xFF0C;&#x4E5F;&#x80FD;&#x6807;&#x51C6;&#x8F93;&#x51FA;&#x3002;&#x7136;&#x800C;&#xFF0C;nl &#x6709;&#x4E00;&#x4E2A;&#x76F8;&#x5F53;&#x6570;&#x91CF;&#x7684;&#x9009;&#x9879;&#x5E76;&#x652F;&#x6301;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x6807;&#x8BB0;&#x65B9;&#x5F0F;&#x53BB;&#x5141;&#x8BB8;&#x66F4;&#x591A;&#x590D;&#x6742;&#x7684;&#x65B9;&#x5F0F;&#x7684;&#x8BA1;&#x7B97;&#x3002;</p>
+<p>nl supports a concept called &#x201C;logical pages&#x201D; when numbering. This allows nl to reset
+(start over) the numerical sequence when numbering. Using options, it is possible to set
+the starting number to a specific value and, to a limited extent, its format. A logical page
+is further broken down into a header, body, and footer. Within each of these sections, line
+numbering may be reset and/or be assigned a different style. If nl is given multiple files,
+it treats them as a single stream of text. Sections in the text stream are indicated by the
+presence of some rather odd-looking markup added to the text:</p>
+<p>nl &#x5728;&#x8BA1;&#x7B97;&#x6587;&#x4EF6;&#x884C;&#x6570;&#x7684;&#x65F6;&#x5019;&#x652F;&#x6301;&#x4E00;&#x4E2A;&#x53EB;&#x201C;&#x903B;&#x8F91;&#x9875;&#x9762;&#x201D;&#x7684;&#x6982;&#x5FF5; &#x3002;&#x8FD9;&#x5141;&#x8BB8;nl&#x5728;&#x8BA1;&#x7B97;&#x7684;&#x65F6;&#x5019;&#x53BB;&#x91CD;&#x8BBE;&#xFF08;&#x518D;&#x4E00;&#x6B21;&#x5F00;&#x59CB;&#xFF09;&#x53EF;&#x6570;&#x7684;&#x5E8F;&#x5217;&#x3002;&#x7528;&#x5230;&#x90A3;&#x4E9B;&#x9009;&#x9879;
+&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x53EF;&#x4EE5;&#x8BBE;&#x7F6E;&#x4E00;&#x4E2A;&#x7279;&#x6B8A;&#x7684;&#x5F00;&#x59CB;&#x503C;&#xFF0C;&#x5E76;&#x4E14;&#x5728;&#x67D0;&#x4E2A;&#x53EF;&#x9650;&#x5B9A;&#x7684;&#x7A0B;&#x5EA6;&#x4E0A;&#x8FD8;&#x80FD;&#x8BBE;&#x7F6E;&#x5B83;&#x7684;&#x683C;&#x5F0F;&#x3002;&#x4E00;&#x4E2A;&#x903B;&#x8F91;&#x9875;&#x9762;&#x88AB;&#x8FDB;&#x4E00;&#x6B65;&#x5206;&#x4E3A; header,body &#x548C; footer
+&#x8FD9;&#x6837;&#x7684;&#x5143;&#x7D20;&#x3002;&#x5728;&#x6BCF;&#x4E00;&#x4E2A;&#x90E8;&#x5206;&#x4E2D;&#xFF0C;&#x6570;&#x884C;&#x6570;&#x53EF;&#x4EE5;&#x88AB;&#x91CD;&#x8BBE;&#xFF0C;&#x5E76;&#x4E14;/&#x6216;&#x88AB;&#x8BBE;&#x7F6E;&#x6210;&#x53E6;&#x5916;&#x4E00;&#x4E2A;&#x683C;&#x5F0F;&#x3002;&#x5982;&#x679C;nl&#x540C;&#x65F6;&#x5904;&#x7406;&#x591A;&#x4E2A;&#x6587;&#x4EF6;&#xFF0C;&#x5B83;&#x4F1A;&#x628A;&#x4ED6;&#x4EEC;&#x5F53;&#x6210;&#x4E00;&#x4E2A;&#x5355;&#x4E00;&#x7684;
+&#x6587;&#x672C;&#x6D41;&#x3002;&#x6587;&#x672C;&#x6D41;&#x4E2D;&#x7684;&#x90E8;&#x5206;&#x88AB;&#x4E00;&#x4E9B;&#x76F8;&#x5F53;&#x53E4;&#x602A;&#x7684;&#x6807;&#x8BB0;&#x7684;&#x5B58;&#x5728;&#x52A0;&#x8FDB;&#x4E86;&#x6587;&#x672C;&#xFF1A;</p>
+<table class="multi">
+<caption class="cap">Table 22-1: nl Markup</caption>
+<tr>
+<th class="title">MarkUp</th>
+<th class="title">Meaning</th>
+</tr>
+<tr>
+<td valign="top">\:\:\: </td>
+<td valign="top">Start of logical page header</td>
+</tr>
+<tr>
+<td valign="top">\:\:</td>
+<td valign="top">Start of logical page body</td>
+</tr>
+<tr>
+<td valign="top">\:</td>
+<td valign="top">Start of logical page footer</td>
+</tr>
+</table>
+
+<table class="multi">
+<caption class="cap">Table 22-1: nl &#x6807;&#x8BB0;</caption>
+<tr>
+<th class="title">&#x6807;&#x8BB0;</th>
+<th class="title">&#x542B;&#x4E49;</th>
+</tr>
+<tr>
+<td valign="top">\:\:\: </td>
+<td valign="top">&#x903B;&#x8F91;&#x9875;&#x9875;&#x7709;&#x5F00;&#x59CB;&#x5904;</td>
+</tr>
+<tr>
+<td valign="top">\:\:</td>
+<td valign="top">&#x903B;&#x8F91;&#x9875;&#x4E3B;&#x4F53;&#x5F00;&#x59CB;&#x5904;</td>
+</tr>
+<tr>
+<td valign="top">\:</td>
+<td valign="top">&#x903B;&#x8F91;&#x9875;&#x9875;&#x811A;&#x5F00;&#x59CB;&#x5904;</td>
+</tr>
+</table>
+
+<p>Each of the above markup elements must appear alone on its own line. After processing
+a markup element, nl deletes it from the text stream.</p>
+<p>&#x6BCF;&#x4E00;&#x4E2A;&#x4E0A;&#x8FF0;&#x7684;&#x6807;&#x8BB0;&#x5143;&#x7D20;&#x80AF;&#x5B9A;&#x5728;&#x81EA;&#x5DF1;&#x7684;&#x884C;&#x4E2D;&#x72EC;&#x81EA;&#x51FA;&#x73B0;&#x3002;&#x5728;&#x5904;&#x7406;&#x5B8C;&#x4E00;&#x4E2A;&#x6807;&#x8BB0;&#x5143;&#x7D20;&#x4E4B;&#x540E;&#xFF0C;nl &#x628A;&#x5B83;&#x4ECE;&#x6587;&#x672C;&#x6D41;&#x4E2D;&#x5220;&#x9664;&#x3002;</p>
+<p>Here are the common options for nl:</p>
+<p>&#x8FD9;&#x91CC;&#x6709;&#x4E00;&#x4E9B;&#x5E38;&#x7528;&#x7684; nl &#x9009;&#x9879;&#xFF1A;</p>
+<table class="multi">
+<caption class="cap">Table 22-2: Common nl Options</caption>
+<tr>
+<th class="title">Option</th>
+<th class="title">Meaning</th>
+</tr>
+<tr>
+<td valign="top" width="25%">-b style</td>
+<td valign="top">Set body numbering to style, where style is one of the following:
+<p>a = number all lines</p>
+<p>t = number only non-blank lines. This is the default.</p>
+<p>n = none</p>
+<p>pregexp = number only lines matching basic regular expression regexp.</p>
+</td>
+</tr>
+<tr>
+<td valign="top">-f style </td>
+<td valign="top">Set footer numbering to style. Default is n (none).</td>
+</tr>
+<tr>
+<td valign="top">-h style </td>
+<td valign="top">Set header numbering to style. Default is n (none).</td>
+</tr>
+<tr>
+<td valign="top">-i number </td>
+<td valign="top">Set page numbering increment to number. Default is one.</td>
+</tr>
+<tr>
+<td valign="top">-n format </td>
+<td valign="top">Sets numbering format to format, where format is:
+<p>ln = left justified, without leading zeros.</p>
+<p>rn = right justified, without leading zeros. This is the default.</p>
+<p>rz = right justified, with leading zeros.</p></td>
+</tr>
+<tr>
+<td valign="top">-p</td>
+<td valign="top">Do not reset page numbering at the beginning of each logical page.</td>
+</tr>
+<tr>
+<td valign="top">-s string </td>
+<td valign="top">Add string to the end of each line number to create a separator.Default is a single tab character.</td>
+</tr>
+<tr>
+<td valign="top">-v number </td>
+<td valign="top">Set first line number of each logical page to number. Default is one.</td>
+</tr>
+<tr>
+<td valign="top">-w width  </td>
+<td valign="top">Set width of the line number field to width. Default is six.</td>
+</tr>
+</table>
+
+<table class="multi">
+<caption class="cap">&#x8868;&#x683C; 22-2: &#x5E38;&#x7528; nl &#x9009;&#x9879; </caption>
+<tr>
+<th class="title">&#x9009;&#x9879;</th>
+<th class="title">&#x542B;&#x4E49;</th>
+</tr>
+<tr>
+<td valign="top" width="25%">-b style</td>
+<td valign="top">&#x628A; body &#x6309;&#x88AB;&#x8981;&#x6C42;&#x65B9;&#x5F0F;&#x6570;&#x884C;&#xFF0C;&#x53EF;&#x4EE5;&#x662F;&#x4EE5;&#x4E0B;&#x65B9;&#x5F0F;&#xFF1A;
+<p>a = &#x6570;&#x6240;&#x6709;&#x884C;</p>
+<p>t = &#x6570;&#x975E;&#x7A7A;&#x884C;&#x3002;&#x8FD9;&#x662F;&#x9ED8;&#x8BA4;&#x8BBE;&#x7F6E;&#x3002;</p>
+<p>n = &#x65E0;</p>
+<p>pregexp = &#x53EA;&#x6570;&#x90A3;&#x4E9B;&#x5339;&#x914D;&#x4E86;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x884C;</p>
+</td>
+</tr>
+<tr>
+<td valign="top">-f style </td>
+<td valign="top">&#x5C06; footer &#x6309;&#x88AB;&#x8981;&#x6C42;&#x8BBE;&#x7F6E;&#x6570;&#x3002;&#x9ED8;&#x8BA4;&#x662F;&#x65E0;</td>
+</tr>
+<tr>
+<td valign="top">-h style </td>
+<td valign="top">&#x5C06; header &#x6309;&#x88AB;&#x8981;&#x6C42;&#x8BBE;&#x7F6E;&#x6570;&#x3002;&#x9ED8;&#x8BA4;&#x662F;</td>
+</tr>
+<tr>
+<td valign="top">-i number </td>
+<td valign="top">&#x5C06;&#x9875;&#x9762;&#x589E;&#x52A0;&#x91CF;&#x8BBE;&#x7F6E;&#x4E3A;&#x6570;&#x5B57;&#x3002;&#x9ED8;&#x8BA4;&#x662F;&#x4E00;&#x3002;</td>
+</tr>
+<tr>
+<td valign="top">-n format </td>
+<td valign="top">&#x8BBE;&#x7F6E;&#x6570;&#x6570;&#x7684;&#x683C;&#x5F0F;&#xFF0C;&#x683C;&#x5F0F;&#x53EF;&#x4EE5;&#x662F;&#xFF1A;
+<p>ln = &#x5DE6;&#x504F;&#xFF0C;&#x6CA1;&#x6709;&#x524D;&#x5BFC;&#x96F6;&#x3002;</p>
+<p>rn = &#x53F3;&#x504F;&#xFF0C;&#x6CA1;&#x6709;&#x524D;&#x5BFC;&#x96F6;&#x3002;</p>
+<p>rz = &#x53F3;&#x504F;&#xFF0C;&#x6709;&#x524D;&#x5BFC;&#x96F6;&#x3002;</p></td>
+</tr>
+<tr>
+<td valign="top">-p</td>
+<td valign="top">&#x4E0D;&#x8981;&#x5728;&#x6CA1;&#x4E00;&#x4E2A;&#x903B;&#x8F91;&#x9875;&#x9762;&#x7684;&#x5F00;&#x59CB;&#x91CD;&#x8BBE;&#x9875;&#x9762;&#x6570;&#x3002;</td>
+</tr>
+<tr>
+<td valign="top">-s string </td>
+<td valign="top">&#x5728;&#x6CA1;&#x4E00;&#x4E2A;&#x884C;&#x7684;&#x672B;&#x5C3E;&#x52A0;&#x5B57;&#x7B26;&#x4F5C;&#x5206;&#x5272;&#x7B26;&#x53F7;&#x3002;&#x9ED8;&#x8BA4;&#x662F;&#x5355;&#x4E2A;&#x7684; tab&#x3002;</td>
+</tr>
+<tr>
+<td valign="top">-v number </td>
+<td valign="top">&#x5C06;&#x6BCF;&#x4E00;&#x4E2A;&#x903B;&#x8F91;&#x9875;&#x9762;&#x7684;&#x7B2C;&#x4E00;&#x884C;&#x8BBE;&#x7F6E;&#x6210;&#x6570;&#x5B57;&#x3002;&#x9ED8;&#x8BA4;&#x662F;&#x4E00;&#x3002;</td>
+</tr>
+<tr>
+<td valign="top">-w width  </td>
+<td valign="top">&#x5C06;&#x884C;&#x6570;&#x7684;&#x5BBD;&#x5EA6;&#x8BBE;&#x7F6E;&#xFF0C;&#x9ED8;&#x8BA4;&#x662F;&#x516D;&#x3002;</td>
+</tr>
+</table>
+
+<p>Admittedly, we probably won&#x2019;t be numbering lines that often, but we can use nl to look
+at how we can combine multiple tools to perform more complex tasks. We will build on
+our work in the previous chapter to produce a Linux distributions report. Since we will
+be using nl, it will be useful to include its header/body/footer markup. To do this, we
+will add it to the sed script from the last chapter. Using our text editor, we will change
+the script as follows and save it as distros-nl.sed:</p>
+<p>&#x5766;&#x8BDA;&#x7684;&#x8BF4;&#xFF0C;&#x6211;&#x4EEC;&#x5927;&#x6982;&#x4E0D;&#x4F1A;&#x90A3;&#x4E48;&#x9891;&#x7E41;&#x5730;&#x53BB;&#x6570;&#x884C;&#x6570;&#xFF0C;&#x4F46;&#x662F;&#x6211;&#x4EEC;&#x80FD;&#x7528; nl &#x53BB;&#x67E5;&#x770B;&#x6211;&#x4EEC;&#x600E;&#x4E48;&#x5C06;&#x591A;&#x4E2A;&#x5DE5;&#x5177;&#x7ED3;&#x5408;&#x5728;&#x4E00;&#x4E2A;&#x53BB;&#x5B8C;&#x6210;&#x66F4;&#x590D;&#x6742;&#x7684;&#x4EFB;&#x52A1;&#x3002;
+&#x6211;&#x4EEC;&#x5C06;&#x5728;&#x4E4B;&#x524D;&#x7AE0;&#x8282;&#x7684;&#x57FA;&#x7840;&#x4E0A;&#x505A;&#x4E00;&#x4E2A; Linux &#x53D1;&#x884C;&#x7248;&#x7684;&#x62A5;&#x544A;&#x3002;&#x56E0;&#x4E3A;&#x6211;&#x4EEC;&#x5C06;&#x4F7F;&#x7528; nl&#xFF0C;&#x5305;&#x542B;&#x5B83;&#x7684; header/body/footer &#x6807;&#x8BB0;&#x5C06;&#x4F1A;&#x5341;&#x5206;&#x6709;&#x7528;&#x3002;
+&#x6211;&#x4EEC;&#x5C06;&#x628A;&#x5B83;&#x52A0;&#x5230;&#x4E0A;&#x4E00;&#x7AE0;&#x7684; sed &#x811A;&#x672C;&#x6765;&#x505A;&#x8FD9;&#x4E2A;&#x3002;&#x4F7F;&#x7528;&#x6211;&#x4EEC;&#x7684;&#x6587;&#x672C;&#x7F16;&#x8F91;&#x5668;&#xFF0C;&#x6211;&#x4EEC;&#x5C06;&#x811A;&#x672C;&#x6539;&#x6210;&#x4E00;&#x4E0B;&#x5E76;&#x4E14;&#x628A;&#x5B83;&#x4FDD;&#x5B58;&#x6210; distros-nl.sed:</p>
+<pre><code># sed script to produce Linux distributions report
+1 i\
+\\:\\:\\:\
+\
+Linux Distributions Report\
+\
+Name
+Ver. Released\
+----
+---- --------\
+\\:\\:
+s/\([0-9]\{2\}\)\/\([0-9]\{2\}\)\/\([0-9]\{4\}\)$/\3-\1-\2/
+$ i\
+\\:\
+\
+End Of Report
+</code></pre><p>The script now inserts the nl logical page markup and adds a footer at the end of the
+report. Note that we had to double up the backslashes in our markup, because they are
+normally interpreted as an escape character by sed.</p>
+<p>&#x8FD9;&#x4E2A;&#x811A;&#x672C;&#x73B0;&#x5728;&#x52A0;&#x5165;&#x4E86; nl &#x7684;&#x903B;&#x8F91;&#x9875;&#x9762;&#x6807;&#x8BB0;&#x5E76;&#x4E14;&#x5728;&#x62A5;&#x544A;&#x7684;&#x6700;&#x540E;&#x52A0;&#x4E86;&#x4E00;&#x4E2A; footer&#x3002;&#x8BB0;&#x5F97;&#x6211;&#x4EEC;&#x5728;&#x6211;&#x4EEC;&#x7684;&#x6807;&#x8BB0;&#x4E2D;&#x5FC5;&#x987B;&#x4E24;&#x6B21;&#x4F7F;&#x7528;&#x53CD;&#x659C;&#x6760;&#xFF0C;
+&#x56E0;&#x4E3A;&#x4ED6;&#x4EEC;&#x901A;&#x5E38;&#x88AB; sed &#x89E3;&#x91CA;&#x6210;&#x4E00;&#x4E2A;&#x8F6C;&#x4E49;&#x5B57;&#x7B26;&#x3002;</p>
+<p>Next, we&#x2019;ll produce our enhanced report by combining sort, sed, and nl:</p>
+<p>&#x4E0B;&#x4E00;&#x6B65;&#xFF0C;&#x6211;&#x4EEC;&#x5C06;&#x7ED3;&#x5408; sort, sed, nl &#x6765;&#x751F;&#x6210;&#x6211;&#x4EEC;&#x6539;&#x8FDB;&#x7684;&#x62A5;&#x544A;&#xFF1A;</p>
+<pre><code>[me@linuxbox ~]$ sort -k 1,1 -k 2n distros.txt | sed -f distros-nl.sed | nl
+        Linux Distributions Report
+        Name    Ver.    Released
+        ----    ----    --------
+    1   Fedora  5       2006-03-20
+    2   Fedora  6       2006-10-24
+    3   Fedora  7       2007-05-31
+    4   Fedora  8       2007-11-08
+    5   Fedora  9       2008-05-13
+    6   Fedora  10      2008-11-25
+    7   SUSE    10.1    2006-05-11
+    8   SUSE    10.2    2006-12-07
+    9   SUSE    10.3    2007-10-04
+    10  SUSE    11.0    2008-06-19
+    11  Ubuntu  6.06    2006-06-01
+    12  Ubuntu  6.10    2006-10-26
+    13  Ubuntu  7.04    2007-04-19
+    14  Ubuntu  7.10    2007-10-18
+    15  Ubuntu  8.04    2008-04-24
+        End Of Report
+</code></pre><p>Our report is the result of our pipeline of commands. First, we sort the list by distribution
+name and version (fields one and two), then we process the results with sed, adding the
+report header (including the logical page markup for nl) and footer. Finally, we process
+the result with nl, which, by default, only numbers the lines of the text stream that
+belong to the body section of the logical page.</p>
+<p>&#x6211;&#x4EEC;&#x7684;&#x62A5;&#x544A;&#x662F;&#x4E00;&#x4E32;&#x547D;&#x4EE4;&#x7684;&#x7ED3;&#x679C;&#xFF0C;&#x9996;&#x5148;&#xFF0C;&#x6211;&#x4EEC;&#x7ED9;&#x540D;&#x5355;&#x6309;&#x53D1;&#x884C;&#x7248;&#x672C;&#x548C;&#x7248;&#x672C;&#x53F7;&#xFF08;&#x8868;&#x683C;1&#x548C;2&#x5904;&#xFF09;&#x8FDB;&#x884C;&#x6392;&#x5E8F;&#xFF0C;&#x7136;&#x540E;&#x6211;&#x4EEC;&#x7528; sed &#x751F;&#x4EA7;&#x7ED3;&#x679C;&#xFF0C;
+&#x589E;&#x52A0;&#x4E86; header&#xFF08;&#x5305;&#x62EC;&#x4E86;&#x4E3A; nl &#x589E;&#x52A0;&#x7684;&#x903B;&#x8F91;&#x9875;&#x9762;&#x6807;&#x8BB0;&#xFF09;&#x548C; footer&#x3002;&#x6700;&#x540E;&#xFF0C;&#x6211;&#x4EEC;&#x6309;&#x9ED8;&#x8BA4;&#x7528; nl &#x751F;&#x6210;&#x4E86;&#x7ED3;&#x679C;&#xFF0C;&#x53EA;&#x6570;&#x4E86;&#x5C5E;&#x4E8E;&#x903B;&#x8F91;&#x9875;&#x9762;&#x7684; body &#x90E8;&#x5206;&#x7684;
+&#x6587;&#x672C;&#x6D41;&#x7684;&#x884C;&#x6570;&#x3002;</p>
+<p>We can repeat the command and experiment with different options for nl. Some
+interesting ones are:</p>
+<p>&#x6211;&#x4EEC;&#x80FD;&#x591F;&#x91CD;&#x590D;&#x547D;&#x4EE4;&#x5E76;&#x4E14;&#x5B9E;&#x9A8C;&#x4E0D;&#x540C;&#x7684; nl &#x9009;&#x9879;&#x3002;&#x4E00;&#x4E9B;&#x6709;&#x8DA3;&#x7684;&#x65B9;&#x5F0F;&#xFF1A;</p>
+<pre><code>nl -n rz
+</code></pre><p>and</p>
+<p>&#x548C;</p>
+<pre><code>nl -w 3 -s &apos; &apos;
+</code></pre><h4 id="fold---&#x9650;&#x5236;&#x6587;&#x4EF6;&#x884C;&#x5BBD;">fold - &#x9650;&#x5236;&#x6587;&#x4EF6;&#x884C;&#x5BBD;</h4>
+<p>Folding is the process of breaking lines of text at a specified width. Like our other
+commands, fold accepts either one or more text files or standard input. If we send
+fold a simple stream of text, we can see how it works:</p>
+<p>&#x6298;&#x53E0;&#x662F;&#x5C06;&#x6587;&#x672C;&#x7684;&#x884C;&#x9650;&#x5236;&#x5230;&#x7279;&#x5B9A;&#x7684;&#x5BBD;&#x7684;&#x8FC7;&#x7A0B;&#x3002;&#x50CF;&#x6211;&#x4EEC;&#x7684;&#x5176;&#x4ED6;&#x547D;&#x4EE4;&#xFF0C;fold &#x63A5;&#x53D7;&#x4E00;&#x4E2A;&#x6216;&#x591A;&#x4E2A;&#x6587;&#x4EF6;&#x53CA;&#x6807;&#x51C6;&#x8F93;&#x5165;&#x3002;&#x5982;&#x679C;&#x6211;&#x4EEC;&#x5C06;
+&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x6587;&#x672C;&#x6D41; fold&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x5B83;&#x5DE5;&#x4F5C;&#x7684;&#x65B9;&#x5F0F;&#xFF1A;</p>
+<pre><code>[me@linuxbox ~]$ echo &quot;The quick brown fox jumped over the lazy dog.&quot;
+| fold -w 12
+The quick br
+own fox jump
+ed over the
+lazy dog.
+</code></pre><p>Here we see fold in action. The text sent by the echo command is broken into
+segments specified by the -w option. In this example, we specify a line width of twelve
+characters. If no width is specified, the default is eighty characters. Notice how the lines
+are broken regardless of word boundaries. The addition of the -s option will cause
+fold to break the line at the last available space before the line width is reached:</p>
+<p>&#x8FD9;&#x91CC;&#x6211;&#x4EEC;&#x770B;&#x5230;&#x4E86; fold &#x7684;&#x884C;&#x4E3A;&#x3002;&#x8FD9;&#x4E2A;&#x7528; echo &#x547D;&#x4EE4;&#x53D1;&#x9001;&#x7684;&#x6587;&#x672C;&#x7528; -w &#x9009;&#x9879;&#x5206;&#x89E3;&#x6210;&#x5757;&#x3002;&#x5728;&#x8FD9;&#x4E2A;&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x8BBE;&#x5B9A;&#x4E86;&#x884C;&#x5BBD;&#x4E3A;12&#x4E2A;&#x5B57;&#x7B26;&#x3002;
+&#x5982;&#x679C;&#x6CA1;&#x6709;&#x5B57;&#x7B26;&#x8BBE;&#x7F6E;&#xFF0C;&#x9ED8;&#x8BA4;&#x662F;80&#x3002;&#x6CE8;&#x610F;&#x5230;&#x6587;&#x672C;&#x884C;&#x4E0D;&#x4F1A;&#x56E0;&#x4E3A;&#x5355;&#x8BCD;&#x8FB9;&#x754C;&#x800C;&#x4E0D;&#x4F1A;&#x88AB;&#x5206;&#x89E3;&#x3002;&#x589E;&#x52A0;&#x7684; -s &#x9009;&#x9879;&#x5C06;&#x8BA9; fold &#x5206;&#x89E3;&#x5230;&#x6700;&#x540E;&#x53EF;&#x7528;&#x7684;&#x7A7A;&#x767D;
+&#x5B57;&#x7B26;&#xFF0C;&#x5373;&#x4F1A;&#x8003;&#x8651;&#x5355;&#x8BCD;&#x8FB9;&#x754C;&#x3002;</p>
+<pre><code>[me@linuxbox ~]$ echo &quot;The quick brown fox jumped over the lazy dog.&quot;
+| fold -w 12 -s
+The quick
+brown fox
+jumped over
+the lazy
+dog.
+</code></pre><h4 id="fmt---&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x6587;&#x672C;&#x683C;&#x5F0F;&#x5668;">fmt - &#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x6587;&#x672C;&#x683C;&#x5F0F;&#x5668;</h4>
+<p>The fmt program also folds text, plus a lot more. It accepts either files or standard input
+and performs paragraph formatting on the text stream. Basically, it fills and joins lines in
+text while preserving blank lines and indentation.</p>
+<p>fmt &#x7A0B;&#x5E8F;&#x540C;&#x6837;&#x6298;&#x53E0;&#x6587;&#x672C;&#xFF0C;&#x5916;&#x52A0;&#x5F88;&#x591A;&#x529F;&#x80FD;&#x3002;&#x5B83;&#x63A5;&#x53D7;&#x6587;&#x672C;&#x6216;&#x6807;&#x51C6;&#x8F93;&#x5165;&#x5E76;&#x4E14;&#x5728;&#x6587;&#x672C;&#x6D41;&#x4E0A;&#x5448;&#x73B0;&#x7167;&#x7247;&#x8F6C;&#x6362;&#x3002;&#x57FA;&#x7840;&#x6765;&#x8BF4;&#xFF0C;&#x4ED6;&#x586B;&#x8865;&#x5E76;&#x4E14;&#x5C06;&#x6587;&#x672C;&#x7C98;&#x5E16;&#x5728;
+&#x4E00;&#x8D77;&#x5E76;&#x4E14;&#x4FDD;&#x7559;&#x4E86;&#x7A7A;&#x767D;&#x7B26;&#x548C;&#x7F29;&#x8FDB;&#x3002;</p>
+<p>To demonstrate, we&#x2019;ll need some text. Let&#x2019;s lift some from the fmt info page:</p>
+<p>&#x4E3A;&#x4E86;&#x89E3;&#x91CA;&#xFF0C;&#x6211;&#x4EEC;&#x5C06;&#x9700;&#x8981;&#x4E00;&#x4E9B;&#x6587;&#x672C;&#x3002;&#x8BA9;&#x6211;&#x4EEC;&#x6284;&#x4E00;&#x4E9B; fmt &#x4E3B;&#x9875;&#x4E0A;&#x7684;&#x4E1C;&#x897F;&#x5427;&#xFF1A;</p>
+<pre><code>&#x2018;fmt&#x2019; reads from the specified FILE arguments (or standard input if
+none are given), and writes to standard output.
+
+   By default, blank lines, spaces between words, and indentation are
+preserved in the output; successive input lines with different
+indentation are not joined; tabs are expanded on input and introduced on
+output.
+
+   &#x2018;fmt&#x2019; prefers breaking lines at the end of a sentence, and tries to
+avoid line breaks after the first word of a sentence or before the last
+word of a sentence.  A &quot;sentence break&quot; is defined as either the end of
+a paragraph or a word ending in any of &#x2018;.?!&#x2019;, followed by two spaces or
+end of line, ignoring any intervening parentheses or quotes.  Like TeX,
+&#x2018;fmt&#x2019; reads entire &#x201C;paragraphs&#x201D; before choosing line breaks; the
+algorithm is a variant of that given by Donald E. Knuth and Michael F.
+Plass in &#x201C;Breaking Paragraphs Into Lines&#x201D;, &#x2018;Software&#x2014;Practice &amp;
+Experience&#x2019; 11, 11 (November 1981), 1119&#x2013;1184.
+</code></pre><p>We&#x2019;ll copy this text into our text editor and save the file as fmt-info.txt. Now, let&#x2019;s
+say we wanted to reformat this text to fit a fifty character wide column. We could do this
+by processing the file with fmt and the -w option:</p>
+<p>&#x6211;&#x4EEC;&#x5C06;&#x628A;&#x8FD9;&#x6BB5;&#x6587;&#x672C;&#x590D;&#x5236;&#x8FDB;&#x6211;&#x4EEC;&#x7684;&#x6587;&#x672C;&#x7F16;&#x8F91;&#x5668;&#x5E76;&#x4E14;&#x4FDD;&#x5B58;&#x6587;&#x4EF6;&#x540D;&#x4E3A; fmt-info.txt&#x3002;&#x73B0;&#x5728;&#xFF0C;&#x8BA9;&#x6211;&#x4EEC;&#x91CD;&#x65B0;&#x683C;&#x5F0F;&#x8FD9;&#x4E2A;&#x6587;&#x672C;&#x5E76;&#x4E14;&#x8BA9;&#x5B83;&#x6210;&#x4E3A;&#x4E00;&#x4E2A;50
+&#x4E2A;&#x5B57;&#x7B26;&#x5BBD;&#x7684;&#x9879;&#x76EE;&#x3002;&#x6211;&#x4EEC;&#x80FD;&#x7528; -w &#x9009;&#x9879;&#x5BF9;&#x6587;&#x4EF6;&#x8FDB;&#x884C;&#x5904;&#x7406;&#xFF1A;</p>
+<pre><code>[me@linuxbox ~]$ fmt -w 50 fmt-info.txt | head
+&apos;fmt&apos; reads from the specified FILE arguments
+(or standard input if
+none are given), and writes to standard output.
+By default, blank lines, spaces between words,
+and indentation are
+preserved in the output; successive input lines
+with different indentation are not joined; tabs
+are expanded on input and introduced on output.
+</code></pre><p>Well, that&#x2019;s an awkward result. Perhaps we should actually read this text, since it explains what&#x2019;s going on:</p>
+<p>&#x597D;&#xFF0C;&#x8FD9;&#x771F;&#x662F;&#x4E00;&#x4E2A;&#x5947;&#x602A;&#x7684;&#x7ED3;&#x679C;&#x3002;&#x5927;&#x6982;&#x6211;&#x4EEC;&#x5E94;&#x8BE5;&#x8BA4;&#x771F;&#x7684;&#x9605;&#x8BFB;&#x8FD9;&#x6BB5;&#x6587;&#x672C;&#xFF0C;&#x56E0;&#x4E3A;&#x5B83;&#x6070;&#x597D;&#x89E3;&#x91CA;&#x4E86;&#x53D1;&#x751F;&#x4E86;&#x4EC0;&#x4E48;&#xFF1A;</p>
+<p>&#x201C;By default, blank lines, spaces between words, and indentation are preserved in the
+output; successive input lines with different indentation are not joined; tabs are
+expanded on input and introduced on output.&#x201D;</p>
+<p>&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x8F93;&#x51FA;&#x4F1A;&#x4FDD;&#x7559;&#x7A7A;&#x884C;&#xFF0C;&#x5355;&#x8BCD;&#x4E4B;&#x95F4;&#x7684;&#x7A7A;&#x683C;&#xFF0C;&#x548C;&#x7F29;&#x8FDB;&#xFF1B;&#x6301;&#x7EED;&#x8F93;&#x5165;&#x7684;&#x5177;&#x6709;&#x4E0D;&#x540C;&#x7F29;&#x8FDB;&#x7684;&#x6587;&#x672C;&#x884C;&#x4E0D;&#x4F1A;&#x8FDE;&#x63A5;&#x5728;&#x4E00;&#x8D77;&#xFF1B;tab &#x5B57;&#x7B26;&#x5728;&#x8F93;&#x5165;&#x65F6;&#x4F1A;&#x5C55;&#x5F00;&#xFF0C;&#x8F93;&#x51FA;&#x65F6;&#x590D;&#x539F; &#x3002;</p>
+<p>So, fmt is preserving the indentation of the first line. Fortunately, fmt provides an
+option to correct this:</p>
+<p>&#x6240;&#x4EE5;&#xFF0C;fmt &#x4F1A;&#x4FDD;&#x7559;&#x7B2C;&#x4E00;&#x884C;&#x7684;&#x7F29;&#x8FDB;&#x3002;&#x5E78;&#x8FD0;&#x7684;&#x662F;&#xFF0C;fmt &#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4E2A;&#x9009;&#x9879;&#x6765;&#x66F4;&#x6B63;&#x8FD9;&#x79CD;&#x884C;&#x4E3A;&#xFF1A;</p>
+<p>Much better. By adding the -c option, we now have the desired result.</p>
+<p>&#x597D;&#x591A;&#x4E86;&#x3002;&#x901A;&#x8FC7;&#x6DFB;&#x52A0; -c &#x9009;&#x9879;&#xFF0C;&#x73B0;&#x5728;&#x6211;&#x4EEC;&#x5F97;&#x5230;&#x4E86;&#x6240;&#x671F;&#x671B;&#x7684;&#x7ED3;&#x679C;&#x3002;</p>
+<p>fmt has some interesting options:</p>
+<p>fmt &#x6709;&#x4E00;&#x4E9B;&#x6709;&#x610F;&#x601D;&#x7684;&#x9009;&#x9879;&#xFF1A;</p>
+<p>The -p option is particularly interesting. With it, we can format selected portions of a
+file, provided that the lines to be formatted all begin with the same sequence of
+characters. Many programming languages use the pound sign (#) to indicate the
+beginning of a comment and thus can be formatted using this option. Let&#x2019;s create a file
+that simulates a program that uses comments:</p>
+<p>&#x8FD9;&#x4E2A; -p &#x9009;&#x9879;&#x5C24;&#x4E3A;&#x6709;&#x8DA3;&#x3002;&#x901A;&#x8FC7;&#x5B83;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x683C;&#x5F0F;&#x6587;&#x4EF6;&#x9009;&#x4E2D;&#x7684;&#x90E8;&#x5206;&#xFF0C;&#x901A;&#x8FC7;&#x5728;&#x5F00;&#x5934;&#x4F7F;&#x7528;&#x4E00;&#x6837;&#x7684;&#x7B26;&#x53F7;&#x3002;
+&#x5F88;&#x591A;&#x7F16;&#x7A0B;&#x8BED;&#x8A00;&#x4F7F;&#x7528;&#x951A;&#x6807;&#x8BB0;&#xFF08;#&#xFF09;&#x53BB;&#x63D0;&#x9192;&#x6CE8;&#x91CA;&#x7684;&#x5F00;&#x59CB;&#xFF0C;&#x800C;&#x4E14;&#x5B83;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x8FD9;&#x4E2A;&#x9009;&#x9879;&#x6765;&#x88AB;&#x683C;&#x5F0F;&#x3002;&#x8BA9;&#x6211;&#x4EEC;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x6709;&#x7528;&#x5230;&#x6CE8;&#x91CA;&#x7684;&#x7A0B;&#x5E8F;&#x3002;</p>
+<pre><code>[me@linuxbox ~]$ cat &gt; fmt-code.txt
+# This file contains code with comments.
+
+# This line is a comment.
+# Followed by another comment line.
+# And another.
+
+This, on the other hand, is a line of code.
+And another line of code.
+And another.
+</code></pre><p>Our sample file contains comments which begin the string &#x201C;# &#x201C; (a # followed by a space)
+and lines of &#x201C;code&#x201D; which do not. Now, using fmt, we can format the comments and
+leave the code untouched:</p>
+<p>&#x6211;&#x4EEC;&#x7684;&#x793A;&#x4F8B;&#x6587;&#x4EF6;&#x5305;&#x542B;&#x4E86;&#x7528; &#x201C;#&#x201D; &#x5F00;&#x59CB;&#x7684;&#x6CE8;&#x91CA;&#xFF08;&#x4E00;&#x4E2A; # &#x540E;&#x8DDF;&#x7740;&#x4E00;&#x4E2A;&#x7A7A;&#x767D;&#x7B26;&#xFF09;&#x548C;&#x4EE3;&#x7801;&#x3002;&#x73B0;&#x5728;&#xFF0C;&#x4F7F;&#x7528; fmt&#xFF0C;&#x6211;&#x4EEC;&#x80FD;&#x683C;&#x5F0F;&#x6CE8;&#x91CA;&#x5E76;&#x4E14;
+&#x4E0D;&#x8BA9;&#x4EE3;&#x7801;&#x88AB;&#x89E6;&#x53CA;&#x3002;</p>
+<pre><code>[me@linuxbox ~]$ fmt -w 50 -p &apos;# &apos; fmt-code.txt
+# This file contains code with comments.
+
+# This line is a comment. Followed by another
+# comment line. And another.
+
+This, on the other hand, is a line of code.
+And another line of code.
+And another.
+</code></pre><p>Notice that the adjoining comment lines are joined, while the blank lines and the lines
+that do not begin with the specified prefix are preserved.</p>
+<p>&#x6CE8;&#x610F;&#x76F8;&#x90BB;&#x7684;&#x6CE8;&#x91CA;&#x884C;&#x88AB;&#x5408;&#x5E76;&#x4E86;&#xFF0C;&#x7A7A;&#x884C;&#x548C;&#x975E;&#x6CE8;&#x91CA;&#x884C;&#x88AB;&#x4FDD;&#x7559;&#x4E86;&#x3002;</p>
+<h4 id="pr-&#x2013;-&#x683C;&#x5F0F;&#x5316;&#x6253;&#x5370;&#x6587;&#x672C;">pr &#x2013; &#x683C;&#x5F0F;&#x5316;&#x6253;&#x5370;&#x6587;&#x672C;</h4>
+<p>The pr program is used to paginate text. When printing text, it is often desirable to separate
+the pages of output with several lines of whitespace, to provide a top and bottom
+margin for each page. Further, this whitespace can be used to insert a header and footer
+on each page.</p>
+<p>pr &#x7A0B;&#x5E8F;&#x7528;&#x6765;&#x628A;&#x6587;&#x672C;&#x5206;&#x9875;&#x3002;&#x5F53;&#x6253;&#x5370;&#x6587;&#x672C;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x7ECF;&#x5E38;&#x5E0C;&#x671B;&#x7528;&#x51E0;&#x4E2A;&#x7A7A;&#x884C;&#x628A;&#x8F93;&#x51FA;&#x7684;&#x9875;&#x9762;</p>
+<p>We&#x2019;ll demonstrate pr by formatting our distros.txt file into a series of very short
+pages (only the first two pages are shown):</p>
+<pre><code>[me@linuxbox ~]$ pr -l 15 -w 65 distros.txt
+2008-12-11 18:27        distros.txt         Page 1
+
+
+SUSE        10.2     12/07/2006
+Fedora      10       11/25/2008
+SUSE        11.0     06/19/2008
+Ubuntu      8.04     04/24/2008
+Fedora      8        11/08/2007
+
+
+2008-12-11 18:27        distros.txt         Page 2
+
+
+SUSE        10.3     10/04/2007
+Ubuntu      6.10     10/26/2006
+Fedora      7        05/31/2007
+Ubuntu      7.10     10/18/2007
+Ubuntu      7.04     04/19/2007
+</code></pre><p>In this example, we employ the -l option (for page length) and the -w option (page
+width) to define a &#x201C;page&#x201D; that is 65 columns wide and 15 lines long. pr paginates the
+contents of the distros.txt file, separates each page with several lines of whitespace
+and creates a default header containing the file modification time, filename, and page
+number. The pr program provides many options to control page layout. We&#x2019;ll take a look
+at more of them in the next chapter.</p>
+<h4 id="printf-&#x2013;-format-and-print-data">printf &#x2013; Format And Print Data</h4>
+<p>Unlike the other commands in this chapter, the printf command is not used for pipelines
+(it does not accept standard input) nor does it find frequent application directly on
+the command line (it&#x2019;s mostly used in scripts). So why is it important? Because it is so
+widely used.</p>
+<p>printf (from the phrase &#x201C;print formatted&#x201D;) was originally developed for the C programming
+language and has been implemented in many programming languages including
+the shell. In fact, in bash, printf is a builtin.
+printf works like this:</p>
+<pre><code>printf &#x201C;format&#x201D; arguments
+</code></pre><p>The command is given a string containing a format description which is then applied to a
+list of arguments. The formatted result is sent to standard output. Here is a trivial example:</p>
+<pre><code>[me@linuxbox ~]$ printf &quot;I formatted the string: %s\n&quot; foo
+I formatted the string: foo
+</code></pre><p>The format string may contain literal text (like &#x201C;I formatted the string:&#x201D;), escape sequences
+(such as \n, a newline character), and sequences beginning with the % character,
+which are called conversion specifications. In the example above, the conversion specification
+%s is used to format the string &#x201C;foo&#x201D; and place it in the command&#x2019;s output. Here it
+is again:</p>
+<pre><code>[me@linuxbox ~]$ printf &quot;I formatted &apos;%s&apos; as a string.\n&quot; foo
+I formatted &apos;foo&apos; as a string.
+</code></pre><p>As we can see, the %s conversion specification is replaced by the string &#x201C;foo&#x201D; in the command&#x2019;s
+output. The s conversion is used to format string data. There are other specifiers
+for other kinds of data. This table lists the commonly used data types:</p>
+<table class="multi">
+<caption class="cap">Table 22-5: printf Conversion Specification Components </caption>
+<tr>
+<th class="title">Component</th>
+<th class="title">Description</th>
+</tr>
+<tr>
+<td valign="top">d</td>
+<td valign="top">Format a number as a signed decimal integer.</td>
+</tr>
+<tr>
+<td valign="top">f</td>
+<td valign="top">Format and output a floating point number.</td>
+</tr>
+<tr>
+<td valign="top">o</td>
+<td valign="top">Format an integer as an octal number.</td>
+</tr>
+<tr>
+<td valign="top">s</td>
+<td valign="top">Format a string.</td>
+</tr>
+<tr>
+<td valign="top">x</td>
+<td valign="top">Format an integer as a hexadecimal number using lowercase a-f where
+needed.</td>
+</tr>
+<tr>
+<td valign="top">X</td>
+<td valign="top">Same as x but use uppercase letters.</td>
+</tr>
+<tr>
+<td valign="top">%</td>
+<td valign="top">Print a literal % symbol (i.e., specify &#x201C;%%&#x201D;)</td>
+</tr>
+</table>
+
+<p>We&#x2019;ll demonstrate the effect each of the conversion specifiers on the string &#x201C;380&#x201D;:</p>
+<pre><code>[me@linuxbox ~]$ printf &quot;%d, %f, %o, %s, %x, %X\n&quot; 380 380 380 380
+380 380
+380, 380.000000, 574, 380, 17c, 17C
+</code></pre><p>Since we specified six conversion specifiers, we must also supply six arguments for
+printf to process. The six results show the effect of each specifier.
+Several optional components may be added to the conversion specifier to adjust its output.
+A complete conversion specification may consist of the following:</p>
+<pre><code>%[flags][width][.precision]conversion_specification
+</code></pre><p>Multiple optional components, when used, must appear in the order specified above to be
+properly interpreted. Here is a description of each:</p>
+<table class="multi">
+<caption class="cap">Table 22-5: printf Conversion Specification Components</caption>
+<tr>
+<th class="title">Component</th>
+<th class="title">Description</th>
+</tr>
+<tr>
+<td valign="top" width="25%">flags</td>
+<td valign="top">There are five different flags:
+<p># &#x2013; Use the &#x201C;alternate format&#x201D; for output. This varies by data
+type. For o (octal number) conversion, the output is prefixed with
+0. For x and X (hexadecimal number) conversions, the output is
+prefixed with 0x or 0X respectively.</p>
+<p>0&#x2013;(zero) Pad the output with zeros. This means that the field will
+be filled with leading zeros, as in &#x201C;000380&#x201D;.</p>
+<p>- &#x2013; (dash) Left-align the output. By default, printf right-aligns
+output.</p>
+<p>&#x2018; &#x2019; &#x2013; (space) Produce a leading space for positive numbers.</p>
+<p>+ &#x2013; (plus sign) Sign positive numbers. By default, printf only signs negative numbers.</p>
+</td>
+</tr>
+<tr>
+<td valign="top">width</td>
+<td valign="top">A number specifying the minimum field width.</td>
+</tr>
+<tr>
+<td valign="top">.precision</td>
+<td valign="top">For floating point numbers, specify the number of digits of
+precision to be output after the decimal point. For string conversion, precision specifies the number of characters to output.</td>
+</tr>
+</table>
+
+<p>Here are some examples of different formats in action:</p>
+<table class="multi">
+<caption class="cap">Table 22-6: print Conversion Specification Examples</caption>
+<tr>
+<th class="title">Argument</th>
+<th class="title">Format</th>
+<th class="title">Result</th>
+<th class="title">Notes</th>
+</tr>
+<tr>
+<td valign="top">380</td>
+<td valign="top">&quot;%d&quot;</td>
+<td valign="top">380</td>
+<td valign="top">Simple formatting of an integer.</td>
+</tr>
+<tr>
+<td valign="top">380</td>
+<td valign="top">&quot;%#x&quot;</td>
+<td valign="top">0x17c</td>
+<td valign="top">Integer formatted as a hexadecimal number using the &#x201C;alternate format&#x201D; flag.</td>
+</tr>
+<tr>
+<td valign="top">380</td>
+<td valign="top">&quot;%05d&quot;</td>
+<td valign="top">00380</td>
+<td valign="top">Integer formatted with leading zeros (padding) and a minimum field width of five characters.</td>
+</tr>
+<tr>
+<td valign="top">380</td>
+<td valign="top">&quot;%05.5f&quot;</td>
+<td valign="top">380.00000</td>
+<td valign="top">Number formatted as a floating point number with padding and five decimal places of precision. Since the specified minimum field width (5) is less than the actual width of the formatted number, the padding has no effect.</td>
+</tr>
+<tr>
+<td valign="top">380</td>
+<td valign="top">&quot;%010.5f&quot;</td>
+<td valign="top">0380.00000</td>
+<td valign="top">By increasing the minimum field width to 10 the padding is now visible.</td>
+</tr>
+<tr>
+<td valign="top">380</td>
+<td valign="top">&quot;%+d&quot;</td>
+<td valign="top">+380</td>
+<td valign="top">The + flag signs a positive number.</td>
+</tr>
+<tr>
+<td valign="top">380</td>
+<td valign="top">&quot;%-d&quot;</td>
+<td valign="top">380</td>
+<td valign="top">The - flag left aligns the formatting.</td>
+</tr>
+<tr>
+<td valign="top">abcdefghijk</td>
+<td valign="top">&quot;%5s&quot;</td>
+<td valign="top">abcedfghijk</td>
+<td valign="top">A string formatted with a minimum field width.</td>
+</tr>
+<tr>
+<td valign="top">abcdefghijk</td>
+<td valign="top">&quot;%d&quot;</td>
+<td valign="top">abcde</td>
+<td valign="top">By applying precision to a string, it is truncated.</td>
+</tr>
+</table>
+
+<p>Again, printf is used mostly in scripts where it is employed to format tabular data,
+rather than on the command line directly. But we can still show how it can be used to
+solve various formatting problems. First, let&#x2019;s output some fields separated by tab characters:</p>
+<pre><code>[me@linuxbox ~]$ printf &quot;%s\t%s\t%s\n&quot; str1 str2 str3
+str1 str2 str3
+</code></pre><p>By inserting \t (the escape sequence for a tab), we achieve the desired effect. Next,
+some numbers with neat formatting:</p>
+<pre><code>[me@linuxbox ~]$ printf &quot;Line: %05d %15.3f Result: %+15d\n&quot; 1071
+3.14156295 32589
+Line: 01071 3.142 Result: +32589
+</code></pre><p>This shows the effect of minimum field width on the spacing of the fields. Or how about
+formatting a tiny web page:</p>
+<pre><code>[me@linuxbox ~]$ printf &quot;&lt;html&gt;\n\t&lt;head&gt;\n\t\t&lt;title&gt;%s&lt;/title&gt;\n
+\t&lt;/head&gt;\n\t&lt;body&gt;\n\t\t&lt;p&gt;%s&lt;/p&gt;\n\t&lt;/body&gt;\n&lt;/html&gt;\n&quot; &quot;Page Tit
+le&quot; &quot;Page Content&quot;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;Page Title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;p&gt;Page Content&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre><h3 id="document-formatting-systems">Document Formatting Systems</h3>
+<p>So far, we have examined the simple text-formatting tools. These are good for small, sim-</p>
+<p>ple tasks, but what about larger jobs? One of the reasons that Unix became a popular operating
+system among technical and scientific users (aside from providing a powerful
+multitasking, multiuser environment for all kinds of software development) is that it offered
+tools that could be used to produce many types of documents, particularly scientific
+and academic publications. In fact, as the GNU documentation describes, document
+preparation was instrumental to the development of Unix:</p>
+<p>The first version of UNIX was developed on a PDP-7 which was sitting around Bell
+Labs. In 1971 the developers wanted to get a PDP-11 for further work on the
+operating system. In order to justify the cost for this system, they proposed that they
+would implement a document formatting system for the AT&amp;T patents division. This
+first formatting program was a reimplementation of McIllroy&apos;s `roff&apos;, written by J.
+F. Ossanna.</p>
+<p>Two main families of document formatters dominate the field: those descended from the
+original roff program, including nroff and troff, and those based on Donald
+Knuth&#x2019;s TEX (pronounced &#x201C;tek&#x201D;) typesetting system. And yes, the dropped &#x201C;E&#x201D; in the
+middle is part of its name.</p>
+<p>The name &#x201C;roff&#x201D; is derived from the term &#x201C;run off&#x201D; as in, &#x201C;I&#x2019;ll run off a copy for you.&#x201D;
+The nroff program is used to format documents for output to devices that use
+monospaced fonts, such as character terminals and typewriter-style printers. At the time
+of its introduction, this included nearly all printing devices attached to computers. The
+later troff program formats documents for output on typesetters, devices used to produce
+&#x201C;camera-ready&#x201D; type for commercial printing. Most computer printers today are able
+to simulate the output of typesetters. The roff family also includes some other programs
+that are used to prepare portions of documents. These include eqn (for mathematical
+equations) and tbl (for tables).</p>
+<p>The TEX system (in stable form) first appeared in 1989 and has, to some degree, displaced
+troff as the tool of choice for typesetter output. We won&#x2019;t be covering TEX
+here, due both to its complexity (there are entire books about it) and to the fact that it is
+not installed by default on most modern Linux systems.</p>
+<hr>
+<p>Tip: For those interested in installing TEX, check out the texlive package
+which can be found in most distribution repositories, and the LyX graphical content
+editor.</p>
+<hr>
+<h4 id="groff">groff</h4>
+<p>groff is a suite of programs containing the GNU implementation of troff. It also includes
+a script that is used to emulate nroff and the rest of the roff family as well.</p>
+<p>While roff and its descendants are used to make formatted documents, they do it in a
+way that is rather foreign to modern users. Most documents today are produced using
+word processors that are able to perform both the composition and layout of a document
+in a single step. Prior to the advent of the graphical word processor, documents were often
+produced in a two-step process involving the use of a text editor to perform composition,
+and a processor, such as troff, to apply the formatting. Instructions for the formatting
+program were embedded into the composed text through the use of a markup language.
+The modern analog for such a process is the web page, which is composed using a
+text editor of some kind and then rendered by a web browser using HTML as the markup
+language to describe the final page layout.</p>
+<p>We&#x2019;re not going to cover groff in its entirety, as many elements of its markup language
+deal with rather arcane details of typography. Instead we will concentrate on one of its
+macro packages that remains in wide use. These macro packages condense many of its
+low-level commands into a smaller set of high-level commands that make using groff
+much easier.</p>
+<p>For a moment, let&#x2019;s consider the humble man page. It lives in the /usr/share/man
+directory as a gzip compressed text file. If we were to examine its uncompressed contents,
+we would see the following (the man page for ls in section 1 is shown):</p>
+<pre><code>[me@linuxbox ~]$ zcat /usr/share/man/man1/ls.1.gz | head
+.\&quot; DO NOT MODIFY THIS FILE! It was generated by help2man 1.35.
+.TH LS &quot;1&quot; &quot;April 2008&quot; &quot;GNU coreutils 6.10&quot; &quot;User Commands&quot;
+.SH NAME
+ls \- list directory contents
+.SH SYNOPSIS
+.B ls
+[\fIOPTION\fR]... [\fIFILE\fR]...
+.SH DESCRIPTION
+.\&quot; Add any additional description here
+.PP
+</code></pre><p>Compared to the man page in its normal presentation, we can begin to see a correlation
+between the markup language and its results:</p>
+<pre><code>[me@linuxbox ~]$ man ls | head
+LS(1) User Commands LS(1)
+NAME
+ls - list directory contents
+
+SYNOPSIS
+ls [OPTION]... [FILE]...
+</code></pre><p>The reason this is of interest is that man pages are rendered by groff, using the mandoc
+macro package. In fact, we can simulate the man command with the following pipeline:</p>
+<pre><code>[me@linuxbox ~]$ zcat /usr/share/man/man1/ls.1.gz | groff -mandoc -T
+ascii | head
+LS(1) User Commands LS(1)
+NAME
+ls - list directory contents
+SYNOPSIS
+ls [OPTION]... [FILE]...
+</code></pre><p>Here we use the groff program with the options set to specify the mandoc macro
+package and the output driver for ASCII. groff can produce output in several formats.
+If no format is specified, PostScript is output by default:</p>
+<pre><code>[me@linuxbox ~]$ zcat /usr/share/man/man1/ls.1.gz | groff -mandoc |
+head
+%!PS-Adobe-3.0
+%%Creator: groff version 1.18.1
+%%CreationDate: Thu Feb 5 13:44:37 2009
+%%DocumentNeededResources: font Times-Roman
+%%+ font Times-Bold
+%%+ font Times-Italic
+%%DocumentSuppliedResources: procset grops 1.18 1
+%%Pages: 4
+%%PageOrder: Ascend
+%%Orientation: Portrait
+</code></pre><p>We briefly mentioned PostScript in the previous chapter, and will again in the next chapter.
+PostScript is a page description language that is used to describe the contents of a
+printed page to a typesetter-like device. If we take the output of our command and store it
+to a file (assuming that we are using a graphical desktop with a Desktop directory):</p>
+<pre><code>[me@linuxbox ~]$ zcat /usr/share/man/man1/ls.1.gz | groff -mandoc &gt;
+~/Desktop/foo.ps
+</code></pre><p>An icon for the output file should appear on the desktop. By double-clicking the icon, a
+page viewer should start up and reveal the file in its rendered form:</p>
+<p>Figure 4: Viewing PostScript Output With A Page Viewer In GNOME</p>
+<p>What we see is a nicely typeset man page for ls! In fact, it&#x2019;s possible to convert the Post-
+Script file into a PDF (Portable Document Format) file with this command:</p>
+<pre><code>[me@linuxbox ~]$ ps2pdf ~/Desktop/foo.ps ~/Desktop/ls.pdf
+</code></pre><p>The ps2pdf program is part of the ghostscript package, which is installed on most
+Linux systems that support printing.</p>
+<hr>
+<p>Tip: Linux systems often include many command line programs for file format
+conversion. They are often named using the convention of format2format. Try using the command</p>
+<pre><code>ls /usr/bin/*[[:alpha:]]2[[:alpha:]]*
+</code></pre><p>to identify them. Also try searching for programs named formattoformat.</p>
+<hr>
+<p>For our last exercise with groff, we will revisit our old friend distros.txt once
+more. This time, we will use the tbl program which is used to format tables to typeset
+our list of Linux distributions. To do this, we are going to use our earlier sed script to
+add markup to a text stream that we will feed to groff.</p>
+<p>First, we need to modify our sed script to add the necessary requests that tbl requires.
+Using a text editor, we will change distros.sed to the following:</p>
+<pre><code># sed script to produce Linux distributions report
+1 i\
+.TS\
+center box;\
+cb s s\
+cb cb cb\
+l n c.\
+Linux Distributions Report\
+=\
+Name Version Released\
+_
+s/\([0-9]\{2\}\)\/\([0-9]\{2\}\)\/\([0-9]\{4\}\)$/\3-\1-\2/
+$ a\
+.TE
+</code></pre><p>Note that for the script to work properly, care must been taken to see that the words
+&#x201C;Name Version Released&#x201D; are separated by tabs, not spaces. We&#x2019;ll save the resulting file
+as distros-tbl.sed. tbl uses the .TS and .TE requests to start and end the table.
+The rows following the .TS request define global properties of the table which, for our
+example, are centered horizontally on the page and surrounded by a box. The remaining
+lines of the definition describe the layout of each table row. Now, if we run our reportgenerating
+pipeline again with the new sed script, we&#x2019;ll get the following :</p>
+<pre><code>[me@linuxbox ~]$ sort -k 1,1 -k 2n distros.txt | sed -f distros-tbl
+.sed | groff -t -T ascii 2&gt;/dev/null
++------------------------------+
+| Linux Distributions Report |
++------------------------------+
+| Name Version Released |
++------------------------------+
+|Fedora 5 2006-03-20 |
+|Fedora 6 2006-10-24 |
+|Fedora 7 2007-05-31 |
+|Fedora 8 2007-11-08 |
+|Fedora 9 2008-05-13 |
+|Fedora 10 2008-11-25 |
+|SUSE 10.1 2006-05-11 |
+|SUSE 10.2 2006-12-07 |
+|SUSE 10.3 2007-10-04 |
+|SUSE 11.0 2008-06-19 |
+|Ubuntu 6.06 2006-06-01 |
+|Ubuntu 6.10 2006-10-26 |
+|Ubuntu 7.04 2007-04-19 |
+|Ubuntu 7.10 2007-10-18 |
+|Ubuntu 8.04 2008-04-24 |
+|Ubuntu 8.10 2008-10-30 |
++------------------------------+
+</code></pre><p>Adding the -t option to groff instructs it to pre-process the text stream with tbl.
+Likewise, the -T option is used to output to ASCII rather than the default output medium,
+PostScript.</p>
+<p>The format of the output is the best we can expect if we are limited to the capabilities of a
+terminal screen or typewriter-style printer. If we specify PostScript output and graphically
+view the resulting output, we get a much more satisfying result:</p>
+<pre><code>[me@linuxbox ~]$ sort -k 1,1 -k 2n distros.txt | sed -f distros-tbl
+.sed | groff -t &gt; ~/Desktop/foo.ps
+</code></pre><p>Figure 5: Viewing The Finished Table</p>
+<h3 id="summing-up">Summing Up</h3>
+<p>Given that text is so central to the character of Unix-like operating systems, it makes
+sense that there would be many tools that are used to manipulate and format text. As we
+have seen, there are! The simple formatting tools like fmt and pr will find many uses in
+scripts that produce short documents, while groff (and friends) can be used to write
+books. We may never write a technical paper using command line tools (though there are
+many people who do!), but it&#x2019;s good to know that we could.</p>
+<h3 id="further-reading">Further Reading</h3>
+<ul>
+<li><p>groff User&#x2019;s Guide</p>
+<p><a href="http://www.gnu.org/software/groff/manual/" target="_blank">http://www.gnu.org/software/groff/manual/</a></p>
+</li>
+<li><p>Writing Papers With nroff Using -me:</p>
+<p><a href="http://docs.freebsd.org/44doc/usd/19.memacros/paper.pdf" target="_blank">http://docs.freebsd.org/44doc/usd/19.memacros/paper.pdf</a></p>
+</li>
+<li><p>-me Reference Manual:</p>
+<p><a href="http://docs.freebsd.org/44doc/usd/20.meref/paper.pdf" target="_blank">http://docs.freebsd.org/44doc/usd/20.meref/paper.pdf</a></p>
+</li>
+<li><p>Tbl &#x2013; A Program To Format Tables:</p>
+<p><a href="http://plan9.bell-labs.com/10thEdMan/tbl.pdf" target="_blank">http://plan9.bell-labs.com/10thEdMan/tbl.pdf</a></p>
+</li>
+<li><p>And, of course, try the following articles at Wikipedia:</p>
+<p><a href="http://en.wikipedia.org/wiki/TeX" target="_blank">http://en.wikipedia.org/wiki/TeX</a></p>
+<p><a href="http://en.wikipedia.org/wiki/Donald_Knuth" target="_blank">http://en.wikipedia.org/wiki/Donald_Knuth</a></p>
+<p><a href="http://en.wikipedia.org/wiki/Typesetting" target="_blank">http://en.wikipedia.org/wiki/Typesetting</a></p>
+</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="chap21.html" class="navigation navigation-prev " aria-label="Previous page: 21. 文本处理">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="chap23.html" class="navigation navigation-next " aria-label="Next page: 23. 打印">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"layout":"book","title":"22. 格式化输出","level":"1.1.22","depth":2,"next":{"title":"23. 打印","level":"1.1.23","depth":2,"path":"chap23.md","ref":"chap23.md","articles":[]},"previous":{"title":"21. 文本处理","level":"1.1.21","depth":2,"path":"chap21.md","ref":"chap21.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"en","gitbook":"*"},"file":{"path":"chap22.md","mtime":"2017-01-12T13:05:37.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-01-12T13:06:00.166Z"},"basePath":".","book":{"language":"en"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,1556 @@
+
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>19. 归档和备份 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="chap20.html" />
+    
+    
+    <link rel="prev" href="chap18.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.1" data-path="chap01.html">
+            
+                <a href="chap01.html">
+            
+                    
+                    01. 引言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2" data-path="chap02.html">
+            
+                <a href="chap02.html">
+            
+                    
+                    02. 什么是 shell
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3" data-path="chap03.html">
+            
+                <a href="chap03.html">
+            
+                    
+                    03. 文件系统中跳转
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4" data-path="chap04.html">
+            
+                <a href="chap04.html">
+            
+                    
+                    04. 探究操作系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.5" data-path="chap05.html">
+            
+                <a href="chap05.html">
+            
+                    
+                    05. 操作文件和目录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.6" data-path="chap06.html">
+            
+                <a href="chap06.html">
+            
+                    
+                    06. 使用命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.7" data-path="chap07.html">
+            
+                <a href="chap07.html">
+            
+                    
+                    07. 重定向
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.8" data-path="chap08.html">
+            
+                <a href="chap08.html">
+            
+                    
+                    08. 从 shell 眼中看世界
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.9" data-path="chap09.html">
+            
+                <a href="chap09.html">
+            
+                    
+                    09. 键盘高级操作技巧
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.10" data-path="chap10.html">
+            
+                <a href="chap10.html">
+            
+                    
+                    10. 权限
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.11" data-path="chap11.html">
+            
+                <a href="chap11.html">
+            
+                    
+                    11. 进程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.12" data-path="chap12.html">
+            
+                <a href="chap12.html">
+            
+                    
+                    12. shell 环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.13" data-path="chap13.html">
+            
+                <a href="chap13.html">
+            
+                    
+                    13. vi 简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.14" data-path="chap14.html">
+            
+                <a href="chap14.html">
+            
+                    
+                    14. 自定制 shell 提示符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.15" data-path="chap15.html">
+            
+                <a href="chap15.html">
+            
+                    
+                    15. 软件包管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.16" data-path="chap16.html">
+            
+                <a href="chap16.html">
+            
+                    
+                    16. 存储媒介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.17" data-path="chap17.html">
+            
+                <a href="chap17.html">
+            
+                    
+                    17. 网络系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.18" data-path="chap18.html">
+            
+                <a href="chap18.html">
+            
+                    
+                    18. 查找文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.1.19" data-path="chap19.html">
+            
+                <a href="chap19.html">
+            
+                    
+                    19. 归档和备份
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.20" data-path="chap20.html">
+            
+                <a href="chap20.html">
+            
+                    
+                    20. 正则表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.21" data-path="chap21.html">
+            
+                <a href="chap21.html">
+            
+                    
+                    21. 文本处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.22" data-path="chap22.html">
+            
+                <a href="chap22.html">
+            
+                    
+                    22. 格式化输出
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.23" data-path="chap23.html">
+            
+                <a href="chap23.html">
+            
+                    
+                    23. 打印
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.24" data-path="chap24.html">
+            
+                <a href="chap24.html">
+            
+                    
+                    24. 编译程序
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.25" data-path="chap25.html">
+            
+                <a href="chap25.html">
+            
+                    
+                    25. 编写第一个 Shell 脚本
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.26" data-path="chap26.html">
+            
+                <a href="chap26.html">
+            
+                    
+                    26. 启动一个项目
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.27" data-path="chap27.html">
+            
+                <a href="chap27.html">
+            
+                    
+                    27. 自顶向下设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.28" data-path="chap28.html">
+            
+                <a href="chap28.html">
+            
+                    
+                    28. 流程控制：if 分支结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.29" data-path="chap29.html">
+            
+                <a href="chap29.html">
+            
+                    
+                    29. 读取键盘输入
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.30" data-path="chap30.html">
+            
+                <a href="chap30.html">
+            
+                    
+                    30. 流程控制：while/until 循环
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.31" data-path="chap31.html">
+            
+                <a href="chap31.html">
+            
+                    
+                    31. 疑难排解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.32" data-path="chap32.html">
+            
+                <a href="chap32.html">
+            
+                    
+                    32. 流程控制：case 分支
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.33" data-path="chap33.html">
+            
+                <a href="chap33.html">
+            
+                    
+                    33. 位置参数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.34" data-path="chap34.html">
+            
+                <a href="chap34.html">
+            
+                    
+                    34. 流程控制：for 循环
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.35" data-path="chap35.html">
+            
+                <a href="chap35.html">
+            
+                    
+                    35. 字符串和数字
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.36" data-path="chap36.html">
+            
+                <a href="chap36.html">
+            
+                    
+                    36. 数组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.37" data-path="chap37.html">
+            
+                <a href="chap37.html">
+            
+                    
+                    37. 奇珍异宝
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >19. 归档和备份</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <p>One of the primary tasks of a computer system&#x2019;s administrator is keeping the system&#x2019;s
+data secure. One way this is done is by performing timely backups of the system&#x2019;s files.
+Even if you&#x2019;re not system administrators, it is often useful to make copies of things and
+to move large collections of files from place to place and from device to device.
+In this chapter, we will look at several common programs that are used to manage
+collections of files. There are the file compression programs:</p>
+<p>&#x8BA1;&#x7B97;&#x673A;&#x7CFB;&#x7EDF;&#x7BA1;&#x7406;&#x5458;&#x7684;&#x4E00;&#x4E2A;&#x4E3B;&#x8981;&#x4EFB;&#x52A1;&#x5C31;&#x662F;&#x4FDD;&#x62A4;&#x7CFB;&#x7EDF;&#x7684;&#x6570;&#x636E;&#x5B89;&#x5168;&#xFF0C;&#x5176;&#x4E2D;&#x4E00;&#x79CD;&#x65B9;&#x6CD5;&#x662F;&#x901A;&#x8FC7;&#x65F6;&#x65F6;&#x5907;&#x4EFD;&#x7CFB;&#x7EDF;&#x6587;&#x4EF6;&#xFF0C;&#x6765;&#x4FDD;&#x62A4;
+&#x6570;&#x636E;&#x3002;&#x5373;&#x4F7F;&#x4F60;&#x4E0D;&#x662F;&#x4E00;&#x540D;&#x7CFB;&#x7EDF;&#x7BA1;&#x7406;&#x5458;&#xFF0C;&#x50CF;&#x505A;&#x505A;&#x62F7;&#x8D1D;&#x6216;&#x8005;&#x5728;&#x5404;&#x4E2A;&#x4F4D;&#x7F6E;&#x548C;&#x8BBE;&#x5907;&#x4E4B;&#x95F4;&#x79FB;&#x52A8;&#x5927;&#x91CF;&#x7684;&#x6587;&#x4EF6;&#xFF0C;&#x901A;&#x5E38;&#x4E5F;&#x662F;&#x5F88;&#x6709;&#x5E2E;&#x52A9;&#x7684;&#x3002;
+&#x5728;&#x8FD9;&#x4E00;&#x7AE0;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x5C06;&#x4F1A;&#x770B;&#x770B;&#x51E0;&#x4E2A;&#x7ECF;&#x5E38;&#x7528;&#x6765;&#x7BA1;&#x7406;&#x6587;&#x4EF6;&#x96C6;&#x5408;&#x7684;&#x7A0B;&#x5E8F;&#x3002;&#x5B83;&#x4EEC;&#x5C31;&#x662F;&#x6587;&#x4EF6;&#x538B;&#x7F29;&#x7A0B;&#x5E8F;&#xFF1A;</p>
+<ul>
+<li><p>gzip &#x2013; Compress or expand files</p>
+</li>
+<li><p>gzip &#x2013; &#x538B;&#x7F29;&#x6216;&#x8005;&#x5C55;&#x5F00;&#x6587;&#x4EF6;</p>
+</li>
+<li><p>bzip2 &#x2013; A block sorting file compressor</p>
+</li>
+<li><p>bzip2 &#x2013; &#x5757;&#x6392;&#x5E8F;&#x6587;&#x4EF6;&#x538B;&#x7F29;&#x5668;</p>
+</li>
+</ul>
+<p>The archiving programs:</p>
+<p>&#x5F52;&#x6863;&#x7A0B;&#x5E8F;&#xFF1A;</p>
+<ul>
+<li><p>tar &#x2013; Tape archiving utility</p>
+</li>
+<li><p>tar &#x2013; &#x78C1;&#x5E26;&#x6253;&#x5305;&#x5DE5;&#x5177;</p>
+</li>
+<li><p>zip &#x2013; Package and compress files</p>
+</li>
+<li><p>zip &#x2013; &#x6253;&#x5305;&#x548C;&#x538B;&#x7F29;&#x6587;&#x4EF6;</p>
+</li>
+</ul>
+<p>And the file synchronization program:</p>
+<p>&#x8FD8;&#x6709;&#x6587;&#x4EF6;&#x540C;&#x6B65;&#x7A0B;&#x5E8F;&#xFF1A;</p>
+<ul>
+<li><p>rsync &#x2013; Remote file and directory synchronization</p>
+</li>
+<li><p>rsync &#x2013; &#x540C;&#x6B65;&#x8FDC;&#x7AEF;&#x6587;&#x4EF6;&#x548C;&#x76EE;&#x5F55;</p>
+</li>
+</ul>
+<h3 id="&#x538B;&#x7F29;&#x6587;&#x4EF6;">&#x538B;&#x7F29;&#x6587;&#x4EF6;</h3>
+<p>Throughout the history of computing, there has been a struggle to get the most data into
+the smallest available space, whether that space be memory, storage devices or network
+bandwidth. Many of the data services that we take for granted today, such as portable
+music players, high definition television, or broadband Internet, owe their existence to
+effective data compression techniques.</p>
+<p>&#x7EB5;&#x89C2;&#x8BA1;&#x7B97;&#x9886;&#x57DF;&#x7684;&#x53D1;&#x5C55;&#x5386;&#x53F2;&#xFF0C;&#x4EBA;&#x4EEC;&#x52AA;&#x529B;&#x60F3;&#x628A;&#x6700;&#x591A;&#x7684;&#x6570;&#x636E;&#x5B58;&#x653E;&#x5230;&#x5230;&#x6700;&#x5C0F;&#x7684;&#x53EF;&#x7528;&#x7A7A;&#x95F4;&#x4E2D;&#xFF0C;&#x4E0D;&#x7BA1;&#x662F;&#x5185;&#x5B58;&#xFF0C;&#x5B58;&#x50A8;&#x8BBE;&#x5907;
+&#x8FD8;&#x662F;&#x7F51;&#x7EDC;&#x5E26;&#x5BBD;&#x3002;&#x4ECA;&#x5929;&#x6211;&#x4EEC;&#x628A;&#x8BB8;&#x591A;&#x6570;&#x636E;&#x670D;&#x52A1;&#x90FD;&#x770B;&#x4F5C;&#x662F;&#x7406;&#x6240;&#x5F53;&#x7136;&#x7684;&#x4E8B;&#x60C5;&#xFF0C;&#x4F46;&#x662F;&#x8BF8;&#x5982;&#x4FBF;&#x643A;&#x5F0F;&#x97F3;&#x4E50;&#x64AD;&#x653E;&#x5668;&#xFF0C;
+&#x9AD8;&#x6E05;&#x7535;&#x89C6;&#xFF0C;&#x6216;&#x5BBD;&#x5E26;&#x7F51;&#x7EDC;&#x4E4B;&#x7C7B;&#x7684;&#x5B58;&#x5728;&#x90FD;&#x5E94;&#x5F52;&#x529F;&#x4E8E;&#x9AD8;&#x6548;&#x7684;&#x6570;&#x636E;&#x538B;&#x7F29;&#x6280;&#x672F;&#x3002;</p>
+<p>Data compression is the process of removing redundancy from data. Let&#x2019;s consider an
+imaginary example. Say we had an entirely black picture file with the dimensions of one
+hundred pixels by one hundred pixels. In terms of data storage (assuming twenty-four
+bits, or three bytes per pixel), the image will occupy thirty thousand bytes of storage:</p>
+<p>&#x6570;&#x636E;&#x538B;&#x7F29;&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x5220;&#x9664;&#x5197;&#x4F59;&#x6570;&#x636E;&#x7684;&#x8FC7;&#x7A0B;&#x3002;&#x8BA9;&#x6211;&#x4EEC;&#x8003;&#x8651;&#x4E00;&#x4E2A;&#x5047;&#x60F3;&#x7684;&#x4F8B;&#x5B50;&#xFF0C;&#x6BD4;&#x65B9;&#x8BF4;&#x6211;&#x4EEC;&#x6709;&#x4E00;&#x5F20;100*100&#x50CF;&#x7D20;&#x7684;
+&#x7EAF;&#x9ED1;&#x7684;&#x56FE;&#x7247;&#x6587;&#x4EF6;&#x3002;&#x6839;&#x636E;&#x6570;&#x636E;&#x5B58;&#x50A8;&#x65B9;&#x6848;&#xFF08;&#x5047;&#x5B9A;&#x6BCF;&#x4E2A;&#x50CF;&#x7D20;&#x5360;24&#x4F4D;&#xFF0C;&#x6216;&#x8005;3&#x4E2A;&#x5B57;&#x8282;&#xFF09;&#xFF0C;&#x90A3;&#x4E48;&#x8FD9;&#x5F20;&#x56FE;&#x50CF;&#x5C06;&#x4F1A;&#x5360;&#x7528;
+30,000&#x4E2A;&#x5B57;&#x8282;&#x7684;&#x5B58;&#x50A8;&#x7A7A;&#x95F4;&#xFF1A;</p>
+<pre><code>100 * 100 * 3 = 30,000
+</code></pre><p>An image that is all one color contains entirely redundant data. If we were clever, we
+could encode the data in such a way that we simply describe the fact that we have a block
+of thirty thousand black pixels. So, instead of storing a block of data containing thirty
+thousand zeros (black is usually represented in image files as zero), we could compress
+the data into the number 30,000, followed by a zero to represent our data. Such a data
+compression scheme is called run-length encoding and is one of the most rudimentary
+compression techniques. Today&#x2019;s techniques are much more advanced and complex but
+the basic goal remains the same&#x2014;get rid of redundant data.</p>
+<p>&#x4E00;&#x5F20;&#x5355;&#x8272;&#x56FE;&#x50CF;&#x5305;&#x542B;&#x7684;&#x6570;&#x636E;&#x5168;&#x662F;&#x591A;&#x4F59;&#x7684;&#x3002;&#x6211;&#x4EEC;&#x8981;&#x662F;&#x806A;&#x660E;&#x7684;&#x8BDD;&#xFF0C;&#x53EF;&#x4EE5;&#x7528;&#x8FD9;&#x79CD;&#x65B9;&#x6CD5;&#x6765;&#x7F16;&#x7801;&#x8FD9;&#x4E9B;&#x6570;&#x636E;&#xFF0C;
+&#x6211;&#x4EEC;&#x53EA;&#x8981;&#x7B80;&#x5355;&#x5730;&#x63CF;&#x8FF0;&#x8FD9;&#x4E2A;&#x4E8B;&#x5B9E;&#xFF0C;&#x6211;&#x4EEC;&#x6709;3&#x4E07;&#x4E2A;&#x9ED1;&#x8272;&#x7684;&#x50CF;&#x7D20;&#x6570;&#x636E;&#x5757;&#x3002;&#x6240;&#x4EE5;&#xFF0C;&#x6211;&#x4EEC;&#x4E0D;&#x5B58;&#x50A8;&#x5305;&#x542B;3&#x4E07;&#x4E2A;0
+&#xFF08;&#x901A;&#x5E38;&#x5728;&#x56FE;&#x50CF;&#x6587;&#x4EF6;&#x4E2D;&#xFF0C;&#x9ED1;&#x8272;&#x7531;0&#x6765;&#x8868;&#x793A;&#xFF09;&#x7684;&#x6570;&#x636E;&#x5757;&#xFF0C;&#x53D6;&#x800C;&#x4EE3;&#x4E4B;&#xFF0C;&#x6211;&#x4EEC;&#x628A;&#x8FD9;&#x4E9B;&#x6570;&#x636E;&#x538B;&#x7F29;&#x4E3A;&#x6570;&#x5B57;30,000&#xFF0C;
+&#x540E;&#x8DDF;&#x4E00;&#x4E2A;0&#xFF0C;&#x6765;&#x8868;&#x793A;&#x6211;&#x4EEC;&#x7684;&#x6570;&#x636E;&#x3002;&#x8FD9;&#x79CD;&#x6570;&#x636E;&#x538B;&#x7F29;&#x65B9;&#x6848;&#x88AB;&#x79F0;&#x4E3A;&#x6E38;&#x7A0B;&#x7F16;&#x7801;&#xFF0C;&#x662F;&#x4E00;&#x79CD;&#x6700;&#x57FA;&#x672C;&#x7684;&#x538B;&#x7F29;&#x6280;&#x672F;&#x3002;&#x4ECA;&#x5929;&#x7684;&#x6280;&#x672F;&#x66F4;&#x52A0;&#x5148;&#x8FDB;&#x548C;&#x590D;&#x6742;&#xFF0C;&#x4F46;&#x662F;&#x57FA;&#x672C;&#x76EE;&#x6807;&#x4F9D;&#x7136;&#x4E0D;&#x53D8;&#x2014;&#x2014;&#x907F;&#x514D;&#x591A;&#x4F59;&#x6570;&#x636E;&#x3002;</p>
+<p>Compression algorithms (the mathematical techniques used to carry out the compression)
+fall into two general categories, lossless and lossy. Lossless compression preserves all
+the data contained in the original. This means that when a file is restored from a
+compressed version, the restored file is exactly the same as the original, uncompressed
+version. Lossy compression, on the other hand, removes data as the compression is
+performed, to allow more compression to be applied. When a lossy file is restored, it
+does not match the original version; rather, it is a close approximation. Examples of
+lossy compression are JPEG (for images) and MP3 (for music.) In our discussion, we
+will look exclusively at lossless compression, since most data on computers cannot
+tolerate any data loss.</p>
+<p>&#x538B;&#x7F29;&#x7B97;&#x6CD5;&#xFF08;&#x6570;&#x5B66;&#x6280;&#x5DE7;&#x88AB;&#x7528;&#x6765;&#x6267;&#x884C;&#x538B;&#x7F29;&#x4EFB;&#x52A1;&#xFF09;&#x5206;&#x4E3A;&#x4E24;&#x5927;&#x7C7B;&#xFF0C;&#x65E0;&#x635F;&#x538B;&#x7F29;&#x548C;&#x6709;&#x635F;&#x538B;&#x7F29;&#x3002;&#x65E0;&#x635F;&#x538B;&#x7F29;&#x4FDD;&#x7559;&#x4E86;
+&#x539F;&#x59CB;&#x6587;&#x4EF6;&#x7684;&#x6240;&#x6709;&#x6570;&#x636E;&#x3002;&#x8FD9;&#x610F;&#x5473;&#x7740;&#xFF0C;&#x5F53;&#x8FD8;&#x539F;&#x4E00;&#x4E2A;&#x538B;&#x7F29;&#x6587;&#x4EF6;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x8FD8;&#x539F;&#x7684;&#x6587;&#x4EF6;&#x4E0E;&#x539F;&#x6587;&#x4EF6;&#x4E00;&#x6A21;&#x4E00;&#x6837;&#x3002;
+&#x800C;&#x53E6;&#x4E00;&#x65B9;&#x9762;&#xFF0C;&#x6709;&#x635F;&#x538B;&#x7F29;&#xFF0C;&#x6267;&#x884C;&#x538B;&#x7F29;&#x64CD;&#x4F5C;&#x65F6;&#x4F1A;&#x5220;&#x9664;&#x6570;&#x636E;&#xFF0C;&#x5141;&#x8BB8;&#x66F4;&#x5927;&#x7684;&#x538B;&#x7F29;&#x3002;&#x5F53;&#x4E00;&#x4E2A;&#x6709;&#x635F;&#x6587;&#x4EF6;&#x88AB;&#x8FD8;&#x539F;&#x7684;&#x65F6;&#x5019;&#xFF0C;
+&#x5B83;&#x4E0E;&#x539F;&#x6587;&#x4EF6;&#x4E0D;&#x76F8;&#x5339;&#x914D;; &#x76F8;&#x53CD;&#xFF0C;&#x5B83;&#x662F;&#x4E00;&#x4E2A;&#x8FD1;&#x4F3C;&#x503C;&#x3002;&#x6709;&#x635F;&#x538B;&#x7F29;&#x7684;&#x4F8B;&#x5B50;&#x6709; JPEG&#xFF08;&#x56FE;&#x50CF;&#xFF09;&#x6587;&#x4EF6;&#x548C; MP3&#xFF08;&#x97F3;&#x9891;&#xFF09;&#x6587;&#x4EF6;&#x3002;
+&#x5728;&#x6211;&#x4EEC;&#x7684;&#x8BA8;&#x8BBA;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x5C06;&#x770B;&#x770B;&#x5B8C;&#x5168;&#x65E0;&#x635F;&#x538B;&#x7F29;&#xFF0C;&#x56E0;&#x4E3A;&#x8BA1;&#x7B97;&#x673A;&#x4E2D;&#x7684;&#x5927;&#x591A;&#x6570;&#x6570;&#x636E;&#x662F;&#x4E0D;&#x80FD;&#x5BB9;&#x5FCD;&#x4E22;&#x5931;&#x4EFB;&#x4F55;&#x6570;&#x636E;&#x7684;&#x3002;</p>
+<h4 id="gzip">gzip</h4>
+<p>The gzip program is used to compress one or more files. When executed, it replaces the
+original file with a compressed version of the original. The corresponding gunzip
+program is used to restore compressed files to their original, uncompressed form. Here is
+an example:</p>
+<p>&#x8FD9;&#x4E2A; gzip &#x7A0B;&#x5E8F;&#x88AB;&#x7528;&#x6765;&#x538B;&#x7F29;&#x4E00;&#x4E2A;&#x6216;&#x591A;&#x4E2A;&#x6587;&#x4EF6;&#x3002;&#x5F53;&#x6267;&#x884C; gzip &#x547D;&#x4EE4;&#x65F6;&#xFF0C;&#x5219;&#x539F;&#x59CB;&#x6587;&#x4EF6;&#x7684;&#x538B;&#x7F29;&#x7248;&#x4F1A;&#x66FF;&#x4EE3;&#x539F;&#x59CB;&#x6587;&#x4EF6;&#x3002;
+&#x76F8;&#x5BF9;&#x5E94;&#x7684; gunzip &#x7A0B;&#x5E8F;&#x88AB;&#x7528;&#x6765;&#x628A;&#x538B;&#x7F29;&#x6587;&#x4EF6;&#x590D;&#x539F;&#x4E3A;&#x6CA1;&#x6709;&#x88AB;&#x538B;&#x7F29;&#x7684;&#x7248;&#x672C;&#x3002;&#x8FD9;&#x91CC;&#x6709;&#x4E2A;&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre><code>[me@linuxbox ~]$ ls -l /etc &gt; foo.txt
+[me@linuxbox ~]$ ls -l foo.*
+-rw-r--r-- 1 me     me 15738 2008-10-14 07:15 foo.txt
+[me@linuxbox ~]$ gzip foo.txt
+[me@linuxbox ~]$ ls -l foo.*
+-rw-r--r-- 1 me     me 3230 2008-10-14 07:15 foo.txt.gz
+[me@linuxbox ~]$ gunzip foo.txt.gz
+[me@linuxbox ~]$ ls -l foo.*
+-rw-r--r-- 1 me     me 15738 2008-10-14 07:15 foo.txt
+</code></pre><p>In this example, we create a text file named foo.txt from a directory listing. Next, we
+run gzip, which replaces the original file with a compressed version named
+foo.txt.gz. In the directory listing of foo.*, we see that the original file has been
+replaced with the compressed version, and that the compressed version about one-fifth
+the size of the original. We can also see that the compressed file has the same
+permissions and time stamp as the original.</p>
+<p>&#x5728;&#x8FD9;&#x4E2A;&#x4F8B;&#x5B50;&#x91CC;&#xFF0C;&#x6211;&#x4EEC;&#x521B;&#x5EFA;&#x4E86;&#x4E00;&#x4E2A;&#x540D;&#x4E3A; foo.txt &#x7684;&#x6587;&#x672C;&#x6587;&#x4EF6;&#xFF0C;&#x5176;&#x5185;&#x5BB9;&#x5305;&#x542B;&#x4E00;&#x4E2A;&#x76EE;&#x5F55;&#x7684;&#x5217;&#x8868;&#x6E05;&#x5355;&#x3002;
+&#x63A5;&#x4E0B;&#x6765;&#xFF0C;&#x6211;&#x4EEC;&#x8FD0;&#x884C; gzip &#x547D;&#x4EE4;&#xFF0C;&#x5B83;&#x4F1A;&#x628A;&#x539F;&#x59CB;&#x6587;&#x4EF6;&#x66FF;&#x6362;&#x4E3A;&#x4E00;&#x4E2A;&#x53EB;&#x505A; foo.txt.gz &#x7684;&#x538B;&#x7F29;&#x6587;&#x4EF6;&#x3002;&#x5728;
+foo.* &#x6587;&#x4EF6;&#x5217;&#x8868;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x770B;&#x5230;&#x539F;&#x59CB;&#x6587;&#x4EF6;&#x5DF2;&#x7ECF;&#x88AB;&#x538B;&#x7F29;&#x6587;&#x4EF6;&#x66FF;&#x4EE3;&#x4E86;&#xFF0C;&#x5E76;&#x5C06;&#x8FD9;&#x4E2A;&#x538B;&#x7F29;&#x6587;&#x4EF6;&#x5927;&#x7EA6;&#x662F;&#x539F;&#x59CB;
+&#x6587;&#x4EF6;&#x7684;&#x4E94;&#x5206;&#x4E4B;&#x4E00;&#x3002;&#x6211;&#x4EEC;&#x4E5F;&#x80FD;&#x770B;&#x5230;&#x538B;&#x7F29;&#x6587;&#x4EF6;&#x4E0E;&#x539F;&#x59CB;&#x6587;&#x4EF6;&#x6709;&#x7740;&#x76F8;&#x540C;&#x7684;&#x6743;&#x9650;&#x548C;&#x65F6;&#x95F4;&#x6233;&#x3002;</p>
+<p>Next, we run the gunzip program to uncompress the file. Afterward, we can see that
+the compressed version of the file has been replaced with the original, again with the
+permissions and time stamp preserved.</p>
+<p>&#x63A5;&#x4E0B;&#x6765;&#xFF0C;&#x6211;&#x4EEC;&#x8FD0;&#x884C; gunzip &#x7A0B;&#x5E8F;&#x6765;&#x89E3;&#x538B;&#x7F29;&#x6587;&#x4EF6;&#x3002;&#x968F;&#x540E;&#xFF0C;&#x6211;&#x4EEC;&#x80FD;&#x89C1;&#x5230;&#x538B;&#x7F29;&#x6587;&#x4EF6;&#x5DF2;&#x7ECF;&#x88AB;&#x539F;&#x59CB;&#x6587;&#x4EF6;&#x66FF;&#x4EE3;&#x4E86;&#xFF0C;
+&#x540C;&#x6837;&#x5730;&#x4FDD;&#x7559;&#x4E86;&#x76F8;&#x540C;&#x7684;&#x6743;&#x9650;&#x548C;&#x65F6;&#x95F4;&#x6233;&#x3002;</p>
+<p>gzip has many options. Here are a few:</p>
+<p>gzip &#x547D;&#x4EE4;&#x6709;&#x8BB8;&#x591A;&#x9009;&#x9879;&#x3002;&#x8FD9;&#x91CC;&#x5217;&#x51FA;&#x4E86;&#x4E00;&#x4E9B;&#xFF1A;</p>
+<table class="multi">
+<caption class="cap">Table 19-1: gzip Options </caption>
+<tr>
+<th class="title">Option</th>
+<th class="title">Description </th>
+</tr>
+<tr>
+<td valign="top" width="25%">-c </td>
+<td valign="top">Write output to standard output and keep original files. May also be
+specified with --stdout and --to-stdout.</td>
+</tr>
+<tr>
+<td valign="top">-d</td>
+<td valign="top">Decompress. This causes gzip to act like gunzip. May also be
+specified with --decompress or --uncompress.</td>
+</tr>
+<tr>
+<td valign="top">-f</td>
+<td valign="top">Force compression even if compressed version of the original file
+already exists. May also be specified with --force.</td>
+</tr>
+<tr>
+<td valign="top">-h</td>
+<td valign="top">Display usage information. May also be specified with --help.</td>
+</tr>
+<tr>
+<td valign="top">-l</td>
+<td valign="top">List compression statistics for each file compressed. May also be
+specified with --list.</td>
+</tr>
+<tr>
+<td valign="top">-r</td>
+<td valign="top">If one or more arguments on the command line are directories,
+recursively compress files contained within them. May also be specified with --recursive.</td>
+</tr>
+<tr>
+<td valign="top">-t</td>
+<td valign="top">Test the integrity of a compressed file. May also be specified with --test.</td>
+</tr>
+<tr>
+<td valign="top">-v</td>
+<td valign="top">Display verbose messages while compressing. May also be specified
+with --verbose.</td>
+</tr>
+<tr>
+<td valign="top">-number</td>
+<td valign="top">Set amount of compression. number is an integer in the range of 1
+(fastest, least compression) to 9 (slowest, most compression). The
+values 1 and 9 may also be expressed as --fast and --best,
+respectively. The default value is 6.</td>
+</tr>
+</table>
+
+<table class="multi">
+<caption class="cap">&#x8868;19-1: gzip &#x9009;&#x9879; </caption>
+<tr>
+<th class="title">&#x9009;&#x9879;</th>
+<th class="title">&#x8BF4;&#x660E;</th>
+</tr>
+<tr>
+<td valign="top" width="25%">-c </td>
+<td valign="top">&#x628A;&#x8F93;&#x51FA;&#x5199;&#x5165;&#x5230;&#x6807;&#x51C6;&#x8F93;&#x51FA;&#xFF0C;&#x5E76;&#x4E14;&#x4FDD;&#x7559;&#x539F;&#x59CB;&#x6587;&#x4EF6;&#x3002;&#x4E5F;&#x6709;&#x53EF;&#x80FD;&#x7528;--stdout &#x548C;--to-stdout &#x9009;&#x9879;&#x6765;&#x6307;&#x5B9A;&#x3002; </td>
+</tr>
+<tr>
+<td valign="top">-d</td>
+<td valign="top">&#x89E3;&#x538B;&#x7F29;&#x3002;&#x6B63;&#x5982; gunzip &#x547D;&#x4EE4;&#x4E00;&#x6837;&#x3002;&#x4E5F;&#x53EF;&#x4EE5;&#x7528;--decompress &#x6216;&#x8005;--uncompress &#x9009;&#x9879;&#x6765;&#x6307;&#x5B9A;. </td>
+</tr>
+<tr>
+<td valign="top">-f</td>
+<td valign="top">&#x5F3A;&#x5236;&#x538B;&#x7F29;&#xFF0C;&#x5373;&#x4F7F;&#x539F;&#x59CB;&#x6587;&#x4EF6;&#x7684;&#x538B;&#x7F29;&#x6587;&#x4EF6;&#x5DF2;&#x7ECF;&#x5B58;&#x5728;&#x4E86;&#xFF0C;&#x4E5F;&#x8981;&#x6267;&#x884C;&#x3002;&#x4E5F;&#x53EF;&#x4EE5;&#x7528;--force &#x9009;&#x9879;&#x6765;&#x6307;&#x5B9A;&#x3002; </td>
+</tr>
+<tr>
+<td valign="top">-h</td>
+<td valign="top">&#x663E;&#x793A;&#x7528;&#x6CD5;&#x4FE1;&#x606F;&#x3002;&#x4E5F;&#x53EF;&#x7528;--help &#x9009;&#x9879;&#x6765;&#x6307;&#x5B9A;&#x3002;</td>
+</tr>
+<tr>
+<td valign="top">-l</td>
+<td valign="top">&#x5217;&#x51FA;&#x6BCF;&#x4E2A;&#x88AB;&#x538B;&#x7F29;&#x6587;&#x4EF6;&#x7684;&#x538B;&#x7F29;&#x6570;&#x636E;&#x3002;&#x4E5F;&#x53EF;&#x7528;--list &#x9009;&#x9879;&#x3002; </td>
+</tr>
+<tr>
+<td valign="top">-r</td>
+<td valign="top">&#x82E5;&#x547D;&#x4EE4;&#x7684;&#x4E00;&#x4E2A;&#x6216;&#x591A;&#x4E2A;&#x53C2;&#x6570;&#x662F;&#x76EE;&#x5F55;&#xFF0C;&#x5219;&#x9012;&#x5F52;&#x5730;&#x538B;&#x7F29;&#x76EE;&#x5F55;&#x4E2D;&#x7684;&#x6587;&#x4EF6;&#x3002;&#x4E5F;&#x53EF;&#x7528;--recursive &#x9009;&#x9879;&#x6765;&#x6307;&#x5B9A;&#x3002; </td>
+</tr>
+<tr>
+<td valign="top">-t</td>
+<td valign="top">&#x6D4B;&#x8BD5;&#x538B;&#x7F29;&#x6587;&#x4EF6;&#x7684;&#x5B8C;&#x6574;&#x6027;&#x3002;&#x4E5F;&#x53EF;&#x7528;--test &#x9009;&#x9879;&#x6765;&#x6307;&#x5B9A;&#x3002;</td>
+</tr>
+<tr>
+<td valign="top">-v</td>
+<td valign="top">&#x663E;&#x793A;&#x538B;&#x7F29;&#x8FC7;&#x7A0B;&#x4E2D;&#x7684;&#x4FE1;&#x606F;&#x3002;&#x4E5F;&#x53EF;&#x7528;--verbose &#x9009;&#x9879;&#x6765;&#x6307;&#x5B9A;&#x3002; </td>
+</tr>
+<tr>
+<td valign="top">-number</td>
+<td valign="top">&#x8BBE;&#x7F6E;&#x538B;&#x7F29;&#x6307;&#x6570;&#x3002;number &#x662F;&#x4E00;&#x4E2A;&#x5728;1&#xFF08;&#x6700;&#x5FEB;&#xFF0C;&#x6700;&#x5C0F;&#x538B;&#x7F29;&#xFF09;&#x5230;9&#xFF08;&#x6700;&#x6162;&#xFF0C;&#x6700;&#x5927;&#x538B;&#x7F29;&#xFF09;&#x4E4B;&#x95F4;&#x7684;&#x6574;&#x6570;&#x3002;
+&#x6570;&#x503C;1&#x548C;9&#x4E5F;&#x53EF;&#x4EE5;&#x5404;&#x81EA;&#x7528;--fast &#x548C;--best &#x9009;&#x9879;&#x6765;&#x8868;&#x793A;&#x3002;&#x9ED8;&#x8BA4;&#x503C;&#x662F;&#x6574;&#x6570;6&#x3002; </td>
+</tr>
+</table>
+
+<p>Going back to our earlier example:</p>
+<p>&#x8FD4;&#x56DE;&#x5230;&#x6211;&#x4EEC;&#x4E4B;&#x524D;&#x7684;&#x4F8B;&#x5B50;&#x4E2D;&#xFF1A;</p>
+<pre><code>[me@linuxbox ~]$ gzip foo.txt
+[me@linuxbox ~]$ gzip -tv foo.txt.gz
+foo.txt.gz: OK
+[me@linuxbox ~]$ gzip -d foo.txt.gz
+</code></pre><p>Here, we replaced the file foo.txt with a compressed version, named foo.txt.gz.
+Next, we tested the integrity of the compressed version, using the -t and -v options.
+Finally, we decompressed the file back to its original form.
+gzip can also be used in interesting ways via standard input and output:</p>
+<p>&#x8FD9;&#x91CC;&#xFF0C;&#x6211;&#x4EEC;&#x7528;&#x538B;&#x7F29;&#x6587;&#x4EF6;&#x6765;&#x66FF;&#x4EE3;&#x6587;&#x4EF6; foo.txt&#xFF0C;&#x538B;&#x7F29;&#x6587;&#x4EF6;&#x540D;&#x4E3A; foo.txt.gz&#x3002;&#x4E0B;&#x4E00;&#x6B65;&#xFF0C;&#x6211;&#x4EEC;&#x6D4B;&#x8BD5;&#x4E86;&#x538B;&#x7F29;&#x6587;&#x4EF6;
+&#x7684;&#x5B8C;&#x6574;&#x6027;&#xFF0C;&#x4F7F;&#x7528;&#x4E86;-t &#x548C;-v &#x9009;&#x9879;&#x3002;</p>
+<pre><code>[me@linuxbox ~]$ ls -l /etc | gzip &gt; foo.txt.gz
+</code></pre><p>This command creates a compressed version of a directory listing.</p>
+<p>&#x8FD9;&#x4E2A;&#x547D;&#x4EE4;&#x521B;&#x5EFA;&#x4E86;&#x4E00;&#x4E2A;&#x76EE;&#x5F55;&#x5217;&#x8868;&#x7684;&#x538B;&#x7F29;&#x6587;&#x4EF6;&#x3002;</p>
+<p>The gunzip program, which uncompresses gzip files, assumes that filenames end in the
+extension .gz, so it&#x2019;s not necessary to specify it, as long as the specified name is not in
+conflict with an existing uncompressed file:</p>
+<p>&#x8FD9;&#x4E2A; gunzip &#x7A0B;&#x5E8F;&#xFF0C;&#x4F1A;&#x89E3;&#x538B;&#x7F29; gzip &#x6587;&#x4EF6;&#xFF0C;&#x5047;&#x5B9A;&#x90A3;&#x4E9B;&#x6587;&#x4EF6;&#x540D;&#x7684;&#x6269;&#x5C55;&#x540D;&#x662F;.gz&#xFF0C;&#x6240;&#x4EE5;&#x6CA1;&#x6709;&#x5FC5;&#x8981;&#x6307;&#x5B9A;&#x5B83;&#xFF0C;
+&#x53EA;&#x8981;&#x6307;&#x5B9A;&#x7684;&#x540D;&#x5B57;&#x4E0E;&#x73B0;&#x6709;&#x7684;&#x672A;&#x538B;&#x7F29;&#x6587;&#x4EF6;&#x4E0D;&#x51B2;&#x7A81;&#x5C31;&#x53EF;&#x4EE5;&#xFF1A;</p>
+<pre><code>[me@linuxbox ~]$ gunzip foo.txt
+</code></pre><p>If our goal were only to view the contents of a compressed text file, we can do this:</p>
+<p>&#x5982;&#x679C;&#x6211;&#x4EEC;&#x7684;&#x76EE;&#x6807;&#x53EA;&#x662F;&#x4E3A;&#x4E86;&#x6D4F;&#x89C8;&#x4E00;&#x4E0B;&#x538B;&#x7F29;&#x6587;&#x672C;&#x6587;&#x4EF6;&#x7684;&#x5185;&#x5BB9;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x8FD9;&#x6837;&#x505A;&#xFF1A;</p>
+<pre><code>[me@linuxbox ~]$ gunzip -c foo.txt | less
+</code></pre><p>Alternately, there is a program supplied with gzip, called zcat, that is equivalent to
+gunzip with the -c option. It can be used like the cat command on gzip compressed
+files:</p>
+<p>&#x53E6;&#x5916;&#xFF0C;&#x5BF9;&#x5E94;&#x4E8E; gzip &#x8FD8;&#x6709;&#x4E00;&#x4E2A;&#x7A0B;&#x5E8F;&#xFF0C;&#x53EB;&#x505A; zcat&#xFF0C;&#x5B83;&#x7B49;&#x540C;&#x4E8E;&#x5E26;&#x6709;-c &#x9009;&#x9879;&#x7684; gunzip &#x547D;&#x4EE4;&#x3002;
+&#x5B83;&#x53EF;&#x4EE5;&#x88AB;&#x7528;&#x6765;&#x5982; cat &#x547D;&#x4EE4;&#x4F5C;&#x7528;&#x4E8E; gzip &#x538B;&#x7F29;&#x6587;&#x4EF6;&#xFF1A;</p>
+<pre><code>[me@linuxbox ~]$ zcat foo.txt.gz | less
+</code></pre><hr>
+<p><em>Tip:</em> There is a zless program, too. It performs the same function as the pipeline above.</p>
+<p><em>&#x5C0F;&#x8D34;&#x58EB;:</em> &#x8FD8;&#x6709;&#x4E00;&#x4E2A; zless &#x7A0B;&#x5E8F;&#x3002;&#x5B83;&#x4E0E;&#x4E0A;&#x9762;&#x7684;&#x7BA1;&#x9053;&#x7EBF;&#x6709;&#x76F8;&#x540C;&#x7684;&#x529F;&#x80FD;&#x3002;</p>
+<hr>
+<h4 id="bzip2">bzip2</h4>
+<p>The bzip2 program, by Julian Seward, is similar to gzip, but uses a different
+compression algorithm that achieves higher levels of compression at the cost of
+compression speed. In most regards, it works in the same fashion as gzip. A file
+compressed with bzip2 is denoted with the extension .bz2:</p>
+<p>&#x8FD9;&#x4E2A; bzip2 &#x7A0B;&#x5E8F;&#xFF0C;&#x7531; Julian Seward &#x5F00;&#x53D1;&#xFF0C;&#x4E0E; gzip &#x7A0B;&#x5E8F;&#x76F8;&#x4F3C;&#xFF0C;&#x4F46;&#x662F;&#x4F7F;&#x7528;&#x4E86;&#x4E0D;&#x540C;&#x7684;&#x538B;&#x7F29;&#x7B97;&#x6CD5;&#xFF0C;
+&#x820D;&#x5F03;&#x4E86;&#x538B;&#x7F29;&#x901F;&#x5EA6;&#xFF0C;&#x800C;&#x5B9E;&#x73B0;&#x4E86;&#x66F4;&#x9AD8;&#x7684;&#x538B;&#x7F29;&#x7EA7;&#x522B;&#x3002;&#x5728;&#x5927;&#x591A;&#x6570;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x5B83;&#x7684;&#x5DE5;&#x4F5C;&#x6A21;&#x5F0F;&#x7B49;&#x540C;&#x4E8E; gzip&#x3002;
+&#x7531; bzip2 &#x538B;&#x7F29;&#x7684;&#x6587;&#x4EF6;&#xFF0C;&#x7528;&#x6269;&#x5C55;&#x540D; .bz2 &#x6765;&#x8868;&#x793A;&#xFF1A;</p>
+<pre><code>[me@linuxbox ~]$ ls -l /etc &gt; foo.txt
+[me@linuxbox ~]$ ls -l foo.txt
+-rw-r--r-- 1 me     me      15738 2008-10-17 13:51 foo.txt
+[me@linuxbox ~]$ bzip2 foo.txt
+[me@linuxbox ~]$ ls -l foo.txt.bz2
+-rw-r--r-- 1 me     me      2792 2008-10-17 13:51 foo.txt.bz2
+[me@linuxbox ~]$ bunzip2 foo.txt.bz2
+</code></pre><p>As we can see, bzip2 can be used the same way as gzip. All the options (except for -r)
+ that we discussed for gzip are also supported in bzip2. Note, however, that the
+compression level option (-number) has a somewhat different meaning to bzip2.
+bzip2 comes with bunzip2 and bzcat for decompressing files.
+bzip2 also comes with the bzip2recover program, which will try to recover
+damaged .bz2 files.</p>
+<p>&#x6B63;&#x5982;&#x6211;&#x4EEC;&#x6240;&#x770B;&#x5230;&#x7684;&#xFF0C;bzip2 &#x7A0B;&#x5E8F;&#x4F7F;&#x7528;&#x8D77;&#x6765;&#x548C; gzip &#x7A0B;&#x5E8F;&#x4E00;&#x6837;&#x3002;&#x6211;&#x4EEC;&#x4E4B;&#x524D;&#x8BA8;&#x8BBA;&#x7684; gzip &#x7A0B;&#x5E8F;&#x7684;&#x6240;&#x6709;&#x9009;&#x9879;&#xFF08;&#x9664;&#x4E86;-r&#xFF09;
+&#xFF0C;bzip2 &#x7A0B;&#x5E8F;&#x540C;&#x6837;&#x4E5F;&#x652F;&#x6301;&#x3002;&#x6CE8;&#x610F;&#xFF0C;&#x7136;&#x800C;&#xFF0C;&#x538B;&#x7F29;&#x7EA7;&#x522B;&#x9009;&#x9879;&#xFF08;-number&#xFF09;&#x5BF9;&#x4E8E; bzip2 &#x7A0B;&#x5E8F;&#x6765;&#x8BF4;&#xFF0C;&#x6709;&#x5C11;&#x8BB8;&#x4E0D;&#x540C;&#x7684;&#x542B;&#x4E49;&#x3002;
+&#x4F34;&#x968F;&#x7740; bzip2 &#x7A0B;&#x5E8F;&#xFF0C;&#x6709; bunzip2 &#x548C; bzcat &#x7A0B;&#x5E8F;&#x6765;&#x89E3;&#x538B;&#x7F29;&#x6587;&#x4EF6;&#x3002;bzip2 &#x6587;&#x4EF6;&#x4E5F;&#x5E26;&#x6709; bzip2recover &#x7A0B;&#x5E8F;&#xFF0C;&#x5176;&#x4F1A;
+&#x8BD5;&#x56FE;&#x6062;&#x590D;&#x53D7;&#x635F;&#x7684; .bz2 &#x6587;&#x4EF6;&#x3002;</p>
+<blockquote>
+<p>Don&#x2019;t Be Compressive Compulsive</p>
+<p>&#x4E0D;&#x8981;&#x5F3A;&#x8FEB;&#x6027;&#x538B;&#x7F29;</p>
+<p>I occasionally see people attempting to compress a file, which has been already
+compressed with an effective compression algorithm, by doing something like
+this:</p>
+<p>&#x6211;&#x5076;&#x7136;&#x89C1;&#x5230;&#x4EBA;&#x4EEC;&#x8BD5;&#x56FE;&#x7528;&#x9AD8;&#x6548;&#x7684;&#x538B;&#x7F29;&#x7B97;&#x6CD5;&#xFF0C;&#x6765;&#x538B;&#x7F29;&#x4E00;&#x4E2A;&#x5DF2;&#x7ECF;&#x88AB;&#x538B;&#x7F29;&#x8FC7;&#x7684;&#x6587;&#x4EF6;&#xFF0C;&#x901A;&#x8FC7;&#x8FD9;&#x6837;&#x505A;&#xFF1A;</p>
+<p> <em>$ gzip picture.jpg</em></p>
+<p>Don&#x2019;t do it. You&#x2019;re probably just wasting time and space! If you apply
+compression to a file that is already compressed, you will actually end up a larger
+file. This is because all compression techniques involve some overhead that is
+added to the file to describe the compression. If you try to compress a file that
+already contains no redundant information, the compression will not result in any
+savings to offset the additional overhead.</p>
+<p>&#x4E0D;&#x8981;&#x8FD9;&#x6837;&#x3002;&#x4F60;&#x53EF;&#x80FD;&#x53EA;&#x662F;&#x5728;&#x6D6A;&#x8D39;&#x65F6;&#x95F4;&#x548C;&#x7A7A;&#x95F4;&#xFF01;&#x5982;&#x679C;&#x4F60;&#x518D;&#x6B21;&#x538B;&#x7F29;&#x5DF2;&#x7ECF;&#x538B;&#x7F29;&#x8FC7;&#x7684;&#x6587;&#x4EF6;&#xFF0C;&#x5B9E;&#x9645;&#x4E0A;&#x4F60;
+&#x4F1A;&#x5F97;&#x5230;&#x4E00;&#x4E2A;&#x66F4;&#x5927;&#x7684;&#x6587;&#x4EF6;&#x3002;&#x8FD9;&#x662F;&#x56E0;&#x4E3A;&#x6240;&#x6709;&#x7684;&#x538B;&#x7F29;&#x6280;&#x672F;&#x90FD;&#x4F1A;&#x6D89;&#x53CA;&#x4E00;&#x4E9B;&#x5F00;&#x9500;&#xFF0C;&#x6587;&#x4EF6;&#x4E2D;&#x4F1A;&#x88AB;&#x6DFB;&#x52A0;&#x63CF;&#x8FF0;
+&#x6B64;&#x6B21;&#x538B;&#x7F29;&#x8FC7;&#x7A0B;&#x7684;&#x4FE1;&#x606F;&#x3002;&#x5982;&#x679C;&#x4F60;&#x8BD5;&#x56FE;&#x538B;&#x7F29;&#x4E00;&#x4E2A;&#x5DF2;&#x7ECF;&#x4E0D;&#x5305;&#x542B;&#x591A;&#x4F59;&#x4FE1;&#x606F;&#x7684;&#x6587;&#x4EF6;&#xFF0C;&#x90A3;&#x4E48;&#x518D;&#x6B21;&#x538B;&#x7F29;&#x4E0D;&#x4F1A;&#x8282;&#x7701;
+&#x7A7A;&#x95F4;&#xFF0C;&#x4EE5;&#x62B5;&#x6D88;&#x989D;&#x5916;&#x7684;&#x82B1;&#x8D39;&#x3002;</p>
+</blockquote>
+<h3 id="&#x5F52;&#x6863;&#x6587;&#x4EF6;">&#x5F52;&#x6863;&#x6587;&#x4EF6;</h3>
+<p>A common file management task used in conjunction with compression is archiving.
+Archiving is the process of gathering up many files and bundling them together into a
+single large file. Archiving is often done as a part of system backups. It is also used
+when old data is moved from a system to some type of long-term storage.</p>
+<p>&#x4E00;&#x4E2A;&#x5E38;&#x89C1;&#x7684;&#xFF0C;&#x4E0E;&#x6587;&#x4EF6;&#x538B;&#x7F29;&#x7ED3;&#x5408;&#x4E00;&#x5757;&#x4F7F;&#x7528;&#x7684;&#x6587;&#x4EF6;&#x7BA1;&#x7406;&#x4EFB;&#x52A1;&#x662F;&#x5F52;&#x6863;&#x3002;&#x5F52;&#x6863;&#x5C31;&#x662F;&#x6536;&#x96C6;&#x8BB8;&#x591A;&#x6587;&#x4EF6;&#xFF0C;&#x5E76;&#x628A;&#x5B83;&#x4EEC;
+&#x6346;&#x7ED1;&#x6210;&#x4E00;&#x4E2A;&#x5927;&#x6587;&#x4EF6;&#x7684;&#x8FC7;&#x7A0B;&#x3002;&#x5F52;&#x6863;&#x7ECF;&#x5E38;&#x4F5C;&#x4E3A;&#x7CFB;&#x7EDF;&#x5907;&#x4EFD;&#x7684;&#x4E00;&#x90E8;&#x5206;&#x6765;&#x4F7F;&#x7528;&#x3002;&#x5F53;&#x628A;&#x65E7;&#x6570;&#x636E;&#x4ECE;&#x4E00;&#x4E2A;&#x7CFB;&#x7EDF;&#x79FB;&#x5230;&#x67D0;
+&#x79CD;&#x7C7B;&#x578B;&#x7684;&#x957F;&#x671F;&#x5B58;&#x50A8;&#x8BBE;&#x5907;&#x4E2D;&#x65F6;&#xFF0C;&#x4E5F;&#x4F1A;&#x7528;&#x5230;&#x5F52;&#x6863;&#x7A0B;&#x5E8F;&#x3002;</p>
+<h4 id="tar">tar</h4>
+<p>In the Unix-like world of software, the tar program is the classic tool for archiving files.
+Its name, short for tape archive, reveals its roots as a tool for making backup tapes.
+While it is still used for that traditional task, it is equally adept on other storage devices as
+well. We often see filenames that end with the extension .tar or .tgz which indicate a
+&#x201C;plain&#x201D; tar archive and a gzipped archive, respectively. A tar archive can consist of a
+group of separate files, one or more directory hierarchies, or a mixture of both. The
+command syntax works like this:</p>
+<p>&#x5728;&#x7C7B; Unix &#x7684;&#x8F6F;&#x4EF6;&#x4E16;&#x754C;&#x4E2D;&#xFF0C;&#x8FD9;&#x4E2A; tar &#x7A0B;&#x5E8F;&#x662F;&#x7528;&#x6765;&#x5F52;&#x6863;&#x6587;&#x4EF6;&#x7684;&#x7ECF;&#x5178;&#x5DE5;&#x5177;&#x3002;&#x5B83;&#x7684;&#x540D;&#x5B57;&#xFF0C;&#x662F; tape
+archive &#x7684;&#x7B80;&#x79F0;&#xFF0C;&#x63ED;&#x793A;&#x4E86;&#x5B83;&#x7684;&#x6839;&#x6E90;&#xFF0C;&#x5B83;&#x662F;&#x4E00;&#x6B3E;&#x5236;&#x4F5C;&#x78C1;&#x5E26;&#x5907;&#x4EFD;&#x7684;&#x5DE5;&#x5177;&#x3002;&#x800C;&#x5B83;&#x4ECD;&#x7136;&#x88AB;&#x7528;&#x6765;&#x5B8C;&#x6210;&#x4F20;&#x7EDF;&#x4EFB;&#x52A1;&#xFF0C;
+&#x5B83;&#x4E5F;&#x540C;&#x6837;&#x9002;&#x7528;&#x4E8E;&#x5176;&#x5B83;&#x7684;&#x5B58;&#x50A8;&#x8BBE;&#x5907;&#x3002;&#x6211;&#x4EEC;&#x7ECF;&#x5E38;&#x770B;&#x5230;&#x6269;&#x5C55;&#x540D;&#x4E3A; .tar &#x6216;&#x8005; .tgz &#x7684;&#x6587;&#x4EF6;&#xFF0C;&#x5B83;&#x4EEC;&#x5404;&#x81EA;&#x8868;&#x793A;&#x201C;&#x666E;&#x901A;&#x201D;
+&#x7684; tar &#x5305;&#x548C;&#x88AB; gzip &#x7A0B;&#x5E8F;&#x538B;&#x7F29;&#x8FC7;&#x7684; tar &#x5305;&#x3002;&#x4E00;&#x4E2A; tar &#x5305;&#x53EF;&#x4EE5;&#x7531;&#x4E00;&#x7EC4;&#x72EC;&#x7ACB;&#x7684;&#x6587;&#x4EF6;&#xFF0C;&#x4E00;&#x4E2A;&#x6216;&#x8005;&#x591A;&#x4E2A;&#x76EE;&#x5F55;&#xFF0C;&#x6216;&#x8005;
+&#x4E24;&#x8005;&#x6DF7;&#x5408;&#x4F53;&#x7EC4;&#x6210;&#x3002;&#x547D;&#x4EE4;&#x8BED;&#x6CD5;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code>tar mode[options] pathname...
+</code></pre><p>where mode is one of the following operating modes (only a partial list is shown here;
+see the tar man page for a complete list):</p>
+<p>&#x8FD9;&#x91CC;&#x7684; mode &#x662F;&#x6307;&#x4EE5;&#x4E0B;&#x64CD;&#x4F5C;&#x6A21;&#x5F0F;&#xFF08;&#x8FD9;&#x91CC;&#x53EA;&#x5C55;&#x793A;&#x4E86;&#x4E00;&#x90E8;&#x5206;&#xFF0C;&#x67E5;&#x770B; tar &#x7684;&#x624B;&#x518C;&#x6765;&#x5F97;&#x5230;&#x5B8C;&#x6574;&#x5217;&#x8868;&#xFF09;&#x4E4B;&#x4E00;&#xFF1A;</p>
+<table class="multi">
+<caption class="cap">Table 19-2: tar Modes</caption>
+<tr>
+<th class="title">Mode</th>
+<th class="title">Description</th>
+</tr>
+<tr>
+<td valign="top" width="25%">c</td>
+<td valign="top">Create an archive from a list of files and/or directories.  </td>
+</tr>
+<tr>
+<td valign="top">x</td>
+<td valign="top">Extract an archive.</td>
+</tr>
+<tr>
+<td valign="top">r</td>
+<td valign="top">Append specified pathnames to the end of an archive.</td>
+</tr>
+<tr>
+<td valign="top">t</td>
+<td valign="top">List the contents of an archive.  </td>
+</tr>
+</table>
+
+<table class="multi">
+<caption class="cap">&#x8868;19-2: tar &#x6A21;&#x5F0F;</caption>
+<tr>
+<th class="title">&#x6A21;&#x5F0F;</th>
+<th class="title">&#x8BF4;&#x660E;</th>
+</tr>
+<tr>
+<td valign="top" width="25%">c</td>
+<td valign="top">&#x4E3A;&#x6587;&#x4EF6;&#x548C;&#xFF0F;&#x6216;&#x76EE;&#x5F55;&#x5217;&#x8868;&#x521B;&#x5EFA;&#x5F52;&#x6863;&#x6587;&#x4EF6;&#x3002; </td>
+</tr>
+<tr>
+<td valign="top">x</td>
+<td valign="top">&#x62BD;&#x53D6;&#x5F52;&#x6863;&#x6587;&#x4EF6;&#x3002;</td>
+</tr>
+<tr>
+<td valign="top">r</td>
+<td valign="top">&#x8FFD;&#x52A0;&#x5177;&#x4F53;&#x7684;&#x8DEF;&#x5F84;&#x5230;&#x5F52;&#x6863;&#x6587;&#x4EF6;&#x7684;&#x672B;&#x5C3E;&#x3002;</td>
+</tr>
+<tr>
+<td valign="top">t</td>
+<td valign="top">&#x5217;&#x51FA;&#x5F52;&#x6863;&#x6587;&#x4EF6;&#x7684;&#x5185;&#x5BB9;&#x3002;</td>
+</tr>
+</table>
+
+<p>tar uses a slightly odd way of expressing options, so we&#x2019;ll need some examples to show
+how it works. First, let&#x2019;s re-create our playground from the previous chapter:</p>
+<p>tar &#x547D;&#x4EE4;&#x4F7F;&#x7528;&#x4E86;&#x7A0D;&#x5FAE;&#x6709;&#x70B9;&#x5947;&#x602A;&#x7684;&#x65B9;&#x5F0F;&#x6765;&#x8868;&#x8FBE;&#x5B83;&#x7684;&#x9009;&#x9879;&#xFF0C;&#x6240;&#x4EE5;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x4E00;&#x4E9B;&#x4F8B;&#x5B50;&#x6765;&#x5C55;&#x793A;&#x5B83;&#x662F;
+&#x600E;&#x6837;&#x5DE5;&#x4F5C;&#x7684;&#x3002;&#x9996;&#x5148;&#xFF0C;&#x8BA9;&#x6211;&#x4EEC;&#x91CD;&#x65B0;&#x521B;&#x5EFA;&#x4E4B;&#x524D;&#x6211;&#x4EEC;&#x7528;&#x8FC7;&#x7684;&#x64CD;&#x7EC3;&#x573A;:</p>
+<pre><code>[me@linuxbox ~]$ mkdir -p playground/dir-{00{1..9},0{10..99},100}
+[me@linuxbox ~]$ touch playground/dir-{00{1..9},0{10..99},100}/file-{A..Z}
+</code></pre><p>Next, let&#x2019;s create a tar archive of the entire playground:</p>
+<p>&#x4E0B;&#x4E00;&#x6B65;&#xFF0C;&#x8BA9;&#x6211;&#x4EEC;&#x521B;&#x5EFA;&#x6574;&#x4E2A;&#x64CD;&#x7EC3;&#x573A;&#x7684; tar &#x5305;&#xFF1A;</p>
+<pre><code>[me@linuxbox ~]$ tar cf playground.tar playground
+</code></pre><p>This command creates a tar archive named playground.tar that contains the entire
+playground directory hierarchy. We can see that the mode and the f option, which is
+used to specify the name of the tar archive, may be joined together, and do not require a
+leading dash. Note, however, that the mode must always be specified first, before any
+other option.</p>
+<p>&#x8FD9;&#x4E2A;&#x547D;&#x4EE4;&#x521B;&#x5EFA;&#x4E86;&#x4E00;&#x4E2A;&#x540D;&#x4E3A; playground.tar &#x7684; tar &#x5305;&#xFF0C;&#x5176;&#x5305;&#x542B;&#x6574;&#x4E2A; playground &#x76EE;&#x5F55;&#x5C42;&#x6B21;&#x7ED3;&#x679C;&#x3002;&#x6211;&#x4EEC;
+&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x6A21;&#x5F0F; c &#x548C;&#x9009;&#x9879; f&#xFF0C;&#x5176;&#x88AB;&#x7528;&#x6765;&#x6307;&#x5B9A;&#x8FD9;&#x4E2A; tar &#x5305;&#x7684;&#x540D;&#x5B57;&#xFF0C;&#x6A21;&#x5F0F;&#x548C;&#x9009;&#x9879;&#x53EF;&#x4EE5;&#x5199;&#x5728;&#x4E00;&#x8D77;&#xFF0C;&#x800C;&#x4E14;&#x4E0D;
+&#x9700;&#x8981;&#x5F00;&#x5934;&#x7684;&#x77ED;&#x6A2A;&#x7EBF;&#x3002;&#x6CE8;&#x610F;&#xFF0C;&#x7136;&#x800C;&#xFF0C;&#x5FC5;&#x987B;&#x9996;&#x5148;&#x6307;&#x5B9A;&#x6A21;&#x5F0F;&#xFF0C;&#x7136;&#x540E;&#x624D;&#x662F;&#x5176;&#x5B83;&#x7684;&#x9009;&#x9879;&#x3002;</p>
+<p>To list the contents of the archive, we can do this:</p>
+<p>&#x8981;&#x60F3;&#x5217;&#x51FA;&#x5F52;&#x6863;&#x6587;&#x4EF6;&#x7684;&#x5185;&#x5BB9;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x8FD9;&#x6837;&#x505A;&#xFF1A;</p>
+<pre><code>[me@linuxbox ~]$ tar tf playground.tar
+</code></pre><p>For a more detailed listing, we can add the v (verbose) option:</p>
+<p>&#x4E3A;&#x4E86;&#x5F97;&#x5230;&#x66F4;&#x8BE6;&#x7EC6;&#x7684;&#x5217;&#x8868;&#x4FE1;&#x606F;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x6DFB;&#x52A0;&#x9009;&#x9879; v&#xFF1A;</p>
+<pre><code>[me@linuxbox ~]$ tar tvf playground.tar
+</code></pre><p>Now, let&#x2019;s extract the playground in a new location. We will do this by creating a new
+directory named foo, and changing the directory and extracting the tar archive:</p>
+<p>&#x73B0;&#x5728;&#xFF0C;&#x62BD;&#x53D6; tar &#x5305; playground &#x5230;&#x4E00;&#x4E2A;&#x65B0;&#x4F4D;&#x7F6E;&#x3002;&#x6211;&#x4EEC;&#x5148;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x540D;&#x4E3A; foo &#x7684;&#x65B0;&#x76EE;&#x5F55;&#xFF0C;&#x66F4;&#x6539;&#x76EE;&#x5F55;&#xFF0C;
+&#x7136;&#x540E;&#x62BD;&#x53D6; tar &#x5305;&#x4E2D;&#x7684;&#x6587;&#x4EF6;&#xFF1A;</p>
+<pre><code>[me@linuxbox ~]$ mkdir foo
+[me@linuxbox ~]$ cd foo
+[me@linuxbox ~]$ tar xf ../playground.tar
+[me@linuxbox ~]$ ls
+playground
+</code></pre><p>If we examine the contents of ~/foo/playground, we see that the archive was
+successfully installed, creating a precise reproduction of the original files. There is one
+caveat, however: unless you are operating as the superuser, files and directories extracted
+from archives take on the ownership of the user performing the restoration, rather than
+the original owner.</p>
+<p>&#x5982;&#x679C;&#x6211;&#x4EEC;&#x68C0;&#x67E5; ~/foo/playground &#x76EE;&#x5F55;&#x4E2D;&#x7684;&#x5185;&#x5BB9;&#xFF0C;&#x4F1A;&#x770B;&#x5230;&#x8FD9;&#x4E2A;&#x5F52;&#x6863;&#x6587;&#x4EF6;&#x5DF2;&#x7ECF;&#x88AB;&#x6210;&#x529F;&#x5730;&#x5B89;&#x88C5;&#x4E86;&#xFF0C;&#x5C31;&#x662F;&#x521B;&#x5EFA;&#x4E86;
+&#x4E00;&#x4E2A;&#x7CBE;&#x786E;&#x7684;&#x539F;&#x59CB;&#x6587;&#x4EF6;&#x7684;&#x526F;&#x672C;&#x3002;&#x7136;&#x800C;&#xFF0C;&#x8FD9;&#x91CC;&#x6709;&#x4E00;&#x4E2A;&#x8B66;&#x544A;&#xFF1A;&#x9664;&#x975E;&#x4F60;&#x662F;&#x8D85;&#x7EA7;&#x7528;&#x6237;&#xFF0C;&#x8981;&#x4E0D;&#x7136;&#x4ECE;&#x5F52;&#x6863;&#x6587;&#x4EF6;&#x4E2D;&#x62BD;&#x53D6;&#x7684;&#x6587;&#x4EF6;
+&#x548C;&#x76EE;&#x5F55;&#x7684;&#x6240;&#x6709;&#x6743;&#x7531;&#x6267;&#x884C;&#x6B64;&#x590D;&#x539F;&#x64CD;&#x4F5C;&#x7684;&#x7528;&#x6237;&#x6240;&#x62E5;&#x6709;&#xFF0C;&#x800C;&#x4E0D;&#x5C5E;&#x4E8E;&#x539F;&#x59CB;&#x6240;&#x6709;&#x8005;&#x3002;</p>
+<p>Another interesting behavior of tar is the way it handles pathnames in archives. The
+default for pathnames is relative, rather than absolute. tar does this by simply removing
+any leading slash from the pathname when creating the archive. To demonstrate, we will
+recreate our archive, this time specifying an absolute pathname:</p>
+<p>tar &#x547D;&#x4EE4;&#x53E6;&#x4E00;&#x4E2A;&#x6709;&#x8DA3;&#x7684;&#x884C;&#x4E3A;&#x662F;&#x5B83;&#x5904;&#x7406;&#x5F52;&#x6863;&#x6587;&#x4EF6;&#x8DEF;&#x5F84;&#x540D;&#x7684;&#x65B9;&#x5F0F;&#x3002;&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x8DEF;&#x5F84;&#x540D;&#x662F;&#x76F8;&#x5BF9;&#x7684;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x7EDD;&#x5BF9;
+&#x8DEF;&#x5F84;&#x3002;&#x5F53;&#x521B;&#x5EFA;&#x5F52;&#x6863;&#x6587;&#x4EF6;&#x7684;&#x65F6;&#x5019;&#xFF0C;tar &#x547D;&#x4EE4;&#x4F1A;&#x7B80;&#x5355;&#x5730;&#x5220;&#x9664;&#x8DEF;&#x5F84;&#x540D;&#x5F00;&#x5934;&#x7684;&#x659C;&#x6760;&#x3002;&#x4E3A;&#x4E86;&#x8BF4;&#x660E;&#x95EE;&#x9898;&#xFF0C;&#x6211;&#x4EEC;&#x5C06;&#x4F1A;
+&#x91CD;&#x65B0;&#x521B;&#x5EFA;&#x6211;&#x4EEC;&#x7684;&#x5F52;&#x6863;&#x6587;&#x4EF6;&#xFF0C;&#x8FD9;&#x6B21;&#x6307;&#x5B9A;&#x4E00;&#x4E2A;&#x7EDD;&#x5BF9;&#x8DEF;&#x5F84;&#xFF1A;</p>
+<pre><code>[me@linuxbox foo]$ cd
+[me@linuxbox ~]$ tar cf playground2.tar ~/playground
+</code></pre><p>Remember, ~/playground will expand into /home/me/playground when we
+press the enter key, so we will get an absolute pathname for our demonstration. Next, we
+will extract the archive as before and watch what happens:</p>
+<p>&#x8BB0;&#x4F4F;&#xFF0C;&#x5F53;&#x6309;&#x4E0B;&#x56DE;&#x8F66;&#x952E;&#x540E;&#xFF0C;~/playground &#x4F1A;&#x5C55;&#x5F00;&#x6210; /home/me/playground&#xFF0C;&#x6240;&#x4EE5;&#x6211;&#x4EEC;&#x5C06;&#x4F1A;&#x5F97;&#x5230;&#x4E00;&#x4E2A;
+&#x7EDD;&#x5BF9;&#x8DEF;&#x5F84;&#x540D;&#x3002;&#x63A5;&#x4E0B;&#x6765;&#xFF0C;&#x548C;&#x4E4B;&#x524D;&#x4E00;&#x6837;&#x6211;&#x4EEC;&#x4F1A;&#x62BD;&#x53D6;&#x5F52;&#x6863;&#x6587;&#x4EF6;&#xFF0C;&#x89C2;&#x5BDF;&#x53D1;&#x751F;&#x4EC0;&#x4E48;&#x4E8B;&#x60C5;&#xFF1A;</p>
+<pre><code>[me@linuxbox ~]$ cd foo
+[me@linuxbox foo]$ tar xf ../playground2.tar
+[me@linuxbox foo]$ ls
+home     playground
+[me@linuxbox foo]$ ls home
+me
+[me@linuxbox foo]$ ls home/me
+playground
+</code></pre><p>Here we can see that when we extracted our second archive, it recreated the directory
+home/me/playground relative to our current working directory, ~/foo, not relative
+to the root directory, as would have been the case with an absolute pathname. This may
+seem like an odd way for it to work, but it&#x2019;s actually more useful this way, as it allows us
+to extract archives to any location rather than being forced to extract them to their
+original locations. Repeating the exercise with the inclusion of the verbose option (v)
+will give a clearer picture of what&#x2019;s going on.</p>
+<p>&#x8FD9;&#x91CC;&#x6211;&#x4EEC;&#x770B;&#x5230;&#x5F53;&#x6211;&#x4EEC;&#x62BD;&#x53D6;&#x7B2C;&#x4E8C;&#x4E2A;&#x5F52;&#x6863;&#x6587;&#x4EF6;&#x65F6;&#xFF0C;&#x5B83;&#x91CD;&#x65B0;&#x521B;&#x5EFA;&#x4E86; home/me/playground &#x76EE;&#x5F55;&#xFF0C;
+&#x76F8;&#x5BF9;&#x4E8E;&#x6211;&#x4EEC;&#x5F53;&#x524D;&#x7684;&#x5DE5;&#x4F5C;&#x76EE;&#x5F55;&#xFF0C;~/foo&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x76F8;&#x5BF9;&#x4E8E; root &#x76EE;&#x5F55;&#xFF0C;&#x4F5C;&#x4E3A;&#x5E26;&#x6709;&#x7EDD;&#x5BF9;&#x8DEF;&#x5F84;&#x540D;&#x7684;&#x6848;&#x4F8B;&#x3002;
+&#x8FD9;&#x770B;&#x8D77;&#x6765;&#x4F3C;&#x4E4E;&#x662F;&#x4E00;&#x79CD;&#x5947;&#x602A;&#x7684;&#x5DE5;&#x4F5C;&#x65B9;&#x5F0F;&#xFF0C;&#x4F46;&#x4E8B;&#x5B9E;&#x4E0A;&#x8FD9;&#x79CD;&#x65B9;&#x5F0F;&#x5F88;&#x6709;&#x7528;&#xFF0C;&#x56E0;&#x4E3A;&#x8FD9;&#x6837;&#x5C31;&#x5141;&#x8BB8;&#x6211;&#x4EEC;&#x62BD;&#x53D6;&#x6587;&#x4EF6;
+&#x5230;&#x4EFB;&#x610F;&#x4F4D;&#x7F6E;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x5F3A;&#x5236;&#x5730;&#x628A;&#x62BD;&#x53D6;&#x7684;&#x6587;&#x4EF6;&#x653E;&#x7F6E;&#x5230;&#x539F;&#x59CB;&#x76EE;&#x5F55;&#x4E0B;&#x3002;&#x52A0;&#x4E0A; verbose&#xFF08;v&#xFF09;&#x9009;&#x9879;&#xFF0C;&#x91CD;&#x505A;
+&#x8FD9;&#x4E2A;&#x7EC3;&#x4E60;&#xFF0C;&#x5C06;&#x4F1A;&#x5C55;&#x73B0;&#x66F4;&#x52A0;&#x8BE6;&#x7EC6;&#x7684;&#x4FE1;&#x606F;&#x3002;</p>
+<p>Let&#x2019;s consider a hypothetical, yet practical example, of tar in action. Imagine we want
+to copy the home directory and its contents from one system to another and we have a
+large USB hard drive that we can use for the transfer. On our modern Linux system, the
+drive is &#x201C;automagically&#x201D; mounted in the /media directory. Let&#x2019;s also imagine that the
+disk has a volume name of BigDisk when we attach it. To make the tar archive, we
+can do the following:</p>
+<p>&#x8BA9;&#x6211;&#x4EEC;&#x8003;&#x8651;&#x4E00;&#x4E2A;&#x5047;&#x8BBE;&#xFF0C;tar &#x547D;&#x4EE4;&#x7684;&#x5B9E;&#x9645;&#x5E94;&#x7528;&#x3002;&#x5047;&#x5B9A;&#x6211;&#x4EEC;&#x60F3;&#x8981;&#x590D;&#x5236;&#x5BB6;&#x76EE;&#x5F55;&#x53CA;&#x5176;&#x5185;&#x5BB9;&#x5230;&#x53E6;&#x4E00;&#x4E2A;&#x7CFB;&#x7EDF;&#x4E2D;&#xFF0C;
+&#x5E76;&#x4E14;&#x6709;&#x4E00;&#x4E2A;&#x5927;&#x5BB9;&#x91CF;&#x7684; USB &#x786C;&#x76D8;&#xFF0C;&#x53EF;&#x4EE5;&#x628A;&#x5B83;&#x4F5C;&#x4E3A;&#x4F20;&#x8F93;&#x5DE5;&#x5177;&#x3002;&#x5728;&#x73B0;&#x4EE3; Linux &#x7CFB;&#x7EDF;&#x4E2D;&#xFF0C;
+&#x8FD9;&#x4E2A;&#x786C;&#x76D8;&#x4F1A;&#x88AB;&#x201C;&#x81EA;&#x52A8;&#x5730;&#x201D;&#x6302;&#x8F7D;&#x5230; /media &#x76EE;&#x5F55;&#x4E0B;&#x3002;&#x6211;&#x4EEC;&#x4E5F;&#x5047;&#x5B9A;&#x786C;&#x76D8;&#x4E2D;&#x6709;&#x4E00;&#x4E2A;&#x540D;&#x4E3A; BigDisk &#x7684;&#x903B;&#x8F91;&#x5377;&#x3002;
+&#x4E3A;&#x4E86;&#x5236;&#x4F5C; tar &#x5305;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x8FD9;&#x6837;&#x505A;&#xFF1A;</p>
+<pre><code>[me@linuxbox ~]$ sudo tar cf /media/BigDisk/home.tar /home
+</code></pre><p>After the tar file is written, we unmount the drive and attach it to the second computer.
+Again, it is mounted at /media/BigDisk. To extract the archive, we do this:</p>
+<p>tar &#x5305;&#x5236;&#x4F5C;&#x5B8C;&#x6210;&#x4E4B;&#x540E;&#xFF0C;&#x6211;&#x4EEC;&#x5378;&#x8F7D;&#x786C;&#x76D8;&#xFF0C;&#x7136;&#x540E;&#x628A;&#x5B83;&#x8FDE;&#x63A5;&#x5230;&#x7B2C;&#x4E8C;&#x4E2A;&#x8BA1;&#x7B97;&#x673A;&#x4E0A;&#x3002;&#x518D;&#x4E00;&#x6B21;&#xFF0C;&#x6B64;&#x786C;&#x76D8;&#x88AB;
+&#x6302;&#x8F7D;&#x5230; /media/BigDisk &#x76EE;&#x5F55;&#x4E0B;&#x3002;&#x4E3A;&#x4E86;&#x62BD;&#x53D6;&#x5F52;&#x6863;&#x6587;&#x4EF6;&#xFF0C;&#x6211;&#x4EEC;&#x8FD9;&#x6837;&#x505A;&#xFF1A;</p>
+<pre><code>[me@linuxbox2 ~]$ cd /
+[me@linuxbox2 /]$ sudo tar xf /media/BigDisk/home.tar
+</code></pre><p>What&#x2019;s important to see here is that we must first change directory to /, so that the
+extraction is relative to the root directory, since all pathnames within the archive are
+relative.</p>
+<p>&#x503C;&#x5F97;&#x6CE8;&#x610F;&#x7684;&#x4E00;&#x70B9;&#x662F;&#xFF0C;&#x56E0;&#x4E3A;&#x5F52;&#x6863;&#x6587;&#x4EF6;&#x4E2D;&#x7684;&#x6240;&#x6709;&#x8DEF;&#x5F84;&#x540D;&#x90FD;&#x662F;&#x76F8;&#x5BF9;&#x7684;&#xFF0C;&#x6240;&#x4EE5;&#x9996;&#x5148;&#x6211;&#x4EEC;&#x5FC5;&#x987B;&#x66F4;&#x6539;&#x76EE;&#x5F55;&#x5230;&#x6839;&#x76EE;&#x5F55;&#x4E0B;&#xFF0C;
+&#x8FD9;&#x6837;&#x62BD;&#x53D6;&#x7684;&#x6587;&#x4EF6;&#x8DEF;&#x5F84;&#x5C31;&#x76F8;&#x5BF9;&#x4E8E;&#x6839;&#x76EE;&#x5F55;&#x4E86;&#x3002;</p>
+<p>When extracting an archive, it&#x2019;s possible to limit what is extracted from the archive. For
+example, if we wanted to extract a single file from an archive, it could be done like this:</p>
+<p>&#x5F53;&#x62BD;&#x53D6;&#x4E00;&#x4E2A;&#x5F52;&#x6863;&#x6587;&#x4EF6;&#x65F6;&#xFF0C;&#x6709;&#x53EF;&#x80FD;&#x9650;&#x5236;&#x4ECE;&#x5F52;&#x6863;&#x6587;&#x4EF6;&#x4E2D;&#x62BD;&#x53D6;&#x4EC0;&#x4E48;&#x5185;&#x5BB9;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x5982;&#x679C;&#x6211;&#x4EEC;&#x60F3;&#x8981;&#x62BD;&#x53D6;&#x5355;&#x4E2A;&#x6587;&#x4EF6;&#xFF0C;
+&#x53EF;&#x4EE5;&#x8FD9;&#x6837;&#x5B9E;&#x73B0;&#xFF1A;</p>
+<pre><code>tar xf archive.tar pathname
+</code></pre><p>By adding the trailing pathname to the command, tar will only restore the specified file.
+Multiple pathnames may be specified. Note that the pathname must be the full, exact
+relative pathname as stored in the archive. When specifying pathnames, wildcards are
+not normally supported; however, the GNU version of tar (which is the version most
+often found in Linux distributions) supports them with the --wildcards option. Here
+is an example using our previous playground.tar file:</p>
+<p>&#x901A;&#x8FC7;&#x7ED9;&#x547D;&#x4EE4;&#x6DFB;&#x52A0;&#x672B;&#x5C3E;&#x7684;&#x8DEF;&#x5F84;&#x540D;&#xFF0C;tar &#x547D;&#x4EE4;&#x5C31;&#x53EA;&#x4F1A;&#x6062;&#x590D;&#x6307;&#x5B9A;&#x7684;&#x6587;&#x4EF6;&#x3002;&#x53EF;&#x4EE5;&#x6307;&#x5B9A;&#x591A;&#x4E2A;&#x8DEF;&#x5F84;&#x540D;&#x3002;&#x6CE8;&#x610F;
+&#x8DEF;&#x5F84;&#x540D;&#x5FC5;&#x987B;&#x662F;&#x5B8C;&#x5168;&#x7684;&#xFF0C;&#x7CBE;&#x51C6;&#x7684;&#x76F8;&#x5BF9;&#x8DEF;&#x5F84;&#x540D;&#xFF0C;&#x5C31;&#x5982;&#x5B58;&#x50A8;&#x5728;&#x5F52;&#x6863;&#x6587;&#x4EF6;&#x4E2D;&#x7684;&#x4E00;&#x6837;&#x3002;&#x5F53;&#x6307;&#x5B9A;&#x8DEF;&#x5F84;&#x540D;&#x7684;&#x65F6;&#x5019;&#xFF0C;
+&#x901A;&#x5E38;&#x4E0D;&#x652F;&#x6301;&#x901A;&#x914D;&#x7B26;&#xFF1B;&#x7136;&#x800C;&#xFF0C;GNU &#x7248;&#x672C;&#x7684; tar &#x547D;&#x4EE4;&#xFF08;&#x5728; Linux &#x53D1;&#x884C;&#x7248;&#x4E2D;&#x6700;&#x5E38;&#x51FA;&#x73B0;&#xFF09;&#x901A;&#x8FC7; --wildcards &#x9009;&#x9879;&#x6765;
+&#x652F;&#x6301;&#x901A;&#x914D;&#x7B26;&#x3002;&#x8FD9;&#x4E2A;&#x4F8B;&#x5B50;&#x4F7F;&#x7528;&#x4E86;&#x4E4B;&#x524D; playground.tar &#x6587;&#x4EF6;&#xFF1A;</p>
+<pre><code>[me@linuxbox ~]$ cd foo
+[me@linuxbox foo]$ tar xf ../playground2.tar --wildcards &apos;home/me/playground/dir-\*/file-A&apos;
+</code></pre><p>This command will extract only files matching the specified pathname including the
+wildcard dir-*.</p>
+<p>&#x8FD9;&#x4E2A;&#x547D;&#x4EE4;&#x5C06;&#x53EA;&#x4F1A;&#x62BD;&#x53D6;&#x5339;&#x914D;&#x7279;&#x5B9A;&#x8DEF;&#x5F84;&#x540D;&#x7684;&#x6587;&#x4EF6;&#xFF0C;&#x8DEF;&#x5F84;&#x540D;&#x4E2D;&#x5305;&#x542B;&#x4E86;&#x901A;&#x914D;&#x7B26; dir-*&#x3002;</p>
+<p>tar is often used in conjunction with find to produce archives. In this example, we
+will use find to produce a set of files to include in an archive:</p>
+<p>tar &#x547D;&#x4EE4;&#x7ECF;&#x5E38;&#x7ED3;&#x5408; find &#x547D;&#x4EE4;&#x4E00;&#x8D77;&#x6765;&#x5236;&#x4F5C;&#x5F52;&#x6863;&#x6587;&#x4EF6;&#x3002;&#x5728;&#x8FD9;&#x4E2A;&#x4F8B;&#x5B50;&#x91CC;&#xFF0C;&#x6211;&#x4EEC;&#x5C06;&#x4F1A;&#x4F7F;&#x7528; find &#x547D;&#x4EE4;&#x6765;
+&#x4EA7;&#x751F;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x96C6;&#x5408;&#xFF0C;&#x7136;&#x540E;&#x8FD9;&#x4E9B;&#x6587;&#x4EF6;&#x88AB;&#x5305;&#x542B;&#x5230;&#x5F52;&#x6863;&#x6587;&#x4EF6;&#x4E2D;&#x3002;</p>
+<pre><code>[me@linuxbox ~]$ find playground -name &apos;file-A&apos; -exec tar rf playground.tar &apos;{}&apos; &apos;+&apos;
+</code></pre><p>Here we use find to match all the files in playground named file-A and then,
+using the -exec action, we invoke tar in the append mode (r) to add the matching
+files to the archive playground.tar.</p>
+<p>&#x8FD9;&#x91CC;&#x6211;&#x4EEC;&#x4F7F;&#x7528; find &#x547D;&#x4EE4;&#x6765;&#x5339;&#x914D; playground &#x76EE;&#x5F55;&#x4E2D;&#x6240;&#x6709;&#x540D;&#x4E3A; file-A &#x7684;&#x6587;&#x4EF6;&#xFF0C;&#x7136;&#x540E;&#x4F7F;&#x7528;-exec &#x884C;&#x4E3A;&#xFF0C;&#x6765;
+&#x5524;&#x9192;&#x5E26;&#x6709;&#x8FFD;&#x52A0;&#x6A21;&#x5F0F;&#xFF08;r&#xFF09;&#x7684; tar &#x547D;&#x4EE4;&#xFF0C;&#x628A;&#x5339;&#x914D;&#x7684;&#x6587;&#x4EF6;&#x6DFB;&#x52A0;&#x5230;&#x5F52;&#x6863;&#x6587;&#x4EF6; playground.tar &#x91CC;&#x9762;&#x3002;</p>
+<p>Using tar with find is a good way of creating incremental backups of a directory tree
+or an entire system. By using find to match files newer than a timestamp file, we could
+create an archive that only contains files newer than the last archive, assuming that the
+timestamp file is updated right after each archive is created.</p>
+<p>&#x4F7F;&#x7528; tar &#x548C; find &#x547D;&#x4EE4;&#xFF0C;&#x6765;&#x521B;&#x5EFA;&#x9010;&#x6E10;&#x589E;&#x52A0;&#x7684;&#x76EE;&#x5F55;&#x6811;&#x6216;&#x8005;&#x6574;&#x4E2A;&#x7CFB;&#x7EDF;&#x7684;&#x5907;&#x4EFD;&#xFF0C;&#x662F;&#x4E2A;&#x4E0D;&#x9519;&#x7684;&#x65B9;&#x6CD5;&#x3002;&#x901A;&#x8FC7; find
+&#x547D;&#x4EE4;&#x5339;&#x914D;&#x65B0;&#x4E8E;&#x67D0;&#x4E2A;&#x65F6;&#x95F4;&#x6233;&#x7684;&#x6587;&#x4EF6;&#xFF0C;&#x6211;&#x4EEC;&#x5C31;&#x80FD;&#x591F;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x5F52;&#x6863;&#x6587;&#x4EF6;&#xFF0C;&#x5176;&#x53EA;&#x5305;&#x542B;&#x65B0;&#x4E8E;&#x4E0A;&#x4E00;&#x4E2A; tar &#x5305;&#x7684;&#x6587;&#x4EF6;&#xFF0C;
+&#x5047;&#x5B9A;&#x8FD9;&#x4E2A;&#x65F6;&#x95F4;&#x6233;&#x6587;&#x4EF6;&#x6070;&#x597D;&#x5728;&#x6BCF;&#x4E2A;&#x5F52;&#x6863;&#x6587;&#x4EF6;&#x521B;&#x5EFA;&#x4E4B;&#x540E;&#x88AB;&#x66F4;&#x65B0;&#x4E86;&#x3002;</p>
+<p>tar can also make use of both standard input and output. Here is a comprehensive
+example:</p>
+<p>tar &#x547D;&#x4EE4;&#x4E5F;&#x53EF;&#x4EE5;&#x5229;&#x7528;&#x6807;&#x51C6;&#x8F93;&#x51FA;&#x548C;&#x8F93;&#x5165;&#x3002;&#x8FD9;&#x91CC;&#x662F;&#x4E00;&#x4E2A;&#x5B8C;&#x6574;&#x7684;&#x4F8B;&#x5B50;:</p>
+<pre><code>[me@linuxbox foo]$ cd
+[me@linuxbox ~]$ find playground -name &apos;file-A&apos; | tar cf - --files-from=-
+   | gzip &gt; playground.tgz
+</code></pre><p>In this example, we used the find program to produce a list of matching files and piped
+them into tar. If the filename &#x201C;-&#x201D; is specified, it is taken to mean standard input or
+output, as needed (by the way, this convention of using &#x201C;-&#x201D; to represent standard
+input/output is used by a number of other programs, too.) The --files-from option
+(which may be also be specified as -T) causes tar to read its list of pathnames from a
+file rather than the command line. Lastly, the archive produced by tar is piped into
+gzip to create the compressed archive playground.tgz. The .tgz extension is the
+conventional extension given to gzip-compressed tar files. The extension .tar.gz is
+also used sometimes.</p>
+<p>&#x5728;&#x8FD9;&#x4E2A;&#x4F8B;&#x5B50;&#x91CC;&#x9762;&#xFF0C;&#x6211;&#x4EEC;&#x4F7F;&#x7528; find &#x7A0B;&#x5E8F;&#x4EA7;&#x751F;&#x4E86;&#x4E00;&#x4E2A;&#x5339;&#x914D;&#x6587;&#x4EF6;&#x5217;&#x8868;&#xFF0C;&#x7136;&#x540E;&#x628A;&#x5B83;&#x4EEC;&#x7BA1;&#x9053;&#x5230; tar &#x547D;&#x4EE4;&#x4E2D;&#x3002;
+&#x5982;&#x679C;&#x6307;&#x5B9A;&#x4E86;&#x6587;&#x4EF6;&#x540D;&#x201C;-&#x201D;&#xFF0C;&#x5219;&#x5176;&#x88AB;&#x770B;&#x4F5C;&#x662F;&#x6807;&#x51C6;&#x8F93;&#x5165;&#x6216;&#x8F93;&#x51FA;&#xFF0C;&#x6B63;&#x662F;&#x6240;&#x9700;&#xFF08;&#x987A;&#x4FBF;&#x8BF4;&#x4E00;&#x4E0B;&#xFF0C;&#x4F7F;&#x7528;&#x201C;-&#x201D;&#x6765;&#x8868;&#x793A;
+&#x6807;&#x51C6;&#x8F93;&#x5165;&#xFF0F;&#x8F93;&#x51FA;&#x7684;&#x60EF;&#x4F8B;&#xFF0C;&#x4E5F;&#x88AB;&#x5927;&#x91CF;&#x7684;&#x5176;&#x5B83;&#x7A0B;&#x5E8F;&#x4F7F;&#x7528;&#xFF09;&#x3002;&#x8FD9;&#x4E2A; --file-from &#x9009;&#x9879;&#xFF08;&#x4E5F;&#x53EF;&#x4EE5;&#x7528; -T &#x6765;&#x6307;&#x5B9A;&#xFF09;
+&#x5BFC;&#x81F4; tar &#x547D;&#x4EE4;&#x4ECE;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x800C;&#x4E0D;&#x662F;&#x547D;&#x4EE4;&#x884C;&#x6765;&#x8BFB;&#x5165;&#x5B83;&#x7684;&#x8DEF;&#x5F84;&#x540D;&#x5217;&#x8868;&#x3002;&#x6700;&#x540E;&#xFF0C;&#x8FD9;&#x4E2A;&#x7531; tar &#x547D;&#x4EE4;&#x4EA7;&#x751F;&#x7684;&#x5F52;&#x6863;
+&#x6587;&#x4EF6;&#x88AB;&#x7BA1;&#x9053;&#x5230; gzip &#x547D;&#x4EE4;&#x4E2D;&#xFF0C;&#x7136;&#x540E;&#x521B;&#x5EFA;&#x4E86;&#x538B;&#x7F29;&#x5F52;&#x6863;&#x6587;&#x4EF6; playground.tgz&#x3002;&#x6B64; .tgz &#x6269;&#x5C55;&#x540D;&#x662F;&#x547D;&#x540D;
+&#x7531; gzip &#x538B;&#x7F29;&#x7684; tar &#x6587;&#x4EF6;&#x7684;&#x5E38;&#x89C4;&#x6269;&#x5C55;&#x540D;&#x3002;&#x6709;&#x65F6;&#x5019;&#x4E5F;&#x4F1A;&#x4F7F;&#x7528; .tar.gz &#x8FD9;&#x4E2A;&#x6269;&#x5C55;&#x540D;&#x3002;</p>
+<p>While we used the gzip program externally to produced our compressed archive,
+modern versions of GNU tar support both gzip and bzip2 compression directly, with the
+use of the z and j options, respectively. Using our previous example as a base, we can
+simplify it this way:</p>
+<p>&#x867D;&#x7136;&#x6211;&#x4EEC;&#x4F7F;&#x7528; gzip &#x7A0B;&#x5E8F;&#x6765;&#x5236;&#x4F5C;&#x6211;&#x4EEC;&#x7684;&#x538B;&#x7F29;&#x5F52;&#x6863;&#x6587;&#x4EF6;&#xFF0C;&#x4F46;&#x662F;&#x73B0;&#x5728;&#x7684; GUN &#x7248;&#x672C;&#x7684; tar &#x547D;&#x4EE4;
+&#xFF0C;gzip &#x548C; bzip2 &#x538B;&#x7F29;&#x4E24;&#x8005;&#x90FD;&#x76F4;&#x63A5;&#x652F;&#x6301;&#xFF0C;&#x5404;&#x81EA;&#x4F7F;&#x7528; z &#x548C; j &#x9009;&#x9879;&#x3002;&#x4EE5;&#x6211;&#x4EEC;&#x4E4B;&#x524D;&#x7684;&#x4F8B;&#x5B50;&#x4E3A;&#x57FA;&#x7840;&#xFF0C;
+&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x8FD9;&#x6837;&#x7B80;&#x5316;&#x5B83;&#xFF1A;</p>
+<pre><code>[me@linuxbox ~]$ find playground -name &apos;file-A&apos; | tar czf playground.tgz -T -
+</code></pre><p>If we had wanted to create a bzip2 compressed archive instead, we could have done this:</p>
+<p>&#x5982;&#x679C;&#x6211;&#x4EEC;&#x672C;&#x8981;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x7531; bzip2 &#x538B;&#x7F29;&#x7684;&#x5F52;&#x6863;&#x6587;&#x4EF6;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x8FD9;&#x6837;&#x505A;&#xFF1A;</p>
+<pre><code>[me@linuxbox ~]$ find playground -name &apos;file-A&apos; | tar cjf playground.tbz -T -
+</code></pre><p>By simply changing the compression option from z to j (and changing the output file&#x2019;s
+extension to .tbz to indicate a bzip2 compressed file) we enabled bzip2 compression.
+Another interesting use of standard input and output with the tar command involves
+transferring files between systems over a network. Imagine that we had two machines
+running a Unix-like system equipped with tar and ssh. In such a scenario, we could
+transfer a directory from a remote system (named remote-sys for this example) to our
+local system:</p>
+<p>&#x901A;&#x8FC7;&#x7B80;&#x5355;&#x5730;&#x4FEE;&#x6539;&#x538B;&#x7F29;&#x9009;&#x9879;&#xFF0C;&#x628A; z &#x6539;&#x4E3A; j&#xFF08;&#x5E76;&#x4E14;&#x628A;&#x8F93;&#x51FA;&#x6587;&#x4EF6;&#x7684;&#x6269;&#x5C55;&#x540D;&#x6539;&#x4E3A; .tbz&#xFF0C;&#x6765;&#x6307;&#x793A;&#x4E00;&#x4E2A; bzip2 &#x538B;&#x7F29;&#x6587;&#x4EF6;&#xFF09;&#xFF0C;
+&#x5C31;&#x4F7F; bzip2 &#x547D;&#x4EE4;&#x538B;&#x7F29;&#x751F;&#x6548;&#x4E86;&#x3002;&#x53E6;&#x4E00;&#x4E2A; tar &#x547D;&#x4EE4;&#x4E0E;&#x6807;&#x51C6;&#x8F93;&#x5165;&#x548C;&#x8F93;&#x51FA;&#x7684;&#x6709;&#x8DA3;&#x4F7F;&#x7528;&#xFF0C;&#x6D89;&#x53CA;&#x5230;&#x5728;&#x7CFB;&#x7EDF;&#x4E4B;&#x95F4;&#x7ECF;&#x8FC7;
+&#x7F51;&#x7EDC;&#x4F20;&#x8F93;&#x6587;&#x4EF6;&#x3002;&#x5047;&#x5B9A;&#x6211;&#x4EEC;&#x6709;&#x4E24;&#x53F0;&#x673A;&#x5668;&#xFF0C;&#x6BCF;&#x53F0;&#x90FD;&#x8FD0;&#x884C;&#x7740;&#x7C7B; Unix&#xFF0C;&#x4E14;&#x88C5;&#x5907;&#x7740; tar &#x548C; ssh &#x5DE5;&#x5177;&#x7684;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x3002;
+&#x5728;&#x8FD9;&#x79CD;&#x60C5;&#x666F;&#x4E0B;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x628A;&#x4E00;&#x4E2A;&#x76EE;&#x5F55;&#x4ECE;&#x8FDC;&#x7AEF;&#x7CFB;&#x7EDF;&#xFF08;&#x540D;&#x4E3A; remote-sys&#xFF09;&#x4F20;&#x8F93;&#x5230;&#x6211;&#x4EEC;&#x7684;&#x672C;&#x5730;&#x7CFB;&#x7EDF;&#x4E2D;&#xFF1A;</p>
+<pre><code>[me@linuxbox ~]$ mkdir remote-stuff
+[me@linuxbox ~]$ cd remote-stuff
+[me@linuxbox remote-stuff]$ ssh remote-sys &apos;tar cf - Documents&apos; | tar xf -
+me@remote-sys&#x2019;s password:
+[me@linuxbox remote-stuff]$ ls
+Documents
+</code></pre><p>Here we were able to copy a directory named Documents from the remote system
+remote-sys to a directory within the directory named remote-stuff on the local
+system. How did we do this? First, we launched the tar program on the remote system
+using ssh. You will recall that ssh allows us to execute a program remotely on a
+networked computer and &#x201C;see&#x201D; the results on the local system&#x2014;the standard output
+produced on the remote system is sent to the local system for viewing. We can take
+advantage of this by having tar create an archive (the c mode) and send it to standard
+output, rather than a file (the f option with the dash argument), thereby transporting the
+archive over the encrypted tunnel provided by ssh to the local system. On the local
+system, we execute tar and have it expand an archive (the x mode) supplied from
+standard input (again, the f option with the dash argument).</p>
+<p>&#x8FD9;&#x91CC;&#x6211;&#x4EEC;&#x80FD;&#x591F;&#x4ECE;&#x8FDC;&#x7AEF;&#x7CFB;&#x7EDF; remote-sys &#x4E2D;&#x590D;&#x5236;&#x76EE;&#x5F55; Documents &#x5230;&#x672C;&#x5730;&#x7CFB;&#x7EDF;&#x540D;&#x4E3A; remote-stuff &#x76EE;&#x5F55;&#x4E2D;&#x3002;
+&#x6211;&#x4EEC;&#x600E;&#x6837;&#x505A;&#x7684;&#x5462;&#xFF1F;&#x9996;&#x5148;&#xFF0C;&#x901A;&#x8FC7;&#x4F7F;&#x7528; ssh &#x547D;&#x4EE4;&#x5728;&#x8FDC;&#x7AEF;&#x7CFB;&#x7EDF;&#x4E2D;&#x542F;&#x52A8; tar &#x7A0B;&#x5E8F;&#x3002;&#x4F60;&#x53EF;&#x8BB0;&#x5F97; ssh &#x5141;&#x8BB8;&#x6211;&#x4EEC;
+&#x5728;&#x8FDC;&#x7A0B;&#x8054;&#x7F51;&#x7684;&#x8BA1;&#x7B97;&#x673A;&#x4E0A;&#x6267;&#x884C;&#x7A0B;&#x5E8F;&#xFF0C;&#x5E76;&#x4E14;&#x5728;&#x672C;&#x5730;&#x7CFB;&#x7EDF;&#x4E2D;&#x770B;&#x5230;&#x6267;&#x884C;&#x7ED3;&#x679C;&#x2014;&#x2014;&#x8FDC;&#x7AEF;&#x7CFB;&#x7EDF;&#x4E2D;&#x4EA7;&#x751F;&#x7684;&#x8F93;&#x51FA;&#x7ED3;&#x679C;
+&#x88AB;&#x53D1;&#x9001;&#x5230;&#x672C;&#x5730;&#x7CFB;&#x7EDF;&#x4E2D;&#x67E5;&#x770B;&#x3002;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5229;&#x7528;&#x3002;&#x5728;&#x672C;&#x5730;&#x7CFB;&#x7EDF;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x6267;&#x884C; tar &#x547D;&#x4EE4;&#xFF0C;</p>
+<h4 id="zip">zip</h4>
+<p>The zip program is both a compression tool and an archiver. The file format used by
+the program is familiar to Windows users, as it reads and writes .zip files. In Linux,
+however, gzip is the predominant compression program with bzip2 being a close
+second.</p>
+<p>&#x8FD9;&#x4E2A; zip &#x7A0B;&#x5E8F;&#x65E2;&#x662F;&#x538B;&#x7F29;&#x5DE5;&#x5177;&#xFF0C;&#x4E5F;&#x662F;&#x4E00;&#x4E2A;&#x6253;&#x5305;&#x5DE5;&#x5177;&#x3002;&#x8FD9;&#x7A0B;&#x5E8F;&#x4F7F;&#x7528;&#x7684;&#x6587;&#x4EF6;&#x683C;&#x5F0F;&#xFF0C;Windows &#x7528;&#x6237;&#x6BD4;&#x8F83;&#x719F;&#x6089;&#xFF0C;
+&#x56E0;&#x4E3A;&#x5B83;&#x8BFB;&#x53D6;&#x548C;&#x5199;&#x5165;.zip &#x6587;&#x4EF6;&#x3002;&#x7136;&#x800C;&#xFF0C;&#x5728; Linux &#x4E2D; gzip &#x662F;&#x4E3B;&#x8981;&#x7684;&#x538B;&#x7F29;&#x7A0B;&#x5E8F;&#xFF0C;&#x800C; bzip2&#x5219;&#x4F4D;&#x5C45;&#x7B2C;&#x4E8C;&#x3002;</p>
+<p>In its most basic usage, zip is invoked like this:</p>
+<p>&#x5728; zip &#x547D;&#x4EE4;&#x6700;&#x57FA;&#x672C;&#x7684;&#x4F7F;&#x7528;&#x4E2D;&#xFF0C;&#x53EF;&#x4EE5;&#x8FD9;&#x6837;&#x5524;&#x9192; zip &#x547D;&#x4EE4;&#xFF1A;</p>
+<pre><code>zip options zipfile file...
+</code></pre><p>For example, to make a zip archive of our playground, we would do this:</p>
+<p>&#x4F8B;&#x5982;&#xFF0C;&#x5236;&#x4F5C;&#x4E00;&#x4E2A; playground &#x7684; zip &#x7248;&#x672C;&#x7684;&#x6587;&#x4EF6;&#x5305;&#xFF0C;&#x8FD9;&#x6837;&#x505A;&#xFF1A;</p>
+<pre><code>[me@linuxbox ~]$ zip -r playground.zip playground
+</code></pre><p>Unless we include the -r option for recursion, only the playground directory (but
+none of its contents) is stored. Although the addition of the extension .zip is automatic
+a, we will include the file extension for clarity.</p>
+<p>&#x9664;&#x975E;&#x6211;&#x4EEC;&#x5305;&#x542B;-r &#x9009;&#x9879;&#xFF0C;&#x8981;&#x4E0D;&#x7136;&#x53EA;&#x6709; playground &#x76EE;&#x5F55;&#xFF08;&#x6CA1;&#x6709;&#x4EFB;&#x4F55;&#x5B83;&#x7684;&#x5185;&#x5BB9;&#xFF09;&#x88AB;&#x5B58;&#x50A8;&#x3002;&#x867D;&#x7136;&#x4F1A;&#x81EA;&#x52A8;&#x6DFB;&#x52A0;
+.zip &#x6269;&#x5C55;&#x540D;&#xFF0C;&#x4F46;&#x4E3A;&#x4E86;&#x6E05;&#x6670;&#x8D77;&#x89C1;&#xFF0C;&#x6211;&#x4EEC;&#x8FD8;&#x662F;&#x5305;&#x542B;&#x6587;&#x4EF6;&#x6269;&#x5C55;&#x540D;&#x3002;</p>
+<p>During the creation of the zip archive, zip will normally display a series of messages
+like this:</p>
+<p>&#x5728;&#x521B;&#x5EFA; zip &#x7248;&#x672C;&#x7684;&#x6587;&#x4EF6;&#x5305;&#x65F6;&#xFF0C;zip &#x547D;&#x4EE4;&#x901A;&#x5E38;&#x4F1A;&#x663E;&#x793A;&#x4E00;&#x7CFB;&#x5217;&#x7684;&#x4FE1;&#x606F;&#xFF1A;</p>
+<pre><code>adding: playground/dir-020/file-Z (stored 0%)
+adding: playground/dir-020/file-Y (stored 0%)
+adding: playground/dir-020/file-X (stored 0%)
+adding: playground/dir-087/ (stored 0%)
+adding: playground/dir-087/file-S (stored 0%)
+</code></pre><p>These messages show the status of each file added to the archive. zip will add files to
+the archive using one of two storage methods: either it will &#x201C;store&#x201D; a file without
+compression, as shown here, or it will &#x201C;deflate&#x201D; the file which performs compression.
+The numeric value displayed after the storage method indicates the amount of
+compression achieved. Since our playground only contains empty files, no compression
+is performed on its contents.</p>
+<p>&#x8FD9;&#x4E9B;&#x4FE1;&#x606F;&#x663E;&#x793A;&#x4E86;&#x6DFB;&#x52A0;&#x5230;&#x6587;&#x4EF6;&#x5305;&#x4E2D;&#x6BCF;&#x4E2A;&#x6587;&#x4EF6;&#x7684;&#x72B6;&#x6001;&#x3002;zip &#x547D;&#x4EE4;&#x4F1A;&#x4F7F;&#x7528;&#x4E24;&#x79CD;&#x5B58;&#x50A8;&#x65B9;&#x6CD5;&#x4E4B;&#x4E00;&#xFF0C;&#x6765;&#x6DFB;&#x52A0;
+&#x6587;&#x4EF6;&#x5230;&#x6587;&#x4EF6;&#x5305;&#x4E2D;&#xFF1A;&#x8981;&#x4E0D;&#x5B83;&#x4F1A;&#x201C;store&#x201D;&#x6CA1;&#x6709;&#x538B;&#x7F29;&#x7684;&#x6587;&#x4EF6;&#xFF0C;&#x6B63;&#x5982;&#x8FD9;&#x91CC;&#x6240;&#x793A;&#xFF0C;&#x6216;&#x8005;&#x5B83;&#x4F1A;&#x201C;deflate&#x201D;&#x6587;&#x4EF6;&#xFF0C;
+&#x6267;&#x884C;&#x538B;&#x7F29;&#x64CD;&#x4F5C;&#x3002;&#x5728;&#x5B58;&#x50A8;&#x65B9;&#x6CD5;&#x4E4B;&#x540E;&#x663E;&#x793A;&#x7684;&#x6570;&#x503C;&#x8868;&#x660E;&#x4E86;&#x538B;&#x7F29;&#x91CF;&#x3002;&#x56E0;&#x4E3A;&#x6211;&#x4EEC;&#x7684; playground &#x76EE;&#x5F55;
+&#x53EA;&#x662F;&#x5305;&#x542B;&#x7A7A;&#x6587;&#x4EF6;&#xFF0C;&#x6CA1;&#x6709;&#x5BF9;&#x5B83;&#x7684;&#x5185;&#x5BB9;&#x6267;&#x884C;&#x538B;&#x7F29;&#x64CD;&#x4F5C;&#x3002;</p>
+<p>Extracting the contents of a zip file is straightforward when using the unzip program:</p>
+<p>&#x4F7F;&#x7528; unzip &#x7A0B;&#x5E8F;&#xFF0C;&#x6765;&#x76F4;&#x63A5;&#x62BD;&#x53D6;&#x4E00;&#x4E2A; zip &#x6587;&#x4EF6;&#x7684;&#x5185;&#x5BB9;&#x3002;</p>
+<pre><code>[me@linuxbox ~]$ cd foo
+[me@linuxbox foo]$ unzip ../playground.zip
+</code></pre><p>One thing to note about zip (as opposed to tar) is that if an existing archive is
+specified, it is updated rather than replaced. This means that the existing archive is
+preserved, but new files are added and matching files are replaced.
+Files may be listed and extracted selectively from a zip archive by specifying them to
+unzip:</p>
+<p>&#x5BF9;&#x4E8E; zip &#x547D;&#x4EE4;&#xFF08;&#x4E0E; tar &#x547D;&#x4EE4;&#x76F8;&#x53CD;&#xFF09;&#x8981;&#x6CE8;&#x610F;&#x4E00;&#x70B9;&#xFF0C;&#x5C31;&#x662F;&#x5982;&#x679C;&#x6307;&#x5B9A;&#x4E86;&#x4E00;&#x4E2A;&#x5DF2;&#x7ECF;&#x5B58;&#x5728;&#x7684;&#x6587;&#x4EF6;&#x5305;&#xFF0C;&#x5176;&#x88AB;&#x66F4;&#x65B0;
+&#x800C;&#x4E0D;&#x662F;&#x88AB;&#x66FF;&#x4EE3;&#x3002;&#x8FD9;&#x610F;&#x5473;&#x7740;&#x4F1A;&#x4FDD;&#x7559;&#x6B64;&#x6587;&#x4EF6;&#x5305;&#xFF0C;&#x4F46;&#x662F;&#x4F1A;&#x6DFB;&#x52A0;&#x65B0;&#x6587;&#x4EF6;&#xFF0C;&#x540C;&#x65F6;&#x66FF;&#x6362;&#x5339;&#x914D;&#x7684;&#x6587;&#x4EF6;&#x3002;&#x53EF;&#x4EE5;&#x5217;&#x51FA;
+&#x6587;&#x4EF6;&#x6216;&#x8005;&#x6709;&#x9009;&#x62E9;&#x5730;&#x4ECE;&#x4E00;&#x4E2A; zip &#x6587;&#x4EF6;&#x5305;&#x4E2D;&#x62BD;&#x53D6;&#x6587;&#x4EF6;&#xFF0C;&#x53EA;&#x8981;&#x7ED9; unzip &#x547D;&#x4EE4;&#x6307;&#x5B9A;&#x6587;&#x4EF6;&#x540D;&#xFF1A;</p>
+<pre><code>[me@linuxbox ~]$ unzip -l playground.zip playground/dir-87/file-Z
+Archive: ../playground.zip
+    Length      Date    Time    Name
+
+         0    10-05-08  09:25   playground/dir-87/file-Z
+
+         0                      1 file
+[me@linuxbox ~]$ cd foo
+[me@linuxbox foo]$ unzip ./playground.zip playground/dir-87/file-Z
+Archive: ../playground.zip
+replace playground/dir-87/file-Z? [y]es, [n]o, [A]ll, [N]one,
+[r]ename: y
+extracting: playground/dir-87/file-Z
+</code></pre><p>Using the -l option causes unzip to merely list the contents of the archive without
+extracting the file. If no file(s) are specified, unzip will list all files in the archive. The
+-v option can be added to increase the verbosity of the listing. Note that when the
+archive extraction conflicts with an existing file, the user is prompted before the file is
+replaced.</p>
+<p>&#x4F7F;&#x7528;-l &#x9009;&#x9879;&#xFF0C;&#x5BFC;&#x81F4; unzip &#x547D;&#x4EE4;&#x53EA;&#x662F;&#x5217;&#x51FA;&#x6587;&#x4EF6;&#x5305;&#x4E2D;&#x7684;&#x5185;&#x5BB9;&#x800C;&#x6CA1;&#x6709;&#x62BD;&#x53D6;&#x6587;&#x4EF6;&#x3002;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x6307;&#x5B9A;&#x6587;&#x4EF6;&#xFF0C;
+unzip &#x7A0B;&#x5E8F;&#x5C06;&#x4F1A;&#x5217;&#x51FA;&#x6587;&#x4EF6;&#x5305;&#x4E2D;&#x7684;&#x6240;&#x6709;&#x6587;&#x4EF6;&#x3002;&#x6DFB;&#x52A0;&#x8FD9;&#x4E2A;-v &#x9009;&#x9879;&#x4F1A;&#x589E;&#x52A0;&#x5217;&#x8868;&#x7684;&#x5197;&#x4F59;&#x4FE1;&#x606F;&#x3002;&#x6CE8;&#x610F;&#x5F53;&#x62BD;&#x53D6;&#x7684;
+&#x6587;&#x4EF6;&#x4E0E;&#x5DF2;&#x7ECF;&#x5B58;&#x5728;&#x7684;&#x6587;&#x4EF6;&#x51B2;&#x7A81;&#x65F6;&#xFF0C;&#x4F1A;&#x5728;&#x66FF;&#x4EE3;&#x6B64;&#x6587;&#x4EF6;&#x4E4B;&#x524D;&#x63D0;&#x9192;&#x7528;&#x6237;&#x3002;</p>
+<p>Like tar, zip can make use of standard input and output, though its implementation is
+somewhat less useful. It is possible to pipe a list of filenames to zip via the -@ option:</p>
+<p>&#x50CF; tar &#x547D;&#x4EE4;&#x4E00;&#x6837;&#xFF0C;zip &#x547D;&#x4EE4;&#x80FD;&#x591F;&#x5229;&#x7528;&#x6807;&#x51C6;&#x8F93;&#x5165;&#x548C;&#x8F93;&#x51FA;&#xFF0C;&#x867D;&#x7136;&#x5B83;&#x7684;&#x5B9E;&#x65BD;&#x4E0D;&#x5927;&#x6709;&#x7528;&#x3002;&#x901A;&#x8FC7;-@&#x9009;&#x9879;&#xFF0C;&#x6709;&#x53EF;&#x80FD;&#x628A;&#x4E00;&#x7CFB;&#x5217;&#x7684;
+&#x6587;&#x4EF6;&#x540D;&#x7BA1;&#x9053;&#x5230; zip &#x547D;&#x4EE4;&#x3002;</p>
+<pre><code>[me@linuxbox foo]$ cd
+[me@linuxbox ~]$ find playground -name &quot;file-A&quot; | zip -@ file-A.zip
+</code></pre><p>Here we use find to generate a list of files matching the test -name &quot;file-A&quot;, and
+pipe the list into zip, which creates the archive file-A.zip containing the selected
+files.</p>
+<p>&#x8FD9;&#x91CC;&#x6211;&#x4EEC;&#x4F7F;&#x7528; find &#x547D;&#x4EE4;&#x4EA7;&#x751F;&#x4E00;&#x7CFB;&#x5217;&#x4E0E;&#x201C;file-A&#x201D;&#x76F8;&#x5339;&#x914D;&#x7684;&#x6587;&#x4EF6;&#x5217;&#x8868;&#xFF0C;&#x5E76;&#x4E14;&#x628A;&#x6B64;&#x5217;&#x8868;&#x7BA1;&#x9053;&#x5230; zip &#x547D;&#x4EE4;&#xFF0C;
+&#x7136;&#x540E;&#x521B;&#x5EFA;&#x5305;&#x542B;&#x6240;&#x9009;&#x6587;&#x4EF6;&#x7684;&#x6587;&#x4EF6;&#x5305; file-A.zip&#x3002;</p>
+<p>zip also supports writing its output to standard output, but its use is limited because very
+few programs can make use of the output. Unfortunately, the unzip program, does not
+accept standard input. This prevents zip and unzip from being used together to
+perform network file copying like tar.</p>
+<p>zip &#x547D;&#x4EE4;&#x4E5F;&#x652F;&#x6301;&#x628A;&#x5B83;&#x7684;&#x8F93;&#x51FA;&#x5199;&#x5165;&#x5230;&#x6807;&#x51C6;&#x8F93;&#x51FA;&#xFF0C;&#x4F46;&#x662F;&#x5B83;&#x7684;&#x4F7F;&#x7528;&#x662F;&#x6709;&#x9650;&#x7684;&#xFF0C;&#x56E0;&#x4E3A;&#x5F88;&#x5C11;&#x7684;&#x7A0B;&#x5E8F;&#x80FD;&#x5229;&#x7528;&#x8F93;&#x51FA;&#x3002;
+&#x4E0D;&#x5E78;&#x5730;&#x662F;&#xFF0C;&#x8FD9;&#x4E2A; unzip &#x7A0B;&#x5E8F;&#xFF0C;&#x4E0D;&#x63A5;&#x53D7;&#x6807;&#x51C6;&#x8F93;&#x5165;&#x3002;&#x8FD9;&#x5C31;&#x963B;&#x6B62;&#x4E86; zip &#x548C; unzip &#x4E00;&#x5757;&#x4F7F;&#x7528;&#xFF0C;&#x50CF; tar &#x547D;&#x4EE4;&#x90A3;&#x6837;&#xFF0C;
+&#x6765;&#x590D;&#x5236;&#x7F51;&#x7EDC;&#x4E0A;&#x7684;&#x6587;&#x4EF6;&#x3002;</p>
+<p>zip can, however, accept standard input, so it can be used to compress the output of
+other programs:</p>
+<p>&#x7136;&#x800C;&#xFF0C;zip &#x547D;&#x4EE4;&#x53EF;&#x4EE5;&#x63A5;&#x53D7;&#x6807;&#x51C6;&#x8F93;&#x5165;&#xFF0C;&#x6240;&#x4EE5;&#x5B83;&#x53EF;&#x4EE5;&#x88AB;&#x7528;&#x6765;&#x538B;&#x7F29;&#x5176;&#x5B83;&#x7A0B;&#x5E8F;&#x7684;&#x8F93;&#x51FA;&#xFF1A;</p>
+<pre><code>[me@linuxbox ~]$ ls -l /etc/ | zip ls-etc.zip -
+adding: - (deflated 80%)
+</code></pre><p>In this example we pipe the output of ls into zip. Like tar, zip interprets the trailing
+dash as &#x201C;use standard input for the input file.&#x201D;</p>
+<p>&#x5728;&#x8FD9;&#x4E2A;&#x4F8B;&#x5B50;&#x91CC;&#xFF0C;&#x6211;&#x4EEC;&#x628A; ls &#x547D;&#x4EE4;&#x7684;&#x8F93;&#x51FA;&#x7BA1;&#x9053;&#x5230; zip &#x547D;&#x4EE4;&#x3002;&#x50CF; tar &#x547D;&#x4EE4;&#xFF0C;zip &#x547D;&#x4EE4;&#x628A;&#x672B;&#x5C3E;&#x7684;&#x6A2A;&#x6760;&#x89E3;&#x91CA;&#x4E3A;
+&#x201C;&#x4F7F;&#x7528;&#x6807;&#x51C6;&#x8F93;&#x5165;&#x4F5C;&#x4E3A;&#x8F93;&#x5165;&#x6587;&#x4EF6;&#x3002;&#x201D;</p>
+<p>The unzip program allows its output to be sent to standard output when the -p (for
+pipe) option is specified:</p>
+<p>&#x8FD9;&#x4E2A; unzip &#x7A0B;&#x5E8F;&#x5141;&#x8BB8;&#x5B83;&#x7684;&#x8F93;&#x51FA;&#x53D1;&#x9001;&#x5230;&#x6807;&#x51C6;&#x8F93;&#x51FA;&#xFF0C;&#x5F53;&#x6307;&#x5B9A;&#x4E86;-p &#x9009;&#x9879;&#x4E4B;&#x540E;&#xFF1A;</p>
+<pre><code>[me@linuxbox ~]$ unzip -p ls-etc.zip | less
+</code></pre><p>We touched on some of the basic things that zip/unzip can do. They both have a lot of
+options that add to their flexibility, though some are platform specific to other systems.
+The man pages for both zip and unzip are pretty good and contain useful examples.
+However, the main use of these programs is for exchanging files with Windows systems,
+rather than performing compression and archiving on Linux, where tar and gzip are
+greatly preferred.</p>
+<p>&#x6211;&#x4EEC;&#x8BA8;&#x8BBA;&#x4E86;&#x4E00;&#x4E9B; zip/unzip &#x53EF;&#x4EE5;&#x5B8C;&#x6210;&#x7684;&#x57FA;&#x672C;&#x64CD;&#x4F5C;&#x3002;&#x5B83;&#x4EEC;&#x4E24;&#x4E2A;&#x90FD;&#x6709;&#x8BB8;&#x591A;&#x9009;&#x9879;&#xFF0C;&#x5176;&#x589E;&#x52A0;&#x4E86;
+&#x547D;&#x4EE4;&#x7684;&#x7075;&#x6D3B;&#x6027;&#xFF0C;&#x867D;&#x7136;&#x4E00;&#x4E9B;&#x9009;&#x9879;&#x53EA;&#x9488;&#x5BF9;&#x4E8E;&#x7279;&#x5B9A;&#x7684;&#x5E73;&#x53F0;&#x3002;zip &#x548C; unzip &#x547D;&#x4EE4;&#x7684;&#x8BF4;&#x660E;&#x624B;&#x518C;&#x90FD;&#x76F8;&#x5F53;&#x4E0D;&#x9519;&#xFF0C;
+&#x5E76;&#x4E14;&#x5305;&#x542B;&#x4E86;&#x6709;&#x7528;&#x7684;&#x5B9E;&#x4F8B;&#x3002;&#x7136;&#x800C;&#xFF0C;&#x8FD9;&#x4E9B;&#x7A0B;&#x5E8F;&#x7684;&#x4E3B;&#x8981;&#x7528;&#x9014;&#x662F;&#x4E3A;&#x4E86;&#x548C; Windows &#x7CFB;&#x7EDF;&#x4EA4;&#x6362;&#x6587;&#x4EF6;&#xFF0C;
+&#x800C;&#x4E0D;&#x662F;&#x5728; Linux &#x7CFB;&#x7EDF;&#x4E2D;&#x6267;&#x884C;&#x538B;&#x7F29;&#x548C;&#x6253;&#x5305;&#x64CD;&#x4F5C;&#xFF0C;tar &#x548C; gzip &#x7A0B;&#x5E8F;&#x5728; Linux &#x7CFB;&#x7EDF;&#x4E2D;&#x66F4;&#x53D7;&#x6B22;&#x8FCE;&#x3002;</p>
+<h3 id="&#x540C;&#x6B65;&#x6587;&#x4EF6;&#x548C;&#x76EE;&#x5F55;">&#x540C;&#x6B65;&#x6587;&#x4EF6;&#x548C;&#x76EE;&#x5F55;</h3>
+<p>A common strategy for maintaining a backup copy of a system involves keeping one or
+more directories synchronized with another directory (or directories) located on either the
+local system (usually a removable storage device of some kind) or with a remote system.
+We might, for example, have a local copy of a web site under development and
+synchronize it from time to time with the &#x201C;live&#x201D; copy on a remote web server.
+In the Unix-like world, the preferred tool for this task is rsync. This program can
+synchronize both local and remote directories by using the rsync remote-update protocol,
+which allows rsync to quickly detect the differences between two directories and
+perform the minimum amount of copying required to bring them into sync. This makes
+rsync very fast and economical to use, compared to other kinds of copy programs.</p>
+<p>&#x7EF4;&#x62A4;&#x7CFB;&#x7EDF;&#x5907;&#x4EFD;&#x7684;&#x5E38;&#x89C1;&#x7B56;&#x7565;&#x662F;&#x4FDD;&#x6301;&#x4E00;&#x4E2A;&#x6216;&#x591A;&#x4E2A;&#x76EE;&#x5F55;&#x4E0E;&#x53E6;&#x4E00;&#x4E2A;&#x672C;&#x5730;&#x7CFB;&#x7EDF;&#xFF08;&#x901A;&#x5E38;&#x662F;&#x67D0;&#x79CD;&#x53EF;&#x79FB;&#x52A8;&#x7684;&#x5B58;&#x50A8;&#x8BBE;&#x5907;&#xFF09;
+&#x6216;&#x8005;&#x8FDC;&#x7AEF;&#x7CFB;&#x7EDF;&#x4E2D;&#x7684;&#x76EE;&#x5F55;&#xFF08;&#x6216;&#x591A;&#x4E2A;&#x76EE;&#x5F55;&#xFF09;&#x540C;&#x6B65;&#x3002;&#x6211;&#x4EEC;&#x53EF;&#x80FD;&#xFF0C;&#x4F8B;&#x5982;&#x6709;&#x4E00;&#x4E2A;&#x6B63;&#x5728;&#x5F00;&#x53D1;&#x7684;&#x7F51;&#x7AD9;&#x7684;&#x672C;&#x5730;&#x5907;&#x4EFD;&#xFF0C;
+&#x9700;&#x8981;&#x65F6;&#x4E0D;&#x65F6;&#x7684;&#x4E0E;&#x8FDC;&#x7AEF;&#x7F51;&#x7EDC;&#x670D;&#x52A1;&#x5668;&#x4E2D;&#x7684;&#x6587;&#x4EF6;&#x5907;&#x4EFD;&#x4FDD;&#x6301;&#x540C;&#x6B65;&#x3002;&#x5728;&#x7C7B; Unix &#x7CFB;&#x7EDF;&#x7684;&#x4E16;&#x754C;&#x91CC;&#xFF0C;&#x80FD;&#x5B8C;&#x6210;&#x6B64;&#x4EFB;&#x52A1;&#x4E14;
+&#x5907;&#x53D7;&#x4EBA;&#x4EEC;&#x559C;&#x7231;&#x7684;&#x5DE5;&#x5177;&#x662F; rsync&#x3002;&#x8FD9;&#x4E2A;&#x7A0B;&#x5E8F;&#x80FD;&#x540C;&#x6B65;&#x672C;&#x5730;&#x4E0E;&#x8FDC;&#x7AEF;&#x7684;&#x76EE;&#x5F55;&#xFF0C;&#x901A;&#x8FC7;&#x4F7F;&#x7528; rsync &#x8FDC;&#x7AEF;&#x66F4;&#x65B0;&#x534F;&#x8BAE;&#xFF0C;&#x6B64;&#x534F;&#x8BAE;
+&#x5141;&#x8BB8; rsync &#x5FEB;&#x901F;&#x5730;&#x68C0;&#x6D4B;&#x4E24;&#x4E2A;&#x76EE;&#x5F55;&#x7684;&#x5DEE;&#x5F02;&#xFF0C;&#x6267;&#x884C;&#x6700;&#x5C0F;&#x91CF;&#x7684;&#x590D;&#x5236;&#x6765;&#x8FBE;&#x5230;&#x76EE;&#x5F55;&#x95F4;&#x7684;&#x540C;&#x6B65;&#x3002;&#x6BD4;&#x8D77;&#x5176;&#x5B83;&#x79CD;&#x7C7B;&#x7684;&#x590D;&#x5236;&#x7A0B;&#x5E8F;&#xFF0C;
+&#x8FD9;&#x5C31;&#x4F7F; rsync &#x547D;&#x4EE4;&#x975E;&#x5E38;&#x5FEB;&#x901F;&#x548C;&#x9AD8;&#x6548;&#x3002;</p>
+<p>rsync is invoked like this:</p>
+<p>rsync &#x88AB;&#x8FD9;&#x6837;&#x5524;&#x9192;&#xFF1A;</p>
+<pre><code>rsync options source destination
+</code></pre><p>where source and destination are one of the following:</p>
+<p>&#x8FD9;&#x91CC; source &#x548C; destination &#x662F;&#x4E0B;&#x5217;&#x9009;&#x9879;&#x4E4B;&#x4E00;&#xFF1A;</p>
+<ul>
+<li><p>A local file or directory</p>
+</li>
+<li><p>A remote file or directory in the form of [user@]host:path</p>
+</li>
+<li><p>A remote rsync server specified with a URI of rsync://[user@]host[:port]/path</p>
+</li>
+</ul>
+<p>^</p>
+<ul>
+<li><p>&#x4E00;&#x4E2A;&#x672C;&#x5730;&#x6587;&#x4EF6;&#x6216;&#x76EE;&#x5F55;</p>
+</li>
+<li><p>&#x4E00;&#x4E2A;&#x8FDC;&#x7AEF;&#x6587;&#x4EF6;&#x6216;&#x76EE;&#x5F55;&#xFF0C;&#x4EE5;[user@]host:path &#x7684;&#x5F62;&#x5F0F;&#x5B58;&#x5728;</p>
+</li>
+<li><p>&#x4E00;&#x4E2A;&#x8FDC;&#x7AEF; rsync &#x670D;&#x52A1;&#x5668;&#xFF0C;&#x7531; rsync://[user@]host[:port]/path &#x6307;&#x5B9A;</p>
+</li>
+</ul>
+<p>Note that either the source or destination must be a local file. Remote to remote copying
+is not supported.</p>
+<p>&#x6CE8;&#x610F; source &#x548C; destination &#x4E24;&#x8005;&#x4E4B;&#x4E00;&#x5FC5;&#x987B;&#x662F;&#x672C;&#x5730;&#x6587;&#x4EF6;&#x3002;rsync &#x4E0D;&#x652F;&#x6301;&#x8FDC;&#x7AEF;&#x5230;&#x8FDC;&#x7AEF;&#x7684;&#x590D;&#x5236;</p>
+<p>Let&#x2019;s try rsync out on some local files. First, let&#x2019;s clean out our foo directory:</p>
+<p>&#x8BA9;&#x6211;&#x4EEC;&#x8BD5;&#x7740;&#x5BF9;&#x4E00;&#x4E9B;&#x672C;&#x5730;&#x6587;&#x4EF6;&#x4F7F;&#x7528; rsync &#x547D;&#x4EE4;&#x3002;&#x9996;&#x5148;&#xFF0C;&#x6E05;&#x7A7A;&#x6211;&#x4EEC;&#x7684; foo &#x76EE;&#x5F55;&#xFF1A;</p>
+<pre><code>[me@linuxbox ~]$ rm -rf foo/*
+</code></pre><p>Next, we&#x2019;ll synchronize the playground directory with a corresponding copy in foo:</p>
+<p>&#x4E0B;&#x4E00;&#x6B65;&#xFF0C;&#x6211;&#x4EEC;&#x5C06;&#x540C;&#x6B65; playground &#x76EE;&#x5F55;&#x548C;&#x5B83;&#x5728; foo &#x76EE;&#x5F55;&#x4E2D;&#x76F8;&#x5BF9;&#x5E94;&#x7684;&#x526F;&#x672C;</p>
+<pre><code>[me@linuxbox ~]$ rsync -av playground foo
+</code></pre><p>We&#x2019;ve included both the -a option (for archiving&#x2014;causes recursion and preservation of
+file attributes) and the -v option (verbose output) to make a mirror of the playground
+directory within foo. While the command runs, we will see a list of the files and
+directories being copied. At the end, we will see a summary message like this:</p>
+<p>&#x6211;&#x4EEC;&#x5305;&#x62EC;&#x4E86;-a &#x9009;&#x9879;&#xFF08;&#x9012;&#x5F52;&#x548C;&#x4FDD;&#x62A4;&#x6587;&#x4EF6;&#x5C5E;&#x6027;&#xFF09;&#x548C;-v &#x9009;&#x9879;&#xFF08;&#x5197;&#x4F59;&#x8F93;&#x51FA;&#xFF09;&#xFF0C;
+&#x6765;&#x5728; foo &#x76EE;&#x5F55;&#x4E2D;&#x5236;&#x4F5C;&#x4E00;&#x4E2A; playground &#x76EE;&#x5F55;&#x7684;&#x955C;&#x50CF;&#x3002;&#x5F53;&#x8FD9;&#x4E2A;&#x547D;&#x4EE4;&#x6267;&#x884C;&#x7684;&#x65F6;&#x5019;&#xFF0C;
+&#x6211;&#x4EEC;&#x5C06;&#x4F1A;&#x770B;&#x5230;&#x4E00;&#x7CFB;&#x5217;&#x7684;&#x6587;&#x4EF6;&#x548C;&#x76EE;&#x5F55;&#x88AB;&#x590D;&#x5236;&#x3002;&#x5728;&#x6700;&#x540E;&#xFF0C;&#x6211;&#x4EEC;&#x5C06;&#x770B;&#x5230;&#x4E00;&#x6761;&#x50CF;&#x8FD9;&#x6837;&#x7684;&#x603B;&#x7ED3;&#x4FE1;&#x606F;&#xFF1A;</p>
+<pre><code>sent 135759 bytes received 57870 bytes 387258.00 bytes/sec
+total size is 3230 speedup is 0.02
+</code></pre><p>indicating the amount of copying performed. If we run the command again, we will see a
+different result:</p>
+<p>&#x8BF4;&#x660E;&#x590D;&#x5236;&#x7684;&#x6570;&#x91CF;&#x3002;&#x5982;&#x679C;&#x6211;&#x4EEC;&#x518D;&#x6B21;&#x8FD0;&#x884C;&#x8FD9;&#x4E2A;&#x547D;&#x4EE4;&#xFF0C;&#x6211;&#x4EEC;&#x5C06;&#x4F1A;&#x770B;&#x5230;&#x4E0D;&#x540C;&#x7684;&#x7ED3;&#x679C;&#xFF1A;</p>
+<pre><code>[me@linuxbox ~]$ rsync -av playgound foo
+building file list ... done
+sent 22635 bytes received 20 bytes
+total size is 3230 speedup is 0.14
+45310.00 bytes/sec
+</code></pre><p>Notice that there was no listing of files. This is because rsync detected that there were
+no differences between ~/playground and ~/foo/playground, and therefore it
+didn&#x2019;t need to copy anything. If we modify a file in playground and run rsync
+again:</p>
+<p>&#x6CE8;&#x610F;&#x5230;&#x6CA1;&#x6709;&#x6587;&#x4EF6;&#x5217;&#x8868;&#x3002;&#x8FD9;&#x662F;&#x56E0;&#x4E3A; rsync &#x7A0B;&#x5E8F;&#x68C0;&#x6D4B;&#x5230;&#x5728;&#x76EE;&#x5F55;~/playground &#x548C; ~/foo/playground &#x4E4B;&#x95F4;
+&#x4E0D;&#x5B58;&#x5728;&#x5DEE;&#x5F02;&#xFF0C;&#x56E0;&#x6B64;&#x5B83;&#x4E0D;&#x9700;&#x8981;&#x590D;&#x5236;&#x4EFB;&#x4F55;&#x6570;&#x636E;&#x3002;&#x5982;&#x679C;&#x6211;&#x4EEC;&#x5728; playground &#x76EE;&#x5F55;&#x4E2D;&#x4FEE;&#x6539;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#xFF0C;&#x7136;&#x540E;
+&#x518D;&#x6B21;&#x8FD0;&#x884C; rsync &#x547D;&#x4EE4;&#xFF1A;</p>
+<pre><code>[me@linuxbox ~]$ touch playground/dir-099/file-Z
+[me@linuxbox ~]$ rsync -av playground foo
+building file list ... done
+playground/dir-099/file-Z
+sent 22685 bytes received 42 bytes 45454.00 bytes/sec
+total size is 3230 speedup is 0.14
+</code></pre><p>we see that rsync detected the change and copied only the updated file.
+As a practical example, let&#x2019;s consider the imaginary external hard drive that we used
+earlier with tar. If we attach the drive to our system and, once again, it is mounted at /
+media/BigDisk, we can perform a useful system backup by first creating a directory,
+named /backup on the external drive and then using rsync to copy the most important
+stuff from our system to the external drive:</p>
+<p>&#x6211;&#x4EEC;&#x770B;&#x5230; rsync &#x547D;&#x4EE4;&#x68C0;&#x6D4B;&#x5230;&#x66F4;&#x6539;&#xFF0C;&#x5E76;&#x4E14;&#x53EA;&#x662F;&#x590D;&#x5236;&#x4E86;&#x66F4;&#x65B0;&#x7684;&#x6587;&#x4EF6;&#x3002;&#x4F5C;&#x4E3A;&#x4E00;&#x4E2A;&#x5B9E;&#x9645;&#x7684;&#x4F8B;&#x5B50;&#xFF0C;
+&#x8BA9;&#x6211;&#x4EEC;&#x8003;&#x8651;&#x4E00;&#x4E2A;&#x5047;&#x60F3;&#x7684;&#x5916;&#x90E8;&#x786C;&#x76D8;&#xFF0C;&#x4E4B;&#x524D;&#x6211;&#x4EEC;&#x5728; tar &#x547D;&#x4EE4;&#x4E2D;&#x7528;&#x5230;&#x8FC7;&#x7684;&#x3002;&#x5982;&#x679C;&#x6211;&#x4EEC;&#x518D;&#x6B21;&#x628A;&#x6B64;
+&#x786C;&#x76D8;&#x8FDE;&#x63A5;&#x5230;&#x6211;&#x4EEC;&#x7684;&#x7CFB;&#x7EDF;&#x4E2D;&#xFF0C;&#x5B83;&#x88AB;&#x6302;&#x8F7D;&#x5230;/media/BigDisk &#x76EE;&#x5F55;&#x4E0B;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x6267;&#x884C;&#x4E00;&#x4E2A;&#x6709;
+&#x7528;&#x7684;&#x7CFB;&#x7EDF;&#x5907;&#x4EFD;&#x4E86;&#xFF0C;&#x9996;&#x5148;&#x5728;&#x5916;&#x90E8;&#x786C;&#x76D8;&#x4E0A;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x76EE;&#x5F55;&#xFF0C;&#x540D;&#x4E3A;/backup&#xFF0C;&#x7136;&#x540E;&#x4F7F;&#x7528; rsync &#x7A0B;&#x5E8F;
+&#x4ECE;&#x6211;&#x4EEC;&#x7684;&#x7CFB;&#x7EDF;&#x4E2D;&#x590D;&#x5236;&#x6700;&#x91CD;&#x8981;&#x7684;&#x6570;&#x636E;&#x5230;&#x6B64;&#x5916;&#x90E8;&#x786C;&#x76D8;&#x4E0A;&#xFF1A;</p>
+<pre><code>[me@linuxbox ~]$ mkdir /media/BigDisk/backup
+[me@linuxbox ~]$ sudo rsync -av --delete /etc /home /usr/local /media/BigDisk/backup
+</code></pre><p>In this example, we copied the /etc, /home, and /usr/local directories from our
+system to our imaginary storage device. We included the --delete option to remove
+files that may have existed on the backup device that no longer existed on the source
+device (this is irrelevant the first time we make a backup, but will be useful on
+subsequent copies.) Repeating the procedure of attaching the external drive and running
+this rsync command would be a useful (though not ideal) way of keeping a small
+system backed up. Of course, an alias would be helpful here, too. We could create an
+alias and add it to our .bashrc file to provide this feature:</p>
+<p>&#x5728;&#x8FD9;&#x4E2A;&#x4F8B;&#x5B50;&#x91CC;&#xFF0C;&#x6211;&#x4EEC;&#x628A;/etc&#xFF0C;/home&#xFF0C;&#x548C;/usr/local &#x76EE;&#x5F55;&#x4ECE;&#x6211;&#x4EEC;&#x7684;&#x7CFB;&#x7EDF;&#x4E2D;&#x590D;&#x5236;&#x5230;&#x5047;&#x60F3;&#x7684;&#x5B58;&#x50A8;&#x8BBE;&#x5907;&#x4E2D;&#x3002;
+&#x6211;&#x4EEC;&#x5305;&#x542B;&#x4E86;--delete &#x8FD9;&#x4E2A;&#x9009;&#x9879;&#xFF0C;&#x6765;&#x5220;&#x9664;&#x53EF;&#x80FD;&#x5728;&#x5907;&#x4EFD;&#x8BBE;&#x5907;&#x4E2D;&#x5DF2;&#x7ECF;&#x5B58;&#x5728;&#x4F46;&#x5374;&#x4E0D;&#x518D;&#x5B58;&#x5728;&#x4E8E;&#x6E90;&#x8BBE;&#x5907;&#x4E2D;&#x7684;&#x6587;&#x4EF6;&#xFF0C;
+&#xFF08;&#x8FD9;&#x4E0E;&#x6211;&#x4EEC;&#x7B2C;&#x4E00;&#x6B21;&#x521B;&#x5EFA;&#x5907;&#x4EFD;&#x65E0;&#x5173;&#xFF0C;&#x4F46;&#x662F;&#x4F1A;&#x5728;&#x968F;&#x540E;&#x7684;&#x590D;&#x5236;&#x64CD;&#x4F5C;&#x4E2D;&#x6709;&#x7528;&#x9014;&#xFF09;&#x3002;&#x6302;&#x8F7D;&#x5916;&#x90E8;&#x9A71;&#x52A8;&#x5668;&#xFF0C;&#x8FD0;&#x884C;
+rsync &#x547D;&#x4EE4;&#xFF0C;&#x4E0D;&#x65AD;&#x91CD;&#x590D;&#x8FD9;&#x4E2A;&#x8FC7;&#x7A0B;&#xFF0C;&#x662F;&#x4E00;&#x4E2A;&#x4E0D;&#x9519;&#x7684;&#xFF08;&#x867D;&#x7136;&#x4E0D;&#x7406;&#x60F3;&#xFF09;&#x65B9;&#x5F0F;&#x6765;&#x4FDD;&#x5B58;&#x5C11;&#x91CF;&#x7684;&#x7CFB;&#x7EDF;&#x5907;&#x4EFD;&#x6587;&#x4EF6;&#x3002;
+&#x5F53;&#x7136;&#xFF0C;&#x522B;&#x540D;&#x4F1A;&#x5BF9;&#x8FD9;&#x4E2A;&#x64CD;&#x4F5C;&#x66F4;&#x6709;&#x5E2E;&#x52A9;&#x4E9B;&#x3002;&#x6211;&#x4EEC;&#x5C06;&#x4F1A;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x522B;&#x540D;&#xFF0C;&#x5E76;&#x628A;&#x5B83;&#x6DFB;&#x52A0;&#x5230;.bashrc &#x6587;&#x4EF6;&#x4E2D;&#xFF0C;
+&#x6765;&#x63D0;&#x4F9B;&#x8FD9;&#x4E2A;&#x7279;&#x6027;&#xFF1A;</p>
+<pre><code>alias backup=&apos;sudo rsync -av --delete /etc /home /usr/local /media/BigDisk/backup&apos;
+</code></pre><p>Now all we have to do is attach our external drive and run the backup command to do
+the job.</p>
+<p>&#x73B0;&#x5728;&#x6211;&#x4EEC;&#x6240;&#x505A;&#x7684;&#x4E8B;&#x60C5;&#x5C31;&#x662F;&#x8FDE;&#x63A5;&#x5916;&#x90E8;&#x9A71;&#x52A8;&#x5668;&#xFF0C;&#x7136;&#x540E;&#x8FD0;&#x884C; backup &#x547D;&#x4EE4;&#x6765;&#x5B8C;&#x6210;&#x5DE5;&#x4F5C;&#x3002;</p>
+<h4 id="&#x5728;&#x7F51;&#x7EDC;&#x95F4;&#x4F7F;&#x7528;-rsync-&#x547D;&#x4EE4;">&#x5728;&#x7F51;&#x7EDC;&#x95F4;&#x4F7F;&#x7528; rsync &#x547D;&#x4EE4;</h4>
+<p>One of the real beauties of rsync is that it can be used to copy files over a network.
+After all, the &#x201C;r&#x201D; in rsync stands for &#x201C;remote.&#x201D; Remote copying can be done in one of
+two ways. The first way is with another system that has rsync installed, along with a
+remote shell program such as ssh. Let&#x2019;s say we had another system on our local
+network with a lot of available hard drive space and we wanted to perform our backup
+operation using the remote system instead of an external drive. Assuming that it already
+had a directory named /backup where we could deliver our files, we could do this:</p>
+<p>rsync &#x7A0B;&#x5E8F;&#x7684;&#x771F;&#x6B63;&#x597D;&#x5904;&#x4E4B;&#x4E00;&#xFF0C;&#x662F;&#x5B83;&#x53EF;&#x4EE5;&#x88AB;&#x7528;&#x6765;&#x5728;&#x7F51;&#x7EDC;&#x95F4;&#x590D;&#x5236;&#x6587;&#x4EF6;&#x3002;&#x6BD5;&#x7ADF;&#xFF0C;rsync &#x4E2D;&#x7684;&#x201C;r&#x201D;&#x8C61;&#x5F81;&#x7740;&#x201C;remote&#x201D;&#x3002;
+&#x8FDC;&#x7A0B;&#x590D;&#x5236;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x4E24;&#x79CD;&#x65B9;&#x6CD5;&#x5B8C;&#x6210;&#x3002;&#x7B2C;&#x4E00;&#x4E2A;&#x65B9;&#x6CD5;&#x8981;&#x6C42;&#x53E6;&#x4E00;&#x4E2A;&#x7CFB;&#x7EDF;&#x5DF2;&#x7ECF;&#x5B89;&#x88C5;&#x4E86; rsync &#x7A0B;&#x5E8F;&#xFF0C;&#x8FD8;&#x5B89;&#x88C5;&#x4E86;
+&#x8FDC;&#x7A0B; shell &#x7A0B;&#x5E8F;&#xFF0C;&#x6BD4;&#x5982; ssh&#x3002;&#x6BD4;&#x65B9;&#x8BF4;&#x6211;&#x4EEC;&#x672C;&#x5730;&#x7F51;&#x7EDC;&#x4E2D;&#x7684;&#x4E00;&#x4E2A;&#x7CFB;&#x7EDF;&#x6709;&#x5927;&#x91CF;&#x53EF;&#x7528;&#x7684;&#x786C;&#x76D8;&#x7A7A;&#x95F4;&#xFF0C;&#x6211;&#x4EEC;&#x60F3;&#x8981;
+&#x7528;&#x8FDC;&#x7A0B;&#x7CFB;&#x7EDF;&#x6765;&#x4EE3;&#x66FF;&#x4E00;&#x4E2A;&#x5916;&#x90E8;&#x9A71;&#x52A8;&#x5668;&#xFF0C;&#x6765;&#x6267;&#x884C;&#x6587;&#x4EF6;&#x5907;&#x4EFD;&#x64CD;&#x4F5C;&#x3002;&#x5047;&#x5B9A;&#x8FDC;&#x7A0B;&#x7CFB;&#x7EDF;&#x4E2D;&#x6709;&#x4E00;&#x4E2A;&#x540D;&#x4E3A;/backup &#x7684;&#x76EE;&#x5F55;&#xFF0C;
+&#x5176;&#x7528;&#x6765;&#x5B58;&#x653E;&#x6211;&#x4EEC;&#x4F20;&#x9001;&#x7684;&#x6587;&#x4EF6;&#xFF0C;&#x6211;&#x4EEC;&#x8FD9;&#x6837;&#x505A;&#xFF1A;</p>
+<pre><code>[me@linuxbox ~]$ sudo rsync -av --delete --rsh=ssh /etc /home /usr/local remote-sys:/backup
+</code></pre><p>We made two changes to our command to facilitate the network copy. First, we added
+the --rsh=ssh option, which instructs rsync to use the ssh program as its remote
+shell. In this way, we were able to use an ssh encrypted tunnel to securely transfer the
+data from the local system to the remote host. Second, we specified the remote host by
+prefixing its name (in this case the remote host is named remote-sys) to the
+destination path name.</p>
+<p>&#x6211;&#x4EEC;&#x5BF9;&#x547D;&#x4EE4;&#x505A;&#x4E86;&#x4E24;&#x5904;&#x4FEE;&#x6539;&#xFF0C;&#x6765;&#x65B9;&#x4FBF;&#x7F51;&#x7EDC;&#x95F4;&#x6587;&#x4EF6;&#x590D;&#x5236;&#x3002;&#x9996;&#x5148;&#xFF0C;&#x6211;&#x4EEC;&#x6DFB;&#x52A0;&#x4E86;--rsh=ssh &#x9009;&#x9879;&#xFF0C;&#x5176;&#x6307;&#x793A;
+rsync &#x4F7F;&#x7528; ssh &#x7A0B;&#x5E8F;&#x4F5C;&#x4E3A;&#x5B83;&#x7684;&#x8FDC;&#x7A0B; shell&#x3002;&#x4EE5;&#x8FD9;&#x79CD;&#x65B9;&#x5F0F;&#xFF0C;&#x6211;&#x4EEC;&#x5C31;&#x80FD;&#x591F;&#x4F7F;&#x7528;&#x4E00;&#x4E2A; ssh &#x52A0;&#x5BC6;&#x901A;&#x9053;&#xFF0C;&#x628A;&#x6570;&#x636E;
+&#x5B89;&#x5168;&#x5730;&#x4F20;&#x9001;&#x5230;&#x8FDC;&#x7A0B;&#x4E3B;&#x673A;&#x4E2D;&#x3002;&#x5176;&#x6B21;&#xFF0C;&#x901A;&#x8FC7;&#x5728;&#x76EE;&#x6807;&#x8DEF;&#x5F84;&#x540D;&#x524D;&#x52A0;&#x4E0A;&#x8FDC;&#x7AEF;&#x4E3B;&#x673A;&#x7684;&#x540D;&#x5B57;&#xFF08;&#x5728;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;
+&#x8FDC;&#x7AEF;&#x4E3B;&#x673A;&#x540D;&#x4E3A; remote-sys&#xFF09;&#xFF0C;&#x6765;&#x6307;&#x5B9A;&#x8FDC;&#x7AEF;&#x4E3B;&#x673A;&#x3002;</p>
+<p>The second way that rsync can be used to synchronize files over a network is by using
+an rysnc server. rsync can be configured to run as a daemon and listen to incoming
+requests for synchronization. This is often done to allow mirroring of a remote system.
+For example, Red Hat Software maintains a large repository of software packages under
+development for its Fedora distribution. It is useful for software testers to mirror this
+collection during the testing phase of the distribution release cycle. Since files in the
+repository change frequently (often more than once a day), it is desirable to maintain a
+local mirror by periodic synchronization, rather than by bulk copying of the repository.
+One of these repositories is kept at Georgia Tech; we could mirror it using our local copy
+of rsync and their rsync server like this:</p>
+<p>rsync &#x53EF;&#x4EE5;&#x88AB;&#x7528;&#x6765;&#x5728;&#x7F51;&#x7EDC;&#x95F4;&#x540C;&#x6B65;&#x6587;&#x4EF6;&#x7684;&#x7B2C;&#x4E8C;&#x79CD;&#x65B9;&#x5F0F;&#x662F;&#x901A;&#x8FC7;&#x4F7F;&#x7528; rsync &#x670D;&#x52A1;&#x5668;&#x3002;rsync &#x53EF;&#x4EE5;&#x88AB;&#x914D;&#x7F6E;&#x4E3A;&#x4E00;&#x4E2A;
+&#x5B88;&#x62A4;&#x8FDB;&#x7A0B;&#xFF0C;&#x76D1;&#x542C;&#x5373;&#x5C06;&#x5230;&#x6765;&#x7684;&#x540C;&#x6B65;&#x8BF7;&#x6C42;&#x3002;&#x8FD9;&#x6837;&#x505A;&#x7ECF;&#x5E38;&#x662F;&#x4E3A;&#x4E86;&#x5141;&#x8BB8;&#x4E00;&#x4E2A;&#x8FDC;&#x7A0B;&#x7CFB;&#x7EDF;&#x7684;&#x955C;&#x50CF;&#x3002;&#x4F8B;&#x5982;&#xFF0C;Red
+Hat &#x8F6F;&#x4EF6;&#x4E2D;&#x5FC3;&#x4E3A;&#x5B83;&#x7684; Fedora &#x53D1;&#x884C;&#x7248;&#xFF0C;&#x7EF4;&#x62A4;&#x7740;&#x4E00;&#x4E2A;&#x5DE8;&#x5927;&#x7684;&#x6B63;&#x5728;&#x5F00;&#x53D1;&#x4E2D;&#x7684;&#x8F6F;&#x4EF6;&#x5305;&#x7684;&#x4ED3;&#x5E93;&#x3002;&#x5BF9;&#x4E8E;&#x8F6F;&#x4EF6;&#x6D4B;&#x8BD5;&#x4EBA;&#x5458;&#xFF0C;
+&#x5728;&#x53D1;&#x884C;&#x5468;&#x671F;&#x7684;&#x6D4B;&#x8BD5;&#x9636;&#x6BB5;&#xFF0C;&#x955C;&#x50CF;&#x8FD9;&#x4E9B;&#x8F6F;&#x4EF6;&#x96C6;&#x5408;&#x662F;&#x975E;&#x5E38;&#x6709;&#x5E2E;&#x52A9;&#x7684;&#x3002;&#x56E0;&#x4E3A;&#x4ED3;&#x5E93;&#x4E2D;&#x7684;&#x8FD9;&#x4E9B;&#x6587;&#x4EF6;&#x4F1A;&#x9891;&#x7E41;&#x5730;
+&#xFF08;&#x901A;&#x5E38;&#x6BCF;&#x5929;&#x4E0D;&#x6B62;&#x4E00;&#x6B21;&#xFF09;&#x6539;&#x52A8;&#xFF0C;&#x5B9A;&#x671F;&#x540C;&#x6B65;&#x672C;&#x5730;&#x955C;&#x50CF;&#xFF0C;&#x8FD9;&#x662F;&#x53EF;&#x53D6;&#x7684;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x5927;&#x91CF;&#x5730;&#x62F7;&#x8D1D;&#x8F6F;&#x4EF6;&#x4ED3;&#x5E93;&#x3002;
+&#x8FD9;&#x4E9B;&#x8F6F;&#x4EF6;&#x5E93;&#x4E4B;&#x4E00;&#x88AB;&#x7EF4;&#x62A4;&#x5728; Georgia Tech&#xFF1B;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x672C;&#x5730; rsync &#x7A0B;&#x5E8F;&#x548C;&#x5B83;&#x4EEC;&#x7684; rsync &#x670D;&#x52A1;&#x5668;&#x6765;&#x955C;&#x50CF;&#x5B83;&#x3002;</p>
+<pre><code>[me@linuxbox ~]$ mkdir fedora-devel
+[me@linuxbox ~]$ rsync -av -delete rsync://rsync.gtlib.gatech.edu/fedora-linux-
+ core/development/i386/os fedora-devel
+</code></pre><p>In this example, we use the URI of the remote rsync server, which consists of a protocol
+(rsync://), followed by the remote host name (rsync.gtlib.gatech.edu),
+followed by the pathname of the repository.</p>
+<p>&#x5728;&#x8FD9;&#x4E2A;&#x4F8B;&#x5B50;&#x91CC;&#xFF0C;&#x6211;&#x4EEC;&#x4F7F;&#x7528;&#x4E86;&#x8FDC;&#x7AEF; rsync &#x670D;&#x52A1;&#x5668;&#x7684; URI&#xFF0C;&#x5176;&#x7531;&#x534F;&#x8BAE;&#xFF08;rsync://&#xFF09;&#xFF0C;&#x8FDC;&#x7AEF;&#x4E3B;&#x673A;&#x540D;
+&#xFF08;rsync.gtlib.gatech.edu&#xFF09;&#xFF0C;&#x548C;&#x8F6F;&#x4EF6;&#x4ED3;&#x5E93;&#x7684;&#x8DEF;&#x5F84;&#x540D;&#x7EC4;&#x6210;&#x3002;</p>
+<h3 id="&#x62D3;&#x5C55;&#x9605;&#x8BFB;">&#x62D3;&#x5C55;&#x9605;&#x8BFB;</h3>
+<ul>
+<li><p>The man pages for all of the commands discussed here are pretty clear and
+contain useful examples. In addition, the GNU Project has a good online manual
+for its version of tar. It can be found here:</p>
+</li>
+<li><p>&#x5728;&#x8FD9;&#x91CC;&#x8BA8;&#x8BBA;&#x7684;&#x6240;&#x6709;&#x547D;&#x4EE4;&#x7684;&#x624B;&#x518C;&#x6587;&#x6863;&#x90FD;&#x76F8;&#x5F53;&#x6E05;&#x695A;&#x660E;&#x767D;&#xFF0C;&#x5E76;&#x4E14;&#x5305;&#x542B;&#x4E86;&#x6709;&#x7528;&#x7684;&#x4F8B;&#x5B50;&#x3002;&#x53E6;&#x5916;&#xFF0C;
+GNU &#x7248;&#x672C;&#x7684; tar &#x547D;&#x4EE4;&#x6709;&#x4E00;&#x4E2A;&#x4E0D;&#x9519;&#x7684;&#x5728;&#x7EBF;&#x6587;&#x6863;&#x3002;&#x53EF;&#x4EE5;&#x5728;&#x4E0B;&#x9762;&#x94FE;&#x63A5;&#x5904;&#x627E;&#x5230;&#xFF1A;</p>
+<p>  <a href="http://www.gnu.org/software/tar/manual/index.html" target="_blank">http://www.gnu.org/software/tar/manual/index.html</a></p>
+</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="chap18.html" class="navigation navigation-prev " aria-label="Previous page: 18. 查找文件">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="chap20.html" class="navigation navigation-next " aria-label="Next page: 20. 正则表达式">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"layout":"book","title":"19. 归档和备份","level":"1.1.19","depth":2,"next":{"title":"20. 正则表达式","level":"1.1.20","depth":2,"path":"chap20.md","ref":"chap20.md","articles":[]},"previous":{"title":"18. 查找文件","level":"1.1.18","depth":2,"path":"chap18.md","ref":"chap18.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"en","gitbook":"*"},"file":{"path":"chap19.md","mtime":"2017-01-12T13:05:37.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-01-12T13:06:00.166Z"},"basePath":".","book":{"language":"en"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

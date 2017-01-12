@@ -1,0 +1,1004 @@
+
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>32. 流程控制：case 分支 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="chap33.html" />
+    
+    
+    <link rel="prev" href="chap31.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.1" data-path="chap01.html">
+            
+                <a href="chap01.html">
+            
+                    
+                    01. 引言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2" data-path="chap02.html">
+            
+                <a href="chap02.html">
+            
+                    
+                    02. 什么是 shell
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3" data-path="chap03.html">
+            
+                <a href="chap03.html">
+            
+                    
+                    03. 文件系统中跳转
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4" data-path="chap04.html">
+            
+                <a href="chap04.html">
+            
+                    
+                    04. 探究操作系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.5" data-path="chap05.html">
+            
+                <a href="chap05.html">
+            
+                    
+                    05. 操作文件和目录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.6" data-path="chap06.html">
+            
+                <a href="chap06.html">
+            
+                    
+                    06. 使用命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.7" data-path="chap07.html">
+            
+                <a href="chap07.html">
+            
+                    
+                    07. 重定向
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.8" data-path="chap08.html">
+            
+                <a href="chap08.html">
+            
+                    
+                    08. 从 shell 眼中看世界
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.9" data-path="chap09.html">
+            
+                <a href="chap09.html">
+            
+                    
+                    09. 键盘高级操作技巧
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.10" data-path="chap10.html">
+            
+                <a href="chap10.html">
+            
+                    
+                    10. 权限
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.11" data-path="chap11.html">
+            
+                <a href="chap11.html">
+            
+                    
+                    11. 进程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.12" data-path="chap12.html">
+            
+                <a href="chap12.html">
+            
+                    
+                    12. shell 环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.13" data-path="chap13.html">
+            
+                <a href="chap13.html">
+            
+                    
+                    13. vi 简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.14" data-path="chap14.html">
+            
+                <a href="chap14.html">
+            
+                    
+                    14. 自定制 shell 提示符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.15" data-path="chap15.html">
+            
+                <a href="chap15.html">
+            
+                    
+                    15. 软件包管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.16" data-path="chap16.html">
+            
+                <a href="chap16.html">
+            
+                    
+                    16. 存储媒介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.17" data-path="chap17.html">
+            
+                <a href="chap17.html">
+            
+                    
+                    17. 网络系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.18" data-path="chap18.html">
+            
+                <a href="chap18.html">
+            
+                    
+                    18. 查找文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.19" data-path="chap19.html">
+            
+                <a href="chap19.html">
+            
+                    
+                    19. 归档和备份
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.20" data-path="chap20.html">
+            
+                <a href="chap20.html">
+            
+                    
+                    20. 正则表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.21" data-path="chap21.html">
+            
+                <a href="chap21.html">
+            
+                    
+                    21. 文本处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.22" data-path="chap22.html">
+            
+                <a href="chap22.html">
+            
+                    
+                    22. 格式化输出
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.23" data-path="chap23.html">
+            
+                <a href="chap23.html">
+            
+                    
+                    23. 打印
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.24" data-path="chap24.html">
+            
+                <a href="chap24.html">
+            
+                    
+                    24. 编译程序
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.25" data-path="chap25.html">
+            
+                <a href="chap25.html">
+            
+                    
+                    25. 编写第一个 Shell 脚本
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.26" data-path="chap26.html">
+            
+                <a href="chap26.html">
+            
+                    
+                    26. 启动一个项目
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.27" data-path="chap27.html">
+            
+                <a href="chap27.html">
+            
+                    
+                    27. 自顶向下设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.28" data-path="chap28.html">
+            
+                <a href="chap28.html">
+            
+                    
+                    28. 流程控制：if 分支结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.29" data-path="chap29.html">
+            
+                <a href="chap29.html">
+            
+                    
+                    29. 读取键盘输入
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.30" data-path="chap30.html">
+            
+                <a href="chap30.html">
+            
+                    
+                    30. 流程控制：while/until 循环
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.31" data-path="chap31.html">
+            
+                <a href="chap31.html">
+            
+                    
+                    31. 疑难排解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.1.32" data-path="chap32.html">
+            
+                <a href="chap32.html">
+            
+                    
+                    32. 流程控制：case 分支
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.33" data-path="chap33.html">
+            
+                <a href="chap33.html">
+            
+                    
+                    33. 位置参数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.34" data-path="chap34.html">
+            
+                <a href="chap34.html">
+            
+                    
+                    34. 流程控制：for 循环
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.35" data-path="chap35.html">
+            
+                <a href="chap35.html">
+            
+                    
+                    35. 字符串和数字
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.36" data-path="chap36.html">
+            
+                <a href="chap36.html">
+            
+                    
+                    36. 数组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.37" data-path="chap37.html">
+            
+                <a href="chap37.html">
+            
+                    
+                    37. 奇珍异宝
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >32. 流程控制：case 分支</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <p>In this chapter, we will continue to look at flow control. In Chapter 28, we constructed
+some simple menus and built the logic used to act on a user&#x2019;s selection. To do this, we
+used a series of if commands to identify which of the possible choices has been selected.
+This type of construct appears frequently in programs, so much so that many programming
+languages (including the shell) provide a flow control mechanism for multiple-choice decisions.</p>
+<p>&#x5728;&#x8FD9;&#x4E00;&#x7AE0;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x5C06;&#x7EE7;&#x7EED;&#x770B;&#x4E00;&#x4E0B;&#x7A0B;&#x5E8F;&#x7684;&#x6D41;&#x7A0B;&#x63A7;&#x5236;&#x3002;&#x5728;&#x7B2C;28&#x7AE0;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x6784;&#x5EFA;&#x4E86;&#x4E00;&#x4E9B;&#x7B80;&#x5355;&#x7684;&#x83DC;&#x5355;&#x5E76;&#x521B;&#x5EFA;&#x4E86;&#x7528;&#x6765;
+&#x5E94;&#x5BF9;&#x5404;&#x79CD;&#x7528;&#x6237;&#x9009;&#x62E9;&#x7684;&#x7A0B;&#x5E8F;&#x903B;&#x8F91;&#x3002;&#x4E3A;&#x6B64;&#xFF0C;&#x6211;&#x4EEC;&#x4F7F;&#x7528;&#x4E86;&#x4E00;&#x7CFB;&#x5217;&#x7684; if &#x547D;&#x4EE4;&#x6765;&#x8BC6;&#x522B;&#x54EA;&#x4E00;&#x4E2A;&#x53EF;&#x80FD;&#x7684;&#x9009;&#x9879;&#x5DF2;&#x7ECF;&#x88AB;&#x9009;&#x4E2D;&#x3002;
+&#x8FD9;&#x79CD;&#x7C7B;&#x578B;&#x7684;&#x6784;&#x9020;&#x7ECF;&#x5E38;&#x51FA;&#x73B0;&#x5728;&#x7A0B;&#x5E8F;&#x4E2D;&#xFF0C;&#x51FA;&#x73B0;&#x9891;&#x7387;&#x5982;&#x6B64;&#x4E4B;&#x591A;&#xFF0C;&#x4EE5;&#x81F3;&#x4E8E;&#x8BB8;&#x591A;&#x7F16;&#x7A0B;&#x8BED;&#x8A00;&#xFF08;&#x5305;&#x62EC; shell&#xFF09;
+&#x4E13;&#x95E8;&#x4E3A;&#x591A;&#x9009;&#x51B3;&#x7B56;&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x79CD;&#x6D41;&#x7A0B;&#x63A7;&#x5236;&#x673A;&#x5236;&#x3002;</p>
+<h3 id="case">case</h3>
+<p>The bash multiple-choice compound command is called case. It has the following syntax:</p>
+<p>Bash &#x7684;&#x591A;&#x9009;&#x590D;&#x5408;&#x547D;&#x4EE4;&#x79F0;&#x4E3A; case&#x3002;&#x5B83;&#x7684;&#x8BED;&#x6CD5;&#x89C4;&#x5219;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF1A;</p>
+<pre><code>case word in
+    [pattern [| pattern]...) commands ;;]...
+esac
+</code></pre><p>If we look at the read-menu program from Chapter 28, we see the logic used to act on
+a user&#x2019;s selection:</p>
+<p>&#x5982;&#x679C;&#x6211;&#x4EEC;&#x770B;&#x4E00;&#x4E0B;&#x7B2C;28&#x7AE0;&#x4E2D;&#x7684;&#x8BFB;&#x83DC;&#x5355;&#x7A0B;&#x5E8F;&#xFF0C;&#x6211;&#x4EEC;&#x5C31;&#x77E5;&#x9053;&#x4E86;&#x7528;&#x6765;&#x5E94;&#x5BF9;&#x4E00;&#x4E2A;&#x7528;&#x6237;&#x9009;&#x9879;&#x7684;&#x903B;&#x8F91;&#x6D41;&#x7A0B;&#xFF1A;</p>
+<pre><code>#!/bin/bash
+# read-menu: a menu driven system information program
+clear
+echo &quot;
+Please Select:
+1. Display System Information
+2. Display Disk Space
+3. Display Home Space Utilization
+0. Quit
+&quot;
+read -p &quot;Enter selection [0-3] &gt; &quot;
+if [[ $REPLY =~ ^[0-3]$ ]]; then
+    if [[ $REPLY == 0 ]]; then
+        echo &quot;Program terminated.&quot;
+        exit
+    fi
+    if [[ $REPLY == 1 ]]; then
+        echo &quot;Hostname: $HOSTNAME&quot;
+        uptime
+        exit
+    fi
+    if [[ $REPLY == 2 ]]; then
+        df -h
+        exit
+    fi
+    if [[ $REPLY == 3 ]]; then
+        if [[ $(id -u) -eq 0 ]]; then
+            echo &quot;Home Space Utilization (All Users)&quot;
+            du -sh /home/*
+        else
+            echo &quot;Home Space Utilization ($USER)&quot;
+            du -sh $HOME
+        fi
+        exit
+    fi
+else
+    echo &quot;Invalid entry.&quot; &gt;&amp;2
+    exit 1
+fi
+</code></pre><p>Using case, we can replace this logic with something simpler:</p>
+<p>&#x4F7F;&#x7528; case &#x8BED;&#x53E5;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x7528;&#x66F4;&#x7B80;&#x5355;&#x7684;&#x4EE3;&#x7801;&#x66FF;&#x6362;&#x8FD9;&#x79CD;&#x903B;&#x8F91;&#xFF1A;</p>
+<pre><code>#!/bin/bash
+# case-menu: a menu driven system information program
+clear
+echo &quot;
+Please Select:
+1. Display System Information
+2. Display Disk Space
+3. Display Home Space Utilization
+0. Quit
+&quot;
+read -p &quot;Enter selection [0-3] &gt; &quot;
+case $REPLY in
+    0)  echo &quot;Program terminated.&quot;
+        exit
+        ;;
+    1)  echo &quot;Hostname: $HOSTNAME&quot;
+        uptime
+        ;;
+    2)  df -h
+        ;;
+    3)  if [[ $(id -u) -eq 0 ]]; then
+            echo &quot;Home Space Utilization (All Users)&quot;
+            du -sh /home/*
+        else
+            echo &quot;Home Space Utilization ($USER)&quot;
+            du -sh $HOME
+        fi
+        ;;
+    *)  echo &quot;Invalid entry&quot; &gt;&amp;2
+        exit 1
+        ;;
+esac
+</code></pre><p>The case command looks at the value of word, in our example, the value of the REPLY
+variable, and then attempts to match it against one of the specified patterns. When a
+match is found, the commands associated with the specified pattern are executed. After a
+match is found, no further matches are attempted.</p>
+<p>case &#x547D;&#x4EE4;&#x68C0;&#x67E5;&#x4E00;&#x4E2A;&#x53D8;&#x91CF;&#x503C;&#xFF0C;&#x5728;&#x6211;&#x4EEC;&#x8FD9;&#x4E2A;&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C;&#x5C31;&#x662F; REPLY &#x53D8;&#x91CF;&#x7684;&#x53D8;&#x91CF;&#x503C;&#xFF0C;&#x7136;&#x540E;&#x8BD5;&#x56FE;&#x53BB;&#x5339;&#x914D;&#x5176;&#x4E2D;&#x4E00;&#x4E2A;&#x5177;&#x4F53;&#x7684;&#x6A21;&#x5F0F;&#x3002;
+&#x5F53;&#x4E0E;&#x4E4B;&#x76F8;&#x5339;&#x914D;&#x7684;&#x6A21;&#x5F0F;&#x627E;&#x5230;&#x4E4B;&#x540E;&#xFF0C;&#x5C31;&#x4F1A;&#x6267;&#x884C;&#x4E0E;&#x8BE5;&#x6A21;&#x5F0F;&#x76F8;&#x5173;&#x8054;&#x7684;&#x547D;&#x4EE4;&#x3002;&#x82E5;&#x627E;&#x5230;&#x4E00;&#x4E2A;&#x6A21;&#x5F0F;&#x4E4B;&#x540E;&#xFF0C;&#x5C31;&#x4E0D;&#x4F1A;&#x518D;&#x7EE7;&#x7EED;&#x5BFB;&#x627E;&#x3002;</p>
+<h3 id="&#x6A21;&#x5F0F;">&#x6A21;&#x5F0F;</h3>
+<p>The patterns used by case are the same as those used by pathname expansion. Patterns
+are terminated with a &#x201C;)&#x201D; character. Here are some valid patterns:</p>
+<p>&#x8FD9;&#x91CC; case &#x8BED;&#x53E5;&#x4F7F;&#x7528;&#x7684;&#x6A21;&#x5F0F;&#x548C;&#x8DEF;&#x5F84;&#x5C55;&#x5F00;&#x4E2D;&#x4F7F;&#x7528;&#x7684;&#x90A3;&#x4E9B;&#x662F;&#x4E00;&#x6837;&#x7684;&#x3002;&#x6A21;&#x5F0F;&#x4EE5;&#x4E00;&#x4E2A; &#x201C;)&#x201D; &#x4E3A;&#x7EC8;&#x6B62;&#x7B26;&#x3002;&#x8FD9;&#x91CC;&#x662F;&#x4E00;&#x4E9B;&#x6709;&#x6548;&#x7684;&#x6A21;&#x5F0F;&#x3002;</p>
+<table class="multi">
+<caption class="cap">Table 32-1: case Pattern Examples</caption>
+<tr>
+<th class="title">Pattern</th>
+<th class="title">Description</th>
+</tr>
+<tr>
+<td valign="top">a)</td>
+<td valign="top">Matches if word equals &quot;a&quot;.</td>
+</tr>
+<tr>
+<td valign="top">[[:alpha:]])</td>
+<td valign="top">Matches if word is a single alphabetic character.</td>
+</tr>
+<tr>
+<td valign="top">???)</td>
+<td valign="top">Matches if word is exactly three characters long.</td>
+</tr>
+<tr>
+<td valign="top">*.txt)</td>
+<td valign="top">Matches if word ends with the characters &#x201C;.txt&#x201D;.</td>
+</tr>
+<tr>
+<td valign="top">*)</td>
+<td valign="top">Matches any value of word. It is good practice to include
+this as the last pattern in a case command, to catch any values of word
+that did not match a previous pattern; that is, to catch any possible invalid values.</td>
+</tr>
+</table>
+
+<table class="multi">
+<caption class="cap">&#x8868;32-1: case &#x6A21;&#x5F0F;&#x5B9E;&#x4F8B;</caption>
+<tr>
+<th class="title">&#x6A21;&#x5F0F;</th>
+<th class="title">&#x63CF;&#x8FF0;</th>
+</tr>
+<tr>
+<td valign="top">a)</td>
+<td valign="top">&#x82E5;&#x5355;&#x8BCD;&#x4E3A; &#x201C;a&#x201D;&#xFF0C;&#x5219;&#x5339;&#x914D;</td>
+</tr>
+<tr>
+<td valign="top">[[:alpha:]])</td>
+<td valign="top">&#x82E5;&#x5355;&#x8BCD;&#x662F;&#x4E00;&#x4E2A;&#x5B57;&#x6BCD;&#x5B57;&#x7B26;&#xFF0C;&#x5219;&#x5339;&#x914D;</td>
+</tr>
+ <tr>
+<td valign="top">???)</td>
+<td valign="top">&#x82E5;&#x5355;&#x8BCD;&#x53EA;&#x6709;3&#x4E2A;&#x5B57;&#x7B26;&#xFF0C;&#x5219;&#x5339;&#x914D;</td>
+</tr>
+<tr>
+<td valign="top">*.txt)</td>
+<td valign="top">&#x82E5;&#x5355;&#x8BCD;&#x4EE5; &#x201C;.txt&#x201D; &#x5B57;&#x7B26;&#x7ED3;&#x5C3E;&#xFF0C;&#x5219;&#x5339;&#x914D;</td>
+</tr>
+<tr>
+<td valign="top">*)</td>
+<td valign="top">&#x5339;&#x914D;&#x4EFB;&#x610F;&#x5355;&#x8BCD;&#x3002;&#x628A;&#x8FD9;&#x4E2A;&#x6A21;&#x5F0F;&#x505A;&#x4E3A; case &#x547D;&#x4EE4;&#x7684;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x6A21;&#x5F0F;&#xFF0C;&#x662F;&#x4E00;&#x4E2A;&#x5F88;&#x597D;&#x7684;&#x505A;&#x6CD5;&#xFF0C;
+&#x53EF;&#x4EE5;&#x6355;&#x6349;&#x5230;&#x4EFB;&#x610F;&#x4E00;&#x4E2A;&#x4E0E;&#x5148;&#x524D;&#x6A21;&#x5F0F;&#x4E0D;&#x5339;&#x914D;&#x7684;&#x6570;&#x503C;&#xFF1B;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#xFF0C;&#x6355;&#x6349;&#x5230;&#x4EFB;&#x4F55;&#x53EF;&#x80FD;&#x7684;&#x65E0;&#x6548;&#x503C;&#x3002;
+</td>
+</tr>
+</table>
+
+<p>Here is an example of patterns at work:</p>
+<p>&#x8FD9;&#x91CC;&#x662F;&#x4E00;&#x4E2A;&#x6A21;&#x5F0F;&#x4F7F;&#x7528;&#x5B9E;&#x4F8B;&#xFF1A;</p>
+<pre><code>#!/bin/bash
+read -p &quot;enter word &gt; &quot;
+case $REPLY in
+    [[:alpha:]])        echo &quot;is a single alphabetic character.&quot; ;;
+    [ABC][0-9])         echo &quot;is A, B, or C followed by a digit.&quot; ;;
+    ???)                echo &quot;is three characters long.&quot; ;;
+    *.txt)              echo &quot;is a word ending in &apos;.txt&apos;&quot; ;;
+    *)                  echo &quot;is something else.&quot; ;;
+esac
+</code></pre><p>It is also possible to combine multiple patterns using the vertical bar character
+as a separator. This creates an &#x201C;or&#x201D; conditional pattern. This is useful for such things as handling
+both upper- and lowercase characters. For example:</p>
+<p>&#x8FD8;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x7AD6;&#x7EBF;&#x5B57;&#x7B26;&#x4F5C;&#x4E3A;&#x5206;&#x9694;&#x7B26;&#xFF0C;&#x628A;&#x591A;&#x4E2A;&#x6A21;&#x5F0F;&#x7ED3;&#x5408;&#x8D77;&#x6765;&#x3002;&#x8FD9;&#x5C31;&#x521B;&#x5EFA;&#x4E86;&#x4E00;&#x4E2A; &#x201C;&#x6216;&#x201D; &#x6761;&#x4EF6;&#x6A21;&#x5F0F;&#x3002;&#x8FD9;&#x5BF9;&#x4E8E;&#x5904;&#x7406;&#x8BF8;&#x5982;&#x5927;&#x5C0F;&#x5199;&#x5B57;&#x7B26;&#x5F88;&#x6709;&#x7528;&#x5904;&#x3002;&#x4F8B;&#x5982;&#xFF1A;</p>
+<pre><code>#!/bin/bash
+# case-menu: a menu driven system information program
+clear
+echo &quot;
+Please Select:
+A. Display System Information
+B. Display Disk Space
+C. Display Home Space Utilization
+Q. Quit
+&quot;
+read -p &quot;Enter selection [A, B, C or Q] &gt; &quot;
+case $REPLY in
+q|Q) echo &quot;Program terminated.&quot;
+     exit
+     ;;
+a|A) echo &quot;Hostname: $HOSTNAME&quot;
+     uptime
+     ;;
+b|B) df -h
+     ;;
+c|C) if [[ $(id -u) -eq 0 ]]; then
+         echo &quot;Home Space Utilization (All Users)&quot;
+         du -sh /home/*
+     else
+         echo &quot;Home Space Utilization ($USER)&quot;
+         du -sh $HOME
+     fi
+     ;;
+*)   echo &quot;Invalid entry&quot; &gt;&amp;2
+     exit 1
+     ;;
+esac
+</code></pre><p>Here, we modify the case-menu program to use letters instead of digits for menu
+selection. Notice how the new patterns allow for entry of both upper- and lowercase letters.</p>
+<p>&#x8FD9;&#x91CC;&#xFF0C;&#x6211;&#x4EEC;&#x66F4;&#x6539;&#x4E86; case-menu &#x7A0B;&#x5E8F;&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x7528;&#x5B57;&#x6BCD;&#x6765;&#x4EE3;&#x66FF;&#x6570;&#x5B57;&#x505A;&#x4E3A;&#x83DC;&#x5355;&#x9009;&#x9879;&#x3002;&#x6CE8;&#x610F;&#x65B0;&#x6A21;&#x5F0F;&#x5982;&#x4F55;&#x4F7F;&#x5F97;&#x5927;&#x5C0F;&#x5199;&#x5B57;&#x6BCD;&#x90FD;&#x662F;&#x6709;&#x6548;&#x7684;&#x8F93;&#x5165;&#x9009;&#x9879;&#x3002;</p>
+<h3 id="&#x6267;&#x884C;&#x591A;&#x4E2A;&#x52A8;&#x4F5C;">&#x6267;&#x884C;&#x591A;&#x4E2A;&#x52A8;&#x4F5C;</h3>
+<p>In versions of bash prior to 4.0, case allowed only one action to be performed on a
+successful match. After a successful match, the command would terminate. Here we see
+a script that tests a character:</p>
+<p>&#x65E9;&#x4E8E;&#x7248;&#x672C;&#x53F7;4.0&#x7684; bash&#xFF0C;case &#x8BED;&#x6CD5;&#x53EA;&#x5141;&#x8BB8;&#x6267;&#x884C;&#x4E0E;&#x4E00;&#x4E2A;&#x6210;&#x529F;&#x5339;&#x914D;&#x7684;&#x6A21;&#x5F0F;&#x76F8;&#x5173;&#x8054;&#x7684;&#x52A8;&#x4F5C;&#x3002;
+&#x5339;&#x914D;&#x6210;&#x529F;&#x4E4B;&#x540E;&#xFF0C;&#x547D;&#x4EE4;&#x5C06;&#x4F1A;&#x7EC8;&#x6B62;&#x3002;&#x8FD9;&#x91CC;&#x6211;&#x4EEC;&#x770B;&#x4E00;&#x4E2A;&#x6D4B;&#x8BD5;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x7684;&#x811A;&#x672C;&#xFF1A;</p>
+<pre><code>#!/bin/bash
+# case4-1: test a character
+read -n 1 -p &quot;Type a character &gt; &quot;
+echo
+case $REPLY in
+    [[:upper:]])    echo &quot;&apos;$REPLY&apos; is upper case.&quot; ;;
+    [[:lower:]])    echo &quot;&apos;$REPLY&apos; is lower case.&quot; ;;
+    [[:alpha:]])    echo &quot;&apos;$REPLY&apos; is alphabetic.&quot; ;;
+    [[:digit:]])    echo &quot;&apos;$REPLY&apos; is a digit.&quot; ;;
+    [[:graph:]])    echo &quot;&apos;$REPLY&apos; is a visible character.&quot; ;;
+    [[:punct:]])    echo &quot;&apos;$REPLY&apos; is a punctuation symbol.&quot; ;;
+    [[:space:]])    echo &quot;&apos;$REPLY&apos; is a whitespace character.&quot; ;;
+    [[:xdigit:]])   echo &quot;&apos;$REPLY&apos; is a hexadecimal digit.&quot; ;;
+esac
+</code></pre><p>Running this script produces this:</p>
+<p>&#x8FD0;&#x884C;&#x8FD9;&#x4E2A;&#x811A;&#x672C;&#xFF0C;&#x8F93;&#x51FA;&#x8FD9;&#x4E9B;&#x5185;&#x5BB9;&#xFF1A;</p>
+<pre><code>[me@linuxbox ~]$ case4-1
+Type a character &gt; a
+&apos;a&apos; is lower case.
+</code></pre><p>The script works for the most part, but fails if a character matches more than one of the
+POSIX characters classes. For example, the character &quot;a&quot; is both lower case and alphabetic,
+as well as a hexadecimal digit. In bash prior to version 4.0 there was no way for
+case to match more than one test. Modern versions of bash, add the &#x201C;;;&amp;&#x201D; notation to
+terminate each action, so now we can do this:</p>
+<p>&#x5927;&#x591A;&#x6570;&#x60C5;&#x51B5;&#x4E0B;&#x8FD9;&#x4E2A;&#x811A;&#x672C;&#x5DE5;&#x4F5C;&#x662F;&#x6B63;&#x5E38;&#x7684;&#xFF0C;&#x4F46;&#x82E5;&#x8F93;&#x5165;&#x7684;&#x5B57;&#x7B26;&#x4E0D;&#x6B62;&#x4E0E;&#x4E00;&#x4E2A; POSIX &#x5B57;&#x7B26;&#x96C6;&#x5339;&#x914D;&#x7684;&#x8BDD;&#xFF0C;&#x8FD9;&#x65F6;&#x811A;&#x672C;&#x5C31;&#x4F1A;&#x51FA;&#x9519;&#x3002;
+&#x4F8B;&#x5982;&#xFF0C;&#x5B57;&#x7B26; &#x201C;a&#x201D; &#x65E2;&#x662F;&#x5C0F;&#x5199;&#x5B57;&#x6BCD;&#xFF0C;&#x4E5F;&#x662F;&#x4E00;&#x4E2A;&#x5341;&#x516D;&#x8FDB;&#x5236;&#x7684;&#x6570;&#x5B57;&#x3002;&#x65E9;&#x4E8E;4.0&#x7684; bash&#xFF0C;&#x5BF9;&#x4E8E; case &#x8BED;&#x6CD5;&#x7EDD;&#x4E0D;&#x80FD;&#x5339;&#x914D;
+&#x591A;&#x4E2A;&#x6D4B;&#x8BD5;&#x6761;&#x4EF6;&#x3002;&#x73B0;&#x5728;&#x7684; bash &#x7248;&#x672C;&#xFF0C;&#x6DFB;&#x52A0; &#x201C;;;&amp;&#x201D; &#x8868;&#x8FBE;&#x5F0F;&#x6765;&#x7EC8;&#x6B62;&#x6BCF;&#x4E2A;&#x884C;&#x52A8;&#xFF0C;&#x6240;&#x4EE5;&#x73B0;&#x5728;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x505A;&#x5230;&#x8FD9;&#x4E00;&#x70B9;&#xFF1A;</p>
+<pre><code>#!/bin/bash
+# case4-2: test a character
+read -n 1 -p &quot;Type a character &gt; &quot;
+echo
+case $REPLY in
+    [[:upper:]])    echo &quot;&apos;$REPLY&apos; is upper case.&quot; ;;&amp;
+    [[:lower:]])    echo &quot;&apos;$REPLY&apos; is lower case.&quot; ;;&amp;
+    [[:alpha:]])    echo &quot;&apos;$REPLY&apos; is alphabetic.&quot; ;;&amp;
+    [[:digit:]])    echo &quot;&apos;$REPLY&apos; is a digit.&quot; ;;&amp;
+    [[:graph:]])    echo &quot;&apos;$REPLY&apos; is a visible character.&quot; ;;&amp;
+    [[:punct:]])    echo &quot;&apos;$REPLY&apos; is a punctuation symbol.&quot; ;;&amp;
+    [[:space:]])    echo &quot;&apos;$REPLY&apos; is a whitespace character.&quot; ;;&amp;
+    [[:xdigit:]])   echo &quot;&apos;$REPLY&apos; is a hexadecimal digit.&quot; ;;&amp;
+esac
+</code></pre><p>When we run this script, we get this:</p>
+<p>&#x5F53;&#x6211;&#x4EEC;&#x8FD0;&#x884C;&#x8FD9;&#x4E2A;&#x811A;&#x672C;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x6211;&#x4EEC;&#x5F97;&#x5230;&#x8FD9;&#x4E9B;&#xFF1A;</p>
+<pre><code>[me@linuxbox ~]$ case4-2
+Type a character &gt; a
+&apos;a&apos; is lower case.
+&apos;a&apos; is alphabetic.
+&apos;a&apos; is a visible character.
+&apos;a&apos; is a hexadecimal digit.
+</code></pre><p>The addition of the &quot;;;&amp;&quot; syntax allows case to continue on to the next test rather than
+simply terminating.</p>
+<p>&#x6DFB;&#x52A0;&#x7684; &#x201C;;;&amp;&#x201D; &#x7684;&#x8BED;&#x6CD5;&#x5141;&#x8BB8; case &#x8BED;&#x53E5;&#x7EE7;&#x7EED;&#x6267;&#x884C;&#x4E0B;&#x4E00;&#x6761;&#x6D4B;&#x8BD5;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x7B80;&#x5355;&#x5730;&#x7EC8;&#x6B62;&#x8FD0;&#x884C;&#x3002;</p>
+<h3 id="&#x603B;&#x7ED3;">&#x603B;&#x7ED3;</h3>
+<p>The case command is a handy addition to our bag of programming tricks. As we will
+see in the next chapter, it&#x2019;s the perfect tool for handling certain types of problems.</p>
+<p>case &#x547D;&#x4EE4;&#x662F;&#x6211;&#x4EEC;&#x7F16;&#x7A0B;&#x6280;&#x5DE7;&#x53E3;&#x888B;&#x4E2D;&#x7684;&#x4E00;&#x4E2A;&#x4FBF;&#x6377;&#x5DE5;&#x5177;&#x3002;&#x5728;&#x4E0B;&#x4E00;&#x7AE0;&#x4E2D;&#x6211;&#x4EEC;&#x5C06;&#x770B;&#x5230;&#xFF0C;
+&#x5BF9;&#x4E8E;&#x5904;&#x7406;&#x67D0;&#x4E9B;&#x7C7B;&#x578B;&#x7684;&#x95EE;&#x9898;&#x6765;&#x8BF4;&#xFF0C;case &#x547D;&#x4EE4;&#x662F;&#x4E00;&#x4E2A;&#x5B8C;&#x7F8E;&#x7684;&#x5DE5;&#x5177;&#x3002;</p>
+<h3 id="&#x62D3;&#x5C55;&#x9605;&#x8BFB;">&#x62D3;&#x5C55;&#x9605;&#x8BFB;</h3>
+<ul>
+<li><p>The Bash Reference Manual section on Conditional Constructs describes the
+case command in detail:</p>
+</li>
+<li><p>Bash &#x53C2;&#x8003;&#x624B;&#x518C;&#x7684;&#x6761;&#x4EF6;&#x6784;&#x9020;&#x4E00;&#x8282;&#x8BE6;&#x5C3D;&#x7684;&#x4ECB;&#x7ECD;&#x4E86; case &#x547D;&#x4EE4;&#xFF1A;</p>
+<p>  <a href="http://tiswww.case.edu/php/chet/bash/bashref.html#SEC21" target="_blank">http://tiswww.case.edu/php/chet/bash/bashref.html#SEC21</a></p>
+</li>
+<li><p>The Advanced Bash-Scripting Guide provides further examples of case applications:</p>
+</li>
+<li><p>&#x9AD8;&#x7EA7; Bash &#x811A;&#x672C;&#x6307;&#x5357;&#x63D0;&#x4F9B;&#x4E86;&#x66F4;&#x6DF1;&#x4E00;&#x5C42;&#x7684; case &#x5E94;&#x7528;&#x5B9E;&#x4F8B;&#xFF1A;</p>
+<p>  <a href="http://tldp.org/LDP/abs/html/testbranch.html" target="_blank">http://tldp.org/LDP/abs/html/testbranch.html</a></p>
+</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="chap31.html" class="navigation navigation-prev " aria-label="Previous page: 31. 疑难排解">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="chap33.html" class="navigation navigation-next " aria-label="Next page: 33. 位置参数">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"layout":"book","title":"32. 流程控制：case 分支","level":"1.1.32","depth":2,"next":{"title":"33. 位置参数","level":"1.1.33","depth":2,"path":"chap33.md","ref":"chap33.md","articles":[]},"previous":{"title":"31. 疑难排解","level":"1.1.31","depth":2,"path":"chap31.md","ref":"chap31.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"en","gitbook":"*"},"file":{"path":"chap32.md","mtime":"2017-01-12T13:05:37.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-01-12T13:06:00.166Z"},"basePath":".","book":{"language":"en"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

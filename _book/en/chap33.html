@@ -1,0 +1,1313 @@
+
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>33. 位置参数 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="chap34.html" />
+    
+    
+    <link rel="prev" href="chap32.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.1" data-path="chap01.html">
+            
+                <a href="chap01.html">
+            
+                    
+                    01. 引言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2" data-path="chap02.html">
+            
+                <a href="chap02.html">
+            
+                    
+                    02. 什么是 shell
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3" data-path="chap03.html">
+            
+                <a href="chap03.html">
+            
+                    
+                    03. 文件系统中跳转
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4" data-path="chap04.html">
+            
+                <a href="chap04.html">
+            
+                    
+                    04. 探究操作系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.5" data-path="chap05.html">
+            
+                <a href="chap05.html">
+            
+                    
+                    05. 操作文件和目录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.6" data-path="chap06.html">
+            
+                <a href="chap06.html">
+            
+                    
+                    06. 使用命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.7" data-path="chap07.html">
+            
+                <a href="chap07.html">
+            
+                    
+                    07. 重定向
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.8" data-path="chap08.html">
+            
+                <a href="chap08.html">
+            
+                    
+                    08. 从 shell 眼中看世界
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.9" data-path="chap09.html">
+            
+                <a href="chap09.html">
+            
+                    
+                    09. 键盘高级操作技巧
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.10" data-path="chap10.html">
+            
+                <a href="chap10.html">
+            
+                    
+                    10. 权限
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.11" data-path="chap11.html">
+            
+                <a href="chap11.html">
+            
+                    
+                    11. 进程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.12" data-path="chap12.html">
+            
+                <a href="chap12.html">
+            
+                    
+                    12. shell 环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.13" data-path="chap13.html">
+            
+                <a href="chap13.html">
+            
+                    
+                    13. vi 简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.14" data-path="chap14.html">
+            
+                <a href="chap14.html">
+            
+                    
+                    14. 自定制 shell 提示符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.15" data-path="chap15.html">
+            
+                <a href="chap15.html">
+            
+                    
+                    15. 软件包管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.16" data-path="chap16.html">
+            
+                <a href="chap16.html">
+            
+                    
+                    16. 存储媒介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.17" data-path="chap17.html">
+            
+                <a href="chap17.html">
+            
+                    
+                    17. 网络系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.18" data-path="chap18.html">
+            
+                <a href="chap18.html">
+            
+                    
+                    18. 查找文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.19" data-path="chap19.html">
+            
+                <a href="chap19.html">
+            
+                    
+                    19. 归档和备份
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.20" data-path="chap20.html">
+            
+                <a href="chap20.html">
+            
+                    
+                    20. 正则表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.21" data-path="chap21.html">
+            
+                <a href="chap21.html">
+            
+                    
+                    21. 文本处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.22" data-path="chap22.html">
+            
+                <a href="chap22.html">
+            
+                    
+                    22. 格式化输出
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.23" data-path="chap23.html">
+            
+                <a href="chap23.html">
+            
+                    
+                    23. 打印
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.24" data-path="chap24.html">
+            
+                <a href="chap24.html">
+            
+                    
+                    24. 编译程序
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.25" data-path="chap25.html">
+            
+                <a href="chap25.html">
+            
+                    
+                    25. 编写第一个 Shell 脚本
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.26" data-path="chap26.html">
+            
+                <a href="chap26.html">
+            
+                    
+                    26. 启动一个项目
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.27" data-path="chap27.html">
+            
+                <a href="chap27.html">
+            
+                    
+                    27. 自顶向下设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.28" data-path="chap28.html">
+            
+                <a href="chap28.html">
+            
+                    
+                    28. 流程控制：if 分支结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.29" data-path="chap29.html">
+            
+                <a href="chap29.html">
+            
+                    
+                    29. 读取键盘输入
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.30" data-path="chap30.html">
+            
+                <a href="chap30.html">
+            
+                    
+                    30. 流程控制：while/until 循环
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.31" data-path="chap31.html">
+            
+                <a href="chap31.html">
+            
+                    
+                    31. 疑难排解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.32" data-path="chap32.html">
+            
+                <a href="chap32.html">
+            
+                    
+                    32. 流程控制：case 分支
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.1.33" data-path="chap33.html">
+            
+                <a href="chap33.html">
+            
+                    
+                    33. 位置参数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.34" data-path="chap34.html">
+            
+                <a href="chap34.html">
+            
+                    
+                    34. 流程控制：for 循环
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.35" data-path="chap35.html">
+            
+                <a href="chap35.html">
+            
+                    
+                    35. 字符串和数字
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.36" data-path="chap36.html">
+            
+                <a href="chap36.html">
+            
+                    
+                    36. 数组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.37" data-path="chap37.html">
+            
+                <a href="chap37.html">
+            
+                    
+                    37. 奇珍异宝
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >33. 位置参数</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <p>One feature that has been missing from our programs is the ability to accept and process
+command line options and arguments. In this chapter, we will examine the shell features
+that allow our programs to get access to the contents of the command line.</p>
+<p>&#x73B0;&#x5728;&#x6211;&#x4EEC;&#x7684;&#x7A0B;&#x5E8F;&#x8FD8;&#x7F3A;&#x5C11;&#x4E00;&#x79CD;&#x672C;&#x9886;&#xFF0C;&#x5C31;&#x662F;&#x63A5;&#x6536;&#x548C;&#x5904;&#x7406;&#x547D;&#x4EE4;&#x884C;&#x9009;&#x9879;&#x548C;&#x53C2;&#x6570;&#x7684;&#x80FD;&#x529B;&#x3002;&#x5728;&#x8FD9;&#x4E00;&#x7AE0;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x5C06;&#x63A2;&#x7A76;&#x4E00;&#x4E9B;&#x80FD;
+&#x8BA9;&#x7A0B;&#x5E8F;&#x8BBF;&#x95EE;&#x547D;&#x4EE4;&#x884C;&#x5185;&#x5BB9;&#x7684; shell &#x6027;&#x80FD;&#x3002;</p>
+<h3 id="&#x8BBF;&#x95EE;&#x547D;&#x4EE4;&#x884C;">&#x8BBF;&#x95EE;&#x547D;&#x4EE4;&#x884C;</h3>
+<p>The shell provides a set of variables called positional parameters that contain the individ-
+ual words on the command line. The variables are named 0 through 9. They can be
+demonstrated this way:</p>
+<p>shell &#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4E2A;&#x79F0;&#x4E3A;&#x4F4D;&#x7F6E;&#x53C2;&#x6570;&#x7684;&#x53D8;&#x91CF;&#x96C6;&#x5408;&#xFF0C;&#x8FD9;&#x4E2A;&#x96C6;&#x5408;&#x5305;&#x542B;&#x4E86;&#x547D;&#x4EE4;&#x884C;&#x4E2D;&#x6240;&#x6709;&#x72EC;&#x7ACB;&#x7684;&#x5355;&#x8BCD;&#x3002;&#x8FD9;&#x4E9B;&#x53D8;&#x91CF;&#x6309;&#x7167;&#x4ECE;0&#x5230;9&#x7ED9;&#x4E88;&#x547D;&#x540D;&#x3002;
+&#x53EF;&#x4EE5;&#x4EE5;&#x8FD9;&#x79CD;&#x65B9;&#x5F0F;&#x8BB2;&#x660E;&#x767D;&#xFF1A;</p>
+<pre><code>#!/bin/bash
+# posit-param: script to view command line parameters
+echo &quot;
+\$0 = $0
+\$1 = $1
+\$2 = $2
+\$3 = $3
+\$4 = $4
+\$5 = $5
+\$6 = $6
+\$7 = $7
+\$8 = $8
+\$9 = $9
+&quot;
+</code></pre><p>A very simple script that displays the values of the variables $0-$9. When executed
+with no command line arguments:</p>
+<p>&#x4E00;&#x4E2A;&#x975E;&#x5E38;&#x7B80;&#x5355;&#x7684;&#x811A;&#x672C;&#xFF0C;&#x663E;&#x793A;&#x4ECE; $0 &#x5230; $9 &#x6240;&#x6709;&#x53D8;&#x91CF;&#x7684;&#x503C;&#x3002;&#x5F53;&#x4E0D;&#x5E26;&#x547D;&#x4EE4;&#x884C;&#x53C2;&#x6570;&#x6267;&#x884C;&#x8BE5;&#x811A;&#x672C;&#x65F6;&#xFF0C;&#x8F93;&#x51FA;&#x7ED3;&#x679C;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code>[me@linuxbox ~]$ posit-param
+$0 = /home/me/bin/posit-param
+$1 =
+$2 =
+$3 =
+$4 =
+$5 =
+$6 =
+$7 =
+$8 =
+$9 =
+</code></pre><p>Even when no arguments are provided, $0 will always contain the first item appearing on
+the command line, which is the pathname of the program being executed. When argu-
+ments are provided, we see the results:</p>
+<p>&#x5373;&#x4F7F;&#x4E0D;&#x5E26;&#x547D;&#x4EE4;&#x884C;&#x53C2;&#x6570;&#xFF0C;&#x4F4D;&#x7F6E;&#x53C2;&#x6570; $0 &#x603B;&#x4F1A;&#x5305;&#x542B;&#x547D;&#x4EE4;&#x884C;&#x4E2D;&#x51FA;&#x73B0;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x5355;&#x8BCD;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x5DF2;&#x6267;&#x884C;&#x7A0B;&#x5E8F;&#x7684;&#x8DEF;&#x5F84;&#x540D;&#x3002;
+&#x5F53;&#x5E26;&#x53C2;&#x6570;&#x6267;&#x884C;&#x811A;&#x672C;&#x65F6;&#xFF0C;&#x6211;&#x4EEC;&#x770B;&#x770B;&#x8F93;&#x51FA;&#x7ED3;&#x679C;&#xFF1A;</p>
+<pre><code>[me@linuxbox ~]$ posit-param a b c d
+$0 = /home/me/bin/posit-param
+$1 = a
+$2 = b
+$3 = c
+$4 = d
+$5 =
+$6 =
+$7 =
+$8 =
+$9 =
+</code></pre><p>Note: You can actually access more than nine parameters using parameter expan-
+sion. To specify a number greater than nine, surround the number in braces. For ex-
+ample ${10}, ${55}, ${211}, and so on.</p>
+<p>&#x6CE8;&#x610F;&#xFF1A; &#x5B9E;&#x9645;&#x4E0A;&#x901A;&#x8FC7;&#x53C2;&#x6570;&#x5C55;&#x5F00;&#x65B9;&#x5F0F;&#x4F60;&#x53EF;&#x4EE5;&#x8BBF;&#x95EE;&#x7684;&#x53C2;&#x6570;&#x4E2A;&#x6570;&#x591A;&#x4E8E;9&#x4E2A;&#x3002;&#x53EA;&#x8981;&#x6307;&#x5B9A;&#x4E00;&#x4E2A;&#x5927;&#x4E8E;9&#x7684;&#x6570;&#x5B57;&#xFF0C;&#x7528;&#x82B1;&#x62EC;&#x53F7;&#x628A;&#x8BE5;&#x6570;&#x5B57;&#x62EC;&#x8D77;&#x6765;&#x5C31;&#x53EF;&#x4EE5;&#x3002;
+&#x4F8B;&#x5982; ${10}&#xFF0C; ${55}&#xFF0C; ${211}&#xFF0C;&#x7B49;&#x7B49;&#x3002;</p>
+<h4 id="&#x786E;&#x5B9A;&#x53C2;&#x6570;&#x4E2A;&#x6570;">&#x786E;&#x5B9A;&#x53C2;&#x6570;&#x4E2A;&#x6570;</h4>
+<p>The shell also provides a variable, $#, that yields the number of arguments on the com-
+mand line:</p>
+<p>&#x53E6;&#x5916; shell &#x8FD8;&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4E2A;&#x540D;&#x4E3A; $#&#xFF0C;&#x53EF;&#x4EE5;&#x5F97;&#x5230;&#x547D;&#x4EE4;&#x884C;&#x53C2;&#x6570;&#x4E2A;&#x6570;&#x7684;&#x53D8;&#x91CF;:</p>
+<pre><code>#!/bin/bash
+# posit-param: script to view command line parameters
+echo &quot;
+Number of arguments: $#
+\$0 = $0
+\$1 = $1
+\$2 = $2
+\$3 = $3
+\$4 = $4
+\$5 = $5
+\$6 = $6
+\$7 = $7
+\$8 = $8
+\$9 = $9
+&quot;
+</code></pre><p>The result:</p>
+<p>&#x7ED3;&#x679C;&#x662F;&#xFF1A;</p>
+<pre><code>[me@linuxbox ~]$ posit-param a b c d
+Number of arguments: 4
+$0 = /home/me/bin/posit-param
+$1 = a
+$2 = b
+$3 = c
+$4 = d
+$5 =
+$6 =
+$7 =
+$8 =
+$9 =
+</code></pre><h4 id="shift---&#x8BBF;&#x95EE;&#x591A;&#x4E2A;&#x53C2;&#x6570;&#x7684;&#x5229;&#x5668;">shift - &#x8BBF;&#x95EE;&#x591A;&#x4E2A;&#x53C2;&#x6570;&#x7684;&#x5229;&#x5668;</h4>
+<p>But what happens when we give the program a large number of arguments such as this:</p>
+<p>&#x4F46;&#x662F;&#x5982;&#x679C;&#x6211;&#x4EEC;&#x7ED9;&#x4E00;&#x4E2A;&#x7A0B;&#x5E8F;&#x6DFB;&#x52A0;&#x5927;&#x91CF;&#x7684;&#x547D;&#x4EE4;&#x884C;&#x53C2;&#x6570;&#xFF0C;&#x4F1A;&#x600E;&#x4E48;&#x6837;&#x5462;&#xFF1F; &#x6B63;&#x5982;&#x4E0B;&#x9762;&#x7684;&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre><code>[me@linuxbox ~]$ posit-param *
+Number of arguments: 82
+$0 = /home/me/bin/posit-param
+$1 = addresses.ldif
+$2 = bin
+$3 = bookmarks.html
+$4 = debian-500-i386-netinst.iso
+$5 = debian-500-i386-netinst.jigdo
+$6 = debian-500-i386-netinst.template
+$7 = debian-cd_info.tar.gz
+$8 = Desktop
+$9 = dirlist-bin.txt
+</code></pre><p>On this example system, the wildcard * expands into 82 arguments. How can we process
+that many? The shell provides a method, albeit a clumsy one, to do this. The shift
+command causes all the parameters to &#x201C;move down one&#x201D; each time it is executed. In fact,
+by using shift, it is possible to get by with only one parameter (in addition to $0,
+which never changes):</p>
+<p>&#x5728;&#x8FD9;&#x4E2A;&#x4F8B;&#x5B50;&#x8FD0;&#x884C;&#x7684;&#x73AF;&#x5883;&#x4E0B;&#xFF0C;&#x901A;&#x914D;&#x7B26; * &#x5C55;&#x5F00;&#x6210;82&#x4E2A;&#x53C2;&#x6570;&#x3002;&#x6211;&#x4EEC;&#x5982;&#x4F55;&#x5904;&#x7406;&#x90A3;&#x4E48;&#x591A;&#x7684;&#x53C2;&#x6570;&#xFF1F;
+&#x4E3A;&#x6B64;&#xFF0C;shell &#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x79CD;&#x65B9;&#x6CD5;&#xFF0C;&#x5C3D;&#x7BA1;&#x7B28;&#x62D9;&#xFF0C;&#x4F46;&#x53EF;&#x4EE5;&#x89E3;&#x51B3;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#x3002;&#x6267;&#x884C;&#x4E00;&#x6B21; shift &#x547D;&#x4EE4;&#xFF0C;
+&#x5C31;&#x4F1A;&#x5BFC;&#x81F4;&#x6240;&#x6709;&#x7684;&#x4F4D;&#x7F6E;&#x53C2;&#x6570; &#x201C;&#x5411;&#x4E0B;&#x79FB;&#x52A8;&#x4E00;&#x4E2A;&#x4F4D;&#x7F6E;&#x201D;&#x3002;&#x4E8B;&#x5B9E;&#x4E0A;&#xFF0C;&#x7528; shift &#x547D;&#x4EE4;&#x4E5F;&#x53EF;&#x4EE5;
+&#x5904;&#x7406;&#x53EA;&#x6709;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x7684;&#x60C5;&#x51B5;&#xFF08;&#x9664;&#x4E86;&#x5176;&#x503C;&#x6C38;&#x8FDC;&#x4E0D;&#x4F1A;&#x6539;&#x53D8;&#x7684;&#x53D8;&#x91CF; $0&#xFF09;&#xFF1A;</p>
+<pre><code>#!/bin/bash
+# posit-param2: script to display all arguments
+count=1
+while [[ $# -gt 0 ]]; do
+    echo &quot;Argument $count = $1&quot;
+    count=$((count + 1))
+    shift
+done
+</code></pre><p>Each time shift is executed, the value of $2 is moved to $1, the value of $3 is moved
+to $2 and so on. The value of $# is also reduced by one.</p>
+<p>&#x6BCF;&#x6B21; shift &#x547D;&#x4EE4;&#x6267;&#x884C;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x53D8;&#x91CF; $2 &#x7684;&#x503C;&#x4F1A;&#x79FB;&#x52A8;&#x5230;&#x53D8;&#x91CF; $1 &#x4E2D;&#xFF0C;&#x53D8;&#x91CF; $3 &#x7684;&#x503C;&#x4F1A;&#x79FB;&#x52A8;&#x5230;&#x53D8;&#x91CF; $2 &#x4E2D;&#xFF0C;&#x4F9D;&#x6B21;&#x7C7B;&#x63A8;&#x3002;
+&#x53D8;&#x91CF; $# &#x7684;&#x503C;&#x4E5F;&#x4F1A;&#x76F8;&#x5E94;&#x7684;&#x51CF;1&#x3002;</p>
+<p>In the posit-param2 program, we create a loop that evaluates the number of
+arguments remaining and continues as long as there is at least one. We display the current
+argument, increment the variable count with each iteration of the loop to provide a
+running count of the number of arguments processed and, finally, execute a shift to load
+$1 with the next argument. Here is the program at work:</p>
+<p>&#x5728;&#x8BE5; posit-param2 &#x7A0B;&#x5E8F;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x7F16;&#x5199;&#x4E86;&#x4E00;&#x4E2A;&#x8BA1;&#x7B97;&#x5269;&#x4F59;&#x53C2;&#x6570;&#x6570;&#x91CF;&#xFF0C;&#x53EA;&#x8981;&#x53C2;&#x6570;&#x4E2A;&#x6570;&#x4E0D;&#x4E3A;&#x96F6;&#x5C31;&#x4F1A;&#x7EE7;&#x7EED;&#x6267;&#x884C;&#x7684; while &#x5FAA;&#x73AF;&#x3002;
+&#x6211;&#x4EEC;&#x663E;&#x793A;&#x5F53;&#x524D;&#x7684;&#x4F4D;&#x7F6E;&#x53C2;&#x6570;&#xFF0C;&#x6BCF;&#x6B21;&#x5FAA;&#x73AF;&#x8FED;&#x4EE3;&#x53D8;&#x91CF; count &#x7684;&#x503C;&#x90FD;&#x4F1A;&#x52A0;1&#xFF0C;&#x7528;&#x6765;&#x8BA1;&#x6570;&#x5904;&#x7406;&#x7684;&#x53C2;&#x6570;&#x6570;&#x91CF;&#xFF0C;
+&#x6700;&#x540E;&#xFF0C;&#x6267;&#x884C; shift &#x547D;&#x4EE4;&#x52A0;&#x8F7D; $1&#xFF0C;&#x5176;&#x503C;&#x4E3A;&#x4E0B;&#x4E00;&#x4E2A;&#x4F4D;&#x7F6E;&#x53C2;&#x6570;&#x7684;&#x503C;&#x3002;&#x8FD9;&#x91CC;&#x662F;&#x7A0B;&#x5E8F;&#x8FD0;&#x884C;&#x540E;&#x7684;&#x8F93;&#x51FA;&#x7ED3;&#x679C;:</p>
+<pre><code>[me@linuxbox ~]$ posit-param2 a b c d
+Argument 1 = a
+Argument 2 = b
+Argument 3 = c
+Argument 4 = d
+</code></pre><h4 id="&#x7B80;&#x5355;&#x5E94;&#x7528;">&#x7B80;&#x5355;&#x5E94;&#x7528;</h4>
+<p>Even without shift, it&#x2019;s possible to write useful applications using positional parameters.
+By way of example, here is a simple file information program:</p>
+<p>&#x5373;&#x4F7F;&#x6CA1;&#x6709; shift &#x547D;&#x4EE4;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x7528;&#x4F4D;&#x7F6E;&#x53C2;&#x6570;&#x7F16;&#x5199;&#x4E00;&#x4E2A;&#x6709;&#x7528;&#x7684;&#x5E94;&#x7528;&#x3002;&#x4E3E;&#x4F8B;&#x8BF4;&#x660E;&#xFF0C;&#x8FD9;&#x91CC;&#x662F;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x8F93;&#x51FA;&#x6587;&#x4EF6;&#x4FE1;&#x606F;&#x7684;&#x7A0B;&#x5E8F;&#xFF1A;</p>
+<pre><code>#!/bin/bash
+# file_info: simple file information program
+PROGNAME=$(basename $0)
+if [[ -e $1 ]]; then
+    echo -e &quot;\nFile Type:&quot;
+    file $1
+    echo -e &quot;\nFile Status:&quot;
+    stat $1
+else
+    echo &quot;$PROGNAME: usage: $PROGNAME file&quot; &gt;&amp;2
+    exit 1
+fi
+</code></pre><p>This program displays the file type (determined by the file command) and the file
+status (from the stat command) of a specified file. One interesting feature of this program
+is the <strong>PROGNAME</strong> variable. It is given the value that results from the <strong>basename $0</strong>
+command. The <strong>basename</strong> command removes the leading portion of a pathname,
+leaving only the base name of a file. In our example, <strong>basename</strong> removes the leading portion
+of the pathname contained in the $0 parameter, the full pathname of our example
+program. This value is useful when constructing messages such as the usage message at the
+end of the program. By coding it this way, the script can be renamed and the message
+automatically adjusts to contain the name of the program.</p>
+<p>&#x8FD9;&#x4E2A;&#x7A0B;&#x5E8F;&#x663E;&#x793A;&#x4E00;&#x4E2A;&#x5177;&#x4F53;&#x6587;&#x4EF6;&#x7684;&#x6587;&#x4EF6;&#x7C7B;&#x578B;&#xFF08;&#x7531; file &#x547D;&#x4EE4;&#x786E;&#x5B9A;&#xFF09;&#x548C;&#x6587;&#x4EF6;&#x72B6;&#x6001;&#xFF08;&#x6765;&#x81EA; stat &#x547D;&#x4EE4;&#xFF09;&#x3002;&#x8BE5;&#x7A0B;&#x5E8F;&#x4E00;&#x4E2A;&#x6709;&#x610F;&#x601D;
+&#x7684;&#x7279;&#x70B9;&#x662F; PROGNAME &#x53D8;&#x91CF;&#x3002;&#x5B83;&#x7684;&#x503C;&#x5C31;&#x662F; basename $0 &#x547D;&#x4EE4;&#x7684;&#x6267;&#x884C;&#x7ED3;&#x679C;&#x3002;&#x8FD9;&#x4E2A; basename &#x547D;&#x4EE4;&#x6E05;&#x9664;
+&#x4E00;&#x4E2A;&#x8DEF;&#x5F84;&#x540D;&#x7684;&#x5F00;&#x5934;&#x90E8;&#x5206;&#xFF0C;&#x53EA;&#x7559;&#x4E0B;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x7684;&#x57FA;&#x672C;&#x540D;&#x79F0;&#x3002;&#x5728;&#x6211;&#x4EEC;&#x7684;&#x7A0B;&#x5E8F;&#x4E2D;&#xFF0C;basename &#x547D;&#x4EE4;&#x6E05;&#x9664;&#x4E86;&#x5305;&#x542B;&#x5728; $0 &#x4F4D;&#x7F6E;&#x53C2;&#x6570;
+&#x4E2D;&#x7684;&#x8DEF;&#x5F84;&#x540D;&#x7684;&#x5F00;&#x5934;&#x90E8;&#x5206;&#xFF0C;$0 &#x4E2D;&#x5305;&#x542B;&#x7740;&#x6211;&#x4EEC;&#x793A;&#x4F8B;&#x7A0B;&#x5E8F;&#x7684;&#x5B8C;&#x6574;&#x8DEF;&#x5F84;&#x540D;&#x3002;&#x5F53;&#x6784;&#x5EFA;&#x63D0;&#x793A;&#x4FE1;&#x606F;&#x6B63;&#x5982;&#x7A0B;&#x5E8F;&#x7ED3;&#x5C3E;&#x7684;&#x4F7F;&#x7528;&#x4FE1;&#x606F;&#x7684;&#x65F6;&#x5019;&#xFF0C;
+basename $0 &#x7684;&#x6267;&#x884C;&#x7ED3;&#x679C;&#x5C31;&#x5F88;&#x6709;&#x7528;&#x5904;&#x3002;&#x6309;&#x7167;&#x8FD9;&#x79CD;&#x65B9;&#x5F0F;&#x7F16;&#x7801;&#xFF0C;&#x53EF;&#x4EE5;&#x91CD;&#x547D;&#x540D;&#x8BE5;&#x811A;&#x672C;&#xFF0C;&#x4E14;&#x7A0B;&#x5E8F;&#x4FE1;&#x606F;&#x4F1A;&#x81EA;&#x52A8;&#x8C03;&#x6574;&#x4E3A;
+&#x5305;&#x542B;&#x76F8;&#x5E94;&#x7684;&#x7A0B;&#x5E8F;&#x540D;&#x79F0;&#x3002;</p>
+<h4 id="shell-&#x51FD;&#x6570;&#x4E2D;&#x4F7F;&#x7528;&#x4F4D;&#x7F6E;&#x53C2;&#x6570;">Shell &#x51FD;&#x6570;&#x4E2D;&#x4F7F;&#x7528;&#x4F4D;&#x7F6E;&#x53C2;&#x6570;</h4>
+<p>Just as positional parameters are used to pass arguments to shell scripts, they can also be
+used to pass arguments to shell functions. To demonstrate, we will convert the
+file_info script into a shell function:</p>
+<p>&#x6B63;&#x5982;&#x4F4D;&#x7F6E;&#x53C2;&#x6570;&#x88AB;&#x7528;&#x6765;&#x7ED9; shell &#x811A;&#x672C;&#x4F20;&#x9012;&#x53C2;&#x6570;&#x4E00;&#x6837;&#xFF0C;&#x5B83;&#x4EEC;&#x4E5F;&#x80FD;&#x591F;&#x88AB;&#x7528;&#x6765;&#x7ED9; shell &#x51FD;&#x6570;&#x4F20;&#x9012;&#x53C2;&#x6570;&#x3002;&#x4E3A;&#x4E86;&#x8BF4;&#x660E;&#x8FD9;&#x4E00;&#x70B9;&#xFF0C;
+&#x6211;&#x4EEC;&#x5C06;&#x628A; file_info &#x811A;&#x672C;&#x8F6C;&#x53D8;&#x6210;&#x4E00;&#x4E2A; shell &#x51FD;&#x6570;&#xFF1A;</p>
+<pre><code>file_info () {
+  # file_info: function to display file information
+  if [[ -e $1 ]]; then
+      echo -e &quot;\nFile Type:&quot;
+      file $1
+      echo -e &quot;\nFile Status:&quot;
+      stat $1
+  else
+      echo &quot;$FUNCNAME: usage: $FUNCNAME file&quot; &gt;&amp;2
+      return 1
+  fi
+}
+</code></pre><p>Now, if a script that incorporates the file_info shell function calls the function with a
+filename argument, the argument will be passed to the function.</p>
+<p>&#x73B0;&#x5728;&#xFF0C;&#x5982;&#x679C;&#x4E00;&#x4E2A;&#x5305;&#x542B; shell &#x51FD;&#x6570; file_info &#x7684;&#x811A;&#x672C;&#x8C03;&#x7528;&#x8BE5;&#x51FD;&#x6570;&#xFF0C;&#x4E14;&#x5E26;&#x6709;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x540D;&#x53C2;&#x6570;&#xFF0C;&#x90A3;&#x8FD9;&#x4E2A;&#x53C2;&#x6570;&#x4F1A;&#x4F20;&#x9012;&#x7ED9; file_info &#x51FD;&#x6570;&#x3002;</p>
+<p>With this capability, we can write many useful shell functions that can not only be used in
+scripts, but also within the .bashrc file.</p>
+<p>&#x901A;&#x8FC7;&#x6B64;&#x529F;&#x80FD;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5199;&#x51FA;&#x8BB8;&#x591A;&#x6709;&#x7528;&#x7684; shell &#x51FD;&#x6570;&#xFF0C;&#x8FD9;&#x4E9B;&#x51FD;&#x6570;&#x4E0D;&#x4EC5;&#x80FD;&#x5728;&#x811A;&#x672C;&#x4E2D;&#x4F7F;&#x7528;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x7528;&#x5728; .bashrc &#x6587;&#x4EF6;&#x4E2D;&#x3002;</p>
+<p>Notice that the PROGNAME variable was changed to the shell variable FUNCNAME. The
+shell automatically updates this variable to keep track of the currently executed shell
+function. Note that $0 always contains the full pathname of the first item on the
+command line (i.e., the name of the program) and does not contain the name of the shell
+function as we might expect.</p>
+<p>&#x6CE8;&#x610F;&#x90A3;&#x4E2A; PROGNAME &#x53D8;&#x91CF;&#x5DF2;&#x7ECF;&#x6539;&#x6210; shell &#x53D8;&#x91CF; FUNCNAME &#x4E86;&#x3002;shell &#x4F1A;&#x81EA;&#x52A8;&#x66F4;&#x65B0; FUNCNAME &#x53D8;&#x91CF;&#xFF0C;&#x4EE5;&#x4FBF;
+&#x8DDF;&#x8E2A;&#x5F53;&#x524D;&#x6267;&#x884C;&#x7684; shell &#x51FD;&#x6570;&#x3002;&#x6CE8;&#x610F;&#x4F4D;&#x7F6E;&#x53C2;&#x6570; $0 &#x603B;&#x662F;&#x5305;&#x542B;&#x547D;&#x4EE4;&#x884C;&#x4E2D;&#x7B2C;&#x4E00;&#x9879;&#x7684;&#x5B8C;&#x6574;&#x8DEF;&#x5F84;&#x540D;&#xFF08;&#x4F8B;&#x5982;&#xFF0C;&#x8BE5;&#x7A0B;&#x5E8F;&#x7684;&#x540D;&#x5B57;&#xFF09;&#xFF0C;
+&#x4F46;&#x4E0D;&#x4F1A;&#x5305;&#x542B;&#x8FD9;&#x4E2A;&#x6211;&#x4EEC;&#x53EF;&#x80FD;&#x671F;&#x671B;&#x7684; shell &#x51FD;&#x6570;&#x7684;&#x540D;&#x5B57;&#x3002;</p>
+<h3 id="&#x5904;&#x7406;&#x96C6;&#x4F53;&#x4F4D;&#x7F6E;&#x53C2;&#x6570;">&#x5904;&#x7406;&#x96C6;&#x4F53;&#x4F4D;&#x7F6E;&#x53C2;&#x6570;</h3>
+<p>It is sometimes useful to manage all the positional parameters as a group. For example,
+we might want to write a &#x201C;wrapper&#x201D; around another program. This means that we create a
+script or shell function that simplifies the execution of another program. The wrapper
+supplies a list of arcane command line options and then passes a list of arguments to the
+lower-level program.</p>
+<p>&#x6709;&#x65F6;&#x5019;&#x628A;&#x6240;&#x6709;&#x7684;&#x4F4D;&#x7F6E;&#x53C2;&#x6570;&#x4F5C;&#x4E3A;&#x4E00;&#x4E2A;&#x96C6;&#x4F53;&#x6765;&#x7BA1;&#x7406;&#x662F;&#x5F88;&#x6709;&#x7528;&#x7684;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x80FD;&#x60F3;&#x4E3A;&#x53E6;&#x4E00;&#x4E2A;&#x7A0B;&#x5E8F;&#x7F16;&#x5199;&#x4E00;&#x4E2A; &#x201C;&#x5305;&#x88F9;&#x7A0B;&#x5E8F;&#x201D;&#x3002;
+&#x8FD9;&#x610F;&#x5473;&#x7740;&#x6211;&#x4EEC;&#x4F1A;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x811A;&#x672C;&#x6216; shell &#x51FD;&#x6570;&#xFF0C;&#x6765;&#x7B80;&#x5316;&#x53E6;&#x4E00;&#x4E2A;&#x7A0B;&#x5E8F;&#x7684;&#x6267;&#x884C;&#x3002;&#x5305;&#x88F9;&#x7A0B;&#x5E8F;&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4E2A;&#x795E;&#x79D8;&#x7684;&#x547D;&#x4EE4;&#x884C;&#x9009;&#x9879;
+&#x5217;&#x8868;&#xFF0C;&#x7136;&#x540E;&#x628A;&#x8FD9;&#x4E2A;&#x53C2;&#x6570;&#x5217;&#x8868;&#x4F20;&#x9012;&#x7ED9;&#x4E0B;&#x4E00;&#x7EA7;&#x7684;&#x7A0B;&#x5E8F;&#x3002;</p>
+<p>The shell provides two special parameters for this purpose. They both expand into the
+complete list of positional parameters, but differ in rather subtle ways. They are:</p>
+<p>&#x4E3A;&#x6B64; shell &#x63D0;&#x4F9B;&#x4E86;&#x4E24;&#x79CD;&#x7279;&#x6B8A;&#x7684;&#x53C2;&#x6570;&#x3002;&#x4ED6;&#x4EEC;&#x4E8C;&#x8005;&#x90FD;&#x80FD;&#x6269;&#x5C55;&#x6210;&#x5B8C;&#x6574;&#x7684;&#x4F4D;&#x7F6E;&#x53C2;&#x6570;&#x5217;&#x8868;&#xFF0C;&#x4F46;&#x4EE5;&#x76F8;&#x5F53;&#x5FAE;&#x5999;&#x7684;&#x65B9;&#x5F0F;&#x7565;&#x6709;&#x4E0D;&#x540C;&#x3002;&#x5B83;&#x4EEC;&#x662F;&#xFF1A;</p>
+<table class="multi">
+<caption class="cap">Table 32-1: The * And @ Special Parameters</caption>
+<tr>
+<th class="title" width="15%">Parameter</th>
+<th class="title">Description</th>
+</tr>
+<tr>
+<td valign="top">$*</td>
+<td valign="top">Expands into the list of positional parameters, starting with 1.
+When surrounded by double quotes, it expands into a double quoted string
+containing all of the positional parameters, each separated by the first
+character of the IFS shell variable (by default a space character).</td>
+</tr>
+<tr>
+<td valign="top">$@</td>
+<td valign="top">Expands into the list of positional parameters, starting with 1. When surrounded by double quotes, it expands each positional
+parameter into a separate word surrounded by double quotes.</td>
+</tr>
+</table>
+
+<table class="multi">
+<caption class="cap">&#x8868; 32-1: * &#x548C; @ &#x7279;&#x6B8A;&#x53C2;&#x6570;</caption>
+<tr>
+<th class="title" width="15%">&#x53C2;&#x6570;</th>
+<th class="title">&#x63CF;&#x8FF0;</th>
+</tr>
+<tr>
+<td valign="top">$*</td>
+<td valign="top">&#x5C55;&#x5F00;&#x6210;&#x4E00;&#x4E2A;&#x4ECE;1&#x5F00;&#x59CB;&#x7684;&#x4F4D;&#x7F6E;&#x53C2;&#x6570;&#x5217;&#x8868;&#x3002;&#x5F53;&#x5B83;&#x88AB;&#x7528;&#x53CC;&#x5F15;&#x53F7;&#x5F15;&#x8D77;&#x6765;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5C55;&#x5F00;&#x6210;&#x4E00;&#x4E2A;&#x7531;&#x53CC;&#x5F15;&#x53F7;&#x5F15;&#x8D77;&#x6765;
+&#x7684;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x5305;&#x542B;&#x4E86;&#x6240;&#x6709;&#x7684;&#x4F4D;&#x7F6E;&#x53C2;&#x6570;&#xFF0C;&#x6BCF;&#x4E2A;&#x4F4D;&#x7F6E;&#x53C2;&#x6570;&#x7531; shell &#x53D8;&#x91CF; IFS &#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#xFF08;&#x9ED8;&#x8BA4;&#x4E3A;&#x4E00;&#x4E2A;&#x7A7A;&#x683C;&#xFF09;&#x5206;&#x9694;&#x5F00;&#x3002;</td>
+</tr>
+<tr>
+<td valign="top">$@</td>
+<td valign="top">&#x5C55;&#x5F00;&#x6210;&#x4E00;&#x4E2A;&#x4ECE;1&#x5F00;&#x59CB;&#x7684;&#x4F4D;&#x7F6E;&#x53C2;&#x6570;&#x5217;&#x8868;&#x3002;&#x5F53;&#x5B83;&#x88AB;&#x7528;&#x53CC;&#x5F15;&#x53F7;&#x5F15;&#x8D77;&#x6765;&#x7684;&#x65F6;&#x5019;&#xFF0C;
+&#x5B83;&#x628A;&#x6BCF;&#x4E00;&#x4E2A;&#x4F4D;&#x7F6E;&#x53C2;&#x6570;&#x5C55;&#x5F00;&#x6210;&#x4E00;&#x4E2A;&#x7531;&#x53CC;&#x5F15;&#x53F7;&#x5F15;&#x8D77;&#x6765;&#x7684;&#x5206;&#x5F00;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x3002;</td>
+</tr>
+</table>
+
+<p>Here is a script that shows these special paramaters in action:</p>
+<p>&#x4E0B;&#x9762;&#x8FD9;&#x4E2A;&#x811A;&#x672C;&#x7528;&#x7A0B;&#x5E8F;&#x4E2D;&#x5C55;&#x793A;&#x4E86;&#x8FD9;&#x4E9B;&#x7279;&#x6B8A;&#x53C2;&#x6570;&#xFF1A;</p>
+<pre><code>#!/bin/bash
+# posit-params3 : script to demonstrate $* and $@
+print_params () {
+    echo &quot;\$1 = $1&quot;
+    echo &quot;\$2 = $2&quot;
+    echo &quot;\$3 = $3&quot;
+    echo &quot;\$4 = $4&quot;
+}
+pass_params () {
+    echo -e &quot;\n&quot; &apos;$* :&apos;;      print_params   $*
+    echo -e &quot;\n&quot; &apos;&quot;$*&quot; :&apos;;    print_params   &quot;$*&quot;
+    echo -e &quot;\n&quot; &apos;$@ :&apos;;      print_params   $@
+    echo -e &quot;\n&quot; &apos;&quot;$@&quot; :&apos;;    print_params   &quot;$@&quot;
+}
+pass_params &quot;word&quot; &quot;words with spaces&quot;
+</code></pre><p>In this rather convoluted program, we create two arguments: &#x201C;word&#x201D; and &#x201C;words with
+spaces&#x201D;, and pass them to the pass_params function. That function, in turn, passes
+them on to the print_params function, using each of the four methods available with
+the special parameters $* and $@. When executed, the script reveals the differences:</p>
+<p>&#x5728;&#x8FD9;&#x4E2A;&#x76F8;&#x5F53;&#x590D;&#x6742;&#x7684;&#x7A0B;&#x5E8F;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x521B;&#x5EFA;&#x4E86;&#x4E24;&#x4E2A;&#x53C2;&#x6570;&#xFF1A; &#x201C;word&#x201D; &#x548C; &#x201C;words with spaces&#x201D;&#xFF0C;&#x7136;&#x540E;&#x628A;&#x5B83;&#x4EEC;
+&#x4F20;&#x9012;&#x7ED9; pass_params &#x51FD;&#x6570;&#x3002;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#xFF0C;&#x4F9D;&#x6B21;&#xFF0C;&#x518D;&#x628A;&#x4E24;&#x4E2A;&#x53C2;&#x6570;&#x4F20;&#x9012;&#x7ED9; print_params &#x51FD;&#x6570;&#xFF0C;
+&#x4F7F;&#x7528;&#x4E86;&#x7279;&#x6B8A;&#x53C2;&#x6570; $* &#x548C; $@ &#x63D0;&#x4F9B;&#x7684;&#x56DB;&#x79CD;&#x53EF;&#x7528;&#x65B9;&#x6CD5;&#x3002;&#x811A;&#x672C;&#x8FD0;&#x884C;&#x540E;&#xFF0C;&#x63ED;&#x793A;&#x4E86;&#x8FD9;&#x4E24;&#x4E2A;&#x7279;&#x6B8A;&#x53C2;&#x6570;&#x5B58;&#x5728;&#x7684;&#x5DEE;&#x5F02;&#xFF1A;</p>
+<pre><code>[me@linuxbox ~]$ posit-param3
+ $* :
+$1 = word
+$2 = words
+$3 = with
+$4 = spaces
+ &quot;$*&quot; :
+$1 = word words with spaces
+$2 =
+$3 =
+$4 =
+ $@ :
+$1 = word
+$2 = words
+$3 = with
+$4 = spaces
+ &quot;$@&quot; :
+$1 = word
+$2 = words with spaces
+$3 =
+$4 =
+</code></pre><p>With our arguments, both $* and $@ produce a four word result:</p>
+<p>&#x901A;&#x8FC7;&#x6211;&#x4EEC;&#x7684;&#x53C2;&#x6570;&#xFF0C;$* &#x548C; $@ &#x4E24;&#x4E2A;&#x90FD;&#x4EA7;&#x751F;&#x4E86;&#x4E00;&#x4E2A;&#x6709;&#x56DB;&#x4E2A;&#x8BCD;&#x7684;&#x7ED3;&#x679C;&#xFF1A;</p>
+<pre><code>word words with spaces
+&quot;$*&quot; produces a one word result:
+    &quot;word words with spaces&quot;
+&quot;$@&quot; produces a two word result:
+    &quot;word&quot; &quot;words with spaces&quot;
+</code></pre><p>which matches our actual intent. The lesson to take from this is that even though the shell
+provides four different ways of getting the list of positional parameters, &quot;$@&quot; is by far
+the most useful for most situations, because it preserves the integrity of each positional
+parameter.</p>
+<p>&#x8FD9;&#x4E2A;&#x7ED3;&#x679C;&#x7B26;&#x5408;&#x6211;&#x4EEC;&#x5B9E;&#x9645;&#x7684;&#x671F;&#x671B;&#x3002;&#x6211;&#x4EEC;&#x4ECE;&#x4E2D;&#x5F97;&#x5230;&#x7684;&#x6559;&#x8BAD;&#x662F;&#x5C3D;&#x7BA1; shell &#x63D0;&#x4F9B;&#x4E86;&#x56DB;&#x79CD;&#x4E0D;&#x540C;&#x7684;&#x5F97;&#x5230;&#x4F4D;&#x7F6E;&#x53C2;&#x6570;&#x5217;&#x8868;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;
+&#x4F46;&#x5230;&#x76EE;&#x524D;&#x4E3A;&#x6B62;&#xFF0C; &quot;$@&quot; &#x5728;&#x5927;&#x591A;&#x6570;&#x60C5;&#x51B5;&#x4E0B;&#x662F;&#x6700;&#x6709;&#x7528;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x56E0;&#x4E3A;&#x5B83;&#x4FDD;&#x7559;&#x4E86;&#x6BCF;&#x4E00;&#x4E2A;&#x4F4D;&#x7F6E;&#x53C2;&#x6570;&#x7684;&#x5B8C;&#x6574;&#x6027;&#x3002;</p>
+<h3 id="&#x4E00;&#x4E2A;&#x66F4;&#x590D;&#x6742;&#x7684;&#x5E94;&#x7528;">&#x4E00;&#x4E2A;&#x66F4;&#x590D;&#x6742;&#x7684;&#x5E94;&#x7528;</h3>
+<p>After a long hiatus, we are going to resume work on our sys_info_page program.
+Our next addition will add several command line options to the program as follows:</p>
+<p>&#x7ECF;&#x8FC7;&#x957F;&#x65F6;&#x95F4;&#x7684;&#x95F4;&#x65AD;&#xFF0C;&#x6211;&#x4EEC;&#x5C06;&#x6062;&#x590D;&#x7A0B;&#x5E8F; sys_info_page &#x7684;&#x5DE5;&#x4F5C;&#x3002;&#x6211;&#x4EEC;&#x4E0B;&#x4E00;&#x6B65;&#x8981;&#x7ED9;&#x7A0B;&#x5E8F;&#x6DFB;&#x52A0;&#x5982;&#x4E0B;&#x51E0;&#x4E2A;&#x547D;&#x4EE4;&#x884C;&#x9009;&#x9879;&#xFF1A;</p>
+<ul>
+<li><p><strong>Output file</strong>. We will add an option to specify a name for a file to contain the pro-
+gram&#x2019;s output. It will be specified as either <em>-f file</em> or <em>--file file</em>.</p>
+</li>
+<li><p><strong>&#x8F93;&#x51FA;&#x6587;&#x4EF6;</strong>&#x3002; &#x6211;&#x4EEC;&#x5C06;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x9009;&#x9879;&#xFF0C;&#x4EE5;&#x4FBF;&#x6307;&#x5B9A;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x540D;&#xFF0C;&#x6765;&#x5305;&#x542B;&#x7A0B;&#x5E8F;&#x7684;&#x8F93;&#x51FA;&#x7ED3;&#x679C;&#x3002;
+&#x9009;&#x9879;&#x683C;&#x5F0F;&#x8981;&#x4E48;&#x662F; -f file&#xFF0C;&#x8981;&#x4E48;&#x662F; --file file</p>
+</li>
+<li><p><strong>Interactive mode</strong>. This option will prompt the user for an output filename and
+will determine if the specified file already exists. If it does, the user will be
+prompted before the existing file is overwritten. This option will be specified by
+either -i or --interactive.</p>
+</li>
+<li><p><strong>&#x4EA4;&#x4E92;&#x6A21;&#x5F0F;</strong>&#x3002;&#x8FD9;&#x4E2A;&#x9009;&#x9879;&#x5C06;&#x63D0;&#x793A;&#x7528;&#x6237;&#x8F93;&#x5165;&#x4E00;&#x4E2A;&#x8F93;&#x51FA;&#x6587;&#x4EF6;&#x540D;&#xFF0C;&#x7136;&#x540E;&#x5224;&#x65AD;&#x662F;&#x5426;&#x6307;&#x5B9A;&#x7684;&#x6587;&#x4EF6;&#x5DF2;&#x7ECF;&#x5B58;&#x5728;&#x4E86;&#x3002;&#x5982;&#x679C;&#x6587;&#x4EF6;&#x5B58;&#x5728;&#xFF0C;
+&#x5728;&#x8986;&#x76D6;&#x8FD9;&#x4E2A;&#x5B58;&#x5728;&#x7684;&#x6587;&#x4EF6;&#x4E4B;&#x524D;&#x4F1A;&#x63D0;&#x793A;&#x7528;&#x6237;&#x3002;&#x8FD9;&#x4E2A;&#x9009;&#x9879;&#x53EF;&#x4EE5;&#x901A;&#x8FC7; -i &#x6216;&#x8005; --interactive &#x6765;&#x6307;&#x5B9A;&#x3002;</p>
+</li>
+<li><p><strong>Help</strong>. Either <em>-h</em> or <em>--help</em> may be specified to cause the program to output an
+informative usage message.</p>
+</li>
+<li><p><strong>&#x5E2E;&#x52A9;</strong>&#x3002;&#x6307;&#x5B9A; -h &#x9009;&#x9879; &#x6216;&#x8005;&#x662F; --help &#x9009;&#x9879;&#xFF0C;&#x53EF;&#x5BFC;&#x81F4;&#x7A0B;&#x5E8F;&#x8F93;&#x51FA;&#x63D0;&#x793A;&#x6027;&#x7684;&#x4F7F;&#x7528;&#x4FE1;&#x606F;&#x3002;</p>
+</li>
+</ul>
+<p>Here is the code needed to implement the command line processing:</p>
+<p>&#x8FD9;&#x91CC;&#x662F;&#x5904;&#x7406;&#x547D;&#x4EE4;&#x884C;&#x9009;&#x9879;&#x6240;&#x9700;&#x7684;&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code>usage () {
+    echo &quot;$PROGNAME: usage: $PROGNAME [-f file | -i]&quot;
+    return
+}
+# process command line options
+interactive=
+filename=
+while [[ -n $1 ]]; do
+    case $1 in
+    -f | --file)            shift
+                            filename=$1
+                            ;;
+    -i | --interactive)     interactive=1
+                            ;;
+    -h | --help)            usage
+                            exit
+                            ;;
+    *)                      usage &gt;&amp;2
+                            exit 1
+                            ;;
+    esac
+    shift
+done
+</code></pre><p>First, we add a shell function called usage to display a message when the help option is
+invoked or an unknown option is attempted.</p>
+<p>&#x9996;&#x5148;&#xFF0C;&#x6211;&#x4EEC;&#x6DFB;&#x52A0;&#x4E86;&#x4E00;&#x4E2A;&#x53EB;&#x505A; usage &#x7684; shell &#x51FD;&#x6570;&#xFF0C;&#x4EE5;&#x4FBF;&#x663E;&#x793A;&#x5E2E;&#x52A9;&#x4FE1;&#x606F;&#xFF0C;&#x5F53;&#x542F;&#x7528;&#x5E2E;&#x52A9;&#x9009;&#x9879;&#x6216;&#x6572;&#x5199;&#x4E86;&#x4E00;&#x4E2A;&#x672A;&#x77E5;&#x9009;&#x9879;&#x7684;&#x65F6;&#x5019;&#x3002;</p>
+<p>Next, we begin the processing loop. This loop continues while the positional parameter
+$1 is not empty. At the bottom of the loop, we have a shift command to advance the
+positional parameters to ensure that the loop will eventually terminate.
+Within the loop, we have a case statement that examines the current positional
+parameter to see if it matches any of the supported choices. If a supported parameter is found, it
+is acted upon. If not, the usage message is displayed and the script
+terminates with an error.</p>
+<p>&#x4E0B;&#x4E00;&#x6B65;&#xFF0C;&#x6211;&#x4EEC;&#x5F00;&#x59CB;&#x5904;&#x7406;&#x5FAA;&#x73AF;&#x3002;&#x5F53;&#x4F4D;&#x7F6E;&#x53C2;&#x6570; $1 &#x4E0D;&#x4E3A;&#x7A7A;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x8FD9;&#x4E2A;&#x5FAA;&#x73AF;&#x4F1A;&#x6301;&#x7EED;&#x8FD0;&#x884C;&#x3002;&#x5728;&#x5FAA;&#x73AF;&#x7684;&#x5E95;&#x90E8;&#xFF0C;&#x6709;&#x4E00;&#x4E2A; shift &#x547D;&#x4EE4;&#xFF0C;
+&#x7528;&#x6765;&#x63D0;&#x5347;&#x4F4D;&#x7F6E;&#x53C2;&#x6570;&#xFF0C;&#x4EE5;&#x4FBF;&#x786E;&#x4FDD;&#x8BE5;&#x5FAA;&#x73AF;&#x6700;&#x7EC8;&#x4F1A;&#x7EC8;&#x6B62;&#x3002;&#x5728;&#x5FAA;&#x73AF;&#x4F53;&#x5185;&#xFF0C;&#x6211;&#x4EEC;&#x4F7F;&#x7528;&#x4E86;&#x4E00;&#x4E2A; case &#x8BED;&#x53E5;&#x6765;&#x68C0;&#x67E5;&#x5F53;&#x524D;&#x4F4D;&#x7F6E;&#x53C2;&#x6570;&#x7684;&#x503C;&#xFF0C;
+&#x770B;&#x770B;&#x5B83;&#x662F;&#x5426;&#x5339;&#x914D;&#x67D0;&#x4E2A;&#x652F;&#x6301;&#x7684;&#x9009;&#x9879;&#x3002;&#x82E5;&#x627E;&#x5230;&#x4E86;&#x5339;&#x914D;&#x9879;&#xFF0C;&#x5C31;&#x4F1A;&#x6267;&#x884C;&#x4E0E;&#x4E4B;&#x5BF9;&#x5E94;&#x7684;&#x4EE3;&#x7801;&#x3002;&#x82E5;&#x6CA1;&#x6709;&#xFF0C;&#x5C31;&#x4F1A;&#x6253;&#x5370;&#x51FA;&#x7A0B;&#x5E8F;&#x4F7F;&#x7528;&#x4FE1;&#x606F;&#xFF0C;
+&#x8BE5;&#x811A;&#x672C;&#x7EC8;&#x6B62;&#x4E14;&#x6267;&#x884C;&#x9519;&#x8BEF;&#x3002;</p>
+<p>The -f parameter is handled in an interesting way. When detected, it causes an additional
+shift to occur, which advances the positional parameter $1 to the filename argument
+supplied to the -f option.</p>
+<p>&#x5904;&#x7406; -f &#x53C2;&#x6570;&#x7684;&#x65B9;&#x5F0F;&#x5F88;&#x6709;&#x610F;&#x601D;&#x3002;&#x5F53;&#x76D1;&#x6D4B;&#x5230; -f &#x53C2;&#x6570;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x4F1A;&#x6267;&#x884C;&#x4E00;&#x6B21; shift &#x547D;&#x4EE4;&#xFF0C;&#x4ECE;&#x800C;&#x63D0;&#x5347;&#x4F4D;&#x7F6E;&#x53C2;&#x6570; $1 &#x4E3A;
+&#x4F34;&#x968F;&#x7740; -f &#x9009;&#x9879;&#x7684; filename &#x53C2;&#x6570;&#x3002;</p>
+<p>We next add the code to implement the interactive mode:</p>
+<p>&#x6211;&#x4EEC;&#x4E0B;&#x4E00;&#x6B65;&#x6DFB;&#x52A0;&#x4EE3;&#x7801;&#x6765;&#x5B9E;&#x73B0;&#x4EA4;&#x4E92;&#x6A21;&#x5F0F;&#xFF1A;</p>
+<pre><code># interactive mode
+if [[ -n $interactive ]]; then
+    while true; do
+        read -p &quot;Enter name of output file: &quot; filename
+        if [[ -e $filename ]]; then
+            read -p &quot;&apos;$filename&apos; exists. Overwrite? [y/n/q] &gt; &quot;
+            case $REPLY in
+            Y|y)    break
+                    ;;
+            Q|q)    echo &quot;Program terminated.&quot;
+                    exit
+                    ;;
+            *)      continue
+                    ;;
+            esac
+        elif [[ -z $filename ]]; then
+            continue
+        else
+            break
+        fi
+    done
+fi
+</code></pre><p>If the interactive variable is not empty, an endless loop is started, which contains
+the filename prompt and subsequent existing file-handling code. If the desired output file
+already exists, the user is prompted to overwrite, choose another filename, or quit the
+program. If the user chooses to overwrite an existing file, a <em>break</em> is executed to
+terminate the loop. Notice how the case statement only detects if the user chooses to
+overwrite or quit. Any other choice causes the loop to continue and prompts the user again.</p>
+<p>&#x82E5; interactive &#x53D8;&#x91CF;&#x4E0D;&#x4E3A;&#x7A7A;&#xFF0C;&#x5C31;&#x4F1A;&#x542F;&#x52A8;&#x4E00;&#x4E2A;&#x65E0;&#x4F11;&#x6B62;&#x7684;&#x5FAA;&#x73AF;&#xFF0C;&#x8BE5;&#x5FAA;&#x73AF;&#x5305;&#x542B;&#x6587;&#x4EF6;&#x540D;&#x63D0;&#x793A;&#x548C;&#x968F;&#x540E;&#x5B58;&#x5728;&#x7684;&#x6587;&#x4EF6;&#x5904;&#x7406;&#x4EE3;&#x7801;&#x3002;
+&#x5982;&#x679C;&#x6240;&#x9700;&#x8981;&#x7684;&#x8F93;&#x51FA;&#x6587;&#x4EF6;&#x5DF2;&#x7ECF;&#x5B58;&#x5728;&#xFF0C;&#x5219;&#x63D0;&#x793A;&#x7528;&#x6237;&#x8986;&#x76D6;&#xFF0C;&#x9009;&#x62E9;&#x53E6;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x540D;&#xFF0C;&#x6216;&#x8005;&#x9000;&#x51FA;&#x7A0B;&#x5E8F;&#x3002;&#x5982;&#x679C;&#x7528;&#x6237;&#x9009;&#x62E9;&#x8986;&#x76D6;&#x4E00;&#x4E2A;
+&#x5DF2;&#x7ECF;&#x5B58;&#x5728;&#x7684;&#x6587;&#x4EF6;&#xFF0C;&#x5219;&#x4F1A;&#x6267;&#x884C; break &#x547D;&#x4EE4;&#x7EC8;&#x6B62;&#x5FAA;&#x73AF;&#x3002;&#x6CE8;&#x610F; case &#x8BED;&#x53E5;&#x662F;&#x600E;&#x6837;&#x53EA;&#x68C0;&#x6D4B;&#x7528;&#x6237;&#x9009;&#x62E9;&#x4E86;&#x8986;&#x76D6;&#x8FD8;&#x662F;&#x9000;&#x51FA;&#x9009;&#x9879;&#x3002;
+&#x5176;&#x5B83;&#x4EFB;&#x4F55;&#x9009;&#x62E9;&#x90FD;&#x4F1A;&#x5BFC;&#x81F4;&#x5FAA;&#x73AF;&#x7EE7;&#x7EED;&#x5E76;&#x63D0;&#x793A;&#x7528;&#x6237;&#x518D;&#x6B21;&#x9009;&#x62E9;&#x3002;</p>
+<p>In order to implement the output filename feature, we must first convert the existing
+page-writing code into a shell function, for reasons that will become clear in a moment:</p>
+<p>&#x4E3A;&#x4E86;&#x5B9E;&#x73B0;&#x8FD9;&#x4E2A;&#x8F93;&#x51FA;&#x6587;&#x4EF6;&#x540D;&#x7684;&#x529F;&#x80FD;&#xFF0C;&#x9996;&#x5148;&#x6211;&#x4EEC;&#x5FC5;&#x987B;&#x628A;&#x73B0;&#x6709;&#x7684;&#x8FD9;&#x4E2A;&#x5199;&#x9875;&#x9762;&#xFF08;page-writing&#xFF09;&#x7684;&#x4EE3;&#x7801;&#x8F6C;&#x53D8;&#x6210;&#x4E00;&#x4E2A; shell &#x51FD;&#x6570;&#xFF0C;
+&#x4E00;&#x4F1A;&#x513F;&#x5C31;&#x4F1A;&#x660E;&#x767D;&#x8FD9;&#x6837;&#x505A;&#x7684;&#x539F;&#x56E0;&#xFF1A;</p>
+<pre><code>write_html_page () {
+    cat &lt;&lt;- _EOF_
+        &lt;HTML&gt;
+            &lt;HEAD&gt;
+                &lt;TITLE&gt;$TITLE&lt;/TITLE&gt;
+            &lt;/HEAD&gt;
+            &lt;BODY&gt;
+                &lt;H1&gt;$TITLE&lt;/H1&gt;
+                &lt;P&gt;$TIMESTAMP&lt;/P&gt;
+                $(report_uptime)
+                $(report_disk_space)
+                $(report_home_space)
+            &lt;/BODY&gt;
+        &lt;/HTML&gt;
+    _EOF_
+    return
+}
+# output html page
+if [[ -n $filename ]]; then
+    if touch $filename &amp;&amp; [[ -f $filename ]]; then
+        write_html_page &gt; $filename
+    else
+        echo &quot;$PROGNAME: Cannot write file &apos;$filename&apos;&quot; &gt;&amp;2
+        exit 1
+    fi
+else
+    write_html_page
+fi
+</code></pre><p>The code that handles the logic of the -f option appears at the end of the listing shown
+above. In it, we test for the existence of a filename and, if one is found, a test is
+performed to see if the file is indeed writable. To do this, a <em>touch</em> is performed, followed
+by a test to determine if the resulting file is a regular file. These two tests
+take care of situations where an invalid pathname is input (<em>touch</em> will fail), and,
+if the file already exists, that it&#x2019;s a regular file.</p>
+<p>&#x89E3;&#x51B3; -f &#x9009;&#x9879;&#x903B;&#x8F91;&#x7684;&#x4EE3;&#x7801;&#x51FA;&#x73B0;&#x5728;&#x4EE5;&#x4E0A;&#x7A0B;&#x5E8F;&#x7247;&#x6BB5;&#x7684;&#x672B;&#x5C3E;&#x3002;&#x5728;&#x8FD9;&#x6BB5;&#x4EE3;&#x7801;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x6D4B;&#x8BD5;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x540D;&#x662F;&#x5426;&#x5B58;&#x5728;&#xFF0C;&#x82E5;&#x6587;&#x4EF6;&#x540D;&#x5B58;&#x5728;&#xFF0C;
+&#x5219;&#x6267;&#x884C;&#x53E6;&#x4E00;&#x4E2A;&#x6D4B;&#x8BD5;&#x770B;&#x770B;&#x8BE5;&#x6587;&#x4EF6;&#x662F;&#x4E0D;&#x662F;&#x53EF;&#x5199;&#x6587;&#x4EF6;&#x3002;&#x4E3A;&#x6B64;&#xFF0C;&#x4F1A;&#x8FD0;&#x884C; touch &#x547D;&#x4EE4;&#xFF0C;&#x7D27;&#x968F;&#x5176;&#x540E;&#x6267;&#x884C;&#x4E00;&#x4E2A;&#x6D4B;&#x8BD5;&#xFF0C;&#x6765;&#x51B3;&#x5B9A; touch &#x547D;&#x4EE4;
+&#x521B;&#x5EFA;&#x7684;&#x6587;&#x4EF6;&#x662F;&#x5426;&#x662F;&#x4E2A;&#x666E;&#x901A;&#x6587;&#x4EF6;&#x3002;&#x8FD9;&#x4E24;&#x4E2A;&#x6D4B;&#x8BD5;&#x8003;&#x8651;&#x5230;&#x4E86;&#x8F93;&#x5165;&#x662F;&#x65E0;&#x6548;&#x8DEF;&#x5F84;&#x540D;&#xFF08;touch &#x547D;&#x4EE4;&#x6267;&#x884C;&#x5931;&#x8D25;&#xFF09;&#xFF0C;&#x548C;&#x4E00;&#x4E2A;&#x666E;&#x901A;&#x6587;&#x4EF6;&#x5DF2;&#x7ECF;&#x5B58;&#x5728;&#x7684;&#x60C5;&#x51B5;&#x3002;</p>
+<p>As we can see, the write_html_page function is called to perform the actual
+generation of the page. Its output is either directed to standard output
+(if the variable filename is empty) or redirected to the specified file.</p>
+<p>&#x6B63;&#x5982;&#x6211;&#x4EEC;&#x6240;&#x770B;&#x5230;&#x7684;&#xFF0C;&#x7A0B;&#x5E8F;&#x8C03;&#x7528; write_html_page &#x51FD;&#x6570;&#x6765;&#x751F;&#x6210;&#x5B9E;&#x9645;&#x7684;&#x7F51;&#x9875;&#x3002;&#x51FD;&#x6570;&#x8F93;&#x51FA;&#x8981;&#x4E48;&#x76F4;&#x63A5;&#x5B9A;&#x5411;&#x5230;
+&#x6807;&#x51C6;&#x8F93;&#x51FA;&#xFF08;&#x82E5; filename &#x53D8;&#x91CF;&#x4E3A;&#x7A7A;&#x7684;&#x8BDD;&#xFF09;&#x8981;&#x4E48;&#x91CD;&#x5B9A;&#x5411;&#x5230;&#x5177;&#x4F53;&#x7684;&#x6587;&#x4EF6;&#x4E2D;&#x3002;</p>
+<h3 id="&#x603B;&#x7ED3;">&#x603B;&#x7ED3;</h3>
+<p>With the addition of positional parameters, we can now write fairly functional scripts.
+For simple, repetitive tasks, positional parameters make it possible to write very useful
+shell functions that can be placed in a user&#x2019;s .bashrc file.</p>
+<p>&#x4F34;&#x968F;&#x7740;&#x4F4D;&#x7F6E;&#x53C2;&#x6570;&#x7684;&#x52A0;&#x5165;&#xFF0C;&#x73B0;&#x5728;&#x6211;&#x4EEC;&#x80FD;&#x7F16;&#x5199;&#x76F8;&#x5F53;&#x5177;&#x6709;&#x529F;&#x80FD;&#x6027;&#x7684;&#x811A;&#x672C;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x91CD;&#x590D;&#x6027;&#x7684;&#x4EFB;&#x52A1;&#xFF0C;&#x4F4D;&#x7F6E;&#x53C2;&#x6570;&#x4F7F;&#x5F97;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x7F16;&#x5199;
+&#x975E;&#x5E38;&#x6709;&#x7528;&#x7684;&#xFF0C;&#x53EF;&#x4EE5;&#x653E;&#x7F6E;&#x5728;&#x4E00;&#x4E2A;&#x7528;&#x6237;&#x7684; .bashrc &#x6587;&#x4EF6;&#x4E2D;&#x7684; shell &#x51FD;&#x6570;&#x3002;</p>
+<p>Our sys_info_page program has grown in complexity and sophistication. Here is a
+complete listing, with the most recent changes highlighted:</p>
+<p>&#x6211;&#x4EEC;&#x7684; sys_info_page &#x7A0B;&#x5E8F;&#x65E5;&#x6E10;&#x7CBE;&#x8FDB;&#x3002;&#x8FD9;&#x91CC;&#x662F;&#x4E00;&#x4E2A;&#x5B8C;&#x6574;&#x7684;&#x7A0B;&#x5E8F;&#x6E05;&#x5355;&#xFF0C;&#x6700;&#x65B0;&#x7684;&#x66F4;&#x6539;&#x7528;&#x9AD8;&#x4EAE;&#x663E;&#x793A;&#xFF1A;</p>
+<pre><code>#!/bin/bash
+# sys_info_page: program to output a system information page
+PROGNAME=$(basename $0)
+TITLE=&quot;System Information Report For $HOSTNAME&quot;
+CURRENT_TIME=$(date +&quot;%x %r %Z&quot;)
+TIMESTAMP=&quot;Generated $CURRENT_TIME, by $USER&quot;
+report_uptime () {
+    cat &lt;&lt;- _EOF_
+        &lt;H2&gt;System Uptime&lt;/H2&gt;
+        &lt;PRE&gt;$(uptime)&lt;/PRE&gt;
+    _EOF_
+    return
+}
+report_disk_space () {
+    cat &lt;&lt;- _EOF_
+        &lt;H2&gt;Disk Space Utilization&lt;/H2&gt;
+        &lt;PRE&gt;$(df -h)&lt;/PRE&gt;
+    _EOF_
+    return
+}
+report_home_space () {
+    if [[ $(id -u) -eq 0 ]]; then
+        cat &lt;&lt;- _EOF_
+            &lt;H2&gt;Home Space Utilization (All Users)&lt;/H2&gt;
+            &lt;PRE&gt;$(du -sh /home/*)&lt;/PRE&gt;
+        _EOF_
+    else
+        cat &lt;&lt;- _EOF_
+            &lt;H2&gt;Home Space Utilization ($USER)&lt;/H2&gt;
+            &lt;PRE&gt;$(du -sh $HOME)&lt;/PRE&gt;
+        _EOF_
+    fi
+    return
+}
+usage () {
+    echo &quot;$PROGNAME: usage: $PROGNAME [-f file | -i]&quot;
+    return
+}
+write_html_page () {
+    cat &lt;&lt;- _EOF_
+        &lt;HTML&gt;
+            &lt;HEAD&gt;
+                &lt;TITLE&gt;$TITLE&lt;/TITLE&gt;
+            &lt;/HEAD&gt;
+            &lt;BODY&gt;
+                &lt;H1&gt;$TITLE&lt;/H1&gt;
+                &lt;P&gt;$TIMESTAMP&lt;/P&gt;
+                $(report_uptime)
+                $(report_disk_space)
+                $(report_home_space)
+            &lt;/BODY&gt;
+        &lt;/HTML&gt;
+    _EOF_
+    return
+}
+# process command line options
+interactive=
+filename=
+while [[ -n $1 ]]; do
+    case $1 in
+        -f | --file)          shift
+                              filename=$1
+                              ;;
+        -i | --interactive)   interactive=1
+                              ;;
+        -h | --help)          usage
+                              exit
+                              ;;
+        *)                    usage &gt;&amp;2
+                              exit 1
+                              ;;
+    esac
+    shift
+done
+# interactive mode
+if [[ -n $interactive ]]; then
+    while true; do
+        read -p &quot;Enter name of output file: &quot; filename
+        if [[ -e $filename ]]; then
+            read -p &quot;&apos;$filename&apos; exists. Overwrite? [y/n/q] &gt; &quot;
+            case $REPLY in
+                Y|y)    break
+                        ;;
+                Q|q)    echo &quot;Program terminated.&quot;
+                        exit
+                        ;;
+                *)      continue
+                        ;;
+            esac
+        fi
+    done
+fi
+# output html page
+if [[ -n $filename ]]; then
+    if touch $filename &amp;&amp; [[ -f $filename ]]; then
+        write_html_page &gt; $filename
+    else
+        echo &quot;$PROGNAME: Cannot write file &apos;$filename&apos;&quot; &gt;&amp;2
+        exit 1
+    fi
+else
+    write_html_page
+fi
+</code></pre><p>We&#x2019;re not done yet. There are still more things we can do and improvements we can make.</p>
+<p>&#x6211;&#x4EEC;&#x8FD8;&#x6CA1;&#x6709;&#x5B8C;&#x6210;&#x3002;&#x4ECD;&#x7136;&#x8FD8;&#x6709;&#x8BB8;&#x591A;&#x4E8B;&#x60C5;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x505A;&#xFF0C;&#x53EF;&#x4EE5;&#x6539;&#x8FDB;&#x3002;</p>
+<h3 id="&#x62D3;&#x5C55;&#x9605;&#x8BFB;">&#x62D3;&#x5C55;&#x9605;&#x8BFB;</h3>
+<ul>
+<li><p>The <em>Bash Hackers Wiki</em> has a good article on positional parameters:</p>
+</li>
+<li><p><em>Bash Hackers Wiki</em> &#x4E0A;&#x6709;&#x4E00;&#x7BC7;&#x4E0D;&#x9519;&#x7684;&#x5173;&#x4E8E;&#x4F4D;&#x7F6E;&#x53C2;&#x6570;&#x7684;&#x6587;&#x7AE0;&#xFF1A;</p>
+<p>  <a href="http://wiki.bash-hackers.org/scripting/posparams" target="_blank">http://wiki.bash-hackers.org/scripting/posparams</a></p>
+</li>
+<li><p>The <em>Bash Reference Manual</em> has an article on the special parameters, including $* and $@:</p>
+</li>
+<li><p>Bash &#x7684;&#x53C2;&#x8003;&#x624B;&#x518C;&#x6709;&#x4E00;&#x7BC7;&#x5173;&#x4E8E;&#x7279;&#x6B8A;&#x53C2;&#x6570;&#x7684;&#x6587;&#x7AE0;&#xFF0C;&#x5305;&#x62EC; $* &#x548C; $@&#xFF1A;</p>
+<p>  <a href="http://www.gnu.org/software/bash/manual/bashref.html#Special-Parameters" target="_blank">http://www.gnu.org/software/bash/manual/bashref.html#Special-Parameters</a></p>
+</li>
+<li><p>In addition to the techniques discussed in this chapter, bash includes a builtin command called <em>getopts</em>,
+which can also be used for process command line arguments.
+It is described in the SHELL BUILTIN COMMANDS section of the bash man page and at the <em>Bash Hackers Wiki</em>:</p>
+</li>
+<li><p>&#x9664;&#x4E86;&#x672C;&#x7AE0;&#x8BA8;&#x8BBA;&#x7684;&#x6280;&#x672F;&#x4E4B;&#x5916;&#xFF0C;bash &#x8FD8;&#x5305;&#x542B;&#x4E00;&#x4E2A;&#x53EB;&#x505A; getopts &#x7684;&#x5185;&#x90E8;&#x547D;&#x4EE4;&#xFF0C;&#x6B64;&#x547D;&#x4EE4;&#x4E5F;&#x53EF;&#x4EE5;&#x7528;&#x6765;&#x5904;&#x7406;&#x547D;&#x4EE4;&#x884C;&#x53C2;&#x6570;&#x3002;
+bash &#x53C2;&#x8003;&#x9875;&#x9762;&#x7684; SHELL BUILTIN COMMANDS &#x4E00;&#x8282;&#x4ECB;&#x7ECD;&#x4E86;&#x8FD9;&#x4E2A;&#x547D;&#x4EE4;&#xFF0C;Bash Hackers Wiki &#x4E0A;&#x4E5F;&#x6709;&#x5BF9;&#x5B83;&#x7684;&#x63CF;&#x8FF0;&#xFF1A;</p>
+<p>  <a href="http://wiki.bash-hackers.org/howto/getopts_tutorial" target="_blank">http://wiki.bash-hackers.org/howto/getopts_tutorial</a></p>
+</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="chap32.html" class="navigation navigation-prev " aria-label="Previous page: 32. 流程控制：case 分支">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="chap34.html" class="navigation navigation-next " aria-label="Next page: 34. 流程控制：for 循环">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"layout":"book","title":"33. 位置参数","level":"1.1.33","depth":2,"next":{"title":"34. 流程控制：for 循环","level":"1.1.34","depth":2,"path":"chap34.md","ref":"chap34.md","articles":[]},"previous":{"title":"32. 流程控制：case 分支","level":"1.1.32","depth":2,"path":"chap32.md","ref":"chap32.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"en","gitbook":"*"},"file":{"path":"chap33.md","mtime":"2017-01-12T13:05:37.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-01-12T13:06:00.166Z"},"basePath":".","book":{"language":"en"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

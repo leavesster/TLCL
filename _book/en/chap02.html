@@ -1,0 +1,881 @@
+
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>02. 什么是 shell · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="chap03.html" />
+    
+    
+    <link rel="prev" href="chap01.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.1" data-path="chap01.html">
+            
+                <a href="chap01.html">
+            
+                    
+                    01. 引言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.1.2" data-path="chap02.html">
+            
+                <a href="chap02.html">
+            
+                    
+                    02. 什么是 shell
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3" data-path="chap03.html">
+            
+                <a href="chap03.html">
+            
+                    
+                    03. 文件系统中跳转
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4" data-path="chap04.html">
+            
+                <a href="chap04.html">
+            
+                    
+                    04. 探究操作系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.5" data-path="chap05.html">
+            
+                <a href="chap05.html">
+            
+                    
+                    05. 操作文件和目录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.6" data-path="chap06.html">
+            
+                <a href="chap06.html">
+            
+                    
+                    06. 使用命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.7" data-path="chap07.html">
+            
+                <a href="chap07.html">
+            
+                    
+                    07. 重定向
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.8" data-path="chap08.html">
+            
+                <a href="chap08.html">
+            
+                    
+                    08. 从 shell 眼中看世界
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.9" data-path="chap09.html">
+            
+                <a href="chap09.html">
+            
+                    
+                    09. 键盘高级操作技巧
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.10" data-path="chap10.html">
+            
+                <a href="chap10.html">
+            
+                    
+                    10. 权限
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.11" data-path="chap11.html">
+            
+                <a href="chap11.html">
+            
+                    
+                    11. 进程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.12" data-path="chap12.html">
+            
+                <a href="chap12.html">
+            
+                    
+                    12. shell 环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.13" data-path="chap13.html">
+            
+                <a href="chap13.html">
+            
+                    
+                    13. vi 简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.14" data-path="chap14.html">
+            
+                <a href="chap14.html">
+            
+                    
+                    14. 自定制 shell 提示符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.15" data-path="chap15.html">
+            
+                <a href="chap15.html">
+            
+                    
+                    15. 软件包管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.16" data-path="chap16.html">
+            
+                <a href="chap16.html">
+            
+                    
+                    16. 存储媒介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.17" data-path="chap17.html">
+            
+                <a href="chap17.html">
+            
+                    
+                    17. 网络系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.18" data-path="chap18.html">
+            
+                <a href="chap18.html">
+            
+                    
+                    18. 查找文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.19" data-path="chap19.html">
+            
+                <a href="chap19.html">
+            
+                    
+                    19. 归档和备份
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.20" data-path="chap20.html">
+            
+                <a href="chap20.html">
+            
+                    
+                    20. 正则表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.21" data-path="chap21.html">
+            
+                <a href="chap21.html">
+            
+                    
+                    21. 文本处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.22" data-path="chap22.html">
+            
+                <a href="chap22.html">
+            
+                    
+                    22. 格式化输出
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.23" data-path="chap23.html">
+            
+                <a href="chap23.html">
+            
+                    
+                    23. 打印
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.24" data-path="chap24.html">
+            
+                <a href="chap24.html">
+            
+                    
+                    24. 编译程序
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.25" data-path="chap25.html">
+            
+                <a href="chap25.html">
+            
+                    
+                    25. 编写第一个 Shell 脚本
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.26" data-path="chap26.html">
+            
+                <a href="chap26.html">
+            
+                    
+                    26. 启动一个项目
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.27" data-path="chap27.html">
+            
+                <a href="chap27.html">
+            
+                    
+                    27. 自顶向下设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.28" data-path="chap28.html">
+            
+                <a href="chap28.html">
+            
+                    
+                    28. 流程控制：if 分支结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.29" data-path="chap29.html">
+            
+                <a href="chap29.html">
+            
+                    
+                    29. 读取键盘输入
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.30" data-path="chap30.html">
+            
+                <a href="chap30.html">
+            
+                    
+                    30. 流程控制：while/until 循环
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.31" data-path="chap31.html">
+            
+                <a href="chap31.html">
+            
+                    
+                    31. 疑难排解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.32" data-path="chap32.html">
+            
+                <a href="chap32.html">
+            
+                    
+                    32. 流程控制：case 分支
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.33" data-path="chap33.html">
+            
+                <a href="chap33.html">
+            
+                    
+                    33. 位置参数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.34" data-path="chap34.html">
+            
+                <a href="chap34.html">
+            
+                    
+                    34. 流程控制：for 循环
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.35" data-path="chap35.html">
+            
+                <a href="chap35.html">
+            
+                    
+                    35. 字符串和数字
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.36" data-path="chap36.html">
+            
+                <a href="chap36.html">
+            
+                    
+                    36. 数组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.37" data-path="chap37.html">
+            
+                <a href="chap37.html">
+            
+                    
+                    37. 奇珍异宝
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >02. 什么是 shell</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <p>When we speak of the command line, we are really referring to the shell. The
+shell is a program that takes keyboard commands and passes them to the
+operating system to carry out. Almost all Linux distributions supply a shell
+program from the GNU Project called bash. The name &#x201C;bash&#x201D; is an acronym for
+&#x201C;Bourne Again SHell&#x201D;, a reference to the fact bash is an enhanced replacement
+for sh, the original Unix shell program written by Steve Bourne.</p>
+<p>&#x4E00;&#x8BF4;&#x5230;&#x547D;&#x4EE4;&#x884C;&#xFF0C;&#x6211;&#x4EEC;&#x771F;&#x6B63;&#x6307;&#x7684;&#x662F; shell&#x3002;shell &#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x7A0B;&#x5E8F;&#xFF0C;&#x5B83;&#x63A5;&#x53D7;&#x4ECE;&#x952E;&#x76D8;&#x8F93;&#x5165;&#x7684;&#x547D;&#x4EE4;&#xFF0C;
+&#x7136;&#x540E;&#x628A;&#x547D;&#x4EE4;&#x4F20;&#x9012;&#x7ED9;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x53BB;&#x6267;&#x884C;&#x3002;&#x51E0;&#x4E4E;&#x6240;&#x6709;&#x7684; Linux &#x53D1;&#x884C;&#x7248;&#x90FD;&#x63D0;&#x4F9B;&#x4E00;&#x4E2A;&#x540D;&#x4E3A; bash &#x7684;
+&#x6765;&#x81EA; GNU &#x9879;&#x76EE;&#x7684; shell &#x7A0B;&#x5E8F;&#x3002;&#x201C;bash&#x201D; &#x662F; &#x201C;Bourne Again SHell&#x201D; &#x7684;&#x9996;&#x5B57;&#x6BCD;&#x7F29;&#x5199;&#xFF0C;
+&#x6240;&#x6307;&#x7684;&#x662F;&#x8FD9;&#x6837;&#x4E00;&#x4E2A;&#x4E8B;&#x5B9E;&#xFF0C;bash &#x662F;&#x6700;&#x521D; Unix &#x4E0A;&#x7531; Steve Bourne &#x5199;&#x6210; shell &#x7A0B;&#x5E8F; sh &#x7684;&#x589E;&#x5F3A;&#x7248;&#x3002;</p>
+<h3 id="&#x7EC8;&#x7AEF;&#x4EFF;&#x771F;&#x5668;">&#x7EC8;&#x7AEF;&#x4EFF;&#x771F;&#x5668;</h3>
+<p>When using a graphical user interface, we need another program called a
+terminal emulator to interact with the shell. If we look through our desktop
+menus, we will probably find one. KDE uses konsole and GNOME uses
+gnome-terminal, though it&apos;s likely called simply &#x201C;terminal&#x201D; on our menu. There
+are a number of other terminal emulators available for Linux, but they all
+basically do the same thing; give us access to the shell. You will probably
+develop a preference for one or another based on the number of bells and
+whistles it has.</p>
+<p>&#x5F53;&#x4F7F;&#x7528;&#x56FE;&#x5F62;&#x7528;&#x6237;&#x754C;&#x9762;&#x65F6;&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x53E6;&#x4E00;&#x4E2A;&#x548C; shell &#x4EA4;&#x4E92;&#x7684;&#x53EB;&#x505A;&#x7EC8;&#x7AEF;&#x4EFF;&#x771F;&#x5668;&#x7684;&#x7A0B;&#x5E8F;&#x3002;
+&#x5982;&#x679C;&#x6211;&#x4EEC;&#x6D4F;&#x89C8;&#x4E00;&#x4E0B;&#x684C;&#x9762;&#x83DC;&#x5355;&#xFF0C;&#x53EF;&#x80FD;&#x4F1A;&#x627E;&#x5230;&#x4E00;&#x4E2A;&#x3002;&#x867D;&#x7136;&#x5728;&#x83DC;&#x5355;&#x91CC;&#x5B83;&#x53EF;&#x80FD;&#x90FD;
+&#x88AB;&#x7B80;&#x5355;&#x5730;&#x79F0;&#x4E3A; &#x201C;terminal&#x201D;&#xFF0C;&#x4F46;&#x662F; KDE &#x7528;&#x7684;&#x662F; konsole , &#x800C; GNOME &#x5219;&#x4F7F;&#x7528; gnome-terminal&#x3002;
+&#x8FD8;&#x6709;&#x5176;&#x4ED6;&#x4E00;&#x4E9B;&#x7EC8;&#x7AEF;&#x4EFF;&#x771F;&#x5668;&#x53EF;&#x4F9B; Linux &#x4F7F;&#x7528;&#xFF0C;&#x4F46;&#x57FA;&#x672C;&#x4E0A;&#xFF0C;&#x5B83;&#x4EEC;&#x90FD;&#x5B8C;&#x6210;&#x540C;&#x6837;&#x7684;&#x4E8B;&#x60C5;&#xFF0C;
+&#x8BA9;&#x6211;&#x4EEC;&#x80FD;&#x8BBF;&#x95EE; shell&#x3002;&#x4E5F;&#x8BB8;&#xFF0C;&#x4F60;&#x53EF;&#x80FD;&#x4F1A;&#x56E0;&#x4E3A;&#x9644;&#x52A0;&#x7684;&#x4E00;&#x7CFB;&#x5217;&#x82B1;&#x4FCF;&#x529F;&#x80FD;&#x800C;&#x559C;&#x6B22;&#x4E0A;&#x67D0;&#x4E2A;&#x7EC8;&#x7AEF;&#x3002;</p>
+<h3 id="&#x7B2C;&#x4E00;&#x6B21;&#x6309;&#x952E;">&#x7B2C;&#x4E00;&#x6B21;&#x6309;&#x952E;</h3>
+<p>So let&apos;s get started. Launch the terminal emulator! Once it comes up, we should see somehing like this:</p>
+<p>&#x597D;&#xFF0C;&#x5F00;&#x59CB;&#x5427;&#x3002;&#x542F;&#x52A8;&#x7EC8;&#x7AEF;&#x4EFF;&#x771F;&#x5668;&#xFF01;&#x4E00;&#x65E6;&#x5B83;&#x8FD0;&#x884C;&#x8D77;&#x6765;&#xFF0C;&#x6211;&#x4EEC;&#x5E94;&#x8BE5;&#x770B;&#x5230;&#x4E00;&#x884C;&#x50CF;&#x8FD9;&#x6837;&#x7684;&#x6587;&#x5B57;&#xFF1A;</p>
+<pre><code>[me@linuxbox ~]$
+</code></pre><p>This is called a shell prompt and it will appear whenever the shell is ready
+to accept input. While it may vary in appearance somewhat depending on the
+distribution, it will usually include your username@machinename, followed by
+the current working directory (more about that in a little bit) and a dollar
+sign.</p>
+<p>&#x8FD9;&#x53EB;&#x505A; shell &#x63D0;&#x793A;&#x7B26;&#xFF0C;&#x65E0;&#x8BBA;&#x4F55;&#x65F6;&#x5F53; shell &#x51C6;&#x5907;&#x597D;&#x4E86;&#x53BB;&#x63A5;&#x53D7;&#x8F93;&#x5165;&#x65F6;&#xFF0C;&#x5B83;&#x5C31;&#x4F1A;&#x51FA;&#x73B0;&#x3002;&#x7136;&#x800C;&#xFF0C;
+&#x5B83;&#x53EF;&#x80FD;&#x4F1A;&#x4EE5;&#x5404;&#x79CD;&#x5404;&#x6837;&#x7684;&#x9762;&#x5B54;&#x663E;&#x793A;&#xFF0C;&#x8FD9;&#x5219;&#x53D6;&#x51B3;&#x4E8E;&#x4E0D;&#x540C;&#x7684; Linux &#x53D1;&#x884C;&#x7248;&#xFF0C;
+&#x5B83;&#x901A;&#x5E38;&#x5305;&#x62EC;&#x4F60;&#x7684;&#x7528;&#x6237;&#x540D;@&#x4E3B;&#x673A;&#x540D;&#xFF0C;&#x7D27;&#x63A5;&#x7740;&#x5F53;&#x524D;&#x5DE5;&#x4F5C;&#x76EE;&#x5F55;&#xFF08;&#x7A0D;&#x540E;&#x4F1A;&#x6709;&#x66F4;&#x591A;&#x4ECB;&#x7ECD;&#xFF09;&#x548C;&#x4E00;&#x4E2A;&#x7F8E;&#x5143;&#x7B26;&#x53F7;&#x3002;</p>
+<p>If the last character of the prompt is a pound sign (&#x201C;#&#x201D;) rather than a dollar
+sign, the terminal session has superuser privileges. This means either we are
+logged in as the root user or we selected a terminal emulator that provides
+superuser (administrative) privileges.</p>
+<p>&#x5982;&#x679C;&#x63D0;&#x793A;&#x7B26;&#x7684;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x662F;&#x201C;#&#x201D;, &#x800C;&#x4E0D;&#x662F;&#x201C;$&#x201D;, &#x90A3;&#x4E48;&#x8FD9;&#x4E2A;&#x7EC8;&#x7AEF;&#x4F1A;&#x8BDD;&#x5C31;&#x6709;&#x8D85;&#x7EA7;&#x7528;&#x6237;&#x6743;&#x9650;&#x3002;
+&#x8FD9;&#x610F;&#x5473;&#x7740;&#xFF0C;&#x6211;&#x4EEC;&#x6216;&#x8005;&#x662F;&#x4EE5; root &#x7528;&#x6237;&#x7684;&#x8EAB;&#x4EFD;&#x767B;&#x5F55;&#xFF0C;&#x6216;&#x8005;&#x662F;&#x6211;&#x4EEC;&#x9009;&#x62E9;&#x7684;&#x7EC8;&#x7AEF;&#x4EFF;&#x771F;&#x5668;&#x63D0;&#x4F9B;&#x8D85;&#x7EA7;&#x7528;&#x6237;&#xFF08;&#x7BA1;&#x7406;&#x5458;&#xFF09;&#x6743;&#x9650;&#x3002;</p>
+<p>Assuming that things are good so far, let&apos;s try some typing. Type some
+gibberish at the prompt like so:</p>
+<p>&#x5047;&#x5B9A;&#x5230;&#x76EE;&#x524D;&#x4E3A;&#x6B62;&#xFF0C;&#x6240;&#x6709;&#x4E8B;&#x60C5;&#x90FD;&#x8FDB;&#x884C;&#x987A;&#x5229;&#xFF0C;&#x90A3;&#x6211;&#x4EEC;&#x8BD5;&#x7740;&#x952E;&#x5165;&#x5B57;&#x7B26;&#x5427;&#x3002;&#x5728;&#x63D0;&#x793A;&#x7B26;&#x4E0B;&#x6572;&#x5165;
+&#x4E00;&#x4E9B;&#x50CF;&#x4E0B;&#x9762;&#x4E00;&#x6837;&#x7684;&#x4E71;&#x4E03;&#x516B;&#x7CDF;&#x7684;&#x5B57;&#x7B26;&#xFF1A;</p>
+<pre><code>[me@linuxbox ~]$ kaekfjaeifj
+</code></pre><p>Since this command makes no sense, the shell will tell us so and give us
+another chance:</p>
+<p>&#x56E0;&#x4E3A;&#x8FD9;&#x4E2A;&#x547D;&#x4EE4;&#x6CA1;&#x6709;&#x4EFB;&#x4F55;&#x610F;&#x4E49;&#xFF0C;&#x6240;&#x4EE5; shell &#x4F1A;&#x63D0;&#x793A;&#x9519;&#x8BEF;&#x4FE1;&#x606F;&#xFF0C;&#x5E76;&#x8BA9;&#x6211;&#x4EEC;&#x518D;&#x8BD5;&#x4E00;&#x4E0B;&#xFF1A;</p>
+<pre><code>bash: kaekfjaeifj: command not found
+[me@linuxbox ~]$
+</code></pre><h3 id="&#x547D;&#x4EE4;&#x5386;&#x53F2;">&#x547D;&#x4EE4;&#x5386;&#x53F2;</h3>
+<p>If we press the up-arrow key, we will see that the previous command &#x201C;kaekfjaeifj&#x201D;
+reappears after the prompt. This is called command history. Most Linux distributions
+remember the last five hundred commands by default. Press the down-arrow key and the
+previous command disappears.</p>
+<p>&#x5982;&#x679C;&#x6309;&#x4E0B;&#x4E0A;&#x7BAD;&#x5934;&#x6309;&#x952E;&#xFF0C;&#x6211;&#x4EEC;&#x4F1A;&#x770B;&#x5230;&#x521A;&#x624D;&#x8F93;&#x5165;&#x7684;&#x547D;&#x4EE4;&#x201C;kaekfjaeifj&#x201D;&#x91CD;&#x65B0;&#x51FA;&#x73B0;&#x5728;&#x63D0;&#x793A;&#x7B26;&#x4E4B;&#x540E;&#x3002;
+&#x8FD9;&#x5C31;&#x53EB;&#x505A;&#x547D;&#x4EE4;&#x5386;&#x53F2;&#x3002;&#x8BB8;&#x591A; Linux &#x53D1;&#x884C;&#x7248;&#x9ED8;&#x8BA4;&#x4FDD;&#x5B58;&#x6700;&#x540E;&#x8F93;&#x5165;&#x7684;500&#x4E2A;&#x547D;&#x4EE4;&#x3002;
+&#x6309;&#x4E0B;&#x4E0B;&#x7BAD;&#x5934;&#x6309;&#x952E;&#xFF0C;&#x5148;&#x524D;&#x8F93;&#x5165;&#x7684;&#x547D;&#x4EE4;&#x5C31;&#x6D88;&#x5931;&#x4E86;&#x3002;</p>
+<h3 id="&#x79FB;&#x52A8;&#x5149;&#x6807;">&#x79FB;&#x52A8;&#x5149;&#x6807;</h3>
+<p>Recall the previous command with the up-arrow key again. Now try the left and right-arrow keys.
+See how we can position the cursor anywhere on the command line? This makes editing commands easy.</p>
+<p>&#x53EF;&#x501F;&#x52A9;&#x4E0A;&#x7BAD;&#x5934;&#x6309;&#x952E;&#xFF0C;&#x6765;&#x83B7;&#x5F97;&#x4E0A;&#x6B21;&#x8F93;&#x5165;&#x7684;&#x547D;&#x4EE4;&#x3002;&#x73B0;&#x5728;&#x8BD5;&#x7740;&#x4F7F;&#x7528;&#x5DE6;&#x53F3;&#x7BAD;&#x5934;&#x6309;&#x952E;&#x3002;
+&#x770B;&#x4E00;&#x4E0B;&#x600E;&#x6837;&#x628A;&#x5149;&#x6807;&#x5B9A;&#x4F4D;&#x5230;&#x547D;&#x4EE4;&#x884C;&#x7684;&#x4EFB;&#x610F;&#x4F4D;&#x7F6E;&#xFF1F;&#x901A;&#x8FC7;&#x4F7F;&#x7528;&#x7BAD;&#x5934;&#x6309;&#x952E;&#xFF0C;&#x4F7F;&#x7F16;&#x8F91;&#x547D;&#x4EE4;&#x53D8;&#x5F97;&#x8F7B;&#x677E;&#x4E9B;&#x3002;</p>
+<h3 id="&#x5173;&#x4E8E;&#x9F20;&#x6807;&#x548C;&#x5149;&#x6807;">&#x5173;&#x4E8E;&#x9F20;&#x6807;&#x548C;&#x5149;&#x6807;</h3>
+<p>While the shell is all about the keyboard, you can also use a mouse with your
+terminal emulator. There is a mechanism built into the X Window System (the
+underlying engine that makes the GUI go) that supports a quick copy and paste
+technique. If you highlight some text by holding down the left mouse button and
+dragging the mouse over it (or double clicking on a word), it is copied into a
+buffer maintained by X. Pressing the middle mouse button will cause the text to
+be pasted at the cursor location. Try it.</p>
+<p>&#x867D;&#x7136;&#xFF0C;shell &#x662F;&#x548C;&#x952E;&#x76D8;&#x6253;&#x4EA4;&#x9053;&#x7684;&#xFF0C;&#x4F46;&#x4F60;&#x4E5F;&#x53EF;&#x4EE5;&#x5728;&#x7EC8;&#x7AEF;&#x4EFF;&#x771F;&#x5668;&#x91CC;&#x4F7F;&#x7528;&#x9F20;&#x6807;&#x3002;X &#x7A97;&#x53E3;&#x7CFB;&#x7EDF;
+&#xFF08;&#x4F7F; GUI &#x5DE5;&#x4F5C;&#x7684;&#x5E95;&#x5C42;&#x5F15;&#x64CE;&#xFF09;&#x5185;&#x5EFA;&#x4E86;&#x4E00;&#x79CD;&#x673A;&#x5236;&#xFF0C;&#x652F;&#x6301;&#x5FEB;&#x901F;&#x62F7;&#x8D1D;&#x548C;&#x7C98;&#x8D34;&#x6280;&#x5DE7;&#x3002;
+&#x5982;&#x679C;&#x4F60;&#x6309;&#x4E0B;&#x9F20;&#x6807;&#x5DE6;&#x952E;&#xFF0C;&#x6CBF;&#x7740;&#x6587;&#x672C;&#x62D6;&#x52A8;&#x9F20;&#x6807;&#xFF08;&#x6216;&#x8005;&#x53CC;&#x51FB;&#x4E00;&#x4E2A;&#x5355;&#x8BCD;&#xFF09;&#x9AD8;&#x4EAE;&#x4E86;&#x4E00;&#x4E9B;&#x6587;&#x672C;&#xFF0C;
+&#x90A3;&#x4E48;&#x8FD9;&#x4E9B;&#x9AD8;&#x4EAE;&#x7684;&#x6587;&#x672C;&#x5C31;&#x88AB;&#x62F7;&#x8D1D;&#x5230;&#x4E86;&#x4E00;&#x4E2A;&#x7531; X &#x7BA1;&#x7406;&#x7684;&#x7F13;&#x51B2;&#x533A;&#x91CC;&#x9762;&#x3002;&#x7136;&#x540E;&#x6309;&#x4E0B;&#x9F20;&#x6807;&#x4E2D;&#x952E;&#xFF0C;
+&#x8FD9;&#x4E9B;&#x6587;&#x672C;&#x5C31;&#x88AB;&#x7C98;&#x8D34;&#x5230;&#x5149;&#x6807;&#x6240;&#x5728;&#x7684;&#x4F4D;&#x7F6E;&#x3002;&#x8BD5;&#x8BD5;&#x770B;&#x3002;</p>
+<p>Note: Don&apos;t be tempted to use Ctrl-c and Ctrl-v to perform copy and paste
+inside a terminal window. They don&apos;t work. These control codes have different
+meanings to the shell and were assigned many years before Microsoft Windows.</p>
+<p>&#x6CE8;&#x610F;&#xFF1A; &#x4E0D;&#x8981;&#x5728;&#x4E00;&#x4E2A;&#x7EC8;&#x7AEF;&#x7A97;&#x53E3;&#x91CC;&#x4F7F;&#x7528; Ctrl-c &#x548C; Ctrl-v &#x5FEB;&#x6377;&#x952E;&#x6765;&#x6267;&#x884C;&#x62F7;&#x8D1D;&#x548C;&#x7C98;&#x8D34;&#x64CD;&#x4F5C;&#x3002;
+&#x5B83;&#x4EEC;&#x4E0D;&#x8D77;&#x4F5C;&#x7528;&#x3002;&#x5BF9;&#x4E8E; shell &#x6765;&#x8BF4;&#xFF0C;&#x8FD9;&#x4E24;&#x4E2A;&#x63A7;&#x5236;&#x4EE3;&#x7801;&#x6709;&#x7740;&#x4E0D;&#x540C;&#x7684;&#x542B;&#x4E49;&#xFF0C;&#x5B83;&#x4EEC;&#x5728;&#x65E9;&#x4E8E; 
+Microsoft Windows &#xFF08;&#x5B9A;&#x4E49;&#x590D;&#x5236;&#x7C98;&#x8D34;&#x7684;&#x542B;&#x4E49;&#xFF09;&#x8BB8;&#x591A;&#x5E74;&#x4E4B;&#x524D;&#x5C31;&#x8D4B;&#x4E88;&#x4E86;&#x4E0D;&#x540C;&#x7684;&#x610F;&#x4E49;&#x3002;</p>
+<p>Your graphical desktop environment (most likely KDE or GNOME), in an effort
+to behave like Windows, probably has its focus policy set to &#x201C;click to focus.&#x201D;
+This means for a window to get focus (become active) you need to click on it.
+This is contrary to the traditional X behavior of &#x201C;focus follows mouse&#x201D; which
+means that a window gets focus by just passing the mouse over it. The window
+will not come to the foreground until you click on it but it will be able to receive
+input. Setting the focus policy to &#x201C;focus follows mouse&#x201D; will make the copy and
+paste technique even more useful. Give it a try. I think if you give it a chance
+you will prefer it. You will find this setting in the configuration program for your
+window manager.</p>
+<p>&#x4F60;&#x7684;&#x56FE;&#x5F62;&#x684C;&#x9762;&#x73AF;&#x5883;&#xFF08;&#x50CF; KDE &#x6216; GNOME&#xFF09;&#xFF0C;&#x52AA;&#x529B;&#x60F3;&#x548C; Windows &#x4E00;&#x6837;&#xFF0C;&#x53EF;&#x80FD;&#x4F1A;&#x628A;&#x5B83;&#x7684;&#x805A;&#x7126;&#x7B56;&#x7565;
+&#x8BBE;&#x7F6E;&#x6210;&#x201C;&#x5355;&#x51FB;&#x805A;&#x7126;&#x201D;&#x3002;&#x8FD9;&#x610F;&#x5473;&#x7740;&#xFF0C;&#x4E3A;&#x4E86;&#x8BA9;&#x7A97;&#x53E3;&#x805A;&#x7126;&#xFF08;&#x53D8;&#x6210;&#x6D3B;&#x52A8;&#x7A97;&#x53E3;&#xFF09;&#x4F60;&#x9700;&#x8981;&#x5355;&#x51FB;&#x5B83;&#x3002;
+&#x8FD9;&#x4E0E;&#x201C;&#x805A;&#x7126;&#x8DDF;&#x968F;&#x7740;&#x9F20;&#x6807;&#x201D;&#x7684;&#x4F20;&#x7EDF; X &#x884C;&#x4E3A;&#x4E0D;&#x540C;&#xFF0C;&#x4F20;&#x7EDF; X &#x884C;&#x4E3A;&#x662F;&#x6307;&#x53EA;&#x8981;&#x628A;&#x9F20;&#x6807;&#x79FB;&#x52A8;&#x5230;&#x4E00;&#x4E2A;&#x7A97;&#x53E3;&#x7684;&#x4E0A;&#x65B9;&#x3002;
+&#x5B83;&#x80FD;&#x63A5;&#x53D7;&#x8F93;&#x5165;&#xFF0C; &#x4F46;&#x662F;&#x76F4;&#x5230;&#x4F60;&#x5355;&#x51FB;&#x7A97;&#x53E3;&#x4E4B;&#x524D;&#x5B83;&#x90FD;&#x4E0D;&#x4F1A;&#x6210;&#x4E3A;&#x524D;&#x7AEF;&#x7A97;&#x53E3;&#x3002;
+&#x8BBE;&#x7F6E;&#x805A;&#x7126;&#x7B56;&#x7565;&#x4E3A;&#x201C;&#x805A;&#x7126;&#x8DDF;&#x968F;&#x7740;&#x9F20;&#x6807;&#x201D;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x62F7;&#x8D1D;&#x548C;&#x7C98;&#x8D34;&#x66F4;&#x65B9;&#x4FBF;&#x6613;&#x7528;&#x3002;&#x5C1D;&#x8BD5;&#x4E00;&#x4E0B;&#x3002;
+&#x6211;&#x60F3;&#x5982;&#x679C;&#x4F60;&#x8BD5;&#x4E86;&#x4E00;&#x4E0B;&#x4F60;&#x4F1A;&#x559C;&#x6B22;&#x4E0A;&#x5B83;&#x7684;&#x3002;&#x4F60;&#x80FD;&#x5728;&#x7A97;&#x53E3;&#x7BA1;&#x7406;&#x5668;&#x7684;&#x914D;&#x7F6E;&#x7A0B;&#x5E8F;&#x4E2D;&#x627E;&#x5230;&#x8FD9;&#x4E2A;&#x8BBE;&#x7F6E;&#x3002;</p>
+<h3 id="&#x8BD5;&#x8BD5;&#x8FD0;&#x884C;&#x4E00;&#x4E9B;&#x7B80;&#x5355;&#x547D;&#x4EE4;">&#x8BD5;&#x8BD5;&#x8FD0;&#x884C;&#x4E00;&#x4E9B;&#x7B80;&#x5355;&#x547D;&#x4EE4;</h3>
+<p>Now that we have learned to type, let&apos;s try a few simple commands. The first one is
+date. This command displays the current time and date.</p>
+<p>&#x73B0;&#x5728;&#xFF0C;&#x6211;&#x4EEC;&#x5B66;&#x4E60;&#x4E86;&#x600E;&#x6837;&#x8F93;&#x5165;&#x547D;&#x4EE4;&#xFF0C;&#x90A3;&#x6211;&#x4EEC;&#x6267;&#x884C;&#x4E00;&#x4E9B;&#x7B80;&#x5355;&#x7684;&#x547D;&#x4EE4;&#x5427;&#x3002;&#x7B2C;&#x4E00;&#x4E2A;&#x547D;&#x4EE4;&#x662F; date&#x3002;
+&#x8FD9;&#x4E2A;&#x547D;&#x4EE4;&#x663E;&#x793A;&#x7CFB;&#x7EDF;&#x5F53;&#x524D;&#x65F6;&#x95F4;&#x548C;&#x65E5;&#x671F;&#x3002;</p>
+<pre><code>[me@linuxbox ~]$ date
+Thu Oct 25 13:51:54 EDT 2007
+</code></pre><p>A related command is cal which, by default, displays a calendar of the current month.</p>
+<p>&#x4E00;&#x4E2A;&#x76F8;&#x5173;&#x8054;&#x7684;&#x547D;&#x4EE4;&#xFF0C;cal&#xFF0C;&#x5B83;&#x9ED8;&#x8BA4;&#x663E;&#x793A;&#x5F53;&#x524D;&#x6708;&#x4EFD;&#x7684;&#x65E5;&#x5386;&#x3002;</p>
+<pre><code>[me@linuxbox ~]$ cal
+October 2007
+Su Mo Tu We Th Fr Sa
+1 2 3 4 5 6
+7 8 9 10 11 12 13
+14 15 16 17 18 19 20
+21 22 23 24 25 26 27
+28 29 30 31
+</code></pre><p>To see the current amount of free space on your disk drives, type df:</p>
+<p>&#x67E5;&#x770B;&#x78C1;&#x76D8;&#x5269;&#x4F59;&#x7A7A;&#x95F4;&#x7684;&#x6570;&#x91CF;&#xFF0C;&#x8F93;&#x5165; df:</p>
+<pre><code>[me@linuxbox ~]$ df
+Filesystem           1K-blocks      Used Available Use% Mounted on
+/dev/sda2             15115452   5012392   9949716  34% /
+/dev/sda5             59631908  26545424  30008432  47% /home
+/dev/sda1               147764     17370   122765   13% /boot
+tmpfs                   256856         0   256856    0% /dev/shm
+</code></pre><p>Likewise, to display the amount of free memory, type the free command.</p>
+<p>&#x540C;&#x6837;&#x5730;&#xFF0C;&#x663E;&#x793A;&#x7A7A;&#x95F2;&#x5185;&#x5B58;&#x7684;&#x6570;&#x91CF;&#xFF0C;&#x8F93;&#x5165;&#x547D;&#x4EE4; free&#x3002;</p>
+<pre><code>[me@linuxbox ~]$ free
+total       used       free     shared    buffers     cached
+Mem:       2059676     846456    1213220          0
+44028      360568
+-/+ buffers/cache:     441860    1617816
+Swap:      1042428          0    1042428
+</code></pre><h3 id="&#x7ED3;&#x675F;&#x7EC8;&#x7AEF;&#x4F1A;&#x8BDD;">&#x7ED3;&#x675F;&#x7EC8;&#x7AEF;&#x4F1A;&#x8BDD;</h3>
+<p>We can end a terminal session by either closing the terminal emulator window, or by
+entering the exit command at the shell prompt:</p>
+<p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5173;&#x95ED;&#x7EC8;&#x7AEF;&#x4EFF;&#x771F;&#x5668;&#x7A97;&#x53E3;&#xFF0C;&#x6216;&#x8005;&#x662F;&#x5728; shell &#x63D0;&#x793A;&#x7B26;&#x4E0B;&#x8F93;&#x5165; exit &#x547D;&#x4EE4;&#x6765;&#x7EC8;&#x6B62;&#x4E00;&#x4E2A;&#x7EC8;&#x7AEF;&#x4F1A;&#x8BDD;&#xFF1A;</p>
+<pre><code>[me@linuxbox ~]$ exit
+</code></pre><h3 id="&#x5E55;&#x540E;&#x63A7;&#x5236;&#x53F0;">&#x5E55;&#x540E;&#x63A7;&#x5236;&#x53F0;</h3>
+<p>Even if we have no terminal emulator running, several terminal sessions
+continue to run behind the graphical desktop. Called virtual terminals or
+virtual consoles, these sessions can be accessed on most Linux distributions
+by pressing Ctrl- Alt-F1 through Ctrl-Alt-F6 on most systems. When a session
+is accessed, it presents a login prompt into which we can enter our user name
+and password.  To switch from one virtual console to another, press Alt and
+F1-F6. To return to the graphical desktop, press Alt-F7.</p>
+<p>&#x5373;&#x4F7F;&#x7EC8;&#x7AEF;&#x4EFF;&#x771F;&#x5668;&#x6CA1;&#x6709;&#x8FD0;&#x884C;&#xFF0C;&#x5728;&#x540E;&#x53F0;&#x4ECD;&#x7136;&#x6709;&#x51E0;&#x4E2A;&#x7EC8;&#x7AEF;&#x4F1A;&#x8BDD;&#x8FD0;&#x884C;&#x7740;&#x3002;&#x5B83;&#x4EEC;&#x53EB;&#x505A;&#x865A;&#x62DF;&#x7EC8;&#x7AEF;
+&#x6216;&#x8005;&#x662F;&#x865A;&#x62DF;&#x63A7;&#x5236;&#x53F0;&#x3002;&#x5728;&#x5927;&#x591A;&#x6570; Linux &#x53D1;&#x884C;&#x7248;&#x4E2D;&#xFF0C;&#x8FD9;&#x4E9B;&#x7EC8;&#x7AEF;&#x4F1A;&#x8BDD;&#x90FD;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x6309;&#x4E0B;
+Ctrl-Alt-F1 &#x5230; Ctrl-Alt-F6 &#x8BBF;&#x95EE;&#x3002;&#x5F53;&#x4E00;&#x4E2A;&#x4F1A;&#x8BDD;&#x88AB;&#x8BBF;&#x95EE;&#x7684;&#x65F6;&#x5019;&#xFF0C;
+&#x5B83;&#x4F1A;&#x663E;&#x793A;&#x767B;&#x5F55;&#x63D0;&#x793A;&#x6846;&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x8F93;&#x5165;&#x7528;&#x6237;&#x540D;&#x548C;&#x5BC6;&#x7801;&#x3002;&#x8981;&#x4ECE;&#x4E00;&#x4E2A;&#x865A;&#x62DF;&#x63A7;&#x5236;&#x53F0;&#x8F6C;&#x6362;&#x5230;&#x53E6;&#x4E00;&#x4E2A;&#xFF0C;
+&#x6309;&#x4E0B; Alt &#x548C; F1-F6(&#x4E2D;&#x7684;&#x4E00;&#x4E2A;)&#x3002;&#x8FD4;&#x56DE;&#x56FE;&#x5F62;&#x684C;&#x9762;&#xFF0C;&#x6309;&#x4E0B; Alt-F7&#x3002;</p>
+<h3 id="&#x62D3;&#x5C55;&#x9605;&#x8BFB;">&#x62D3;&#x5C55;&#x9605;&#x8BFB;</h3>
+<p>To learn more about Steve Bourne, father of the Bourne Shell, see this
+Wikipedia article:</p>
+<ul>
+<li><p>&#x60F3;&#x4E86;&#x89E3;&#x66F4;&#x591A;&#x5173;&#x4E8E; Steve Bourne &#x7684;&#x6545;&#x4E8B;&#xFF0C;Bourne Shell &#x4E4B;&#x7236;&#xFF0C;&#x8BFB;&#x4E00;&#x4E0B;&#x8FD9;&#x7BC7;&#x6587;&#x7AE0;&#xFF1A;</p>
+<p> <a href="http://en.wikipedia.org/wiki/Steve_Bourne" target="_blank">http://en.wikipedia.org/wiki/Steve_Bourne</a></p>
+</li>
+</ul>
+<p>Here is an article about the concept of shells in computing:</p>
+<ul>
+<li><p>&#x8FD9;&#x662F;&#x4E00;&#x7BC7;&#x5173;&#x4E8E;&#x5728;&#x8BA1;&#x7B97;&#x673A;&#x9886;&#x57DF;&#x91CC;&#xFF0C;shells &#x6982;&#x5FF5;&#x7684;&#x6587;&#x7AE0;&#xFF1A;</p>
+<p> <a href="http://en.wikipedia.org/wiki/Shell_(computing)" target="_blank">http://en.wikipedia.org/wiki/Shell_(computing)</a></p>
+</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="chap01.html" class="navigation navigation-prev " aria-label="Previous page: 01. 引言">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="chap03.html" class="navigation navigation-next " aria-label="Next page: 03. 文件系统中跳转">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"layout":"book","title":"02. 什么是 shell","level":"1.1.2","depth":2,"next":{"title":"03. 文件系统中跳转","level":"1.1.3","depth":2,"path":"chap03.md","ref":"chap03.md","articles":[]},"previous":{"title":"01. 引言","level":"1.1.1","depth":2,"path":"chap01.md","ref":"chap01.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"en","gitbook":"*"},"file":{"path":"chap02.md","mtime":"2017-01-12T13:05:37.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-01-12T13:06:00.166Z"},"basePath":".","book":{"language":"en"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,916 @@
+
+<!DOCTYPE HTML>
+<html lang="zh" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>30. 流程控制：while/until 循环 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="chap31.html" />
+    
+    
+    <link rel="prev" href="chap29.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="輸入並搜尋" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.1" data-path="chap01.html">
+            
+                <a href="chap01.html">
+            
+                    
+                    01. 引言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2" data-path="chap02.html">
+            
+                <a href="chap02.html">
+            
+                    
+                    02. 什么是 shell
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3" data-path="chap03.html">
+            
+                <a href="chap03.html">
+            
+                    
+                    03. 文件系统中跳转
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4" data-path="chap04.html">
+            
+                <a href="chap04.html">
+            
+                    
+                    04. 探究操作系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.5" data-path="chap05.html">
+            
+                <a href="chap05.html">
+            
+                    
+                    05. 操作文件和目录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.6" data-path="chap06.html">
+            
+                <a href="chap06.html">
+            
+                    
+                    06. 使用命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.7" data-path="chap07.html">
+            
+                <a href="chap07.html">
+            
+                    
+                    07. 重定向
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.8" data-path="chap08.html">
+            
+                <a href="chap08.html">
+            
+                    
+                    08. 从 shell 眼中看世界
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.9" data-path="chap09.html">
+            
+                <a href="chap09.html">
+            
+                    
+                    09. 键盘高级操作技巧
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.10" data-path="chap10.html">
+            
+                <a href="chap10.html">
+            
+                    
+                    10. 权限
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.11" data-path="chap11.html">
+            
+                <a href="chap11.html">
+            
+                    
+                    11. 进程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.12" data-path="chap12.html">
+            
+                <a href="chap12.html">
+            
+                    
+                    12. shell 环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.13" data-path="chap13.html">
+            
+                <a href="chap13.html">
+            
+                    
+                    13. vi 简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.14" data-path="chap14.html">
+            
+                <a href="chap14.html">
+            
+                    
+                    14. 自定制 shell 提示符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.15" data-path="chap15.html">
+            
+                <a href="chap15.html">
+            
+                    
+                    15. 软件包管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.16" data-path="chap16.html">
+            
+                <a href="chap16.html">
+            
+                    
+                    16. 存储媒介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.17" data-path="chap17.html">
+            
+                <a href="chap17.html">
+            
+                    
+                    17. 网络系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.18" data-path="chap18.html">
+            
+                <a href="chap18.html">
+            
+                    
+                    18. 查找文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.19" data-path="chap19.html">
+            
+                <a href="chap19.html">
+            
+                    
+                    19. 归档和备份
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.20" data-path="chap20.html">
+            
+                <a href="chap20.html">
+            
+                    
+                    20. 正则表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.21" data-path="chap21.html">
+            
+                <a href="chap21.html">
+            
+                    
+                    21. 文本处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.22" data-path="chap22.html">
+            
+                <a href="chap22.html">
+            
+                    
+                    22. 格式化输出
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.23" data-path="chap23.html">
+            
+                <a href="chap23.html">
+            
+                    
+                    23. 打印
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.24" data-path="chap24.html">
+            
+                <a href="chap24.html">
+            
+                    
+                    24. 编译程序
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.25" data-path="chap25.html">
+            
+                <a href="chap25.html">
+            
+                    
+                    25. 编写第一个 Shell 脚本
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.26" data-path="chap26.html">
+            
+                <a href="chap26.html">
+            
+                    
+                    26. 启动一个项目
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.27" data-path="chap27.html">
+            
+                <a href="chap27.html">
+            
+                    
+                    27. 自顶向下设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.28" data-path="chap28.html">
+            
+                <a href="chap28.html">
+            
+                    
+                    28. 流程控制：if 分支结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.29" data-path="chap29.html">
+            
+                <a href="chap29.html">
+            
+                    
+                    29. 读取键盘输入
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.1.30" data-path="chap30.html">
+            
+                <a href="chap30.html">
+            
+                    
+                    30. 流程控制：while/until 循环
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.31" data-path="chap31.html">
+            
+                <a href="chap31.html">
+            
+                    
+                    31. 疑难排解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.32" data-path="chap32.html">
+            
+                <a href="chap32.html">
+            
+                    
+                    32. 流程控制：case 分支
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.33" data-path="chap33.html">
+            
+                <a href="chap33.html">
+            
+                    
+                    33. 位置参数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.34" data-path="chap34.html">
+            
+                <a href="chap34.html">
+            
+                    
+                    34. 流程控制：for 循环
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.35" data-path="chap35.html">
+            
+                <a href="chap35.html">
+            
+                    
+                    35. 字符串和数字
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.36" data-path="chap36.html">
+            
+                <a href="chap36.html">
+            
+                    
+                    36. 数组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.37" data-path="chap37.html">
+            
+                <a href="chap37.html">
+            
+                    
+                    37. 奇珍异宝
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本書使用 GitBook 釋出
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >30. 流程控制：while/until 循环</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <p>&#x5728;&#x524D;&#x9762;&#x7684;&#x7AE0;&#x8282;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x5F00;&#x53D1;&#x4E86;&#x83DC;&#x5355;&#x9A71;&#x52A8;&#x7A0B;&#x5E8F;&#xFF0C;&#x6765;&#x4EA7;&#x751F;&#x5404;&#x79CD;&#x5404;&#x6837;&#x7684;&#x7CFB;&#x7EDF;&#x4FE1;&#x606F;&#x3002;&#x867D;&#x7136;&#x7A0B;&#x5E8F;&#x80FD;&#x591F;&#x8FD0;&#x884C;&#xFF0C;
+&#x4F46;&#x5B83;&#x4ECD;&#x7136;&#x5B58;&#x5728;&#x91CD;&#x5927;&#x7684;&#x53EF;&#x7528;&#x95EE;&#x9898;&#x3002;&#x5B83;&#x53EA;&#x80FD;&#x6267;&#x884C;&#x5355;&#x4E00;&#x7684;&#x9009;&#x62E9;&#xFF0C;&#x7136;&#x540E;&#x7EC8;&#x6B62;&#x3002;&#x66F4;&#x7CDF;&#x7CD5;&#x5730;&#x662F;&#xFF0C;&#x5982;&#x679C;&#x505A;&#x4E86;&#x4E00;&#x4E2A;
+&#x65E0;&#x6548;&#x7684;&#x9009;&#x62E9;&#xFF0C;&#x7A0B;&#x5E8F;&#x4F1A;&#x4EE5;&#x9519;&#x8BEF;&#x7EC8;&#x6B62;&#xFF0C;&#x800C;&#x6CA1;&#x6709;&#x7ED9;&#x7528;&#x6237;&#x63D0;&#x4F9B;&#x518D;&#x8BD5;&#x4E00;&#x6B21;&#x7684;&#x673A;&#x4F1A;&#x3002;&#x5982;&#x679C;&#x6211;&#x4EEC;&#x80FD;&#x6784;&#x5EFA;&#x7A0B;&#x5E8F;&#xFF0C;
+&#x4EE5;&#x81F4;&#x4E8E;&#x7A0B;&#x5E8F;&#x80FD;&#x591F;&#x91CD;&#x590D;&#x663E;&#x793A;&#x83DC;&#x5355;&#xFF0C;&#x800C;&#x4E14;&#x80FD;&#x4E00;&#x6B21;&#x7531;&#x4E00;&#x6B21;&#x7684;&#x9009;&#x62E9;&#xFF0C;&#x76F4;&#x5230;&#x7528;&#x6237;&#x9009;&#x62E9;&#x9000;&#x51FA;&#x7A0B;&#x5E8F;&#xFF0C;&#x8FD9;&#x6837;&#x7684;&#x7A0B;&#x5E8F;&#x4F1A;&#x66F4;&#x597D;&#x4E00;&#x4E9B;&#x3002;</p>
+<p>&#x5728;&#x8FD9;&#x4E00;&#x7AE0;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x5C06;&#x770B;&#x4E00;&#x4E2A;&#x53EB;&#x505A;&#x5FAA;&#x73AF;&#x7684;&#x7A0B;&#x5E8F;&#x6982;&#x5FF5;&#xFF0C;&#x5176;&#x53EF;&#x7528;&#x6765;&#x4F7F;&#x7A0B;&#x5E8F;&#x7684;&#x67D0;&#x4E9B;&#x90E8;&#x5206;&#x91CD;&#x590D;&#x3002;shell &#x4E3A;&#x5FAA;&#x73AF;&#x63D0;&#x4F9B;&#x4E86;&#x4E09;&#x4E2A;&#x590D;&#x5408;&#x547D;&#x4EE4;&#x3002;
+&#x672C;&#x7AE0;&#x6211;&#x4EEC;&#x5C06;&#x67E5;&#x770B;&#x5176;&#x4E2D;&#x7684;&#x4E24;&#x4E2A;&#x547D;&#x4EE4;&#xFF0C;&#x968F;&#x540E;&#x7AE0;&#x8282;&#x4ECB;&#x7ECD;&#x7B2C;&#x4E09;&#x4E2A;&#x547D;&#x4EE4;&#x3002;</p>
+<h3 id="&#x5FAA;&#x73AF;">&#x5FAA;&#x73AF;</h3>
+<p>&#x65E5;&#x5E38;&#x751F;&#x6D3B;&#x4E2D;&#x5145;&#x6EE1;&#x4E86;&#x91CD;&#x590D;&#x6027;&#x7684;&#x6D3B;&#x52A8;&#x3002;&#x6BCF;&#x5929;&#x53BB;&#x6563;&#x6B65;&#xFF0C;&#x905B;&#x72D7;&#xFF0C;&#x5207;&#x80E1;&#x841D;&#x535C;&#xFF0C;&#x6240;&#x6709;&#x4EFB;&#x52A1;&#x90FD;&#x8981;&#x91CD;&#x590D;&#x4E00;&#x7CFB;&#x5217;&#x7684;&#x6B65;&#x9AA4;&#x3002;
+&#x8BA9;&#x6211;&#x4EEC;&#x4EE5;&#x5207;&#x80E1;&#x841D;&#x535C;&#x4E3A;&#x4F8B;&#x3002;&#x5982;&#x679C;&#x6211;&#x4EEC;&#x7528;&#x4F2A;&#x7801;&#x8868;&#x8FBE;&#x8FD9;&#x79CD;&#x6D3B;&#x52A8;&#xFF0C;&#x5B83;&#x53EF;&#x80FD;&#x770B;&#x8D77;&#x6765;&#x50CF;&#x8FD9;&#x6837;&#xFF1A;</p>
+<ol>
+<li><p>&#x51C6;&#x5907;&#x5207;&#x83DC;&#x677F;</p>
+</li>
+<li><p>&#x51C6;&#x5907;&#x83DC;&#x5200;</p>
+</li>
+<li><p>&#x628A;&#x80E1;&#x841D;&#x535C;&#x653E;&#x5230;&#x5207;&#x83DC;&#x677F;&#x4E0A;</p>
+</li>
+<li><p>&#x63D0;&#x8D77;&#x83DC;&#x5200;</p>
+</li>
+<li><p>&#x5411;&#x524D;&#x63A8;&#x8FDB;&#x80E1;&#x841D;&#x535C;</p>
+</li>
+<li><p>&#x5207;&#x80E1;&#x841D;&#x535C;</p>
+</li>
+<li><p>&#x5982;&#x679C;&#x5207;&#x5B8C;&#x6574;&#x4E2A;&#x80E1;&#x841D;&#x535C;&#xFF0C;&#x5C31;&#x9000;&#x51FA;&#xFF0C;&#x8981;&#x4E0D;&#x7136;&#x56DE;&#x5230;&#x7B2C;&#x56DB;&#x6B65;&#x7EE7;&#x7EED;&#x6267;&#x884C;</p>
+</li>
+</ol>
+<p>&#x4ECE;&#x7B2C;&#x56DB;&#x6B65;&#x5230;&#x7B2C;&#x4E03;&#x6B65;&#x5F62;&#x6210;&#x4E00;&#x4E2A;&#x5FAA;&#x73AF;&#x3002;&#x91CD;&#x590D;&#x6267;&#x884C;&#x5FAA;&#x73AF;&#x5185;&#x7684;&#x52A8;&#x4F5C;&#x76F4;&#x5230;&#x6EE1;&#x8DB3;&#x6761;&#x4EF6;&#x201C;&#x5207;&#x5B8C;&#x6574;&#x4E2A;&#x80E1;&#x841D;&#x535C;&#x201D;&#x3002;</p>
+<h4 id="while">while</h4>
+<p>bash &#x80FD;&#x591F;&#x8868;&#x8FBE;&#x76F8;&#x4F3C;&#x7684;&#x60F3;&#x6CD5;&#x3002;&#x6BD4;&#x65B9;&#x8BF4;&#x6211;&#x4EEC;&#x60F3;&#x8981;&#x6309;&#x7167;&#x987A;&#x5E8F;&#x4ECE;1&#x5230;5&#x663E;&#x793A;&#x4E94;&#x4E2A;&#x6570;&#x5B57;&#x3002;&#x53EF;&#x5982;&#x4E0B;&#x6784;&#x9020;&#x4E00;&#x4E2A; bash &#x811A;&#x672C;&#xFF1A;</p>
+<pre><code>#!/bin/bash
+# while-count: display a series of numbers
+count=1
+while [ $count -le 5 ]; do
+    echo $count
+    count=$((count + 1))
+done
+echo &quot;Finished.&quot;
+</code></pre><p>&#x5F53;&#x6267;&#x884C;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x8FD9;&#x4E2A;&#x811A;&#x672C;&#x663E;&#x793A;&#x5982;&#x4E0B;&#x4FE1;&#x606F;&#xFF1A;</p>
+<pre><code>[me@linuxbox ~]$ while-count
+1
+2
+3
+4
+5
+Finished.
+</code></pre><p>while &#x547D;&#x4EE4;&#x7684;&#x8BED;&#x6CD5;&#x662F;&#xFF1A;</p>
+<pre><code>while commands; do commands; done
+</code></pre><p>&#x548C; if &#x4E00;&#x6837;&#xFF0C; while &#x8BA1;&#x7B97;&#x4E00;&#x7CFB;&#x5217;&#x547D;&#x4EE4;&#x7684;&#x9000;&#x51FA;&#x72B6;&#x6001;&#x3002;&#x53EA;&#x8981;&#x9000;&#x51FA;&#x72B6;&#x6001;&#x4E3A;&#x96F6;&#xFF0C;&#x5B83;&#x5C31;&#x6267;&#x884C;&#x5FAA;&#x73AF;&#x5185;&#x7684;&#x547D;&#x4EE4;&#x3002;
+&#x5728;&#x4E0A;&#x9762;&#x7684;&#x811A;&#x672C;&#x4E2D;&#xFF0C;&#x521B;&#x5EFA;&#x4E86;&#x53D8;&#x91CF; count &#xFF0C;&#x5E76;&#x521D;&#x59CB;&#x5316;&#x4E3A;1&#x3002; while &#x547D;&#x4EE4;&#x5C06;&#x4F1A;&#x8BA1;&#x7B97; test &#x547D;&#x4EE4;&#x7684;&#x9000;&#x51FA;&#x72B6;&#x6001;&#x3002;
+&#x53EA;&#x8981; test &#x547D;&#x4EE4;&#x8FD4;&#x56DE;&#x9000;&#x51FA;&#x72B6;&#x6001;&#x96F6;&#xFF0C;&#x5FAA;&#x73AF;&#x5185;&#x7684;&#x6240;&#x6709;&#x547D;&#x4EE4;&#x5C31;&#x4F1A;&#x6267;&#x884C;&#x3002;&#x6BCF;&#x6B21;&#x5FAA;&#x73AF;&#x7ED3;&#x675F;&#x4E4B;&#x540E;&#xFF0C;&#x4F1A;&#x91CD;&#x590D;&#x6267;&#x884C; test &#x547D;&#x4EE4;&#x3002;
+&#x7B2C;&#x516D;&#x6B21;&#x5FAA;&#x73AF;&#x4E4B;&#x540E;&#xFF0C; count &#x7684;&#x6570;&#x503C;&#x589E;&#x52A0;&#x5230;6&#xFF0C; test &#x547D;&#x4EE4;&#x4E0D;&#x518D;&#x8FD4;&#x56DE;&#x9000;&#x51FA;&#x72B6;&#x6001;&#x96F6;&#xFF0C;&#x4E14;&#x5FAA;&#x73AF;&#x7EC8;&#x6B62;&#x3002;
+&#x7A0B;&#x5E8F;&#x7EE7;&#x7EED;&#x6267;&#x884C;&#x5FAA;&#x73AF;&#x4E4B;&#x540E;&#x7684;&#x8BED;&#x53E5;&#x3002;</p>
+<p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4E00;&#x4E2A; while &#x5FAA;&#x73AF;&#xFF0C;&#x6765;&#x63D0;&#x9AD8;&#x524D;&#x9762;&#x7AE0;&#x8282;&#x7684; read-menu &#x7A0B;&#x5E8F;&#xFF1A;</p>
+<pre><code>#!/bin/bash
+# while-menu: a menu driven system information program
+DELAY=3 # Number of seconds to display results
+while [[ $REPLY != 0 ]]; do
+    clear
+    cat &lt;&lt;- _EOF_
+        Please Select:
+        1. Display System Information
+        2. Display Disk Space
+        3. Display Home Space Utilization
+        0. Quit
+    _EOF_
+    read -p &quot;Enter selection [0-3] &gt; &quot;
+    if [[ $REPLY =~ ^[0-3]$ ]]; then
+        if [[ $REPLY == 1 ]]; then
+        echo &quot;Hostname: $HOSTNAME&quot;
+        uptime
+        sleep $DELAY
+        fi
+    if [[ $REPLY == 2 ]]; then
+        df -h
+        sleep $DELAY
+    fi
+    if [[ $REPLY == 3 ]]; then
+        if [[ $(id -u) -eq 0 ]]; then
+            echo &quot;Home Space Utilization (All Users)&quot;
+            du -sh /home/*
+        else
+            echo &quot;Home Space Utilization ($USER)&quot;
+            du -sh $HOME
+        fi
+    sleep $DELAY
+    fi
+    else
+        echo &quot;Invalid entry.&quot;
+        sleep $DELAY
+    fi
+done
+echo &quot;Program terminated.&quot;
+</code></pre><p>&#x901A;&#x8FC7;&#x628A;&#x83DC;&#x5355;&#x5305;&#x542B;&#x5728; while &#x5FAA;&#x73AF;&#x4E2D;&#xFF0C;&#x6BCF;&#x6B21;&#x7528;&#x6237;&#x9009;&#x62E9;&#x4E4B;&#x540E;&#xFF0C;&#x6211;&#x4EEC;&#x80FD;&#x591F;&#x8BA9;&#x7A0B;&#x5E8F;&#x91CD;&#x590D;&#x663E;&#x793A;&#x83DC;&#x5355;&#x3002;&#x53EA;&#x8981; REPLY &#x4E0D;
+&#x7B49;&#x4E8E;&quot;0&quot;&#xFF0C;&#x5FAA;&#x73AF;&#x5C31;&#x4F1A;&#x7EE7;&#x7EED;&#xFF0C;&#x83DC;&#x5355;&#x5C31;&#x80FD;&#x663E;&#x793A;&#xFF0C;&#x4ECE;&#x800C;&#x7528;&#x6237;&#x6709;&#x673A;&#x4F1A;&#x91CD;&#x65B0;&#x9009;&#x62E9;&#x3002;&#x6BCF;&#x6B21;&#x52A8;&#x4F5C;&#x5B8C;&#x6210;&#x4E4B;&#x540E;&#xFF0C;&#x4F1A;&#x6267;&#x884C;&#x4E00;&#x4E2A;
+ sleep &#x547D;&#x4EE4;&#xFF0C;&#x6240;&#x4EE5;&#x5728;&#x6E05;&#x7A7A;&#x5C4F;&#x5E55;&#x548C;&#x91CD;&#x65B0;&#x663E;&#x793A;&#x83DC;&#x5355;&#x4E4B;&#x524D;&#xFF0C;&#x7A0B;&#x5E8F;&#x5C06;&#x4F1A;&#x505C;&#x987F;&#x51E0;&#x79D2;&#x949F;&#xFF0C;&#x4E3A;&#x7684;&#x662F;&#x80FD;&#x591F;&#x770B;&#x5230;&#x9009;&#x9879;&#x8F93;&#x51FA;&#x7ED3;&#x679C;&#x3002;
+&#x4E00;&#x65E6; REPLY &#x7B49;&#x4E8E;&#x201C;0&#x201D;&#xFF0C;&#x5219;&#x8868;&#x793A;&#x9009;&#x62E9;&#x4E86;&#x201C;&#x9000;&#x51FA;&#x201D;&#x9009;&#x9879;&#xFF0C;&#x5FAA;&#x73AF;&#x5C31;&#x4F1A;&#x7EC8;&#x6B62;&#xFF0C;&#x7A0B;&#x5E8F;&#x7EE7;&#x7EED;&#x6267;&#x884C; done &#x8BED;&#x53E5;&#x4E4B;&#x540E;&#x7684;&#x4EE3;&#x7801;&#x3002;</p>
+<h3 id="&#x8DF3;&#x51FA;&#x5FAA;&#x73AF;">&#x8DF3;&#x51FA;&#x5FAA;&#x73AF;</h3>
+<p>bash &#x63D0;&#x4F9B;&#x4E86;&#x4E24;&#x4E2A;&#x5185;&#x90E8;&#x547D;&#x4EE4;&#xFF0C;&#x5B83;&#x4EEC;&#x53EF;&#x4EE5;&#x7528;&#x6765;&#x5728;&#x5FAA;&#x73AF;&#x5185;&#x90E8;&#x63A7;&#x5236;&#x7A0B;&#x5E8F;&#x6D41;&#x7A0B;&#x3002;&#x8FD9;&#x4E2A; break &#x547D;&#x4EE4;&#x7ACB;&#x5373;&#x7EC8;&#x6B62;&#x4E00;&#x4E2A;&#x5FAA;&#x73AF;&#xFF0C;
+&#x4E14;&#x7A0B;&#x5E8F;&#x7EE7;&#x7EED;&#x6267;&#x884C;&#x5FAA;&#x73AF;&#x4E4B;&#x540E;&#x7684;&#x8BED;&#x53E5;&#x3002;&#x8FD9;&#x4E2A; continue &#x547D;&#x4EE4;&#x5BFC;&#x81F4;&#x7A0B;&#x5E8F;&#x8DF3;&#x8FC7;&#x5FAA;&#x73AF;&#x4E2D;&#x5269;&#x4F59;&#x7684;&#x8BED;&#x53E5;&#xFF0C;&#x4E14;&#x7A0B;&#x5E8F;&#x7EE7;&#x7EED;&#x6267;&#x884C;
+&#x4E0B;&#x4E00;&#x6B21;&#x5FAA;&#x73AF;&#x3002;&#x8FD9;&#x91CC;&#x6211;&#x4EEC;&#x770B;&#x770B;&#x91C7;&#x7528;&#x4E86; break &#x548C; continue &#x4E24;&#x4E2A;&#x547D;&#x4EE4;&#x7684; while-menu &#x7A0B;&#x5E8F;&#x7248;&#x672C;&#xFF1A;</p>
+<pre><code>#!/bin/bash
+# while-menu2: a menu driven system information program
+DELAY=3 # Number of seconds to display results
+while true; do
+    clear
+    cat &lt;&lt;- _EOF_
+        Please Select:
+        1. Display System Information
+        2. Display Disk Space
+        3. Display Home Space Utilization
+        0. Quit
+    _EOF_
+    read -p &quot;Enter selection [0-3] &gt; &quot;
+    if [[ $REPLY =~ ^[0-3]$ ]]; then
+        if [[ $REPLY == 1 ]]; then
+        echo &quot;Hostname: $HOSTNAME&quot;
+        uptime
+        sleep $DELAY
+        continue
+    fi
+    if [[ $REPLY == 2 ]]; then
+        df -h
+        sleep $DELAY
+        continue
+    fi
+    if [[ $REPLY == 3 ]]; then
+        if [[ $(id -u) -eq 0 ]]; then
+            echo &quot;Home Space Utilization (All Users)&quot;
+            du -sh /home/*
+        else
+            echo &quot;Home Space Utilization ($USER)&quot;
+            du -sh $HOME
+        fi
+        sleep $DELAY
+        continue
+    fi
+    if [[ $REPLY == 0 ]]; then
+        break
+    fi
+    else
+        echo &quot;Invalid entry.&quot;
+        sleep $DELAY
+    fi
+done
+echo &quot;Program terminated.&quot;
+</code></pre><p>&#x5728;&#x8FD9;&#x4E2A;&#x811A;&#x672C;&#x7248;&#x672C;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x8BBE;&#x7F6E;&#x4E86;&#x4E00;&#x4E2A;&#x65E0;&#x9650;&#x5FAA;&#x73AF;&#xFF08;&#x5C31;&#x662F;&#x81EA;&#x5DF1;&#x6C38;&#x8FDC;&#x4E0D;&#x4F1A;&#x7EC8;&#x6B62;&#x7684;&#x5FAA;&#x73AF;&#xFF09;&#xFF0C;&#x901A;&#x8FC7;&#x4F7F;&#x7528; true &#x547D;&#x4EE4;
+&#x4E3A; while &#x63D0;&#x4F9B;&#x4E00;&#x4E2A;&#x9000;&#x51FA;&#x72B6;&#x6001;&#x3002;&#x56E0;&#x4E3A; true &#x7684;&#x9000;&#x51FA;&#x72B6;&#x6001;&#x603B;&#x662F;&#x4E3A;&#x96F6;&#xFF0C;&#x6240;&#x4EE5;&#x5FAA;&#x73AF;&#x6C38;&#x8FDC;&#x4E0D;&#x4F1A;&#x7EC8;&#x6B62;&#x3002;&#x8FD9;&#x662F;&#x4E00;&#x4E2A;
+&#x4EE4;&#x4EBA;&#x60CA;&#x8BB6;&#x7684;&#x901A;&#x7528;&#x811A;&#x672C;&#x7F16;&#x7A0B;&#x6280;&#x5DE7;&#x3002;&#x56E0;&#x4E3A;&#x5FAA;&#x73AF;&#x81EA;&#x5DF1;&#x6C38;&#x8FDC;&#x4E0D;&#x4F1A;&#x7ED3;&#x675F;&#xFF0C;&#x6240;&#x4EE5;&#x7531;&#x7A0B;&#x5E8F;&#x5458;&#x5728;&#x6070;&#x5F53;&#x7684;&#x65F6;&#x5019;&#x63D0;&#x4F9B;&#x67D0;&#x79CD;&#x65B9;&#x6CD5;&#x6765;&#x8DF3;&#x51FA;&#x5FAA;&#x73AF;&#x3002;
+&#x6B64;&#x811A;&#x672C;&#xFF0C;&#x5F53;&#x9009;&#x62E9;&quot;0&quot;&#x9009;&#x9879;&#x7684;&#x65F6;&#x5019;&#xFF0C;break &#x547D;&#x4EE4;&#x88AB;&#x7528;&#x6765;&#x9000;&#x51FA;&#x5FAA;&#x73AF;&#x3002;continue &#x547D;&#x4EE4;&#x88AB;&#x5305;&#x542B;&#x5728;&#x5176;&#x5B83;&#x9009;&#x62E9;&#x52A8;&#x4F5C;&#x7684;&#x672B;&#x5C3E;&#xFF0C;
+&#x4E3A;&#x7684;&#x662F;&#x66F4;&#x52A0;&#x9AD8;&#x6548;&#x6267;&#x884C;&#x3002;&#x901A;&#x8FC7;&#x4F7F;&#x7528; continue &#x547D;&#x4EE4;&#xFF0C;&#x5F53;&#x4E00;&#x4E2A;&#x9009;&#x9879;&#x786E;&#x5B9A;&#x540E;&#xFF0C;&#x7A0B;&#x5E8F;&#x4F1A;&#x8DF3;&#x8FC7;&#x4E0D;&#x9700;&#x8981;&#x7684;&#x4EE3;&#x7801;&#x3002;&#x4F8B;&#x5982;&#xFF0C;
+&#x5982;&#x679C;&#x9009;&#x62E9;&#x4E86;&#x9009;&#x9879;&quot;1&quot;&#xFF0C;&#x5219;&#x6CA1;&#x6709;&#x7406;&#x7531;&#x53BB;&#x6D4B;&#x8BD5;&#x5176;&#x5B83;&#x9009;&#x9879;&#x3002;</p>
+<h4 id="until">until</h4>
+<p>&#x8FD9;&#x4E2A; until &#x547D;&#x4EE4;&#x4E0E; while &#x975E;&#x5E38;&#x76F8;&#x4F3C;&#xFF0C;&#x9664;&#x4E86;&#x5F53;&#x9047;&#x5230;&#x4E00;&#x4E2A;&#x975E;&#x96F6;&#x9000;&#x51FA;&#x72B6;&#x6001;&#x7684;&#x65F6;&#x5019;&#xFF0C; while &#x9000;&#x51FA;&#x5FAA;&#x73AF;&#xFF0C;
+&#x800C; until &#x4E0D;&#x9000;&#x51FA;&#x3002;&#x4E00;&#x4E2A; until &#x5FAA;&#x73AF;&#x4F1A;&#x7EE7;&#x7EED;&#x6267;&#x884C;&#x76F4;&#x5230;&#x5B83;&#x63A5;&#x53D7;&#x4E86;&#x4E00;&#x4E2A;&#x9000;&#x51FA;&#x72B6;&#x6001;&#x96F6;&#x3002;&#x5728;&#x6211;&#x4EEC;&#x7684; while-count &#x811A;&#x672C;&#x4E2D;&#xFF0C;
+&#x6211;&#x4EEC;&#x7EE7;&#x7EED;&#x6267;&#x884C;&#x5FAA;&#x73AF;&#x76F4;&#x5230; count &#x53D8;&#x91CF;&#x7684;&#x6570;&#x503C;&#x5C0F;&#x4E8E;&#x6216;&#x7B49;&#x4E8E;5&#x3002;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5F97;&#x5230;&#x76F8;&#x540C;&#x7684;&#x7ED3;&#x679C;&#xFF0C;&#x901A;&#x8FC7;&#x5728;&#x811A;&#x672C;&#x4E2D;&#x4F7F;&#x7528; until &#x547D;&#x4EE4;&#xFF1A;</p>
+<pre><code>#!/bin/bash
+# until-count: display a series of numbers
+count=1
+until [ $count -gt 5 ]; do
+    echo $count
+    count=$((count + 1))
+done
+echo &quot;Finished.&quot;
+</code></pre><p>&#x901A;&#x8FC7;&#x628A; test &#x8868;&#x8FBE;&#x5F0F;&#x66F4;&#x6539;&#x4E3A; $count -gt 5 &#xFF0C; until &#x4F1A;&#x5728;&#x6B63;&#x786E;&#x7684;&#x65F6;&#x95F4;&#x7EC8;&#x6B62;&#x5FAA;&#x73AF;&#x3002;&#x51B3;&#x5B9A;&#x4F7F;&#x7528; while &#x5FAA;&#x73AF;
+&#x8FD8;&#x662F; until &#x5FAA;&#x73AF;&#xFF0C;&#x901A;&#x5E38;&#x662F;&#x9009;&#x62E9;&#x4E00;&#x4E2A; test &#x53EF;&#x4EE5;&#x7F16;&#x5199;&#x5730;&#x5F88;&#x6E05;&#x695A;&#x7684;&#x5FAA;&#x73AF;&#x3002;</p>
+<h3 id="&#x4F7F;&#x7528;&#x5FAA;&#x73AF;&#x8BFB;&#x53D6;&#x6587;&#x4EF6;">&#x4F7F;&#x7528;&#x5FAA;&#x73AF;&#x8BFB;&#x53D6;&#x6587;&#x4EF6;</h3>
+<p>while &#x548C; until &#x80FD;&#x591F;&#x5904;&#x7406;&#x6807;&#x51C6;&#x8F93;&#x5165;&#x3002;&#x8FD9;&#x5C31;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; while &#x548C; until &#x5904;&#x7406;&#x6587;&#x4EF6;&#x3002;&#x5728;&#x4E0B;&#x9762;&#x7684;&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C;
+&#x6211;&#x4EEC;&#x5C06;&#x663E;&#x793A;&#x5728;&#x524D;&#x9762;&#x7AE0;&#x8282;&#x4E2D;&#x4F7F;&#x7528;&#x7684; distros.txt &#x6587;&#x4EF6;&#x7684;&#x5185;&#x5BB9;&#xFF1A;</p>
+<pre><code>#!/bin/bash
+# while-read: read lines from a file
+while read distro version release; do
+    printf &quot;Distro: %s\tVersion: %s\tReleased: %s\n&quot; \
+        $distro \
+        $version \
+        $release
+done &lt; distros.txt
+</code></pre><p>&#x4E3A;&#x4E86;&#x91CD;&#x5B9A;&#x5411;&#x6587;&#x4EF6;&#x5230;&#x5FAA;&#x73AF;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x628A;&#x91CD;&#x5B9A;&#x5411;&#x64CD;&#x4F5C;&#x7B26;&#x653E;&#x7F6E;&#x5230; done &#x8BED;&#x53E5;&#x4E4B;&#x540E;&#x3002;&#x5FAA;&#x73AF;&#x5C06;&#x4F7F;&#x7528; read &#x4ECE;&#x91CD;&#x5B9A;&#x5411;&#x6587;&#x4EF6;&#x4E2D;&#x8BFB;&#x53D6;
+&#x5B57;&#x6BB5;&#x3002;&#x8FD9;&#x4E2A; read &#x547D;&#x4EE4;&#x8BFB;&#x53D6;&#x6BCF;&#x4E2A;&#x6587;&#x672C;&#x884C;&#x4E4B;&#x540E;&#xFF0C;&#x5C06;&#x4F1A;&#x9000;&#x51FA;&#xFF0C;&#x5176;&#x9000;&#x51FA;&#x72B6;&#x6001;&#x4E3A;&#x96F6;&#xFF0C;&#x76F4;&#x5230;&#x5230;&#x8FBE;&#x6587;&#x4EF6;&#x672B;&#x5C3E;&#x3002;&#x5230;&#x65F6;&#x5019;&#xFF0C;&#x5B83;&#x7684;
+&#x9000;&#x51FA;&#x72B6;&#x6001;&#x4E3A;&#x975E;&#x96F6;&#x6570;&#x503C;&#xFF0C;&#x56E0;&#x6B64;&#x7EC8;&#x6B62;&#x5FAA;&#x73AF;&#x3002;&#x4E5F;&#x6709;&#x53EF;&#x80FD;&#x628A;&#x6807;&#x51C6;&#x8F93;&#x5165;&#x7BA1;&#x9053;&#x5230;&#x5FAA;&#x73AF;&#x4E2D;&#x3002;</p>
+<pre><code>#!/bin/bash
+# while-read2: read lines from a file
+sort -k 1,1 -k 2n distros.txt | while read distro version release; do
+    printf &quot;Distro: %s\tVersion: %s\tReleased: %s\n&quot; \
+        $distro \
+        $version \
+        $release
+done
+</code></pre><p>&#x8FD9;&#x91CC;&#x6211;&#x4EEC;&#x63A5;&#x53D7; sort &#x547D;&#x4EE4;&#x7684;&#x6807;&#x51C6;&#x8F93;&#x51FA;&#xFF0C;&#x7136;&#x540E;&#x663E;&#x793A;&#x6587;&#x672C;&#x6D41;&#x3002;&#x7136;&#x800C;&#xFF0C;&#x56E0;&#x4E3A;&#x7BA1;&#x9053;&#x5C06;&#x4F1A;&#x5728;&#x5B50; shell &#x4E2D;&#x6267;&#x884C;
+&#x5FAA;&#x73AF;&#xFF0C;&#x5F53;&#x5FAA;&#x73AF;&#x7EC8;&#x6B62;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5FAA;&#x73AF;&#x4E2D;&#x521B;&#x5EFA;&#x7684;&#x4EFB;&#x610F;&#x53D8;&#x91CF;&#x6216;&#x8D4B;&#x503C;&#x7684;&#x53D8;&#x91CF;&#x90FD;&#x4F1A;&#x6D88;&#x5931;&#xFF0C;&#x8BB0;&#x4F4F;&#x8FD9;&#x4E00;&#x70B9;&#x5F88;&#x91CD;&#x8981;&#x3002;</p>
+<h3 id="&#x603B;&#x7ED3;">&#x603B;&#x7ED3;</h3>
+<p>&#x901A;&#x8FC7;&#x5F15;&#x5165;&#x5FAA;&#x73AF;&#xFF0C;&#x548C;&#x6211;&#x4EEC;&#x4E4B;&#x524D;&#x9047;&#x5230;&#x7684;&#x5206;&#x652F;&#xFF0C;&#x5B50;&#x4F8B;&#x7A0B;&#x548C;&#x5E8F;&#x5217;&#xFF0C;&#x6211;&#x4EEC;&#x5DF2;&#x7ECF;&#x4ECB;&#x7ECD;&#x4E86;&#x7A0B;&#x5E8F;&#x6D41;&#x7A0B;&#x63A7;&#x5236;&#x7684;&#x4E3B;&#x8981;&#x7C7B;&#x578B;&#x3002;
+bash &#x8FD8;&#x6709;&#x4E00;&#x4E9B;&#x9526;&#x56CA;&#x5999;&#x8BA1;&#xFF0C;&#x4F46;&#x5B83;&#x4EEC;&#x90FD;&#x662F;&#x5173;&#x4E8E;&#x8FD9;&#x4E9B;&#x57FA;&#x672C;&#x6982;&#x5FF5;&#x7684;&#x5B8C;&#x5584;&#x3002;</p>
+<h3 id="&#x62D3;&#x5C55;&#x9605;&#x8BFB;">&#x62D3;&#x5C55;&#x9605;&#x8BFB;</h3>
+<ul>
+<li><p>Linux &#x6587;&#x6863;&#x5DE5;&#x7A0B;&#x4E2D;&#x7684; Bash &#x521D;&#x5B66;&#x8005;&#x6307;&#x5357;&#x4E00;&#x4E66;&#x4E2D;&#x4ECB;&#x7ECD;&#x4E86;&#x66F4;&#x591A;&#x7684; while &#x5FAA;&#x73AF;&#x5B9E;&#x4F8B;&#xFF1A;</p>
+<p>  <a href="http://tldp.org/LDP/Bash-Beginners-Guide/html/sect_09_02.html" target="_blank">http://tldp.org/LDP/Bash-Beginners-Guide/html/sect_09_02.html</a></p>
+</li>
+<li><p>Wikipedia &#x4E2D;&#x6709;&#x4E00;&#x7BC7;&#x5173;&#x4E8E;&#x5FAA;&#x73AF;&#x7684;&#x6587;&#x7AE0;&#xFF0C;&#x5176;&#x662F;&#x4E00;&#x7BC7;&#x6BD4;&#x8F83;&#x957F;&#x7684;&#x5173;&#x4E8E;&#x6D41;&#x7A0B;&#x63A7;&#x5236;&#x7684;&#x6587;&#x7AE0;&#x4E2D;&#x7684;&#x4E00;&#x90E8;&#x5206;&#xFF1A;</p>
+<p>  <a href="http://en.wikipedia.org/wiki/Control_flow#Loops" target="_blank">http://en.wikipedia.org/wiki/Control_flow#Loops</a></p>
+</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="chap29.html" class="navigation navigation-prev " aria-label="Previous page: 29. 读取键盘输入">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="chap31.html" class="navigation navigation-next " aria-label="Next page: 31. 疑难排解">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"layout":"book-zh","title":"30. 流程控制：while/until 循环","level":"1.1.30","depth":2,"next":{"title":"31. 疑难排解","level":"1.1.31","depth":2,"path":"chap31.md","ref":"chap31.md","articles":[]},"previous":{"title":"29. 读取键盘输入","level":"1.1.29","depth":2,"path":"chap29.md","ref":"chap29.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"zh","gitbook":"*"},"file":{"path":"chap30.md","mtime":"2017-01-12T13:05:37.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-01-12T13:06:00.166Z"},"basePath":".","book":{"language":"zh"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

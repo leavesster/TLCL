@@ -1,0 +1,1655 @@
+
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>28. 流程控制：if 分支结构 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="chap29.html" />
+    
+    
+    <link rel="prev" href="chap27.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.1" data-path="chap01.html">
+            
+                <a href="chap01.html">
+            
+                    
+                    01. 引言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2" data-path="chap02.html">
+            
+                <a href="chap02.html">
+            
+                    
+                    02. 什么是 shell
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3" data-path="chap03.html">
+            
+                <a href="chap03.html">
+            
+                    
+                    03. 文件系统中跳转
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4" data-path="chap04.html">
+            
+                <a href="chap04.html">
+            
+                    
+                    04. 探究操作系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.5" data-path="chap05.html">
+            
+                <a href="chap05.html">
+            
+                    
+                    05. 操作文件和目录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.6" data-path="chap06.html">
+            
+                <a href="chap06.html">
+            
+                    
+                    06. 使用命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.7" data-path="chap07.html">
+            
+                <a href="chap07.html">
+            
+                    
+                    07. 重定向
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.8" data-path="chap08.html">
+            
+                <a href="chap08.html">
+            
+                    
+                    08. 从 shell 眼中看世界
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.9" data-path="chap09.html">
+            
+                <a href="chap09.html">
+            
+                    
+                    09. 键盘高级操作技巧
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.10" data-path="chap10.html">
+            
+                <a href="chap10.html">
+            
+                    
+                    10. 权限
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.11" data-path="chap11.html">
+            
+                <a href="chap11.html">
+            
+                    
+                    11. 进程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.12" data-path="chap12.html">
+            
+                <a href="chap12.html">
+            
+                    
+                    12. shell 环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.13" data-path="chap13.html">
+            
+                <a href="chap13.html">
+            
+                    
+                    13. vi 简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.14" data-path="chap14.html">
+            
+                <a href="chap14.html">
+            
+                    
+                    14. 自定制 shell 提示符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.15" data-path="chap15.html">
+            
+                <a href="chap15.html">
+            
+                    
+                    15. 软件包管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.16" data-path="chap16.html">
+            
+                <a href="chap16.html">
+            
+                    
+                    16. 存储媒介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.17" data-path="chap17.html">
+            
+                <a href="chap17.html">
+            
+                    
+                    17. 网络系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.18" data-path="chap18.html">
+            
+                <a href="chap18.html">
+            
+                    
+                    18. 查找文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.19" data-path="chap19.html">
+            
+                <a href="chap19.html">
+            
+                    
+                    19. 归档和备份
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.20" data-path="chap20.html">
+            
+                <a href="chap20.html">
+            
+                    
+                    20. 正则表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.21" data-path="chap21.html">
+            
+                <a href="chap21.html">
+            
+                    
+                    21. 文本处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.22" data-path="chap22.html">
+            
+                <a href="chap22.html">
+            
+                    
+                    22. 格式化输出
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.23" data-path="chap23.html">
+            
+                <a href="chap23.html">
+            
+                    
+                    23. 打印
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.24" data-path="chap24.html">
+            
+                <a href="chap24.html">
+            
+                    
+                    24. 编译程序
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.25" data-path="chap25.html">
+            
+                <a href="chap25.html">
+            
+                    
+                    25. 编写第一个 Shell 脚本
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.26" data-path="chap26.html">
+            
+                <a href="chap26.html">
+            
+                    
+                    26. 启动一个项目
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.27" data-path="chap27.html">
+            
+                <a href="chap27.html">
+            
+                    
+                    27. 自顶向下设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.1.28" data-path="chap28.html">
+            
+                <a href="chap28.html">
+            
+                    
+                    28. 流程控制：if 分支结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.29" data-path="chap29.html">
+            
+                <a href="chap29.html">
+            
+                    
+                    29. 读取键盘输入
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.30" data-path="chap30.html">
+            
+                <a href="chap30.html">
+            
+                    
+                    30. 流程控制：while/until 循环
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.31" data-path="chap31.html">
+            
+                <a href="chap31.html">
+            
+                    
+                    31. 疑难排解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.32" data-path="chap32.html">
+            
+                <a href="chap32.html">
+            
+                    
+                    32. 流程控制：case 分支
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.33" data-path="chap33.html">
+            
+                <a href="chap33.html">
+            
+                    
+                    33. 位置参数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.34" data-path="chap34.html">
+            
+                <a href="chap34.html">
+            
+                    
+                    34. 流程控制：for 循环
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.35" data-path="chap35.html">
+            
+                <a href="chap35.html">
+            
+                    
+                    35. 字符串和数字
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.36" data-path="chap36.html">
+            
+                <a href="chap36.html">
+            
+                    
+                    36. 数组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.37" data-path="chap37.html">
+            
+                <a href="chap37.html">
+            
+                    
+                    37. 奇珍异宝
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >28. 流程控制：if 分支结构</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <p>In the last chapter, we were presented with a problem. How can we make our report
+generator script adapt to the privileges of the user running the script? The solution to this
+problem will require us to find a way to &#x201C;change directions&#x201D; within our script, based on a
+the results of a test. In programming terms, we need the program to branch.
+Let&#x2019;s consider a simple example of logic expressed in pseudocode, a simulation of a
+computer language intended for human consumption:</p>
+<p>&#x5728;&#x4E0A;&#x4E00;&#x7AE0;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x9047;&#x5230;&#x4E00;&#x4E2A;&#x95EE;&#x9898;&#x3002;&#x600E;&#x6837;&#x4F7F;&#x6211;&#x4EEC;&#x7684;&#x62A5;&#x544A;&#x751F;&#x6210;&#x5668;&#x811A;&#x672C;&#x80FD;&#x9002;&#x5E94;&#x8FD0;&#x884C;&#x6B64;&#x811A;&#x672C;&#x7684;&#x7528;&#x6237;&#x7684;&#x6743;&#x9650;&#xFF1F;
+&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#x7684;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#x8981;&#x6C42;&#x6211;&#x4EEC;&#x80FD;&#x627E;&#x5230;&#x4E00;&#x79CD;&#x65B9;&#x6CD5;&#xFF0C;&#x5728;&#x811A;&#x672C;&#x4E2D;&#x57FA;&#x4E8E;&#x6D4B;&#x8BD5;&#x6761;&#x4EF6;&#x7ED3;&#x679C;&#xFF0C;&#x6765;&#x201C;&#x6539;&#x53D8;&#x65B9;&#x5411;&#x201D;&#x3002;
+&#x7528;&#x7F16;&#x7A0B;&#x672F;&#x8BED;&#x8868;&#x8FBE;&#xFF0C;&#x5C31;&#x662F;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x7A0B;&#x5E8F;&#x53EF;&#x4EE5;&#x5206;&#x652F;&#x3002;&#x8BA9;&#x6211;&#x4EEC;&#x8003;&#x8651;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x7528;&#x4F2A;&#x7801;&#x8868;&#x793A;&#x7684;&#x903B;&#x8F91;&#x5B9E;&#x4F8B;&#xFF0C;
+&#x4F2A;&#x7801;&#x662F;&#x4E00;&#x79CD;&#x6A21;&#x62DF;&#x7684;&#x8BA1;&#x7B97;&#x673A;&#x8BED;&#x8A00;&#xFF0C;&#x4E3A;&#x7684;&#x662F;&#x4FBF;&#x4E8E;&#x4EBA;&#x4EEC;&#x7406;&#x89E3;&#xFF1A;</p>
+<pre><code>X=5
+If X = 5, then:
+Say &#x201C;X equals 5.&#x201D;
+Otherwise:
+Say &#x201C;X is not equal to 5.&#x201D;
+</code></pre><p>This is an example of a branch. Based on the condition, &#x201C;Does X = 5?&#x201D; do one thing,
+&#x201C;Say X equals 5,&#x201D; otherwise do another thing, &#x201C;Say X is not equal to 5.&#x201D;</p>
+<p>&#x8FD9;&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x5206;&#x652F;&#x7684;&#x4F8B;&#x5B50;&#x3002;&#x6839;&#x636E;&#x6761;&#x4EF6;&#xFF0C;&#x201C;Does X = 5?&#x201D; &#x505A;&#x4E00;&#x4EF6;&#x4E8B;&#x60C5;&#xFF0C;&#x201C;Say X equals 5,&#x201D;
+&#x5426;&#x5219;&#xFF0C;&#x505A;&#x53E6;&#x4E00;&#x4EF6;&#x4E8B;&#x60C5;&#xFF0C;&#x201C;Say X is not equal to 5.&#x201D;</p>
+<h3 id="if">if</h3>
+<p>Using the shell, we can code the logic above as follows:</p>
+<p>&#x4F7F;&#x7528; shell&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x7F16;&#x7801;&#x4E0A;&#x9762;&#x7684;&#x903B;&#x8F91;&#xFF0C;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF1A;</p>
+<pre><code>x=5
+if [ $x = 5 ]; then
+    echo &quot;x equals 5.&quot;
+else
+    echo &quot;x does not equal 5.&quot;
+fi
+</code></pre><p>or we can enter it directly at the command line (slightly shortened):</p>
+<p>&#x6216;&#x8005;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x5728;&#x547D;&#x4EE4;&#x884C;&#x4E2D;&#x8F93;&#x5165;&#x4EE5;&#x4E0A;&#x4EE3;&#x7801;&#xFF08;&#x7565;&#x6709;&#x7F29;&#x77ED;&#xFF09;&#xFF1A;</p>
+<pre><code>[me@linuxbox ~]$ x=5
+[me@linuxbox ~]$ if [ $x = 5 ]; then echo &quot;equals 5&quot;; else echo &quot;does
+not equal 5&quot;; fi
+equals 5
+[me@linuxbox ~]$ x=0
+[me@linuxbox ~]$ if [ $x = 5 ]; then echo &quot;equals 5&quot;; else echo &quot;does
+not equal 5&quot;; fi
+does not equal 5
+</code></pre><p>In this example, we execute the command twice. Once, with the value of x set to 5,
+which results in the string &#x201C;equals 5&#x201D; being output, and the second time with the value of
+x set to 0, which results in the string &#x201C;does not equal 5&#x201D; being output.</p>
+<p>&#x5728;&#x8FD9;&#x4E2A;&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x6267;&#x884C;&#x4E86;&#x4E24;&#x6B21;&#x8FD9;&#x4E2A;&#x547D;&#x4EE4;&#x3002;&#x7B2C;&#x4E00;&#x6B21;&#x662F;&#xFF0C;&#x628A; x &#x7684;&#x503C;&#x8BBE;&#x7F6E;&#x4E3A;5&#xFF0C;&#x4ECE;&#x800C;&#x5BFC;&#x81F4;&#x8F93;&#x51FA;&#x5B57;&#x7B26;&#x4E32;&#x201C;equals 5&#x201D;,
+&#x7B2C;&#x4E8C;&#x6B21;&#x662F;&#xFF0C;&#x628A; x &#x7684;&#x503C;&#x8BBE;&#x7F6E;&#x4E3A;0&#xFF0C;&#x4ECE;&#x800C;&#x5BFC;&#x81F4;&#x8F93;&#x51FA;&#x5B57;&#x7B26;&#x4E32;&#x201C;does not equal 5&#x201D;&#x3002;</p>
+<p>The if statement has the following syntax:</p>
+<p>&#x8FD9;&#x4E2A; if &#x8BED;&#x53E5;&#x8BED;&#x6CD5;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code>if commands; then
+     commands
+[elif commands; then
+     commands...]
+[else
+     commands]
+fi
+</code></pre><p>where commands is a list of commands. This is a little confusing at first glance. But
+before we can clear this up, we have to look at how the shell evaluates the success or
+failure of a command.</p>
+<p>&#x8FD9;&#x91CC;&#x7684; commands &#x662F;&#x6307;&#x4E00;&#x7CFB;&#x5217;&#x547D;&#x4EE4;&#x3002;&#x7B2C;&#x4E00;&#x773C;&#x770B;&#x5230;&#x4F1A;&#x6709;&#x70B9;&#x513F;&#x56F0;&#x60D1;&#x3002;&#x4F46;&#x662F;&#x5728;&#x6211;&#x4EEC;&#x5F04;&#x6E05;&#x695A;&#x8FD9;&#x4E9B;&#x8BED;&#x53E5;&#x4E4B;&#x524D;&#xFF0C;&#x6211;&#x4EEC;
+&#x5FC5;&#x987B;&#x770B;&#x4E00;&#x4E0B; shell &#x662F;&#x5982;&#x4F55;&#x8BC4;&#x5224;&#x4E00;&#x4E2A;&#x547D;&#x4EE4;&#x7684;&#x6210;&#x529F;&#x4E0E;&#x5931;&#x8D25;&#x7684;&#x3002;</p>
+<h3 id="&#x9000;&#x51FA;&#x72B6;&#x6001;">&#x9000;&#x51FA;&#x72B6;&#x6001;</h3>
+<p>Commands (including the scripts and shell functions we write) issue a value to the system
+when they terminate, called an exit status. This value, which is an integer in the range of
+0 to 255, indicates the success or failure of the command&#x2019;s execution. By convention, a
+value of zero indicates success and any other value indicates failure. The shell provides a
+parameter that we can use to examine the exit status. Here we see it in action:</p>
+<p>&#x5F53;&#x547D;&#x4EE4;&#x6267;&#x884C;&#x5B8C;&#x6BD5;&#x540E;&#xFF0C;&#x547D;&#x4EE4;&#xFF08;&#x5305;&#x62EC;&#x6211;&#x4EEC;&#x7F16;&#x5199;&#x7684;&#x811A;&#x672C;&#x548C; shell &#x51FD;&#x6570;&#xFF09;&#x4F1A;&#x7ED9;&#x7CFB;&#x7EDF;&#x53D1;&#x9001;&#x4E00;&#x4E2A;&#x503C;&#xFF0C;&#x53EB;&#x505A;&#x9000;&#x51FA;&#x72B6;&#x6001;&#x3002;
+&#x8FD9;&#x4E2A;&#x503C;&#x662F;&#x4E00;&#x4E2A; 0 &#x5230; 255 &#x4E4B;&#x95F4;&#x7684;&#x6574;&#x6570;&#xFF0C;&#x8BF4;&#x660E;&#x547D;&#x4EE4;&#x6267;&#x884C;&#x6210;&#x529F;&#x6216;&#x662F;&#x5931;&#x8D25;&#x3002;&#x6309;&#x7167;&#x60EF;&#x4F8B;&#xFF0C;&#x4E00;&#x4E2A;&#x96F6;&#x503C;&#x8BF4;&#x660E;&#x6210;&#x529F;&#xFF0C;&#x5176;&#x5B83;&#x6240;&#x6709;&#x503C;&#x8BF4;&#x660E;&#x5931;&#x8D25;&#x3002;
+Shell &#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x7528;&#x5B83;&#x68C0;&#x67E5;&#x9000;&#x51FA;&#x72B6;&#x6001;&#x3002;&#x7528;&#x5177;&#x4F53;&#x5B9E;&#x4F8B;&#x770B;&#x4E00;&#x4E0B;&#xFF1A;</p>
+<pre><code>[me@linuxbox ~]$ ls -d /usr/bin
+/usr/bin
+[me@linuxbox ~]$ echo $?
+0
+[me@linuxbox ~]$ ls -d /bin/usr
+ls: cannot access /bin/usr: No such file or directory
+[me@linuxbox ~]$ echo $?
+2
+</code></pre><p>In this example, we execute the ls command twice. The first time, the command
+executes successfully. If we display the value of the parameter <code>$?</code>, we see that it is zero.
+We execute the ls command a second time, producing an error and examine the
+parameter <code>$?</code> again. This time it contains a 2, indicating that the command encountered
+an error. Some commands use different exit status values to provide diagnostics for
+errors, while many commands simply exit with a value of one when they fail. Man pages
+often include a section entitled &quot;Exit Status,&quot; describing what codes are used. However,
+a zero always indicates success.</p>
+<p>&#x5728;&#x8FD9;&#x4E2A;&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x6267;&#x884C;&#x4E86;&#x4E24;&#x6B21; ls &#x547D;&#x4EE4;&#x3002;&#x7B2C;&#x4E00;&#x6B21;&#xFF0C;&#x547D;&#x4EE4;&#x6267;&#x884C;&#x6210;&#x529F;&#x3002;&#x5982;&#x679C;&#x6211;&#x4EEC;&#x663E;&#x793A;&#x53C2;&#x6570;<code>$?</code>&#x7684;&#x503C;&#xFF0C;&#x6211;&#x4EEC;
+&#x770B;&#x5230;&#x5B83;&#x662F;&#x96F6;&#x3002;&#x6211;&#x4EEC;&#x7B2C;&#x4E8C;&#x6B21;&#x6267;&#x884C; ls &#x547D;&#x4EE4;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x4EA7;&#x751F;&#x4E86;&#x4E00;&#x4E2A;&#x9519;&#x8BEF;&#xFF0C;&#x5E76;&#x518D;&#x6B21;&#x67E5;&#x770B;&#x53C2;&#x6570;<code>$?</code>&#x3002;&#x8FD9;&#x6B21;&#x5B83;&#x5305;&#x542B;&#x4E00;&#x4E2A;
+&#x6570;&#x5B57; 2&#xFF0C;&#x8868;&#x660E;&#x8FD9;&#x4E2A;&#x547D;&#x4EE4;&#x9047;&#x5230;&#x4E86;&#x4E00;&#x4E2A;&#x9519;&#x8BEF;&#x3002;&#x6709;&#x4E9B;&#x547D;&#x4EE4;&#x4F7F;&#x7528;&#x4E0D;&#x540C;&#x7684;&#x9000;&#x51FA;&#x503C;&#xFF0C;&#x6765;&#x8BCA;&#x65AD;&#x9519;&#x8BEF;&#xFF0C;&#x800C;&#x8BB8;&#x591A;&#x547D;&#x4EE4;&#x5F53;
+&#x5B83;&#x4EEC;&#x6267;&#x884C;&#x5931;&#x8D25;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x4F1A;&#x7B80;&#x5355;&#x5730;&#x9000;&#x51FA;&#x5E76;&#x53D1;&#x9001;&#x4E00;&#x4E2A;&#x6570;&#x5B57;1&#x3002;&#x624B;&#x518C;&#x9875;&#x4E2D;&#x7ECF;&#x5E38;&#x4F1A;&#x5305;&#x542B;&#x4E00;&#x7AE0;&#x6807;&#x9898;&#x4E3A;&#x201C;&#x9000;&#x51FA;&#x72B6;&#x6001;&#x201D;&#x7684;&#x5185;&#x5BB9;&#xFF0C;
+&#x63CF;&#x8FF0;&#x4E86;&#x4F7F;&#x7528;&#x7684;&#x4EE3;&#x7801;&#x3002;&#x7136;&#x800C;&#xFF0C;&#x4E00;&#x4E2A;&#x96F6;&#x603B;&#x662F;&#x8868;&#x660E;&#x6210;&#x529F;&#x3002;</p>
+<p>The shell provides two extremely simple builtin commands that do nothing except
+terminate with either a zero or one exit status. The true command always executes
+successfully and the false command always executes unsuccessfully:</p>
+<p>&#x8FD9;&#x4E2A; shell &#x63D0;&#x4F9B;&#x4E86;&#x4E24;&#x4E2A;&#x6781;&#x5176;&#x7B80;&#x5355;&#x7684;&#x5185;&#x90E8;&#x547D;&#x4EE4;&#xFF0C;&#x5B83;&#x4EEC;&#x4E0D;&#x505A;&#x4EFB;&#x4F55;&#x4E8B;&#x60C5;&#xFF0C;&#x9664;&#x4E86;&#x4EE5;&#x4E00;&#x4E2A;&#x96F6;&#x6216;1&#x9000;&#x51FA;&#x72B6;&#x6001;&#x6765;&#x7EC8;&#x6B62;&#x6267;&#x884C;&#x3002;
+True &#x547D;&#x4EE4;&#x603B;&#x662F;&#x6267;&#x884C;&#x6210;&#x529F;&#xFF0C;&#x800C; false &#x547D;&#x4EE4;&#x603B;&#x662F;&#x6267;&#x884C;&#x5931;&#x8D25;&#xFF1A;</p>
+<pre><code>[me@linuxbox~]$ true
+[me@linuxbox~]$ echo $?
+0
+[me@linuxbox~]$ false
+[me@linuxbox~]$ echo $?
+1
+</code></pre><p>We can use these commands to see how the if statement works. What the if statement
+really does is evaluate the success or failure of commands:</p>
+<p>&#x6211;&#x4EEC;&#x80FD;&#x591F;&#x4F7F;&#x7528;&#x8FD9;&#x4E9B;&#x547D;&#x4EE4;&#xFF0C;&#x6765;&#x770B;&#x4E00;&#x4E0B; if &#x8BED;&#x53E5;&#x662F;&#x600E;&#x6837;&#x5DE5;&#x4F5C;&#x7684;&#x3002;If &#x8BED;&#x53E5;&#x771F;&#x6B63;&#x505A;&#x7684;&#x4E8B;&#x60C5;&#x662F;&#x8BA1;&#x7B97;&#x547D;&#x4EE4;&#x6267;&#x884C;&#x6210;&#x529F;&#x6216;&#x5931;&#x8D25;&#xFF1A;</p>
+<pre><code>[me@linuxbox ~]$ if true; then echo &quot;It&apos;s true.&quot;; fi
+It&apos;s true.
+[me@linuxbox ~]$ if false; then echo &quot;It&apos;s true.&quot;; fi
+[me@linuxbox ~]$
+</code></pre><p>The command echo &quot;It&apos;s true.&quot; is executed when the command following if
+executes successfully, and is not executed when the command following if does not
+execute successfully. If a list of commands follows if, the last command in the list is
+evaluated:</p>
+<p>&#x5F53; if &#x4E4B;&#x540E;&#x7684;&#x547D;&#x4EE4;&#x6267;&#x884C;&#x6210;&#x529F;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x547D;&#x4EE4; echo &quot;It&apos;s true.&quot; &#x5C06;&#x4F1A;&#x6267;&#x884C;&#xFF0C;&#x5426;&#x5219;&#x6B64;&#x547D;&#x4EE4;&#x4E0D;&#x6267;&#x884C;&#x3002;
+&#x5982;&#x679C; if &#x4E4B;&#x540E;&#x8DDF;&#x968F;&#x4E00;&#x7CFB;&#x5217;&#x547D;&#x4EE4;&#xFF0C;&#x5219;&#x5C06;&#x8BA1;&#x7B97;&#x5217;&#x8868;&#x4E2D;&#x7684;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x547D;&#x4EE4;&#xFF1A;</p>
+<pre><code>[me@linuxbox ~]$ if false; true; then echo &quot;It&apos;s true.&quot;; fi
+It&apos;s true.
+[me@linuxbox ~]$ if true; false; then echo &quot;It&apos;s true.&quot;; fi
+[me@linuxbox ~]$
+</code></pre><h3 id="&#x6D4B;&#x8BD5;">&#x6D4B;&#x8BD5;</h3>
+<p>By far, the command used most frequently with if is test. The test command
+performs a variety of checks and comparisons. It has two equivalent forms:</p>
+<p>&#x5230;&#x76EE;&#x524D;&#x4E3A;&#x6B62;&#xFF0C;&#x7ECF;&#x5E38;&#x4E0E; if &#x4E00;&#x5757;&#x4F7F;&#x7528;&#x7684;&#x547D;&#x4EE4;&#x662F; test&#x3002;&#x8FD9;&#x4E2A; test &#x547D;&#x4EE4;&#x6267;&#x884C;&#x5404;&#x79CD;&#x5404;&#x6837;&#x7684;&#x68C0;&#x67E5;&#x4E0E;&#x6BD4;&#x8F83;&#x3002;
+&#x5B83;&#x6709;&#x4E24;&#x79CD;&#x7B49;&#x4EF7;&#x6A21;&#x5F0F;&#xFF1A;</p>
+<pre><code>test expression
+</code></pre><p>and the more popular:</p>
+<p>&#x6BD4;&#x8F83;&#x6D41;&#x884C;&#x7684;&#x683C;&#x5F0F;&#x662F;&#xFF1A;</p>
+<pre><code>[ expression ]
+</code></pre><p>where expression is an expression that is evaluated as either true or false. The test
+command returns an exit status of zero when the expression is true and a status of one
+when the expression is false.</p>
+<p>&#x8FD9;&#x91CC;&#x7684; expression &#x662F;&#x4E00;&#x4E2A;&#x8868;&#x8FBE;&#x5F0F;&#xFF0C;&#x5176;&#x6267;&#x884C;&#x7ED3;&#x679C;&#x662F; true &#x6216;&#x8005;&#x662F; false&#x3002;&#x5F53;&#x8868;&#x8FBE;&#x5F0F;&#x4E3A;&#x771F;&#x65F6;&#xFF0C;&#x8FD9;&#x4E2A; test &#x547D;&#x4EE4;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x96F6;
+&#x9000;&#x51FA;&#x72B6;&#x6001;&#xFF0C;&#x5F53;&#x8868;&#x8FBE;&#x5F0F;&#x4E3A;&#x5047;&#x65F6;&#xFF0C;test &#x547D;&#x4EE4;&#x9000;&#x51FA;&#x72B6;&#x6001;&#x4E3A;1&#x3002;</p>
+<h4 id="&#x6587;&#x4EF6;&#x8868;&#x8FBE;&#x5F0F;">&#x6587;&#x4EF6;&#x8868;&#x8FBE;&#x5F0F;</h4>
+<p>The following expressions are used to evaluate the status of files:</p>
+<p>&#x4EE5;&#x4E0B;&#x8868;&#x8FBE;&#x5F0F;&#x88AB;&#x7528;&#x6765;&#x8BA1;&#x7B97;&#x6587;&#x4EF6;&#x72B6;&#x6001;&#xFF1A;</p>
+<table class="multi">
+<caption class="cap">Table 28-1: test File Expressions</caption>
+<tr>
+<th class="title">Expression</th>
+<th class="title">Is Ture If</th>
+</tr>
+<tr>
+<td valign="top" width="16%">file1 -ef file2 </td>
+<td valign="top">file1 and file2 have the same inode numbers (the two
+filenames refer to the same file by hard linking).  </td>
+</tr>
+<tr>
+<td valign="top">file1 -nt file2 </td>
+<td valign="top">file 1 is newer than file2.  </td>
+</tr>
+<tr>
+<td valign="top">file1 -ot file2 </td>
+<td valign="top">file1 is older than file2.  </td>
+</tr>
+<tr>
+<td valign="top">-b file </td>
+<td valign="top">file exists and is a block special (device) file.  </td>
+</tr>
+<tr>
+<td valign="top">-c file </td>
+<td valign="top">file exists and is a character special (device) file.  </td>
+</tr>
+<tr>
+<td valign="top">-d file</td>
+<td valign="top">file exists and is a directory.  </td>
+</tr>
+<tr>
+<td valign="top">-e file</td>
+<td valign="top">file exists.</td>
+</tr>
+<tr>
+<td valign="top">-f file</td>
+<td valign="top">file exists and is a regular file.</td>
+</tr>
+<tr>
+<td valign="top">-g file</td>
+<td valign="top">file exists and is set-group-ID.</td>
+</tr>
+<tr>
+<td valign="top">-G file</td>
+<td valign="top">file exists and is owned by the effective group ID.  </td>
+</tr>
+<tr>
+<td valign="top">-k file</td>
+<td valign="top">file exists and has its &#x201C;sticky bit&#x201D; set.</td>
+</tr>
+<tr>
+<td valign="top">-L file</td>
+<td valign="top">file exists and is a symbolic link.</td>
+</tr>
+<tr>
+<td valign="top">-O file</td>
+<td valign="top">file exists and is owned by the effective user ID.</td>
+</tr>
+<tr>
+<td valign="top">-p file </td>
+<td valign="top">file exists and is a named pipe.</td>
+</tr>
+<tr>
+<td valign="top">-r file </td>
+<td valign="top">file exists and is readable (has readable permission for
+the effective user).
+</td>
+</tr>
+<tr>
+<td valign="top">-s file</td>
+<td valign="top">file exists and has a length greater than zero.
+</td>
+</tr>
+<tr>
+<td valign="top">-S file</td>
+<td valign="top">file exists and is a network socket.</td>
+</tr>
+<tr>
+<td valign="top">-t fd</td>
+<td valign="top">fd is a file descriptor directed to/from the terminal. This
+can be used to determine whether standard input/output/
+error is being redirected.  </td>
+</tr>
+<tr>
+<td valign="top">-u file </td>
+<td valign="top">file exists and is setuid.</td>
+</tr>
+<tr>
+<td valign="top">-w file </td>
+<td valign="top">file exists and is writable (has write permission for the
+effective user).</td>
+</tr>
+<tr>
+<td valign="top">-x file </td>
+<td valign="top">file exists and is executable (has execute/search
+permission for the effective user).</td>
+</tr>
+</table>
+
+<table class="multi">
+<caption class="cap">&#x8868;28-1: &#x6D4B;&#x8BD5;&#x6587;&#x4EF6;&#x8868;&#x8FBE;&#x5F0F;</caption>
+<tr>
+<th class="title">&#x8868;&#x8FBE;&#x5F0F;</th>
+<th class="title">&#x5982;&#x679C;&#x4E0B;&#x5217;&#x6761;&#x4EF6;&#x4E3A;&#x771F;&#x5219;&#x8FD4;&#x56DE;True</th>
+</tr>
+<tr>
+<td valign="top" width="16%">file1 -ef file2 </td>
+<td valign="top">file1 &#x548C; file2 &#x62E5;&#x6709;&#x76F8;&#x540C;&#x7684;&#x7D22;&#x5F15;&#x53F7;&#xFF08;&#x901A;&#x8FC7;&#x786C;&#x94FE;&#x63A5;&#x4E24;&#x4E2A;&#x6587;&#x4EF6;&#x540D;&#x6307;&#x5411;&#x76F8;&#x540C;&#x7684;&#x6587;&#x4EF6;&#xFF09;&#x3002;</td>
+</tr>
+<tr>
+<td valign="top">file1 -nt file2 </td>
+<td valign="top">file1&#x65B0;&#x4E8E; file2&#x3002;</td>
+</tr>
+<tr>
+<td valign="top">file1 -ot file2 </td>
+<td valign="top">file1&#x65E9;&#x4E8E; file2&#x3002;</td>
+</tr>
+<tr>
+<td valign="top">-b file </td>
+<td valign="top">file &#x5B58;&#x5728;&#x5E76;&#x4E14;&#x662F;&#x4E00;&#x4E2A;&#x5757;&#xFF08;&#x8BBE;&#x5907;&#xFF09;&#x6587;&#x4EF6;&#x3002;</td>
+</tr>
+<tr>
+<td valign="top">-c file </td>
+<td valign="top">file &#x5B58;&#x5728;&#x5E76;&#x4E14;&#x662F;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#xFF08;&#x8BBE;&#x5907;&#xFF09;&#x6587;&#x4EF6;&#x3002;</td>
+</tr>
+<tr>
+<td valign="top">-d file</td>
+<td valign="top">file &#x5B58;&#x5728;&#x5E76;&#x4E14;&#x662F;&#x4E00;&#x4E2A;&#x76EE;&#x5F55;&#x3002;</td>
+</tr>
+<tr>
+<td valign="top">-e file</td>
+<td valign="top">file &#x5B58;&#x5728;&#x3002;</td>
+</tr>
+<tr>
+<td valign="top">-f file</td>
+<td valign="top">file &#x5B58;&#x5728;&#x5E76;&#x4E14;&#x662F;&#x4E00;&#x4E2A;&#x666E;&#x901A;&#x6587;&#x4EF6;&#x3002;</td>
+</tr>
+<tr>
+<td valign="top">-g file</td>
+<td valign="top">file &#x5B58;&#x5728;&#x5E76;&#x4E14;&#x8BBE;&#x7F6E;&#x4E86;&#x7EC4; ID&#x3002;</td>
+</tr>
+<tr>
+<td valign="top">-G file</td>
+<td valign="top">file &#x5B58;&#x5728;&#x5E76;&#x4E14;&#x7531;&#x6709;&#x6548;&#x7EC4; ID &#x62E5;&#x6709;&#x3002;</td>
+</tr>
+<tr>
+<td valign="top">-k file</td>
+<td valign="top">file &#x5B58;&#x5728;&#x5E76;&#x4E14;&#x8BBE;&#x7F6E;&#x4E86;&#x5B83;&#x7684;&#x201C;sticky bit&#x201D;&#x3002;</td>
+</tr>
+<tr>
+<td valign="top">-L file</td>
+<td valign="top">file &#x5B58;&#x5728;&#x5E76;&#x4E14;&#x662F;&#x4E00;&#x4E2A;&#x7B26;&#x53F7;&#x94FE;&#x63A5;&#x3002;</td>
+</tr>
+<tr>
+<td valign="top">-O file</td>
+<td valign="top">file &#x5B58;&#x5728;&#x5E76;&#x4E14;&#x7531;&#x6709;&#x6548;&#x7528;&#x6237; ID &#x62E5;&#x6709;&#x3002;</td>
+</tr>
+<tr>
+<td valign="top">-p file </td>
+<td valign="top">file &#x5B58;&#x5728;&#x5E76;&#x4E14;&#x662F;&#x4E00;&#x4E2A;&#x547D;&#x540D;&#x7BA1;&#x9053;&#x3002;</td>
+</tr>
+<tr>
+<td valign="top">-r file </td>
+<td valign="top">file &#x5B58;&#x5728;&#x5E76;&#x4E14;&#x53EF;&#x8BFB;&#xFF08;&#x6709;&#x6548;&#x7528;&#x6237;&#x6709;&#x53EF;&#x8BFB;&#x6743;&#x9650;&#xFF09;&#x3002; </td>
+</tr>
+<tr>
+<td valign="top">-s file</td>
+<td valign="top">file &#x5B58;&#x5728;&#x4E14;&#x5176;&#x957F;&#x5EA6;&#x5927;&#x4E8E;&#x96F6;&#x3002;</td>
+</tr>
+<tr>
+<td valign="top">-S file</td>
+<td valign="top">file &#x5B58;&#x5728;&#x4E14;&#x662F;&#x4E00;&#x4E2A;&#x7F51;&#x7EDC; socket&#x3002;</td>
+</tr>
+<tr>
+<td valign="top">-t fd</td>
+<td valign="top">fd &#x662F;&#x4E00;&#x4E2A;&#x5B9A;&#x5411;&#x5230;&#x7EC8;&#x7AEF;&#xFF0F;&#x4ECE;&#x7EC8;&#x7AEF;&#x5B9A;&#x5411;&#x7684;&#x6587;&#x4EF6;&#x63CF;&#x8FF0;&#x7B26; &#x3002;
+&#x8FD9;&#x53EF;&#x4EE5;&#x88AB;&#x7528;&#x6765;&#x51B3;&#x5B9A;&#x662F;&#x5426;&#x91CD;&#x5B9A;&#x5411;&#x4E86;&#x6807;&#x51C6;&#x8F93;&#x5165;&#xFF0F;&#x8F93;&#x51FA;&#x9519;&#x8BEF;&#x3002;</td>
+</tr>
+<tr>
+<td valign="top">-u file </td>
+<td valign="top">file &#x5B58;&#x5728;&#x5E76;&#x4E14;&#x8BBE;&#x7F6E;&#x4E86; setuid &#x4F4D;&#x3002;</td>
+</tr>
+<tr>
+<td valign="top">-w file </td>
+<td valign="top">file &#x5B58;&#x5728;&#x5E76;&#x4E14;&#x53EF;&#x5199;&#xFF08;&#x6709;&#x6548;&#x7528;&#x6237;&#x62E5;&#x6709;&#x53EF;&#x5199;&#x6743;&#x9650;&#xFF09;&#x3002;</td>
+</tr>
+<tr>
+<td valign="top">-x file </td>
+<td valign="top">file &#x5B58;&#x5728;&#x5E76;&#x4E14;&#x53EF;&#x6267;&#x884C;&#xFF08;&#x6709;&#x6548;&#x7528;&#x6237;&#x6709;&#x6267;&#x884C;&#xFF0F;&#x641C;&#x7D22;&#x6743;&#x9650;&#xFF09;&#x3002;</td>
+</tr>
+</table>
+
+<p>Here we have a script that demonstrates some of the file expressions:</p>
+<p>&#x8FD9;&#x91CC;&#x6211;&#x4EEC;&#x6709;&#x4E00;&#x4E2A;&#x811A;&#x672C;&#x8BF4;&#x660E;&#x4E86;&#x4E00;&#x4E9B;&#x6587;&#x4EF6;&#x8868;&#x8FBE;&#x5F0F;&#xFF1A;</p>
+<pre><code>#!/bin/bash
+# test-file: Evaluate the status of a file
+FILE=~/.bashrc
+if [ -e &quot;$FILE&quot; ]; then
+    if [ -f &quot;$FILE&quot; ]; then
+        echo &quot;$FILE is a regular file.&quot;
+    fi
+    if [ -d &quot;$FILE&quot; ]; then
+        echo &quot;$FILE is a directory.&quot;
+    fi
+    if [ -r &quot;$FILE&quot; ]; then
+        echo &quot;$FILE is readable.&quot;
+    fi
+    if [ -w &quot;$FILE&quot; ]; then
+        echo &quot;$FILE is writable.&quot;
+    fi
+    if [ -x &quot;$FILE&quot; ]; then
+        echo &quot;$FILE is executable/searchable.&quot;
+    fi
+else
+    echo &quot;$FILE does not exist&quot;
+    exit 1
+fi
+exit
+</code></pre><p>The script evaluates the file assigned to the constant FILE and displays its results as the
+evaluation is performed. There are two interesting things to note about this script. First,
+notice how the parameter <code>$FILE</code> is quoted within the expressions. This is not required,
+but is a defense against the parameter being empty. If the parameter expansion of <code>$FILE</code>
+were to result in an empty value, it would cause an error (the operators would be
+interpreted as non-null strings rather than operators). Using the quotes around the
+parameter insures that the operator is always followed by a string, even if the string is
+empty. Second, notice the presence of the exit commands near the end of the script.
+The exit command accepts a single, optional argument, which becomes the script&#x2019;s exit
+status. When no argument is passed, the exit status defaults to zero. Using exit in this
+way allows the script to indicate failure if <code>$FILE</code> expands to the name of a nonexistent
+file. The exit command appearing on the last line of the script is there as a formality.
+When a script &#x201C;runs off the end&#x201D; (reaches end of file), it terminates with an exit status of
+zero by default, anyway.</p>
+<p>&#x8FD9;&#x4E2A;&#x811A;&#x672C;&#x4F1A;&#x8BA1;&#x7B97;&#x8D4B;&#x503C;&#x7ED9;&#x5E38;&#x91CF; FILE &#x7684;&#x6587;&#x4EF6;&#xFF0C;&#x5E76;&#x663E;&#x793A;&#x8BA1;&#x7B97;&#x7ED3;&#x679C;&#x3002;&#x5BF9;&#x4E8E;&#x6B64;&#x811A;&#x672C;&#x6709;&#x4E24;&#x70B9;&#x9700;&#x8981;&#x6CE8;&#x610F;&#x3002;&#x7B2C;&#x4E00;&#x4E2A;&#xFF0C;
+&#x5728;&#x8868;&#x8FBE;&#x5F0F;&#x4E2D;&#x53C2;&#x6570;<code>$FILE</code>&#x662F;&#x600E;&#x6837;&#x88AB;&#x5F15;&#x7528;&#x7684;&#x3002;&#x5F15;&#x53F7;&#x5E76;&#x4E0D;&#x662F;&#x5FC5;&#x9700;&#x7684;&#xFF0C;&#x4F46;&#x8FD9;&#x662F;&#x4E3A;&#x4E86;&#x9632;&#x8303;&#x7A7A;&#x53C2;&#x6570;&#x3002;&#x5982;&#x679C;<code>$FILE</code>&#x7684;&#x53C2;&#x6570;&#x5C55;&#x5F00;
+&#x662F;&#x4E00;&#x4E2A;&#x7A7A;&#x503C;&#xFF0C;&#x5C31;&#x4F1A;&#x5BFC;&#x81F4;&#x4E00;&#x4E2A;&#x9519;&#x8BEF;&#xFF08;&#x64CD;&#x4F5C;&#x7B26;&#x5C06;&#x4F1A;&#x88AB;&#x89E3;&#x91CA;&#x4E3A;&#x975E;&#x7A7A;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x800C;&#x4E0D;&#x662F;&#x64CD;&#x4F5C;&#x7B26;&#xFF09;&#x3002;&#x7528;&#x5F15;&#x53F7;&#x628A;&#x53C2;&#x6570;&#x5F15;&#x8D77;&#x6765;&#x5C31;
+&#x786E;&#x4FDD;&#x4E86;&#x64CD;&#x4F5C;&#x7B26;&#x4E4B;&#x540E;&#x603B;&#x662F;&#x8DDF;&#x968F;&#x7740;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x5373;&#x4F7F;&#x5B57;&#x7B26;&#x4E32;&#x4E3A;&#x7A7A;&#x3002;&#x7B2C;&#x4E8C;&#x4E2A;&#xFF0C;&#x6CE8;&#x610F;&#x811A;&#x672C;&#x672B;&#x5C3E;&#x7684; exit &#x547D;&#x4EE4;&#x3002;
+&#x8FD9;&#x4E2A; exit &#x547D;&#x4EE4;&#x63A5;&#x53D7;&#x4E00;&#x4E2A;&#x5355;&#x72EC;&#x7684;&#xFF0C;&#x53EF;&#x9009;&#x7684;&#x53C2;&#x6570;&#xFF0C;&#x5176;&#x6210;&#x4E3A;&#x811A;&#x672C;&#x7684;&#x9000;&#x51FA;&#x72B6;&#x6001;&#x3002;&#x5F53;&#x4E0D;&#x4F20;&#x9012;&#x53C2;&#x6570;&#x65F6;&#xFF0C;&#x9000;&#x51FA;&#x72B6;&#x6001;&#x9ED8;&#x8BA4;&#x4E3A;&#x96F6;&#x3002;
+&#x4EE5;&#x8FD9;&#x79CD;&#x65B9;&#x5F0F;&#x4F7F;&#x7528; exit &#x547D;&#x4EE4;&#xFF0C;&#x5219;&#x5141;&#x8BB8;&#x6B64;&#x811A;&#x672C;&#x63D0;&#x793A;&#x5931;&#x8D25;&#x5982;&#x679C; <code>$FILE</code> &#x5C55;&#x5F00;&#x6210;&#x4E00;&#x4E2A;&#x4E0D;&#x5B58;&#x5728;&#x7684;&#x6587;&#x4EF6;&#x540D;&#x3002;&#x8FD9;&#x4E2A; exit &#x547D;&#x4EE4;
+&#x51FA;&#x73B0;&#x5728;&#x811A;&#x672C;&#x4E2D;&#x7684;&#x6700;&#x540E;&#x4E00;&#x884C;&#xFF0C;&#x662F;&#x4E00;&#x4E2A;&#x5F53;&#x4E00;&#x4E2A;&#x811A;&#x672C;&#x201C;&#x8FD0;&#x884C;&#x5230;&#x6700;&#x540E;&#x201D;&#xFF08;&#x5230;&#x8FBE;&#x6587;&#x4EF6;&#x672B;&#x5C3E;&#xFF09;&#xFF0C;&#x4E0D;&#x7BA1;&#x600E;&#x6837;&#xFF0C;
+&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#x5B83;&#x4EE5;&#x9000;&#x51FA;&#x72B6;&#x6001;&#x96F6;&#x7EC8;&#x6B62;&#x3002;</p>
+<p>Similarly, shell functions can return an exit status by including an integer argument to the
+return command. If we were to convert the script above to a shell function to include
+it in a larger program, we could replace the exit commands with return statements
+and get the desired behavior:</p>
+<p>&#x7C7B;&#x4F3C;&#x5730;&#xFF0C;&#x901A;&#x8FC7;&#x5E26;&#x6709;&#x4E00;&#x4E2A;&#x6574;&#x6570;&#x53C2;&#x6570;&#x7684; return &#x547D;&#x4EE4;&#xFF0C;shell &#x51FD;&#x6570;&#x53EF;&#x4EE5;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x9000;&#x51FA;&#x72B6;&#x6001;&#x3002;&#x5982;&#x679C;&#x6211;&#x4EEC;&#x6253;&#x7B97;&#x628A;
+&#x4E0A;&#x9762;&#x7684;&#x811A;&#x672C;&#x8F6C;&#x53D8;&#x4E3A;&#x4E00;&#x4E2A; shell &#x51FD;&#x6570;&#xFF0C;&#x4E3A;&#x4E86;&#x5728;&#x66F4;&#x5927;&#x7684;&#x7A0B;&#x5E8F;&#x4E2D;&#x5305;&#x542B;&#x6B64;&#x51FD;&#x6570;&#xFF0C;&#x6211;&#x4EEC;&#x7528; return &#x8BED;&#x53E5;&#x6765;&#x4EE3;&#x66FF; exit &#x547D;&#x4EE4;&#xFF0C;
+&#x5219;&#x5F97;&#x5230;&#x671F;&#x671B;&#x7684;&#x884C;&#x4E3A;&#xFF1A;</p>
+<pre><code>test_file () {
+    # test-file: Evaluate the status of a file
+    FILE=~/.bashrc
+    if [ -e &quot;$FILE&quot; ]; then
+        if [ -f &quot;$FILE&quot; ]; then
+            echo &quot;$FILE is a regular file.&quot;
+        fi
+        if [ -d &quot;$FILE&quot; ]; then
+            echo &quot;$FILE is a directory.&quot;
+        fi
+        if [ -r &quot;$FILE&quot; ]; then
+            echo &quot;$FILE is readable.&quot;
+        fi
+        if [ -w &quot;$FILE&quot; ]; then
+            echo &quot;$FILE is writable.&quot;
+        fi
+        if [ -x &quot;$FILE&quot; ]; then
+            echo &quot;$FILE is executable/searchable.&quot;
+        fi
+    else
+        echo &quot;$FILE does not exist&quot;
+        return 1
+    fi
+}
+</code></pre><h4 id="&#x5B57;&#x7B26;&#x4E32;&#x8868;&#x8FBE;&#x5F0F;">&#x5B57;&#x7B26;&#x4E32;&#x8868;&#x8FBE;&#x5F0F;</h4>
+<p>The following expressions are used to evaluate strings:</p>
+<p>&#x4EE5;&#x4E0B;&#x8868;&#x8FBE;&#x5F0F;&#x7528;&#x6765;&#x8BA1;&#x7B97;&#x5B57;&#x7B26;&#x4E32;&#xFF1A;</p>
+<table class="multi">
+<caption class="cap">Table 28-2: test String Expressions</caption>
+<tr>
+<th class="title">Expression</th>
+<th class="title">Is Ture If...</th>
+</tr>
+<tr>
+<td valign="top" width="35%">string</td>
+<td valign="top">string is not null.</td>
+</tr>
+<tr>
+<td valign="top">-n string</td>
+<td valign="top">The length of string is greater than zero.</td>
+</tr>
+<tr>
+<td valign="top">-z string</td>
+<td valign="top">The length of string is zero.</td>
+</tr>
+<tr>
+<td valign="top"><p>string1 = string2</p><p>string1 == string2</p></td>
+<td valign="top">string1 and string2 are equal. Single or double
+equal signs may be used, but the use of double equal signs is greatly preferred.</td>
+</tr>
+<tr>
+<td valign="top">string1 != string2 </td>
+<td valign="top">string1 and string2 are not equal.</td>
+</tr>
+<tr>
+<td valign="top">string1 &gt; string2</td>
+<td valign="top">sting1 sorts after string2.</td>
+</tr>
+<tr>
+<td valign="top">string1 &lt; string2</td>
+<td valign="top">string1 sorts before string2.</td>
+</tr>
+</table>
+
+<table class="multi">
+<caption class="cap">&#x8868;28-2: &#x6D4B;&#x8BD5;&#x5B57;&#x7B26;&#x4E32;&#x8868;&#x8FBE;&#x5F0F;</caption>
+<tr>
+<th class="title">&#x8868;&#x8FBE;&#x5F0F;</th>
+<th class="title">&#x5982;&#x679C;&#x4E0B;&#x5217;&#x6761;&#x4EF6;&#x4E3A;&#x771F;&#x5219;&#x8FD4;&#x56DE;True</th>
+</tr>
+<tr>
+<td valign="top" width="35%">string</td>
+<td valign="top">string &#x4E0D;&#x4E3A; null&#x3002;</td>
+</tr>
+<tr>
+<td valign="top">-n string</td>
+<td valign="top">&#x5B57;&#x7B26;&#x4E32; string &#x7684;&#x957F;&#x5EA6;&#x5927;&#x4E8E;&#x96F6;&#x3002;</td>
+</tr>
+<tr>
+<td valign="top">-z string</td>
+<td valign="top">&#x5B57;&#x7B26;&#x4E32; string &#x7684;&#x957F;&#x5EA6;&#x4E3A;&#x96F6;&#x3002;</td>
+</tr>
+<tr>
+<td valign="top"><p>string1 = string2</p><p>string1 == string2</p></td>
+<td valign="top">string1 &#x548C; string2 &#x76F8;&#x540C;. &#x5355;&#x6216;&#x53CC;&#x7B49;&#x53F7;&#x90FD;&#x53EF;&#x4EE5;&#xFF0C;&#x4E0D;&#x8FC7;&#x53CC;&#x7B49;&#x53F7;&#x66F4;&#x53D7;&#x6B22;&#x8FCE;&#x3002; </td>
+</tr>
+<tr>
+<td valign="top">string1 != string2 </td>
+<td valign="top">string1 &#x548C; string2 &#x4E0D;&#x76F8;&#x540C;&#x3002;</td>
+</tr>
+<tr>
+<td valign="top">string1 &gt; string2</td>
+<td valign="top">sting1 &#x6392;&#x5217;&#x5728; string2 &#x4E4B;&#x540E;&#x3002;</td>
+</tr>
+<tr>
+<td valign="top">string1 &lt; string2</td>
+<td valign="top">string1 &#x6392;&#x5217;&#x5728; string2 &#x4E4B;&#x524D;&#x3002;</td>
+</tr>
+</table>
+
+<hr>
+<p>Warning: the <code>&gt;</code> and <code>&lt;</code> expression operators must be quoted (or escaped with a
+backslash) when used with test. If they are not, they will be interpreted by the
+shell as redirection operators, with potentially destructive results. Also note that
+while the bash documentation states that the sorting order conforms to the
+collation order of the current locale, it does not. ASCII (POSIX) order is used in
+versions of bash up to and including 4.0.</p>
+<p>&#x8B66;&#x544A;&#xFF1A;&#x8FD9;&#x4E2A; &gt; &#x548C; &lt;&#x8868;&#x8FBE;&#x5F0F;&#x64CD;&#x4F5C;&#x7B26;&#x5FC5;&#x987B;&#x7528;&#x5F15;&#x53F7;&#x5F15;&#x8D77;&#x6765;&#xFF08;&#x6216;&#x8005;&#x662F;&#x7528;&#x53CD;&#x659C;&#x6760;&#x8F6C;&#x4E49;&#xFF09;&#xFF0C;
+&#x5F53;&#x4E0E; test &#x4E00;&#x5757;&#x4F7F;&#x7528;&#x7684;&#x65F6;&#x5019;&#x3002;&#x5982;&#x679C;&#x4E0D;&#x8FD9;&#x6837;&#xFF0C;&#x5B83;&#x4EEC;&#x4F1A;&#x88AB; shell &#x89E3;&#x91CA;&#x4E3A;&#x91CD;&#x5B9A;&#x5411;&#x64CD;&#x4F5C;&#x7B26;&#xFF0C;&#x9020;&#x6210;&#x6F5C;&#x5728;&#x5730;&#x7834;&#x574F;&#x7ED3;&#x679C;&#x3002;
+&#x540C;&#x65F6;&#x4E5F;&#x8981;&#x6CE8;&#x610F;&#x867D;&#x7136; bash &#x6587;&#x6863;&#x58F0;&#x660E;&#x6392;&#x5E8F;&#x9075;&#x4ECE;&#x5F53;&#x524D;&#x8BED;&#x7CFB;&#x7684;&#x6392;&#x5217;&#x89C4;&#x5219;&#xFF0C;&#x4F46;&#x5E76;&#x4E0D;&#x8FD9;&#x6837;&#x3002;&#x5C06;&#x6765;&#x7684; bash &#x7248;&#x672C;&#xFF0C;&#x5305;&#x542B; 4.0&#xFF0C;
+&#x4F7F;&#x7528; ASCII&#xFF08;POSIX&#xFF09;&#x6392;&#x5E8F;&#x89C4;&#x5219;&#x3002;</p>
+<hr>
+<p>Here is a script that demonstrates them:</p>
+<p>&#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x6F14;&#x793A;&#x8FD9;&#x4E9B;&#x95EE;&#x9898;&#x7684;&#x811A;&#x672C;&#xFF1A;</p>
+<pre><code>#!/bin/bash
+# test-string: evaluate the value of a string
+ANSWER=maybe
+if [ -z &quot;$ANSWER&quot; ]; then
+    echo &quot;There is no answer.&quot; &gt;&amp;2
+    exit 1
+fi
+if [ &quot;$ANSWER&quot; = &quot;yes&quot; ]; then
+    echo &quot;The answer is YES.&quot;
+elif [ &quot;$ANSWER&quot; = &quot;no&quot; ]; then
+    echo &quot;The answer is NO.&quot;
+elif [ &quot;$ANSWER&quot; = &quot;maybe&quot; ]; then
+    echo &quot;The answer is MAYBE.&quot;
+else
+    echo &quot;The answer is UNKNOWN.&quot;
+fi
+</code></pre><p>In this script, we evaluate the constant ANSWER. We first determine if the string is
+empty. If it is, we terminate the script and set the exit status to one. Notice the
+redirection that is applied to the echo command. This redirects the error message &#x201C;There
+is no answer.&#x201D; to standard error, which is the &#x201C;proper&#x201D; thing to do with error messages. If
+the string is not empty, we evaluate the value of the string to see if it is equal to either
+&#x201C;yes,&#x201D; &#x201C;no,&#x201D; or &#x201C;maybe.&#x201D; We do this by using elif, which is short for &#x201C;else if.&#x201D; By
+using elif, we are able to construct a more complex logical test.</p>
+<p>&#x5728;&#x8FD9;&#x4E2A;&#x811A;&#x672C;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x8BA1;&#x7B97;&#x5E38;&#x91CF; ANSWER&#x3002;&#x6211;&#x4EEC;&#x9996;&#x5148;&#x786E;&#x5B9A;&#x662F;&#x5426;&#x6B64;&#x5B57;&#x7B26;&#x4E32;&#x4E3A;&#x7A7A;&#x3002;&#x5982;&#x679C;&#x4E3A;&#x7A7A;&#xFF0C;&#x6211;&#x4EEC;&#x5C31;&#x7EC8;&#x6B62;
+&#x811A;&#x672C;&#xFF0C;&#x5E76;&#x628A;&#x9000;&#x51FA;&#x72B6;&#x6001;&#x8BBE;&#x4E3A;&#x96F6;&#x3002;&#x6CE8;&#x610F;&#x8FD9;&#x4E2A;&#x5E94;&#x7528;&#x4E8E; echo &#x547D;&#x4EE4;&#x7684;&#x91CD;&#x5B9A;&#x5411;&#x64CD;&#x4F5C;&#x3002;&#x5176;&#x628A;&#x9519;&#x8BEF;&#x4FE1;&#x606F; &#x201C;There
+is no answer.&#x201D; &#x91CD;&#x5B9A;&#x5411;&#x5230;&#x6807;&#x51C6;&#x9519;&#x8BEF;&#xFF0C;&#x8FD9;&#x662F;&#x5904;&#x7406;&#x9519;&#x8BEF;&#x4FE1;&#x606F;&#x7684;&#x201C;&#x6B63;&#x786E;&#x201D;&#x65B9;&#x6CD5;&#x3002;&#x5982;&#x679C;&#x5B57;&#x7B26;&#x4E32;&#x4E0D;&#x4E3A;&#x7A7A;&#xFF0C;&#x6211;&#x4EEC;&#x5C31;&#x8BA1;&#x7B97;
+&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x503C;&#xFF0C;&#x770B;&#x770B;&#x5B83;&#x662F;&#x5426;&#x7B49;&#x4E8E;&#x201C;yes,&#x201D; &quot;no,&quot; &#x6216;&#x8005;&#x201C;maybe&#x201D;&#x3002;&#x4E3A;&#x6B64;&#x4F7F;&#x7528;&#x4E86; elif&#xFF0C;&#x5B83;&#x662F; &#x201C;else if&#x201D; &#x7684;&#x7B80;&#x5199;&#x3002;
+&#x901A;&#x8FC7;&#x4F7F;&#x7528; elif&#xFF0C;&#x6211;&#x4EEC;&#x80FD;&#x591F;&#x6784;&#x5EFA;&#x66F4;&#x590D;&#x6742;&#x7684;&#x903B;&#x8F91;&#x6D4B;&#x8BD5;&#x3002;</p>
+<h4 id="&#x6574;&#x578B;&#x8868;&#x8FBE;&#x5F0F;">&#x6574;&#x578B;&#x8868;&#x8FBE;&#x5F0F;</h4>
+<p>The following expressions are used with integers:</p>
+<p>&#x4E0B;&#x9762;&#x7684;&#x8868;&#x8FBE;&#x5F0F;&#x7528;&#x4E8E;&#x6574;&#x6570;&#xFF1A;</p>
+<table class="multi">
+<caption class="cap">Table 28-3: test Integer Expressions</caption>
+<tr>
+<th class="title">Expression </th>
+<th class="title">Is True If...</th>
+</tr>
+<tr>
+<td valign="top" width="40%">integer1 -eq integer2 </td>
+<td valign="top">integer1 is equal to integer2.</td>
+</tr>
+<tr>
+<td valign="top">integer1 -ne integer2 </td>
+<td valign="top">integer1 is not equal to integer2.  </td>
+</tr>
+<tr>
+<td valign="top">integer1 -le integer2 </td>
+<td valign="top">integer1 is less than or equal to integer2.  </td>
+</tr>
+<tr>
+<td valign="top">integer1 -lt integer2 </td>
+<td valign="top">integer1 is less than integer2.  </td>
+</tr>
+<tr>
+<td valign="top">integer1 -ge integer2 </td>
+<td valign="top">integer1 is greater than or equal to integer2.  </td>
+</tr>
+<tr>
+<td valign="top">integer1 -gt integer2 </td>
+<td valign="top">integer1 is greater than integer2.  </td>
+</tr>
+</table>
+
+<table class="multi">
+<caption class="cap">&#x8868;28-3: &#x6D4B;&#x8BD5;&#x6574;&#x6570;&#x8868;&#x8FBE;&#x5F0F;</caption>
+<tr>
+<th class="title">&#x8868;&#x8FBE;&#x5F0F;</th>
+<th class="title">&#x5982;&#x679C;&#x4E3A;&#x771F;...</th>
+</tr>
+<tr>
+<td valign="top" width="40%">integer1 -eq integer2 </td>
+<td valign="top">integer1 &#x7B49;&#x4E8E; integer2.</td>
+</tr>
+<tr>
+<td valign="top">integer1 -ne integer2 </td>
+<td valign="top">integer1 &#x4E0D;&#x7B49;&#x4E8E; integer2.</td>
+</tr>
+<tr>
+<td valign="top">integer1 -le integer2 </td>
+<td valign="top">integer1 &#x5C0F;&#x4E8E;&#x6216;&#x7B49;&#x4E8E; integer2.</td>
+</tr>
+<tr>
+<td valign="top">integer1 -lt integer2 </td>
+<td valign="top">integer1 &#x5C0F;&#x4E8E; integer2.</td>
+</tr>
+<tr>
+<td valign="top">integer1 -ge integer2 </td>
+<td valign="top">integer1 &#x5927;&#x4E8E;&#x6216;&#x7B49;&#x4E8E; integer2.</td>
+</tr>
+<tr>
+<td valign="top">integer1 -gt integer2 </td>
+<td valign="top">integer1 &#x5927;&#x4E8E; integer2.</td>
+</tr>
+</table>
+
+<p>Here is a script that demonstrates them:</p>
+<p>&#x8FD9;&#x91CC;&#x662F;&#x4E00;&#x4E2A;&#x6F14;&#x793A;&#x4EE5;&#x4E0A;&#x8868;&#x8FBE;&#x5F0F;&#x7528;&#x6CD5;&#x7684;&#x811A;&#x672C;&#xFF1A;</p>
+<pre><code>#!/bin/bash
+# test-integer: evaluate the value of an integer.
+INT=-5
+if [ -z &quot;$INT&quot; ]; then
+    echo &quot;INT is empty.&quot; &gt;&amp;2
+    exit 1
+fi
+if [ $INT -eq 0 ]; then
+    echo &quot;INT is zero.&quot;
+else
+    if [ $INT -lt 0 ]; then
+        echo &quot;INT is negative.&quot;
+    else
+        echo &quot;INT is positive.&quot;
+    fi
+    if [ $((INT % 2)) -eq 0 ]; then
+        echo &quot;INT is even.&quot;
+    else
+        echo &quot;INT is odd.&quot;
+    fi
+fi
+</code></pre><p>The interesting part of the script is how it determines whether an integer is even or odd.
+By performing a modulo 2 operation on the number, which divides the number by two
+and returns the remainder, it can tell if the number is odd or even.</p>
+<p>&#x8FD9;&#x4E2A;&#x811A;&#x672C;&#x4E2D;&#x6709;&#x8DA3;&#x7684;&#x5730;&#x65B9;&#x662F;&#x600E;&#x6837;&#x6765;&#x786E;&#x5B9A;&#x4E00;&#x4E2A;&#x6574;&#x6570;&#x662F;&#x5076;&#x6570;&#x8FD8;&#x662F;&#x5947;&#x6570;&#x3002;&#x901A;&#x8FC7;&#x7528;&#x6A21;&#x6570;2&#x5BF9;&#x6570;&#x5B57;&#x6267;&#x884C;&#x6C42;&#x6A21;&#x64CD;&#x4F5C;&#xFF0C;
+&#x5C31;&#x662F;&#x7528;&#x6570;&#x5B57;&#x6765;&#x9664;&#x4EE5;2&#xFF0C;&#x5E76;&#x8FD4;&#x56DE;&#x4F59;&#x6570;&#xFF0C;&#x4ECE;&#x800C;&#x77E5;&#x9053;&#x6570;&#x5B57;&#x662F;&#x5076;&#x6570;&#x8FD8;&#x662F;&#x5947;&#x6570;&#x3002;</p>
+<h3 id="&#x66F4;&#x73B0;&#x4EE3;&#x7684;&#x6D4B;&#x8BD5;&#x7248;&#x672C;">&#x66F4;&#x73B0;&#x4EE3;&#x7684;&#x6D4B;&#x8BD5;&#x7248;&#x672C;</h3>
+<p>Recent versions of bash include a compound command that acts as an enhanced
+replacement for test. It uses the following syntax:</p>
+<p>&#x76EE;&#x524D;&#x7684; bash &#x7248;&#x672C;&#x5305;&#x62EC;&#x4E00;&#x4E2A;&#x590D;&#x5408;&#x547D;&#x4EE4;&#xFF0C;&#x4F5C;&#x4E3A;&#x52A0;&#x5F3A;&#x7684; test &#x547D;&#x4EE4;&#x66FF;&#x4EE3;&#x7269;&#x3002;&#x5B83;&#x4F7F;&#x7528;&#x4EE5;&#x4E0B;&#x8BED;&#x6CD5;&#xFF1A;</p>
+<pre><code>[[ expression ]]
+</code></pre><p>where, like test, expression is an expression that evaluates to either a true or false
+result. The <code>[[ ]]</code> command is very similar to test (it supports all of its expressions),
+but adds an important new string expression:</p>
+<p>&#x8FD9;&#x91CC;&#xFF0C;&#x7C7B;&#x4F3C;&#x4E8E; test&#xFF0C;expression &#x662F;&#x4E00;&#x4E2A;&#x8868;&#x8FBE;&#x5F0F;&#xFF0C;&#x5176;&#x8BA1;&#x7B97;&#x7ED3;&#x679C;&#x4E3A;&#x771F;&#x6216;&#x5047;&#x3002;&#x8FD9;&#x4E2A;<code>[[ ]]</code>&#x547D;&#x4EE4;&#x975E;&#x5E38;
+&#x76F8;&#x4F3C;&#x4E8E; test &#x547D;&#x4EE4;&#xFF08;&#x5B83;&#x652F;&#x6301;&#x6240;&#x6709;&#x7684;&#x8868;&#x8FBE;&#x5F0F;&#xFF09;&#xFF0C;&#x4F46;&#x662F;&#x589E;&#x52A0;&#x4E86;&#x4E00;&#x4E2A;&#x91CD;&#x8981;&#x7684;&#x65B0;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x8868;&#x8FBE;&#x5F0F;&#xFF1A;</p>
+<pre><code>string1 =~ regex
+</code></pre><p>which returns true if string1 is matched by the extended regular expression regex. This
+opens up a lot of possibilities for performing such tasks as data validation. In our earlier
+example of the integer expressions, the script would fail if the constant INT contained
+anything except an integer. The script needs a way to verify that the constant contains an
+integer. Using <code>[[ ]]</code> with the <code>=~</code> string expression operator, we could improve the script this way:</p>
+<p>&#x5176;&#x8FD4;&#x56DE;&#x503C;&#x4E3A;&#x771F;&#xFF0C;&#x5982;&#x679C; string1&#x5339;&#x914D;&#x6269;&#x5C55;&#x7684;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F; regex&#x3002;&#x8FD9;&#x5C31;&#x4E3A;&#x6267;&#x884C;&#x6BD4;&#x5982;&#x6570;&#x636E;&#x9A8C;&#x8BC1;&#x7B49;&#x4EFB;&#x52A1;&#x63D0;&#x4F9B;&#x4E86;&#x8BB8;&#x591A;&#x53EF;&#x80FD;&#x6027;&#x3002;
+&#x5728;&#x6211;&#x4EEC;&#x524D;&#x9762;&#x7684;&#x6574;&#x6570;&#x8868;&#x8FBE;&#x5F0F;&#x793A;&#x4F8B;&#x4E2D;&#xFF0C;&#x5982;&#x679C;&#x5E38;&#x91CF; INT &#x5305;&#x542B;&#x9664;&#x4E86;&#x6574;&#x6570;&#x4E4B;&#x5916;&#x7684;&#x4EFB;&#x4F55;&#x6570;&#x636E;&#xFF0C;&#x811A;&#x672C;&#x5C31;&#x4F1A;&#x8FD0;&#x884C;&#x5931;&#x8D25;&#x3002;&#x8FD9;&#x4E2A;&#x811A;&#x672C;
+&#x9700;&#x8981;&#x4E00;&#x79CD;&#x65B9;&#x6CD5;&#x6765;&#x8BC1;&#x660E;&#x6B64;&#x5E38;&#x91CF;&#x5305;&#x542B;&#x4E00;&#x4E2A;&#x6574;&#x6570;&#x3002;&#x4F7F;&#x7528; <code>[[ ]]</code> &#x548C; <code>=~</code> &#x5B57;&#x7B26;&#x4E32;&#x8868;&#x8FBE;&#x5F0F;&#x64CD;&#x4F5C;&#x7B26;&#xFF0C;&#x6211;&#x4EEC;&#x80FD;&#x591F;&#x8FD9;&#x6837;&#x6765;&#x6539;&#x8FDB;&#x811A;&#x672C;&#xFF1A;</p>
+<pre><code>#!/bin/bash
+# test-integer2: evaluate the value of an integer.
+INT=-5
+if [[ &quot;$INT&quot; =~ ^-?[0-9]+$ ]]; then
+    if [ $INT -eq 0 ]; then
+        echo &quot;INT is zero.&quot;
+    else
+        if [ $INT -lt 0 ]; then
+            echo &quot;INT is negative.&quot;
+        else
+            echo &quot;INT is positive.&quot;
+        fi
+        if [ $((INT % 2)) -eq 0 ]; then
+            echo &quot;INT is even.&quot;
+        else
+            echo &quot;INT is odd.&quot;
+        fi
+    fi
+else
+    echo &quot;INT is not an integer.&quot; &gt;&amp;2
+    exit 1
+fi
+</code></pre><p>By applying the regular expression, we are able to limit the value of INT to only strings
+that begin with an optional minus sign, followed by one or more numerals. This
+expression also eliminates the possibility of empty values.</p>
+<p>&#x901A;&#x8FC7;&#x5E94;&#x7528;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#xFF0C;&#x6211;&#x4EEC;&#x80FD;&#x591F;&#x9650;&#x5236; INT &#x7684;&#x503C;&#x53EA;&#x662F;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x5176;&#x5F00;&#x59CB;&#x4E8E;&#x4E00;&#x4E2A;&#x53EF;&#x9009;&#x7684;&#x51CF;&#x53F7;&#xFF0C;&#x968F;&#x540E;&#x662F;&#x4E00;&#x4E2A;&#x6216;&#x591A;&#x4E2A;&#x6570;&#x5B57;&#x3002;
+&#x8FD9;&#x4E2A;&#x8868;&#x8FBE;&#x5F0F;&#x4E5F;&#x6D88;&#x9664;&#x4E86;&#x7A7A;&#x503C;&#x7684;&#x53EF;&#x80FD;&#x6027;&#x3002;</p>
+<p>Another added feature of <code>[[ ]]</code> is that the <code>==</code> operator supports pattern matching the
+same way pathname expansion does. For example:</p>
+<p><code>[[ ]]</code>&#x6DFB;&#x52A0;&#x7684;&#x53E6;&#x4E00;&#x4E2A;&#x529F;&#x80FD;&#x662F;<code>==</code>&#x64CD;&#x4F5C;&#x7B26;&#x652F;&#x6301;&#x7C7B;&#x578B;&#x5339;&#x914D;&#xFF0C;&#x6B63;&#x5982;&#x8DEF;&#x5F84;&#x540D;&#x5C55;&#x5F00;&#x6240;&#x505A;&#x7684;&#x90A3;&#x6837;&#x3002;&#x4F8B;&#x5982;&#xFF1A;</p>
+<pre><code>[me@linuxbox ~]$ FILE=foo.bar
+[me@linuxbox ~]$ if [[ $FILE == foo.* ]]; then
+&gt; echo &quot;$FILE matches pattern &apos;foo.*&apos;&quot;
+&gt; fi
+foo.bar matches pattern &apos;foo.*&apos;
+</code></pre><p>This makes <code>[[ ]]</code> useful for evaluating file and path names.</p>
+<p>&#x8FD9;&#x5C31;&#x4F7F;<code>[[ ]]</code>&#x6709;&#x52A9;&#x4E8E;&#x8BA1;&#x7B97;&#x6587;&#x4EF6;&#x548C;&#x8DEF;&#x5F84;&#x540D;&#x3002;</p>
+<h3 id="---&#x4E3A;&#x6574;&#x6570;&#x8BBE;&#x8BA1;">(( )) - &#x4E3A;&#x6574;&#x6570;&#x8BBE;&#x8BA1;</h3>
+<p>In addition to the <code>[[ ]]</code> compound command, bash also provides the <code>(( ))</code>
+compound command, which is useful for operating on integers. It supports a full set of
+arithmetic evaluations, a subject we will cover fully in Chapter 35.</p>
+<p>&#x9664;&#x4E86; <code>[[ ]]</code> &#x590D;&#x5408;&#x547D;&#x4EE4;&#x4E4B;&#x5916;&#xFF0C;bash &#x4E5F;&#x63D0;&#x4F9B;&#x4E86; <code>(( ))</code> &#x590D;&#x5408;&#x547D;&#x4EE4;&#xFF0C;&#x5176;&#x6709;&#x5229;&#x4E8E;&#x64CD;&#x4F5C;&#x6574;&#x6570;&#x3002;&#x5B83;&#x652F;&#x6301;&#x4E00;&#x5957;
+&#x5B8C;&#x6574;&#x7684;&#x7B97;&#x672F;&#x8BA1;&#x7B97;&#xFF0C;&#x6211;&#x4EEC;&#x5C06;&#x5728;&#x7B2C;35&#x7AE0;&#x4E2D;&#x8BA8;&#x8BBA;&#x8FD9;&#x4E2A;&#x4E3B;&#x9898;&#x3002;</p>
+<p><code>(( ))</code> is used to perform arithmetic truth tests. An arithmetic truth test results in true if
+the result of the arithmetic evaluation is non-zero.</p>
+<p><code>(( ))</code>&#x88AB;&#x7528;&#x6765;&#x6267;&#x884C;&#x7B97;&#x672F;&#x771F;&#x6D4B;&#x8BD5;&#x3002;&#x5982;&#x679C;&#x7B97;&#x672F;&#x8BA1;&#x7B97;&#x7684;&#x7ED3;&#x679C;&#x662F;&#x975E;&#x96F6;&#x503C;&#xFF0C;&#x5219;&#x4E00;&#x4E2A;&#x7B97;&#x672F;&#x771F;&#x6D4B;&#x8BD5;&#x503C;&#x4E3A;&#x771F;&#x3002;</p>
+<pre><code>[me@linuxbox ~]$ if ((1)); then echo &quot;It is true.&quot;; fi
+It is true.
+[me@linuxbox ~]$ if ((0)); then echo &quot;It is true.&quot;; fi
+[me@linuxbox ~]$
+</code></pre><p>Using <code>(( ))</code>, we can slightly simplify the test-integer2 script like this:</p>
+<p>&#x4F7F;&#x7528;<code>(( ))</code>&#xFF0C;&#x6211;&#x4EEC;&#x80FD;&#x591F;&#x7565;&#x5FAE;&#x7B80;&#x5316; test-integer2&#x811A;&#x672C;&#xFF0C;&#x50CF;&#x8FD9;&#x6837;&#xFF1A;</p>
+<pre><code>#!/bin/bash
+# test-integer2a: evaluate the value of an integer.
+INT=-5
+if [[ &quot;$INT&quot; =~ ^-?[0-9]+$ ]]; then
+    if ((INT == 0)); then
+        echo &quot;INT is zero.&quot;
+    else
+        if ((INT &lt; 0)); then
+            echo &quot;INT is negative.&quot;
+        else
+            echo &quot;INT is positive.&quot;
+        fi
+        if (( ((INT % 2)) == 0)); then
+            echo &quot;INT is even.&quot;
+        else
+            echo &quot;INT is odd.&quot;
+        fi
+    fi
+else
+    echo &quot;INT is not an integer.&quot; &gt;&amp;2
+    exit 1
+fi
+</code></pre><p>Notice that we use less than and greater than signs and that == is used to test for
+equivalence. This is a more natural looking syntax for working with integers. Notice
+too, that because the compound command <code>(( ))</code> is part of the shell syntax rather than
+an ordinary command, and it deals only with integers, it is able to recognize variables by
+name and does not require expansion to be performed. We&#x2019;ll discuss <code>(( ))</code> and the
+related arithmetic expansion further in Chapter 35.</p>
+<p>&#x6CE8;&#x610F;&#x6211;&#x4EEC;&#x4F7F;&#x7528;&#x5C0F;&#x4E8E;&#x548C;&#x5927;&#x4E8E;&#x7B26;&#x53F7;&#xFF0C;&#x4EE5;&#x53CA;==&#x7528;&#x6765;&#x6D4B;&#x8BD5;&#x662F;&#x5426;&#x76F8;&#x7B49;&#x3002;&#x8FD9;&#x662F;&#x4F7F;&#x7528;&#x6574;&#x6570;&#x8F83;&#x4E3A;&#x81EA;&#x7136;&#x7684;&#x8BED;&#x6CD5;&#x4E86;&#x3002;&#x4E5F;&#x8981;
+&#x6CE8;&#x610F;&#xFF0C;&#x56E0;&#x4E3A;&#x590D;&#x5408;&#x547D;&#x4EE4; <code>(( ))</code> &#x662F; shell &#x8BED;&#x6CD5;&#x7684;&#x4E00;&#x90E8;&#x5206;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x4E00;&#x4E2A;&#x666E;&#x901A;&#x7684;&#x547D;&#x4EE4;&#xFF0C;&#x800C;&#x4E14;&#x5B83;&#x53EA;&#x5904;&#x7406;&#x6574;&#x6570;&#xFF0C;
+&#x6240;&#x4EE5;&#x5B83;&#x80FD;&#x591F;&#x901A;&#x8FC7;&#x540D;&#x5B57;&#x8BC6;&#x522B;&#x51FA;&#x53D8;&#x91CF;&#xFF0C;&#x800C;&#x4E0D;&#x9700;&#x8981;&#x6267;&#x884C;&#x5C55;&#x5F00;&#x64CD;&#x4F5C;&#x3002;&#x6211;&#x4EEC;&#x5C06;&#x5728;&#x7B2C;35&#x4E2D;&#x8FDB;&#x4E00;&#x6B65;&#x8BA8;&#x8BBA; <code>(( ))</code> &#x547D;&#x4EE4;
+&#x548C;&#x76F8;&#x5173;&#x7684;&#x7B97;&#x672F;&#x5C55;&#x5F00;&#x64CD;&#x4F5C;&#x3002;</p>
+<h3 id="&#x7ED3;&#x5408;&#x8868;&#x8FBE;&#x5F0F;">&#x7ED3;&#x5408;&#x8868;&#x8FBE;&#x5F0F;</h3>
+<p>It&#x2019;s also possible to combine expressions to create more complex evaluations.
+Expressions are combined by using logical operators. We saw these in Chapter 18, when
+we learned about the find command. There are three logical operations for test and
+<code>[[ ]]</code>. They are AND, OR and NOT. test and <code>[[ ]]</code> use different operators to
+represent these operations :</p>
+<p>&#x4E5F;&#x6709;&#x53EF;&#x80FD;&#x628A;&#x8868;&#x8FBE;&#x5F0F;&#x7ED3;&#x5408;&#x8D77;&#x6765;&#x521B;&#x5EFA;&#x66F4;&#x590D;&#x6742;&#x7684;&#x8BA1;&#x7B97;&#x3002;&#x901A;&#x8FC7;&#x4F7F;&#x7528;&#x903B;&#x8F91;&#x64CD;&#x4F5C;&#x7B26;&#x6765;&#x7ED3;&#x5408;&#x8868;&#x8FBE;&#x5F0F;&#x3002;&#x6211;&#x4EEC;
+&#x5728;&#x7B2C;18&#x7AE0;&#x4E2D;&#x5DF2;&#x7ECF;&#x77E5;&#x9053;&#x4E86;&#x8FD9;&#x4E9B;&#xFF0C;&#x5F53;&#x6211;&#x4EEC;&#x5B66;&#x4E60; find &#x547D;&#x4EE4;&#x7684;&#x65F6;&#x5019;&#x3002;&#x5B83;&#x4EEC;&#x662F;&#x7528;&#x4E8E; test &#x548C; <code>[[ ]]</code> &#x4E09;&#x4E2A;&#x903B;&#x8F91;&#x64CD;&#x4F5C;&#x3002;
+&#x5B83;&#x4EEC;&#x662F; AND&#xFF0C;OR&#xFF0C;&#x548C; NOT&#x3002;test &#x548C; <code>[[ ]]</code> &#x4F7F;&#x7528;&#x4E0D;&#x540C;&#x7684;&#x64CD;&#x4F5C;&#x7B26;&#x6765;&#x8868;&#x793A;&#x8FD9;&#x4E9B;&#x64CD;&#x4F5C;&#xFF1A;</p>
+<table class="multi">
+<caption class="cap">Table 28-4: Logical Operators</caption>
+<tr>
+<th class="title" width="34%">Operation</th>
+<th class="title">test</th>
+<th class="title" width="34%">[[ ]] and (( ))</th>
+</tr>
+<tr>
+<td valign="top">AND</td>
+<td valign="top">-a</td>
+<td valign="top">&amp;&amp;</td>
+</tr>
+<tr>
+<td valign="top">OR</td>
+<td valign="top">-o</td>
+<td valign="top">||</td>
+</tr>
+<tr>
+<td valign="top">NOT</td>
+<td valign="top">!</td>
+<td valign="top">!</td>
+</tr>
+</table>
+
+<table class="multi">
+<caption class="cap">&#x8868;28-4: &#x903B;&#x8F91;&#x64CD;&#x4F5C;&#x7B26;</caption>
+<tr>
+<th class="title" width="34%">&#x64CD;&#x4F5C;&#x7B26;</th>
+<th class="title">&#x6D4B;&#x8BD5;</th>
+<th class="title" width="34%">[[ ]] and (( ))</th>
+</tr>
+<tr>
+<td valign="top">AND</td>
+<td valign="top">-a</td>
+<td valign="top">&amp;&amp;</td>
+</tr>
+<tr>
+<td valign="top">OR</td>
+<td valign="top">-o</td>
+<td valign="top">||</td>
+</tr>
+<tr>
+<td valign="top">NOT</td>
+<td valign="top">!</td>
+<td valign="top"> ! </td>
+</tr>
+</table>
+
+<p>Here&#x2019;s an example of an AND operation. The following script determines if an integer is
+within a range of values:</p>
+<p>&#x8FD9;&#x91CC;&#x6709;&#x4E00;&#x4E2A; AND &#x64CD;&#x4F5C;&#x7684;&#x793A;&#x4F8B;&#x3002;&#x4E0B;&#x9762;&#x7684;&#x811A;&#x672C;&#x51B3;&#x5B9A;&#x4E86;&#x4E00;&#x4E2A;&#x6574;&#x6570;&#x662F;&#x5426;&#x5C5E;&#x4E8E;&#x67D0;&#x4E2A;&#x8303;&#x56F4;&#x5185;&#x7684;&#x503C;&#xFF1A;</p>
+<pre><code>#!/bin/bash
+# test-integer3: determine if an integer is within a
+# specified range of values.
+MIN_VAL=1
+MAX_VAL=100
+INT=50
+if [[ &quot;$INT&quot; =~ ^-?[0-9]+$ ]]; then
+    if [[ INT -ge MIN_VAL &amp;&amp; INT -le MAX_VAL ]]; then
+        echo &quot;$INT is within $MIN_VAL to $MAX_VAL.&quot;
+    else
+        echo &quot;$INT is out of range.&quot;
+    fi
+else
+    echo &quot;INT is not an integer.&quot; &gt;&amp;2
+    exit 1
+fi
+</code></pre><p>We also include parentheses around the expression, for grouping. If these were not
+included, the negation would only apply to the first expression and not the combination
+of the two. Coding this with test would be done this way:</p>
+<p>&#x6211;&#x4EEC;&#x4E5F;&#x53EF;&#x4EE5;&#x5BF9;&#x8868;&#x8FBE;&#x5F0F;&#x4F7F;&#x7528;&#x5706;&#x62EC;&#x53F7;&#xFF0C;&#x4E3A;&#x7684;&#x662F;&#x5206;&#x7EC4;&#x3002;&#x5982;&#x679C;&#x4E0D;&#x4F7F;&#x7528;&#x62EC;&#x53F7;&#xFF0C;&#x90A3;&#x4E48;&#x5426;&#x5B9A;&#x53EA;&#x5E94;&#x7528;&#x4E8E;&#x7B2C;&#x4E00;&#x4E2A;
+&#x8868;&#x8FBE;&#x5F0F;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x4E24;&#x4E2A;&#x7EC4;&#x5408;&#x7684;&#x8868;&#x8FBE;&#x5F0F;&#x3002;&#x7528; test &#x53EF;&#x4EE5;&#x8FD9;&#x6837;&#x6765;&#x7F16;&#x7801;&#xFF1A;</p>
+<pre><code>if [ ! \( $INT -ge $MIN_VAL -a $INT -le $MAX_VAL \) ]; then
+    echo &quot;$INT is outside $MIN_VAL to $MAX_VAL.&quot;
+else
+    echo &quot;$INT is in range.&quot;
+fi
+</code></pre><p>Since all expressions and operators used by test are treated as command arguments by
+the shell (unlike <code>[[ ]]</code> and <code>(( ))</code> ), characters which have special meaning to bash,
+such as &lt;, &gt;, (, and ), must be quoted or escaped.</p>
+<p>&#x56E0;&#x4E3A; test &#x4F7F;&#x7528;&#x7684;&#x6240;&#x6709;&#x7684;&#x8868;&#x8FBE;&#x5F0F;&#x548C;&#x64CD;&#x4F5C;&#x7B26;&#x90FD;&#x88AB; shell &#x770B;&#x4F5C;&#x662F;&#x547D;&#x4EE4;&#x53C2;&#x6570;&#xFF08;&#x4E0D;&#x50CF; <code>[[ ]]</code> &#x548C; <code>(( ))</code> &#xFF09;&#xFF0C;
+&#x5BF9;&#x4E8E; bash &#x6709;&#x7279;&#x6B8A;&#x542B;&#x4E49;&#x7684;&#x5B57;&#x7B26;&#xFF0C;&#x6BD4;&#x5982;&#x8BF4; &lt;&#xFF0C;&gt;&#xFF0C;(&#xFF0C;&#x548C; )&#xFF0C;&#x5FC5;&#x987B;&#x5F15;&#x8D77;&#x6765;&#x6216;&#x8005;&#x662F;&#x8F6C;&#x4E49;&#x3002;</p>
+<p>Seeing that test and <code>[[ ]]</code> do roughly the same thing, which is preferable? test is
+traditional (and part of POSIX), whereas <code>[[ ]]</code> is specific to bash. It&#x2019;s important to
+know how to use test, since it is very widely used, but <code>[[ ]]</code> is clearly more useful
+and is easier to code.</p>
+<p>&#x77E5;&#x9053;&#x4E86; test &#x548C; <code>[[ ]]</code> &#x57FA;&#x672C;&#x4E0A;&#x5B8C;&#x6210;&#x76F8;&#x540C;&#x7684;&#x4E8B;&#x60C5;&#xFF0C;&#x54EA;&#x4E00;&#x4E2A;&#x66F4;&#x597D;&#x5462;&#xFF1F;test &#x66F4;&#x4F20;&#x7EDF;&#xFF08;&#x662F; POSIX &#x7684;&#x4E00;&#x90E8;&#x5206;&#xFF09;&#xFF0C;
+&#x7136;&#x800C; <code>[[ ]]</code> &#x7279;&#x5B9A;&#x4E8E; bash&#x3002;&#x77E5;&#x9053;&#x600E;&#x6837;&#x4F7F;&#x7528; test &#x5F88;&#x91CD;&#x8981;&#xFF0C;&#x56E0;&#x4E3A;&#x5B83;&#x88AB;&#x975E;&#x5E38;&#x5E7F;&#x6CDB;&#x5730;&#x5E94;&#x7528;&#xFF0C;&#x4F46;&#x662F;&#x663E;&#x7136; <code>[[ ]]</code> &#x66F4;
+&#x6709;&#x7528;&#xFF0C;&#x5E76;&#x66F4;&#x6613;&#x4E8E;&#x7F16;&#x7801;&#x3002;</p>
+<blockquote>
+<p>Portability Is The Hobgoblin Of Little Minds</p>
+<p>&#x53EF;&#x79FB;&#x690D;&#x6027;&#x662F;&#x5934;&#x8111;&#x72ED;&#x9698;&#x4EBA;&#x58EB;&#x7684;&#x5FC3;&#x9B54;</p>
+<p>If you talk to &#x201C;real&#x201D; Unix people, you quickly discover that many of them don&#x2019;t
+like Linux very much. They regard it as impure and unclean. One tenet of Unix
+followers is that everything should be &#x201C;portable.&#x201D; This means that any script you
+write should be able to run, unchanged, on any Unix-like system.</p>
+<p>&#x5982;&#x679C;&#x4F60;&#x548C;&#x201C;&#x771F;&#x6B63;&#x7684;&#x201D;Unix &#x7528;&#x6237;&#x4EA4;&#x8C08;&#xFF0C;&#x4F60;&#x5F88;&#x5FEB;&#x5C31;&#x4F1A;&#x53D1;&#x73B0;&#x4ED6;&#x4EEC;&#x5927;&#x591A;&#x6570;&#x4EBA;&#x4E0D;&#x662F;&#x975E;&#x5E38;&#x559C;&#x6B22; Linux&#x3002;&#x4ED6;&#x4EEC;
+&#x8BA4;&#x4E3A; Linux &#x80AE;&#x810F;&#x4E14;&#x4E0D;&#x5E72;&#x51C0;&#x3002;Unix &#x8FFD;&#x968F;&#x8005;&#x7684;&#x4E00;&#x4E2A;&#x5B97;&#x65E8;&#x662F;&#xFF0C;&#x4E00;&#x5207;&#x90FD;&#x5E94;&#x201C;&#x53EF;&#x79FB;&#x690D;&#x7684;&#x201D;&#x3002;&#x8FD9;&#x610F;&#x5473;&#x7740;&#x4F60;&#x7F16;&#x5199;
+&#x7684;&#x4EFB;&#x610F;&#x4E00;&#x4E2A;&#x811A;&#x672C;&#x90FD;&#x5E94;&#x5F53;&#x65E0;&#x9700;&#x4FEE;&#x6539;&#xFF0C;&#x5C31;&#x80FD;&#x8FD0;&#x884C;&#x5728;&#x4EFB;&#x4F55;&#x4E00;&#x4E2A;&#x7C7B; Unix &#x7684;&#x7CFB;&#x7EDF;&#x4E2D;&#x3002;</p>
+<p>Unix people have good reason to believe this. Having seen what proprietary
+extensions to commands and shells did to the Unix world before POSIX, they are
+naturally wary of the effect of Linux on their beloved OS.</p>
+<p>Unix &#x7528;&#x6237;&#x6709;&#x5145;&#x5206;&#x7684;&#x7406;&#x7531;&#x76F8;&#x4FE1;&#x8FD9;&#x4E00;&#x70B9;&#x3002;&#x5728; POSIX &#x4E4B;&#x524D;&#xFF0C;Unix &#x7528;&#x6237;&#x5DF2;&#x7ECF;&#x770B;&#x5230;&#x4E86;&#x547D;&#x4EE4;&#x7684;&#x4E13;&#x6709;&#x6269;&#x5C55;&#x4EE5;&#x53CA;
+shell &#x5BF9; Unix &#x4E16;&#x754C;&#x7684;&#x6240;&#x505A;&#x6240;&#x4E3A;&#xFF0C;&#x4ED6;&#x4EEC;&#x81EA;&#x7136;&#x4F1A;&#x8B66;&#x60D5; Linux &#x5BF9;&#x4ED6;&#x4EEC;&#x5FC3;&#x7231;&#x7CFB;&#x7EDF;&#x7684;&#x5F71;&#x54CD;&#x3002;</p>
+<p>But portability has a serious downside. It prevents progress. It requires that
+things are always done using &#x201C;lowest common denominator&#x201D; techniques. In the
+case of shell programming, it means making everything compatible with sh, the
+original Bourne shell.</p>
+<p>&#x4F46;&#x662F;&#x53EF;&#x79FB;&#x690D;&#x6027;&#x6709;&#x4E00;&#x4E2A;&#x4E25;&#x91CD;&#x7684;&#x7F3A;&#x70B9;&#x3002;&#x5B83;&#x9632;&#x788D;&#x4E86;&#x8FDB;&#x6B65;&#x3002;&#x5B83;&#x8981;&#x6C42;&#x505A;&#x4E8B;&#x60C5;&#x8981;&#x9075;&#x5FAA;&#x201C;&#x6700;&#x4F4E;&#x5E38;&#x89C1;&#x6807;&#x51C6;&#x201D;&#x3002;
+&#x5728; shell &#x7F16;&#x7A0B;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x5B83;&#x610F;&#x5473;&#x7740;&#x4E00;&#x5207;&#x8981;&#x4E0E; sh &#x517C;&#x5BB9;&#xFF0C;&#x6700;&#x521D;&#x7684; Bourne shell&#x3002;</p>
+<p>This downside is the excuse that proprietary vendors use to justify their
+proprietary extensions, only they call them &#x201C;innovations.&#x201D; But they are really just
+lock-in devices for their customers.</p>
+<p>&#x8FD9;&#x4E2A;&#x7F3A;&#x70B9;&#x662F;&#x4E00;&#x4E2A;&#x4E13;&#x6709;&#x8F6F;&#x4EF6;&#x4F9B;&#x5E94;&#x5546;&#x7528;&#x6765;&#x4E3A;&#x4ED6;&#x4EEC;&#x4E13;&#x6709;&#x7684;&#x6269;&#x5C55;&#x505A;&#x8FA9;&#x89E3;&#x7684;&#x501F;&#x53E3;&#xFF0C;&#x53EA;&#x6709;&#x4ED6;&#x4EEC;&#x79F0;&#x4ED6;&#x4EEC;&#x4E3A;&#x201C;&#x521B;&#x65B0;&#x201D;&#x3002;
+&#x4F46;&#x662F;&#x4ED6;&#x4EEC;&#x53EA;&#x662F;&#x4E3A;&#x4ED6;&#x4EEC;&#x7684;&#x5BA2;&#x6237;&#x9501;&#x5B9A;&#x8BBE;&#x5907;&#x3002;</p>
+<p>The GNU tools, such as bash, have no such restrictions. They encourage
+portability by supporting standards and by being universally available. You can
+install bash and the other GNU tools on almost any kind of system, even
+Windows, without cost. So feel free to use all the features of bash. It&#x2019;s really
+portable.</p>
+<p>GNU &#x5DE5;&#x5177;&#xFF0C;&#x6BD4;&#x5982;&#x8BF4; bash&#xFF0C;&#x5C31;&#x6CA1;&#x6709;&#x8FD9;&#x4E9B;&#x9650;&#x5236;&#x3002;&#x4ED6;&#x4EEC;&#x901A;&#x8FC7;&#x652F;&#x6301;&#x6807;&#x51C6;&#x548C;&#x666E;&#x904D;&#x5730;&#x53EF;&#x7528;&#x6027;&#x6765;&#x9F13;&#x52B1;&#x53EF;&#x79FB;&#x690D;&#x6027;&#x3002;&#x4F60;&#x51E0;&#x4E4E;&#x53EF;&#x4EE5;
+&#x5728;&#x6240;&#x6709;&#x7C7B;&#x578B;&#x7684;&#x7CFB;&#x7EDF;&#x4E2D;&#x5B89;&#x88C5; bash &#x548C;&#x5176;&#x5B83;&#x7684; GNU &#x5DE5;&#x5177;&#xFF0C;&#x751A;&#x81F3;&#x662F; Windows&#xFF0C;&#x800C;&#x6CA1;&#x6709;&#x635F;&#x5931;&#x3002;&#x6240;&#x4EE5;&#x5C31;
+&#x611F;&#x89C9;&#x53EF;&#x4EE5;&#x81EA;&#x7531;&#x7684;&#x4F7F;&#x7528; bash &#x7684;&#x6240;&#x6709;&#x529F;&#x80FD;&#x3002;&#x5B83;&#x662F;&#x771F;&#x6B63;&#x7684;&#x53EF;&#x79FB;&#x690D;&#x3002;</p>
+</blockquote>
+<h3 id="&#x63A7;&#x5236;&#x64CD;&#x4F5C;&#x7B26;&#xFF1A;&#x5206;&#x652F;&#x7684;&#x53E6;&#x4E00;&#x79CD;&#x65B9;&#x6CD5;">&#x63A7;&#x5236;&#x64CD;&#x4F5C;&#x7B26;&#xFF1A;&#x5206;&#x652F;&#x7684;&#x53E6;&#x4E00;&#x79CD;&#x65B9;&#x6CD5;</h3>
+<p>bash provides two control operators that can perform branching. The <code>&amp;&amp; (AND)</code> and <code>|| (OR)</code> operators
+work like the logical operators in the <code>[[ ]]</code> compound command. This
+is the syntax:</p>
+<p>bash &#x652F;&#x6301;&#x4E24;&#x79CD;&#x53EF;&#x4EE5;&#x6267;&#x884C;&#x5206;&#x652F;&#x4EFB;&#x52A1;&#x7684;&#x63A7;&#x5236;&#x64CD;&#x4F5C;&#x7B26;&#x3002;&#x8FD9;&#x4E2A; <code>&amp;&amp;&#xFF08;AND&#xFF09;</code>&#x548C;<code>||&#xFF08;OR&#xFF09;</code>&#x64CD;&#x4F5C;&#x7B26;&#x4F5C;&#x7528;&#x5982;&#x540C;
+&#x590D;&#x5408;&#x547D;&#x4EE4;<code>[[ ]]</code>&#x4E2D;&#x7684;&#x903B;&#x8F91;&#x64CD;&#x4F5C;&#x7B26;&#x3002;&#x8FD9;&#x662F;&#x8BED;&#x6CD5;&#xFF1A;</p>
+<pre><code>command1 &amp;&amp; command2
+</code></pre><p>and</p>
+<p>&#x548C;</p>
+<pre><code>command1 || command2
+</code></pre><p>It is important to understand the behavior of these. With the &amp;&amp; operator, command1 is
+executed and command2 is executed if, and only if, command1 is successful. With the
+<code>||</code> operator, command1 is executed and command2 is executed if, and only if,
+command1 is unsuccessful.</p>
+<p>&#x7406;&#x89E3;&#x8FD9;&#x4E9B;&#x64CD;&#x4F5C;&#x5F88;&#x91CD;&#x8981;&#x3002;&#x5BF9;&#x4E8E; &amp;&amp; &#x64CD;&#x4F5C;&#x7B26;&#xFF0C;&#x5148;&#x6267;&#x884C; command1&#xFF0C;&#x5982;&#x679C;&#x5E76;&#x4E14;&#x53EA;&#x6709;&#x5982;&#x679C; command1 &#x6267;&#x884C;&#x6210;&#x529F;&#x540E;&#xFF0C;
+&#x624D;&#x4F1A;&#x6267;&#x884C; command2&#x3002;&#x5BF9;&#x4E8E; || &#x64CD;&#x4F5C;&#x7B26;&#xFF0C;&#x5148;&#x6267;&#x884C; command1&#xFF0C;&#x5982;&#x679C;&#x5E76;&#x4E14;&#x53EA;&#x6709;&#x5982;&#x679C; command1 &#x6267;&#x884C;&#x5931;&#x8D25;&#x540E;&#xFF0C;
+&#x624D;&#x4F1A;&#x6267;&#x884C; command2&#x3002;</p>
+<p>In practical terms, it means that we can do something like this:</p>
+<p>&#x5728;&#x5B9E;&#x9645;&#x4E2D;&#xFF0C;&#x5B83;&#x610F;&#x5473;&#x7740;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x505A;&#x8FD9;&#x6837;&#x7684;&#x4E8B;&#x60C5;&#xFF1A;</p>
+<pre><code>[me@linuxbox ~]$ mkdir temp &amp;&amp; cd temp
+</code></pre><p>This will create a directory named temp, and if it succeeds, the current working directory
+will be changed to temp. The second command is attempted only if the mkdir
+command is successful. Likewise, a command like this:</p>
+<p>&#x8FD9;&#x4F1A;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x540D;&#x4E3A; temp &#x7684;&#x76EE;&#x5F55;&#xFF0C;&#x5E76;&#x4E14;&#x82E5;&#x5B83;&#x6267;&#x884C;&#x6210;&#x529F;&#x540E;&#xFF0C;&#x5F53;&#x524D;&#x76EE;&#x5F55;&#x4F1A;&#x66F4;&#x6539;&#x4E3A; temp&#x3002;&#x7B2C;&#x4E8C;&#x4E2A;&#x547D;&#x4EE4;&#x4F1A;&#x5C1D;&#x8BD5;
+&#x6267;&#x884C;&#x53EA;&#x6709;&#x5F53; mkdir &#x547D;&#x4EE4;&#x6267;&#x884C;&#x6210;&#x529F;&#x4E4B;&#x540E;&#x3002;&#x540C;&#x6837;&#x5730;&#xFF0C;&#x4E00;&#x4E2A;&#x50CF;&#x8FD9;&#x6837;&#x7684;&#x547D;&#x4EE4;&#xFF1A;</p>
+<pre><code>[me@linuxbox ~]$ [ -d temp ] || mkdir temp
+</code></pre><p>will test for the existence of the directory temp, and only if the test fails, will the
+directory be created. This type of construct is very handy for handling errors in scripts, a
+subject we will discuss more in later chapters. For example, we could do this in a script:</p>
+<p>&#x4F1A;&#x6D4B;&#x8BD5;&#x76EE;&#x5F55; temp &#x662F;&#x5426;&#x5B58;&#x5728;&#xFF0C;&#x5E76;&#x4E14;&#x53EA;&#x6709;&#x6D4B;&#x8BD5;&#x5931;&#x8D25;&#x4E4B;&#x540E;&#xFF0C;&#x624D;&#x4F1A;&#x521B;&#x5EFA;&#x8FD9;&#x4E2A;&#x76EE;&#x5F55;&#x3002;&#x8FD9;&#x79CD;&#x6784;&#x9020;&#x7C7B;&#x578B;&#x975E;&#x5E38;&#x6709;&#x52A9;&#x4E8E;&#x5728;
+&#x811A;&#x672C;&#x4E2D;&#x5904;&#x7406;&#x9519;&#x8BEF;&#xFF0C;&#x8FD9;&#x4E2A;&#x4E3B;&#x9898;&#x6211;&#x4EEC;&#x5C06;&#x4F1A;&#x5728;&#x968F;&#x540E;&#x7684;&#x7AE0;&#x8282;&#x4E2D;&#x8BA8;&#x8BBA;&#x66F4;&#x591A;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x6211;&#x4EEC;&#x5728;&#x811A;&#x672C;&#x4E2D;&#x53EF;&#x4EE5;&#x8FD9;&#x6837;&#x505A;&#xFF1A;</p>
+<pre><code>[ -d temp ] || exit 1
+</code></pre><p>If the script requires the directory temp, and it does not exist, then the script will
+terminate with an exit status of one.</p>
+<p>&#x5982;&#x679C;&#x8FD9;&#x4E2A;&#x811A;&#x672C;&#x8981;&#x6C42;&#x76EE;&#x5F55; temp&#xFF0C;&#x4E14;&#x76EE;&#x5F55;&#x4E0D;&#x5B58;&#x5728;&#xFF0C;&#x7136;&#x540E;&#x811A;&#x672C;&#x4F1A;&#x7EC8;&#x6B62;&#xFF0C;&#x5E76;&#x8FD4;&#x56DE;&#x9000;&#x51FA;&#x72B6;&#x6001;1&#x3002;</p>
+<h3 id="&#x603B;&#x7ED3;">&#x603B;&#x7ED3;</h3>
+<p>We started this chapter with a question. How could we make our <code>sys_info_page</code>
+script detect if the user had permission to read all the home directories? With our
+knowledge of if, we can solve the problem by adding this code to the
+<code>report_home_space</code> function:</p>
+<p>&#x8FD9;&#x4E00;&#x7AE0;&#x5F00;&#x59CB;&#x4E8E;&#x4E00;&#x4E2A;&#x95EE;&#x9898;&#x3002;&#x6211;&#x4EEC;&#x600E;&#x6837;&#x4F7F; <code>sys_info_page</code> &#x811A;&#x672C;&#x6765;&#x68C0;&#x6D4B;&#x662F;&#x5426;&#x7528;&#x6237;&#x62E5;&#x6709;&#x6743;&#x9650;&#x6765;&#x8BFB;&#x53D6;&#x6240;&#x6709;&#x7684;
+&#x5BB6;&#x76EE;&#x5F55;&#xFF1F;&#x6839;&#x636E;&#x6211;&#x4EEC;&#x7684; if &#x77E5;&#x8BC6;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x89E3;&#x51B3;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#xFF0C;&#x901A;&#x8FC7;&#x628A;&#x8FD9;&#x4E9B;&#x4EE3;&#x7801;&#x6DFB;&#x52A0;&#x5230; <code>report_home_space</code> &#x51FD;&#x6570;&#x4E2D;&#xFF1A;</p>
+<pre><code>report_home_space () {
+    if [[ $(id -u) -eq 0 ]]; then
+        cat &lt;&lt;- _EOF_
+        &lt;H2&gt;Home Space Utilization (All Users)&lt;/H2&gt;
+        &lt;PRE&gt;$(du -sh /home/*)&lt;/PRE&gt;
+        _EOF_
+    else
+        cat &lt;&lt;- _EOF_
+        &lt;H2&gt;Home Space Utilization ($USER)&lt;/H2&gt;
+        &lt;PRE&gt;$(du -sh $HOME)&lt;/PRE&gt;
+        _EOF_
+    fi
+    return
+}
+</code></pre><p>We evaluate the output of the id command. With the -u option, id outputs the numeric
+user ID number of the effective user. The superuser is always zero and every other user
+is a number greater than zero. Knowing this, we can construct two different here
+documents, one taking advantage of superuser privileges, and the other, restricted to the
+user&#x2019;s own home directory.</p>
+<p>&#x6211;&#x4EEC;&#x8BA1;&#x7B97; id &#x547D;&#x4EE4;&#x7684;&#x8F93;&#x51FA;&#x7ED3;&#x679C;&#x3002;&#x901A;&#x8FC7;&#x5E26;&#x6709; -u &#x9009;&#x9879;&#x7684; id &#x547D;&#x4EE4;&#xFF0C;&#x8F93;&#x51FA;&#x6709;&#x6548;&#x7528;&#x6237;&#x7684;&#x6570;&#x5B57;&#x7528;&#x6237; ID &#x53F7;&#x3002;
+&#x8D85;&#x7EA7;&#x7528;&#x6237;&#x603B;&#x662F;&#x96F6;&#xFF0C;&#x5176;&#x5B83;&#x6BCF;&#x4E2A;&#x7528;&#x6237;&#x662F;&#x4E00;&#x4E2A;&#x5927;&#x4E8E;&#x96F6;&#x7684;&#x6570;&#x5B57;&#x3002;&#x77E5;&#x9053;&#x4E86;&#x8FD9;&#x70B9;&#xFF0C;&#x6211;&#x4EEC;&#x80FD;&#x591F;&#x6784;&#x5EFA;&#x4E24;&#x79CD;&#x4E0D;&#x540C;&#x7684; here &#x6587;&#x6863;&#xFF0C;
+&#x4E00;&#x4E2A;&#x5229;&#x7528;&#x8D85;&#x7EA7;&#x7528;&#x6237;&#x6743;&#x9650;&#xFF0C;&#x53E6;&#x4E00;&#x4E2A;&#x9650;&#x5236;&#x4E8E;&#x7528;&#x6237;&#x62E5;&#x6709;&#x7684;&#x5BB6;&#x76EE;&#x5F55;&#x3002;</p>
+<p>We are going to take a break from the sys_info_page program, but don&#x2019;t worry. It
+will be back. In the meantime, we&#x2019;ll cover some topics that we&#x2019;ll need when we resume
+our work.</p>
+<p>&#x6211;&#x4EEC;&#x5C06;&#x6682;&#x522B; <code>sys_info_page</code> &#x7A0B;&#x5E8F;&#xFF0C;&#x4F46;&#x4E0D;&#x8981;&#x7740;&#x6025;&#x3002;&#x5B83;&#x8FD8;&#x4F1A;&#x56DE;&#x6765;&#x3002;&#x540C;&#x65F6;&#xFF0C;&#x5F53;&#x6211;&#x4EEC;&#x7EE7;&#x7EED;&#x5DE5;&#x4F5C;&#x7684;&#x65F6;&#x5019;&#xFF0C;
+&#x5C06;&#x4F1A;&#x8BA8;&#x8BBA;&#x4E00;&#x4E9B;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x7684;&#x8BDD;&#x9898;&#x3002;</p>
+<h3 id="&#x62D3;&#x5C55;&#x9605;&#x8BFB;">&#x62D3;&#x5C55;&#x9605;&#x8BFB;</h3>
+<p>There are several sections of the bash man page that provide further detail on the topics
+covered in this chapter:</p>
+<p>bash &#x624B;&#x518C;&#x9875;&#x4E2D;&#x6709;&#x51E0;&#x90E8;&#x5206;&#x5BF9;&#x672C;&#x7AE0;&#x4E2D;&#x6DB5;&#x76D6;&#x7684;&#x4E3B;&#x9898;&#x63D0;&#x4F9B;&#x4E86;&#x66F4;&#x8BE6;&#x7EC6;&#x7684;&#x5185;&#x5BB9;&#xFF1A;</p>
+<ul>
+<li><p>Lists ( &#x8BA8;&#x8BBA;&#x63A7;&#x5236;&#x64CD;&#x4F5C;&#x7B26; <code>||</code> &#x548C; <code>&amp;&amp;</code> )</p>
+</li>
+<li><p>Compound Commands ( &#x8BA8;&#x8BBA; <code>[[ ]]</code>, <code>(( ))</code> &#x548C; if )</p>
+</li>
+<li><p>CONDITIONAL EXPRESSIONS &#xFF08;&#x6761;&#x4EF6;&#x8868;&#x8FBE;&#x5F0F;&#xFF09;</p>
+</li>
+<li><p>SHELL BUILTIN COMMANDS ( &#x8BA8;&#x8BBA; test )</p>
+</li>
+</ul>
+<p>Further, the Wikipedia has a good article on the concept of pseudocode:</p>
+<p>&#x8FDB;&#x4E00;&#x6B65;&#xFF0C;Wikipedia &#x4E2D;&#x6709;&#x4E00;&#x7BC7;&#x5173;&#x4E8E;&#x4F2A;&#x4EE3;&#x7801;&#x6982;&#x5FF5;&#x7684;&#x597D;&#x6587;&#x7AE0;&#xFF1A;</p>
+<p>  <a href="http://en.wikipedia.org/wiki/Pseudocode" target="_blank">http://en.wikipedia.org/wiki/Pseudocode</a></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="chap27.html" class="navigation navigation-prev " aria-label="Previous page: 27. 自顶向下设计">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="chap29.html" class="navigation navigation-next " aria-label="Next page: 29. 读取键盘输入">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"layout":"book","title":"28. 流程控制：if 分支结构","level":"1.1.28","depth":2,"next":{"title":"29. 读取键盘输入","level":"1.1.29","depth":2,"path":"chap29.md","ref":"chap29.md","articles":[]},"previous":{"title":"27. 自顶向下设计","level":"1.1.27","depth":2,"path":"chap27.md","ref":"chap27.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"en","gitbook":"*"},"file":{"path":"chap28.md","mtime":"2017-01-12T13:05:37.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-01-12T13:06:00.166Z"},"basePath":".","book":{"language":"en"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

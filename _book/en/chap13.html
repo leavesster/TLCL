@@ -1,0 +1,1838 @@
+
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>13. vi 简介 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="chap14.html" />
+    
+    
+    <link rel="prev" href="chap12.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.1" data-path="chap01.html">
+            
+                <a href="chap01.html">
+            
+                    
+                    01. 引言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2" data-path="chap02.html">
+            
+                <a href="chap02.html">
+            
+                    
+                    02. 什么是 shell
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3" data-path="chap03.html">
+            
+                <a href="chap03.html">
+            
+                    
+                    03. 文件系统中跳转
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4" data-path="chap04.html">
+            
+                <a href="chap04.html">
+            
+                    
+                    04. 探究操作系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.5" data-path="chap05.html">
+            
+                <a href="chap05.html">
+            
+                    
+                    05. 操作文件和目录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.6" data-path="chap06.html">
+            
+                <a href="chap06.html">
+            
+                    
+                    06. 使用命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.7" data-path="chap07.html">
+            
+                <a href="chap07.html">
+            
+                    
+                    07. 重定向
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.8" data-path="chap08.html">
+            
+                <a href="chap08.html">
+            
+                    
+                    08. 从 shell 眼中看世界
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.9" data-path="chap09.html">
+            
+                <a href="chap09.html">
+            
+                    
+                    09. 键盘高级操作技巧
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.10" data-path="chap10.html">
+            
+                <a href="chap10.html">
+            
+                    
+                    10. 权限
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.11" data-path="chap11.html">
+            
+                <a href="chap11.html">
+            
+                    
+                    11. 进程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.12" data-path="chap12.html">
+            
+                <a href="chap12.html">
+            
+                    
+                    12. shell 环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.1.13" data-path="chap13.html">
+            
+                <a href="chap13.html">
+            
+                    
+                    13. vi 简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.14" data-path="chap14.html">
+            
+                <a href="chap14.html">
+            
+                    
+                    14. 自定制 shell 提示符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.15" data-path="chap15.html">
+            
+                <a href="chap15.html">
+            
+                    
+                    15. 软件包管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.16" data-path="chap16.html">
+            
+                <a href="chap16.html">
+            
+                    
+                    16. 存储媒介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.17" data-path="chap17.html">
+            
+                <a href="chap17.html">
+            
+                    
+                    17. 网络系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.18" data-path="chap18.html">
+            
+                <a href="chap18.html">
+            
+                    
+                    18. 查找文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.19" data-path="chap19.html">
+            
+                <a href="chap19.html">
+            
+                    
+                    19. 归档和备份
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.20" data-path="chap20.html">
+            
+                <a href="chap20.html">
+            
+                    
+                    20. 正则表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.21" data-path="chap21.html">
+            
+                <a href="chap21.html">
+            
+                    
+                    21. 文本处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.22" data-path="chap22.html">
+            
+                <a href="chap22.html">
+            
+                    
+                    22. 格式化输出
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.23" data-path="chap23.html">
+            
+                <a href="chap23.html">
+            
+                    
+                    23. 打印
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.24" data-path="chap24.html">
+            
+                <a href="chap24.html">
+            
+                    
+                    24. 编译程序
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.25" data-path="chap25.html">
+            
+                <a href="chap25.html">
+            
+                    
+                    25. 编写第一个 Shell 脚本
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.26" data-path="chap26.html">
+            
+                <a href="chap26.html">
+            
+                    
+                    26. 启动一个项目
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.27" data-path="chap27.html">
+            
+                <a href="chap27.html">
+            
+                    
+                    27. 自顶向下设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.28" data-path="chap28.html">
+            
+                <a href="chap28.html">
+            
+                    
+                    28. 流程控制：if 分支结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.29" data-path="chap29.html">
+            
+                <a href="chap29.html">
+            
+                    
+                    29. 读取键盘输入
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.30" data-path="chap30.html">
+            
+                <a href="chap30.html">
+            
+                    
+                    30. 流程控制：while/until 循环
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.31" data-path="chap31.html">
+            
+                <a href="chap31.html">
+            
+                    
+                    31. 疑难排解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.32" data-path="chap32.html">
+            
+                <a href="chap32.html">
+            
+                    
+                    32. 流程控制：case 分支
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.33" data-path="chap33.html">
+            
+                <a href="chap33.html">
+            
+                    
+                    33. 位置参数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.34" data-path="chap34.html">
+            
+                <a href="chap34.html">
+            
+                    
+                    34. 流程控制：for 循环
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.35" data-path="chap35.html">
+            
+                <a href="chap35.html">
+            
+                    
+                    35. 字符串和数字
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.36" data-path="chap36.html">
+            
+                <a href="chap36.html">
+            
+                    
+                    36. 数组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.37" data-path="chap37.html">
+            
+                <a href="chap37.html">
+            
+                    
+                    37. 奇珍异宝
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >13. vi 简介</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <p>There is an old joke about a visitor to New York City asking a passerby for directions to
+the city&apos;s famous classical music venue:</p>
+<p>Visitor: Excuse me, how do I get to Carnegie Hall?</p>
+<p>Passerby: Practice, practice, practice!</p>
+<p>&#x6709;&#x4E00;&#x4E2A;&#x53E4;&#x8001;&#x7684;&#x7B11;&#x8BDD;&#xFF0C;&#x8BF4;&#x662F;&#x4E00;&#x4E2A;&#x5728;&#x7EBD;&#x7EA6;&#x7684;&#x6E38;&#x5BA2;&#x5411;&#x884C;&#x4EBA;&#x6253;&#x542C;&#x8FD9;&#x5EA7;&#x57CE;&#x5E02;&#x4E2D;&#x8457;&#x540D;&#x53E4;&#x5178;&#x97F3;&#x4E50;&#x573A;&#x9986;&#x7684;&#x65B9;&#x5411;&#xFF1A;</p>
+<p>&#x6E38;&#x5BA2;&#xFF1A; &#x8BF7;&#x95EE;&#x4E00;&#x4E0B;&#xFF0C;&#x6211;&#x600E;&#x6837;&#x53BB;&#x5361;&#x5185;&#x57FA;&#x97F3;&#x4E50;&#x5927;&#x5385;&#xFF1F;</p>
+<p>&#x884C;&#x4EBA;&#xFF1A; &#x7EC3;&#x4E60;&#xFF0C;&#x7EC3;&#x4E60;&#xFF0C;&#x7EC3;&#x4E60;!</p>
+<p>Learning the Linux command line, like becoming an accomplished pianist, is not
+something that we pick up in an afternoon. It takes years of practice. In this chapter, we
+will introduce the vi (pronounced &#x201C;vee eye&#x201D;) text editor, one of the core programs in the
+Unix tradition. vi is somewhat notorious for its difficult user interface, but when we see
+a master sit down at the keyboard and begin to &#x201C;play,&#x201D; we will indeed be witness to some
+great art. We won&apos;t become masters in this chapter, but when we are done, we will know
+how to play &#x201C;chopsticks&#x201D; in vi.</p>
+<p>&#x5B66;&#x4E60; Linux &#x547D;&#x4EE4;&#x884C;&#xFF0C;&#x5C31;&#x50CF;&#x8981;&#x6210;&#x4E3A;&#x4E00;&#x540D;&#x9020;&#x8BE3;&#x5F88;&#x6DF1;&#x7684;&#x94A2;&#x7434;&#x5BB6;&#x4E00;&#x6837;&#xFF0C;&#x5B83;&#x4E0D;&#x662F;&#x6211;&#x4EEC;&#x4E00;&#x4E0B;&#x5348;&#x5C31;&#x80FD;&#x5B66;&#x4F1A;&#x7684;&#x6280;&#x80FD;&#x3002;&#x8FD9;&#x9700;&#x8981;
+&#x7ECF;&#x5386;&#x51E0;&#x5E74;&#x7684;&#x52E4;&#x82E6;&#x7EC3;&#x4E60;&#x3002;&#x5728;&#x8FD9;&#x4E00;&#x7AE0;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x5C06;&#x4ECB;&#x7ECD; vi&#xFF08;&#x53D1;&#x97F3;&#x201C;vee eye&#x201D;&#xFF09;&#x6587;&#x672C;&#x7F16;&#x8F91;&#x5668;&#xFF0C;&#x5B83;&#x662F; Unix &#x4F20;&#x7EDF;&#x4E2D;&#x6838;&#x5FC3;&#x7A0B;&#x5E8F;&#x4E4B;&#x4E00;&#x3002;
+vi &#x56E0;&#x5B83;&#x96BE;&#x7528;&#x7684;&#x7528;&#x6237;&#x754C;&#x9762;&#x800C;&#x6709;&#x70B9;&#x58F0;&#x540D;&#x72FC;&#x85C9;&#xFF0C;&#x4F46;&#x662F;&#x5F53;&#x6211;&#x4EEC;&#x770B;&#x5230;&#x4E00;&#x4F4D;&#x5927;&#x5E08;&#x5750;&#x5728;&#x94A2;&#x7434;&#x524D;&#x5F00;&#x59CB;&#x6F14;&#x594F;&#x65F6;&#xFF0C;&#x6211;&#x4EEC;&#x7684;&#x786E;&#x6210;&#x4E86;
+&#x4F1F;&#x5927;&#x827A;&#x672F;&#x7684;&#x89C1;&#x8BC1;&#x4EBA;&#x3002;&#x867D;&#x7136;&#x6211;&#x4EEC;&#x5728;&#x8FD9;&#x91CC;&#x4E0D;&#x80FD;&#x6210;&#x4E3A; vi &#x5927;&#x5E08;&#xFF0C;&#x4F46;&#x662F;&#x5F53;&#x6211;&#x4EEC;&#x5B66;&#x5B8C;&#x8FD9;&#x4E00;&#x7AE0;&#x540E;&#xFF0C;
+&#x6211;&#x4EEC;&#x4F1A;&#x77E5;&#x9053;&#x600E;&#x6837;&#x5728; vi &#x4E2D;&#x73A9;&#x201C;&#x7B77;&#x5B50;&#x201D;&#x3002;</p>
+<p>Why We Should Learn vi</p>
+<h3 id="&#x4E3A;&#x4EC0;&#x4E48;&#x6211;&#x4EEC;&#x5E94;&#x8BE5;&#x5B66;&#x4E60;-vi">&#x4E3A;&#x4EC0;&#x4E48;&#x6211;&#x4EEC;&#x5E94;&#x8BE5;&#x5B66;&#x4E60; vi</h3>
+<p>In this modern age of graphical editors and easy-to-use text-based editors such as nano,
+why should we learn vi? There are three good reasons:</p>
+<p>&#x5728;&#x73B0;&#x5728;&#x8FD9;&#x4E2A;&#x56FE;&#x5F62;&#x5316;&#x7F16;&#x8F91;&#x5668;&#x548C;&#x6613;&#x4E8E;&#x4F7F;&#x7528;&#x7684;&#x57FA;&#x4E8E;&#x6587;&#x672C;&#x7F16;&#x8F91;&#x5668;&#x7684;&#x65F6;&#x4EE3;&#xFF0C;&#x6BD4;&#x5982;&#x8BF4; nano&#xFF0C;&#x4E3A;&#x4EC0;&#x4E48;&#x6211;&#x4EEC;&#x8FD8;&#x5E94;&#x8BE5;&#x5B66;&#x4E60; vi &#x5462;&#xFF1F;
+&#x4E0B;&#x9762;&#x6709;&#x4E09;&#x4E2A;&#x5145;&#x5206;&#x7684;&#x7406;&#x7531;&#xFF1A;</p>
+<ul>
+<li><p>vi is always available. This can be a lifesaver if we have a system with no
+graphical interface, such as a remote server or a local system with a broken X
+configuration. nano, while increasingly popular is still not universal. POSIX, a
+standard for program compatibility on Unix systems, requires that vi be present.</p>
+</li>
+<li><p>vi &#x5F88;&#x591A;&#x7CFB;&#x7EDF;&#x90FD;&#x9884;&#x88C5;&#x3002;&#x5982;&#x679C;&#x6211;&#x4EEC;&#x7684;&#x7CFB;&#x7EDF;&#x6CA1;&#x6709;&#x56FE;&#x5F62;&#x754C;&#x9762;&#xFF0C;&#x6BD4;&#x65B9;&#x8BF4;&#x4E00;&#x53F0;&#x8FDC;&#x7AEF;&#x670D;&#x52A1;&#x5668;&#x6216;&#x8005;&#x662F;&#x4E00;&#x4E2A;
+X &#x914D;&#x7F6E;&#x635F;&#x574F;&#x4E86;&#x7684;&#x672C;&#x5730;&#x7CFB;&#x7EDF;&#xFF0C;&#x90A3;&#x4E48; vi &#x5C31;&#x6210;&#x4E86;&#x6211;&#x4EEC;&#x7684;&#x6551;&#x661F;&#x3002;&#x867D;&#x7136; nano &#x9010;&#x6E10;&#x6D41;&#x884C;&#x8D77;&#x6765;&#xFF0C;&#x4F46;&#x662F;&#x5B83;
+&#x8FD8;&#x6CA1;&#x6709;&#x666E;&#x53CA;&#x3002;POSIX&#xFF0C;&#x8FD9;&#x5957; Unix &#x7CFB;&#x7EDF;&#x4E2D;&#x7A0B;&#x5E8F;&#x517C;&#x5BB9;&#x7684;&#x6807;&#x51C6;&#xFF0C;&#x5C31;&#x8981;&#x6C42;&#x7CFB;&#x7EDF;&#x8981;&#x9884;&#x88C5; vi&#x3002;</p>
+</li>
+<li><p>vi is lightweight and fast. For many tasks, it&apos;s easier to bring up vi than it is to
+find the graphical text editor in the menus and wait for its multiple megabytes to
+load. In addition, vi is designed for typing speed. As we shall see, a skilled vi
+user never has to lift his or her fingers from the keyboard while editing.</p>
+</li>
+<li><p>vi &#x662F;&#x8F7B;&#x91CF;&#x7EA7;&#x4E14;&#x6267;&#x884C;&#x5FEB;&#x901F;&#x7684;&#x7F16;&#x8F91;&#x5668;&#x3002;&#x5BF9;&#x4E8E;&#x8BB8;&#x591A;&#x4EFB;&#x52A1;&#x6765;&#x8BF4;&#xFF0C;&#x542F;&#x52A8; vi &#x6BD4;&#x8D77;&#x5728;&#x83DC;&#x5355;&#x4E2D;&#x627E;&#x5230;&#x4E00;&#x4E2A;&#x56FE;&#x5F62;&#x5316;&#x6587;&#x672C;&#x7F16;&#x8F91;&#x5668;&#xFF0C;
+&#x518D;&#x7B49;&#x5F85;&#x7F16;&#x8F91;&#x5668;&#x6570;&#x500D;&#x5146;&#x5B57;&#x8282;&#x7684;&#x6570;&#x636E;&#x52A0;&#x8F7D;&#x800C;&#x8A00;&#xFF0C;&#x8981;&#x5BB9;&#x6613;&#x7684;&#x591A;&#x3002;&#x53E6;&#x5916;&#xFF0C;vi &#x662F;&#x4E3A;&#x4E86;&#x52A0;&#x5FEB;&#x8F93;&#x5165;&#x901F;&#x5EA6;&#x800C;&#x8BBE;&#x8BA1;&#x7684;&#x3002;
+&#x6211;&#x4EEC;&#x5C06;&#x4F1A;&#x770B;&#x5230;&#xFF0C;&#x5F53;&#x4E00;&#x540D;&#x719F;&#x7EC3;&#x7684; vi &#x7528;&#x6237;&#x5728;&#x7F16;&#x8F91;&#x6587;&#x4EF6;&#x65F6;&#xFF0C;&#x4ED6;&#x6216;&#x5979;&#x7684;&#x624B;&#x4ECE;&#x4E0D;&#x9700;&#x8981;&#x79FB;&#x5F00;&#x952E;&#x76D8;&#x3002;</p>
+</li>
+<li><p>We don&apos;t want other Linux and Unix users to think we are sissies.</p>
+</li>
+<li><p>&#x6211;&#x4EEC;&#x4E0D;&#x5E0C;&#x671B;&#x5176;&#x4ED6; Linux &#x548C; Unix &#x7528;&#x6237;&#x628A;&#x6211;&#x4EEC;&#x770B;&#x4F5C;&#x80C6;&#x5C0F;&#x9B3C;&#x3002;</p>
+</li>
+</ul>
+<p>Okay, maybe two good reasons.</p>
+<p>&#x597D;&#x5427;&#xFF0C;&#x53EF;&#x80FD;&#x53EA;&#x6709;&#x4E24;&#x4E2A;&#x5145;&#x5206;&#x7684;&#x7406;&#x7531;&#x3002;</p>
+<p>A Little Background</p>
+<h3 id="&#x4E00;&#x70B9;&#x513F;&#x80CC;&#x666F;&#x4ECB;&#x7ECD;">&#x4E00;&#x70B9;&#x513F;&#x80CC;&#x666F;&#x4ECB;&#x7ECD;</h3>
+<p>The first version of vi was written in 1976 by Bill Joy, a University of California at
+Berkley student who later went on to co-found Sun Microsystems. vi derives its name
+from the word &#x201C;visual,&#x201D; because it was intended to allow editing on a video terminal with
+a moving cursor. Previous to visual editors, there were line editors which operated on a
+single line of text at a time. To specify a change, we tell a line editor to go to a particular
+line and describe what change to make, such as adding or deleting text. With the advent
+of video terminals (rather than printer-based terminals like teletypes) visual editing
+became possible. vi actually incorporates a powerful line editor called ex, and we can
+use line editing commands while using vi.</p>
+<p>&#x7B2C;&#x4E00;&#x7248; vi &#x662F;&#x5728;1976&#x7531; Bill Joy &#x5199;&#x6210;&#x7684;&#xFF0C;&#x5F53;&#x65F6;&#x4ED6;&#x662F;&#x52A0;&#x5DDE;&#x5927;&#x5B66;&#x4F2F;&#x514B;&#x5229;&#x5206;&#x6821;&#x7684;&#x5B66;&#x751F;&#xFF0C;
+&#x540E;&#x6765;&#x4ED6;&#x5171;&#x540C;&#x521B;&#x5EFA;&#x4E86; Sun &#x5FAE;&#x7CFB;&#x7EDF;&#x516C;&#x53F8;&#x3002;vi &#x8FD9;&#x4E2A;&#x540D;&#x5B57;
+&#x6765;&#x6E90;&#x4E8E;&#x5355;&#x8BCD;&#x201C;visual&#x201D;&#xFF0C;&#x56E0;&#x4E3A;&#x5B83;&#x6253;&#x7B97;&#x5728;&#x5E26;&#x6709;&#x53EF;&#x79FB;&#x52A8;&#x5149;&#x6807;&#x7684;&#x89C6;&#x9891;&#x7EC8;&#x7AEF;&#x4E0A;&#x7F16;&#x8F91;&#x6587;&#x672C;&#x3002;&#x5728;&#x53D1;&#x660E;&#x53EF;&#x89C6;&#x5316;&#x7F16;&#x8F91;&#x5668;&#x4E4B;&#x524D;&#xFF0C;
+&#x6709;&#x4E00;&#x6B21;&#x53EA;&#x80FD;&#x64CD;&#x4F5C;&#x4E00;&#x884C;&#x6587;&#x672C;&#x7684;&#x884C;&#x7F16;&#x8F91;&#x5668;&#x3002;&#x4E3A;&#x4E86;&#x6307;&#x5B9A;&#x4E00;&#x4E2A;&#x4FEE;&#x6539;&#xFF0C;&#x6211;&#x4EEC;&#x544A;&#x8BC9;&#x884C;&#x7F16;&#x8F91;&#x5668;&#x5230;&#x4E00;&#x4E2A;&#x7279;&#x6B8A;&#x884C;&#x5E76;&#x4E14;
+&#x8BF4;&#x660E;&#x505A;&#x4EC0;&#x4E48;&#x4FEE;&#x6539;&#xFF0C;&#x6BD4;&#x65B9;&#x8BF4;&#x6DFB;&#x52A0;&#x6216;&#x5220;&#x9664;&#x6587;&#x672C;&#x3002;&#x89C6;&#x9891;&#x7EC8;&#x7AEF;&#xFF08;&#x800C;&#x4E0D;&#x662F;&#x57FA;&#x4E8E;&#x6253;&#x5370;&#x673A;&#x7684;&#x7EC8;&#x7AEF;&#xFF0C;&#x50CF;&#x7535;&#x4F20;&#x6253;&#x5370;&#x673A;&#xFF09;&#x7684;&#x51FA;&#x73B0;
+&#xFF0C;&#x53EF;&#x89C6;&#x5316;&#x7F16;&#x8F91;&#x6210;&#x4E3A;&#x53EF;&#x80FD;&#x3002;vi &#x5B9E;&#x9645;&#x4E0A;&#x6574;&#x5408;&#x4E86;&#x4E00;&#x4E2A;&#x5F3A;&#x5927;&#x7684;&#x53EB;&#x505A; ex &#x884C;&#x7F16;&#x8F91;&#x5668;,
+&#x6240;&#x4EE5;&#x6211;&#x4EEC;&#x5728;&#x4F7F;&#x7528; vi &#x65F6;&#x80FD;&#x8FD0;&#x884C;&#x884C;&#x7F16;&#x8F91;&#x547D;&#x4EE4;&#x3002;</p>
+<p>Most Linux distributions don&apos;t include real vi; rather, they ship with an enhanced
+replacement called vim (which is short for &#x201C;vi improved&#x201D;) written by Bram Moolenaar.
+vim is a substantial improvement over traditional Unix vi and is usually symbolically
+linked (or aliased) to the name &#x201C;vi&#x201D; on Linux systems. In the discussions that follow, we
+will assume that we have a program called &#x201C;vi&#x201D; that is really vim.</p>
+<p>&#x5927;&#x591A;&#x6570; Linux &#x53D1;&#x884C;&#x7248;&#x4E0D;&#x5305;&#x542B;&#x771F;&#x6B63;&#x7684; vi&#xFF1B;&#x800C;&#x662F;&#x81EA;&#x5E26;&#x4E00;&#x6B3E;&#x9AD8;&#x7EA7;&#x66FF;&#x4EE3;&#x7248;&#x672C;&#xFF0C;&#x53EB;&#x505A; vim&#xFF08;&#x5B83;&#x662F;&#x201C;vi
+improved&#x201D;&#x7684;&#x7B80;&#x5199;&#xFF09;&#x7531; Bram Moolenaar &#x5F00;&#x53D1;&#x7684;&#x3002;vim &#x76F8;&#x5BF9;&#x4E8E;&#x4F20;&#x7EDF;&#x7684; Unix
+vi &#x6765;&#x8BF4;&#xFF0C;&#x53D6;&#x5F97;&#x4E86;&#x5B9E;&#x8D28;&#x6027;&#x8FDB;&#x6B65;&#x3002;&#x901A;&#x5E38;&#xFF0C;vim &#x5728; Linux &#x7CFB;&#x7EDF;&#x4E2D;&#x662F;&#x201C;vi&#x201D;&#x7684;&#x7B26;&#x53F7;&#x94FE;&#x63A5;&#xFF08;&#x6216;&#x522B;&#x540D;&#xFF09;&#x3002;
+&#x5728;&#x968F;&#x540E;&#x7684;&#x8BA8;&#x8BBA;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x5C06;&#x4F1A;&#x5047;&#x5B9A;&#x6211;&#x4EEC;&#x6709;&#x4E00;&#x4E2A;&#x53EB;&#x505A;&#x201C;vi&#x201D;&#x7684;&#x7A0B;&#x5E8F;&#xFF0C;&#x4F46;&#x5B83;&#x5176;&#x5B9E;&#x662F; vim&#x3002;</p>
+<p>Starting And Stopping vi</p>
+<h3 id="&#x542F;&#x52A8;&#x548C;&#x505C;&#x6B62;-vi">&#x542F;&#x52A8;&#x548C;&#x505C;&#x6B62; vi</h3>
+<p>To start vi, we simply type the following:</p>
+<p>&#x8981;&#x60F3;&#x542F;&#x52A8; vi&#xFF0C;&#x53EA;&#x8981;&#x7B80;&#x5355;&#x5730;&#x8F93;&#x5165;&#x4EE5;&#x4E0B;&#x547D;&#x4EE4;&#xFF1A;</p>
+<pre><code>[me@linuxbox ~]$ vi
+</code></pre><p>And a screen like this should appear:</p>
+<p>&#x4E00;&#x4E2A;&#x50CF;&#x8FD9;&#x6837;&#x7684;&#x5C4F;&#x5E55;&#x5E94;&#x8BE5;&#x51FA;&#x73B0;&#xFF1A;</p>
+<pre><code>VIM - Vi Improved
+....
+</code></pre><p>Just as we did with nano earlier, the first thing to learn is how to exit. To exit, we enter
+the following command (note that the colon character is part of the command):</p>
+<p>&#x6B63;&#x5982;&#x6211;&#x4EEC;&#x4E4B;&#x524D;&#x64CD;&#x4F5C; nano &#x65F6;&#xFF0C;&#x9996;&#x5148;&#x8981;&#x5B66;&#x7684;&#x662F;&#x600E;&#x6837;&#x9000;&#x51FA; vi&#x3002;&#x8981;&#x9000;&#x51FA; vi&#xFF0C;&#x8F93;&#x5165;&#x4E0B;&#x9762;&#x7684;&#x547D;&#x4EE4;&#xFF08;&#x6CE8;&#x610F;&#x5192;&#x53F7;&#x662F;&#x547D;&#x4EE4;&#x7684;&#x4E00;&#x90E8;&#x5206;&#xFF09;&#xFF1A;</p>
+<pre><code>:q
+</code></pre><p>The shell prompt should return. If, for some reason, vi will not quit (usually because we
+made a change to a file that has not yet been saved), we can tell vi that we really mean it
+by adding an exclamation point to the command:</p>
+<p>shell &#x63D0;&#x793A;&#x7B26;&#x5E94;&#x8BE5;&#x8FD4;&#x56DE;&#x3002;&#x5982;&#x679C;&#x7531;&#x4E8E;&#x67D0;&#x79CD;&#x539F;&#x56E0;&#xFF0C;vi &#x4E0D;&#x80FD;&#x9000;&#x51FA;&#xFF08;&#x901A;&#x5E38;&#x56E0;&#x4E3A;&#x6211;&#x4EEC;&#x5BF9;&#x6587;&#x4EF6;&#x505A;&#x4E86;&#x4FEE;&#x6539;&#xFF0C;&#x5374;&#x6CA1;&#x6709;&#x4FDD;&#x5B58;&#x6587;&#x4EF6;&#xFF09;&#x3002;
+&#x901A;&#x8FC7;&#x7ED9;&#x547D;&#x4EE4;&#x52A0;&#x4E0A;&#x53F9;&#x53F7;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x544A;&#x8BC9; vi &#x6211;&#x4EEC;&#x771F;&#x8981;&#x9000;&#x51FA; vi&#x3002;</p>
+<pre><code>:q!
+</code></pre><p>Tip: If you get &#x201C;lost&#x201D; in vi, try pressing the Esc key twice to find your way again.</p>
+<p>&#x5C0F;&#x8D34;&#x793A;&#xFF1A;&#x5982;&#x679C;&#x4F60;&#x5728; vi &#x4E2D;&#x201C;&#x8FF7;&#x5931;&#x201D;&#x4E86;&#xFF0C;&#x8BD5;&#x7740;&#x6309;&#x4E0B; Esc &#x952E;&#x4E24;&#x6B21;&#x6765;&#x627E;&#x5230;&#x8DEF;&#xFF08;&#x56DE;&#x5230;&#x666E;&#x901A;&#x6A21;&#x5F0F;&#xFF09;&#x3002;</p>
+<blockquote>
+<p>Compatibility Mode</p>
+<p>&#x517C;&#x5BB9;&#x6A21;&#x5F0F;</p>
+<p>In the example startup screen above (taken from Ubuntu 8.04), we see the text
+&#x201C;Running in Vi compatible mode.&#x201D; This means that vim will run in a mode that
+is closer to the normal behavior of vi rather than the enhanced behavior of vim.
+For purposes of this chapter, we will want to run vim with its enhanced behavior.
+To do this, you have a few options:</p>
+<p>&#x4E0A;&#x9762;&#x5B9E;&#x4F8B;&#x4E2D;&#x7684;&#x542F;&#x52A8;&#x5C4F;&#x5E55;&#xFF08;&#x6765;&#x81EA;&#x4E8E; Ubuntu
+8.04&#xFF09;&#xFF0C;&#x6211;&#x4EEC;&#x770B;&#x5230;&#x4E00;&#x884C;&#x6587;&#x5B57;&#x201C;&#x4EE5; Vi &#x517C;&#x5BB9;&#x7684;&#x6A21;&#x5F0F;&#x8FD0;&#x884C;&#x201D;&#x3002;&#x8FD9;&#x610F;&#x5473;&#x7740; vim &#x5C06;&#x4EE5;&#x8FD1;&#x4F3C;&#x4E8E; vi &#x5E38;&#x89C4;&#x7684;&#x6A21;&#x5F0F;
+&#x8FD0;&#x884C;&#xFF0C;&#x800C;&#x4E0D;&#x662F; vim &#x7684;&#x9AD8;&#x7EA7;&#x6A21;&#x5F0F;&#x3002;&#x4E3A;&#x4E86;&#x8FD9;&#x7AE0;&#x7684;&#x76EE;&#x7684;&#xFF0C;&#x6211;&#x4EEC;&#x60F3;&#x8981;&#x4F7F;&#x7528; vim &#x7684;&#x9AD8;&#x7EA7;&#x6A21;&#x5F0F;&#x3002;&#x8981;&#x60F3;&#x8FD9;&#x6837;&#x505A;&#xFF0C;
+&#x4F60;&#x6709;&#x51E0;&#x4E2A;&#x9009;&#x62E9;&#xFF1A;</p>
+<p>Try running vim instead of vi.</p>
+<p>&#x7528; vim &#x6765;&#x4EE3;&#x66FF; vi&#x3002;</p>
+<p>If that works, consider adding alias vi=&apos;vim&apos; to your .bashrc file.</p>
+<p>&#x5982;&#x679C;&#x547D;&#x4EE4;&#x751F;&#x6548;&#xFF0C;&#x8003;&#x8651;&#x5728;&#x4F60;&#x7684;.bashrc &#x6587;&#x4EF6;&#x4E2D;&#x6DFB;&#x52A0;&#x522B;&#x540D; vi=&apos;vim&apos;&#x3002;</p>
+<p>Alternately, use this command to add a line to your vim configuration file:</p>
+<p>&#x6216;&#x8005;&#xFF0C;&#x4F7F;&#x7528;&#x8FD9;&#x4E2A;&#x547D;&#x4EE4;&#x5728;&#x4F60;&#x7684; vim &#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x4E2D;&#x6DFB;&#x52A0;&#x4E00;&#x884C;&#xFF1A;</p>
+<p> <em>echo &quot;set nocp&quot; &gt;&gt; ~/.vimrc</em></p>
+<p>Different Linux distributions package vim in different ways. Some distributions
+install a minimal version of vim by default that only supports a limiting set of
+vim features. While preforming the lessons that follow, you may encounter
+missing features. If this is the case, install the full version of vim.</p>
+<p>&#x4E0D;&#x540C;&#x7684; Linux &#x53D1;&#x884C;&#x7248;&#x5176; vim &#x8F6F;&#x4EF6;&#x5305;&#x4E5F;&#x8FE5;&#x7136;&#x4E0D;&#x540C;&#x3002;&#x4E00;&#x4E9B;&#x53D1;&#x884C;&#x7248;&#x53EA;&#x662F;&#x5B89;&#x88C5;&#x4E86; vim &#x7684;&#x6700;&#x5C0F;&#x7248;&#x672C;&#xFF0C;
+&#x5176;&#x9ED8;&#x8BA4;&#x53EA;&#x652F;&#x6301;&#x6709;&#x9650;&#x7684; vim &#x7279;&#x6027;&#x3002;&#x5F53;&#x7EC3;&#x4E60;&#x968F;&#x540E;&#x7684;&#x8BFE;&#x7A0B;&#x65F6;&#xFF0C;&#x4F60;&#x53EF;&#x80FD;&#x4F1A;&#x9047;&#x5230;&#x7F3A;&#x5931;&#x7684;&#x529F;&#x80FD;&#x3002;
+&#x5982;&#x679C;&#x662F;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#xFF0C;&#x5C31;&#x5B89;&#x88C5; vim &#x7684;&#x5B8C;&#x6574;&#x7248;&#x3002;</p>
+</blockquote>
+<p>Editing Modes</p>
+<h3 id="&#x7F16;&#x8F91;&#x6A21;&#x5F0F;">&#x7F16;&#x8F91;&#x6A21;&#x5F0F;</h3>
+<p>Let&apos;s start up vi again, this time passing to it the name of a nonexistent file. This is how
+we can create a new file with vi:</p>
+<p>&#x518D;&#x6B21;&#x542F;&#x52A8; vi&#xFF0C;&#x8FD9;&#x6B21;&#x4F20;&#x9012;&#x7ED9; vi &#x4E00;&#x4E2A;&#x4E0D;&#x5B58;&#x5728;&#x7684;&#x6587;&#x4EF6;&#x540D;&#x3002;&#x8FD9;&#x4E5F;&#x662F;&#x7528; vi &#x521B;&#x5EFA;&#x65B0;&#x6587;&#x4EF6;&#x7684;&#x65B9;&#x6CD5;&#x3002;</p>
+<pre><code>[me@linuxbox ~]$ rm -f foo.txt
+[me@linuxbox ~]$ vi foo.txt
+</code></pre><p>If all goes well, we should get a screen like this:</p>
+<p>&#x5982;&#x679C;&#x4E00;&#x5207;&#x8FD0;&#x884C;&#x6B63;&#x5E38;&#xFF0C;&#x6211;&#x4EEC;&#x5E94;&#x8BE5;&#x83B7;&#x5F97;&#x4E00;&#x4E2A;&#x50CF;&#x8FD9;&#x6837;&#x7684;&#x5C4F;&#x5E55;&#xFF1A;</p>
+<pre><code>....
+&quot;foo.txt&quot; [New File]
+</code></pre><p>The leading tilde characters (&#x201D;~&#x201D;) indicate that no text exists on that line. This shows that
+we have an empty file. Do not type anything yet!</p>
+<p>&#x6BCF;&#x884C;&#x5F00;&#x5934;&#x7684;&#x6CE2;&#x6D6A;&#x53F7;&#xFF08;&quot;~&quot;&#xFF09;&#x6307;&#x793A;&#x90A3;&#x4E00;&#x884C;&#x4E0D;&#x5B58;&#x5728;&#x6587;&#x672C;&#x3002;&#x8FD9;&#x8868;&#x793A;&#x6211;&#x4EEC;&#x6709;&#x4E00;&#x4E2A;&#x7A7A;&#x6587;&#x4EF6;&#x3002;&#x8FD8;&#x6CA1;&#x6709;&#x8F93;&#x5165;&#x4EFB;&#x4F55;&#x5B57;&#x7B26;&#xFF1F;</p>
+<p>The second most important thing to learn about vi (after learning how to exit) is that vi
+is a modal editor. When vi starts up, it begins in command mode. In this mode, almost
+every key is a command, so if we were to start typing, vi would basically go crazy and
+make a big mess.</p>
+<p>&#x5B66;&#x4E60; vi &#x65F6;&#xFF0C;&#x8981;&#x77E5;&#x9053;&#x7684;&#x7B2C;&#x4E8C;&#x4EF6;&#x975E;&#x5E38;&#x91CD;&#x8981;&#x7684;&#x4E8B;&#x60C5;&#x662F;&#xFF08;&#x77E5;&#x9053;&#x4E86;&#x5982;&#x4F55;&#x9000;&#x51FA; vi &#x540E;&#xFF09;vi &#x662F;&#x4E00;&#x4E2A;&#x6A21;&#x5F0F;&#x7F16;&#x8F91;&#x5668;&#x3002;&#x5F53; vi &#x542F;&#x52A8;&#x540E;&#xFF0C;&#x8FDB;&#x5165;
+&#x7684;&#x662F;&#x547D;&#x4EE4;&#x6A21;&#x5F0F;&#x3002;&#x8FD9;&#x79CD;&#x6A21;&#x5F0F;&#x4E0B;&#xFF0C;&#x51E0;&#x4E4E;&#x6BCF;&#x4E2A;&#x6309;&#x952E;&#x90FD;&#x662F;&#x4E00;&#x4E2A;&#x547D;&#x4EE4;&#xFF0C;&#x6240;&#x4EE5;&#x5982;&#x679C;&#x6211;&#x4EEC;&#x6253;&#x7B97;&#x8F93;&#x5165;&#x5B57;&#x7B26;&#xFF0C;vi &#x4F1A;&#x53D1;&#x75AF;&#xFF0C;&#x5F04;&#x5F97;&#x4E00;&#x56E2;&#x7CDF;&#x3002;</p>
+<p>Entering Insert Mode</p>
+<h4 id="&#x63D2;&#x5165;&#x6A21;&#x5F0F;">&#x63D2;&#x5165;&#x6A21;&#x5F0F;</h4>
+<p>In order to add some text to our file, we must first enter insert mode. To do this, we press
+the &#x201C;i&#x201D; key. Afterwards, we should see the following at the bottom of the screen if vim is
+running in its usual enhanced mode (this will not appear in vi compatible mode):</p>
+<p>&#x4E3A;&#x4E86;&#x5728;&#x6587;&#x4EF6;&#x4E2D;&#x6DFB;&#x52A0;&#x6587;&#x672C;&#xFF0C;&#x9996;&#x5148;&#x6211;&#x4EEC;&#x5FC5;&#x987B;&#x8FDB;&#x5165;&#x63D2;&#x5165;&#x6A21;&#x5F0F;&#x3002;&#x6309;&#x4E0B;&quot;i&quot;&#x6309;&#x952E;&#x8FDB;&#x5165;&#x63D2;&#x5165;&#x6A21;&#x5F0F;&#x3002;&#x4E4B;&#x540E;&#xFF0C;&#x6211;&#x4EEC;&#x5E94;&#x8BE5;
+&#x5728;&#x5C4F;&#x5E55;&#x5E95;&#x90E8;&#x770B;&#x5230;&#x4E0B;&#x9762;&#x4E00;&#x884C;&#xFF0C;&#x5982;&#x679C; vi &#x8FD0;&#x884C;&#x5728;&#x9AD8;&#x7EA7;&#x6A21;&#x5F0F;&#x4E0B;&#xFF08;&#x8FD9;&#x4E0D;&#x4F1A;&#x51FA;&#x73B0;&#x5728; vi &#x517C;&#x5BB9;&#x6A21;&#x5F0F;&#x4E0B;&#xFF09;&#xFF1A;</p>
+<pre><code>-- INSERT --
+</code></pre><p>Now we can enter some text. Try this:</p>
+<p>&#x73B0;&#x5728;&#x6211;&#x4EEC;&#x80FD;&#x8F93;&#x5165;&#x4E00;&#x4E9B;&#x6587;&#x672C;&#x4E86;&#x3002;&#x8BD5;&#x7740;&#x8F93;&#x5165;&#x8FD9;&#x4E9B;&#x6587;&#x672C;&#xFF1A;</p>
+<pre><code>The quick brown fox jumped over the lazy dog.
+</code></pre><p>To exit insert mode and return to command mode, press the Esc key.</p>
+<p>&#x6309;&#x4E0B; Esc &#x6309;&#x952E;&#xFF0C;&#x9000;&#x51FA;&#x63D2;&#x5165;&#x6A21;&#x5F0F;&#x5E76;&#x8FD4;&#x56DE;&#x547D;&#x4EE4;&#x6A21;&#x5F0F;&#x3002;</p>
+<p>Saving Our Work</p>
+<h4 id="&#x4FDD;&#x5B58;&#x6211;&#x4EEC;&#x7684;&#x5DE5;&#x4F5C;">&#x4FDD;&#x5B58;&#x6211;&#x4EEC;&#x7684;&#x5DE5;&#x4F5C;</h4>
+<p>To save the change we just made to our file, we must enter an ex command while in
+command mode. This is easily done by pressing the &#x201C;:&#x201D; key. After doing this, a colon
+character should appear at the bottom of the screen:</p>
+<p>&#x4E3A;&#x4E86;&#x4FDD;&#x5B58;&#x6211;&#x4EEC;&#x521A;&#x624D;&#x5BF9;&#x6587;&#x4EF6;&#x6240;&#x505A;&#x7684;&#x4FEE;&#x6539;&#xFF0C;&#x6211;&#x4EEC;&#x5FC5;&#x987B;&#x5728;&#x547D;&#x4EE4;&#x6A21;&#x5F0F;&#x4E0B;&#x8F93;&#x5165;&#x4E00;&#x4E2A; ex &#x547D;&#x4EE4;&#x3002;
+&#x901A;&#x8FC7;&#x6309;&#x4E0B;&quot;:&quot;&#x952E;&#xFF0C;&#x8FD9;&#x5F88;&#x5BB9;&#x6613;&#x5B8C;&#x6210;&#x3002;&#x6309;&#x4E0B;&#x5192;&#x53F7;&#x952E;&#x4E4B;&#x540E;&#xFF0C;&#x4E00;&#x4E2A;&#x5192;&#x53F7;&#x5B57;&#x7B26;&#x5E94;&#x8BE5;&#x51FA;&#x73B0;&#x5728;&#x5C4F;&#x5E55;&#x7684;&#x5E95;&#x90E8;&#xFF1A;</p>
+<pre><code>:
+</code></pre><p>To write our modified file, we follow the colon with a &#x201C;w&#x201D; then Enter:</p>
+<p>&#x4E3A;&#x4E86;&#x5199;&#x5165;&#x6211;&#x4EEC;&#x4FEE;&#x6539;&#x7684;&#x6587;&#x4EF6;&#xFF0C;&#x6211;&#x4EEC;&#x5728;&#x5192;&#x53F7;&#x4E4B;&#x540E;&#x8F93;&#x5165;&quot;w&quot;&#x5B57;&#x7B26;&#xFF0C;&#x7136;&#x540E;&#x6309;&#x4E0B;&#x56DE;&#x8F66;&#x952E;&#xFF1A;</p>
+<pre><code>:w
+</code></pre><p>The file will be written to the hard drive and we should get a confirmation message at the
+bottom of the screen, like this:</p>
+<p>&#x6587;&#x4EF6;&#x5C06;&#x4F1A;&#x5199;&#x5165;&#x5230;&#x786C;&#x76D8;&#xFF0C;&#x5E76;&#x4E14;&#x6211;&#x4EEC;&#x5E94;&#x8BE5;&#x5728;&#x5C4F;&#x5E55;&#x5E95;&#x90E8;&#x5F97;&#x5230;&#x4E00;&#x4E2A;&#x786E;&#x8BA4;&#x4FE1;&#x606F;&#xFF0C;&#x5C31;&#x50CF;&#x8FD9;&#x6837;&#xFF1A;</p>
+<pre><code>&quot;foo.txt&quot; [New] 1L, 46C written
+</code></pre><p>Tip: If you read the vim documentation, you will notice that (confusingly)
+command mode is called normal mode and ex commands are called command
+mode. Beware.</p>
+<p>&#x5C0F;&#x8D34;&#x793A;&#xFF1A;&#x5982;&#x679C;&#x4F60;&#x9605;&#x8BFB; vim &#x7684;&#x6587;&#x6863;&#xFF0C;&#x4F60;&#x6CE8;&#x610F;&#x5230;&#xFF08;&#x4EE4;&#x4EBA;&#x56F0;&#x60D1;&#x5730;&#xFF09;&#x547D;&#x4EE4;&#x6A21;&#x5F0F;&#x88AB;&#x53EB;&#x505A;&#x666E;&#x901A;&#x6A21;&#x5F0F;&#xFF0C;ex &#x547D;&#x4EE4;
+&#x53EB;&#x505A;&#x547D;&#x4EE4;&#x6A21;&#x5F0F;&#x3002;&#x5F53;&#x5FC3;&#x3002;</p>
+<p>Moving The Cursor Around</p>
+<h3 id="&#x79FB;&#x52A8;&#x5149;&#x6807;">&#x79FB;&#x52A8;&#x5149;&#x6807;</h3>
+<p>While in command mode, vi offers a large number of movement commands, some of
+which it shares with less. Here is a subset:</p>
+<p>&#x5F53;&#x5728; vi &#x547D;&#x4EE4;&#x6A21;&#x5F0F;&#x4E0B;&#x65F6;&#xFF0C;vi &#x63D0;&#x4F9B;&#x4E86;&#x5927;&#x91CF;&#x7684;&#x79FB;&#x52A8;&#x547D;&#x4EE4;&#xFF0C;&#x5176;&#x4E2D;&#x4E00;&#x4E9B;&#x662F;&#x4E0E; less &#x9605;&#x8BFB;&#x5668;&#x5171;&#x4EAB;&#x7684;&#x3002;&#x8FD9;&#x91CC;
+&#x5217;&#x4E3E;&#x4E86;&#x4E00;&#x4E9B;&#xFF1A;</p>
+<table class="multi">
+<caption class="cap">Table 13-1: Cursor Movement Keys</caption>
+<tr>
+<th class="title">Key</th>
+<th class="title">Move The Cursor</th>
+</tr>
+<tr>
+<td valign="top" width="25%">l or Right Arrow </td>
+<td valign="top">Right one character.</td>
+</tr>
+<tr>
+<td valign="top">h or Left Arrow </td>
+<td valign="top">Left one character</td>
+</tr>
+<tr>
+<td valign="top">j or Down Arrow</td>
+<td valign="top">Down one line</td>
+</tr>
+<tr>
+<td valign="top">k or Up Arrow </td>
+<td valign="top">Up one line</td>
+</tr>
+<tr>
+<td valign="top">0 (zero) </td>
+<td valign="top">To the beginning of the current line.</td>
+</tr>
+<tr>
+<td valign="top">^</td>
+<td valign="top">To the first non-whitespace character on the current line.</td>
+</tr>
+<tr>
+<td valign="top">$</td>
+<td valign="top">To the end of the current line.</td>
+</tr>
+<tr>
+<td valign="top">w</td>
+<td valign="top">To the beginning of the next word or puntuation character.</td>
+</tr>
+<tr>
+<td valign="top">W</td>
+<td valign="top">To the beginning of the next word, ignoring puntuation character.</td>
+</tr>
+<tr>
+<td valign="top">b</td>
+<td valign="top">To the beginning of the previous word or punctuation character.</td>
+</tr>
+<tr>
+<td valign="top">B</td>
+<td valign="top">To the beginning of the previous word, ignoring
+punctuation characters.</td>
+</tr>
+<tr>
+<td valign="top">Ctrl-f or Page Down </td>
+<td valign="top">Down one page.</td>
+</tr>
+<tr>
+<td valign="top">Ctrl-b or Page Up </td>
+<td valign="top">Up one page.</td>
+</tr>
+<tr>
+<td valign="top">numberG</td>
+<td valign="top">To line number. For example, 1G moves to the first
+line of the file.</td>
+</tr>
+<tr>
+<td valign="top">G</td>
+<td valign="top">To the last line of the file.</td>
+</tr>
+</table>
+
+<table class="multi">
+<caption class="cap">&#x8868;13-1: &#x5149;&#x6807;&#x79FB;&#x52A8;&#x6309;&#x952E;</caption>
+<tr>
+<th class="title">&#x6309;&#x952E;</th>
+<th class="title">&#x79FB;&#x52A8;&#x5149;&#x6807;</th>
+</tr>
+<tr>
+<td valign="top" width="25%">l or &#x53F3;&#x7BAD;&#x5934;</td>
+<td valign="top">&#x5411;&#x53F3;&#x79FB;&#x52A8;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;</td>
+</tr>
+<tr>
+<td valign="top">h or &#x5DE6;&#x7BAD;&#x5934;</td>
+<td valign="top">&#x5411;&#x5DE6;&#x79FB;&#x52A8;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;</td>
+</tr>
+<tr>
+<td valign="top">j or &#x4E0B;&#x7BAD;&#x5934;</td>
+<td valign="top">&#x5411;&#x4E0B;&#x79FB;&#x52A8;&#x4E00;&#x884C;</td>
+</tr>
+<tr>
+<td valign="top">k or &#x4E0A;&#x7BAD;&#x5934;</td>
+<td valign="top">&#x5411;&#x4E0A;&#x79FB;&#x52A8;&#x4E00;&#x884C;</td>
+</tr>
+<tr>
+<td valign="top">0 (&#x96F6;&#x6309;&#x952E;) </td>
+<td valign="top">&#x79FB;&#x52A8;&#x5230;&#x5F53;&#x524D;&#x884C;&#x7684;&#x884C;&#x9996;&#x3002;</td>
+</tr>
+<tr>
+<td valign="top">^</td>
+<td valign="top">&#x79FB;&#x52A8;&#x5230;&#x5F53;&#x524D;&#x884C;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x975E;&#x7A7A;&#x5B57;&#x7B26;&#x3002;</td>
+</tr>
+<tr>
+<td valign="top">$</td>
+<td valign="top">&#x79FB;&#x52A8;&#x5230;&#x5F53;&#x524D;&#x884C;&#x7684;&#x672B;&#x5C3E;&#x3002;</td>
+</tr>
+<tr>
+<td valign="top">w</td>
+<td valign="top">&#x79FB;&#x52A8;&#x5230;&#x4E0B;&#x4E00;&#x4E2A;&#x5355;&#x8BCD;&#x6216;&#x6807;&#x70B9;&#x7B26;&#x53F7;&#x7684;&#x5F00;&#x5934;&#x3002;</td>
+</tr>
+<tr>
+<td valign="top">W</td>
+<td valign="top">&#x79FB;&#x52A8;&#x5230;&#x4E0B;&#x4E00;&#x4E2A;&#x5355;&#x8BCD;&#x7684;&#x5F00;&#x5934;&#xFF0C;&#x5FFD;&#x7565;&#x6807;&#x70B9;&#x7B26;&#x53F7;&#x3002;</td>
+</tr>
+<tr>
+<td valign="top">b</td>
+<td valign="top">&#x79FB;&#x52A8;&#x5230;&#x4E0A;&#x4E00;&#x4E2A;&#x5355;&#x8BCD;&#x6216;&#x6807;&#x70B9;&#x7B26;&#x53F7;&#x7684;&#x5F00;&#x5934;&#x3002;</td>
+</tr>
+<tr>
+<td valign="top">B</td>
+<td valign="top">&#x79FB;&#x52A8;&#x5230;&#x4E0A;&#x4E00;&#x4E2A;&#x5355;&#x8BCD;&#x7684;&#x5F00;&#x5934;&#xFF0C;&#x5FFD;&#x7565;&#x6807;&#x70B9;&#x7B26;&#x53F7;&#x3002;</td>
+</tr>
+<tr>
+<td valign="top">Ctrl-f or Page Down </td>
+<td valign="top">&#x5411;&#x4E0B;&#x7FFB;&#x4E00;&#x9875;</td>
+</tr>
+<tr>
+<td valign="top">Ctrl-b or Page Up </td>
+<td valign="top">&#x5411;&#x4E0A;&#x7FFB;&#x4E00;&#x9875;</td>
+</tr>
+<tr>
+<td valign="top">numberG</td>
+<td valign="top">&#x79FB;&#x52A8;&#x5230;&#x7B2C; number &#x884C;&#x3002;&#x4F8B;&#x5982;&#xFF0C;1G &#x79FB;&#x52A8;&#x5230;&#x6587;&#x4EF6;&#x7684;&#x7B2C;&#x4E00;&#x884C;&#x3002;</td>
+</tr>
+<tr>
+<td valign="top">G</td>
+<td valign="top">&#x79FB;&#x52A8;&#x5230;&#x6587;&#x4EF6;&#x672B;&#x5C3E;&#x3002;</td>
+</tr>
+</table>
+
+<p>Why are the h, j, k, and l keys used for cursor movement? Because when vi was
+originally written, not all video terminals had arrow keys, and skilled typists could use
+regular keyboard keys to move the cursor without ever having to lift their fingers from
+the keyboard.</p>
+<p>&#x4E3A;&#x4EC0;&#x4E48; h&#xFF0C;j&#xFF0C;k&#xFF0C;&#x548C; l &#x6309;&#x952E;&#x88AB;&#x7528;&#x6765;&#x79FB;&#x52A8;&#x5149;&#x6807;&#x5462;&#xFF1F;&#x56E0;&#x4E3A;&#x5728;&#x5F00;&#x53D1; vi &#x4E4B;&#x521D;&#xFF0C;&#x5E76;&#x4E0D;&#x662F;&#x6240;&#x6709;&#x7684;&#x89C6;&#x9891;&#x7EC8;&#x7AEF;&#x90FD;&#x6709;
+&#x7BAD;&#x5934;&#x6309;&#x952E;&#xFF0C;&#x719F;&#x7EC3;&#x7684;&#x6253;&#x5B57;&#x5458;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x89C4;&#x5219;&#x7684;&#x952E;&#x76D8;&#x6309;&#x952E;&#x6765;&#x79FB;&#x52A8;&#x5149;&#x6807;&#xFF0C;&#x4ED6;&#x4EEC;&#x7684;&#x624B;&#x4ECE;&#x4E0D;&#x9700;&#x8981;&#x79FB;&#x5F00;&#x952E;&#x76D8;&#x3002;</p>
+<p>Many commands in vi can be prefixed with a number, as with the &#x201C;G&#x201D; command listed
+above. By prefixing a command with a number, we may specify the number of times a
+command is to be carried out. For example, the command &#x201C;5j&#x201D; causes vi to move the
+cursor down five lines.</p>
+<p>vi &#x4E2D;&#x7684;&#x8BB8;&#x591A;&#x547D;&#x4EE4;&#x90FD;&#x53EF;&#x4EE5;&#x5728;&#x524D;&#x9762;&#x52A0;&#x4E0A;&#x4E00;&#x4E2A;&#x6570;&#x5B57;&#xFF0C;&#x6BD4;&#x65B9;&#x8BF4;&#x4E0A;&#x9762;&#x63D0;&#x5230;&#x7684;&quot;G&quot;&#x547D;&#x4EE4;&#x3002;&#x5728;&#x547D;&#x4EE4;&#x4E4B;&#x524D;&#x52A0;&#x4E0A;&#x4E00;&#x4E2A;
+&#x6570;&#x5B57;&#xFF0C;&#x6211;&#x4EEC;&#x5C31;&#x53EF;&#x4EE5;&#x6307;&#x5B9A;&#x547D;&#x4EE4;&#x6267;&#x884C;&#x7684;&#x6B21;&#x6570;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x547D;&#x4EE4;&quot;5j&quot;&#x5BFC;&#x81F4; vi &#x5411;&#x4E0B;&#x79FB;&#x52A8;5&#x884C;&#x3002;</p>
+<p>Basic Editing</p>
+<h3 id="&#x57FA;&#x672C;&#x7F16;&#x8F91;">&#x57FA;&#x672C;&#x7F16;&#x8F91;</h3>
+<p>Most editing consists of a few basic operations such as inserting text, deleting text and
+moving text around by cutting and pasting. vi, of course, supports all of these
+operations in its own unique way. vi also provides a limited form of undo. If we press
+the &#x201C;u&#x201D; key while in command mode, vi will undo the last change that you made. This
+will come in handy as we try out some of the basic editing commands.</p>
+<p>&#x5927;&#x591A;&#x6570;&#x7F16;&#x8F91;&#x5DE5;&#x4F5C;&#x7531;&#x4E00;&#x4E9B;&#x57FA;&#x672C;&#x7684;&#x64CD;&#x4F5C;&#x7EC4;&#x6210;&#xFF0C;&#x6BD4;&#x5982;&#x8BF4;&#x63D2;&#x5165;&#x6587;&#x672C;&#xFF0C;&#x5220;&#x9664;&#x6587;&#x672C;&#x548C;&#x901A;&#x8FC7;&#x526A;&#x5207;&#x548C;&#x7C98;&#x8D34;&#x6765;&#x79FB;&#x52A8;&#x6587;&#x672C;&#x3002;
+vi&#xFF0C;&#x5F53;&#x7136;&#xFF0C;&#x4EE5;&#x5B83;&#x81EA;&#x5DF1;&#x7684;&#x72EC;&#x7279;&#x65B9;&#x5F0F;&#x6765;&#x652F;&#x6301;&#x6240;&#x6709;&#x7684;&#x64CD;&#x4F5C;&#x3002;vi &#x4E5F;&#x63D0;&#x4F9B;&#x4E86;&#x6709;&#x9650;&#x7684;&#x64A4;&#x9500;&#x5F62;&#x5F0F;&#x3002;&#x5982;&#x679C;&#x6211;&#x4EEC;&#x6309;&#x4E0B;&#x201C;u&#x201D;
+&#x6309;&#x952E;&#xFF0C;&#x5F53;&#x5728;&#x547D;&#x4EE4;&#x6A21;&#x5F0F;&#x4E0B;&#xFF0C;vi &#x5C06;&#x4F1A;&#x64A4;&#x9500;&#x4F60;&#x6240;&#x505A;&#x7684;&#x6700;&#x540E;&#x4E00;&#x6B21;&#x4FEE;&#x6539;&#x3002;&#x5F53;&#x6211;&#x4EEC;&#x8BD5;&#x7740;&#x6267;&#x884C;&#x4E00;&#x4E9B;&#x57FA;&#x672C;&#x7684;
+&#x7F16;&#x8F91;&#x547D;&#x4EE4;&#x65F6;&#xFF0C;&#x8FD9;&#x4F1A;&#x5F88;&#x65B9;&#x4FBF;&#x3002;</p>
+<p>Appending Text</p>
+<h4 id="&#x8FFD;&#x52A0;&#x6587;&#x672C;">&#x8FFD;&#x52A0;&#x6587;&#x672C;</h4>
+<p>vi has several different ways of entering insert mode. We have already used the i
+command to insert text.</p>
+<p>vi &#x6709;&#x51E0;&#x79CD;&#x4E0D;&#x540C;&#x8FDB;&#x5165;&#x63D2;&#x5165;&#x6A21;&#x5F0F;&#x7684;&#x65B9;&#x6CD5;&#x3002;&#x6211;&#x4EEC;&#x5DF2;&#x7ECF;&#x4F7F;&#x7528;&#x4E86; i &#x547D;&#x4EE4;&#x6765;&#x63D2;&#x5165;&#x6587;&#x672C;&#x3002;</p>
+<p>Let&apos;s go back to our foo.txt file for a moment:</p>
+<p>&#x8BA9;&#x6211;&#x4EEC;&#x8FD4;&#x56DE;&#x5230;&#x6211;&#x4EEC;&#x7684; foo.txt &#x6587;&#x4EF6;&#x4E2D;&#xFF0C;&#x5446;&#x4E00;&#x4F1A;&#x513F;&#xFF1A;</p>
+<pre><code>The quick brown fox jumped over the lazy dog.
+</code></pre><p>If we wanted to add some text to the end of this sentence, we would discover that the i
+command will not do it, since we can&apos;t move the cursor beyond the end of the line. vi
+provides a command to append text, the sensibly named &#x201C;a&#x201D; command. If we move the
+cursor to the end of the line and type &#x201C;a&#x201D;, the cursor will move past the end of the line
+and vi will enter insert mode. This will allow us to add some more text:</p>
+<p>&#x5982;&#x679C;&#x6211;&#x4EEC;&#x60F3;&#x8981;&#x5728;&#x8FD9;&#x4E2A;&#x53E5;&#x5B50;&#x7684;&#x672B;&#x5C3E;&#x6DFB;&#x52A0;&#x4E00;&#x4E9B;&#x6587;&#x672C;&#xFF0C;&#x6211;&#x4EEC;&#x4F1A;&#x53D1;&#x73B0; i &#x547D;&#x4EE4;&#x4E0D;&#x80FD;&#x5B8C;&#x6210;&#x4EFB;&#x52A1;&#xFF0C;&#x56E0;&#x4E3A;&#x6211;&#x4EEC;&#x4E0D;&#x80FD;&#x628A;
+&#x5149;&#x6807;&#x79FB;&#x5230;&#x884C;&#x5C3E;&#x3002;vi &#x63D0;&#x4F9B;&#x4E86;&#x8FFD;&#x52A0;&#x6587;&#x672C;&#x7684;&#x547D;&#x4EE4;&#xFF0C;&#x660E;&#x667A;&#x5730;&#x547D;&#x540D;&#x4E3A;&quot;a&quot;&#x547D;&#x4EE4;&#x3002;&#x5982;&#x679C;&#x6211;&#x4EEC;&#x628A;&#x5149;&#x6807;&#x79FB;&#x52A8;&#x5230;&#x884C;&#x5C3E;&#xFF0C;&#x8F93;&#x5165;&quot;a&quot;,
+&#x5149;&#x6807;&#x5C31;&#x4F1A;&#x8D8A;&#x8FC7;&#x884C;&#x5C3E;&#xFF0C;vi &#x8FDB;&#x5165;&#x63D2;&#x5165;&#x6A21;&#x5F0F;&#x3002;&#x8FD9;&#x6837;&#x5C31;&#x5141;&#x8BB8;&#x6211;&#x4EEC;&#x6DFB;&#x52A0;&#x66F4;&#x591A;&#x7684;&#x6587;&#x672C;&#xFF1A;</p>
+<pre><code>The quick brown fox jumped over the lazy dog. It was cool.
+</code></pre><p>Remember to press the Esc key to exit insert mode.</p>
+<p>&#x8BB0;&#x4F4F;&#x6309;&#x4E0B; Esc &#x6309;&#x952E;&#x6765;&#x9000;&#x51FA;&#x63D2;&#x5165;&#x6A21;&#x5F0F;&#x3002;</p>
+<p>Since we will almost always want to append text to the end of a line, vi offers a shortcut
+to move to end of the current line and start appending. It&apos;s the &#x201C;A&#x201D; command. Let&apos;s try it
+and add some more lines to our file.</p>
+<p>&#x56E0;&#x4E3A;&#x6211;&#x4EEC;&#x51E0;&#x4E4E;&#x603B;&#x662F;&#x60F3;&#x8981;&#x5728;&#x884C;&#x5C3E;&#x9644;&#x52A0;&#x6587;&#x672C;&#xFF0C;&#x6240;&#x4EE5; vi &#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x79CD;&#x5FEB;&#x6377;&#x65B9;&#x5F0F;&#x6765;&#x79FB;&#x52A8;&#x5230;&#x5F53;&#x524D;&#x884C;&#x7684;&#x672B;&#x5C3E;&#xFF0C;&#x5E76;&#x4E14;&#x80FD;&#x6DFB;&#x52A0;
+&#x6587;&#x672C;&#x3002;&#x5B83;&#x662F;&quot;A&quot;&#x547D;&#x4EE4;&#x3002;&#x8BD5;&#x7740;&#x7528;&#x4E00;&#x4E0B;&#x5B83;&#xFF0C;&#x7ED9;&#x6587;&#x4EF6;&#x6DFB;&#x52A0;&#x66F4;&#x591A;&#x884C;&#x3002;</p>
+<p>First, we&apos;ll move the cursor to the beginning of the line using the &#x201C;0&#x201D; (zero) command.
+Now we type &#x201C;A&#x201D; and add the following lines of text:</p>
+<p>&#x9996;&#x5148;&#xFF0C;&#x4F7F;&#x7528;&quot;0&quot;(&#x96F6;)&#x547D;&#x4EE4;&#xFF0C;&#x5C06;&#x5149;&#x6807;&#x79FB;&#x52A8;&#x5230;&#x884C;&#x9996;&#x3002;&#x73B0;&#x5728;&#x6211;&#x4EEC;&#x8F93;&#x5165;&quot;A&quot;&#xFF0C;&#x6765;&#x6DFB;&#x52A0;&#x4EE5;&#x4E0B;&#x6587;&#x672C;&#x884C;&#xFF1A;</p>
+<pre><code>The quick brown fox jumped over the lazy dog. It was cool.
+Line 2
+Line 3
+Line 4
+Line 5
+</code></pre><p>Again, press the Esc key to exit insert mode.</p>
+<p>&#x518D;&#x4E00;&#x6B21;&#xFF0C;&#x6309;&#x4E0B; Esc &#x6309;&#x952E;&#x9000;&#x51FA;&#x63D2;&#x5165;&#x6A21;&#x5F0F;&#x3002;</p>
+<p>As we can see, the &#x201C;A&#x201D; command is more useful as it moves the cursor to the end of the
+line before starting insert mode.</p>
+<p>&#x6B63;&#x5982;&#x6211;&#x4EEC;&#x6240;&#x770B;&#x5230;&#x7684;&#xFF0C;&#x5927; A &#x547D;&#x4EE4;&#x975E;&#x5E38;&#x6709;&#x7528;&#xFF0C;&#x56E0;&#x4E3A;&#x5728;&#x542F;&#x52A8;&#x63D2;&#x5165;&#x6A21;&#x5F0F;&#x4E4B;&#x524D;&#xFF0C;&#x5B83;&#x628A;&#x5149;&#x6807;&#x79FB;&#x5230;&#x4E86;&#x884C;&#x5C3E;&#x3002;</p>
+<p>Opening A Line</p>
+<h4 id="&#x6253;&#x5F00;&#x4E00;&#x884C;">&#x6253;&#x5F00;&#x4E00;&#x884C;</h4>
+<p>Another way we can insert text is by &#x201C;opening&#x201D; a line. This inserts a blank line between
+two existing lines and enters insert mode. This has two variants:</p>
+<p>&#x6211;&#x4EEC;&#x63D2;&#x5165;&#x6587;&#x672C;&#x7684;&#x53E6;&#x4E00;&#x79CD;&#x65B9;&#x5F0F;&#x662F;&#x201C;&#x6253;&#x5F00;&#x201D;&#x4E00;&#x884C;&#x3002;&#x8FD9;&#x4F1A;&#x5728;&#x5B58;&#x5728;&#x7684;&#x4E24;&#x884C;&#x4E4B;&#x95F4;&#x63D2;&#x5165;&#x4E00;&#x4E2A;&#x7A7A;&#x767D;&#x884C;&#xFF0C;&#x5E76;&#x4E14;&#x8FDB;&#x5165;&#x63D2;&#x5165;&#x6A21;&#x5F0F;&#x3002;
+&#x8FD9;&#x79CD;&#x65B9;&#x5F0F;&#x6709;&#x4E24;&#x4E2A;&#x53D8;&#x4F53;&#xFF1A;</p>
+<table class="multi">
+<caption class="cap">Table 13-2: Line Opening Keys</caption>
+<tr>
+<th class="title">Command </th>
+<th class="title">Opens</th>
+</tr>
+<tr>
+<td valign="top" width="25%">o</td>
+<td valign="top">The line below the current line.</td>
+</tr>
+<tr>
+<td valign="top">O</td>
+<td valign="top">The line above the current line.</td>
+</tr>
+</table>
+
+<table class="multi">
+<caption class="cap">&#x8868;13-2: &#x6587;&#x672C;&#x884C;&#x6253;&#x5F00;&#x6309;&#x952E;</caption>
+<tr>
+<th class="title">&#x547D;&#x4EE4;</th>
+<th class="title">&#x6253;&#x5F00;&#x884C;</th>
+</tr>
+<tr>
+<td valign="top" width="25%">o</td>
+<td valign="top">&#x5F53;&#x524D;&#x884C;&#x7684;&#x4E0B;&#x65B9;&#x6253;&#x5F00;&#x4E00;&#x884C;&#x3002;</td>
+</tr>
+<tr>
+<td valign="top">O</td>
+<td valign="top">&#x5F53;&#x524D;&#x884C;&#x7684;&#x4E0A;&#x65B9;&#x6253;&#x5F00;&#x4E00;&#x884C;&#x3002;</td>
+</tr>
+</table>
+
+<p>We can demonstrate this as follows: place the cursor on &#x201C;Line 3&#x201D; then press the o key.</p>
+<p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x6F14;&#x793A;&#x4E00;&#x4E0B;&#xFF1A;&#x628A;&#x5149;&#x6807;&#x653E;&#x5230;&quot;Line 3&quot;&#x4E0A;&#xFF0C;&#x6309;&#x4E0B;&#x5C0F; o &#x6309;&#x952E;&#x3002;</p>
+<pre><code>The quick brown fox jumped over the lazy dog. It was cool.
+Line 2
+Line 3
+
+line 4
+line 5
+</code></pre><p>A new line was opened below the third line and we entered insert mode. Exit insert mode
+by pressing the Esc key. Press the u key to undo our change.</p>
+<p>&#x5728;&#x7B2C;&#x4E09;&#x884C;&#x4E4B;&#x4E0B;&#x6253;&#x5F00;&#x4E86;&#x65B0;&#x7684;&#x4E00;&#x884C;&#xFF0C;&#x5E76;&#x4E14;&#x8FDB;&#x5165;&#x63D2;&#x5165;&#x6A21;&#x5F0F;&#x3002;&#x6309;&#x4E0B; Esc&#xFF0C;&#x9000;&#x51FA;&#x63D2;&#x5165;&#x6A21;&#x5F0F;&#x3002;&#x6309;&#x4E0B; u &#x6309;&#x952E;&#xFF0C;&#x64A4;&#x9500;&#x6211;&#x4EEC;&#x7684;&#x4FEE;&#x6539;&#x3002;</p>
+<p>Press the O key to open the line above the cursor:</p>
+<p>&#x6309;&#x4E0B;&#x5927; O &#x6309;&#x952E;&#x5728;&#x5149;&#x6807;&#x4E4B;&#x4E0A;&#x6253;&#x5F00;&#x65B0;&#x7684;&#x4E00;&#x884C;&#xFF1A;</p>
+<pre><code>The quick brown fox jumped over the lazy dog. It was cool.
+Line 2
+
+Line 3
+Line 4
+Line 5
+</code></pre><p>Exit insert mode by pressing the Esc key and undo our change by pressing u.</p>
+<p>&#x6309;&#x4E0B; Esc &#x6309;&#x952E;&#xFF0C;&#x9000;&#x51FA;&#x63D2;&#x5165;&#x6A21;&#x5F0F;&#xFF0C;&#x5E76;&#x4E14;&#x6309;&#x4E0B; u &#x6309;&#x952E;&#xFF0C;&#x64A4;&#x9500;&#x6211;&#x4EEC;&#x7684;&#x66F4;&#x6539;&#x3002;</p>
+<p>Deleting Text</p>
+<h4 id="&#x5220;&#x9664;&#x6587;&#x672C;">&#x5220;&#x9664;&#x6587;&#x672C;</h4>
+<p>As we might expect, vi offers a variety of ways to delete text, all of which contain one
+of two keystrokes. First, the x key will delete a character at the cursor location. x may
+be preceded by a number specifying how many characters are to be deleted. The d key is
+more general purpose. Like x, it may be preceded by a number specifying the number of
+times the deletion is to be performed. In addition, d is always followed by a movement
+command that controls the size of the deletion. Here are some examples:</p>
+<p>&#x6B63;&#x5982;&#x6211;&#x4EEC;&#x671F;&#x671B;&#x7684;&#xFF0C;vi &#x63D0;&#x4F9B;&#x4E86;&#x5404;&#x79CD;&#x5404;&#x6837;&#x7684;&#x65B9;&#x5F0F;&#x6765;&#x5220;&#x9664;&#x6587;&#x672C;&#xFF0C;&#x6240;&#x6709;&#x7684;&#x65B9;&#x5F0F;&#x5305;&#x542B;&#x4E00;&#x4E2A;&#x6216;&#x4E24;&#x4E2A;&#x6309;&#x952E;&#x3002;&#x9996;&#x5148;&#xFF0C;
+x &#x6309;&#x952E;&#x4F1A;&#x5220;&#x9664;&#x5149;&#x6807;&#x4F4D;&#x7F6E;&#x7684;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x3002;&#x53EF;&#x4EE5;&#x5728; x &#x547D;&#x4EE4;&#x4E4B;&#x524D;&#x5E26;&#x4E0A;&#x4E00;&#x4E2A;&#x6570;&#x5B57;&#xFF0C;&#x6765;&#x6307;&#x660E;&#x8981;&#x5220;&#x9664;&#x7684;&#x5B57;&#x7B26;&#x4E2A;&#x6570;&#x3002;
+d &#x6309;&#x952E;&#x66F4;&#x901A;&#x7528;&#x4E00;&#x4E9B;&#x3002;&#x7C7B;&#x4F3C; x &#x547D;&#x4EE4;&#xFF0C;d &#x547D;&#x4EE4;&#x4E4B;&#x524D;&#x53EF;&#x4EE5;&#x5E26;&#x4E0A;&#x4E00;&#x4E2A;&#x6570;&#x5B57;&#xFF0C;&#x6765;&#x6307;&#x5B9A;&#x8981;&#x6267;&#x884C;&#x7684;&#x5220;&#x9664;&#x6B21;&#x6570;&#x3002;&#x53E6;&#x5916;&#xFF0C;
+d &#x547D;&#x4EE4;&#x4E4B;&#x540E;&#x603B;&#x662F;&#x5E26;&#x4E0A;&#x4E00;&#x4E2A;&#x79FB;&#x52A8;&#x547D;&#x4EE4;&#xFF0C;&#x7528;&#x6765;&#x63A7;&#x5236;&#x5220;&#x9664;&#x7684;&#x8303;&#x56F4;&#x3002;&#x8FD9;&#x91CC;&#x6709;&#x4E9B;&#x5B9E;&#x4F8B;&#xFF1A;</p>
+<table class="multi">
+<caption class="cap">Table 13-3: Text Deletion Commands</caption>
+<tr>
+<th class="title">Command</th>
+<th class="title">Deletes</th>
+</tr>
+<tr>
+<td valign="top" width="25%">x</td>
+<td valign="top">The current character.</td>
+</tr>
+<tr>
+<td valign="top">3x</td>
+<td valign="top">The current character and the next two character.</td>
+</tr>
+<tr>
+<td valign="top" width="25%">dd</td>
+<td valign="top">The current line.</td>
+</tr>
+<tr>
+<td valign="top" width="25%">5dd</td>
+<td valign="top">The current line and the next four lines.</td>
+</tr>
+<tr>
+<td valign="top" width="25%">dW</td>
+<td valign="top">From the cursor position to the beginning of the next word.</td>
+</tr>
+<tr>
+<td valign="top" width="25%">d$</td>
+<td valign="top">From the cursor position to the end of the current line.</td>
+</tr>
+<tr>
+<td valign="top" width="25%">d0</td>
+<td valign="top">From the cursor position to the beginning of the current line.</td>
+</tr>
+<tr>
+<td valign="top" width="25%">d^</td>
+<td valign="top">From the cursor position to the first non-whitespace character of the line.</td>
+</tr>
+<tr>
+<td valign="top" width="25%">dG</td>
+<td valign="top">From the current line to the end of the file.</td>
+</tr>
+<tr>
+<td valign="top" width="25%">d20G</td>
+<td valign="top">From the current line to the twentieth line of the file.</td>
+</tr>
+</table>
+
+<table class="multi">
+<caption class="cap">&#x8868;13-3: &#x6587;&#x672C;&#x5220;&#x9664;&#x547D;&#x4EE4;</caption>
+<tr>
+<th class="title">&#x547D;&#x4EE4;</th>
+<th class="title">&#x5220;&#x9664;&#x7684;&#x6587;&#x672C;</th>
+</tr>
+<tr>
+<td valign="top" width="25%">x</td>
+<td valign="top">&#x5F53;&#x524D;&#x5B57;&#x7B26;</td>
+</tr>
+<tr>
+<td valign="top">3x</td>
+<td valign="top">&#x5F53;&#x524D;&#x5B57;&#x7B26;&#x53CA;&#x5176;&#x540E;&#x7684;&#x4E24;&#x4E2A;&#x5B57;&#x7B26;&#x3002;</td>
+</tr>
+<tr>
+<td valign="top" width="25%">dd</td>
+<td valign="top">&#x5F53;&#x524D;&#x884C;&#x3002;</td>
+</tr>
+<tr>
+<td valign="top" width="25%">5dd</td>
+<td valign="top">&#x5F53;&#x524D;&#x884C;&#x53CA;&#x968F;&#x540E;&#x7684;&#x56DB;&#x884C;&#x6587;&#x672C;&#x3002;</td>
+</tr>
+<tr>
+<td valign="top" width="25%">dW</td>
+<td valign="top">&#x4ECE;&#x5149;&#x6807;&#x4F4D;&#x7F6E;&#x5F00;&#x59CB;&#x5230;&#x4E0B;&#x4E00;&#x4E2A;&#x5355;&#x8BCD;&#x7684;&#x5F00;&#x5934;&#x3002;</td>
+</tr>
+<tr>
+<td valign="top" width="25%">d$</td>
+<td valign="top">&#x4ECE;&#x5149;&#x6807;&#x4F4D;&#x7F6E;&#x5F00;&#x59CB;&#x5230;&#x5F53;&#x524D;&#x884C;&#x7684;&#x884C;&#x5C3E;&#x3002;</td>
+</tr>
+<tr>
+<td valign="top" width="25%">d0</td>
+<td valign="top">&#x4ECE;&#x5149;&#x6807;&#x4F4D;&#x7F6E;&#x5F00;&#x59CB;&#x5230;&#x5F53;&#x524D;&#x884C;&#x7684;&#x884C;&#x9996;&#x3002;</td>
+</tr>
+<tr>
+<td valign="top" width="25%">d^</td>
+<td valign="top">&#x4ECE;&#x5149;&#x6807;&#x4F4D;&#x7F6E;&#x5F00;&#x59CB;&#x5230;&#x6587;&#x672C;&#x884C;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x975E;&#x7A7A;&#x5B57;&#x7B26;&#x3002;</td>
+</tr>
+<tr>
+<td valign="top" width="25%">dG</td>
+<td valign="top">&#x4ECE;&#x5F53;&#x524D;&#x884C;&#x5230;&#x6587;&#x4EF6;&#x7684;&#x672B;&#x5C3E;&#x3002;</td>
+</tr>
+<tr>
+<td valign="top" width="25%">d20G</td>
+<td valign="top">&#x4ECE;&#x5F53;&#x524D;&#x884C;&#x5230;&#x6587;&#x4EF6;&#x7684;&#x7B2C;20&#x884C;&#x3002;</td>
+</tr>
+</table>
+
+<p>Place the cursor on the word &#x201C;It&#x201D; on the first line of our text. Press the x key repeatedly
+until the rest of the sentence is deleted. Next, press the u key repeatedly until the
+deletion is undone.</p>
+<p>&#x628A;&#x5149;&#x6807;&#x653E;&#x5230;&#x7B2C;&#x4E00;&#x884C;&#x5355;&#x8BCD;&#x201C;It&#x201D;&#x4E4B;&#x4E0A;&#x3002;&#x91CD;&#x590D;&#x6309;&#x4E0B; x &#x6309;&#x952E;&#x76F4;&#x5230;&#x5220;&#x9664;&#x5269;&#x4E0B;&#x7684;&#x90E8;&#x5206;&#x3002;&#x4E0B;&#x4E00;&#x6B65;&#xFF0C;&#x91CD;&#x590D;&#x6309;&#x4E0B; u &#x6309;&#x952E;
+&#x76F4;&#x5230;&#x6062;&#x590D;&#x539F;&#x8C8C;&#x3002;</p>
+<p>Note: Real vi only supports a single level of undo. vim supports multiple levels.</p>
+<p>&#x6CE8;&#x610F;&#xFF1A;&#x771F;&#x6B63;&#x7684; vi &#x53EA;&#x662F;&#x652F;&#x6301;&#x5355;&#x5C42;&#x9762;&#x7684; undo &#x547D;&#x4EE4;&#x3002;vim &#x5219;&#x652F;&#x6301;&#x591A;&#x4E2A;&#x5C42;&#x9762;&#x7684;&#x3002;</p>
+<p>Let&apos;s try the deletion again, this time using the d command. Again, move the cursor to
+the word &#x201C;It&#x201D; and press dW to delete the word:</p>
+<p>&#x6211;&#x4EEC;&#x518D;&#x6B21;&#x6267;&#x884C;&#x5220;&#x9664;&#x547D;&#x4EE4;&#xFF0C;&#x8FD9;&#x6B21;&#x4F7F;&#x7528; d &#x547D;&#x4EE4;&#x3002;&#x8FD8;&#x662F;&#x79FB;&#x52A8;&#x5149;&#x6807;&#x5230;&#x5355;&#x8BCD;&quot;It&quot;&#x4E4B;&#x4E0A;&#xFF0C;&#x6309;&#x4E0B;&#x7684; dW &#x6765;&#x5220;&#x9664;&#x5355;&#x8BCD;&#xFF1A;</p>
+<pre><code>The quick brown fox jumped over the lazy dog. was cool.
+Line 2
+Line 3
+Line 4
+Line 5
+</code></pre><p>Press d$ to delete from the cursor position to the end of the line:</p>
+<p>&#x6309;&#x4E0B; d$&#x5220;&#x9664;&#x4ECE;&#x5149;&#x6807;&#x4F4D;&#x7F6E;&#x5230;&#x884C;&#x5C3E;&#x7684;&#x6587;&#x672C;&#xFF1A;</p>
+<pre><code>The quick brown fox jumped over the lazy dog.
+Line 2
+Line 3
+Line 4
+Line 5
+</code></pre><p>Press dG to delete from the current line to the end of the file:</p>
+<p>&#x6309;&#x4E0B; dG &#x6309;&#x952E;&#x5220;&#x9664;&#x4ECE;&#x5F53;&#x524D;&#x884C;&#x5230;&#x6587;&#x4EF6;&#x672B;&#x5C3E;&#x7684;&#x6240;&#x6709;&#x884C;&#xFF1A;</p>
+<pre><code>~
+....
+</code></pre><p>Press u three times to undo the deletion.</p>
+<p>&#x8FDE;&#x7EED;&#x6309;&#x4E0B; u &#x6309;&#x952E;&#x4E09;&#x6B21;&#xFF0C;&#x6765;&#x6062;&#x590D;&#x5220;&#x9664;&#x90E8;&#x5206;&#x3002;</p>
+<p>Cutting, Copying And Pasting Text</p>
+<h4 id="&#x526A;&#x5207;&#xFF0C;&#x590D;&#x5236;&#x548C;&#x7C98;&#x8D34;&#x6587;&#x672C;">&#x526A;&#x5207;&#xFF0C;&#x590D;&#x5236;&#x548C;&#x7C98;&#x8D34;&#x6587;&#x672C;</h4>
+<p>The d command not only deletes text, it also &#x201C;cuts&#x201D; text. Each time we use the d
+command the deletion is copied into a paste buffer (think clipboard) that we can later
+recall with the p command to paste the contents of the buffer after the cursor or the P
+command to paste the contents before the cursor.</p>
+<p>&#x8FD9;&#x4E2A; d &#x547D;&#x4EE4;&#x4E0D;&#x4EC5;&#x5220;&#x9664;&#x6587;&#x672C;&#xFF0C;&#x5B83;&#x8FD8;&#x201C;&#x526A;&#x5207;&#x201D;&#x6587;&#x672C;&#x3002;&#x6BCF;&#x6B21;&#x6211;&#x4EEC;&#x4F7F;&#x7528; d &#x547D;&#x4EE4;&#xFF0C;&#x5220;&#x9664;&#x7684;&#x90E8;&#x5206;&#x88AB;&#x590D;&#x5236;&#x5230;&#x4E00;&#x4E2A;
+&#x7C98;&#x8D34;&#x7F13;&#x51B2;&#x533A;&#x4E2D;&#xFF08;&#x770B;&#x4F5C;&#x526A;&#x5207;&#x677F;&#xFF09;&#x3002;&#x8FC7;&#x540E;&#x6211;&#x4EEC;&#x6267;&#x884C;&#x5C0F; p &#x547D;&#x4EE4;&#x628A;&#x526A;&#x5207;&#x677F;&#x4E2D;&#x7684;&#x6587;&#x672C;&#x7C98;&#x8D34;&#x5230;&#x5149;&#x6807;&#x4F4D;&#x7F6E;&#x4E4B;&#x540E;&#xFF0C;
+&#x6216;&#x8005;&#x662F;&#x5927; P &#x547D;&#x4EE4;&#x628A;&#x6587;&#x672C;&#x7C98;&#x8D34;&#x5230;&#x5149;&#x6807;&#x4E4B;&#x524D;&#x3002;</p>
+<p>The y command is used to &#x201C;yank&#x201D; (copy) text in much the same way the d command is
+used to cut text. Here are some examples combining the y command with various
+movement commands:</p>
+<p>y &#x547D;&#x4EE4;&#x7528;&#x6765;&#x201C;&#x62C9;&#x201D;&#xFF08;&#x590D;&#x5236;&#xFF09;&#x6587;&#x672C;&#xFF0C;&#x548C; d &#x547D;&#x4EE4;&#x526A;&#x5207;&#x6587;&#x672C;&#x7684;&#x65B9;&#x5F0F;&#x5DEE;&#x4E0D;&#x591A;&#x3002;&#x8FD9;&#x91CC;&#x6709;&#x4E9B;&#x628A; y &#x547D;&#x4EE4;&#x548C;&#x5404;&#x79CD;&#x79FB;&#x52A8;&#x547D;&#x4EE4;
+&#x7ED3;&#x5408;&#x8D77;&#x6765;&#x4F7F;&#x7528;&#x7684;&#x5B9E;&#x4F8B;&#xFF1A;</p>
+<table class="multi">
+<caption class="cap">Table13- 4: Yanking Commands </caption>
+<tr>
+<th class="title">Command</th>
+<th class="title">Copies</th>
+</tr>
+<tr>
+<td valign="top" width="25%">yy</td>
+<td valign="top">The current line.</td>
+</tr>
+<tr>
+<td valign="top">5yy</td>
+<td valign="top">The current line and the next four lines.</td>
+</tr>
+<tr>
+<td valign="top">yW</td>
+<td valign="top">From the current cursor position to the beginning of
+the next word.</td>
+</tr>
+<tr>
+<td valign="top">y$</td>
+<td valign="top">From the current cursor location to the end of the current
+line.</td>
+</tr>
+<tr>
+<td valign="top">y0</td>
+<td valign="top">From the current cursor location to the beginning of
+the line.</td>
+</tr>
+<tr>
+<td valign="top">y^</td>
+<td valign="top">From the current cursor location to the first non-
+whitespace character in the line.</td>
+</tr>
+<tr>
+<td valign="top">yG</td>
+<td valign="top">From the current line to the end of the file.</td>
+</tr>
+<tr>
+<td valign="top">y20G</td>
+<td valign="top">From the current line to the twentieth line of the file.</td>
+</tr>
+</table>
+
+<table class="multi">
+<caption class="cap">&#x8868;13-4: &#x590D;&#x5236;&#x547D;&#x4EE4; </caption>
+<tr>
+<th class="title">&#x547D;&#x4EE4;</th>
+<th class="title">&#x590D;&#x5236;&#x7684;&#x5185;&#x5BB9;</th>
+</tr>
+<tr>
+<td valign="top" width="25%">yy</td>
+<td valign="top">&#x5F53;&#x524D;&#x884C;&#x3002;</td>
+</tr>
+<tr>
+<td valign="top">5yy</td>
+<td valign="top">&#x5F53;&#x524D;&#x884C;&#x53CA;&#x968F;&#x540E;&#x7684;&#x56DB;&#x884C;&#x6587;&#x672C;&#x3002;</td>
+</tr>
+<tr>
+<td valign="top">yW</td>
+<td valign="top">&#x4ECE;&#x5F53;&#x524D;&#x5149;&#x6807;&#x4F4D;&#x7F6E;&#x5230;&#x4E0B;&#x4E00;&#x4E2A;&#x5355;&#x8BCD;&#x7684;&#x5F00;&#x5934;&#x3002;</td>
+</tr>
+<tr>
+<td valign="top">y$</td>
+<td valign="top">&#x4ECE;&#x5F53;&#x524D;&#x5149;&#x6807;&#x4F4D;&#x7F6E;&#x5230;&#x5F53;&#x524D;&#x884C;&#x7684;&#x672B;&#x5C3E;&#x3002;</td>
+</tr>
+<tr>
+<td valign="top">y0</td>
+<td valign="top">&#x4ECE;&#x5F53;&#x524D;&#x5149;&#x6807;&#x4F4D;&#x7F6E;&#x5230;&#x884C;&#x9996;&#x3002;</td>
+</tr>
+<tr>
+<td valign="top">y^</td>
+<td valign="top">&#x4ECE;&#x5F53;&#x524D;&#x5149;&#x6807;&#x4F4D;&#x7F6E;&#x5230;&#x6587;&#x672C;&#x884C;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x975E;&#x7A7A;&#x5B57;&#x7B26;&#x3002;</td>
+</tr>
+<tr>
+<td valign="top">yG</td>
+<td valign="top">&#x4ECE;&#x5F53;&#x524D;&#x884C;&#x5230;&#x6587;&#x4EF6;&#x672B;&#x5C3E;&#x3002;</td>
+</tr>
+<tr>
+<td valign="top">y20G</td>
+<td valign="top">&#x4ECE;&#x5F53;&#x524D;&#x884C;&#x5230;&#x6587;&#x4EF6;&#x7684;&#x7B2C;20&#x884C;&#x3002;</td>
+</tr>
+</table>
+
+<p>Let&apos;s try some copy and paste. Place the cursor on the first line of the text and type yy to
+copy the current line. Next, move the cursor to the last line (G) and type p to paste the
+line below the current line:</p>
+<p>&#x6211;&#x4EEC;&#x8BD5;&#x7740;&#x505A;&#x4E9B;&#x590D;&#x5236;&#x548C;&#x7C98;&#x8D34;&#x5DE5;&#x4F5C;&#x3002;&#x628A;&#x5149;&#x6807;&#x653E;&#x5230;&#x6587;&#x672C;&#x7B2C;&#x4E00;&#x884C;&#xFF0C;&#x8F93;&#x5165; yy &#x6765;&#x590D;&#x5236;&#x5F53;&#x524D;&#x884C;&#x3002;&#x4E0B;&#x4E00;&#x6B65;&#xFF0C;&#x628A;&#x5149;&#x6807;&#x79FB;&#x5230;
+&#x6700;&#x540E;&#x4E00;&#x884C;&#xFF08;G&#xFF09;&#xFF0C;&#x8F93;&#x5165;&#x5C0F;&#x5199;&#x7684; p &#x628A;&#x590D;&#x5236;&#x7684;&#x4E00;&#x884C;&#x7C98;&#x8D34;&#x5230;&#x5F53;&#x524D;&#x884C;&#x7684;&#x4E0B;&#x9762;&#xFF1A;</p>
+<pre><code>The quick brown fox jumped over the lazy dog. It was cool.
+Line 2
+Line 3
+Line 4
+Line 5
+The quick brown fox jumped over the lazy dog. It was cool.
+</code></pre><p>Just as before, the u command will undo our change. With the cursor still positioned on
+the last line of the file, type P to paste the text above the current line:</p>
+<p>&#x548C;&#x4EE5;&#x524D;&#x4E00;&#x6837;&#xFF0C;u &#x547D;&#x4EE4;&#x4F1A;&#x64A4;&#x9500;&#x6211;&#x4EEC;&#x7684;&#x4FEE;&#x6539;&#x3002;&#x5149;&#x6807;&#x4ECD;&#x7136;&#x4F4D;&#x4E8E;&#x6587;&#x4EF6;&#x7684;&#x6700;&#x540E;&#x4E00;&#x884C;&#xFF0C;&#x8F93;&#x5165;&#x5927;&#x5199;&#x7684; P &#x547D;&#x4EE4;&#x628A;
+&#x6240;&#x590D;&#x5236;&#x7684;&#x6587;&#x672C;&#x7C98;&#x8D34;&#x5230;&#x5F53;&#x524D;&#x884C;&#x4E4B;&#x4E0A;&#xFF1A;</p>
+<pre><code>The quick brown fox jumped over the lazy dog. It was cool.
+Line 2
+Line 3
+Line 4
+The quick brown fox jumped over the lazy dog. It was cool.
+Line 5
+</code></pre><p>Try out some of the other y commands in the table above and get to know the behavior of
+both the p and P commands. When you are done, return the file to its original state.</p>
+<p>&#x8BD5;&#x7740;&#x6267;&#x884C;&#x4E0A;&#x8868;&#x4E2D;&#x4E00;&#x4E9B;&#x5176;&#x4ED6;&#x7684; y &#x547D;&#x4EE4;&#xFF0C;&#x4E86;&#x89E3;&#x5C0F;&#x5199; p &#x548C;&#x5927;&#x5199; P &#x547D;&#x4EE4;&#x7684;&#x884C;&#x4E3A;&#x3002;&#x5F53;&#x4F60;&#x5B8C;&#x6210;&#x7EC3;&#x4E60;&#x4E4B;&#x540E;&#xFF0C;&#x628A;&#x6587;&#x4EF6;
+&#x6062;&#x590D;&#x539F;&#x6837;&#x3002;</p>
+<p>Joining Lines</p>
+<h4 id="&#x8FDE;&#x63A5;&#x884C;">&#x8FDE;&#x63A5;&#x884C;</h4>
+<p>vi is rather strict about its idea of a line. Normally, it is not possible to move the cursor
+to the end of a line and delete the end-of-line character to join one line with the one
+below it. Because of this, vi provides a specific command, J (not to be confused with j,
+which is for cursor movement) to join lines together.</p>
+<p>vi &#x5BF9;&#x4E8E;&#x884C;&#x7684;&#x6982;&#x5FF5;&#x76F8;&#x5F53;&#x4E25;&#x683C;&#x3002;&#x901A;&#x5E38;&#xFF0C;&#x4E0D;&#x53EF;&#x80FD;&#x628A;&#x5149;&#x6807;&#x79FB;&#x5230;&#x884C;&#x5C3E;&#xFF0C;&#x518D;&#x5220;&#x9664;&#x884C;&#x5C3E;&#x7ED3;&#x675F;&#x7B26;&#xFF08;&#x56DE;&#x8F66;&#x7B26;&#xFF09;&#x6765;&#x8FDE;&#x63A5;
+&#x5F53;&#x524D;&#x884C;&#x548C;&#x5B83;&#x4E0B;&#x9762;&#x7684;&#x4E00;&#x884C;&#x3002;&#x7531;&#x4E8E;&#x8FD9;&#x4E2A;&#x539F;&#x56E0;&#xFF0C;vi &#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4E2A;&#x7279;&#x5B9A;&#x7684;&#x547D;&#x4EE4;&#xFF0C;&#x5927;&#x5199;&#x7684; J&#xFF08;&#x4E0D;&#x8981;&#x4E0E;&#x5C0F;&#x5199;&#x7684; j &#x6DF7;&#x6DC6;&#x4E86;&#xFF0C;
+j &#x662F;&#x7528;&#x6765;&#x79FB;&#x52A8;&#x5149;&#x6807;&#x7684;&#xFF09;&#x628A;&#x884C;&#x4E0E;&#x884C;&#x4E4B;&#x95F4;&#x8FDE;&#x63A5;&#x8D77;&#x6765;&#x3002;</p>
+<p>If we place the cursor on line 3 and type the J command, here&apos;s what happens:</p>
+<p>&#x5982;&#x679C;&#x6211;&#x4EEC;&#x628A;&#x5149;&#x6807;&#x653E;&#x5230; line 3&#x4E0A;&#xFF0C;&#x8F93;&#x5165;&#x5927;&#x5199;&#x7684; J &#x547D;&#x4EE4;&#xFF0C;&#x770B;&#x770B;&#x53D1;&#x751F;&#x4EC0;&#x4E48;&#x60C5;&#x51B5;&#xFF1A;</p>
+<pre><code>The quick brown fox jumped over the lazy dog. It was cool.
+Line 2
+Line 3 Line 4
+Line 5
+</code></pre><p>Search And Replace</p>
+<h3 id="&#x67E5;&#x627E;&#x548C;&#x66FF;&#x6362;">&#x67E5;&#x627E;&#x548C;&#x66FF;&#x6362;</h3>
+<p>vi has the ability to move the cursor to locations based on searches. It can do this on
+both a single line or over an entire file. It can also perform text replacements with or
+without confirmation from the user.</p>
+<p>vi &#x6709;&#x80FD;&#x529B;&#x628A;&#x5149;&#x6807;&#x79FB;&#x5230;&#x641C;&#x7D22;&#x5230;&#x7684;&#x5339;&#x914D;&#x9879;&#x4E0A;&#x3002;vi &#x53EF;&#x4EE5;&#x5728;&#x5355;&#x4E00;&#x884C;&#x6216;&#x6574;&#x4E2A;&#x6587;&#x4EF6;&#x4E2D;&#x8FD0;&#x7528;&#x8FD9;&#x4E2A;&#x529F;&#x80FD;&#x3002;
+&#x5B83;&#x4E5F;&#x53EF;&#x4EE5;&#x5728;&#x6709;&#x6216;&#x6CA1;&#x6709;&#x7528;&#x6237;&#x786E;&#x8BA4;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#x5B9E;&#x73B0;&#x6587;&#x672C;&#x66FF;&#x6362;&#x3002;</p>
+<p>Searching Within A Line</p>
+<h4 id="&#x67E5;&#x627E;&#x4E00;&#x884C;">&#x67E5;&#x627E;&#x4E00;&#x884C;</h4>
+<p>The f command searches a line and moves the cursor to the next instance of a specified
+character. For example, the command fa would move the cursor to the next occurrence
+of the character &#x201C;a&#x201D; within the current line. After performing a character search within a
+line, the search may be repeated by typing a semicolon.</p>
+<p>f &#x547D;&#x4EE4;&#x67E5;&#x627E;&#x4E00;&#x884C;&#xFF0C;&#x79FB;&#x52A8;&#x5149;&#x6807;&#x5230;&#x4E0B;&#x4E00;&#x4E2A;&#x6240;&#x6307;&#x5B9A;&#x7684;&#x5B57;&#x7B26;&#x4E0A;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x547D;&#x4EE4; fa &#x4F1A;&#x628A;&#x5149;&#x6807;&#x5B9A;&#x4F4D;&#x5230;&#x540C;&#x4E00;&#x884C;&#x4E2D;
+&#x4E0B;&#x4E00;&#x4E2A;&#x51FA;&#x73B0;&#x7684;&quot;a&quot;&#x5B57;&#x7B26;&#x4E0A;&#x3002;&#x5728;&#x4E00;&#x884C;&#x4E2D;&#x6267;&#x884C;&#x4E86;&#x5B57;&#x7B26;&#x7684;&#x67E5;&#x627E;&#x547D;&#x4EE4;&#x4E4B;&#x540E;&#xFF0C;&#x901A;&#x8FC7;&#x8F93;&#x5165;&#x5206;&#x53F7;&#x6765;&#x91CD;&#x590D;&#x8FD9;&#x4E2A;&#x67E5;&#x627E;&#x3002;</p>
+<p>Searching The Entire File</p>
+<h4 id="&#x67E5;&#x627E;&#x6574;&#x4E2A;&#x6587;&#x4EF6;">&#x67E5;&#x627E;&#x6574;&#x4E2A;&#x6587;&#x4EF6;</h4>
+<p>To move the cursor to the next occurrence of a word or phrase, the / command is used.
+This works the same way as we learned earlier in the less program. When you type the
+/ command a &quot;/&quot; will appear at the bottom of the screen. Next, type the word or phrase
+to be searched for, followed by the Enter key. The cursor will move to the next
+location containing the search string. A search may be repeated using the previous search
+string with the n command. Here&apos;s an example:</p>
+<p>&#x79FB;&#x52A8;&#x5149;&#x6807;&#x5230;&#x4E0B;&#x4E00;&#x4E2A;&#x51FA;&#x73B0;&#x7684;&#x5355;&#x8BCD;&#x6216;&#x77ED;&#x8BED;&#x4E0A;&#xFF0C;&#x4F7F;&#x7528; / &#x547D;&#x4EE4;&#x3002;&#x8FD9;&#x4E2A;&#x547D;&#x4EE4;&#x548C;&#x6211;&#x4EEC;&#x4E4B;&#x524D;&#x5728; less &#x7A0B;&#x5E8F;&#x4E2D;&#x5B66;&#x5230;
+&#x7684;&#x4E00;&#x6837;&#x3002;&#x5F53;&#x4F60;&#x8F93;&#x5165;/&#x547D;&#x4EE4;&#x540E;&#xFF0C;&#x4E00;&#x4E2A;&quot;/&quot;&#x5B57;&#x7B26;&#x4F1A;&#x51FA;&#x73B0;&#x5728;&#x5C4F;&#x5E55;&#x5E95;&#x90E8;&#x3002;&#x4E0B;&#x4E00;&#x6B65;&#xFF0C;&#x8F93;&#x5165;&#x8981;&#x67E5;&#x627E;&#x7684;&#x5355;&#x8BCD;&#x6216;&#x77ED;&#x8BED;&#x540E;&#xFF0C;
+&#x6309;&#x4E0B;&#x56DE;&#x8F66;&#x3002;&#x5149;&#x6807;&#x5C31;&#x4F1A;&#x79FB;&#x52A8;&#x5230;&#x4E0B;&#x4E00;&#x4E2A;&#x5305;&#x542B;&#x6240;&#x67E5;&#x627E;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x4F4D;&#x7F6E;&#x3002;&#x901A;&#x8FC7; n &#x547D;&#x4EE4;&#x6765;&#x91CD;&#x590D;&#x5148;&#x524D;&#x7684;&#x67E5;&#x627E;&#x3002;
+&#x8FD9;&#x91CC;&#x6709;&#x4E2A;&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre><code>The quick brown fox jumped over the lazy dog. It was cool.
+Line 2
+Line 3
+Line 4
+Line 5
+</code></pre><p>Place the cursor on the first line of the file. Type:</p>
+<p>&#x628A;&#x5149;&#x6807;&#x79FB;&#x52A8;&#x5230;&#x6587;&#x4EF6;&#x7684;&#x7B2C;&#x4E00;&#x884C;&#x3002;&#x8F93;&#x5165;&#xFF1A;</p>
+<pre><code>/Line
+</code></pre><p>followed by the Enter key. The cursor will move to line 2. Next, type n and the cursor
+will move to line 3. Repeating the n command will move the cursor down the file until it
+runs out of matches. While we have so far only used words and phrases for our search
+patterns, vi allows the use of regular expressions, a powerful method of expressing
+complex text patterns. We will cover regular expressions in some detail in a later chapter.</p>
+<p>&#x7136;&#x540E;&#x952E;&#x5165;&#x56DE;&#x8F66;&#x3002;&#x5149;&#x6807;&#x4F1A;&#x79FB;&#x52A8;&#x5230;&#x7B2C;&#x4E8C;&#x884C;&#x3002;&#x4E0B;&#x4E00;&#x6B65;&#xFF0C;&#x8F93;&#x5165; n&#xFF0C;&#x5149;&#x6807;&#x79FB;&#x5230;&#x7B2C;&#x4E09;&#x884C;&#x3002;&#x91CD;&#x590D;&#x8FD9;&#x4E2A; n &#x547D;&#x4EE4;&#xFF0C;&#x5149;&#x6807;&#x4F1A;
+&#x7EE7;&#x7EED;&#x5411;&#x4E0B;&#x79FB;&#x52A8;&#x76F4;&#x5230;&#x904D;&#x5386;&#x4E86;&#x6240;&#x6709;&#x7684;&#x5339;&#x914D;&#x9879;&#x3002;&#x867D;&#x7136;&#x76EE;&#x524D;&#xFF0C;&#x6211;&#x4EEC;&#x53EA;&#x662F;&#x4F7F;&#x7528;&#x4E86;&#x5355;&#x8BCD;&#x548C;&#x77ED;&#x8BED;&#x6765;&#x4F5C;&#x4E3A;&#x6211;&#x4EEC;&#x7684;&#x67E5;&#x627E;
+&#x6A21;&#x5F0F;&#xFF0C;&#x4F46;&#x662F; vi &#x5141;&#x8BB8;&#x4F7F;&#x7528;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#xFF0C;&#x4E00;&#x79CD;&#x5F3A;&#x5927;&#x7684;&#x7528;&#x6765;&#x8868;&#x793A;&#x590D;&#x6742;&#x6587;&#x672C;&#x6A21;&#x5F0F;&#x7684;&#x65B9;&#x6CD5;&#x3002;&#x6211;&#x4EEC;&#x5C06;&#x4F1A;&#x5728;&#x968F;&#x540E;
+&#x7684;&#x7AE0;&#x8282;&#x91CC;&#x9762;&#x8BE6;&#x5C3D;&#x5730;&#x4ECB;&#x7ECD;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x3002;</p>
+<p>Global Search And Replace</p>
+<h4 id="&#x5168;&#x5C40;&#x67E5;&#x627E;&#x548C;&#x66FF;&#x4EE3;">&#x5168;&#x5C40;&#x67E5;&#x627E;&#x548C;&#x66FF;&#x4EE3;</h4>
+<p>vi uses an ex command to perform search and replace operations (called &#x201C;substitution&#x201D;
+in vi) over a range of lines or the entire file. To change the word &#x201C;Line&#x201D; to &#x201C;line&#x201D; for the
+entire file, we would enter the following command:</p>
+<p>vi &#x4F7F;&#x7528; ex &#x547D;&#x4EE4;&#x6765;&#x6267;&#x884C;&#x67E5;&#x627E;&#x548C;&#x66FF;&#x4EE3;&#x64CD;&#x4F5C;&#xFF08;vi &#x4E2D;&#x53EB;&#x505A;&#x201C;&#x66FF;&#x6362;&#x201D;&#xFF09;&#x3002;&#x628A;&#x6574;&#x4E2A;&#x6587;&#x4EF6;&#x4E2D;&#x7684;&#x5355;&#x8BCD;&#x201C;Line&#x201D;&#x66F4;&#x6539;&#x4E3A;&#x201C;line&#x201D;&#xFF0C;
+&#x6211;&#x4EEC;&#x8F93;&#x5165;&#x4EE5;&#x4E0B;&#x547D;&#x4EE4;&#xFF1A;</p>
+<pre><code>:%s/Line/line/g
+</code></pre><p>Let&apos;s break this command down into separate items and see what each one does:</p>
+<p>&#x6211;&#x4EEC;&#x628A;&#x8FD9;&#x4E2A;&#x547D;&#x4EE4;&#x5206;&#x89E3;&#x4E3A;&#x51E0;&#x4E2A;&#x5355;&#x72EC;&#x7684;&#x90E8;&#x5206;&#xFF0C;&#x770B;&#x4E00;&#x4E0B;&#x6BCF;&#x90E8;&#x5206;&#x7684;&#x542B;&#x4E49;&#xFF1A;</p>
+<table class="multi">
+<tr>
+<th class="title">Item</th>
+<th class="title">Meaning</th>
+</tr>
+<tr>
+<td valign="top" width="25%">:</td>
+<td valign="top">The colon character starts an ex command.</td>
+</tr>
+<tr>
+<td valign="top">%</td>
+<td valign="top">Specifies the range of lines for the operation. % is a shortcut
+meaning from the first line to the last line. Alternately, the
+range could have been specified 1,5 (since our file is five
+lines long), or 1,$ which means &#x201C;from line 1 to the last line in
+the file.&#x201D; If the range of lines is omitted, the operation is only
+performed on the current line.</td>
+</tr>
+<tr>
+<td valign="top">s</td>
+<td valign="top">Specifies the operation. In this case, substitution (search and
+replace).</td>
+</tr>
+<tr>
+<td valign="top">/Line/line</td>
+<td valign="top">The search pattern and the replacement text.
+</td>
+</tr>
+<tr>
+<td valign="top">g</td>
+<td valign="top">This means &#x201C;global&#x201D; in the sense that the search and replace is
+performed on every instance of the search string in the line. If omitted,
+only the first instance of the search string on each line is replaced.</td>
+</tr>
+</table>
+
+<table class="multi">
+<tr>
+<th class="title">&#x6761;&#x76EE;</th>
+<th class="title">&#x542B;&#x4E49;</th>
+</tr>
+<tr>
+<td valign="top" width="25%">:</td>
+<td valign="top">&#x5192;&#x53F7;&#x5B57;&#x7B26;&#x8FD0;&#x884C;&#x4E00;&#x4E2A; ex &#x547D;&#x4EE4;&#x3002;</td>
+</tr>
+<tr>
+<td valign="top">%</td>
+<td valign="top">&#x6307;&#x5B9A;&#x8981;&#x64CD;&#x4F5C;&#x7684;&#x884C;&#x6570;&#x3002;% &#x662F;&#x4E00;&#x4E2A;&#x5FEB;&#x6377;&#x65B9;&#x5F0F;&#xFF0C;&#x8868;&#x793A;&#x4ECE;&#x7B2C;&#x4E00;&#x884C;&#x5230;&#x6700;&#x540E;&#x4E00;&#x884C;&#x3002;&#x53E6;&#x5916;&#xFF0C;&#x64CD;&#x4F5C;&#x8303;&#x56F4;&#x4E5F;
+&#x53EF;&#x4EE5;&#x7528; 1,5 &#x6765;&#x4EE3;&#x66FF;&#xFF08;&#x56E0;&#x4E3A;&#x6211;&#x4EEC;&#x7684;&#x6587;&#x4EF6;&#x53EA;&#x6709;5&#x884C;&#x6587;&#x672C;&#xFF09;&#xFF0C;&#x6216;&#x8005;&#x7528; 1,$ &#x6765;&#x4EE3;&#x66FF;&#xFF0C;&#x610F;&#x601D;&#x662F; &#x201C; &#x4ECE;&#x7B2C;&#x4E00;&#x884C;&#x5230;&#x6587;&#x4EF6;&#x7684;&#x6700;&#x540E;&#x4E00;&#x884C;&#x3002;&#x201D;
+&#x5982;&#x679C;&#x7701;&#x7565;&#x4E86;&#x6587;&#x672C;&#x884C;&#x7684;&#x8303;&#x56F4;&#xFF0C;&#x90A3;&#x4E48;&#x64CD;&#x4F5C;&#x53EA;&#x5BF9;&#x5F53;&#x524D;&#x884C;&#x751F;&#x6548;&#x3002;</td>
+</tr>
+<tr>
+<td valign="top">s</td>
+<td valign="top">&#x6307;&#x5B9A;&#x64CD;&#x4F5C;&#x3002;&#x5728;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x4E0B;&#x662F;&#xFF0C;&#x66FF;&#x6362;&#xFF08;&#x67E5;&#x627E;&#x4E0E;&#x66FF;&#x4EE3;&#xFF09;&#x3002;</td>
+</tr>
+<tr>
+<td valign="top">/Line/line</td>
+<td valign="top">&#x67E5;&#x627E;&#x7C7B;&#x578B;&#x4E0E;&#x66FF;&#x4EE3;&#x6587;&#x672C;&#x3002;</td>
+</tr>
+<tr>
+<td valign="top">g</td>
+<td valign="top">&#x8FD9;&#x662F;&#x201C;&#x5168;&#x5C40;&#x201D;&#x7684;&#x610F;&#x601D;&#xFF0C;&#x610F;&#x5473;&#x7740;&#x5BF9;&#x6587;&#x672C;&#x884C;&#x4E2D;&#x6240;&#x6709;&#x5339;&#x914D;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x6267;&#x884C;&#x67E5;&#x627E;&#x548C;&#x66FF;&#x6362;&#x64CD;&#x4F5C;&#x3002;&#x5982;&#x679C;&#x7701;&#x7565; g&#xFF0C;&#x5219;
+&#x53EA;&#x66FF;&#x6362;&#x6BCF;&#x4E2A;&#x6587;&#x672C;&#x884C;&#x4E2D;&#x7B2C;&#x4E00;&#x4E2A;&#x5339;&#x914D;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x3002;</td>
+</tr>
+</table>
+
+<p>After executing our search and replace command our file looks like this:</p>
+<p>&#x6267;&#x884C;&#x5B8C;&#x67E5;&#x627E;&#x548C;&#x66FF;&#x4EE3;&#x547D;&#x4EE4;&#x4E4B;&#x540E;&#xFF0C;&#x6211;&#x4EEC;&#x7684;&#x6587;&#x4EF6;&#x770B;&#x8D77;&#x6765;&#x50CF;&#x8FD9;&#x6837;&#xFF1A;</p>
+<pre><code>The quick brown fox jumped over the lazy dog. It was cool.
+line 2
+line 3
+line 4
+line 5
+</code></pre><p>We can also specify a substitution command with user confirmation. This is done by
+adding a &#x201C;c&#x201D; to the end of the command. For example:</p>
+<p>&#x6211;&#x4EEC;&#x4E5F;&#x53EF;&#x4EE5;&#x6307;&#x5B9A;&#x4E00;&#x4E2A;&#x9700;&#x8981;&#x7528;&#x6237;&#x786E;&#x8BA4;&#x7684;&#x66FF;&#x6362;&#x547D;&#x4EE4;&#x3002;&#x901A;&#x8FC7;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&quot;c&quot;&#x5B57;&#x7B26;&#x5230;&#x8FD9;&#x4E2A;&#x547D;&#x4EE4;&#x7684;&#x672B;&#x5C3E;&#xFF0C;&#x6765;&#x5B8C;&#x6210;
+&#x8FD9;&#x4E2A;&#x66FF;&#x6362;&#x547D;&#x4EE4;&#x3002;&#x4F8B;&#x5982;&#xFF1A;</p>
+<pre><code>:%s/line/Line/gc
+</code></pre><p>This command will change our file back to its previous form; however, before each
+substitution, vi stops and asks us to confirm the substitution with this message:</p>
+<p>&#x8FD9;&#x4E2A;&#x547D;&#x4EE4;&#x4F1A;&#x628A;&#x6211;&#x4EEC;&#x7684;&#x6587;&#x4EF6;&#x6062;&#x590D;&#x5148;&#x524D;&#x7684;&#x6A21;&#x6837;&#xFF1B;&#x7136;&#x800C;&#xFF0C;&#x5728;&#x6267;&#x884C;&#x6BCF;&#x4E2A;&#x66FF;&#x6362;&#x547D;&#x4EE4;&#x4E4B;&#x524D;&#xFF0C;vi &#x4F1A;&#x505C;&#x4E0B;&#x6765;&#xFF0C;
+&#x901A;&#x8FC7;&#x4E0B;&#x9762;&#x7684;&#x4FE1;&#x606F;&#xFF0C;&#x6765;&#x8981;&#x6C42;&#x6211;&#x4EEC;&#x786E;&#x8BA4;&#x8FD9;&#x4E2A;&#x66FF;&#x6362;&#xFF1A;</p>
+<pre><code>replace with Line (y/n/a/q/l/^E/^Y)?
+</code></pre><p>Each of the characters within the parentheses is a possible choice as follows:</p>
+<p>&#x62EC;&#x53F7;&#x4E2D;&#x7684;&#x6BCF;&#x4E2A;&#x5B57;&#x7B26;&#x90FD;&#x662F;&#x4E00;&#x4E2A;&#x53EF;&#x80FD;&#x7684;&#x9009;&#x62E9;&#xFF0C;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF1A;</p>
+<table class="multi">
+<caption class="cap">Table 13-5: Replace Confirmation Keys</caption>
+<tr>
+<th class="title">Key</th>
+<th class="title">Action</th>
+</tr>
+<tr>
+<td valign="top" width="25%">y</td>
+<td valign="top">Perform the substitution.</td>
+</tr>
+<tr>
+<td valign="top">n</td>
+<td valign="top">Skip this instance of the pattern.</td>
+</tr>
+<tr>
+<td valign="top">a</td>
+<td valign="top">Perform the substitution on this and all subsequent instances
+of the pattern.</td>
+</tr>
+<tr>
+<td valign="top">q or esc</td>
+<td valign="top">Quit the substitution.</td>
+</tr>
+<tr>
+<td valign="top">l</td>
+<td valign="top">Perform this substitution and then quit. Short for&quot;last&quot;.</td>
+</tr>
+<tr>
+<td valign="top">Ctrl-e, Ctrl-y</td>
+<td valign="top">Scroll down and scroll up, respectively. Useful for viewing
+the context of the proposed substitution.</td>
+</tr>
+</table>
+
+<table class="multi">
+<caption class="cap">&#x8868;13-5: &#x66FF;&#x6362;&#x786E;&#x8BA4;&#x6309;&#x952E;</caption>
+<tr>
+<th class="title">&#x6309;&#x952E;</th>
+<th class="title">&#x884C;&#x4E3A;</th>
+</tr>
+<tr>
+<td valign="top" width="25%">y</td>
+<td valign="top">&#x6267;&#x884C;&#x66FF;&#x6362;&#x64CD;&#x4F5C;</td>
+</tr>
+<tr>
+<td valign="top">n</td>
+<td valign="top">&#x8DF3;&#x8FC7;&#x8FD9;&#x4E2A;&#x5339;&#x914D;&#x7684;&#x5B9E;&#x4F8B;</td>
+</tr>
+<tr>
+<td valign="top">a</td>
+<td valign="top">&#x5BF9;&#x8FD9;&#x4E2A;&#x53CA;&#x968F;&#x540E;&#x6240;&#x6709;&#x5339;&#x914D;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x6267;&#x884C;&#x66FF;&#x6362;&#x64CD;&#x4F5C;&#x3002;</td>
+</tr>
+<tr>
+<td valign="top">q or esc</td>
+<td valign="top">&#x9000;&#x51FA;&#x66FF;&#x6362;&#x64CD;&#x4F5C;&#x3002;</td>
+</tr>
+<tr>
+<td valign="top">l</td>
+<td valign="top">&#x6267;&#x884C;&#x8FD9;&#x6B21;&#x66FF;&#x6362;&#x5E76;&#x9000;&#x51FA;&#x3002;l &#x662F; &#x201C;last&#x201D; &#x7684;&#x7B80;&#x5199;&#x3002;</td>
+</tr>
+<tr>
+<td valign="top">Ctrl-e, Ctrl-y</td>
+<td valign="top">&#x5206;&#x522B;&#x662F;&#x5411;&#x4E0B;&#x6EDA;&#x52A8;&#x548C;&#x5411;&#x4E0A;&#x6EDA;&#x52A8;&#x3002;&#x7528;&#x4E8E;&#x67E5;&#x770B;&#x5EFA;&#x8BAE;&#x66FF;&#x6362;&#x7684;&#x4E0A;&#x4E0B;&#x6587;&#x3002;</td>
+</tr>
+</table>
+
+<p>If you type y, the substitution will be performed, n will cause vi to skip this instance and
+move on to the next one.</p>
+<p>&#x5982;&#x679C;&#x4F60;&#x8F93;&#x5165; y&#xFF0C;&#x5219;&#x6267;&#x884C;&#x8FD9;&#x4E2A;&#x66FF;&#x6362;&#xFF0C;&#x8F93;&#x5165; n &#x5219;&#x4F1A;&#x5BFC;&#x81F4; vi &#x8DF3;&#x8FC7;&#x8FD9;&#x4E2A;&#x5B9E;&#x4F8B;&#xFF0C;&#x800C;&#x79FB;&#x5230;&#x4E0B;&#x4E00;&#x4E2A;&#x5339;&#x914D;&#x9879;&#x4E0A;&#x3002;</p>
+<p>Editing Multiple Files</p>
+<h3 id="&#x7F16;&#x8F91;&#x591A;&#x4E2A;&#x6587;&#x4EF6;">&#x7F16;&#x8F91;&#x591A;&#x4E2A;&#x6587;&#x4EF6;</h3>
+<p>It&apos;s often useful to edit more than one file at a time. You might need to make changes to
+multiple files or you may need to copy content from one file into another. With vi we
+can open multiple files for editing by specifying them on the command line:</p>
+<p>&#x540C;&#x65F6;&#x80FD;&#x591F;&#x7F16;&#x8F91;&#x591A;&#x4E2A;&#x6587;&#x4EF6;&#x662F;&#x5F88;&#x6709;&#x7528;&#x7684;&#x3002;&#x4F60;&#x53EF;&#x80FD;&#x9700;&#x8981;&#x66F4;&#x6539;&#x591A;&#x4E2A;&#x6587;&#x4EF6;&#x6216;&#x8005;&#x4ECE;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x590D;&#x5236;&#x5185;&#x5BB9;&#x5230;
+&#x53E6;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x3002;&#x901A;&#x8FC7; vi&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x6253;&#x5F00;&#x591A;&#x4E2A;&#x6587;&#x4EF6;&#x6765;&#x7F16;&#x8F91;&#xFF0C;&#x53EA;&#x8981;&#x5728;&#x547D;&#x4EE4;&#x884C;&#x4E2D;&#x6307;&#x5B9A;&#x8981;&#x7F16;&#x8F91;&#x7684;&#x6587;&#x4EF6;&#x540D;&#x3002;</p>
+<pre><code>vi file1 file2 file3...
+</code></pre><p>Let&apos;s exit our existing vi session and create a new file for editing. Type :wq to exit vi
+saving our modified text. Next, we&apos;ll create an additional file in our home directory that
+we can play with. We&apos;ll create the file by capturing some output from the ls command:</p>
+<p>&#x6211;&#x4EEC;&#x5148;&#x9000;&#x51FA;&#x5DF2;&#x7ECF;&#x5B58;&#x5728;&#x7684; vi &#x4F1A;&#x8BDD;&#xFF0C;&#x7136;&#x540E;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x6587;&#x4EF6;&#x6765;&#x7F16;&#x8F91;&#x3002;&#x8F93;&#x5165;:wq &#x6765;&#x9000;&#x51FA; vi &#x5E76;&#x4E14;&#x4FDD;&#x5B58;&#x4E86;&#x6240;&#x505A;&#x7684;&#x4FEE;&#x6539;&#x3002;
+&#x4E0B;&#x4E00;&#x6B65;&#xFF0C;&#x6211;&#x4EEC;&#x5C06;&#x5728;&#x5BB6;&#x76EE;&#x5F55;&#x4E0B;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x989D;&#x5916;&#x7684;&#x7528;&#x6765;&#x73A9;&#x800D;&#x7684;&#x6587;&#x4EF6;&#x3002;&#x901A;&#x8FC7;&#x83B7;&#x53D6;&#x4ECE; ls &#x547D;&#x4EE4;&#x7684;&#x8F93;&#x51FA;&#xFF0C;&#x6765;&#x521B;&#x5EFA;&#x8FD9;&#x4E2A;&#x6587;&#x4EF6;&#x3002;</p>
+<pre><code>[me@linuxbox ~]$ ls -l /usr/bin &gt; ls-output.txt
+</code></pre><p>Let&apos;s edit our old file and our new one with vi:</p>
+<p>&#x7528; vi &#x6765;&#x7F16;&#x8F91;&#x6211;&#x4EEC;&#x7684;&#x539F;&#x6587;&#x4EF6;&#x548C;&#x65B0;&#x521B;&#x5EFA;&#x7684;&#x6587;&#x4EF6;&#xFF1A;</p>
+<pre><code>[me@linuxbox ~]$ vi foo.txt ls-output.txt
+</code></pre><p>vi will start up and we will see the first file on the screen:</p>
+<p>vi &#x542F;&#x52A8;&#xFF0C;&#x6211;&#x4EEC;&#x4F1A;&#x770B;&#x5230;&#x7B2C;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x663E;&#x793A;&#x51FA;&#x6765;&#xFF1A;</p>
+<pre><code>The quick brown fox jumped over the lazy dog. It was cool.
+Line 2
+Line 3
+Line 4
+Line 5
+</code></pre><p>Switching Between Files</p>
+<h4 id="&#x6587;&#x4EF6;&#x4E4B;&#x95F4;&#x8F6C;&#x6362;">&#x6587;&#x4EF6;&#x4E4B;&#x95F4;&#x8F6C;&#x6362;</h4>
+<p>To switch from one file to the next, use this ex command:</p>
+<p>&#x4ECE;&#x8FD9;&#x4E2A;&#x6587;&#x4EF6;&#x8F6C;&#x5230;&#x4E0B;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#xFF0C;&#x4F7F;&#x7528;&#x8FD9;&#x4E2A; ex &#x547D;&#x4EE4;&#xFF1A;</p>
+<pre><code>:n
+</code></pre><p>To move back to the previous file use:</p>
+<p>&#x56DE;&#x5230;&#x5148;&#x524D;&#x7684;&#x6587;&#x4EF6;&#x4F7F;&#x7528;&#xFF1A;</p>
+<pre><code>:N
+</code></pre><p>While we can move from one file to another, vi enforces a policy that prevents us from
+switching files if the current file has unsaved changes. To force vi to switch files and
+abandon your changes, add an exclamation point (!) to the command.</p>
+<p>&#x5F53;&#x6211;&#x4EEC;&#x4ECE;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x79FB;&#x5230;&#x53E6;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x65F6;&#xFF0C;&#x5982;&#x679C;&#x5F53;&#x524D;&#x6587;&#x4EF6;&#x6CA1;&#x6709;&#x4FDD;&#x5B58;&#x4FEE;&#x6539;&#xFF0C;vi &#x4F1A;&#x963B;&#x6B62;&#x6211;&#x4EEC;&#x8F6C;&#x6362;&#x6587;&#x4EF6;&#xFF0C;
+&#x8FD9;&#x662F; vi &#x5F3A;&#x5236;&#x6267;&#x884C;&#x7684;&#x653F;&#x7B56;&#x3002;&#x5728;&#x547D;&#x4EE4;&#x4E4B;&#x540E;&#x6DFB;&#x52A0;&#x611F;&#x53F9;&#x53F7;&#xFF0C;&#x53EF;&#x4EE5;&#x5F3A;&#x8FEB; vi &#x653E;&#x5F03;&#x4FEE;&#x6539;&#x800C;&#x8F6C;&#x6362;&#x6587;&#x4EF6;&#x3002;</p>
+<p>In addition to the switching method described above, vim (and some versions of vi) also
+provide some ex commands that make multiple files easier to manage. We can view a list
+of files being edited with the :buffers command. Doing so will display a list of the
+files at the bottom of the display:</p>
+<p>&#x53E6;&#x5916;&#xFF0C;&#x4E0A;&#x9762;&#x6240;&#x63CF;&#x8FF0;&#x7684;&#x8F6C;&#x6362;&#x65B9;&#x6CD5;&#xFF0C;vim&#xFF08;&#x548C;&#x4E00;&#x4E9B;&#x7248;&#x672C;&#x7684; vi&#xFF09;&#x4E5F;&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4E9B; ex &#x547D;&#x4EE4;&#xFF0C;&#x8FD9;&#x4E9B;&#x547D;&#x4EE4;&#x4F7F;
+&#x591A;&#x4E2A;&#x6587;&#x4EF6;&#x66F4;&#x5BB9;&#x6613;&#x7BA1;&#x7406;&#x3002;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x67E5;&#x770B;&#x6B63;&#x5728;&#x7F16;&#x8F91;&#x7684;&#x6587;&#x4EF6;&#x5217;&#x8868;&#xFF0C;&#x4F7F;&#x7528;:buffers &#x547D;&#x4EE4;&#x3002;&#x8FD0;&#x884C;&#x8FD9;&#x4E2A;
+&#x547D;&#x4EE4;&#x540E;&#xFF0C;&#x5C4F;&#x5E55;&#x9876;&#x90E8;&#x5C31;&#x4F1A;&#x663E;&#x793A;&#x51FA;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x5217;&#x8868;&#xFF1A;</p>
+<pre><code>:buffers
+1 #     &quot;foo.txt&quot;                 line 1
+2 %a    &quot;ls-output.txt&quot;           line 0
+Press ENTER or type command to continue
+</code></pre><p>To switch to another buffer (file), type :buffer followed by the number of the buffer
+you wish to edit. For example, to switch from buffer 1 which contains the file foo.txt
+to buffer 2 containing the file ls-output.txt we would type this:</p>
+<p>&#x8981;&#x5207;&#x6362;&#x5230;&#x53E6;&#x4E00;&#x4E2A;&#x7F13;&#x51B2;&#x533A;&#xFF08;&#x6587;&#x4EF6;&#xFF09;&#xFF0C;&#x8F93;&#x5165; :buffer, &#x7D27;&#x8DDF;&#x7740;&#x4F60;&#x60F3;&#x8981;&#x7F16;&#x8F91;&#x7684;&#x7F13;&#x51B2;&#x5668;&#x7F16;&#x53F7;&#x3002;&#x6BD4;&#x5982;&#xFF0C;&#x8981;&#x4ECE;&#x5305;&#x542B;&#x6587;&#x4EF6; foo.txt
+&#x7684;1&#x53F7;&#x7F13;&#x51B2;&#x533A;&#x5207;&#x6362;&#x5230;&#x5305;&#x542B;&#x6587;&#x4EF6; ls-output.txt &#x7684;2&#x53F7;&#x7F13;&#x51B2;&#x533A;&#xFF0C;&#x6211;&#x4EEC;&#x4F1A;&#x8FD9;&#x6837;&#x8F93;&#x5165;&#xFF1A;</p>
+<pre><code>:buffer 2
+</code></pre><p>and our screen now displays the second file.</p>
+<p>&#x6211;&#x4EEC;&#x7684;&#x5C4F;&#x5E55;&#x73B0;&#x5728;&#x4F1A;&#x663E;&#x793A;&#x7B2C;&#x4E8C;&#x4E2A;&#x6587;&#x4EF6;&#x3002;</p>
+<p>Opening Additional Files For Editing</p>
+<h4 id="&#x6253;&#x5F00;&#x53E6;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x5E76;&#x7F16;&#x8F91;">&#x6253;&#x5F00;&#x53E6;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x5E76;&#x7F16;&#x8F91;</h4>
+<p>It&apos;s also possible to add files to our current editing session. The ex command :e (short for
+&#x201C;edit&#x201D;) followed by a filename will open an additional file. Let&apos;s end our current editing
+session and return to the command line.</p>
+<p>&#x5728;&#x6211;&#x4EEC;&#x7684;&#x5F53;&#x524D;&#x7684;&#x7F16;&#x8F91;&#x4F1A;&#x8BDD;&#x91CC;&#x4E5F;&#x80FD;&#x6DFB;&#x52A0;&#x522B;&#x7684;&#x6587;&#x4EF6;&#x3002;ex &#x547D;&#x4EE4; :e (&#x7F16;&#x8F91;(edit) &#x7684;&#x7B80;&#x5199;) &#x7D27;&#x8DDF;&#x8981;&#x6253;&#x5F00;&#x7684;&#x6587;&#x4EF6;&#x540D;&#x5C06;&#x4F1A;&#x6253;&#x5F00;
+&#x53E6;&#x5916;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x3002; &#x8BA9;&#x6211;&#x4EEC;&#x7ED3;&#x675F;&#x5F53;&#x524D;&#x7684;&#x4F1A;&#x8BDD;&#x56DE;&#x5230;&#x547D;&#x4EE4;&#x884C;&#x3002;</p>
+<p>Start vi again with just one file:</p>
+<p>&#x91CD;&#x65B0;&#x542F;&#x52A8;vi&#x5E76;&#x53EA;&#x6253;&#x5F00;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;</p>
+<pre><code>[me@linuxbox ~]$ vi foo.txt
+</code></pre><p>To add our second file, enter:</p>
+<p>&#x8981;&#x52A0;&#x5165;&#x6211;&#x4EEC;&#x7684;&#x7B2C;&#x4E8C;&#x4E2A;&#x6587;&#x4EF6;&#xFF0C;&#x8F93;&#x5165;&#xFF1A;</p>
+<pre><code>:e ls-output.txt
+</code></pre><p>And it should appear on the screen. The first file is still present as we can verify:</p>
+<p>&#x5B83;&#x5E94;&#x8BE5;&#x663E;&#x793A;&#x5728;&#x5C4F;&#x5E55;&#x4E0A;&#x3002; &#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x8FD9;&#x6837;&#x6765;&#x786E;&#x8BA4;&#x7B2C;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x4ECD;&#x7136;&#x5B58;&#x5728;&#xFF1A;</p>
+<pre><code>:buffers
+ 1 # &quot;foo.txt&quot; line 1
+ 2 %a &quot;ls-output.txt&quot; line 0
+Press ENTER or type command to continue 
+</code></pre><p>Note: You cannot switch to files loaded with the :e command using either the :n
+or :N command. To switch files, use the :buffer command followed by the
+buffer number.</p>
+<p>&#x6CE8;&#x610F;&#xFF1A;&#x4F60;&#x4E0D;&#x540C;&#x901A;&#x8FC7;:n &#x6216;:N &#x547D;&#x4EE4;&#x5728;&#x7531;:e &#x547D;&#x4EE4;&#x52A0;&#x8F7D;&#x7684;&#x6587;&#x4EF6;&#x4E4B;&#x95F4;&#x8FDB;&#x884C;&#x5207;&#x6362;&#x3002;&#x8FD9;&#x65F6;&#x8981;&#x4F7F;&#x7528;:buffer &#x547D;&#x4EE4;&#xFF0C;
+&#x5176;&#x540E;&#x52A0;&#x4E0A;&#x7F13;&#x51B2;&#x533A;&#x53F7;&#x7801;&#xFF0C;&#x6765;&#x8F6C;&#x6362;&#x6587;&#x4EF6;&#x3002;</p>
+<p>Copying Content From One File Into Another</p>
+<h4 id="&#x4ECE;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x590D;&#x5236;&#x5185;&#x5BB9;&#x5230;&#x53E6;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;">&#x4ECE;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x590D;&#x5236;&#x5185;&#x5BB9;&#x5230;&#x53E6;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;</h4>
+<p>Often while editing multiple files, we will want to copy a portion of one file into another
+file that we are editing. This is easily done using the usual yank and paste commands we
+used earlier. We can demonstrate as follows. First, using our two files, switch to buffer 1
+(foo.txt) by entering:</p>
+<p>&#x5F53;&#x6211;&#x4EEC;&#x7F16;&#x8F91;&#x591A;&#x4E2A;&#x6587;&#x4EF6;&#x65F6;&#xFF0C;&#x7ECF;&#x5E38;&#x5730;&#x8981;&#x590D;&#x5236;&#x6587;&#x4EF6;&#x7684;&#x4E00;&#x90E8;&#x5206;&#x5230;&#x53E6;&#x4E00;&#x4E2A;&#x6B63;&#x5728;&#x7F16;&#x8F91;&#x7684;&#x6587;&#x4EF6;&#x3002;&#x4F7F;&#x7528;&#x4E4B;&#x524D;&#x6211;&#x4EEC;&#x5B66;&#x5230;&#x7684;
+&#x62C9;&#xFF08;yank&#xFF09;&#x548C;&#x7C98;&#x8D34;&#x547D;&#x4EE4;&#xFF0C;&#x8FD9;&#x5F88;&#x5BB9;&#x6613;&#x5B8C;&#x6210;&#x3002;&#x8BF4;&#x660E;&#x5982;&#x4E0B;&#x3002;&#x4EE5;&#x6253;&#x5F00;&#x7684;&#x4E24;&#x4E2A;&#x6587;&#x4EF6;&#x4E3A;&#x4F8B;&#xFF0C;&#x9996;&#x5148;&#x8F6C;&#x6362;&#x5230;&#x7F13;&#x51B2;&#x533A;1&#xFF08;foo.txt&#xFF09;
+&#xFF0C;&#x8F93;&#x5165;&#xFF1A;</p>
+<pre><code>:buffer 1
+</code></pre><p>which should give us this:</p>
+<p>&#x6211;&#x4EEC;&#x5E94;&#x8BE5;&#x5F97;&#x5230;&#x4EE5;&#x4E0B;&#x8F93;&#x51FA;&#xFF1A;</p>
+<pre><code>The quick brown fox jumped over the lazy dog. It was cool.
+Line 2
+Line 3
+Line 4
+Line 5
+</code></pre><p>Next, move the cursor to the first line, and type yy to yank (copy) the line.</p>
+<p>&#x4E0B;&#x4E00;&#x6B65;&#xFF0C;&#x628A;&#x5149;&#x6807;&#x79FB;&#x5230;&#x7B2C;&#x4E00;&#x884C;&#xFF0C;&#x5E76;&#x4E14;&#x8F93;&#x5165; yy &#x6765;&#x590D;&#x5236;&#x8FD9;&#x4E00;&#x884C;&#x3002;</p>
+<p>Switch to the second buffer by entering:</p>
+<p>&#x8F6C;&#x6362;&#x5230;&#x7B2C;&#x4E8C;&#x4E2A;&#x7F13;&#x51B2;&#x533A;&#xFF0C;&#x8F93;&#x5165;&#xFF1A;</p>
+<pre><code>:buffer 2
+</code></pre><p>The screen will now contain some file listings like this (only a portion is shown here):</p>
+<p>&#x73B0;&#x5728;&#x5C4F;&#x5E55;&#x4F1A;&#x5305;&#x542B;&#x4E00;&#x4E9B;&#x6587;&#x4EF6;&#x5217;&#x8868;&#xFF08;&#x8FD9;&#x91CC;&#x53EA;&#x5217;&#x51FA;&#x4E86;&#x4E00;&#x90E8;&#x5206;&#xFF09;&#xFF1A;</p>
+<pre><code>total 343700
+-rwxr-xr-x 1 root root    31316  2007-12-05  08:58 [
+....
+</code></pre><p>Move the cursor to the first line and paste the line we copied from the preceding file by
+typing the p command:</p>
+<p>&#x79FB;&#x52A8;&#x5149;&#x6807;&#x5230;&#x7B2C;&#x4E00;&#x884C;&#xFF0C;&#x8F93;&#x5165; p &#x547D;&#x4EE4;&#x628A;&#x6211;&#x4EEC;&#x4ECE;&#x524D;&#x9762;&#x6587;&#x4EF6;&#x4E2D;&#x590D;&#x5236;&#x7684;&#x4E00;&#x884C;&#x7C98;&#x8D34;&#x5230;&#x8FD9;&#x4E2A;&#x6587;&#x4EF6;&#x4E2D;&#xFF1A;</p>
+<pre><code>total 343700
+The quick brown fox jumped over the lazy dog. It was cool.
+-rwxr-xr-x 1 root root    31316  2007-12-05  08:58 [
+....
+</code></pre><p>Inserting An Entire File Into Another</p>
+<h4 id="&#x63D2;&#x5165;&#x6574;&#x4E2A;&#x6587;&#x4EF6;&#x5230;&#x53E6;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;">&#x63D2;&#x5165;&#x6574;&#x4E2A;&#x6587;&#x4EF6;&#x5230;&#x53E6;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;</h4>
+<p>It&apos;s also possible to insert an entire file into one that we are editing. To see this in action,
+let&apos;s end our vi session and start a new one with just a single file:</p>
+<p>&#x4E5F;&#x6709;&#x53EF;&#x80FD;&#x628A;&#x6574;&#x4E2A;&#x6587;&#x4EF6;&#x63D2;&#x5165;&#x5230;&#x6211;&#x4EEC;&#x6240;&#x7F16;&#x8F91;&#x7684;&#x6587;&#x4EF6;&#x4E2D;&#x3002;&#x770B;&#x4E00;&#x4E0B;&#x5B9E;&#x9645;&#x64CD;&#x4F5C;&#xFF0C;&#x7ED3;&#x675F; vi &#x4F1A;&#x8BDD;&#xFF0C;&#x91CD;&#x65B0;
+&#x542F;&#x52A8;&#x4E00;&#x4E2A;&#x53EA;&#x6253;&#x5F00;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x7684; vi &#x4F1A;&#x8BDD;&#xFF1A;</p>
+<pre><code>[me@linuxbox ~]$ vi ls-output.txt
+</code></pre><p>We will see our file listing again:</p>
+<p>&#x518D;&#x4E00;&#x6B21;&#x770B;&#x5230;&#x6211;&#x4EEC;&#x7684;&#x6587;&#x4EF6;&#x5217;&#x8868;&#xFF1A;</p>
+<pre><code>total 343700
+-rwxr-xr-x 1 root root    31316  2007-12-05  08:58 [
+</code></pre><p>Move the cursor to the third line, then enter the following ex command:</p>
+<p>&#x79FB;&#x52A8;&#x5149;&#x6807;&#x5230;&#x7B2C;&#x4E09;&#x884C;&#xFF0C;&#x7136;&#x540E;&#x8F93;&#x5165;&#x4EE5;&#x4E0B; ex &#x547D;&#x4EE4;&#xFF1A;</p>
+<pre><code>:r foo.txt
+</code></pre><p>The :r command (short for &#x201C;read&#x201D;) inserts the specified file before the cursor position.
+Our screen should now look like this:</p>
+<p>&#x8FD9;&#x4E2A;:r &#x547D;&#x4EE4;&#xFF08;&#x662F;&quot;read&quot;&#x7684;&#x7B80;&#x79F0;&#xFF09;&#x628A;&#x6307;&#x5B9A;&#x7684;&#x6587;&#x4EF6;&#x63D2;&#x5165;&#x5230;&#x5149;&#x6807;&#x4F4D;&#x7F6E;&#x4E4B;&#x524D;&#x3002;&#x73B0;&#x5728;&#x5C4F;&#x5E55;&#x5E94;&#x8BE5;&#x770B;&#x8D77;&#x6765;&#x50CF;&#x8FD9;&#x6837;&#xFF1A;</p>
+<pre><code>total 343700
+-rwxr-xr-x 1 root root     31316 2007-12-05  08:58 [
+....
+The quick brown fox jumped over the lazy dog. It was cool.
+Line 2
+Line 3
+Line 4
+Line 5
+-rwxr-xr-x 1 root root     111276 2008-01-31  13:36 a2p
+....
+</code></pre><p>Saving Our Work</p>
+<h3 id="&#x4FDD;&#x5B58;&#x5DE5;&#x4F5C;">&#x4FDD;&#x5B58;&#x5DE5;&#x4F5C;</h3>
+<p>Like everything else in vi, there are several different ways to save our edited files. We
+have already covered the ex command :w, but there are some others we may also find
+helpful.</p>
+<p>&#x50CF; vi &#x4E2D;&#x7684;&#x5176;&#x5B83;&#x64CD;&#x4F5C;&#x4E00;&#x6837;&#xFF0C;&#x6709;&#x51E0;&#x79CD;&#x4E0D;&#x540C;&#x7684;&#x65B9;&#x6CD5;&#x6765;&#x4FDD;&#x5B58;&#x6211;&#x4EEC;&#x6240;&#x4FEE;&#x6539;&#x7684;&#x6587;&#x4EF6;&#x3002;&#x6211;&#x4EEC;&#x5DF2;&#x7ECF;&#x7814;&#x7A76;&#x4E86;:w &#x8FD9;&#x4E2A;
+ex &#x547D;&#x4EE4;&#xFF0C; &#x4F46;&#x8FD8;&#x6709;&#x51E0;&#x79CD;&#x65B9;&#x6CD5;&#xFF0C;&#x53EF;&#x80FD;&#x6211;&#x4EEC;&#x4E5F;&#x89C9;&#x5F97;&#x6709;&#x5E2E;&#x52A9;&#x3002;</p>
+<p>In command mode, typing ZZ will save the current file and exit vi. Likewise, the ex
+command :wq will combine the :w and :q commands into one that will both save the
+file and exit.</p>
+<p>&#x5728;&#x547D;&#x4EE4;&#x6A21;&#x5F0F;&#x4E0B;&#xFF0C;&#x8F93;&#x5165; ZZ &#x5C31;&#x4F1A;&#x4FDD;&#x5B58;&#x5E76;&#x9000;&#x51FA;&#x5F53;&#x524D;&#x6587;&#x4EF6;&#x3002;&#x540C;&#x6837;&#x5730;&#xFF0C;ex &#x547D;&#x4EE4;:wq &#x628A;:w &#x548C;:q &#x547D;&#x4EE4;&#x7ED3;&#x5408;&#x5230;
+&#x4E00;&#x8D77;&#xFF0C;&#x6765;&#x5B8C;&#x6210;&#x4FDD;&#x5B58;&#x548C;&#x9000;&#x51FA;&#x4EFB;&#x52A1;&#x3002;</p>
+<p>The :w command may also specify an optional filename. This acts like &#x201C;Save As...&#x201D; For
+example, if we were editing foo.txt and wanted to save an alternate version called
+foo1.txt, we would enter the following:</p>
+<p>&#x8FD9;&#x4E2A;:w &#x547D;&#x4EE4;&#x4E5F;&#x53EF;&#x4EE5;&#x6307;&#x5B9A;&#x53EF;&#x9009;&#x7684;&#x6587;&#x4EF6;&#x540D;&#x3002;&#x8FD9;&#x4E2A;&#x7684;&#x4F5C;&#x7528;&#x5C31;&#x5982;&quot;Save As...&quot;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x5982;&#x679C;&#x6211;&#x4EEC;
+&#x6B63;&#x5728;&#x7F16;&#x8F91; foo.txt &#x6587;&#x4EF6;&#xFF0C;&#x60F3;&#x8981;&#x4FDD;&#x5B58;&#x4E00;&#x4E2A;&#x526F;&#x672C;&#xFF0C;&#x53EB;&#x505A; foo1.txt&#xFF0C;&#x90A3;&#x4E48;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x6267;&#x884C;&#x4EE5;&#x4E0B;&#x547D;&#x4EE4;&#xFF1A;</p>
+<pre><code>:w foo1.txt
+</code></pre><hr>
+<p>Note: While the command above saves the file under a new name, it does not
+change the name of the file you are editing. As you continue to edit, you will still
+be editing foo.txt, not foo1.txt.</p>
+<p>&#x6CE8;&#x610F;&#xFF1A;&#x5F53;&#x4E0A;&#x9762;&#x7684;&#x547D;&#x4EE4;&#x4EE5;&#x4E00;&#x4E2A;&#x65B0;&#x540D;&#x5B57;&#x4FDD;&#x5B58;&#x6587;&#x4EF6;&#x65F6;&#xFF0C;&#x4F46;&#x5B83;&#x5E76;&#x6CA1;&#x6709;&#x66F4;&#x6539;&#x4F60;&#x6B63;&#x5728;&#x7F16;&#x8F91;&#x7684;&#x6587;&#x4EF6;&#x7684;&#x540D;&#x5B57;&#x3002;
+&#x5982;&#x679C;&#x4F60;&#x7EE7;&#x7EED;&#x7F16;&#x8F91;&#x7684;&#x8BDD;&#xFF0C;&#x4F60;&#x8FD8;&#x662F;&#x5728;&#x7F16;&#x8F91;&#x6587;&#x4EF6; foo.txt&#xFF0C;&#x800C;&#x4E0D;&#x662F; foo1.txt&#x3002;</p>
+<hr>
+<p>Further Reading</p>
+<h3 id="&#x62D3;&#x5C55;&#x9605;&#x8BFB;">&#x62D3;&#x5C55;&#x9605;&#x8BFB;</h3>
+<p>Even with all that we have covered in this chapter, we have barely scratched the surface
+of what vi and vim can do. Here are a couple of on-line resources you can use to
+continue your journey towards vi mastery:</p>
+<p>&#x5373;&#x4F7F;&#x628A;&#x8FD9;&#x7AE0;&#x6240;&#x5B66;&#x7684;&#x5185;&#x5BB9;&#x90FD;&#x52A0;&#x8D77;&#x6765;&#xFF0C;&#x6211;&#x4EEC;&#x4E5F;&#x53EA;&#x662F;&#x5B66;&#x4E86; vi &#x548C; vim &#x7684;&#x4E00;&#x70B9;&#x513F;&#x76AE;&#x6BDB;&#x800C;&#x5DF2;&#x3002;&#x8FD9;&#x91CC;
+&#x6709;&#x4E00;&#x4E9B;&#x5728;&#x7EBF;&#x7684;&#x8D44;&#x6599;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x7528;&#x6765;&#x7EE7;&#x7EED; vi &#x5B66;&#x4E60;&#x4E4B;&#x65C5;&#x3002;</p>
+<ul>
+<li><p>Learning The vi Editor &#x2013; A Wikibook from Wikipedia that offers a concise guide
+to vi and several of its work-a-likes including vim. It&apos;s available at:</p>
+</li>
+<li><p>&#x5B66;&#x4E60; vi &#x7F16;&#x8F91;&#x5668;&#xFF0D;&#x4E00;&#x672C;&#x6765;&#x81EA;&#x4E8E; Wikipedia &#x7684; Wikibook&#xFF0C;&#x662F;&#x4E00;&#x672C;&#x5173;&#x4E8E; vi &#x7684;&#x7B80;&#x8981;&#x6307;&#x5357;&#xFF0C;&#x5E76;
+&#x4ECB;&#x7ECD;&#x4E86;&#x51E0;&#x4E2A;&#x7C7B;&#x4F3C; vi &#x7684;&#x7A0B;&#x5E8F;&#xFF0C;&#x5176;&#x4E2D;&#x5305;&#x62EC; vim&#x3002;&#x5B83;&#x53EF;&#x4EE5;&#x5728;&#x4EE5;&#x4E0B;&#x94FE;&#x63A5;&#x4E2D;&#x5F97;&#x5230;&#xFF1A;</p>
+<p><a href="http://en.wikibooks.org/wiki/Vi" target="_blank">http://en.wikibooks.org/wiki/Vi</a></p>
+</li>
+<li><p>The Vim Book - The vim project has a 570-page book that covers (almost) all of
+the features in vim. You can find it at:</p>
+</li>
+<li><p>The Vim Book&#xFF0D;vim &#x9879;&#x76EE;&#xFF0C;&#x4E00;&#x672C;570&#x9875;&#x7684;&#x4E66;&#x7C4D;&#xFF0C;&#x5305;&#x542B;&#x4E86;&#xFF08;&#x51E0;&#x4E4E;&#xFF09;&#x6240;&#x6709;&#x7684; vim &#x7279;&#x6027;&#x3002;&#x4F60;&#x80FD;&#x5728;&#x4E0B;&#x9762;&#x94FE;&#x63A5;&#x4E2D;&#x627E;&#x5230;&#x5B83;&#xFF1A;</p>
+<p>ftp://ftp.vim.org/pub/vim/doc/book/vimbook-OPL.pdf.</p>
+</li>
+<li><p>A Wikipedia article on Bill Joy, the creator of vi.:</p>
+</li>
+<li><p>Wikipedia &#x4E0A;&#x5173;&#x4E8E; Bill Joy &#x7684;&#x6587;&#x7AE0;&#xFF0C;vi &#x7684;&#x521B;&#x59CB;&#x4EBA;&#x3002;</p>
+<p><a href="http://en.wikipedia.org/wiki/Bill_Joy" target="_blank">http://en.wikipedia.org/wiki/Bill_Joy</a></p>
+</li>
+<li><p>A Wikipedia article on Bram Moolenaar, the author of vim:</p>
+</li>
+<li><p>Wikipedia &#x4E0A;&#x5173;&#x4E8E; Bram Moolenaar &#x7684;&#x6587;&#x7AE0;&#xFF0C;vim &#x7684;&#x4F5C;&#x8005;&#xFF1A;</p>
+<p><a href="http://en.wikipedia.org/wiki/Bram_Moolenaar" target="_blank">http://en.wikipedia.org/wiki/Bram_Moolenaar</a></p>
+</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="chap12.html" class="navigation navigation-prev " aria-label="Previous page: 12. shell 环境">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="chap14.html" class="navigation navigation-next " aria-label="Next page: 14. 自定制 shell 提示符">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"layout":"book","title":"13. vi 简介","level":"1.1.13","depth":2,"next":{"title":"14. 自定制 shell 提示符","level":"1.1.14","depth":2,"path":"chap14.md","ref":"chap14.md","articles":[]},"previous":{"title":"12. shell 环境","level":"1.1.12","depth":2,"path":"chap12.md","ref":"chap12.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"en","gitbook":"*"},"file":{"path":"chap13.md","mtime":"2017-01-12T13:05:37.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-01-12T13:06:00.166Z"},"basePath":".","book":{"language":"en"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

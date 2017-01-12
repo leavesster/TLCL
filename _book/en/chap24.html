@@ -1,0 +1,1205 @@
+
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>24. 编译程序 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="chap25.html" />
+    
+    
+    <link rel="prev" href="chap23.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.1" data-path="chap01.html">
+            
+                <a href="chap01.html">
+            
+                    
+                    01. 引言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2" data-path="chap02.html">
+            
+                <a href="chap02.html">
+            
+                    
+                    02. 什么是 shell
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3" data-path="chap03.html">
+            
+                <a href="chap03.html">
+            
+                    
+                    03. 文件系统中跳转
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4" data-path="chap04.html">
+            
+                <a href="chap04.html">
+            
+                    
+                    04. 探究操作系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.5" data-path="chap05.html">
+            
+                <a href="chap05.html">
+            
+                    
+                    05. 操作文件和目录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.6" data-path="chap06.html">
+            
+                <a href="chap06.html">
+            
+                    
+                    06. 使用命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.7" data-path="chap07.html">
+            
+                <a href="chap07.html">
+            
+                    
+                    07. 重定向
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.8" data-path="chap08.html">
+            
+                <a href="chap08.html">
+            
+                    
+                    08. 从 shell 眼中看世界
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.9" data-path="chap09.html">
+            
+                <a href="chap09.html">
+            
+                    
+                    09. 键盘高级操作技巧
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.10" data-path="chap10.html">
+            
+                <a href="chap10.html">
+            
+                    
+                    10. 权限
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.11" data-path="chap11.html">
+            
+                <a href="chap11.html">
+            
+                    
+                    11. 进程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.12" data-path="chap12.html">
+            
+                <a href="chap12.html">
+            
+                    
+                    12. shell 环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.13" data-path="chap13.html">
+            
+                <a href="chap13.html">
+            
+                    
+                    13. vi 简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.14" data-path="chap14.html">
+            
+                <a href="chap14.html">
+            
+                    
+                    14. 自定制 shell 提示符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.15" data-path="chap15.html">
+            
+                <a href="chap15.html">
+            
+                    
+                    15. 软件包管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.16" data-path="chap16.html">
+            
+                <a href="chap16.html">
+            
+                    
+                    16. 存储媒介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.17" data-path="chap17.html">
+            
+                <a href="chap17.html">
+            
+                    
+                    17. 网络系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.18" data-path="chap18.html">
+            
+                <a href="chap18.html">
+            
+                    
+                    18. 查找文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.19" data-path="chap19.html">
+            
+                <a href="chap19.html">
+            
+                    
+                    19. 归档和备份
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.20" data-path="chap20.html">
+            
+                <a href="chap20.html">
+            
+                    
+                    20. 正则表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.21" data-path="chap21.html">
+            
+                <a href="chap21.html">
+            
+                    
+                    21. 文本处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.22" data-path="chap22.html">
+            
+                <a href="chap22.html">
+            
+                    
+                    22. 格式化输出
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.23" data-path="chap23.html">
+            
+                <a href="chap23.html">
+            
+                    
+                    23. 打印
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.1.24" data-path="chap24.html">
+            
+                <a href="chap24.html">
+            
+                    
+                    24. 编译程序
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.25" data-path="chap25.html">
+            
+                <a href="chap25.html">
+            
+                    
+                    25. 编写第一个 Shell 脚本
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.26" data-path="chap26.html">
+            
+                <a href="chap26.html">
+            
+                    
+                    26. 启动一个项目
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.27" data-path="chap27.html">
+            
+                <a href="chap27.html">
+            
+                    
+                    27. 自顶向下设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.28" data-path="chap28.html">
+            
+                <a href="chap28.html">
+            
+                    
+                    28. 流程控制：if 分支结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.29" data-path="chap29.html">
+            
+                <a href="chap29.html">
+            
+                    
+                    29. 读取键盘输入
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.30" data-path="chap30.html">
+            
+                <a href="chap30.html">
+            
+                    
+                    30. 流程控制：while/until 循环
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.31" data-path="chap31.html">
+            
+                <a href="chap31.html">
+            
+                    
+                    31. 疑难排解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.32" data-path="chap32.html">
+            
+                <a href="chap32.html">
+            
+                    
+                    32. 流程控制：case 分支
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.33" data-path="chap33.html">
+            
+                <a href="chap33.html">
+            
+                    
+                    33. 位置参数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.34" data-path="chap34.html">
+            
+                <a href="chap34.html">
+            
+                    
+                    34. 流程控制：for 循环
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.35" data-path="chap35.html">
+            
+                <a href="chap35.html">
+            
+                    
+                    35. 字符串和数字
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.36" data-path="chap36.html">
+            
+                <a href="chap36.html">
+            
+                    
+                    36. 数组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.37" data-path="chap37.html">
+            
+                <a href="chap37.html">
+            
+                    
+                    37. 奇珍异宝
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >24. 编译程序</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <p>In this chapter, we will look at how to build programs by compiling source code.
+The availability of source code is the essential freedom that makes Linux possible.
+The entire ecosystem of Linux development relies on free exchange between developers.
+For many desktop users, compiling is a lost art. It used to be quite common,
+but today, distribution providers maintain huge repositories of precompiled binaries,
+ready to download and use. At the time of this writing, the Debian repository
+(one of the largest of any of the distributions) contains almost 23,000 packages.</p>
+<p>&#x5728;&#x8FD9;&#x4E00;&#x7AE0;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x5C06;&#x770B;&#x4E00;&#x4E0B;&#x5982;&#x4F55;&#x901A;&#x8FC7;&#x7F16;&#x8BD1;&#x6E90;&#x4EE3;&#x7801;&#x6765;&#x521B;&#x5EFA;&#x7A0B;&#x5E8F;&#x3002;&#x6E90;&#x4EE3;&#x7801;&#x7684;&#x53EF;&#x7528;&#x6027;&#x662F;&#x81F3;&#x5173;&#x91CD;&#x8981;&#x7684;&#x81EA;&#x7531;&#xFF0C;&#x4ECE;&#x800C;&#x4F7F;&#x5F97; Linux &#x6210;&#x4E3A;&#x53EF;&#x80FD;&#x3002;
+&#x6574;&#x4E2A; Linux &#x5F00;&#x53D1;&#x751F;&#x6001;&#x5708;&#x5C31;&#x662F;&#x4F9D;&#x8D56;&#x4E8E;&#x5F00;&#x53D1;&#x8005;&#x4E4B;&#x95F4;&#x7684;&#x81EA;&#x7531;&#x4EA4;&#x6D41;&#x3002;&#x5BF9;&#x4E8E;&#x8BB8;&#x591A;&#x684C;&#x9762;&#x7528;&#x6237;&#x6765;&#x8BF4;&#xFF0C;&#x7F16;&#x8BD1;&#x662F;&#x4E00;&#x79CD;&#x5931;&#x4F20;&#x7684;&#x827A;&#x672F;&#x3002;&#x4EE5;&#x524D;&#x5F88;&#x5E38;&#x89C1;&#xFF0C;
+&#x4F46;&#x73B0;&#x5728;&#xFF0C;&#x7531;&#x7CFB;&#x7EDF;&#x53D1;&#x884C;&#x7248;&#x63D0;&#x4F9B;&#x5546;&#x7EF4;&#x62A4;&#x5DE8;&#x5927;&#x7684;&#x9884;&#x7F16;&#x8BD1;&#x7684;&#x4E8C;&#x8FDB;&#x5236;&#x4ED3;&#x5E93;&#xFF0C;&#x51C6;&#x5907;&#x4F9B;&#x7528;&#x6237;&#x4E0B;&#x8F7D;&#x548C;&#x4F7F;&#x7528;&#x3002;&#x5728;&#x5199;&#x8FD9;&#x7BC7;&#x6587;&#x7AE0;&#x7684;&#x65F6;&#x5019;&#xFF0C;
+Debian &#x4ED3;&#x5E93;&#xFF08;&#x6700;&#x5927;&#x7684;&#x53D1;&#x884C;&#x7248;&#x4E4B;&#x4E00;&#xFF09;&#x5305;&#x542B;&#x4E86;&#x51E0;&#x4E4E;23,000&#x4E2A;&#x9884;&#x7F16;&#x8BD1;&#x7684;&#x5305;&#x3002;</p>
+<p>So why compile software? There are two reasons:</p>
+<p>&#x90A3;&#x4E48;&#x4E3A;&#x4EC0;&#x4E48;&#x8981;&#x7F16;&#x8BD1;&#x8F6F;&#x4EF6;&#x5462;&#xFF1F; &#x6709;&#x4E24;&#x4E2A;&#x539F;&#x56E0;&#xFF1A;</p>
+<ol>
+<li><p>Availability. Despite the number of precompiled programs in distribution
+repositories, some distributions may not include all the desired applications.
+In this case, the only way to get the desired program is to compile it from source.</p>
+</li>
+<li><p>Timeliness. While some distributions specialize in cutting edge versions of programs, many do not.
+This means that in order to have the very latest version of a program, compiling is necessary.</p>
+</li>
+</ol>
+<p>^</p>
+<ol>
+<li><p>&#x53EF;&#x7528;&#x6027;&#x3002;&#x5C3D;&#x7BA1;&#x7CFB;&#x7EDF;&#x53D1;&#x884C;&#x7248;&#x4ED3;&#x5E93;&#x4E2D;&#x5DF2;&#x7ECF;&#x5305;&#x542B;&#x4E86;&#x5927;&#x91CF;&#x7684;&#x9884;&#x7F16;&#x8BD1;&#x7A0B;&#x5E8F;&#xFF0C;&#x4F46;&#x662F;&#x4E00;&#x4E9B;&#x53D1;&#x884C;&#x7248;&#x672C;&#x4E0D;&#x53EF;&#x80FD;&#x5305;&#x542B;&#x6240;&#x6709;&#x671F;&#x671B;&#x7684;&#x5E94;&#x7528;&#x3002;
+&#x5728;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x5F97;&#x5230;&#x6240;&#x671F;&#x671B;&#x7A0B;&#x5E8F;&#x7684;&#x552F;&#x4E00;&#x65B9;&#x5F0F;&#x662F;&#x7F16;&#x8BD1;&#x7A0B;&#x5E8F;&#x6E90;&#x7801;&#x3002;</p>
+</li>
+<li><p>&#x53CA;&#x65F6;&#x6027;&#x3002;&#x867D;&#x7136;&#x4E00;&#x4E9B;&#x7CFB;&#x7EDF;&#x53D1;&#x884C;&#x7248;&#x4E13;&#x95E8;&#x6253;&#x5305;&#x524D;&#x6CBF;&#x7248;&#x672C;&#x7684;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#xFF0C;&#x4F46;&#x662F;&#x5F88;&#x591A;&#x4E0D;&#x662F;&#x3002;&#x8FD9;&#x610F;&#x5473;&#x7740;&#xFF0C;
+&#x4E3A;&#x4E86;&#x62E5;&#x6709;&#x4E00;&#x4E2A;&#x6700;&#x65B0;&#x7248;&#x672C;&#x7684;&#x7A0B;&#x5E8F;&#xFF0C;&#x7F16;&#x8BD1;&#x662F;&#x5FC5;&#x9700;&#x7684;&#x3002;</p>
+</li>
+</ol>
+<p>Compiling software from source code can become very complex and technical;
+well beyond the reach of many users. However, many compiling tasks are
+quite easy and involve only a few steps. It all depends on the package.
+We will look at a very simple case in order to provide an overview of
+the process and as a starting point for those who wish to undertake further study.</p>
+<p>&#x4ECE;&#x6E90;&#x7801;&#x7F16;&#x8BD1;&#x8F6F;&#x4EF6;&#x53EF;&#x4EE5;&#x53D8;&#x5F97;&#x975E;&#x5E38;&#x590D;&#x6742;&#x4E14;&#x5177;&#x6709;&#x6280;&#x672F;&#x6027;&#xFF1B;&#x8BB8;&#x591A;&#x7528;&#x6237;&#x96BE;&#x4EE5;&#x4F01;&#x53CA;&#x3002;&#x7136;&#x800C;&#xFF0C;&#x8BB8;&#x591A;&#x7F16;&#x8BD1;&#x4EFB;&#x52A1;&#x662F;
+&#x76F8;&#x5F53;&#x7B80;&#x5355;&#x7684;&#xFF0C;&#x53EA;&#x6D89;&#x53CA;&#x5230;&#x51E0;&#x4E2A;&#x6B65;&#x9AA4;&#x3002;&#x8FD9;&#x90FD;&#x53D6;&#x51B3;&#x4E8E;&#x7A0B;&#x5E8F;&#x5305;&#x3002;&#x6211;&#x4EEC;&#x5C06;&#x770B;&#x4E00;&#x4E2A;&#x975E;&#x5E38;&#x7B80;&#x5355;&#x7684;&#x6848;&#x4F8B;&#xFF0C; &#x4E3A;&#x7684;&#x662F;&#x7ED9;&#x5927;&#x5BB6;&#x63D0;&#x4F9B;&#x4E00;&#x4E2A;&#x5BF9;&#x7F16;&#x8BD1;&#x8FC7;&#x7A0B;&#x7684;&#x6574;&#x4F53;&#x8BA4;&#x8BC6;&#xFF0C;&#x5E76;&#x4E3A;&#x90A3;&#x4E9B;&#x613F;&#x610F;&#x8FDB;&#x4E00;&#x6B65;&#x5B66;&#x4E60;&#x7684;&#x4EBA;&#x4EEC;&#x6784;&#x7B51;&#x4E00;&#x4E2A;&#x8D77;&#x70B9;&#x3002;</p>
+<p>We will introduce one new command:</p>
+<p>&#x6211;&#x4EEC;&#x5C06;&#x4ECB;&#x7ECD;&#x4E00;&#x4E2A;&#x65B0;&#x547D;&#x4EE4;&#xFF1A;</p>
+<ul>
+<li><p>make &#x2013; Utility to maintain programs</p>
+</li>
+<li><p>make - &#x7EF4;&#x62A4;&#x7A0B;&#x5E8F;&#x7684;&#x5DE5;&#x5177;</p>
+</li>
+</ul>
+<h3 id="&#x4EC0;&#x4E48;&#x662F;&#x7F16;&#x8BD1;&#xFF1F;">&#x4EC0;&#x4E48;&#x662F;&#x7F16;&#x8BD1;&#xFF1F;</h3>
+<p>Simply put, compiling is the process of translating source code (the
+human-readable description of a program written by a programmer)
+into the native language of the computer&#x2019;s processor.</p>
+<p>&#x7B80;&#x800C;&#x8A00;&#x4E4B;&#xFF0C;&#x7F16;&#x8BD1;&#x5C31;&#x662F;&#x628A;&#x6E90;&#x7801;&#xFF08;&#x4E00;&#x4E2A;&#x7531;&#x7A0B;&#x5E8F;&#x5458;&#x7F16;&#x5199;&#x7684;&#x4EBA;&#x7C7B;&#x53EF;&#x8BFB;&#x7684;&#x7A0B;&#x5E8F;&#x7684;&#x8BF4;&#x660E;&#xFF09;&#x7FFB;&#x8BD1;&#x6210;&#x8BA1;&#x7B97;&#x673A;&#x5904;&#x7406;&#x5668;&#x7684;&#x8BED;&#x8A00;&#x7684;&#x8FC7;&#x7A0B;&#x3002;</p>
+<p>The computer&#x2019;s processor (or CPU) works at a very elemental level,
+executing programs in what is called machine language. This is a numeric
+code that describes very small operations, such as &#x201C;add this byte,&#x201D;
+&#x201C;point to this location in memory,&#x201D; or &#x201C;copy this byte.&#x201D;</p>
+<p>&#x8BA1;&#x7B97;&#x673A;&#x5904;&#x7406;&#x5668;&#xFF08;&#x6216; CPU&#xFF09;&#x5DE5;&#x4F5C;&#x5728;&#x4E00;&#x4E2A;&#x975E;&#x5E38;&#x57FA;&#x672C;&#x7684;&#x6C34;&#x5E73;&#xFF0C;&#x6267;&#x884C;&#x7528;&#x673A;&#x5668;&#x8BED;&#x8A00;&#x7F16;&#x5199;&#x7684;&#x7A0B;&#x5E8F;&#x3002;&#x8FD9;&#x662F;&#x4E00;&#x79CD;&#x6570;&#x503C;&#x7F16;&#x7801;&#xFF0C;&#x63CF;&#x8FF0;&#x975E;&#x5E38;&#x5C0F;&#x7684;&#x64CD;&#x4F5C;&#xFF0C;
+&#x6BD4;&#x5982;&#x201C;&#x52A0;&#x8FD9;&#x4E2A;&#x5B57;&#x8282;&#x201D;&#xFF0C;&#x201C;&#x6307;&#x5411;&#x5185;&#x5B58;&#x4E2D;&#x7684;&#x8FD9;&#x4E2A;&#x4F4D;&#x7F6E;&#x201D;&#xFF0C;&#x6216;&#x8005;&#x201C;&#x590D;&#x5236;&#x8FD9;&#x4E2A;&#x5B57;&#x8282;&#x201D;&#x3002;</p>
+<p>Each of these instructions is expressed in binary (ones and zeros).
+The earliest computer programs were written using this numeric code,
+which may explain why programmers who wrote it were said to smoke a lot,
+drink gallons of coffee, and wear thick glasses.This problem was overcome
+by the advent of assembly language, which replaced the
+numeric codes with (slightly) easier to use character mnemonics such as CPY (for copy)
+and MOV (for move). Programs written in assembly language are processed into
+machine language by a program called an assembler. Assembly language is
+still used today for certain specialized programming tasks, such as device drivers and embedded systems.</p>
+<p>&#x8FD9;&#x4E9B;&#x6307;&#x4EE4;&#x4E2D;&#x7684;&#x6BCF;&#x4E00;&#x6761;&#x90FD;&#x662F;&#x7528;&#x4E8C;&#x8FDB;&#x5236;&#x8868;&#x793A;&#x7684;&#xFF08;1&#x548C;0&#xFF09;&#x3002;&#x6700;&#x65E9;&#x7684;&#x8BA1;&#x7B97;&#x673A;&#x7A0B;&#x5E8F;&#x5C31;&#x662F;&#x7528;&#x8FD9;&#x79CD;&#x6570;&#x503C;&#x7F16;&#x7801;&#x5199;&#x6210;&#x7684;&#xFF0C;&#x8FD9;&#x53EF;&#x80FD;&#x5C31;
+&#x89E3;&#x91CA;&#x4E86;&#x4E3A;&#x4EC0;&#x4E48;&#x7F16;&#x5199;&#x5B83;&#x4EEC;&#x7684;&#x7A0B;&#x5E8F;&#x5458;&#x636E;&#x8BF4;&#x5438;&#x5F88;&#x591A;&#x70DF;&#xFF0C;&#x559D;&#x5927;&#x91CF;&#x5496;&#x5561;&#xFF0C;&#x5E76;&#x5E26;&#x7740;&#x539A;&#x539A;&#x7684;&#x773C;&#x955C;&#x3002;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#x514B;&#x670D;&#x4E86;&#xFF0C;&#x968F;&#x7740;&#x6C47;&#x7F16;&#x8BED;&#x8A00;&#x7684;&#x51FA;&#x73B0;&#xFF0C;
+&#x6C47;&#x7F16;&#x8BED;&#x8A00;&#x4EE3;&#x66FF;&#x4E86;&#x6570;&#x503C;&#x7F16;&#x7801;&#xFF08;&#x7565;&#x5FAE;&#xFF09;&#x7B80;&#x4FBF;&#x5730;&#x4F7F;&#x7528;&#x52A9;&#x8BB0;&#x7B26;&#xFF0C;&#x6BD4;&#x5982; CPY&#xFF08;&#x590D;&#x5236;&#xFF09;&#x548C; MOV&#xFF08;&#x79FB;&#x52A8;&#xFF09;&#x3002;&#x7528;&#x6C47;&#x7F16;&#x8BED;&#x8A00;&#x7F16;&#x5199;&#x7684;&#x7A0B;&#x5E8F;&#x901A;&#x8FC7;
+&#x6C47;&#x7F16;&#x5668;&#x5904;&#x7406;&#x4E3A;&#x673A;&#x5668;&#x8BED;&#x8A00;&#x3002;&#x4ECA;&#x5929;&#x4E3A;&#x4E86;&#x5B8C;&#x6210;&#x67D0;&#x4E9B;&#x7279;&#x5B9A;&#x7684;&#x7A0B;&#x5E8F;&#x4EFB;&#x52A1;&#xFF0C;&#x6C47;&#x7F16;&#x8BED;&#x8A00;&#x4ECD;&#x5728;&#x88AB;&#x4F7F;&#x7528;&#xFF0C;&#x4F8B;&#x5982;&#x8BBE;&#x5907;&#x9A71;&#x52A8;&#x548C;&#x5D4C;&#x5165;&#x5F0F;&#x7CFB;&#x7EDF;&#x3002;</p>
+<p>We next come to what are called high-level programming languages.
+They are called this because they allow the programmer to be less
+concerned with the details of what the processor is doing and
+more with solving the problem at hand. The early ones (developed during the 1950s)
+included FORTRAN (designed for scientific and technical tasks) and COBOL
+(designed for business applications). Both are still in limited use today.</p>
+<p>&#x4E0B;&#x4E00;&#x6B65;&#x6211;&#x4EEC;&#x8C08;&#x8BBA;&#x4E00;&#x4E0B;&#x4EC0;&#x4E48;&#x662F;&#x6240;&#x8C13;&#x7684;&#x9AD8;&#x7EA7;&#x7F16;&#x7A0B;&#x8BED;&#x8A00;&#x3002;&#x4E4B;&#x6240;&#x4EE5;&#x8FD9;&#x6837;&#x79F0;&#x547C;&#x5B83;&#x4EEC;&#xFF0C;&#x662F;&#x56E0;&#x4E3A;&#x5B83;&#x4EEC;&#x53EF;&#x4EE5;&#x8BA9;&#x7A0B;&#x5E8F;&#x5458;&#x5C11;&#x64CD;&#x5FC3;&#x5904;&#x7406;&#x5668;&#x7684;
+&#x4E00;&#x4E3E;&#x4E00;&#x52A8;&#xFF0C;&#x800C;&#x66F4;&#x591A;&#x5173;&#x5FC3;&#x5982;&#x4F55;&#x89E3;&#x51B3;&#x624B;&#x5934;&#x7684;&#x95EE;&#x9898;&#x3002;&#x65E9;&#x671F;&#x7684;&#x9AD8;&#x7EA7;&#x8BED;&#x8A00;&#xFF08;&#x4E8C;&#x5341;&#x4E16;&#x7EAA;60&#x5E74;&#x4EE3;&#x671F;&#x95F4;&#x7814;&#x53D1;&#x7684;&#xFF09;&#x5305;&#x62EC;
+FORTRAN&#xFF08;&#x4E3A;&#x79D1;&#x5B66;&#x548C;&#x6280;&#x672F;&#x95EE;&#x9898;&#x800C;&#x8BBE;&#x8BA1;&#xFF09;&#x548C; COBOL&#xFF08;&#x4E3A;&#x5546;&#x4E1A;&#x5E94;&#x7528;&#x800C;&#x8BBE;&#x8BA1;&#xFF09;&#x3002;&#x4ECA;&#x5929;&#x8FD9;&#x4E24;&#x79CD;&#x8BED;&#x8A00;&#x4ECD;&#x5728;&#x6709;&#x9650;&#x7684;&#x4F7F;&#x7528;&#x3002;</p>
+<p>While there are many popular programming languages, two predominate.
+Most programs written for modern systems are written in either C or C++.
+In the examples to follow, we will be compiling a C program.</p>
+<p>&#x867D;&#x7136;&#x6709;&#x8BB8;&#x591A;&#x6D41;&#x884C;&#x7684;&#x7F16;&#x7A0B;&#x8BED;&#x8A00;&#xFF0C;&#x4E24;&#x4E2A;&#x5360;&#x4E3B;&#x5BFC;&#x5730;&#x4F4D;&#x3002;&#x5927;&#x591A;&#x6570;&#x4E3A;&#x73B0;&#x4EE3;&#x7CFB;&#x7EDF;&#x7F16;&#x5199;&#x7684;&#x7A0B;&#x5E8F;&#xFF0C;&#x8981;&#x4E48;&#x7528; C &#x7F16;&#x5199;&#xFF0C;&#x8981;&#x4E48;&#x662F;&#x7528; C++ &#x7F16;&#x5199;&#x3002;
+&#x5728;&#x968F;&#x540E;&#x7684;&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x5C06;&#x7F16;&#x5199;&#x4E00;&#x4E2A; C &#x7A0B;&#x5E8F;&#x3002;</p>
+<p>Programs written in high-level programming languages are converted into machine
+language by processing them with another program, called a compiler.
+Some compilers translate high-level instructions into assembly language and then
+use an assembler to perform the final stage of translation into machine language.</p>
+<p>&#x7528;&#x9AD8;&#x7EA7;&#x8BED;&#x8A00;&#x7F16;&#x5199;&#x7684;&#x7A0B;&#x5E8F;&#xFF0C;&#x7ECF;&#x8FC7;&#x53E6;&#x4E00;&#x4E2A;&#x79F0;&#x4E3A;&#x7F16;&#x8BD1;&#x5668;&#x7684;&#x7A0B;&#x5E8F;&#x7684;&#x5904;&#x7406;&#xFF0C;&#x4F1A;&#x8F6C;&#x6362;&#x6210;&#x673A;&#x5668;&#x8BED;&#x8A00;&#x3002;&#x4E00;&#x4E9B;&#x7F16;&#x8BD1;&#x5668;&#x628A;
+&#x9AD8;&#x7EA7;&#x6307;&#x4EE4;&#x7FFB;&#x8BD1;&#x6210;&#x6C47;&#x7F16;&#x8BED;&#x8A00;&#xFF0C;&#x7136;&#x540E;&#x4F7F;&#x7528;&#x4E00;&#x4E2A;&#x6C47;&#x7F16;&#x5668;&#x5B8C;&#x6210;&#x7FFB;&#x8BD1;&#x6210;&#x673A;&#x5668;&#x8BED;&#x8A00;&#x7684;&#x6700;&#x540E;&#x9636;&#x6BB5;&#x3002;</p>
+<p>A process often used in conjunction with compiling is called linking.
+There are many common tasks performed by programs. Take, for instance, opening a file.
+Many programs perform this task, but it would be wasteful to have each program
+implement its own routine to open files. It makes more sense to have a single piece
+of programming that knows how to open files and to allow all programs that need it to share it.
+Providing support for common tasks is accomplished by what are called libraries.
+They contain multiple routines, each performing some common task that multiple programs can share.
+If we look in the /lib and /usr/lib directories, we can see where many of them live.
+A program called a linker is used to form the connections between the output of
+the compiler and the libraries that the compiled program requires.
+The final result of this process is the executable program file, ready for use.</p>
+<p>&#x4E00;&#x4E2A;&#x79F0;&#x4E3A;&#x94FE;&#x63A5;&#x7684;&#x8FC7;&#x7A0B;&#x7ECF;&#x5E38;&#x4E0E;&#x7F16;&#x8BD1;&#x7ED3;&#x5408;&#x5728;&#x4E00;&#x8D77;&#x3002;&#x6709;&#x8BB8;&#x591A;&#x5E38;&#x89C1;&#x7684;&#x7531;&#x7A0B;&#x5E8F;&#x6267;&#x884C;&#x7684;&#x4EFB;&#x52A1;&#x3002;&#x4EE5;&#x6253;&#x5F00;&#x6587;&#x4EF6;&#x4E3A;&#x4F8B;&#x3002;&#x8BB8;&#x591A;&#x7A0B;&#x5E8F;&#x6267;&#x884C;&#x8FD9;&#x4E2A;&#x4EFB;&#x52A1;&#xFF0C;
+&#x4F46;&#x662F;&#x8BA9;&#x6BCF;&#x4E2A;&#x7A0B;&#x5E8F;&#x5B9E;&#x73B0;&#x5B83;&#x81EA;&#x5DF1;&#x7684;&#x6253;&#x5F00;&#x6587;&#x4EF6;&#x529F;&#x80FD;&#xFF0C;&#x662F;&#x5F88;&#x6D6A;&#x8D39;&#x8D44;&#x6E90;&#x7684;&#x3002;&#x66F4;&#x6709;&#x610F;&#x4E49;&#x7684;&#x662F;&#xFF0C;&#x62E5;&#x6709;&#x5355;&#x72EC;&#x7684;&#x4E00;&#x6BB5;&#x77E5;&#x9053;&#x5982;&#x4F55;&#x6253;&#x5F00;&#x6587;&#x4EF6;&#x7684;&#x7A0B;&#x5E8F;&#xFF0C;
+&#x5E76;&#x5141;&#x8BB8;&#x6240;&#x6709;&#x9700;&#x8981;&#x5B83;&#x7684;&#x7A0B;&#x5E8F;&#x5171;&#x4EAB;&#x5B83;&#x3002;&#x5BF9;&#x5E38;&#x89C1;&#x4EFB;&#x52A1;&#x63D0;&#x4F9B;&#x652F;&#x6301;&#x7531;&#x6240;&#x8C13;&#x7684;&#x5E93;&#x5B8C;&#x6210;&#x3002;&#x8FD9;&#x4E9B;&#x5E93;&#x5305;&#x542B;&#x591A;&#x4E2A;&#x7A0B;&#x5E8F;&#xFF0C;&#x6BCF;&#x4E2A;&#x7A0B;&#x5E8F;&#x6267;&#x884C;
+&#x4E00;&#x4E9B;&#x53EF;&#x4EE5;&#x7531;&#x591A;&#x4E2A;&#x7A0B;&#x5E8F;&#x5171;&#x4EAB;&#x7684;&#x5E38;&#x89C1;&#x4EFB;&#x52A1;&#x3002;&#x5982;&#x679C;&#x6211;&#x4EEC;&#x770B;&#x4E00;&#x4E0B; /lib &#x548C; /usr/lib &#x76EE;&#x5F55;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x8BB8;&#x591A;&#x5E93;&#x5B9A;&#x5C45;&#x5728;&#x90A3;&#x91CC;&#x3002;
+&#x4E00;&#x4E2A;&#x53EB;&#x505A;&#x94FE;&#x63A5;&#x5668;&#x7684;&#x7A0B;&#x5E8F;&#x7528;&#x6765;&#x5728;&#x7F16;&#x8BD1;&#x5668;&#x7684;&#x8F93;&#x51FA;&#x7ED3;&#x679C;&#x548C;&#x8981;&#x7F16;&#x8BD1;&#x7684;&#x7A0B;&#x5E8F;&#x6240;&#x9700;&#x7684;&#x5E93;&#x4E4B;&#x95F4;&#x5EFA;&#x7ACB;&#x8FDE;&#x63A5;&#x3002;&#x8FD9;&#x4E2A;&#x8FC7;&#x7A0B;&#x7684;&#x6700;&#x7EC8;&#x7ED3;&#x679C;&#x662F;
+&#x4E00;&#x4E2A;&#x53EF;&#x6267;&#x884C;&#x7A0B;&#x5E8F;&#x6587;&#x4EF6;&#xFF0C;&#x51C6;&#x5907;&#x4F7F;&#x7528;&#x3002;</p>
+<h4 id="&#x6240;&#x6709;&#x7684;&#x7A0B;&#x5E8F;&#x90FD;&#x662F;&#x53EF;&#x7F16;&#x8BD1;&#x7684;&#x5417;&#xFF1F;">&#x6240;&#x6709;&#x7684;&#x7A0B;&#x5E8F;&#x90FD;&#x662F;&#x53EF;&#x7F16;&#x8BD1;&#x7684;&#x5417;&#xFF1F;</h4>
+<p>No. As we have seen, there are programs such as shell scripts that do not require compiling.
+They are executed directly. These are written in what are known as scripting or
+interpreted languages. These languages have grown in popularity in recent
+years and include Perl, Python, PHP, Ruby, and many others.</p>
+<p>&#x4E0D;&#x662F;&#x3002;&#x6B63;&#x5982;&#x6211;&#x4EEC;&#x6240;&#x770B;&#x5230;&#x7684;&#xFF0C;&#x6709;&#x4E9B;&#x7A0B;&#x5E8F;&#x6BD4;&#x5982; shell &#x811A;&#x672C;&#x5C31;&#x4E0D;&#x9700;&#x8981;&#x7F16;&#x8BD1;&#x3002;&#x5B83;&#x4EEC;&#x76F4;&#x63A5;&#x6267;&#x884C;&#x3002;
+&#x8FD9;&#x4E9B;&#x7A0B;&#x5E8F;&#x662F;&#x7528;&#x6240;&#x8C13;&#x7684;&#x811A;&#x672C;&#x6216;&#x89E3;&#x91CA;&#x578B;&#x8BED;&#x8A00;&#x7F16;&#x5199;&#x7684;&#x3002;&#x8FD1;&#x5E74;&#x6765;&#xFF0C;&#x8FD9;&#x4E9B;&#x8BED;&#x8A00;&#x53D8;&#x5F97;&#x8D8A;&#x6765;&#x8D8A;&#x6D41;&#x884C;&#xFF0C;&#x5305;&#x62EC; Perl&#xFF0C;
+Python&#xFF0C;PHP&#xFF0C;Ruby&#xFF0C;&#x548C;&#x8BB8;&#x591A;&#x5176;&#x5B83;&#x8BED;&#x8A00;&#x3002;</p>
+<p>Scripted languages are executed by a special program called an interpreter.
+An interpreter inputs the program file and reads and executes each instruction
+contained within it. Ingeneral, interpreted programs execute much more slowly
+than compiled programs. This is because that each source code instruction in an
+interpreted program is translated every time it is carried out, whereas with a
+compiled program, a source code instruction is only translated once, and this
+translation is permanently recorded in the final executable file.</p>
+<p>&#x811A;&#x672C;&#x8BED;&#x8A00;&#x7531;&#x4E00;&#x4E2A;&#x53EB;&#x505A;&#x89E3;&#x91CA;&#x5668;&#x7684;&#x7279;&#x6B8A;&#x7A0B;&#x5E8F;&#x6267;&#x884C;&#x3002;&#x4E00;&#x4E2A;&#x89E3;&#x91CA;&#x5668;&#x8F93;&#x5165;&#x7A0B;&#x5E8F;&#x6587;&#x4EF6;&#xFF0C;&#x8BFB;&#x53D6;&#x5E76;&#x6267;&#x884C;&#x7A0B;&#x5E8F;&#x4E2D;&#x5305;&#x542B;&#x7684;&#x6BCF;&#x4E00;&#x6761;&#x6307;&#x4EE4;&#x3002;
+&#x901A;&#x5E38;&#x6765;&#x8BF4;&#xFF0C;&#x89E3;&#x91CA;&#x578B;&#x7A0B;&#x5E8F;&#x6267;&#x884C;&#x8D77;&#x6765;&#x8981;&#x6BD4;&#x7F16;&#x8BD1;&#x7A0B;&#x5E8F;&#x6162;&#x5F88;&#x591A;&#x3002;&#x8FD9;&#x662F;&#x56E0;&#x4E3A;&#x6BCF;&#x6B21;&#x89E3;&#x91CA;&#x578B;&#x7A0B;&#x5E8F;&#x6267;&#x884C;&#x65F6;&#xFF0C;&#x7A0B;&#x5E8F;&#x4E2D;&#x6BCF;&#x4E00;&#x6761;&#x6E90;&#x7801;&#x6307;&#x4EE4;&#x90FD;&#x9700;&#x8981;&#x7FFB;&#x8BD1;&#xFF0C;
+&#x800C;&#x4E00;&#x4E2A;&#x5DF2;&#x7ECF;&#x7F16;&#x8BD1;&#x597D;&#x7684;&#x7A0B;&#x5E8F;&#xFF0C;&#x4E00;&#x6761;&#x6E90;&#x7801;&#x6307;&#x4EE4;&#x53EA;&#x7FFB;&#x8BD1;&#x4E86;&#x4E00;&#x6B21;&#xFF0C;&#x7FFB;&#x8BD1;&#x540E;&#x7684;&#x6307;&#x4EE4;&#x4F1A;&#x6C38;&#x4E45;&#x5730;&#x8BB0;&#x5F55;&#x5230;&#x6700;&#x7EC8;&#x7684;&#x6267;&#x884C;&#x6587;&#x4EF6;&#x4E2D;&#x3002;</p>
+<p>So why are interpreted languages so popular? For many programming chores,
+the results are &#x201C;fast enough,&#x201D; but the real advantage is that it is generally
+faster and easier to develop interpreted programs than compiled programs.
+Programs are usually developed in a repeating cycle of code, compile, test.
+As a program grows in size, the compilation phase of the cycle can become
+quite long. Interpreted languages remove the compilation step and thus speed up program development.</p>
+<p>&#x90A3;&#x4E48;&#x4E3A;&#x4EC0;&#x4E48;&#x89E3;&#x91CA;&#x578B;&#x7A0B;&#x5E8F;&#x8FD9;&#x6837;&#x6D41;&#x884C;&#x5462;&#xFF1F;&#x5BF9;&#x4E8E;&#x8BB8;&#x591A;&#x7F16;&#x7A0B;&#x4EFB;&#x52A1;&#x6765;&#x8BF4;&#xFF0C;&#x539F;&#x56E0;&#x662F;&#x201C;&#x8DB3;&#x591F;&#x5FEB;&#x201D;&#xFF0C;&#x4F46;&#x662F;&#x771F;&#x6B63;&#x7684;&#x4F18;&#x52BF;&#x662F;&#x4E00;&#x822C;&#x6765;&#x8BF4;&#x5F00;&#x53D1;&#x89E3;&#x91CA;&#x578B;&#x7A0B;&#x5E8F;
+&#x8981;&#x6BD4;&#x7F16;&#x8BD1;&#x7A0B;&#x5E8F;&#x5FEB;&#x901F;&#x4E14;&#x5BB9;&#x6613;&#x3002;&#x901A;&#x5E38;&#x7A0B;&#x5E8F;&#x5F00;&#x53D1;&#x9700;&#x8981;&#x7ECF;&#x5386;&#x4E00;&#x4E2A;&#x4E0D;&#x65AD;&#x91CD;&#x590D;&#x7684;&#x5199;&#x7801;&#xFF0C;&#x7F16;&#x8BD1;&#xFF0C;&#x6D4B;&#x8BD5;&#x5468;&#x671F;&#x3002;&#x968F;&#x7740;&#x7A0B;&#x5E8F;&#x53D8;&#x5F97;&#x8D8A;&#x6765;&#x8D8A;&#x5927;&#xFF0C;
+&#x7F16;&#x8BD1;&#x9636;&#x6BB5;&#x4F1A;&#x53D8;&#x5F97;&#x76F8;&#x5F53;&#x8017;&#x65F6;&#x3002;&#x89E3;&#x91CA;&#x578B;&#x8BED;&#x8A00;&#x5220;&#x9664;&#x4E86;&#x7F16;&#x8BD1;&#x6B65;&#x9AA4;&#xFF0C;&#x8FD9;&#x6837;&#x5C31;&#x52A0;&#x5FEB;&#x4E86;&#x7A0B;&#x5E8F;&#x5F00;&#x53D1;&#x3002;</p>
+<h3 id="&#x7F16;&#x8BD1;&#x4E00;&#x4E2A;-c-&#x8BED;&#x8A00;">&#x7F16;&#x8BD1;&#x4E00;&#x4E2A; C &#x8BED;&#x8A00;</h3>
+<p>Let&#x2019;s compile something. Before we do that however, we&#x2019;re going to need some
+tools like the compiler, the linker, and make. The C compiler used almost
+universally in the Linux environment is called gcc (GNU C Compiler), originally
+written by Richard Stallman. Most distributions do not install gcc by default.
+We can check to see if the compiler is present like this:</p>
+<p>&#x8BA9;&#x6211;&#x4EEC;&#x7F16;&#x8BD1;&#x4E00;&#x4E9B;&#x4E1C;&#x897F;&#x3002;&#x5728;&#x6211;&#x4EEC;&#x7F16;&#x8BD1;&#x4E4B;&#x524D;&#xFF0C;&#x7136;&#x800C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x4E00;&#x4E9B;&#x5DE5;&#x5177;&#xFF0C;&#x50CF;&#x7F16;&#x8BD1;&#x5668;&#xFF0C;&#x94FE;&#x63A5;&#x5668;&#xFF0C;&#x8FD8;&#x6709; make&#x3002;
+&#x5728; Linux &#x73AF;&#x5883;&#x4E2D;&#xFF0C;&#x666E;&#x904D;&#x4F7F;&#x7528;&#x7684; C &#x7F16;&#x8BD1;&#x5668;&#x53EB;&#x505A; gcc&#xFF08;GNU C &#x7F16;&#x8BD1;&#x5668;&#xFF09;&#xFF0C;&#x6700;&#x521D;&#x7531; Richard Stallman &#x5199;&#x51FA;&#x6765;&#x7684;&#x3002;
+&#x5927;&#x591A;&#x6570; Linux &#x7CFB;&#x7EDF;&#x53D1;&#x884C;&#x7248;&#x9ED8;&#x8BA4;&#x4E0D;&#x5B89;&#x88C5; gcc&#x3002;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x8FD9;&#x6837;&#x67E5;&#x770B;&#x8BE5;&#x7F16;&#x8BD1;&#x5668;&#x662F;&#x5426;&#x5B58;&#x5728;&#xFF1A;</p>
+<pre><code>[me@linuxbox ~]$ which gcc
+/usr/bin/gcc
+</code></pre><p>The results in this example indicate that the compiler is installed.</p>
+<p>&#x5728;&#x8FD9;&#x4E2A;&#x4F8B;&#x5B50;&#x4E2D;&#x7684;&#x8F93;&#x51FA;&#x7ED3;&#x679C;&#x8868;&#x660E;&#x5B89;&#x88C5;&#x4E86; gcc &#x7F16;&#x8BD1;&#x5668;&#x3002;</p>
+<hr>
+<p>Tip: Your distribution may have a meta-package (a collection of packages) for soft-
+ware development. If so, consider installing it if you intend to compile programs on
+your system. If your system does not provide a meta-package, try installing the
+gcc and make packages. On many distributions, this is sufficient to carry out the
+exercise below.</p>
+<p>&#x5C0F;&#x63D0;&#x793A;&#xFF1A; &#x4F60;&#x7684;&#x7CFB;&#x7EDF;&#x53D1;&#x884C;&#x7248;&#x53EF;&#x80FD;&#x6709;&#x4E00;&#x4E2A;&#x7528;&#x4E8E;&#x8F6F;&#x4EF6;&#x5F00;&#x53D1;&#x7684; meta-package&#xFF08;&#x8F6F;&#x4EF6;&#x5305;&#x7684;&#x96C6;&#x5408;&#xFF09;&#x3002;&#x5982;&#x679C;&#x662F;&#x8FD9;&#x6837;&#x7684;&#x8BDD;&#xFF0C;
+&#x8003;&#x8651;&#x5B89;&#x88C5;&#x5B83;&#xFF0C;&#x82E5;&#x4F60;&#x6253;&#x7B97;&#x5728;&#x4F60;&#x7684;&#x7CFB;&#x7EDF;&#x4E2D;&#x7F16;&#x8BD1;&#x7A0B;&#x5E8F;&#x3002;&#x82E5;&#x4F60;&#x7684;&#x7CFB;&#x7EDF;&#x6CA1;&#x6709;&#x63D0;&#x4F9B;&#x4E00;&#x4E2A; meta-package&#xFF0C;&#x8BD5;&#x7740;&#x5B89;&#x88C5; gcc &#x548C; make &#x5DE5;&#x5177;&#x5305;&#x3002;</p>
+<h2 id="&#x5728;&#x8BB8;&#x591A;&#x53D1;&#x884C;&#x7248;&#x4E2D;&#xFF0C;&#x8FD9;&#x5C31;&#x8DB3;&#x591F;&#x5B8C;&#x6210;&#x4E0B;&#x9762;&#x7684;&#x7EC3;&#x4E60;&#x4E86;&#x3002;">&#x5728;&#x8BB8;&#x591A;&#x53D1;&#x884C;&#x7248;&#x4E2D;&#xFF0C;&#x8FD9;&#x5C31;&#x8DB3;&#x591F;&#x5B8C;&#x6210;&#x4E0B;&#x9762;&#x7684;&#x7EC3;&#x4E60;&#x4E86;&#x3002;</h2>
+<h4 id="&#x5F97;&#x5230;&#x6E90;&#x7801;">&#x5F97;&#x5230;&#x6E90;&#x7801;</h4>
+<p>For our compiling exercise, we are going to compile a program from the GNU Project
+called diction. This is a handy little program that checks text files for writing quality
+and style. As programs go, it is fairly small and easy to build.</p>
+<p>&#x4E3A;&#x4E86;&#x6211;&#x4EEC;&#x7684;&#x7F16;&#x8BD1;&#x7EC3;&#x4E60;&#xFF0C;&#x6211;&#x4EEC;&#x5C06;&#x7F16;&#x8BD1;&#x4E00;&#x4E2A;&#x53EB;&#x505A; diction &#x7684;&#x7A0B;&#x5E8F;&#xFF0C;&#x6765;&#x81EA; GNU &#x9879;&#x76EE;&#x3002;&#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x5C0F;&#x5DE7;&#x65B9;&#x4FBF;&#x7684;&#x7A0B;&#x5E8F;&#xFF0C;
+&#x68C0;&#x67E5;&#x6587;&#x672C;&#x6587;&#x4EF6;&#x7684;&#x4E66;&#x5199;&#x8D28;&#x91CF;&#x548C;&#x6837;&#x5F0F;&#x3002;&#x5C31;&#x7A0B;&#x5E8F;&#x800C;&#x8A00;&#xFF0C;&#x5B83;&#x76F8;&#x5F53;&#x5C0F;&#xFF0C;&#x4E14;&#x5BB9;&#x6613;&#x521B;&#x5EFA;&#x3002;</p>
+<p>Following convention, we&#x2019;re first going to create a directory for our source code named
+src and then download the source code into it using ftp:</p>
+<p>&#x9075;&#x7167;&#x60EF;&#x4F8B;&#xFF0C;&#x9996;&#x5148;&#x6211;&#x4EEC;&#x8981;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x540D;&#x4E3A; src &#x7684;&#x76EE;&#x5F55;&#x6765;&#x5B58;&#x653E;&#x6211;&#x4EEC;&#x7684;&#x6E90;&#x7801;&#xFF0C;&#x7136;&#x540E;&#x4F7F;&#x7528; ftp &#x534F;&#x8BAE;&#x628A;&#x6E90;&#x7801;&#x4E0B;&#x8F7D;&#x4E0B;&#x6765;&#x3002;</p>
+<pre><code>[me@linuxbox ~]$ mkdir src
+[me@linuxbox ~]$ cd src
+[me@linuxbox src]$ ftp ftp.gnu.org
+Connected to ftp.gnu.org.
+220 GNU FTP server ready.
+Name (ftp.gnu.org:me): anonymous
+230 Login successful.
+Remote system type is UNIX.
+Using binary mode to transfer files.
+ftp&gt; cd gnu/diction
+250 Directory successfully changed.
+ftp&gt; ls
+200 PORT command successful. Consider using PASV.
+150 Here comes the directory listing.
+-rw-r--r-- 1 1003 65534 68940 Aug 28 1998 diction-0.7.tar.gz
+-rw-r--r-- 1 1003 65534 90957 Mar 04 2002 diction-1.02.tar.gz
+-rw-r--r-- 1 1003 65534 141062 Sep 17 2007 diction-1.11.tar.gz
+226 Directory send OK.
+ftp&gt; get diction-1.11.tar.gz
+local: diction-1.11.tar.gz remote: diction-1.11.tar.gz
+200 PORT command successful. Consider using PASV.
+150 Opening BINARY mode data connection for diction-1.11.tar.gz
+(141062 bytes).
+226 File send OK.
+141062 bytes received in 0.16 secs (847.4 kB/s)
+ftp&gt; bye
+221 Goodbye.
+[me@linuxbox src]$ ls
+diction-1.11.tar.gz
+</code></pre><hr>
+<p>Note: Since we are the &#x201C;maintainer&#x201D; of this source code while we compile it, we
+will keep it in ~/src. Source code installed by your distribution will be installed in /usr/src, while source code intended for use by multiple users is usually installed in /usr/local/src.</p>
+<p>&#x6CE8;&#x610F;&#xFF1A;&#x56E0;&#x4E3A;&#x6211;&#x4EEC;&#x662F;&#x8FD9;&#x4E2A;&#x6E90;&#x7801;&#x7684;&#x201C;&#x7EF4;&#x62A4;&#x8005;&#x201D;&#xFF0C;&#x5F53;&#x6211;&#x4EEC;&#x7F16;&#x8BD1;&#x5B83;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x6211;&#x4EEC;&#x628A;&#x5B83;&#x4FDD;&#x5B58;&#x5728; ~/src &#x76EE;&#x5F55;&#x4E0B;&#x3002;
+&#x7531;&#x4F60;&#x7684;&#x7CFB;&#x7EDF;&#x53D1;&#x884C;&#x7248;&#x6E90;&#x7801;&#x4F1A;&#x628A;&#x6E90;&#x7801;&#x5B89;&#x88C5;&#x5728; /usr/src &#x76EE;&#x5F55;&#x4E0B;&#xFF0C;&#x800C;&#x4F9B;&#x591A;&#x4E2A;&#x7528;&#x6237;&#x4F7F;&#x7528;&#x7684;&#x6E90;&#x7801;&#xFF0C;&#x901A;&#x5E38;&#x5B89;&#x88C5;&#x5728; /usr/local/src &#x76EE;&#x5F55;&#x4E0B;&#x3002;</p>
+<hr>
+<p>As we can see, source code is usually supplied in the form of a compressed tar file.
+Sometimes called a tarball, this file contains the source tree, or hierarchy of directories
+and files that comprise the source code. After arriving at the ftp site, we examine the list
+of tar files available and select the newest version for download. Using the get
+command within ftp, we copy the file from the ftp server to the local machine.</p>
+<p>&#x6B63;&#x5982;&#x6211;&#x4EEC;&#x6240;&#x770B;&#x5230;&#x7684;&#xFF0C;&#x901A;&#x5E38;&#x63D0;&#x4F9B;&#x7684;&#x6E90;&#x7801;&#x5F62;&#x5F0F;&#x662F;&#x4E00;&#x4E2A;&#x538B;&#x7F29;&#x7684; tar &#x6587;&#x4EF6;&#x3002;&#x6709;&#x65F6;&#x5019;&#x79F0;&#x4E3A; tarball&#xFF0C;&#x8FD9;&#x4E2A;&#x6587;&#x4EF6;&#x5305;&#x542B;&#x6E90;&#x7801;&#x6811;&#xFF0C;
+&#x6216;&#x8005;&#x662F;&#x7EC4;&#x6210;&#x6E90;&#x7801;&#x7684;&#x76EE;&#x5F55;&#x548C;&#x6587;&#x4EF6;&#x7684;&#x5C42;&#x6B21;&#x7ED3;&#x6784;&#x3002;&#x5F53;&#x5230;&#x8FBE; ftp &#x7AD9;&#x70B9;&#x4E4B;&#x540E;&#xFF0C;&#x6211;&#x4EEC;&#x68C0;&#x67E5;&#x53EF;&#x7528;&#x7684; tar &#x6587;&#x4EF6;&#x5217;&#x8868;&#xFF0C;&#x7136;&#x540E;&#x9009;&#x62E9;&#x6700;&#x65B0;&#x7248;&#x672C;&#xFF0C;&#x4E0B;&#x8F7D;&#x3002;
+&#x4F7F;&#x7528; ftp &#x4E2D;&#x7684; get &#x547D;&#x4EE4;&#xFF0C;&#x6211;&#x4EEC;&#x628A;&#x6587;&#x4EF6;&#x4ECE; ftp &#x670D;&#x52A1;&#x5668;&#x590D;&#x5236;&#x5230;&#x672C;&#x5730;&#x673A;&#x5668;&#x3002;</p>
+<p>Once the tar file is downloaded, it must be unpacked. This is done with the tar program:</p>
+<p>&#x4E00;&#x65E6; tar &#x6587;&#x4EF6;&#x4E0B;&#x8F7D;&#x4E0B;&#x6765;&#x4E4B;&#x540E;&#xFF0C;&#x5FC5;&#x987B;&#x6253;&#x5F00;&#x3002;&#x901A;&#x8FC7; tar &#x7A0B;&#x5E8F;&#x53EF;&#x4EE5;&#x5B8C;&#x6210;&#xFF1A;</p>
+<pre><code>[me@linuxbox src]$ tar xzf diction-1.11.tar.gz
+[me@linuxbox src]$ ls
+diction-1.11
+diction-1.11.tar.gz
+</code></pre><hr>
+<p>Tip: The diction program, like all GNU Project software, follows certain stan-
+dards for source code packaging. Most other source code available in the Linux
+ecosystem also follows this standard. One element of the standard is that when the
+source code tar file is unpacked, a directory will be created which contains the
+source tree, and that this directory will be named project-x.xx, thus containing both
+the project&#x2019;s name and its version number. This scheme allows easy installation of
+multiple versions of the same program. However, it is often a good idea to examine
+the layout of the tree before unpacking it. Some projects will not create the directory,
+but instead will deliver the files directly into the current directory. This will
+make a mess in your otherwise well-organized src directory. To avoid this, use the
+following command to examine the contents of the tar file:</p>
+<p>&#x5C0F;&#x63D0;&#x793A;&#xFF1A;&#x8BE5; diction &#x7A0B;&#x5E8F;&#xFF0C;&#x50CF;&#x6240;&#x6709;&#x7684; GNU &#x9879;&#x76EE;&#x8F6F;&#x4EF6;&#xFF0C;&#x9075;&#x5FAA;&#x7740;&#x4E00;&#x5B9A;&#x7684;&#x6E90;&#x7801;&#x6253;&#x5305;&#x6807;&#x51C6;&#x3002;&#x5176;&#x5B83;&#x5927;&#x591A;&#x6570;&#x5728; Linux &#x751F;&#x6001;&#x7CFB;&#x7EDF;&#x4E2D;
+&#x53EF;&#x7528;&#x7684;&#x6E90;&#x7801;&#x4E5F;&#x9075;&#x5FAA;&#x8FD9;&#x4E2A;&#x6807;&#x51C6;&#x3002;&#x8BE5;&#x6807;&#x51C6;&#x7684;&#x4E00;&#x4E2A;&#x6761;&#x76EE;&#x662F;&#xFF0C;&#x5F53;&#x6E90;&#x7801; tar &#x6587;&#x4EF6;&#x6253;&#x5F00;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x4F1A;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x76EE;&#x5F55;&#xFF0C;&#x8BE5;&#x76EE;&#x5F55;&#x5305;&#x542B;&#x4E86;&#x6E90;&#x7801;&#x6811;&#xFF0C;
+&#x5E76;&#x4E14;&#x8FD9;&#x4E2A;&#x76EE;&#x5F55;&#x5C06;&#x4F1A;&#x547D;&#x540D;&#x4E3A; project-x.xx&#xFF0C;&#x5176;&#x5305;&#x542B;&#x4E86;&#x9879;&#x76EE;&#x540D;&#x79F0;&#x548C;&#x5B83;&#x7684;&#x7248;&#x672C;&#x53F7;&#x4E24;&#x9879;&#x5185;&#x5BB9;&#x3002;&#x8FD9;&#x79CD;&#x65B9;&#x6848;&#x80FD;&#x5728;&#x7CFB;&#x7EDF;&#x4E2D;&#x65B9;&#x4FBF;&#x5B89;&#x88C5;&#x540C;&#x4E00;&#x7A0B;&#x5E8F;&#x7684;&#x591A;&#x4E2A;&#x7248;&#x672C;&#x3002;
+&#x7136;&#x800C;&#xFF0C;&#x901A;&#x5E38;&#x5728;&#x6253;&#x5F00; tarball &#x4E4B;&#x524D;&#x68C0;&#x9A8C;&#x6E90;&#x7801;&#x6811;&#x7684;&#x5E03;&#x5C40;&#x662F;&#x4E2A;&#x4E0D;&#x9519;&#x7684;&#x4E3B;&#x610F;&#x3002;&#x4E00;&#x4E9B;&#x9879;&#x76EE;&#x4E0D;&#x4F1A;&#x521B;&#x5EFA;&#x8BE5;&#x76EE;&#x5F55;&#xFF0C;&#x53CD;&#x800C;&#xFF0C;&#x4F1A;&#x628A;&#x6587;&#x4EF6;&#x76F4;&#x63A5;&#x4F20;&#x9012;&#x7ED9;&#x5F53;&#x524D;&#x76EE;&#x5F55;&#x3002;
+&#x8FD9;&#x4F1A;&#x628A;&#x4F60;&#x7684;&#xFF08;&#x9664;&#x975E;&#x7EC4;&#x7EC7;&#x826F;&#x597D;&#x7684;&#xFF09;src &#x76EE;&#x5F55;&#x5F04;&#x5F97;&#x4E00;&#x7247;&#x72FC;&#x85C9;&#x3002;&#x4E3A;&#x4E86;&#x907F;&#x514D;&#x8FD9;&#x4E2A;&#xFF0C;&#x4F7F;&#x7528;&#x4E0B;&#x9762;&#x7684;&#x547D;&#x4EE4;&#xFF0C;&#x68C0;&#x67E5; tar &#x6587;&#x4EF6;&#x7684;&#x5185;&#x5BB9;&#xFF1A;</p>
+<pre><code>tar tzvf tarfile | head
+</code></pre><hr>
+<h3 id="&#x68C0;&#x67E5;&#x6E90;&#x7801;&#x6811;">&#x68C0;&#x67E5;&#x6E90;&#x7801;&#x6811;</h3>
+<p>Unpacking the tar file results in the creation of a new directory, named diction-1.11.
+This directory contains the source tree. Let&#x2019;s look inside:</p>
+<p>&#x6253;&#x5F00;&#x8BE5; tar &#x6587;&#x4EF6;&#xFF0C;&#x4F1A;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x76EE;&#x5F55;&#xFF0C;&#x540D;&#x4E3A; diction-1.11&#x3002;&#x8FD9;&#x4E2A;&#x76EE;&#x5F55;&#x5305;&#x542B;&#x4E86;&#x6E90;&#x7801;&#x6811;&#x3002;&#x8BA9;&#x6211;&#x4EEC;&#x770B;&#x4E00;&#x4E0B;&#x91CC;&#x9762;&#x7684;&#x5185;&#x5BB9;&#xFF1A;</p>
+<pre><code>[me@linuxbox src]$ cd diction-1.11
+[me@linuxbox diction-1.11]$ ls
+config.guess     diction.c          getopt.c      nl
+config.h.in      diction.pot        getopt.h      nl.po
+config.sub       diction.spec       getopt_int.h  README
+configure        diction.spec.in    INSTALL       sentence.c
+configure.in     diction.texi.in    install-sh    sentence.h
+COPYING en       Makefile.in        style.1.in
+de               en_GB              misc.c        style.c
+de.po            en_GB.po           misc.h        test
+diction.1.in     getopt1.c          NEWS
+</code></pre><p>In it, we see a number of files. Programs belonging to the GNU Project, as well as many
+others, will supply the documentation files README, INSTALL, NEWS, and COPYING.</p>
+<p>&#x5728;&#x6E90;&#x7801;&#x6811;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x770B;&#x5230;&#x5927;&#x91CF;&#x7684;&#x6587;&#x4EF6;&#x3002;&#x5C5E;&#x4E8E; GNU &#x9879;&#x76EE;&#x7684;&#x7A0B;&#x5E8F;&#xFF0C;&#x8FD8;&#x6709;&#x5176;&#x5B83;&#x8BB8;&#x591A;&#x7A0B;&#x5E8F;&#x90FD;&#x4F1A;&#xFF0C;&#x63D0;&#x4F9B;&#x6587;&#x6863;&#x6587;&#x4EF6; README&#xFF0C;INSTALL&#xFF0C;NEWS&#xFF0C;&#x548C; COPYING&#x3002;</p>
+<p>These files contain the description of the program, information on how to build and in-
+stall it, and its licensing terms. It is always a good idea to carefully read the README and
+INSTALL files before attempting to build the program.</p>
+<p>&#x8FD9;&#x4E9B;&#x6587;&#x4EF6;&#x5305;&#x542B;&#x4E86;&#x7A0B;&#x5E8F;&#x63CF;&#x8FF0;&#xFF0C;&#x5982;&#x4F55;&#x5EFA;&#x7ACB;&#x548C;&#x5B89;&#x88C5;&#x5B83;&#x7684;&#x4FE1;&#x606F;&#xFF0C;&#x8FD8;&#x6709;&#x5B83;&#x8BB8;&#x53EF;&#x6761;&#x6B3E;&#x3002;&#x5728;&#x8BD5;&#x56FE;&#x5EFA;&#x7ACB;&#x7A0B;&#x5E8F;&#x4E4B;&#x524D;&#xFF0C;&#x4ED4;&#x7EC6;&#x9605;&#x8BFB; README &#x548C; INSTALL &#x6587;&#x4EF6;&#xFF0C;&#x603B;&#x662F;&#x4E00;&#x4E2A;&#x4E0D;&#x9519;&#x7684;&#x4E3B;&#x610F;&#x3002;</p>
+<p>The other interesting files in this directory are the ones ending with .c and .h:</p>
+<p>&#x5728;&#x8FD9;&#x4E2A;&#x76EE;&#x5F55;&#x4E2D;&#xFF0C;&#x5176;&#x5B83;&#x6709;&#x8DA3;&#x7684;&#x6587;&#x4EF6;&#x662F;&#x90A3;&#x4E9B;&#x4EE5; .c &#x548C; .h &#x4E3A;&#x540E;&#x7F00;&#x7684;&#x6587;&#x4EF6;&#xFF1A;</p>
+<pre><code>[me@linuxbox diction-1.11]$ ls *.c
+diction.c getopt1.c getopt.c misc.c sentence.c style.c
+[me@linuxbox diction-1.11]$ ls *.h
+getopt.h getopt_int.h misc.h sentence.h
+</code></pre><p>The .c files contain the two C programs supplied by the package (style and diction),
+divided into modules. It is common practice for large programs to be broken into
+smaller, easier to manage pieces. The source code files are ordinary text and can be examined with less:</p>
+<p>&#x8FD9;&#x4E9B; .c &#x6587;&#x4EF6;&#x5305;&#x542B;&#x4E86;&#x7531;&#x8BE5;&#x8F6F;&#x4EF6;&#x5305;&#x63D0;&#x4F9B;&#x7684;&#x4E24;&#x4E2A; C &#x7A0B;&#x5E8F;&#xFF08;style &#x548C; diction&#xFF09;&#xFF0C;&#x88AB;&#x5206;&#x5272;&#x6210;&#x6A21;&#x5757;&#x3002;&#x8FD9;&#x662F;&#x4E00;&#x79CD;&#x5E38;&#x89C1;&#x505A;&#x6CD5;&#xFF0C;&#x628A;&#x5927;&#x578B;&#x7A0B;&#x5E8F;
+&#x5206;&#x89E3;&#x6210;&#x66F4;&#x5C0F;&#xFF0C;&#x66F4;&#x5BB9;&#x6613;&#x7BA1;&#x7406;&#x7684;&#x4EE3;&#x7801;&#x5757;&#x3002;&#x6E90;&#x7801;&#x6587;&#x4EF6;&#x90FD;&#x662F;&#x666E;&#x901A;&#x6587;&#x672C;&#xFF0C;&#x53EF;&#x4EE5;&#x7528; less &#x547D;&#x4EE4;&#x67E5;&#x770B;&#xFF1A;</p>
+<pre><code>[me@linuxbox diction-1.11]$ less diction.c
+</code></pre><p>The .h files are known as header files. These, too, are ordinary text. Header files contain
+descriptions of the routines included in a source code file or library. In order for the com-
+piler to connect the modules, it must receive a description of all the modules needed to
+complete the entire program. Near the beginning of the diction.c file, we see this line:</p>
+<p>&#x8FD9;&#x4E9B; .h &#x6587;&#x4EF6;&#x88AB;&#x79F0;&#x4E3A;&#x5934;&#x6587;&#x4EF6;&#x3002;&#x5B83;&#x4EEC;&#x4E5F;&#x662F;&#x666E;&#x901A;&#x6587;&#x4EF6;&#x3002;&#x5934;&#x6587;&#x4EF6;&#x5305;&#x542B;&#x4E86;&#x7A0B;&#x5E8F;&#x7684;&#x63CF;&#x8FF0;&#xFF0C;&#x8FD9;&#x4E9B;&#x7A0B;&#x5E8F;&#x88AB;&#x5305;&#x62EC;&#x5728;&#x6E90;&#x7801;&#x6587;&#x4EF6;&#x6216;&#x5E93;&#x4E2D;&#x3002;
+&#x4E3A;&#x4E86;&#x8BA9;&#x7F16;&#x8BD1;&#x5668;&#x94FE;&#x63A5;&#x5230;&#x6A21;&#x5757;&#xFF0C;&#x7F16;&#x8BD1;&#x5668;&#x5FC5;&#x987B;&#x63A5;&#x53D7;&#x6240;&#x9700;&#x7684;&#x6240;&#x6709;&#x6A21;&#x5757;&#x7684;&#x63CF;&#x8FF0;&#xFF0C;&#x6765;&#x5B8C;&#x6210;&#x6574;&#x4E2A;&#x7A0B;&#x5E8F;&#x3002;&#x5728; diction.c &#x6587;&#x4EF6;&#x7684;&#x5F00;&#x5934;&#x9644;&#x8FD1;&#xFF0C;
+&#x6211;&#x4EEC;&#x770B;&#x5230;&#x8FD9;&#x884C;&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code>#include &quot;getopt.h&quot;
+</code></pre><p>This instructs the compiler to read the file getopt.h as it reads the source code in
+diction.c in order to &#x201C;know&#x201D; what&#x2019;s in getopt.c. The getopt.c file supplies
+routines that are shared by both the style and diction programs.</p>
+<p>&#x5F53;&#x5B83;&#x8BFB;&#x53D6; diction.c &#x4E2D;&#x7684;&#x6E90;&#x7801;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x8FD9;&#x884C;&#x4EE3;&#x7801;&#x6307;&#x793A;&#x7F16;&#x8BD1;&#x5668;&#x53BB;&#x8BFB;&#x53D6;&#x6587;&#x4EF6; getopt.h&#xFF0C; &#x4E3A;&#x7684;&#x662F;&#x201C;&#x77E5;&#x9053;&#x201D; getopt.c &#x4E2D;&#x7684;&#x5185;&#x5BB9;&#x3002;
+getopt.c &#x6587;&#x4EF6;&#x63D0;&#x4F9B;&#x7531; style &#x548C; diction &#x4E24;&#x4E2A;&#x7A0B;&#x5E8F;&#x5171;&#x4EAB;&#x7684;&#x4F8B;&#x884C;&#x7A0B;&#x5E8F;&#x3002;</p>
+<p>Above the include statement for getopt.h, we see some other include statements such as these:</p>
+<p>&#x5728; getopt.h &#x7684; include &#x8BED;&#x53E5;&#x4E0A;&#x9762;&#xFF0C;&#x6211;&#x4EEC;&#x770B;&#x5230;&#x4E00;&#x4E9B;&#x5176;&#x5B83;&#x7684; include &#x8BED;&#x53E5;&#xFF0C;&#x6BD4;&#x5982;&#x8FD9;&#x4E9B;&#xFF1A;</p>
+<pre><code>#include &lt;regex.h&gt;
+#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+#include &lt;string.h&gt;
+#include &lt;unistd.h&gt;
+</code></pre><p>These also refer to header files, but they refer to header files that live outside the current
+source tree. They are supplied by the system to support the compilation of every program.
+If we look in /usr/include, we can see them:</p>
+<p>&#x8FD9;&#x4E9B;&#x6587;&#x4EF6;&#x4E5F;&#x662F;&#x5934;&#x6587;&#x4EF6;&#xFF0C;&#x4F46;&#x662F;&#x8FD9;&#x4E9B;&#x5934;&#x6587;&#x4EF6;&#x5728;&#x5F53;&#x524D;&#x6E90;&#x7801;&#x6811;&#x7684;&#x5916;&#x9762;&#x3002;&#x5B83;&#x4EEC;&#x7531;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x4F9B;&#x7ED9;&#xFF0C;&#x6765;&#x652F;&#x6301;&#x6BCF;&#x4E2A;&#x7A0B;&#x5E8F;&#x7684;&#x7F16;&#x8BD1;&#x3002;
+&#x5982;&#x679C;&#x6211;&#x4EEC;&#x770B;&#x4E00;&#x4E0B; /usr/include &#x76EE;&#x5F55;&#xFF0C;&#x80FD;&#x770B;&#x5230;&#x5B83;&#x4EEC;&#xFF1A;</p>
+<pre><code>[me@linuxbox diction-1.11]$ ls /usr/include
+</code></pre><p>The header files in this directory were installed when we installed the compiler.</p>
+<p>&#x5F53;&#x6211;&#x4EEC;&#x5B89;&#x88C5;&#x7F16;&#x8BD1;&#x5668;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x8FD9;&#x4E2A;&#x76EE;&#x5F55;&#x4E2D;&#x7684;&#x5934;&#x6587;&#x4EF6;&#x4F1A;&#x88AB;&#x5B89;&#x88C5;&#x3002;</p>
+<h4 id="&#x6784;&#x5EFA;&#x7A0B;&#x5E8F;">&#x6784;&#x5EFA;&#x7A0B;&#x5E8F;</h4>
+<p>Most programs build with a simple, two-command sequence:</p>
+<p>&#x5927;&#x591A;&#x6570;&#x7A0B;&#x5E8F;&#x901A;&#x8FC7;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#xFF0C;&#x4E24;&#x4E2A;&#x547D;&#x4EE4;&#x7684;&#x5E8F;&#x5217;&#x6784;&#x5EFA;&#xFF1A;</p>
+<pre><code>./configure
+make
+</code></pre><p>The configure program is a shell script which is supplied with the source tree. Its job
+is to analyze the build environment. Most source code is designed to be portable. That is,
+it is designed to build on more than one kind of Unix-like system. But in order to do that,
+the source code may need to undergo slight adjustments during the build to accommodate
+differences between systems. configure also checks to see that necessary external
+tools and components are installed. Let&#x2019;s run configure. Since configure is not
+located where the shell normally expects programs to be located, we must explicitly tell the
+shell its location by prefixing the command with ./ to indicate that the program is
+located in the current working directory:</p>
+<p>&#x8FD9;&#x4E2A; configure &#x7A0B;&#x5E8F;&#x662F;&#x4E00;&#x4E2A; shell &#x811A;&#x672C;&#xFF0C;&#x7531;&#x6E90;&#x7801;&#x6811;&#x63D0;&#x4F9B;&#x3002;&#x5B83;&#x7684;&#x5DE5;&#x4F5C;&#x662F;&#x5206;&#x6790;&#x7A0B;&#x5E8F;&#x5EFA;&#x7ACB;&#x73AF;&#x5883;&#x3002;&#x5927;&#x591A;&#x6570;&#x6E90;&#x7801;&#x4F1A;&#x8BBE;&#x8BA1;&#x4E3A;&#x53EF;&#x79FB;&#x690D;&#x7684;&#x3002;
+&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#xFF0C;&#x5B83;&#x88AB;&#x8BBE;&#x8BA1;&#x6210;&#xFF0C;&#x80FD;&#x5EFA;&#x7ACB;&#x5728;&#x591A;&#x4E8E;&#x4E00;&#x4E2A;&#x7684;&#x7C7B; Unix &#x7CFB;&#x7EDF;&#x4E2D;&#x3002;&#x4F46;&#x662F;&#x4E3A;&#x4E86;&#x505A;&#x5230;&#x8FD9;&#x4E00;&#x70B9;&#xFF0C;&#x5728;&#x5EFA;&#x7ACB;&#x7A0B;&#x5E8F;&#x671F;&#x95F4;&#xFF0C;&#x4E3A;&#x4E86;&#x9002;&#x5E94;&#x7CFB;&#x7EDF;&#x4E4B;&#x95F4;&#x7684;&#x5DEE;&#x5F02;&#xFF0C;
+&#x6E90;&#x7801;&#x53EF;&#x80FD;&#x9700;&#x8981;&#x7ECF;&#x8FC7;&#x8F7B;&#x5FAE;&#x7684;&#x8C03;&#x6574;&#x3002;configure &#x4E5F;&#x4F1A;&#x68C0;&#x67E5;&#x662F;&#x5426;&#x5B89;&#x88C5;&#x4E86;&#x5FC5;&#x8981;&#x7684;&#x5916;&#x90E8;&#x5DE5;&#x5177;&#x548C;&#x7EC4;&#x4EF6;&#x3002;&#x8BA9;&#x6211;&#x4EEC;&#x8FD0;&#x884C; configure &#x547D;&#x4EE4;&#x3002;
+&#x56E0;&#x4E3A; configure &#x547D;&#x4EE4;&#x6240;&#x5728;&#x7684;&#x4F4D;&#x7F6E;&#x4E0D;&#x662F;&#x4F4D;&#x4E8E; shell &#x901A;&#x5E38;&#x671F;&#x671B;&#x7A0B;&#x5E8F;&#x6240;&#x5446;&#x7684;&#x5730;&#x65B9;&#xFF0C;&#x6211;&#x4EEC;&#x5FC5;&#x987B;&#x660E;&#x786E;&#x5730;&#x544A;&#x8BC9; shell &#x5B83;&#x7684;&#x4F4D;&#x7F6E;&#xFF0C;&#x901A;&#x8FC7;
+&#x5728;&#x547D;&#x4EE4;&#x4E4B;&#x524D;&#x52A0;&#x4E0A; ./ &#x5B57;&#x7B26;&#xFF0C;&#x6765;&#x8868;&#x660E;&#x7A0B;&#x5E8F;&#x4F4D;&#x4E8E;&#x5F53;&#x524D;&#x5DE5;&#x4F5C;&#x76EE;&#x5F55;&#xFF1A;</p>
+<pre><code>[me@linuxbox diction-1.11]$ ./configure
+</code></pre><p>configure will output a lot of messages as it tests and configures the build. When it
+finishes, it will look something like this:</p>
+<p>configure &#x5C06;&#x4F1A;&#x8F93;&#x51FA;&#x8BB8;&#x591A;&#x4FE1;&#x606F;&#xFF0C;&#x968F;&#x7740;&#x5B83;&#x6D4B;&#x8BD5;&#x548C;&#x914D;&#x7F6E;&#x6574;&#x4E2A;&#x6784;&#x5EFA;&#x8FC7;&#x7A0B;&#x3002;&#x5F53;&#x7ED3;&#x675F;&#x540E;&#xFF0C;&#x8F93;&#x51FA;&#x7ED3;&#x679C;&#x770B;&#x8D77;&#x6765;&#x50CF;&#x8FD9;&#x6837;&#xFF1A;</p>
+<pre><code>checking libintl.h presence... yes
+checking for libintl.h... yes
+checking for library containing gettext... none required
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating diction.1
+config.status: creating diction.texi
+config.status: creating diction.spec
+config.status: creating style.1
+config.status: creating test/rundiction
+config.status: creating config.h
+[me@linuxbox diction-1.11]$
+</code></pre><p>What&#x2019;s important here is that there are no error messages. If there were, the configuration
+failed, and the program will not build until the errors are corrected.</p>
+<p>&#x8FD9;&#x91CC;&#x6700;&#x91CD;&#x8981;&#x7684;&#x4E8B;&#x60C5;&#x662F;&#x6CA1;&#x6709;&#x9519;&#x8BEF;&#x4FE1;&#x606F;&#x3002;&#x5982;&#x679C;&#x6709;&#x9519;&#x8BEF;&#x4FE1;&#x606F;&#xFF0C;&#x6574;&#x4E2A;&#x914D;&#x7F6E;&#x8FC7;&#x7A0B;&#x5931;&#x8D25;&#xFF0C;&#x7136;&#x540E;&#x7A0B;&#x5E8F;&#x4E0D;&#x80FD;&#x6784;&#x5EFA;&#x76F4;&#x5230;&#x4FEE;&#x6B63;&#x4E86;&#x9519;&#x8BEF;&#x3002;</p>
+<p>We see configure created several new files in our source directory. The most impor-
+tant one is Makefile. Makefile is a configuration file that instructs the make pro-
+gram exactly how to build the program. Without it, make will refuse to run. Makefile
+is an ordinary text file, so we can view it:</p>
+<p>&#x6211;&#x4EEC;&#x770B;&#x5230;&#x5728;&#x6211;&#x4EEC;&#x7684;&#x6E90;&#x7801;&#x76EE;&#x5F55;&#x4E2D; configure &#x547D;&#x4EE4;&#x521B;&#x5EFA;&#x4E86;&#x51E0;&#x4E2A;&#x65B0;&#x6587;&#x4EF6;&#x3002;&#x6700;&#x91CD;&#x8981;&#x4E00;&#x4E2A;&#x662F; Makefile&#x3002;Makefile &#x662F;&#x4E00;&#x4E2A;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#xFF0C;
+&#x6307;&#x793A; make &#x7A0B;&#x5E8F;&#x7A76;&#x7ADF;&#x5982;&#x4F55;&#x6784;&#x5EFA;&#x7A0B;&#x5E8F;&#x3002;&#x6CA1;&#x6709;&#x5B83;&#xFF0C;make &#x7A0B;&#x5E8F;&#x5C31;&#x4E0D;&#x80FD;&#x8FD0;&#x884C;&#x3002;Makefile &#x662F;&#x4E00;&#x4E2A;&#x666E;&#x901A;&#x6587;&#x672C;&#x6587;&#x4EF6;&#xFF0C;&#x6240;&#x4EE5;&#x6211;&#x4EEC;&#x80FD;&#x67E5;&#x770B;&#x5B83;&#xFF1A;</p>
+<pre><code>[me@linuxbox diction-1.11]$ less Makefile
+</code></pre><p>The make program takes as input a makefile (which is normally named Makefile), that
+describes the relationships and dependencies among the components that comprise the
+finished program.</p>
+<p>&#x8FD9;&#x4E2A; make &#x7A0B;&#x5E8F;&#x628A;&#x4E00;&#x4E2A; makefile &#x6587;&#x4EF6;&#x4F5C;&#x4E3A;&#x8F93;&#x5165;&#xFF08;&#x901A;&#x5E38;&#x547D;&#x540D;&#x4E3A; Makefile&#xFF09;&#xFF0C;makefile &#x6587;&#x4EF6;
+&#x63CF;&#x8FF0;&#x4E86;&#x5305;&#x62EC;&#x6700;&#x7EC8;&#x5B8C;&#x6210;&#x7684;&#x7A0B;&#x5E8F;&#x7684;&#x5404;&#x7EC4;&#x4EF6;&#x4E4B;&#x95F4;&#x7684;&#x5173;&#x7CFB;&#x548C;&#x4F9D;&#x8D56;&#x6027;&#x3002;</p>
+<p>The first part of the makefile defines variables that are substituted in later sections of the
+makefile. For example we see the line:</p>
+<p>makefile &#x6587;&#x4EF6;&#x7684;&#x7B2C;&#x4E00;&#x90E8;&#x5206;&#x5B9A;&#x4E49;&#x4E86;&#x53D8;&#x91CF;&#xFF0C;&#x8FD9;&#x4E9B;&#x53D8;&#x91CF;&#x5728;&#x8BE5; makefile &#x540E;&#x7EED;&#x7AE0;&#x8282;&#x4E2D;&#x4F1A;&#x88AB;&#x66FF;&#x6362;&#x6389;&#x3002;&#x4F8B;&#x5982;&#x6211;&#x4EEC;&#x770B;&#x770B;&#x8FD9;&#x4E00;&#x884C;&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code>CC=                 gcc
+</code></pre><p>which defines the C compiler to be gcc. Later in the makefile, we see one instance
+where it gets used:</p>
+<p>&#x5176;&#x5B9A;&#x4E49;&#x4E86;&#x6240;&#x7528;&#x7684; C &#x7F16;&#x8BD1;&#x5668;&#x662F; gcc&#x3002;&#x6587;&#x4EF6;&#x540E;&#x9762;&#x90E8;&#x5206;&#xFF0C;&#x6211;&#x4EEC;&#x770B;&#x5230;&#x4E00;&#x4E2A;&#x4F7F;&#x7528;&#x8BE5;&#x53D8;&#x91CF;&#x7684;&#x5B9E;&#x4F8B;&#xFF1A;</p>
+<pre><code>diction:        diction.o sentence.o misc.o getopt.o getopt1.o
+                $(CC) -o $@ $(LDFLAGS) diction.o sentence.o misc.o \
+                getopt.o getopt1.o $(LIBS)
+</code></pre><p>A substitution is performed here, and the value $(CC) is replaced by gcc at run time.
+Most of the makefile consists of lines, which define a target, in this case the executable
+file diction, and the files on which it is dependent. The remaining lines describe the
+command(s) needed to create the target from its components. We see in this example that
+the executable file diction (one of the final end products) depends on the existence of
+diction.o, sentence.o, misc.o, getopt.o, and getopt1.o. Later on, in the
+makefile, we see definitions of each of these as targets:</p>
+<p>&#x8FD9;&#x91CC;&#x5B8C;&#x6210;&#x4E86;&#x4E00;&#x4E2A;&#x66FF;&#x6362;&#x64CD;&#x4F5C;&#xFF0C;&#x5728;&#x7A0B;&#x5E8F;&#x8FD0;&#x884C;&#x65F6;&#xFF0C;$(CC) &#x7684;&#x503C;&#x4F1A;&#x88AB;&#x66FF;&#x6362;&#x6210; gcc&#x3002;&#x5927;&#x591A;&#x6570; makefile &#x6587;&#x4EF6;&#x7531;&#x884C;&#x7EC4;&#x6210;&#xFF0C;&#x6BCF;&#x884C;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x76EE;&#x6807;&#x6587;&#x4EF6;&#xFF0C;
+&#x5728;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x76EE;&#x6807;&#x6587;&#x4EF6;&#x662F;&#x6307;&#x53EF;&#x6267;&#x884C;&#x6587;&#x4EF6; diction&#xFF0C;&#x8FD8;&#x6709;&#x76EE;&#x6807;&#x6587;&#x4EF6;&#x6240;&#x4F9D;&#x8D56;&#x7684;&#x6587;&#x4EF6;&#x3002;&#x5269;&#x4E0B;&#x7684;&#x884C;&#x63CF;&#x8FF0;&#x4E86;&#x4ECE;&#x76EE;&#x6807;&#x6587;&#x4EF6;&#x7684;&#x4F9D;&#x8D56;&#x7EC4;&#x4EF6;&#x4E2D;
+&#x521B;&#x5EFA;&#x76EE;&#x6807;&#x6587;&#x4EF6;&#x6240;&#x9700;&#x7684;&#x547D;&#x4EE4;&#x3002;&#x5728;&#x8FD9;&#x4E2A;&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x770B;&#x5230;&#x53EF;&#x6267;&#x884C;&#x6587;&#x4EF6; diction&#xFF08;&#x6700;&#x7EC8;&#x7684;&#x6210;&#x54C1;&#x4E4B;&#x4E00;&#xFF09;&#x4F9D;&#x8D56;&#x4E8E;&#x6587;&#x4EF6;
+diction.o&#xFF0C;sentence.o&#xFF0C;misc.o&#xFF0C;getopt.o&#xFF0C;&#x548C; getopt1.o&#x90FD;&#x5B58;&#x5728;&#x3002;&#x5728; makefile &#x6587;&#x4EF6;&#x540E;&#x9762;&#x90E8;&#x5206;&#xFF0C;&#x6211;&#x4EEC;&#x770B;&#x5230;
+diction &#x6587;&#x4EF6;&#x6240;&#x4F9D;&#x8D56;&#x7684;&#x6BCF;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x505A;&#x4E3A;&#x76EE;&#x6807;&#x6587;&#x4EF6;&#x7684;&#x5B9A;&#x4E49;&#xFF1A;</p>
+<pre><code>diction.o:       diction.c config.h getopt.h misc.h sentence.h
+getopt.o:        getopt.c getopt.h getopt_int.h
+getopt1.o:       getopt1.c getopt.h getopt_int.h
+misc.o:          misc.c config.h misc.h
+sentence.o:      sentence.c config.h misc.h sentence.h
+style.o:         style.c config.h getopt.h misc.h sentence.h
+</code></pre><p>However, we don&#x2019;t see any command specified for them. This is handled by a general target,
+earlier in the file, that describes the command used to compile any .c file into a .o file:</p>
+<p>&#x7136;&#x800C;&#xFF0C;&#x6211;&#x4EEC;&#x4E0D;&#x4F1A;&#x770B;&#x5230;&#x9488;&#x5BF9;&#x5B83;&#x4EEC;&#x7684;&#x4EFB;&#x4F55;&#x547D;&#x4EE4;&#x3002;&#x8FD9;&#x4E2A;&#x7531;&#x4E00;&#x4E2A;&#x901A;&#x7528;&#x76EE;&#x6807;&#x89E3;&#x51B3;&#xFF0C;&#x5728;&#x6587;&#x4EF6;&#x7684;&#x524D;&#x9762;&#xFF0C;&#x63CF;&#x8FF0;&#x4E86;&#x8FD9;&#x4E2A;&#x547D;&#x4EE4;&#xFF0C;&#x7528;&#x6765;&#x628A;&#x4EFB;&#x610F;&#x7684;
+.c &#x6587;&#x4EF6;&#x7F16;&#x8BD1;&#x6210; .o &#x6587;&#x4EF6;&#xFF1A;</p>
+<pre><code>.c.o:
+            $(CC) -c $(CPPFLAGS) $(CFLAGS) $&lt;
+</code></pre><p>This all seems very complicated. Why not simply list all the steps to compile the parts
+and be done with it? The answer to this will become clear in a moment. In the meantime,
+let&#x2019;s run make and build our programs:</p>
+<p>&#x8FD9;&#x4E9B;&#x770B;&#x8D77;&#x6765;&#x975E;&#x5E38;&#x590D;&#x6742;&#x3002;&#x4E3A;&#x4EC0;&#x4E48;&#x4E0D;&#x7B80;&#x5355;&#x5730;&#x5217;&#x51FA;&#x7F16;&#x8BD1;&#x6BCF;&#x4E2A;&#x90E8;&#x5206;&#x7684;&#x6B65;&#x9AA4;&#xFF0C;&#x90A3;&#x6837;&#x4E0D;&#x5C31;&#x884C;&#x4E86;&#xFF1F;&#x4E00;&#x4F1A;&#x513F;&#x5C31;&#x77E5;&#x9053;&#x7B54;&#x6848;&#x4E86;&#x3002;&#x540C;&#x65F6;&#xFF0C;
+&#x8BA9;&#x6211;&#x4EEC;&#x8FD0;&#x884C; make &#x547D;&#x4EE4;&#x5E76;&#x6784;&#x5EFA;&#x6211;&#x4EEC;&#x7684;&#x7A0B;&#x5E8F;&#xFF1A;</p>
+<pre><code>[me@linuxbox diction-1.11]$ make
+</code></pre><p>The make program will run, using the contents of Makefile to guide its actions. It will
+produce a lot of messages.</p>
+<p>&#x8FD9;&#x4E2A; make &#x7A0B;&#x5E8F;&#x5C06;&#x4F1A;&#x8FD0;&#x884C;&#xFF0C;&#x4F7F;&#x7528; Makefile &#x6587;&#x4EF6;&#x7684;&#x5185;&#x5BB9;&#x6765;&#x6307;&#x5BFC;&#x5B83;&#x7684;&#x884C;&#x4E3A;&#x3002;&#x5B83;&#x4F1A;&#x4EA7;&#x751F;&#x5F88;&#x591A;&#x4FE1;&#x606F;&#x3002;</p>
+<p>When it finishes, we will see that all the targets are now present in our directory:</p>
+<p>&#x5F53; make &#x7A0B;&#x5E8F;&#x8FD0;&#x884C;&#x7ED3;&#x675F;&#x540E;&#xFF0C;&#x73B0;&#x5728;&#x6211;&#x4EEC;&#x5C06;&#x770B;&#x5230;&#x6240;&#x6709;&#x7684;&#x76EE;&#x6807;&#x6587;&#x4EF6;&#x51FA;&#x73B0;&#x5728;&#x6211;&#x4EEC;&#x7684;&#x76EE;&#x5F55;&#x4E2D;&#x3002;</p>
+<pre><code>[me@linuxbox diction-1.11]$ ls
+config.guess  de.po             en              en_GB           sentence.c
+config.h      diction           en_GB.mo        en_GB.po        sentence.h
+config.h.in   diction.1         getopt1.c       getopt1.o       sentence.o
+config.log    diction.1.in      getopt.c        getopt.h        style
+config.status diction.c         getopt_int.h    getopt.o        style.1
+config.sub    diction.o         INSTALL         install-sh      style.1.in
+configure     diction.pot       Makefile        Makefile.in     style.c
+configure.in  diction.spec      misc.c          misc.h          style.o
+COPYING       diction.spec.in   misc.o          NEWS            test
+de            diction.texi      nl              nl.mo
+de.mo         diction.texi.i    nl.po           README
+</code></pre><p>Among the files, we see diction and style, the programs that we set out to build.
+Congratulations are in order! We just compiled our first programs from source code!
+But just out of curiosity, let&#x2019;s run make again:</p>
+<p>&#x5728;&#x8FD9;&#x4E9B;&#x6587;&#x4EF6;&#x4E4B;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x770B;&#x5230; diction &#x548C; style&#xFF0C;&#x6211;&#x4EEC;&#x5F00;&#x59CB;&#x8981;&#x6784;&#x5EFA;&#x7684;&#x7A0B;&#x5E8F;&#x3002;&#x606D;&#x559C;&#x4E00;&#x5207;&#x6B63;&#x5E38;&#xFF01;&#x6211;&#x4EEC;&#x521A;&#x624D;&#x6E90;&#x7801;&#x7F16;&#x8BD1;&#x4E86;
+&#x6211;&#x4EEC;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x7A0B;&#x5E8F;&#x3002;&#x4F46;&#x662F;&#x51FA;&#x4E8E;&#x597D;&#x5947;&#xFF0C;&#x8BA9;&#x6211;&#x4EEC;&#x518D;&#x8FD0;&#x884C;&#x4E00;&#x6B21; make &#x7A0B;&#x5E8F;&#xFF1A;</p>
+<pre><code>[me@linuxbox diction-1.11]$ make
+make: Nothing to be done for `all&apos;.
+</code></pre><p>It only produces this strange message. What&#x2019;s going on? Why didn&#x2019;t it build the program
+again? Ah, this is the magic of make. Rather than simply building everything again,
+make only builds what needs building. With all of the targets present, make determined
+that there was nothing to do. We can demonstrate this by deleting one of the targets and
+running make again to see what it does. Let&#x2019;s get rid of one of the intermediate targets:</p>
+<p>&#x5B83;&#x53EA;&#x662F;&#x4EA7;&#x751F;&#x8FD9;&#x6837;&#x4E00;&#x6761;&#x5947;&#x602A;&#x7684;&#x4FE1;&#x606F;&#x3002;&#x600E;&#x4E48;&#x4E86;&#xFF1F;&#x4E3A;&#x4EC0;&#x4E48;&#x5B83;&#x6CA1;&#x6709;&#x91CD;&#x65B0;&#x6784;&#x5EFA;&#x7A0B;&#x5E8F;&#x5462;&#xFF1F;&#x554A;&#xFF0C;&#x8FD9;&#x5C31;&#x662F; make &#x5947;&#x5999;&#x4E4B;&#x5904;&#x4E86;&#x3002;make &#x53EA;&#x662F;&#x6784;&#x5EFA;
+&#x9700;&#x8981;&#x6784;&#x5EFA;&#x7684;&#x90E8;&#x5206;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x7B80;&#x5355;&#x5730;&#x91CD;&#x65B0;&#x6784;&#x5EFA;&#x6240;&#x6709;&#x7684;&#x5185;&#x5BB9;&#x3002;&#x7531;&#x4E8E;&#x6240;&#x6709;&#x7684;&#x76EE;&#x6807;&#x6587;&#x4EF6;&#x90FD;&#x5B58;&#x5728;&#xFF0C;make &#x786E;&#x5B9A;&#x6CA1;&#x6709;&#x4EFB;&#x4F55;&#x4E8B;&#x60C5;&#x9700;&#x8981;&#x505A;&#x3002;
+&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x8BC1;&#x660E;&#x8FD9;&#x4E00;&#x70B9;&#xFF0C;&#x901A;&#x8FC7;&#x5220;&#x9664;&#x4E00;&#x4E2A;&#x76EE;&#x6807;&#x6587;&#x4EF6;&#xFF0C;&#x7136;&#x540E;&#x518D;&#x6B21;&#x8FD0;&#x884C; make &#x7A0B;&#x5E8F;&#xFF0C;&#x770B;&#x770B;&#x5B83;&#x505A;&#x4E9B;&#x4EC0;&#x4E48;&#x3002;&#x8BA9;&#x6211;&#x4EEC;&#x53BB;&#x6389;&#x4E00;&#x4E2A;&#x4E2D;&#x95F4;&#x76EE;&#x6807;&#x6587;&#x4EF6;&#xFF1A;</p>
+<pre><code>[me@linuxbox diction-1.11]$ rm getopt.o
+[me@linuxbox diction-1.11]$ make
+</code></pre><p>We see that make rebuilds it and re-links the diction and style programs, since they
+depend on the missing module. This behavior also points out another important feature of
+make: it keeps targets up to date. make insists that targets be newer than their dependencies.
+This makes perfect sense, as a programmer will often update a bit of source code
+and then use make to build a new version of the finished product. make ensures that
+everything that needs building based on the updated code is built. If we use the touch
+program to &#x201C;update&#x201D; one of the source code files, we can see this happen:</p>
+<p>&#x6211;&#x4EEC;&#x770B;&#x5230; make &#x91CD;&#x65B0;&#x6784;&#x5EFA;&#x4E86; getopt.o &#x6587;&#x4EF6;&#xFF0C;&#x5E76;&#x91CD;&#x65B0;&#x94FE;&#x63A5;&#x4E86; diction &#x548C; style &#x7A0B;&#x5E8F;&#xFF0C;&#x56E0;&#x4E3A;&#x5B83;&#x4EEC;&#x4F9D;&#x8D56;&#x4E8E;&#x4E22;&#x5931;&#x7684;&#x6A21;&#x5757;&#x3002;
+&#x8FD9;&#x79CD;&#x884C;&#x4E3A;&#x4E5F;&#x6307;&#x51FA;&#x4E86; make &#x7A0B;&#x5E8F;&#x7684;&#x53E6;&#x4E00;&#x4E2A;&#x91CD;&#x8981;&#x7279;&#x5F81;&#xFF1A;&#x5B83;&#x4FDD;&#x6301;&#x76EE;&#x6807;&#x6587;&#x4EF6;&#x662F;&#x6700;&#x65B0;&#x7684;&#x3002;make &#x575A;&#x6301;&#x76EE;&#x6807;&#x6587;&#x4EF6;&#x8981;&#x65B0;&#x4E8E;&#x5B83;&#x4EEC;&#x7684;&#x4F9D;&#x8D56;&#x6587;&#x4EF6;&#x3002;
+&#x8FD9;&#x4E2A;&#x975E;&#x5E38;&#x6709;&#x610F;&#x4E49;&#xFF0C;&#x505A;&#x4E3A;&#x4E00;&#x540D;&#x7A0B;&#x5E8F;&#x5458;&#xFF0C;&#x7ECF;&#x5E38;&#x4F1A;&#x66F4;&#x65B0;&#x4E00;&#x70B9;&#x513F;&#x6E90;&#x7801;&#xFF0C;&#x7136;&#x540E;&#x4F7F;&#x7528; make &#x6765;&#x6784;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x7248;&#x672C;&#x7684;&#x6210;&#x54C1;&#x3002;make &#x786E;&#x4FDD;
+&#x57FA;&#x4E8E;&#x66F4;&#x65B0;&#x7684;&#x4EE3;&#x7801;&#x6784;&#x5EFA;&#x4E86;&#x9700;&#x8981;&#x6784;&#x5EFA;&#x7684;&#x5185;&#x5BB9;&#x3002;&#x5982;&#x679C;&#x6211;&#x4EEC;&#x4F7F;&#x7528; touch &#x7A0B;&#x5E8F;&#xFF0C;&#x6765;&#x201C;&#x66F4;&#x65B0;&#x201D;&#x5176;&#x4E2D;&#x4E00;&#x4E2A;&#x6E90;&#x7801;&#x6587;&#x4EF6;&#xFF0C;&#x6211;&#x4EEC;&#x770B;&#x5230;&#x53D1;&#x751F;&#x4E86;&#x8FD9;&#x6837;&#x7684;&#x4E8B;&#x60C5;&#xFF1A;</p>
+<pre><code>[me@linuxboxdiction-1.11]$ ls -l diction getopt.c
+-rwxr-xr-x 1 me me 37164 2009-03-05 06:14 diction
+-rw-r--r-- 1 me me 33125 2007-03-30 17:45 getopt.c
+[me@linuxboxdiction-1.11]$ touch getopt.c
+[me@linuxboxdiction-1.11]$ ls -l diction getopt.c
+-rwxr-xr-x 1 me me 37164 2009-03-05 06:14 diction
+-rw-r--r-- 1 me me 33125 2009-03-05 06:23 getopt.c
+[me@linuxbox diction-1.11]$ make
+</code></pre><p>After make runs, we see that it has restored the target to being newer than the dependency:</p>
+<p>&#x8FD0;&#x884C; make &#x4E4B;&#x540E;&#xFF0C;&#x6211;&#x4EEC;&#x770B;&#x5230;&#x76EE;&#x6807;&#x6587;&#x4EF6;&#x5DF2;&#x7ECF;&#x66F4;&#x65B0;&#x4E8E;&#x5B83;&#x7684;&#x4F9D;&#x8D56;&#x6587;&#x4EF6;&#xFF1A;</p>
+<pre><code>[me@linuxbox diction-1.11]$ ls -l diction getopt.c
+-rwxr-xr-x 1 me me 37164 2009-03-05 06:24 diction
+-rw-r--r-- 1 me me 33125 2009-03-05 06:23 getopt.c
+</code></pre><p>The ability of make to intelligently build only what needs building is a great benefit to
+programmers. While the time savings may not be very apparent with our small project, it
+is very significant with larger projects. Remember, the Linux kernel (a program that
+undergoes continuous modification and improvement) contains several million lines of code.</p>
+<p>make &#x7A0B;&#x5E8F;&#x8FD9;&#x79CD;&#x667A;&#x80FD;&#x5730;&#x53EA;&#x6784;&#x5EFA;&#x6240;&#x9700;&#x8981;&#x6784;&#x5EFA;&#x7684;&#x5185;&#x5BB9;&#x7684;&#x7279;&#x6027;&#xFF0C;&#x5BF9;&#x7A0B;&#x5E8F;&#x6765;&#x8BF4;&#xFF0C;&#x662F;&#x5DE8;&#x5927;&#x7684;&#x798F;&#x5229;&#x3002;&#x867D;&#x7136;&#x5728;&#x6211;&#x4EEC;&#x7684;&#x5C0F;&#x9879;&#x76EE;&#x4E2D;&#xFF0C;&#x8282;&#x7701;&#x7684;&#x65F6;&#x95F4;&#x53EF;&#x80FD;
+&#x4E0D;&#x662F;&#x975E;&#x5E38;&#x660E;&#x663E;&#xFF0C;&#x5728;&#x5E9E;&#x5927;&#x7684;&#x5DE5;&#x7A0B;&#x4E2D;&#xFF0C;&#x5B83;&#x5177;&#x6709;&#x975E;&#x5E38;&#x91CD;&#x5927;&#x7684;&#x610F;&#x4E49;&#x3002;&#x8BB0;&#x4F4F;&#xFF0C;Linux &#x5185;&#x6838;&#xFF08;&#x4E00;&#x4E2A;&#x7ECF;&#x5386;&#x7740;&#x4E0D;&#x65AD;&#x4FEE;&#x6539;&#x548C;&#x6539;&#x8FDB;&#x7684;&#x7A0B;&#x5E8F;&#xFF09;&#x5305;&#x542B;&#x4E86;&#x51E0;&#x767E;&#x4E07;&#x884C;&#x4EE3;&#x7801;&#x3002;</p>
+<h4 id="&#x5B89;&#x88C5;&#x7A0B;&#x5E8F;">&#x5B89;&#x88C5;&#x7A0B;&#x5E8F;</h4>
+<p>Well-packaged source code will often include a special make target called install.
+This target will install the final product in a system directory for use.
+Usually, this directory is /usr/local/bin, the traditional location for locally built software. However,
+this directory is not normally writable by ordinary users, so we must become
+the superuser to perform the installation:</p>
+<p>&#x6253;&#x5305;&#x826F;&#x597D;&#x7684;&#x6E90;&#x7801;&#x7ECF;&#x5E38;&#x5305;&#x62EC;&#x4E00;&#x4E2A;&#x7279;&#x522B;&#x7684; make &#x76EE;&#x6807;&#x6587;&#x4EF6;&#xFF0C;&#x53EB;&#x505A; install&#x3002;&#x8FD9;&#x4E2A;&#x76EE;&#x6807;&#x6587;&#x4EF6;&#x5C06;&#x5728;&#x7CFB;&#x7EDF;&#x76EE;&#x5F55;&#x4E2D;&#x5B89;&#x88C5;&#x6700;&#x7EC8;&#x7684;&#x4EA7;&#x54C1;&#xFF0C;&#x4EE5;&#x4F9B;&#x4F7F;&#x7528;&#x3002;
+&#x901A;&#x5E38;&#xFF0C;&#x8FD9;&#x4E2A;&#x76EE;&#x5F55;&#x662F; /usr/local/bin&#xFF0C;&#x4E3A;&#x5728;&#x672C;&#x5730;&#x6240;&#x6784;&#x5EFA;&#x8F6F;&#x4EF6;&#x7684;&#x4F20;&#x7EDF;&#x5B89;&#x88C5;&#x4F4D;&#x7F6E;&#x3002;&#x7136;&#x800C;&#xFF0C;&#x901A;&#x5E38;&#x666E;&#x901A;&#x7528;&#x6237;&#x4E0D;&#x80FD;&#x5199;&#x5165;&#x8BE5;&#x76EE;&#x5F55;&#xFF0C;&#x6240;&#x4EE5;&#x6211;&#x4EEC;&#x5FC5;&#x987B;&#x53D8;&#x6210;&#x8D85;&#x7EA7;&#x7528;&#x6237;&#xFF0C;
+&#x6765;&#x6267;&#x884C;&#x5B89;&#x88C5;&#x64CD;&#x4F5C;&#xFF1A;</p>
+<pre><code>[me@linuxbox diction-1.11]$ sudo make install
+After we perform the installation, we can check that the program is ready to go:
+[me@linuxbox diction-1.11]$ which diction
+/usr/local/bin/diction
+[me@linuxbox diction-1.11]$ man diction
+And there we have it!
+</code></pre><h3 id="&#x603B;&#x7ED3;">&#x603B;&#x7ED3;</h3>
+<p>In this chapter, we have seen how three simple commands:</p>
+<p>&#x5728;&#x8FD9;&#x4E00;&#x7AE0;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x5DF2;&#x7ECF;&#x77E5;&#x9053;&#x4E86;&#x4E09;&#x4E2A;&#x7B80;&#x5355;&#x547D;&#x4EE4;&#xFF1A;</p>
+<pre><code>./configure
+make
+make install
+</code></pre><p>can be used to build many source code packages. We have also seen the important role
+that make plays in the maintenance of programs. The make program can be used for any
+task that needs to maintain a target/dependency relationship, not just for compiling source code.</p>
+<p>&#x53EF;&#x4EE5;&#x7528;&#x6765;&#x6784;&#x5EFA;&#x8BB8;&#x591A;&#x6E90;&#x7801;&#x5305;&#x3002;&#x6211;&#x4EEC;&#x4E5F;&#x77E5;&#x9053;&#x4E86;&#x5728;&#x7A0B;&#x5E8F;&#x7EF4;&#x62A4;&#x8FC7;&#x7A0B;&#x4E2D;&#xFF0C;make &#x7A0B;&#x5E8F;&#x8D77;&#x5230;&#x4E86;&#x4E3E;&#x8DB3;&#x8F7B;&#x91CD;&#x7684;&#x4F5C;&#x7528;&#x3002;make &#x7A0B;&#x5E8F;&#x53EF;&#x4EE5;&#x7528;&#x5230;
+&#x4EFB;&#x4F55;&#x9700;&#x8981;&#x7EF4;&#x62A4;&#x4E00;&#x4E2A;&#x76EE;&#x6807;/&#x4F9D;&#x8D56;&#x5173;&#x7CFB;&#x7684;&#x4EFB;&#x52A1;&#x4E2D;&#xFF0C;&#x4E0D;&#x4EC5;&#x4EC5;&#x4E3A;&#x4E86;&#x7F16;&#x8BD1;&#x6E90;&#x4EE3;&#x7801;&#x3002;</p>
+<h3 id="&#x62D3;&#x5C55;&#x9605;&#x8BFB;">&#x62D3;&#x5C55;&#x9605;&#x8BFB;</h3>
+<ul>
+<li><p>The Wikipedia has good articles on compilers and the make program:</p>
+</li>
+<li><p>Wikipedia &#x4E0A;&#x9762;&#x6709;&#x5173;&#x4E8E;&#x7F16;&#x8BD1;&#x5668;&#x548C; make &#x7A0B;&#x5E8F;&#x7684;&#x597D;&#x6587;&#x7AE0;&#xFF1A;</p>
+<p>  <a href="http://en.wikipedia.org/wiki/Compiler" target="_blank">http://en.wikipedia.org/wiki/Compiler</a></p>
+<p>  <a href="http://en.wikipedia.org/wiki/Make_(software)" target="_blank">http://en.wikipedia.org/wiki/Make_(software)</a></p>
+</li>
+<li><p>The GNU Make Manual:</p>
+</li>
+<li><p>GNU Make &#x624B;&#x518C;</p>
+<p>  <a href="http://www.gnu.org/software/make/manual/html_node/index.html" target="_blank">http://www.gnu.org/software/make/manual/html_node/index.html</a></p>
+</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="chap23.html" class="navigation navigation-prev " aria-label="Previous page: 23. 打印">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="chap25.html" class="navigation navigation-next " aria-label="Next page: 25. 编写第一个 Shell 脚本">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"layout":"book","title":"24. 编译程序","level":"1.1.24","depth":2,"next":{"title":"25. 编写第一个 Shell 脚本","level":"1.1.25","depth":2,"path":"chap25.md","ref":"chap25.md","articles":[]},"previous":{"title":"23. 打印","level":"1.1.23","depth":2,"path":"chap23.md","ref":"chap23.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"en","gitbook":"*"},"file":{"path":"chap24.md","mtime":"2017-01-12T13:05:37.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-01-12T13:06:00.166Z"},"basePath":".","book":{"language":"en"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
