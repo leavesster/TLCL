@@ -710,7 +710,6 @@ It&apos;s true.
 It&apos;s true.
 [me@linuxbox ~]$ if true; false; then echo &quot;It&apos;s true.&quot;; fi
 [me@linuxbox ~]$
-3
 </code></pre><h3 id="&#x6D4B;&#x8BD5;">&#x6D4B;&#x8BD5;</h3>
 <p>&#x5230;&#x76EE;&#x524D;&#x4E3A;&#x6B62;&#xFF0C;&#x7ECF;&#x5E38;&#x4E0E; if &#x4E00;&#x5757;&#x4F7F;&#x7528;&#x7684;&#x547D;&#x4EE4;&#x662F; test&#x3002;&#x8FD9;&#x4E2A; test &#x547D;&#x4EE4;&#x6267;&#x884C;&#x5404;&#x79CD;&#x5404;&#x6837;&#x7684;&#x68C0;&#x67E5;&#x4E0E;&#x6BD4;&#x8F83;&#x3002;
 &#x5B83;&#x6709;&#x4E24;&#x79CD;&#x7B49;&#x4EF7;&#x6A21;&#x5F0F;&#xFF1A;</p>
@@ -725,7 +724,7 @@ It&apos;s true.
 <caption class="cap">&#x8868;28-1: &#x6D4B;&#x8BD5;&#x6587;&#x4EF6;&#x8868;&#x8FBE;&#x5F0F;</caption>
 <tr>
 <th class="title">&#x8868;&#x8FBE;&#x5F0F;</th>
-<th class="title">&#x5982;&#x679C;&#x4E3A;&#x771F;</th>
+<th class="title">&#x5982;&#x679C;&#x4E0B;&#x5217;&#x6761;&#x4EF6;&#x4E3A;&#x771F;&#x5219;&#x8FD4;&#x56DE;True</th>
 </tr>
 <tr>
 <td valign="top" width="16%">file1 -ef file2 </td>
@@ -880,7 +879,7 @@ exit
 <caption class="cap">&#x8868;28-2: &#x6D4B;&#x8BD5;&#x5B57;&#x7B26;&#x4E32;&#x8868;&#x8FBE;&#x5F0F;</caption>
 <tr>
 <th class="title">&#x8868;&#x8FBE;&#x5F0F;</th>
-<th class="title">&#x5982;&#x679C;&#x4E3A;&#x771F;...</th>
+<th class="title">&#x5982;&#x679C;&#x4E0B;&#x5217;&#x6761;&#x4EF6;&#x4E3A;&#x771F;&#x5219;&#x8FD4;&#x56DE;True</th>
 </tr>
 <tr>
 <td valign="top" width="35%">string</td>
@@ -937,7 +936,7 @@ else
 fi
 </code></pre><p>&#x5728;&#x8FD9;&#x4E2A;&#x811A;&#x672C;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x8BA1;&#x7B97;&#x5E38;&#x91CF; ANSWER&#x3002;&#x6211;&#x4EEC;&#x9996;&#x5148;&#x786E;&#x5B9A;&#x662F;&#x5426;&#x6B64;&#x5B57;&#x7B26;&#x4E32;&#x4E3A;&#x7A7A;&#x3002;&#x5982;&#x679C;&#x4E3A;&#x7A7A;&#xFF0C;&#x6211;&#x4EEC;&#x5C31;&#x7EC8;&#x6B62;
 &#x811A;&#x672C;&#xFF0C;&#x5E76;&#x628A;&#x9000;&#x51FA;&#x72B6;&#x6001;&#x8BBE;&#x4E3A;&#x96F6;&#x3002;&#x6CE8;&#x610F;&#x8FD9;&#x4E2A;&#x5E94;&#x7528;&#x4E8E; echo &#x547D;&#x4EE4;&#x7684;&#x91CD;&#x5B9A;&#x5411;&#x64CD;&#x4F5C;&#x3002;&#x5176;&#x628A;&#x9519;&#x8BEF;&#x4FE1;&#x606F; &#x201C;There
-is no answer.&#x201D; &#x91CD;&#x5B9A;&#x5411;&#x5230;&#x6807;&#x51C6;&#x9519;&#x8BEF;&#xFF0C;&#x8FD9;&#x662F;&#x5904;&#x7406;&#x9519;&#x8BEF;&#x4FE1;&#x606F;&#x7684;&#x201C;&#x5408;&#x7406;&#x201D;&#x65B9;&#x6CD5;&#x3002;&#x5982;&#x679C;&#x5B57;&#x7B26;&#x4E32;&#x4E0D;&#x4E3A;&#x7A7A;&#xFF0C;&#x6211;&#x4EEC;&#x5C31;&#x8BA1;&#x7B97;
+is no answer.&#x201D; &#x91CD;&#x5B9A;&#x5411;&#x5230;&#x6807;&#x51C6;&#x9519;&#x8BEF;&#xFF0C;&#x8FD9;&#x662F;&#x5904;&#x7406;&#x9519;&#x8BEF;&#x4FE1;&#x606F;&#x7684;&#x201C;&#x6B63;&#x786E;&#x201D;&#x65B9;&#x6CD5;&#x3002;&#x5982;&#x679C;&#x5B57;&#x7B26;&#x4E32;&#x4E0D;&#x4E3A;&#x7A7A;&#xFF0C;&#x6211;&#x4EEC;&#x5C31;&#x8BA1;&#x7B97;
 &#x5B57;&#x7B26;&#x4E32;&#x7684;&#x503C;&#xFF0C;&#x770B;&#x770B;&#x5B83;&#x662F;&#x5426;&#x7B49;&#x4E8E;&#x201C;yes,&#x201D; &quot;no,&quot; &#x6216;&#x8005;&#x201C;maybe&#x201D;&#x3002;&#x4E3A;&#x6B64;&#x4F7F;&#x7528;&#x4E86; elif&#xFF0C;&#x5B83;&#x662F; &#x201C;else if&#x201D; &#x7684;&#x7B80;&#x5199;&#x3002;
 &#x901A;&#x8FC7;&#x4F7F;&#x7528; elif&#xFF0C;&#x6211;&#x4EEC;&#x80FD;&#x591F;&#x6784;&#x5EFA;&#x66F4;&#x590D;&#x6742;&#x7684;&#x903B;&#x8F91;&#x6D4B;&#x8BD5;&#x3002;</p>
 <h4 id="&#x6574;&#x578B;&#x8868;&#x8FBE;&#x5F0F;">&#x6574;&#x578B;&#x8868;&#x8FBE;&#x5F0F;</h4>
@@ -1039,7 +1038,7 @@ fi
 foo.bar matches pattern &apos;foo.*&apos;
 </code></pre><p>&#x8FD9;&#x5C31;&#x4F7F;<code>[[ ]]</code>&#x6709;&#x52A9;&#x4E8E;&#x8BA1;&#x7B97;&#x6587;&#x4EF6;&#x548C;&#x8DEF;&#x5F84;&#x540D;&#x3002;</p>
 <h3 id="---&#x4E3A;&#x6574;&#x6570;&#x8BBE;&#x8BA1;">(( )) - &#x4E3A;&#x6574;&#x6570;&#x8BBE;&#x8BA1;</h3>
-<p>&#x9664;&#x4E86; <code>[[ ]]</code> &#x590D;&#x5408;&#x547D;&#x4EE4;&#x4E4B;&#x5916;&#xFF0C;bash &#x4E5F;&#x63D0;&#x4F9B;&#x4E86; <code>(( ))</code> &#x590D;&#x5408;&#x547D;&#x540D;&#xFF0C;&#x5176;&#x6709;&#x5229;&#x4E8E;&#x64CD;&#x4F5C;&#x6574;&#x6570;&#x3002;&#x5B83;&#x652F;&#x6301;&#x4E00;&#x5957;
+<p>&#x9664;&#x4E86; <code>[[ ]]</code> &#x590D;&#x5408;&#x547D;&#x4EE4;&#x4E4B;&#x5916;&#xFF0C;bash &#x4E5F;&#x63D0;&#x4F9B;&#x4E86; <code>(( ))</code> &#x590D;&#x5408;&#x547D;&#x4EE4;&#xFF0C;&#x5176;&#x6709;&#x5229;&#x4E8E;&#x64CD;&#x4F5C;&#x6574;&#x6570;&#x3002;&#x5B83;&#x652F;&#x6301;&#x4E00;&#x5957;
 &#x5B8C;&#x6574;&#x7684;&#x7B97;&#x672F;&#x8BA1;&#x7B97;&#xFF0C;&#x6211;&#x4EEC;&#x5C06;&#x5728;&#x7B2C;35&#x7AE0;&#x4E2D;&#x8BA8;&#x8BBA;&#x8FD9;&#x4E2A;&#x4E3B;&#x9898;&#x3002;</p>
 <p><code>(( ))</code>&#x88AB;&#x7528;&#x6765;&#x6267;&#x884C;&#x7B97;&#x672F;&#x771F;&#x6D4B;&#x8BD5;&#x3002;&#x5982;&#x679C;&#x7B97;&#x672F;&#x8BA1;&#x7B97;&#x7684;&#x7ED3;&#x679C;&#x662F;&#x975E;&#x96F6;&#x503C;&#xFF0C;&#x5219;&#x4E00;&#x4E2A;&#x7B97;&#x672F;&#x771F;&#x6D4B;&#x8BD5;&#x503C;&#x4E3A;&#x771F;&#x3002;</p>
 <pre><code>[me@linuxbox ~]$ if ((1)); then echo &quot;It is true.&quot;; fi
@@ -1129,7 +1128,7 @@ fi
 &#x5BF9;&#x4E8E; bash &#x6709;&#x7279;&#x6B8A;&#x542B;&#x4E49;&#x7684;&#x5B57;&#x7B26;&#xFF0C;&#x6BD4;&#x5982;&#x8BF4; &lt;&#xFF0C;&gt;&#xFF0C;(&#xFF0C;&#x548C; )&#xFF0C;&#x5FC5;&#x987B;&#x5F15;&#x8D77;&#x6765;&#x6216;&#x8005;&#x662F;&#x8F6C;&#x4E49;&#x3002;</p>
 <p>&#x77E5;&#x9053;&#x4E86; test &#x548C; <code>[[ ]]</code> &#x57FA;&#x672C;&#x4E0A;&#x5B8C;&#x6210;&#x76F8;&#x540C;&#x7684;&#x4E8B;&#x60C5;&#xFF0C;&#x54EA;&#x4E00;&#x4E2A;&#x66F4;&#x597D;&#x5462;&#xFF1F;test &#x66F4;&#x4F20;&#x7EDF;&#xFF08;&#x662F; POSIX &#x7684;&#x4E00;&#x90E8;&#x5206;&#xFF09;&#xFF0C;
 &#x7136;&#x800C; <code>[[ ]]</code> &#x7279;&#x5B9A;&#x4E8E; bash&#x3002;&#x77E5;&#x9053;&#x600E;&#x6837;&#x4F7F;&#x7528; test &#x5F88;&#x91CD;&#x8981;&#xFF0C;&#x56E0;&#x4E3A;&#x5B83;&#x88AB;&#x975E;&#x5E38;&#x5E7F;&#x6CDB;&#x5730;&#x5E94;&#x7528;&#xFF0C;&#x4F46;&#x662F;&#x663E;&#x7136; <code>[[ ]]</code> &#x66F4;
-&#x6709;&#x52A9;&#x4E8E;&#xFF0C;&#x5E76;&#x66F4;&#x6613;&#x4E8E;&#x7F16;&#x7801;&#x3002;</p>
+&#x6709;&#x7528;&#xFF0C;&#x5E76;&#x66F4;&#x6613;&#x4E8E;&#x7F16;&#x7801;&#x3002;</p>
 <p>&gt;</p>
 <blockquote>
 <p>&#x53EF;&#x79FB;&#x690D;&#x6027;&#x662F;&#x5934;&#x8111;&#x72ED;&#x9698;&#x4EBA;&#x58EB;&#x7684;&#x5FC3;&#x9B54;</p>
@@ -1140,7 +1139,7 @@ fi
 shell &#x5BF9; Unix &#x4E16;&#x754C;&#x7684;&#x6240;&#x505A;&#x6240;&#x4E3A;&#xFF0C;&#x4ED6;&#x4EEC;&#x81EA;&#x7136;&#x4F1A;&#x8B66;&#x60D5; Linux &#x5BF9;&#x4ED6;&#x4EEC;&#x5FC3;&#x7231;&#x7CFB;&#x7EDF;&#x7684;&#x5F71;&#x54CD;&#x3002;</p>
 <p>&#x4F46;&#x662F;&#x53EF;&#x79FB;&#x690D;&#x6027;&#x6709;&#x4E00;&#x4E2A;&#x4E25;&#x91CD;&#x7684;&#x7F3A;&#x70B9;&#x3002;&#x5B83;&#x9632;&#x788D;&#x4E86;&#x8FDB;&#x6B65;&#x3002;&#x5B83;&#x8981;&#x6C42;&#x505A;&#x4E8B;&#x60C5;&#x8981;&#x9075;&#x5FAA;&#x201C;&#x6700;&#x4F4E;&#x5E38;&#x89C1;&#x6807;&#x51C6;&#x201D;&#x3002;
 &#x5728; shell &#x7F16;&#x7A0B;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x5B83;&#x610F;&#x5473;&#x7740;&#x4E00;&#x5207;&#x8981;&#x4E0E; sh &#x517C;&#x5BB9;&#xFF0C;&#x6700;&#x521D;&#x7684; Bourne shell&#x3002;</p>
-<p>&#x8FD9;&#x4E2A;&#x7F3A;&#x70B9;&#x662F;&#x4E00;&#x4E2A;&#x501F;&#x53E3;&#xFF0C;&#x4E13;&#x6709;&#x8F6F;&#x4EF6;&#x4F9B;&#x5E94;&#x5546;&#x7528;&#x5B83;&#x6765;&#x8BC1;&#x660E;&#x4ED6;&#x4EEC;&#x7684;&#x4E13;&#x5229;&#x6269;&#x5C55;&#xFF0C;&#x53EA;&#x6709;&#x4ED6;&#x4EEC;&#x79F0;&#x4ED6;&#x4EEC;&#x4E3A;&#x201C;&#x521B;&#x65B0;&#x201D;&#x3002;
+<p>&#x8FD9;&#x4E2A;&#x7F3A;&#x70B9;&#x662F;&#x4E00;&#x4E2A;&#x4E13;&#x6709;&#x8F6F;&#x4EF6;&#x4F9B;&#x5E94;&#x5546;&#x7528;&#x6765;&#x4E3A;&#x4ED6;&#x4EEC;&#x4E13;&#x6709;&#x7684;&#x6269;&#x5C55;&#x505A;&#x8FA9;&#x89E3;&#x7684;&#x501F;&#x53E3;&#xFF0C;&#x53EA;&#x6709;&#x4ED6;&#x4EEC;&#x79F0;&#x4ED6;&#x4EEC;&#x4E3A;&#x201C;&#x521B;&#x65B0;&#x201D;&#x3002;
 &#x4F46;&#x662F;&#x4ED6;&#x4EEC;&#x53EA;&#x662F;&#x4E3A;&#x4ED6;&#x4EEC;&#x7684;&#x5BA2;&#x6237;&#x9501;&#x5B9A;&#x8BBE;&#x5907;&#x3002;</p>
 <p>GNU &#x5DE5;&#x5177;&#xFF0C;&#x6BD4;&#x5982;&#x8BF4; bash&#xFF0C;&#x5C31;&#x6CA1;&#x6709;&#x8FD9;&#x4E9B;&#x9650;&#x5236;&#x3002;&#x4ED6;&#x4EEC;&#x901A;&#x8FC7;&#x652F;&#x6301;&#x6807;&#x51C6;&#x548C;&#x666E;&#x904D;&#x5730;&#x53EF;&#x7528;&#x6027;&#x6765;&#x9F13;&#x52B1;&#x53EF;&#x79FB;&#x690D;&#x6027;&#x3002;&#x4F60;&#x51E0;&#x4E4E;&#x53EF;&#x4EE5;
 &#x5728;&#x6240;&#x6709;&#x7C7B;&#x578B;&#x7684;&#x7CFB;&#x7EDF;&#x4E2D;&#x5B89;&#x88C5; bash &#x548C;&#x5176;&#x5B83;&#x7684; GNU &#x5DE5;&#x5177;&#xFF0C;&#x751A;&#x81F3;&#x662F; Windows&#xFF0C;&#x800C;&#x6CA1;&#x6709;&#x635F;&#x5931;&#x3002;&#x6240;&#x4EE5;&#x5C31;
@@ -1243,7 +1242,7 @@ shell &#x5BF9; Unix &#x4E16;&#x754C;&#x7684;&#x6240;&#x505A;&#x6240;&#x4E3A;&#xF
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"layout":"book-zh","title":"28. 流程控制：if 分支结构","level":"1.1.28","depth":2,"next":{"title":"29. 读取键盘输入","level":"1.1.29","depth":2,"path":"chap29.md","ref":"chap29.md","articles":[]},"previous":{"title":"27. 自顶向下设计","level":"1.1.27","depth":2,"path":"chap27.md","ref":"chap27.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"zh","gitbook":"*"},"file":{"path":"chap28.md","mtime":"2017-01-12T13:05:37.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-01-12T13:06:00.166Z"},"basePath":".","book":{"language":"zh"}});
+            gitbook.page.hasChanged({"page":{"layout":"book-zh","title":"28. 流程控制：if 分支结构","level":"1.1.28","depth":2,"next":{"title":"29. 读取键盘输入","level":"1.1.29","depth":2,"path":"chap29.md","ref":"chap29.md","articles":[]},"previous":{"title":"27. 自顶向下设计","level":"1.1.27","depth":2,"path":"chap27.md","ref":"chap27.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"zh","gitbook":"*"},"file":{"path":"chap28.md","mtime":"2017-01-12T13:13:52.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-01-12T13:23:32.099Z"},"basePath":".","book":{"language":"zh"}});
         });
     </script>
 </div>
@@ -1251,6 +1250,10 @@ shell &#x5BF9; Unix &#x4E16;&#x754C;&#x7684;&#x6240;&#x505A;&#x6240;&#x4E3A;&#xF
         
     <script src="../gitbook/gitbook.js"></script>
     <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
     
         
         <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>

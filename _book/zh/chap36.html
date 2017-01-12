@@ -765,7 +765,7 @@ a fish
 3
 </code></pre><p>&#x6211;&#x4EEC;&#x521B;&#x5EFA;&#x4E86;&#x6570;&#x7EC4; a&#xFF0C;&#x5E76;&#x628A;&#x5B57;&#x7B26;&#x4E32; &#x201C;foo&#x201D; &#x8D4B;&#x503C;&#x7ED9;&#x6570;&#x7EC4;&#x5143;&#x7D20;100&#x3002;&#x4E0B;&#x4E00;&#x6B65;&#xFF0C;&#x6211;&#x4EEC;&#x4F7F;&#x7528;&#x53C2;&#x6570;&#x5C55;&#x5F00;&#x6765;&#x68C0;&#x67E5;&#x6570;&#x7EC4;&#x7684;&#x957F;&#x5EA6;&#xFF0C;&#x4F7F;&#x7528; @ &#x8868;&#x793A;&#x6CD5;&#x3002;
 &#x6700;&#x540E;&#xFF0C;&#x6211;&#x4EEC;&#x67E5;&#x770B;&#x4E86;&#x5305;&#x542B;&#x5B57;&#x7B26;&#x4E32; &#x201C;foo&#x201D; &#x7684;&#x6570;&#x7EC4;&#x5143;&#x7D20; 100 &#x7684;&#x957F;&#x5EA6;&#x3002;&#x6709;&#x8DA3;&#x7684;&#x662F;&#xFF0C;&#x5C3D;&#x7BA1;&#x6211;&#x4EEC;&#x628A;&#x5B57;&#x7B26;&#x4E32;&#x8D4B;&#x503C;&#x7ED9;&#x6570;&#x7EC4;&#x5143;&#x7D20;100&#xFF0C;
-bash &#x4EC5;&#x4EC5;&#x62A5;&#x544A;&#x6570;&#x7EC4;&#x4E2D;&#x6709;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x3002;&#x8FD9;&#x4E0D;&#x540C;&#x4E8E;&#x4E00;&#x4E9B;&#x5176;&#x5B83;&#x8BED;&#x8A00;&#x7684;&#x884C;&#x4E3A;&#xFF0C;&#x6570;&#x7EC4;&#x4E2D;&#x672A;&#x4F7F;&#x7528;&#x7684;&#x5143;&#x7D20;&#xFF08;&#x5143;&#x7D20;0-99&#xFF09;&#x4F1A;&#x521D;&#x59CB;&#x5316;&#x4E3A;&#x7A7A;&#x503C;&#xFF0C;
+bash &#x4EC5;&#x4EC5;&#x62A5;&#x544A;&#x6570;&#x7EC4;&#x4E2D;&#x6709;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x3002;&#x8FD9;&#x4E0D;&#x540C;&#x4E8E;&#x4E00;&#x4E9B;&#x5176;&#x5B83;&#x8BED;&#x8A00;&#x7684;&#x884C;&#x4E3A;&#xFF0C;&#x8FD9;&#x79CD;&#x884C;&#x4E3A;&#x662F;&#x6570;&#x7EC4;&#x4E2D;&#x672A;&#x4F7F;&#x7528;&#x7684;&#x5143;&#x7D20;&#xFF08;&#x5143;&#x7D20;0-99&#xFF09;&#x4F1A;&#x521D;&#x59CB;&#x5316;&#x4E3A;&#x7A7A;&#x503C;&#xFF0C;
 &#x5E76;&#x628A;&#x5B83;&#x4EEC;&#x8BA1;&#x5165;&#x6570;&#x7EC4;&#x957F;&#x5EA6;&#x3002;</p>
 <h4 id="&#x627E;&#x5230;&#x6570;&#x7EC4;&#x4F7F;&#x7528;&#x7684;&#x4E0B;&#x6807;">&#x627E;&#x5230;&#x6570;&#x7EC4;&#x4F7F;&#x7528;&#x7684;&#x4E0B;&#x6807;</h4>
 <p>&#x56E0;&#x4E3A; bash &#x5141;&#x8BB8;&#x8D4B;&#x503C;&#x7684;&#x6570;&#x7EC4;&#x4E0B;&#x6807;&#x5305;&#x542B; &#x201C;&#x95F4;&#x9694;&#x201D;&#xFF0C;&#x6709;&#x65F6;&#x5019;&#x786E;&#x5B9A;&#x54EA;&#x4E2A;&#x5143;&#x7D20;&#x771F;&#x6B63;&#x5B58;&#x5728;&#x662F;&#x5F88;&#x6709;&#x7528;&#x7684;&#x3002;&#x4E3A;&#x505A;&#x5230;&#x8FD9;&#x4E00;&#x70B9;&#xFF0C;
@@ -830,7 +830,7 @@ a b d e f
 [me@linuxbox ~]$ foo=
 [me@linuxbox ~]$ echo ${foo[@]}
 b c d e f
-</code></pre><p>&#x4EFB;&#x4F55;&#x5F15;&#x7528;&#x4E00;&#x4E2A;&#x4E0D;&#x5E26;&#x4E0B;&#x6807;&#x7684;&#x6570;&#x7EC4;&#x53D8;&#x91CF;&#xFF0C;&#x5219;&#x6307;&#x7684;&#x662F;&#x6570;&#x7EC4;&#x5143;&#x7D20;0&#xFF1A;</p>
+</code></pre><p>&#x4EFB;&#x4F55;&#x6CA1;&#x6709;&#x4E0B;&#x6807;&#x7684;&#x5BF9;&#x6570;&#x7EC4;&#x53D8;&#x91CF;&#x7684;&#x5F15;&#x7528;&#x90FD;&#x6307;&#x5411;&#x6570;&#x7EC4;&#x5143;&#x7D20;0&#xFF1A;</p>
 <pre><code>[me@linuxbox~]$ foo=(a b c d e f)
 [me@linuxbox~]$ echo ${foo[@]}
 a b c d e f
@@ -850,7 +850,7 @@ colors[&quot;blue&quot;]=&quot;#0000ff&quot;
 </code></pre><p>&#x5728;&#x4E0B;&#x4E00;&#x7AE0;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x5C06;&#x770B;&#x4E00;&#x4E2A;&#x811A;&#x672C;&#xFF0C;&#x5F88;&#x597D;&#x5730;&#x5229;&#x7528;&#x5173;&#x8054;&#x6570;&#x7EC4;&#xFF0C;&#x751F;&#x4EA7;&#x51FA;&#x4E86;&#x4E00;&#x4E2A;&#x6709;&#x610F;&#x601D;&#x7684;&#x62A5;&#x544A;&#x3002;</p>
 <h3 id="&#x603B;&#x7ED3;">&#x603B;&#x7ED3;</h3>
 <p>&#x5982;&#x679C;&#x6211;&#x4EEC;&#x5728; bash &#x624B;&#x518C;&#x9875;&#x4E2D;&#x641C;&#x7D22;&#x5355;&#x8BCD; &#x201C;array&#x201D;&#x7684;&#x8BDD;&#xFF0C;&#x6211;&#x4EEC;&#x80FD;&#x627E;&#x5230;&#x8BB8;&#x591A; bash &#x5728;&#x54EA;&#x91CC;&#x4F1A;&#x4F7F;&#x7528;&#x6570;&#x7EC4;&#x53D8;&#x91CF;&#x7684;&#x5B9E;&#x4F8B;&#x3002;&#x5176;&#x4E2D;&#x5927;&#x90E8;&#x5206;&#x76F8;&#x5F53;&#x6666;&#x6DA9;&#x96BE;&#x61C2;&#xFF0C;
-&#x4F46;&#x662F;&#x5B83;&#x4EEC;&#x53EF;&#x80FD;&#x5728;&#x4E00;&#x4E9B;&#x7279;&#x6B8A;&#x573A;&#x5408;&#x63D0;&#x4F9B;&#x4E34;&#x65F6;&#x7684;&#x5DE5;&#x5177;&#x3002;&#x4E8B;&#x5B9E;&#x4E0A;&#xFF0C;&#x5728; shell &#x7F16;&#x7A0B;&#x4E2D;&#xFF0C;&#x6574;&#x5957;&#x6570;&#x7EC4;&#x89C4;&#x5219;&#x5229;&#x7528;&#x7387;&#x76F8;&#x5F53;&#x4F4E;&#xFF0C;&#x5F88;&#x5927;&#x7A0B;&#x5EA6;&#x4E0A;&#x5F52;&#x548E;&#x4E8E;&#x8FD9;&#x6837;&#x7684;&#x4E8B;&#x5B9E;&#xFF0C;
+&#x4F46;&#x662F;&#x5B83;&#x4EEC;&#x53EF;&#x80FD;&#x5728;&#x4E00;&#x4E9B;&#x7279;&#x6B8A;&#x573A;&#x5408;&#x63D0;&#x4F9B;&#x4E34;&#x65F6;&#x7684;&#x5DE5;&#x5177;&#x3002;&#x4E8B;&#x5B9E;&#x4E0A;&#xFF0C;&#x5728; shell &#x7F16;&#x7A0B;&#x4E2D;&#xFF0C;&#x6574;&#x5957;&#x6570;&#x7EC4;&#x89C4;&#x5219;&#x5229;&#x7528;&#x7387;&#x76F8;&#x5F53;&#x4F4E;&#xFF0C;&#x5F88;&#x5927;&#x7A0B;&#x5EA6;&#x4E0A;&#x5F52;&#x548E;&#x4E8E;
 &#x4F20;&#x7EDF; Unix shell &#x7A0B;&#x5E8F;&#xFF08;&#x6BD4;&#x5982;&#x8BF4; sh&#xFF09;&#x7F3A;&#x4E4F;&#x5BF9;&#x6570;&#x7EC4;&#x7684;&#x652F;&#x6301;&#x3002;&#x8FD9;&#x6837;&#x7F3A;&#x4E4F;&#x4EBA;&#x6C14;&#x662F;&#x4E0D;&#x5E78;&#x7684;&#xFF0C;&#x56E0;&#x4E3A;&#x6570;&#x7EC4;&#x5E7F;&#x6CDB;&#x5E94;&#x7528;&#x4E8E;&#x5176;&#x5B83;&#x7F16;&#x7A0B;&#x8BED;&#x8A00;&#xFF0C;
 &#x5E76;&#x4E3A;&#x89E3;&#x51B3;&#x5404;&#x79CD;&#x5404;&#x6837;&#x7684;&#x7F16;&#x7A0B;&#x95EE;&#x9898;&#xFF0C;&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4E2A;&#x5F3A;&#x5927;&#x7684;&#x5DE5;&#x5177;&#x3002;</p>
 <p>&#x6570;&#x7EC4;&#x548C;&#x5FAA;&#x73AF;&#x6709;&#x4E00;&#x79CD;&#x5929;&#x7136;&#x7684;&#x59FB;&#x4EB2;&#x5173;&#x7CFB;&#xFF0C;&#x5B83;&#x4EEC;&#x7ECF;&#x5E38;&#x88AB;&#x4E00;&#x8D77;&#x4F7F;&#x7528;&#x3002;&#x8BE5;</p>
@@ -906,7 +906,7 @@ colors[&quot;blue&quot;]=&quot;#0000ff&quot;
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"layout":"book-zh","title":"36. 数组","level":"1.1.36","depth":2,"next":{"title":"37. 奇珍异宝","level":"1.1.37","depth":2,"path":"chap37.md","ref":"chap37.md","articles":[]},"previous":{"title":"35. 字符串和数字","level":"1.1.35","depth":2,"path":"chap35.md","ref":"chap35.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"zh","gitbook":"*"},"file":{"path":"chap36.md","mtime":"2017-01-12T13:05:37.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-01-12T13:06:00.166Z"},"basePath":".","book":{"language":"zh"}});
+            gitbook.page.hasChanged({"page":{"layout":"book-zh","title":"36. 数组","level":"1.1.36","depth":2,"next":{"title":"37. 奇珍异宝","level":"1.1.37","depth":2,"path":"chap37.md","ref":"chap37.md","articles":[]},"previous":{"title":"35. 字符串和数字","level":"1.1.35","depth":2,"path":"chap35.md","ref":"chap35.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"zh","gitbook":"*"},"file":{"path":"chap36.md","mtime":"2017-01-12T13:13:52.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-01-12T13:23:32.099Z"},"basePath":".","book":{"language":"zh"}});
         });
     </script>
 </div>
@@ -914,6 +914,10 @@ colors[&quot;blue&quot;]=&quot;#0000ff&quot;
         
     <script src="../gitbook/gitbook.js"></script>
     <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
     
         
         <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
